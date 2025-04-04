@@ -1,0 +1,29 @@
+<svg width="65" height="65" viewBox="0 0 61 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!-- T vertical line -->
+<path d="M30.5 22 L30.5 55" stroke="black" stroke-width="3.5"/>
+
+<!-- T horizontal line -->
+<path d="M15 22 L46 22" stroke="black" stroke-width="3.5"/>
+
+<!-- C shape -->
+<path d="M22 30 A 15 15 0 0 0 22 55" stroke="black" stroke-width="3.5" fill="none"/>
+
+<!-- RUE text -->
+<path d="M36 28 L36 42 M36 28 L41 28 C43 28 45 30 45 32 C45 34 43 36 41 36 L36 36 L42 42" stroke="black" stroke-width="1.2"/>
+<path d="M47 28 L47 42 M47 28 C51 28 54 31 54 35 C54 39 51 42 47 42" stroke="black" stroke-width="1.2"/>
+<path d="M56 28 L56 42 M56 28 L62 28 M56 35 L60 35 M56 42 L62 42" stroke="black" stroke-width="1.2"/>
+
+<!-- OLORS text -->
+<path d="M38 45 C34 45 31 48 31 52 C31 56 34 59 38 59 C42 59 45 56 45 52 C45 48 42 45 38 45 Z" stroke="black" stroke-width="1"/>
+<path d="M47 45 L47 59 M47 45 L50 45" stroke="black" stroke-width="1"/>
+<path d="M53 45 C49 45 46 48 46 52 C46 56 49 59 53 59 C57 59 60 56 60 52 C60 48 57 45 53 45 Z" stroke="black" stroke-width="1"/>
+<path d="M62 45 L62 59 M62 45 L67 45 C69 45 71 47 71 49 C71 51 69 53 67 53 L62 53 L68 59" stroke="black" stroke-width="1"/>
+<path d="M73 45 C69 45 69 47 69 48 C69 53 77 54 77 56 C77 58 74 58 73 58 C71 58 70 57 69 56 M73 45 C75 45 77 46 78 47" stroke="black" stroke-width="1"/>
+
+<defs>
+<linearGradient id="paint0_linear_89_8" x1="30.5" y1="0" x2="30.5" y2="65" gradientUnits="userSpaceOnUse">
+<stop stop-color="#6364FF"/>
+<stop offset="1" stop-color="#563ACC"/>
+</linearGradient>
+</defs>
+</svg>
