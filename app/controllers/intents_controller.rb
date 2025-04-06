@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class IntentsController < ApplicationController
-  EXPECTED_SCHEME = 'web+mastodon'
+  EXPECTED_SCHEME = 'web+truecolors'
 
   before_action :handle_invalid_uri, unless: :valid_uri?
   rescue_from Addressable::URI::InvalidURIError, with: :handle_invalid_uri

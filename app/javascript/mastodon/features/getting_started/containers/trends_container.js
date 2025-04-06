@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { fetchTrendingHashtags } from 'mastodon/actions/trends';
+import { fetchTrendingHashtags } from 'truecolors/actions/trends';
 
 import Trends from '../components/trends';
 

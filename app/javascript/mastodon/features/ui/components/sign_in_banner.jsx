@@ -3,9 +3,9 @@ import { useCallback } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 
-import { openModal } from 'mastodon/actions/modal';
-import { registrationsOpen, sso_redirect } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { openModal } from 'truecolors/actions/modal';
+import { registrationsOpen, sso_redirect } from 'truecolors/initial_state';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const SignInBanner = () => {
   const dispatch = useAppDispatch();
@@ -22,7 +22,7 @@ const SignInBanner = () => {
   if (sso_redirect) {
     return (
       <div className='sign-in-banner'>
-        <p><strong><FormattedMessage id='sign_in_banner.mastodon_is' defaultMessage="Mastodon is the best way to keep up with what's happening." /></strong></p>
+        <p><strong><FormattedMessage id='sign_in_banner.truecolors_is' defaultMessage="Truecolors is the best way to keep up with what's happening." /></strong></p>
         <p><FormattedMessage id='sign_in_banner.follow_anyone' defaultMessage='Follow anyone across the fediverse and see it all in chronological order. No algorithms, ads, or clickbait in sight.' /></p>
         <a href={sso_redirect} data-method='post' className='button button--block button-tertiary'><FormattedMessage id='sign_in_banner.sso_redirect' defaultMessage='Login or Register' /></a>
       </div>
@@ -45,7 +45,7 @@ const SignInBanner = () => {
 
   return (
     <div className='sign-in-banner'>
-      <p><strong><FormattedMessage id='sign_in_banner.mastodon_is' defaultMessage="Mastodon is the best way to keep up with what's happening." /></strong></p>
+      <p><strong><FormattedMessage id='sign_in_banner.truecolors_is' defaultMessage="Truecolors is the best way to keep up with what's happening." /></strong></p>
       <p><FormattedMessage id='sign_in_banner.follow_anyone' defaultMessage='Follow anyone across the fediverse and see it all in chronological order. No algorithms, ads, or clickbait in sight.' /></p>
       {signupButton}
       <a href='/auth/sign_in' className='button button--block button-tertiary'><FormattedMessage id='sign_in_banner.sign_in' defaultMessage='Login' /></a>

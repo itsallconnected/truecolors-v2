@@ -123,7 +123,7 @@ da:
         admin/accounts: Kontihåndtering
         admin/all: Alle håndteringsfunktioner
         admin/reports: Rapporthåndteringer
-        all: Fuld adgang til din Mastodon-konto
+        all: Fuld adgang til din Truecolors-konto
         blocks: Blokeringer
         bookmarks: Bogmærker
         conversations: Konversationer
@@ -136,7 +136,7 @@ da:
         media: Medievedhæftninger
         mutes: Skjulte kontoer
         notifications: Notifikationer
-        profile: Din Mastodon-profil
+        profile: Din Truecolors-profil
         push: Push-notifikationer
         reports: Anmeldelser
         search: Søgning

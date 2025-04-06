@@ -42,7 +42,7 @@ class Trends::TagFilter
     when 'trending'
       trending_scope(value)
     else
-      raise Mastodon::InvalidParameterError, "Unknown filter: #{key}"
+      raise Truecolors::InvalidParameterError, "Unknown filter: #{key}"
     end
   end
 
@@ -55,7 +55,7 @@ class Trends::TagFilter
     when 'pending_review'
       Tag.pending_review
     else
-      raise Mastodon::InvalidParameterError, "Unknown status: #{value}"
+      raise Truecolors::InvalidParameterError, "Unknown status: #{value}"
     end
   end
 

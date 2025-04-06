@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 import { IntlProvider as BaseIntlProvider } from 'react-intl';
 
-import { isProduction } from 'mastodon/utils/environment';
+import { isProduction } from 'truecolors/utils/environment';
 
 import { getLocale, isLocaleLoaded } from './global_locale';
 import { loadLocale } from './load_locale';

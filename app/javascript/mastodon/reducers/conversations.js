@@ -1,7 +1,7 @@
 import { Map as ImmutableMap, List as ImmutableList } from 'immutable';
 
-import { blockAccountSuccess, muteAccountSuccess } from 'mastodon/actions/accounts';
-import { blockDomainSuccess } from 'mastodon/actions/domain_blocks';
+import { blockAccountSuccess, muteAccountSuccess } from 'truecolors/actions/accounts';
+import { blockDomainSuccess } from 'truecolors/actions/domain_blocks';
 
 import {
   CONVERSATIONS_MOUNT,

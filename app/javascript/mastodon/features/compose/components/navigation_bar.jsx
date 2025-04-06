@@ -5,10 +5,10 @@ import { useIntl, defineMessages } from 'react-intl';
 import { useSelector, useDispatch } from 'react-redux';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { cancelReplyCompose } from 'mastodon/actions/compose';
-import { Account } from 'mastodon/components/account';
-import { IconButton } from 'mastodon/components/icon_button';
-import { me } from 'mastodon/initial_state';
+import { cancelReplyCompose } from 'truecolors/actions/compose';
+import { Account } from 'truecolors/components/account';
+import { IconButton } from 'truecolors/components/icon_button';
+import { me } from 'truecolors/initial_state';
 
 import { ActionBar } from './action_bar';
 

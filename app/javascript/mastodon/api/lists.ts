@@ -3,9 +3,9 @@ import {
   apiRequestPut,
   apiRequestGet,
   apiRequestDelete,
-} from 'mastodon/api';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
-import type { ApiListJSON } from 'mastodon/api_types/lists';
+} from 'truecolors/api';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
+import type { ApiListJSON } from 'truecolors/api_types/lists';
 
 export const apiCreate = (list: Partial<ApiListJSON>) =>
   apiRequestPost<ApiListJSON>('v1/lists', list);

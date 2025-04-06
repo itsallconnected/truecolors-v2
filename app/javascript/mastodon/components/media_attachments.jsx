@@ -5,8 +5,8 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 
 import noop from 'lodash/noop';
 
-import Bundle from 'mastodon/features/ui/components/bundle';
-import { MediaGallery, Video, Audio } from 'mastodon/features/ui/util/async-components';
+import Bundle from 'truecolors/features/ui/components/bundle';
+import { MediaGallery, Video, Audio } from 'truecolors/features/ui/util/async-components';
 
 export default class MediaAttachments extends ImmutablePureComponent {
 

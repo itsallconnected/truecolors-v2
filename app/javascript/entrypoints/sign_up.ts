@@ -1,7 +1,7 @@
 import './public-path';
 import axios from 'axios';
 
-import ready from '../mastodon/ready';
+import ready from '../truecolors/ready';
 
 async function checkConfirmation() {
   const response = await axios.get('/api/v1/emails/check_confirmation');

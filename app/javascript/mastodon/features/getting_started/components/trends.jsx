@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
-import { ImmutableHashtag as Hashtag } from 'mastodon/components/hashtag';
+import { ImmutableHashtag as Hashtag } from 'truecolors/components/hashtag';
 
 export default class Trends extends ImmutablePureComponent {
 

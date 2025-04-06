@@ -1,4 +1,4 @@
-import { boostModal } from 'mastodon/initial_state';
+import { boostModal } from 'truecolors/initial_state';
 
 import api, { getLinks } from '../api';
 

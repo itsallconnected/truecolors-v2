@@ -192,7 +192,7 @@ module.exports = JSON.parse(JSON.stringify([
    * Currently, no definitions or references to `skins` property can be found in:
    * - {@link node_modules/emoji-mart/dist/utils/data.js}
    * - {@link node_modules/emoji-mart/data/all.json}
-   * - {@link app/javascript/mastodon/features/emoji/emoji_compressed.d.ts#Skins}
+   * - {@link app/javascript/truecolors/features/emoji/emoji_compressed.d.ts#Skins}
    * Future refactorings or updates should consider adding definitions or handling for `skins` property.
    */
   emojiMartData.skins,

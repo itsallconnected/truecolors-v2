@@ -9,31 +9,31 @@ import { useDebouncedCallback } from 'use-debounce';
 
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
 import SquigglyArrow from '@/svg-icons/squiggly_arrow.svg?react';
-import { fetchRelationships } from 'mastodon/actions/accounts';
-import { showAlertForError } from 'mastodon/actions/alerts';
-import { importFetchedAccounts } from 'mastodon/actions/importer';
-import { fetchList } from 'mastodon/actions/lists';
-import { openModal } from 'mastodon/actions/modal';
-import { apiRequest } from 'mastodon/api';
-import { apiFollowAccount } from 'mastodon/api/accounts';
+import { fetchRelationships } from 'truecolors/actions/accounts';
+import { showAlertForError } from 'truecolors/actions/alerts';
+import { importFetchedAccounts } from 'truecolors/actions/importer';
+import { fetchList } from 'truecolors/actions/lists';
+import { openModal } from 'truecolors/actions/modal';
+import { apiRequest } from 'truecolors/api';
+import { apiFollowAccount } from 'truecolors/api/accounts';
 import {
   apiGetAccounts,
   apiAddAccountToList,
   apiRemoveAccountFromList,
-} from 'mastodon/api/lists';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
-import { Avatar } from 'mastodon/components/avatar';
-import { Button } from 'mastodon/components/button';
-import { Column } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { ColumnSearchHeader } from 'mastodon/components/column_search_header';
-import { FollowersCounter } from 'mastodon/components/counters';
-import { DisplayName } from 'mastodon/components/display_name';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { VerifiedBadge } from 'mastodon/components/verified_badge';
-import { me } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'truecolors/api/lists';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
+import { Avatar } from 'truecolors/components/avatar';
+import { Button } from 'truecolors/components/button';
+import { Column } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import { ColumnSearchHeader } from 'truecolors/components/column_search_header';
+import { FollowersCounter } from 'truecolors/components/counters';
+import { DisplayName } from 'truecolors/components/display_name';
+import ScrollableList from 'truecolors/components/scrollable_list';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { VerifiedBadge } from 'truecolors/components/verified_badge';
+import { me } from 'truecolors/initial_state';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   heading: { id: 'column.list_members', defaultMessage: 'Manage list members' },

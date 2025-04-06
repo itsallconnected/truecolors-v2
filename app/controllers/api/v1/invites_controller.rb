@@ -25,6 +25,6 @@ class Api::V1::InvitesController < Api::BaseController
   def check_enabled_registrations!
     return render json: { error: I18n.t('invites.invalid') }, status: 401 unless @invite.valid_for_use?
 
-    raise Mastodon::NotPermittedError unless allowed_registration?(request.remote_ip, @invite)
+    raise Truecolors::NotPermittedError unless allowed_registration?(request.remote_ip, @invite)
   end
 end

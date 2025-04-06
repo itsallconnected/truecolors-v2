@@ -2,11 +2,11 @@ import { useRef, useState, useEffect } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import { showAlertForError } from 'mastodon/actions/alerts';
-import api from 'mastodon/api';
-import { Button } from 'mastodon/components/button';
-import { CopyPasteText } from 'mastodon/components/copy_paste_text';
-import { useAppDispatch } from 'mastodon/store';
+import { showAlertForError } from 'truecolors/actions/alerts';
+import api from 'truecolors/api';
+import { Button } from 'truecolors/components/button';
+import { CopyPasteText } from 'truecolors/components/copy_paste_text';
+import { useAppDispatch } from 'truecolors/store';
 
 interface OEmbedResponse {
   html: string;

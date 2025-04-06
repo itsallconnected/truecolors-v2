@@ -10,9 +10,9 @@ import { shallowEqual } from 'react-redux';
 
 import Toggle from 'react-toggle';
 
-import { fetchAccount } from 'mastodon/actions/accounts';
-import { Button } from 'mastodon/components/button';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { fetchAccount } from 'truecolors/actions/accounts';
+import { Button } from 'truecolors/components/button';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   placeholder: { id: 'report.placeholder', defaultMessage: 'Type or paste additional comments' },

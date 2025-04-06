@@ -3,8 +3,8 @@ import { defineMessages, FormattedMessage, useIntl } from 'react-intl';
 import classNames from 'classnames';
 
 import GavelIcon from '@/material-icons/400-24px/gavel.svg?react';
-import { Icon } from 'mastodon/components/icon';
-import type { AccountWarningAction } from 'mastodon/models/notification_group';
+import { Icon } from 'truecolors/components/icon';
+import type { AccountWarningAction } from 'truecolors/models/notification_group';
 
 // This needs to be kept in sync with app/models/account_warning.rb
 const messages = defineMessages({

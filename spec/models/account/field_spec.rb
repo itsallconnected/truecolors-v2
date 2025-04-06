@@ -77,7 +77,7 @@ RSpec.describe Account::Field do
       end
 
       context 'with a URL with a non-normalized path' do
-        let(:value) { 'https://github.com/octocatxxxxxxxx/../mastodon' }
+        let(:value) { 'https://github.com/octocatxxxxxxxx/../truecolors' }
 
         it 'returns false' do
           expect(subject.verifiable?).to be false
@@ -113,7 +113,7 @@ RSpec.describe Account::Field do
       let(:local) { false }
 
       context 'with a link' do
-        let(:value) { '<a href="https://www.patreon.com/mastodon" target="_blank" rel="nofollow noopener noreferrer me"><span class="invisible">https://www.</span><span class="">patreon.com/mastodon</span><span class="invisible"></span></a>' }
+        let(:value) { '<a href="https://www.patreon.com/truecolors" target="_blank" rel="nofollow noopener noreferrer me"><span class="invisible">https://www.</span><span class="">patreon.com/truecolors</span><span class="invisible"></span></a>' }
 
         it 'returns true' do
           expect(subject.verifiable?).to be true

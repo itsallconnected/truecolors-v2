@@ -1,16 +1,16 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import { apiGetSearch } from 'mastodon/api/search';
-import type { ApiSearchType } from 'mastodon/api_types/search';
+import { apiGetSearch } from 'truecolors/api/search';
+import type { ApiSearchType } from 'truecolors/api_types/search';
 import type {
   RecentSearch,
   SearchType as RecentSearchType,
-} from 'mastodon/models/search';
-import { searchHistory } from 'mastodon/settings';
+} from 'truecolors/models/search';
+import { searchHistory } from 'truecolors/settings';
 import {
   createDataLoadingThunk,
   createAppAsyncThunk,
-} from 'mastodon/store/typed_functions';
+} from 'truecolors/store/typed_functions';
 
 import { fetchRelationships } from './accounts';
 import { importFetchedAccounts, importFetchedStatuses } from './importer';

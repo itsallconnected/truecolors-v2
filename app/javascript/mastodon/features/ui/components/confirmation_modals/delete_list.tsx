@@ -4,9 +4,9 @@ import { defineMessages, useIntl } from 'react-intl';
 
 import { useHistory } from 'react-router';
 
-import { removeColumn } from 'mastodon/actions/columns';
-import { deleteList } from 'mastodon/actions/lists';
-import { useAppDispatch } from 'mastodon/store';
+import { removeColumn } from 'truecolors/actions/columns';
+import { deleteList } from 'truecolors/actions/lists';
+import { useAppDispatch } from 'truecolors/store';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

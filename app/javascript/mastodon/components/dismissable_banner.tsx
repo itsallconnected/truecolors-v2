@@ -9,9 +9,9 @@ import { useCallback, useState, useEffect } from 'react';
 import { defineMessages, useIntl } from 'react-intl';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { changeSetting } from 'mastodon/actions/settings';
-import { bannerSettings } from 'mastodon/settings';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { changeSetting } from 'truecolors/actions/settings';
+import { bannerSettings } from 'truecolors/settings';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { IconButton } from './icon_button';
 

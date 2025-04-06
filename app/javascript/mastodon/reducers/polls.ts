@@ -1,10 +1,10 @@
 import type { Reducer } from '@reduxjs/toolkit';
 import { Map as ImmutableMap } from 'immutable';
 
-import { importPolls } from 'mastodon/actions/importer/polls';
-import { makeEmojiMap } from 'mastodon/models/custom_emoji';
-import { createPollOptionTranslationFromServerJSON } from 'mastodon/models/poll';
-import type { Poll } from 'mastodon/models/poll';
+import { importPolls } from 'truecolors/actions/importer/polls';
+import { makeEmojiMap } from 'truecolors/models/custom_emoji';
+import { createPollOptionTranslationFromServerJSON } from 'truecolors/models/poll';
+import type { Poll } from 'truecolors/models/poll';
 
 import {
   STATUS_TRANSLATE_SUCCESS,

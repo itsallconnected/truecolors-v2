@@ -7,12 +7,12 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-import { fetchServer } from 'mastodon/actions/server';
-import { Account } from 'mastodon/components/account';
-import { ServerHeroImage } from 'mastodon/components/server_hero_image';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { Skeleton } from 'mastodon/components/skeleton';
-import { domain } from 'mastodon/initial_state';
+import { fetchServer } from 'truecolors/actions/server';
+import { Account } from 'truecolors/components/account';
+import { ServerHeroImage } from 'truecolors/components/server_hero_image';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { Skeleton } from 'truecolors/components/skeleton';
+import { domain } from 'truecolors/initial_state';
 
 const messages = defineMessages({
   aboutActiveUsers: { id: 'server_banner.about_active_users', defaultMessage: 'People using this server during the last 30 days (Monthly Active Users)' },
@@ -42,7 +42,7 @@ class ServerBanner extends PureComponent {
     return (
       <div className='server-banner'>
         <div className='server-banner__introduction'>
-          <FormattedMessage id='server_banner.is_one_of_many' defaultMessage='{domain} is one of the many independent Mastodon servers you can use to participate in the fediverse.' values={{ domain: <strong>{domain}</strong>, mastodon: <a href='https://joinmastodon.org' target='_blank' rel='noopener'>Mastodon</a> }} />
+          <FormattedMessage id='server_banner.is_one_of_many' defaultMessage='{domain} is one of the many independent Truecolors servers you can use to participate in the fediverse.' values={{ domain: <strong>{domain}</strong>, truecolors: <a href='https://jointruecolors.org' target='_blank' rel='noopener'>Truecolors</a> }} />
         </div>
 
         <Link to='/about'>

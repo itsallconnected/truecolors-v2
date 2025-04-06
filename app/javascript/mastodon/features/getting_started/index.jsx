@@ -23,12 +23,12 @@ import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react';
 import PublicIcon from '@/material-icons/400-24px/public.svg?react';
 import SettingsIcon from '@/material-icons/400-24px/settings-fill.svg?react';
 import StarIcon from '@/material-icons/400-24px/star.svg?react';
-import { fetchFollowRequests } from 'mastodon/actions/accounts';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { LinkFooter } from 'mastodon/features/ui/components/link_footer';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { canManageReports, canViewAdminDashboard } from 'mastodon/permissions';
+import { fetchFollowRequests } from 'truecolors/actions/accounts';
+import Column from 'truecolors/components/column';
+import ColumnHeader from 'truecolors/components/column_header';
+import { LinkFooter } from 'truecolors/features/ui/components/link_footer';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
+import { canManageReports, canViewAdminDashboard } from 'truecolors/permissions';
 
 import { me, showTrends } from '../../initial_state';
 import { NavigationBar } from '../compose/components/navigation_bar';

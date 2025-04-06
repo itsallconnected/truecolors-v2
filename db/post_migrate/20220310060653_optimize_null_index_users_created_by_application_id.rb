@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require Rails.root.join('lib', 'mastodon', 'migration_helpers')
+require Rails.root.join('lib', 'truecolors', 'migration_helpers')
 
 class OptimizeNullIndexUsersCreatedByApplicationId < ActiveRecord::Migration[5.2]
-  include Mastodon::MigrationHelpers
+  include Truecolors::MigrationHelpers
 
   disable_ddl_transaction!
 

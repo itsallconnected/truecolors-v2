@@ -5,10 +5,10 @@ import { FormattedMessage, useIntl, defineMessages } from 'react-intl';
 import { Link, useHistory } from 'react-router-dom';
 
 import InventoryIcon from '@/material-icons/400-24px/inventory_2.svg?react';
-import { fetchNotificationPolicy } from 'mastodon/actions/notification_policies';
-import { Icon } from 'mastodon/components/icon';
-import { selectSettingsNotificationsMinimizeFilteredBanner } from 'mastodon/selectors/settings';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { fetchNotificationPolicy } from 'truecolors/actions/notification_policies';
+import { Icon } from 'truecolors/components/icon';
+import { selectSettingsNotificationsMinimizeFilteredBanner } from 'truecolors/selectors/settings';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const messages = defineMessages({
   filteredNotifications: {

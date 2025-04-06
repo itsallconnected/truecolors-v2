@@ -1,11 +1,11 @@
 import { createRoot } from 'react-dom/client';
 
-import { setupBrowserNotifications } from 'mastodon/actions/notifications';
-import Mastodon from 'mastodon/containers/mastodon';
-import { me } from 'mastodon/initial_state';
-import * as perf from 'mastodon/performance';
-import ready from 'mastodon/ready';
-import { store } from 'mastodon/store';
+import { setupBrowserNotifications } from 'truecolors/actions/notifications';
+import Truecolors from 'truecolors/containers/truecolors';
+import { me } from 'truecolors/initial_state';
+import * as perf from 'truecolors/performance';
+import ready from 'truecolors/ready';
+import { store } from 'truecolors/store';
 
 import { isProduction } from './utils/environment';
 
@@ -16,11 +16,11 @@ function main() {
   perf.start('main()');
 
   return ready(async () => {
-    const mountNode = document.getElementById('mastodon');
+    const mountNode = document.getElementById('truecolors');
     const props = JSON.parse(mountNode.getAttribute('data-props'));
 
     const root = createRoot(mountNode);
-    root.render(<Mastodon {...props} />);
+    root.render(<Truecolors {...props} />);
     store.dispatch(setupBrowserNotifications());
 
     if (isProduction() && me && 'serviceWorker' in navigator) {
@@ -36,7 +36,7 @@ function main() {
       }
 
       if (registration && 'Notification' in window && Notification.permission === 'granted') {
-        const registerPushNotifications = await import('mastodon/actions/push_notifications');
+        const registerPushNotifications = await import('truecolors/actions/push_notifications');
 
         store.dispatch(registerPushNotifications.register());
       }

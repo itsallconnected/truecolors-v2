@@ -3,7 +3,7 @@ br:
   about:
     contact_missing: Andermenet
     contact_unavailable: N'eus ket
-    hosted_on: Servijer Mastodon herberc'hiet war %{domain}
+    hosted_on: Servijer Truecolors herberc'hiet war %{domain}
     title: Diwar-benn
   accounts:
     followers:
@@ -308,8 +308,8 @@ br:
   appearance:
     discovery: Dizoloadur
     localization:
-      body: Gant tud a-youl vat eo troet Mastodon.
-      guide_link: https://crowdin.com/project/mastodon
+      body: Gant tud a-youl vat eo troet Truecolors.
+      guide_link: https://crowdin.com/project/truecolors
   application_mailer:
     view: 'Sellet :'
     view_status: Gwelet ar c'hannad
@@ -317,7 +317,7 @@ br:
     delete_account: Dilemel ar gont
     delete_account_html: Ma fell deoc'h dilemel ho kont e c'hellit <a href="%{path}">klikañ amañ</a>. Goulennet e vo ganeoc'h kadarnaat an obererezh.
     description:
-      prefix_invited_by_user: Pedet oc'h gant @%{name} da zont e-barzh ar servijer Mastodon-mañ!
+      prefix_invited_by_user: Pedet oc'h gant @%{name} da zont e-barzh ar servijer Truecolors-mañ!
     login: Mont tre
     logout: Digennaskañ
     migrate_account_html: Ma fell deoc'h adkas ar gont-mañ war-zu unan all e c'hellit <a href="%{path}">arventenniñ an dra-se amañ</a>.
@@ -503,7 +503,7 @@ br:
   settings:
     account: Kont
     account_settings: Arventennoù ar gont
-    back: Distreiñ da vMastodon
+    back: Distreiñ da vTruecolors
     development: Diorren
     edit_profile: Kemmañ ar profil
     featured_tags: Hashtagoù pennañ
@@ -534,8 +534,8 @@ br:
       '604800': 1 sizhunvezh
       '63113904': 2 vloavezh
   themes:
-    default: Mastodon (Teñval)
-    mastodon-light: Mastodon (Sklaer)
+    default: Truecolors (Teñval)
+    truecolors-light: Truecolors (Sklaer)
   time:
     formats:
       default: "%d a viz %b %Y, %H:%M"
@@ -562,14 +562,14 @@ br:
       apps_android_action: Tapit anezhañ war Google Play
       apps_ios_action: Pellgargañ war an App Store
       apps_step: Pellgargit hon arloadoù ofisiel.
-      apps_title: Arloadoù Mastodon
+      apps_title: Arloadoù Truecolors
       edit_profile_action: Personelaat
       edit_profile_title: Personelaat ho profil
       feature_action: Gouzout hiroc'h
       follow_action: Heuliañ
       share_action: Rannañ
       sign_in_action: Kevreañ
-      subject: Donemat e Mastodon
+      subject: Donemat e Truecolors
       title: Degemer mat e bourzh, %{name}!
   users:
     follow_limit_reached: N'hallit ket heulian muioc'h eget %{limit} a zen

@@ -11,13 +11,13 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import RefreshIcon from '@/material-icons/400-24px/refresh.svg?react';
-import { fetchFavourites, expandFavourites } from 'mastodon/actions/interactions';
-import { Account } from 'mastodon/components/account';
-import ColumnHeader from 'mastodon/components/column_header';
-import { Icon }  from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import Column from 'mastodon/features/ui/components/column';
+import { fetchFavourites, expandFavourites } from 'truecolors/actions/interactions';
+import { Account } from 'truecolors/components/account';
+import ColumnHeader from 'truecolors/components/column_header';
+import { Icon }  from 'truecolors/components/icon';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import ScrollableList from 'truecolors/components/scrollable_list';
+import Column from 'truecolors/features/ui/components/column';
 
 const messages = defineMessages({
   refresh: { id: 'refresh', defaultMessage: 'Refresh' },

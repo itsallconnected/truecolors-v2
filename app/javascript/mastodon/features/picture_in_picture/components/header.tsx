@@ -3,10 +3,10 @@ import { defineMessages, useIntl } from 'react-intl';
 import { Link } from 'react-router-dom';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { Avatar } from 'mastodon/components/avatar';
-import { DisplayName } from 'mastodon/components/display_name';
-import { IconButton } from 'mastodon/components/icon_button';
-import { useAppSelector } from 'mastodon/store';
+import { Avatar } from 'truecolors/components/avatar';
+import { DisplayName } from 'truecolors/components/display_name';
+import { IconButton } from 'truecolors/components/icon_button';
+import { useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },

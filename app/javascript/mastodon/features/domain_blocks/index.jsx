@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import BlockIcon from '@/material-icons/400-24px/block-fill.svg?react';
-import { Domain } from 'mastodon/components/domain';
+import { Domain } from 'truecolors/components/domain';
 
 import { fetchDomainBlocks, expandDomainBlocks } from '../../actions/domain_blocks';
 import { LoadingIndicator } from '../../components/loading_indicator';

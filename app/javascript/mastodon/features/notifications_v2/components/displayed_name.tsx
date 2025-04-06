@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import { useAppSelector } from 'mastodon/store';
+import { useAppSelector } from 'truecolors/store';
 
 export const DisplayedName: React.FC<{
   accountIds: string[];

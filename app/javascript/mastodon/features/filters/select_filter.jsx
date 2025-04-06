@@ -8,9 +8,9 @@ import { connect } from 'react-redux';
 import fuzzysort from 'fuzzysort';
 
 import AddIcon from '@/material-icons/400-24px/add.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import { toServerSideType } from 'mastodon/utils/filters';
-import { loupeIcon, deleteIcon } from 'mastodon/utils/icons';
+import { Icon }  from 'truecolors/components/icon';
+import { toServerSideType } from 'truecolors/utils/filters';
+import { loupeIcon, deleteIcon } from 'truecolors/utils/icons';
 
 const messages = defineMessages({
   search: { id: 'filter_modal.select_filter.search', defaultMessage: 'Search or create' },

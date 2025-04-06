@@ -23,7 +23,7 @@ if ENV['MASTODON_PROMETHEUS_EXPORTER_ENABLED'] == 'true'
     Rails.application.middleware.unshift PrometheusExporter::Middleware
   else
     # Include stripped down version of PrometheusExporter::Middleware that only collects queue time
-    require 'mastodon/middleware/prometheus_queue_time'
-    Rails.application.middleware.unshift Mastodon::Middleware::PrometheusQueueTime, instrument: false
+    require 'truecolors/middleware/prometheus_queue_time'
+    Rails.application.middleware.unshift Truecolors::Middleware::PrometheusQueueTime, instrument: false
   end
 end

@@ -10,12 +10,12 @@ import { connect } from 'react-redux';
 import { isEqual } from 'lodash';
 
 import TagIcon from '@/material-icons/400-24px/tag.svg?react';
-import { addColumn, removeColumn, moveColumn } from 'mastodon/actions/columns';
-import { connectHashtagStream } from 'mastodon/actions/streaming';
-import { expandHashtagTimeline, clearTimeline } from 'mastodon/actions/timelines';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
+import { addColumn, removeColumn, moveColumn } from 'truecolors/actions/columns';
+import { connectHashtagStream } from 'truecolors/actions/streaming';
+import { expandHashtagTimeline, clearTimeline } from 'truecolors/actions/timelines';
+import Column from 'truecolors/components/column';
+import ColumnHeader from 'truecolors/components/column_header';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
 
 import StatusListContainer from '../ui/containers/status_list_container';
 

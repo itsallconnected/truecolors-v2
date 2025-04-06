@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class PreviewCards < Base
     include ActionView::Helpers::NumberHelper
 

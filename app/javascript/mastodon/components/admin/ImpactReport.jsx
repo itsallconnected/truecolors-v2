@@ -5,8 +5,8 @@ import { FormattedNumber, FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
 
-import api from 'mastodon/api';
-import { Skeleton } from 'mastodon/components/skeleton';
+import api from 'truecolors/api';
+import { Skeleton } from 'truecolors/components/skeleton';
 
 export default class ImpactReport extends PureComponent {
 

@@ -16,14 +16,14 @@ import ReplyAllIcon from '@/material-icons/400-24px/reply_all.svg?react';
 import StarIcon from '@/material-icons/400-24px/star.svg?react';
 import RepeatDisabledIcon from '@/svg-icons/repeat_disabled.svg?react';
 import RepeatPrivateIcon from '@/svg-icons/repeat_private.svg?react';
-import { replyCompose } from 'mastodon/actions/compose';
-import { toggleReblog, toggleFavourite } from 'mastodon/actions/interactions';
-import { openModal } from 'mastodon/actions/modal';
-import { IconButton } from 'mastodon/components/icon_button';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { me } from 'mastodon/initial_state';
-import { makeGetStatus } from 'mastodon/selectors';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { replyCompose } from 'truecolors/actions/compose';
+import { toggleReblog, toggleFavourite } from 'truecolors/actions/interactions';
+import { openModal } from 'truecolors/actions/modal';
+import { IconButton } from 'truecolors/components/icon_button';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
+import { me } from 'truecolors/initial_state';
+import { makeGetStatus } from 'truecolors/selectors';
+import { WithRouterPropTypes } from 'truecolors/utils/react_router';
 
 const messages = defineMessages({
   reply: { id: 'status.reply', defaultMessage: 'Reply' },

@@ -62,17 +62,17 @@ docker-compose.override.yml
 /public/system
 
 # Ignore emoji map file
-/app/javascript/mastodon/features/emoji/emoji_map.json
-/app/javascript/mastodon/features/emoji/emoji_sheet.json
+/app/javascript/truecolors/features/emoji/emoji_map.json
+/app/javascript/truecolors/features/emoji/emoji_sheet.json
 
 # Ignore locale files
-/app/javascript/mastodon/locales/*.json
+/app/javascript/truecolors/locales/*.json
 /config/locales
 
 # Ignore vendored CSS reset
-app/javascript/styles/mastodon/reset.scss
+app/javascript/styles/truecolors/reset.scss
 
-# Ignore Javascript pending https://github.com/mastodon/mastodon/pull/23631
+# Ignore Javascript pending https://github.com/truecolors/truecolors/pull/23631
 *.js
 *.jsx
 

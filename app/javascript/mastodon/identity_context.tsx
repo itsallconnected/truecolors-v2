@@ -3,7 +3,7 @@ import { createContext, useContext } from 'react';
 
 import hoistStatics from 'hoist-non-react-statics';
 
-import type { InitialState } from 'mastodon/initial_state';
+import type { InitialState } from 'truecolors/initial_state';
 
 export interface IdentityContextType {
   signedIn: boolean;

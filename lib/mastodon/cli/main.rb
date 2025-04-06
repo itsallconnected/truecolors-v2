@@ -19,7 +19,7 @@ require_relative 'settings'
 require_relative 'statuses'
 require_relative 'upgrade'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class Main < Base
     desc 'media SUBCOMMAND ...ARGS', 'Manage media files'
     subcommand 'media', Media
@@ -72,7 +72,7 @@ module Mastodon::CLI
 
     desc 'version', 'Show version'
     def version
-      say(Mastodon::Version.to_s)
+      say(Truecolors::Version.to_s)
     end
   end
 end

@@ -18,7 +18,7 @@ class StreamingServerManager
       Open3.popen2e(
         {
           'REDIS_NAMESPACE' => REDIS_CONFIGURATION.base[:namespace],
-          'DB_NAME' => "#{ENV.fetch('DB_NAME', 'mastodon')}_test#{ENV.fetch('TEST_ENV_NUMBER', '')}",
+          'DB_NAME' => "#{ENV.fetch('DB_NAME', 'truecolors')}_test#{ENV.fetch('TEST_ENV_NUMBER', '')}",
           'RAILS_ENV' => ENV.fetch('RAILS_ENV', 'test'),
           'NODE_ENV' => ENV.fetch('STREAMING_NODE_ENV', 'development'),
           'PORT' => port.to_s,

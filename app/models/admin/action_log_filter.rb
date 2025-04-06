@@ -112,7 +112,7 @@ class Admin::ActionLogFilter
       normalized_domain = TagManager.instance.normalize_domain(value)
       latest_action_logs.where(human_identifier: normalized_domain, target_type: INSTANCE_TARGET_TYPES)
     else
-      raise Mastodon::InvalidParameterError, "Unknown filter: #{key}"
+      raise Truecolors::InvalidParameterError, "Unknown filter: #{key}"
     end
   end
 

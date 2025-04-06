@@ -3,7 +3,7 @@
 require 'concurrent'
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class EmailDomainBlocks < Base
     desc 'list', 'List blocked e-mail domains'
     def list

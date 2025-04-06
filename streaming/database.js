@@ -14,15 +14,15 @@ export function configFromEnv(env, environment) {
     development: {
       user: env.DB_USER || pg.defaults.user,
       password: env.DB_PASS || pg.defaults.password,
-      database: env.DB_NAME || 'mastodon_development',
+      database: env.DB_NAME || 'truecolors_development',
       host: env.DB_HOST || pg.defaults.host,
       port: parseIntFromEnvValue(env.DB_PORT, pg.defaults.port ?? 5432, 'DB_PORT')
     },
 
     production: {
-      user: env.DB_USER || 'mastodon',
+      user: env.DB_USER || 'truecolors',
       password: env.DB_PASS || '',
-      database: env.DB_NAME || 'mastodon_production',
+      database: env.DB_NAME || 'truecolors_production',
       host: env.DB_HOST || 'localhost',
       port: parseIntFromEnvValue(env.DB_PORT, 5432, 'DB_PORT')
     },
@@ -106,7 +106,7 @@ export function configFromEnv(env, environment) {
     connectionTimeoutMillis: 15000,
     // Deliberately set application_name to an empty string to prevent excessive
     // CPU usage with PG Bouncer. See:
-    // - https://github.com/mastodon/mastodon/pull/23958
+    // - https://github.com/truecolors/truecolors/pull/23958
     // - https://github.com/pgbouncer/pgbouncer/issues/349
     application_name: '',
   };

@@ -22,15 +22,15 @@ module Remotable
 
         begin
           Request.new(:get, url).perform do |response|
-            raise Mastodon::UnexpectedResponseError, response unless (200...300).cover?(response.code)
+            raise Truecolors::UnexpectedResponseError, response unless (200...300).cover?(response.code)
 
             public_send(:"#{attachment_name}=", ResponseWithLimit.new(response, limit))
           end
-        rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS => e
+        rescue Truecolors::UnexpectedResponseError, *Truecolors::HTTP_CONNECTION_ERRORS => e
           Rails.logger.debug { "Error fetching remote #{attachment_name}: #{e}" }
           public_send(:"#{attachment_name}=", nil) if public_send(:"#{attachment_name}_file_name").present?
           raise e unless suppress_errors
-        rescue Paperclip::Errors::NotIdentifiedByImageMagickError, Addressable::URI::InvalidURIError, Mastodon::HostValidationError, Mastodon::LengthValidationError, Paperclip::Error, Mastodon::DimensionsValidationError, Mastodon::StreamValidationError => e
+        rescue Paperclip::Errors::NotIdentifiedByImageMagickError, Addressable::URI::InvalidURIError, Truecolors::HostValidationError, Truecolors::LengthValidationError, Paperclip::Error, Truecolors::DimensionsValidationError, Truecolors::StreamValidationError => e
           Rails.logger.debug { "Error fetching remote #{attachment_name}: #{e}" }
           public_send(:"#{attachment_name}=", nil) if public_send(:"#{attachment_name}_file_name").present?
         end

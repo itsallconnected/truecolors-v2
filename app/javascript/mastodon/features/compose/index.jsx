@@ -16,9 +16,9 @@ import MenuIcon from '@/material-icons/400-24px/menu.svg?react';
 import NotificationsIcon from '@/material-icons/400-24px/notifications-fill.svg?react';
 import PublicIcon from '@/material-icons/400-24px/public.svg?react';
 import SettingsIcon from '@/material-icons/400-24px/settings-fill.svg?react';
-import { openModal } from 'mastodon/actions/modal';
-import Column from 'mastodon/components/column';
-import { Icon }  from 'mastodon/components/icon';
+import { openModal } from 'truecolors/actions/modal';
+import Column from 'truecolors/components/column';
+import { Icon }  from 'truecolors/components/icon';
 
 import elephantUIPlane from '../../../images/elephant_ui_plane.svg';
 import { changeComposing, mountCompose, unmountCompose } from '../../actions/compose';
@@ -113,7 +113,7 @@ class Compose extends PureComponent {
             <div className='drawer__inner' onFocus={this.onFocus}>
               <ComposeFormContainer autoFocus={!isMobile(window.innerWidth)} />
 
-              <div className='drawer__inner__mastodon'>
+              <div className='drawer__inner__truecolors'>
                 <img alt='' draggable='false' src={mascot || elephantUIPlane} />
               </div>
             </div>

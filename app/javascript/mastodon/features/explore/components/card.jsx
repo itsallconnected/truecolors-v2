@@ -8,12 +8,12 @@ import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { dismissSuggestion } from 'mastodon/actions/suggestions';
-import { Avatar } from 'mastodon/components/avatar';
-import { DisplayName } from 'mastodon/components/display_name';
-import { FollowButton } from 'mastodon/components/follow_button';
-import { IconButton } from 'mastodon/components/icon_button';
-import { domain } from 'mastodon/initial_state';
+import { dismissSuggestion } from 'truecolors/actions/suggestions';
+import { Avatar } from 'truecolors/components/avatar';
+import { DisplayName } from 'truecolors/components/display_name';
+import { FollowButton } from 'truecolors/components/follow_button';
+import { IconButton } from 'truecolors/components/icon_button';
+import { domain } from 'truecolors/initial_state';
 
 const messages = defineMessages({
   dismiss: { id: 'follow_suggestions.dismiss', defaultMessage: "Don't show again" },

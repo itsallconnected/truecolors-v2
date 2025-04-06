@@ -17,7 +17,7 @@ RSpec.describe CanonicalEmailBlock do
     end
 
     it 'sets the same hash even with extensions' do
-      subject.email = 'test+mastodon1@example.com'
+      subject.email = 'test+truecolors1@example.com'
       expect(subject.canonical_email_hash).to eq target_hash
     end
 

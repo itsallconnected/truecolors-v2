@@ -4,7 +4,7 @@ import { FormattedMessage } from 'react-intl';
 
 import { animated, config, useSpring } from '@react-spring/web';
 
-import { reduceMotion } from 'mastodon/initial_state';
+import { reduceMotion } from 'truecolors/initial_state';
 
 interface UploadAreaProps {
   active?: boolean;

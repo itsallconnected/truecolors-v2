@@ -1,7 +1,7 @@
 @use 'sass:color';
-@use '../mastodon/variables' as *;
+@use '../truecolors/variables' as *;
 @use 'variables' as *;
-@use '../mastodon/functions' as *;
+@use '../truecolors/functions' as *;
 
 body {
   --dropdown-border-color: hsl(240deg, 25%, 88%);

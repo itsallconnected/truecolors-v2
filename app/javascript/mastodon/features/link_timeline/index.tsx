@@ -4,13 +4,13 @@ import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
 
 import ExploreIcon from '@/material-icons/400-24px/explore.svg?react';
-import { expandLinkTimeline } from 'mastodon/actions/timelines';
-import { Column } from 'mastodon/components/column';
-import type { ColumnRef } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import StatusListContainer from 'mastodon/features/ui/containers/status_list_container';
-import type { Card } from 'mastodon/models/status';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { expandLinkTimeline } from 'truecolors/actions/timelines';
+import { Column } from 'truecolors/components/column';
+import type { ColumnRef } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import StatusListContainer from 'truecolors/features/ui/containers/status_list_container';
+import type { Card } from 'truecolors/models/status';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 export const LinkTimeline: React.FC<{
   multiColumn: boolean;

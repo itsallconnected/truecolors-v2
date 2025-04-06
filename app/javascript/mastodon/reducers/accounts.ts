@@ -6,11 +6,11 @@ import {
   unfollowAccountSuccess,
   importAccounts,
   revealAccount,
-} from 'mastodon/actions/accounts_typed';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
-import { me } from 'mastodon/initial_state';
-import type { Account } from 'mastodon/models/account';
-import { createAccountFromServerJSON } from 'mastodon/models/account';
+} from 'truecolors/actions/accounts_typed';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
+import { me } from 'truecolors/initial_state';
+import type { Account } from 'truecolors/models/account';
+import { createAccountFromServerJSON } from 'truecolors/models/account';
 
 const initialState = ImmutableMap<string, Account>();
 

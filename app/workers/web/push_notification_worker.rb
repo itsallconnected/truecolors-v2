@@ -81,7 +81,7 @@ class Web::PushNotificationWorker
       if (400..499).cover?(response.code) && ![408, 429].include?(response.code)
         @subscription.destroy!
       elsif !(200...300).cover?(response.code)
-        raise Mastodon::UnexpectedResponseError, response
+        raise Truecolors::UnexpectedResponseError, response
       end
     end
   end

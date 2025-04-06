@@ -5,7 +5,7 @@ import { defineMessages, useIntl } from 'react-intl';
 import classNames from 'classnames';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { IconButton } from 'mastodon/components/icon_button';
+import { IconButton } from 'truecolors/components/icon_button';
 
 import { ZoomableImage } from './zoomable_image';
 

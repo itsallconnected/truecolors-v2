@@ -6,15 +6,15 @@ import {
   apiDismissNotificationRequest,
   apiAcceptNotificationRequests,
   apiDismissNotificationRequests,
-} from 'mastodon/api/notifications';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
+} from 'truecolors/api/notifications';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
 import type {
   ApiNotificationGroupJSON,
   ApiNotificationJSON,
-} from 'mastodon/api_types/notifications';
-import type { ApiStatusJSON } from 'mastodon/api_types/statuses';
-import type { AppDispatch } from 'mastodon/store';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+} from 'truecolors/api_types/notifications';
+import type { ApiStatusJSON } from 'truecolors/api_types/statuses';
+import type { AppDispatch } from 'truecolors/store';
+import { createDataLoadingThunk } from 'truecolors/store/typed_functions';
 
 import { importFetchedAccounts, importFetchedStatuses } from './importer';
 import { decreasePendingRequestsCount } from './notification_policies';

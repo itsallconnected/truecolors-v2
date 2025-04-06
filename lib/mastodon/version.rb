@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Mastodon
+module Truecolors
   module Version
     module_function
 
@@ -45,7 +45,7 @@ module Mastodon
 
     def api_versions
       {
-        mastodon: 5,
+        truecolors: 5,
       }
     end
 
@@ -75,19 +75,19 @@ module Mastodon
     end
 
     def user_agent
-      @user_agent ||= "Mastodon/#{Version} (#{HTTP::Request::USER_AGENT}; +http#{Rails.configuration.x.use_https ? 's' : ''}://#{Rails.configuration.x.web_domain}/)"
+      @user_agent ||= "Truecolors/#{Version} (#{HTTP::Request::USER_AGENT}; +http#{Rails.configuration.x.use_https ? 's' : ''}://#{Rails.configuration.x.web_domain}/)"
     end
 
     def version_configuration
-      mastodon_configuration.version
+      truecolors_configuration.version
     end
 
     def source_configuration
-      mastodon_configuration.source
+      truecolors_configuration.source
     end
 
-    def mastodon_configuration
-      Rails.configuration.x.mastodon
+    def truecolors_configuration
+      Rails.configuration.x.truecolors
     end
   end
 end

@@ -3,8 +3,8 @@ import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 
 import StarIcon from '@/material-icons/400-24px/star-fill.svg?react';
-import type { NotificationGroupFavourite } from 'mastodon/models/notification_group';
-import { useAppSelector } from 'mastodon/store';
+import type { NotificationGroupFavourite } from 'truecolors/models/notification_group';
+import { useAppSelector } from 'truecolors/store';
 
 import type { LabelRenderer } from './notification_group_with_status';
 import { NotificationGroupWithStatus } from './notification_group_with_status';

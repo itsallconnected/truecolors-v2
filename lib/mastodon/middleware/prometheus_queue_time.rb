@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Mastodon
+module Truecolors
   module Middleware
     class PrometheusQueueTime < ::PrometheusExporter::Middleware
       # Overwrite to only collect the queue time metric

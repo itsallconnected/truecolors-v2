@@ -7,8 +7,8 @@ import { Link } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-import { openModal } from 'mastodon/actions/modal';
-import { disabledAccountId, movedToAccountId, domain } from 'mastodon/initial_state';
+import { openModal } from 'truecolors/actions/modal';
+import { disabledAccountId, movedToAccountId, domain } from 'truecolors/initial_state';
 
 const mapStateToProps = (state) => ({
   disabledAcct: state.getIn(['accounts', disabledAccountId, 'acct']),

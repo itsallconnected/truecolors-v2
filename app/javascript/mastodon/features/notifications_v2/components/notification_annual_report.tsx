@@ -5,10 +5,10 @@ import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 
 import CelebrationIcon from '@/material-icons/400-24px/celebration.svg?react';
-import { openModal } from 'mastodon/actions/modal';
-import { Icon } from 'mastodon/components/icon';
-import type { NotificationGroupAnnualReport } from 'mastodon/models/notification_group';
-import { useAppDispatch } from 'mastodon/store';
+import { openModal } from 'truecolors/actions/modal';
+import { Icon } from 'truecolors/components/icon';
+import type { NotificationGroupAnnualReport } from 'truecolors/models/notification_group';
+import { useAppDispatch } from 'truecolors/store';
 
 export const NotificationAnnualReport: React.FC<{
   notification: NotificationGroupAnnualReport;
@@ -43,7 +43,7 @@ export const NotificationAnnualReport: React.FC<{
         <p>
           <FormattedMessage
             id='notification.annual_report.message'
-            defaultMessage="Your {year} #Wrapstodon awaits! Unveil your year's highlights and memorable moments on Mastodon!"
+            defaultMessage="Your {year} #Wrapstodon awaits! Unveil your year's highlights and memorable moments on Truecolors!"
             values={{ year }}
           />
         </p>

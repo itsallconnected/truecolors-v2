@@ -13,7 +13,7 @@ class TranslateStatusService < BaseService
     target_language = target_language.split(/[_-]/).first unless target_languages.include?(target_language)
     @target_language = target_language
 
-    raise Mastodon::NotPermittedError unless permitted?
+    raise Truecolors::NotPermittedError unless permitted?
 
     status_translation = Rails.cache.fetch("v2:translations/#{@status.language}/#{@target_language}/#{content_hash}", expires_in: CACHE_TTL) do
       translations = translation_backend.translate(@source_texts.values, @status.language, @target_language)

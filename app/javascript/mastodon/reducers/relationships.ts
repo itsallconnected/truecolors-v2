@@ -2,10 +2,10 @@ import { isFulfilled } from '@reduxjs/toolkit';
 import type { Reducer } from '@reduxjs/toolkit';
 import { Map as ImmutableMap } from 'immutable';
 
-import type { ApiRelationshipJSON } from 'mastodon/api_types/relationships';
-import type { Account } from 'mastodon/models/account';
-import { createRelationship } from 'mastodon/models/relationship';
-import type { Relationship } from 'mastodon/models/relationship';
+import type { ApiRelationshipJSON } from 'truecolors/api_types/relationships';
+import type { Account } from 'truecolors/models/account';
+import { createRelationship } from 'truecolors/models/relationship';
+import type { Relationship } from 'truecolors/models/relationship';
 
 import { submitAccountNote } from '../actions/account_notes';
 import {

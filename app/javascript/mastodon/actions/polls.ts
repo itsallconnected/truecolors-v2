@@ -1,10 +1,10 @@
-import { apiGetPoll, apiPollVote } from 'mastodon/api/polls';
-import type { ApiPollJSON } from 'mastodon/api_types/polls';
-import { createPollFromServerJSON } from 'mastodon/models/poll';
+import { apiGetPoll, apiPollVote } from 'truecolors/api/polls';
+import type { ApiPollJSON } from 'truecolors/api_types/polls';
+import { createPollFromServerJSON } from 'truecolors/models/poll';
 import {
   createAppAsyncThunk,
   createDataLoadingThunk,
-} from 'mastodon/store/typed_functions';
+} from 'truecolors/store/typed_functions';
 
 import { importPolls } from './importer/polls';
 

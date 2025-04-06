@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/upgrade'
+require 'truecolors/cli/upgrade'
 
-RSpec.describe Mastodon::CLI::Upgrade do
+RSpec.describe Truecolors::CLI::Upgrade do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

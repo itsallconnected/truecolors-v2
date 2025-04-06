@@ -5,8 +5,8 @@ import { defineMessages, FormattedMessage, injectIntl } from 'react-intl';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
-import { AvatarOverlay } from 'mastodon/components/avatar_overlay';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
+import { AvatarOverlay } from 'truecolors/components/avatar_overlay';
+import { RelativeTimestamp } from 'truecolors/components/relative_timestamp';
 
 // This needs to be kept in sync with app/models/report.rb
 const messages = defineMessages({

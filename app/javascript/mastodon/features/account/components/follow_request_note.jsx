@@ -5,7 +5,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 
 import CheckIcon from '@/material-icons/400-24px/check.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { Icon }  from 'mastodon/components/icon';
+import { Icon }  from 'truecolors/components/icon';
 
 export default class FollowRequestNote extends ImmutablePureComponent {
 

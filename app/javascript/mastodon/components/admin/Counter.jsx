@@ -7,8 +7,8 @@ import classNames from 'classnames';
 
 import { Sparklines, SparklinesCurve } from 'react-sparklines';
 
-import api from 'mastodon/api';
-import { Skeleton } from 'mastodon/components/skeleton';
+import api from 'truecolors/api';
+import { Skeleton } from 'truecolors/components/skeleton';
 
 const percIncrease = (a, b) => {
   let percent;

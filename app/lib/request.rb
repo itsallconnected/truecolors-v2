@@ -91,7 +91,7 @@ class Request
 
     @signing = nil
 
-    raise Mastodon::HostValidationError, 'Instance does not support hidden service connections' if block_hidden_service?
+    raise Truecolors::HostValidationError, 'Instance does not support hidden service connections' if block_hidden_service?
 
     set_common_headers!
     set_digest! if options.key?(:body)
@@ -150,7 +150,7 @@ class Request
   private
 
   def set_common_headers!
-    @headers['User-Agent']      = Mastodon::Version.user_agent
+    @headers['User-Agent']      = Truecolors::Version.user_agent
     @headers['Host']            = @url.host
     @headers['Date']            = Time.now.utc.httpdate
     @headers['Accept-Encoding'] = 'gzip' if @verb != :head
@@ -236,13 +236,13 @@ class Request
       require_limit_not_exceeded!(limit)
 
       contents = truncated_body(limit)
-      raise Mastodon::LengthValidationError, "Body size exceeds limit of #{limit}" if contents.bytesize > limit
+      raise Truecolors::LengthValidationError, "Body size exceeds limit of #{limit}" if contents.bytesize > limit
 
       contents
     end
 
     def require_limit_not_exceeded!(limit)
-      raise Mastodon::LengthValidationError, "Content-Length #{content_length} exceeds limit of #{limit}" if content_length.present? && content_length > limit
+      raise Truecolors::LengthValidationError, "Content-Length #{content_length} exceeds limit of #{limit}" if content_length.present? && content_length > limit
     end
   end
 
@@ -335,7 +335,7 @@ class Request
 
         return if Rails.env.development? || Rails.configuration.x.private_address_exceptions.any? { |range| range.include?(addr) }
 
-        raise Mastodon::PrivateNetworkAddressError, host if PrivateAddressCheck.private_address?(addr)
+        raise Truecolors::PrivateNetworkAddressError, host if PrivateAddressCheck.private_address?(addr)
       end
     end
   end

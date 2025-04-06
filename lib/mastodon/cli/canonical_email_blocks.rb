@@ -3,7 +3,7 @@
 require 'concurrent'
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class CanonicalEmailBlocks < Base
     desc 'find EMAIL', 'Find a given e-mail address in the canonical e-mail blocks'
     long_desc <<-LONG_DESC

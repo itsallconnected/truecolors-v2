@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Mastodon::RedisConfiguration do
+RSpec.describe Truecolors::RedisConfiguration do
   let(:redis_environment) { described_class.new }
 
   before do

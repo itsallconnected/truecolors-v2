@@ -3,8 +3,8 @@ import { useCallback } from 'react';
 import { FormattedMessage } from 'react-intl';
 
 import ArrowBackIcon from '@/material-icons/400-24px/arrow_back.svg?react';
-import { Icon } from 'mastodon/components/icon';
-import { ButtonInTabsBar } from 'mastodon/features/ui/util/columns_context';
+import { Icon } from 'truecolors/components/icon';
+import { ButtonInTabsBar } from 'truecolors/features/ui/util/columns_context';
 
 import { useAppHistory } from './router';
 
@@ -16,7 +16,7 @@ function useHandleClick(onClick?: OnClickCallback) {
   return useCallback(() => {
     if (onClick) {
       onClick();
-    } else if (history.location.state?.fromMastodon) {
+    } else if (history.location.state?.fromTruecolors) {
       history.goBack();
     } else {
       history.push('/');

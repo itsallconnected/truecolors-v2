@@ -52,11 +52,11 @@ RSpec.describe Account::FinderConcern do
   end
 
   describe 'remote finders' do
-    let!(:account) { Fabricate(:account, username: 'Alice', domain: 'mastodon.social') }
+    let!(:account) { Fabricate(:account, username: 'Alice', domain: 'truecolors.social') }
 
     describe '.find_remote' do
       it 'returns exact match result' do
-        expect(Account.find_remote('alice', 'mastodon.social')).to eq(account)
+        expect(Account.find_remote('alice', 'truecolors.social')).to eq(account)
       end
 
       it 'returns case-insensitive result' do
@@ -64,7 +64,7 @@ RSpec.describe Account::FinderConcern do
       end
 
       it 'returns nil when username does not match' do
-        expect(Account.find_remote('a_ice', 'mastodon.social')).to be_nil
+        expect(Account.find_remote('a_ice', 'truecolors.social')).to be_nil
       end
 
       it 'returns nil when domain does not match' do
@@ -86,11 +86,11 @@ RSpec.describe Account::FinderConcern do
 
     describe '.find_remote!' do
       it 'returns matching result' do
-        expect(Account.find_remote!('alice', 'mastodon.social')).to eq(account)
+        expect(Account.find_remote!('alice', 'truecolors.social')).to eq(account)
       end
 
       it 'raises on non-matching result' do
-        expect { Account.find_remote!('missing', 'mastodon.host') }.to raise_error(ActiveRecord::RecordNotFound)
+        expect { Account.find_remote!('missing', 'truecolors.host') }.to raise_error(ActiveRecord::RecordNotFound)
       end
 
       it 'raises with blank username' do

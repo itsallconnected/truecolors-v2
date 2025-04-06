@@ -22,7 +22,7 @@ export async function loadLocale() {
       /* webpackChunkName: "locale/[request]" */
       /* webpackInclude: /\.json$/ */
       /* webpackPreload: true */
-      `mastodon/locales/${locale}.json`
+      `truecolors/locales/${locale}.json`
     )) as LocaleData['messages'];
 
     setLocale({ messages: localeData, locale });

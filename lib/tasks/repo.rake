@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-REPOSITORY_NAME = 'mastodon/mastodon'
+REPOSITORY_NAME = 'truecolors/truecolors'
 
 namespace :repo do
   desc 'Generate the AUTHORS.md file'
@@ -11,7 +11,7 @@ namespace :repo do
       Authors
       =======
 
-      Mastodon is available on [GitHub](https://github.com/#{REPOSITORY_NAME})
+      Truecolors is available on [GitHub](https://github.com/#{REPOSITORY_NAME})
       and provided thanks to the work of the following contributors:
 
     HEADER
@@ -34,7 +34,7 @@ namespace :repo do
 
     file << <<~FOOTER
 
-      This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/mastodon/mastodon/graphs/contributors) instead.
+      This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/truecolors/truecolors/graphs/contributors) instead.
     FOOTER
   end
 
@@ -96,7 +96,7 @@ namespace :repo do
     pastel = Pastel.new
 
     missing_yaml_files = I18n.available_locales.reject { |locale| Rails.root.join('config', 'locales', "#{locale}.yml").exist? }
-    missing_json_files = I18n.available_locales.reject { |locale| Rails.root.join('app', 'javascript', 'mastodon', 'locales', "#{locale}.json").exist? }
+    missing_json_files = I18n.available_locales.reject { |locale| Rails.root.join('app', 'javascript', 'truecolors', 'locales', "#{locale}.json").exist? }
 
     locales_in_files = Rails.root.glob('config/locales/*.yml').map do |path|
       file_name = File.basename(path, '.yml')

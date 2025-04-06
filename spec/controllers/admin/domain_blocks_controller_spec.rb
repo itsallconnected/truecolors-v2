@@ -26,8 +26,8 @@ RSpec.describe Admin::DomainBlocksController do
         form_domain_block_batch: {
           domain_blocks_attributes: {
             '0' => { enabled: '1', domain: 'example.com', severity: 'silence' },
-            '1' => { enabled: '0', domain: 'mastodon.social', severity: 'suspend' },
-            '2' => { enabled: '1', domain: 'mastodon.online', severity: 'suspend' },
+            '1' => { enabled: '0', domain: 'truecolors.social', severity: 'suspend' },
+            '2' => { enabled: '1', domain: 'truecolors.online', severity: 'suspend' },
           },
         },
       }

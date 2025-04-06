@@ -139,7 +139,7 @@ class AccountSearchService < BaseService
   end
 
   def call(query, account = nil, options = {})
-    MastodonOTELTracer.in_span('AccountSearchService#call') do |span|
+    TruecolorsOTELTracer.in_span('AccountSearchService#call') do |span|
       @query   = query&.strip&.gsub(/\A@/, '')
       @limit   = options[:limit].to_i
       @offset  = options[:offset].to_i

@@ -86,7 +86,7 @@ namespace :tests do
         exit(1)
       end
 
-      unless PreviewCard.where(id: PreviewCardsStatus.where(status_id: 12).select(:preview_card_id)).pluck(:url) == ['https://joinmastodon.org/']
+      unless PreviewCard.where(id: PreviewCardsStatus.where(status_id: 12).select(:preview_card_id)).pluck(:url) == ['https://jointruecolors.org/']
         puts 'Preview cards not deduplicated as expected'
         exit(1)
       end
@@ -396,7 +396,7 @@ namespace :tests do
         INSERT INTO "statuses"
           (id, account_id, text, created_at, updated_at)
         VALUES
-          (12, 1, 'check out https://joinmastodon.org/', now(), now());
+          (12, 1, 'check out https://jointruecolors.org/', now(), now());
 
         -- mentions (from previous statuses)
 
@@ -492,7 +492,7 @@ namespace :tests do
         INSERT INTO "preview_cards"
           (id, url, title, created_at, updated_at)
         VALUES
-          (1, 'https://joinmastodon.org/', 'Mastodon - Decentralized social media', now(), now());
+          (1, 'https://jointruecolors.org/', 'Truecolors - Decentralized social media', now(), now());
 
         -- many-to-many association between preview cards and statuses
 

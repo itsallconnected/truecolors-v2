@@ -19,19 +19,19 @@ class SoftwareUpdateCheckService < BaseService
   end
 
   def fetch_update_notices
-    Request.new(:get, "#{api_url}?version=#{version}").add_headers('Accept' => 'application/json', 'User-Agent' => 'Mastodon update checker').perform do |res|
+    Request.new(:get, "#{api_url}?version=#{version}").add_headers('Accept' => 'application/json', 'User-Agent' => 'Truecolors update checker').perform do |res|
       return Oj.load(res.body_with_limit, mode: :strict) if res.code == 200
     end
-  rescue *Mastodon::HTTP_CONNECTION_ERRORS, Oj::ParseError
+  rescue *Truecolors::HTTP_CONNECTION_ERRORS, Oj::ParseError
     nil
   end
 
   def api_url
-    Rails.configuration.x.mastodon.software_update_url
+    Rails.configuration.x.truecolors.software_update_url
   end
 
   def version
-    @version ||= Mastodon::Version.to_s.split('+')[0]
+    @version ||= Truecolors::Version.to_s.split('+')[0]
   end
 
   def process_update_notices!(update_notices)

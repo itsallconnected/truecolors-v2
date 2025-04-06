@@ -1,5 +1,5 @@
 name: Bug Report (Web Interface)
-description: There is a problem using Mastodon's web interface.
+description: There is a problem using Truecolors's web interface.
 labels: ['status/to triage', 'area/web interface']
 type: Bug
 body:
@@ -39,14 +39,14 @@ body:
       required: false
   - type: input
     attributes:
-      label: Mastodon instance
-      description: The address of the Mastodon instance where you experienced the issue
-      placeholder: mastodon.social
+      label: Truecolors instance
+      description: The address of the Truecolors instance where you experienced the issue
+      placeholder: truecolors.social
     validations:
       required: true
   - type: input
     attributes:
-      label: Mastodon version
+      label: Truecolors version
       description: |
         This is displayed at the bottom of the About page, eg. `v4.4.0-alpha.1`
       placeholder: v4.3.0

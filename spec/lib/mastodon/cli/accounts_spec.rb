@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/accounts'
+require 'truecolors/cli/accounts'
 
-RSpec.describe Mastodon::CLI::Accounts do
+RSpec.describe Truecolors::CLI::Accounts do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }
@@ -788,7 +788,7 @@ RSpec.describe Mastodon::CLI::Accounts do
 
       context 'when an UnexpectedResponseError is raised' do
         it 'displays a failure message' do
-          allow(account_example_com_a).to receive(:reset_avatar!).and_raise(Mastodon::UnexpectedResponseError)
+          allow(account_example_com_a).to receive(:reset_avatar!).and_raise(Truecolors::UnexpectedResponseError)
 
           expect { subject }
             .to output_results("Account failed: #{account_example_com_a.username}@#{account_example_com_a.domain}")
@@ -1183,7 +1183,7 @@ RSpec.describe Mastodon::CLI::Accounts do
 
       context 'when a private network address error occurs' do
         before do
-          stub_request(:head, 'https://example.net/users/tales').to_raise(Mastodon::PrivateNetworkAddressError)
+          stub_request(:head, 'https://example.net/users/tales').to_raise(Truecolors::PrivateNetworkAddressError)
         end
 
         it_behaves_like 'an unavailable domain'

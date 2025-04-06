@@ -34,7 +34,7 @@ class SoftwareUpdate < ApplicationRecord
 
   class << self
     def check_enabled?
-      Rails.configuration.x.mastodon.software_update_url.present?
+      Rails.configuration.x.truecolors.software_update_url.present?
     end
 
     def by_version
@@ -55,6 +55,6 @@ class SoftwareUpdate < ApplicationRecord
   private
 
   def runtime_version
-    Mastodon::Version.gem_version
+    Truecolors::Version.gem_version
   end
 end

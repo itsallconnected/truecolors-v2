@@ -99,18 +99,18 @@ class ManifestSerializer < ActiveModel::Serializer
     [
       {
         platform: 'play',
-        url: 'https://play.google.com/store/apps/details?id=org.joinmastodon.android',
-        id: 'org.joinmastodon.android',
+        url: 'https://play.google.com/store/apps/details?id=org.jointruecolors.android',
+        id: 'org.jointruecolors.android',
       },
       {
         platform: 'itunes',
-        url: 'https://apps.apple.com/us/app/mastodon-for-iphone/id1571998974',
+        url: 'https://apps.apple.com/us/app/truecolors-for-iphone/id1571998974',
         id: 'id1571998974',
       },
       {
         platform: 'f-droid',
-        url: 'https://f-droid.org/en/packages/org.joinmastodon.android/',
-        id: 'org.joinmastodon.android',
+        url: 'https://f-droid.org/en/packages/org.jointruecolors.android/',
+        id: 'org.jointruecolors.android',
       },
     ]
   end

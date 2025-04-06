@@ -99,7 +99,7 @@ class Api::V1::AccountsController < Api::BaseController
   end
 
   def check_accounts_limit
-    raise(Mastodon::ValidationError) if account_ids.size > DEFAULT_ACCOUNTS_LIMIT
+    raise(Truecolors::ValidationError) if account_ids.size > DEFAULT_ACCOUNTS_LIMIT
   end
 
   def check_following_self

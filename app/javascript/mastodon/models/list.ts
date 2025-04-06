@@ -1,7 +1,7 @@
 import type { RecordOf } from 'immutable';
 import { Record } from 'immutable';
 
-import type { ApiListJSON } from 'mastodon/api_types/lists';
+import type { ApiListJSON } from 'truecolors/api_types/lists';
 
 type ListShape = Required<ApiListJSON>; // no changes from server shape
 export type List = RecordOf<ListShape>;

@@ -21,7 +21,7 @@ RSpec.describe VerifyLinkService do
         <<~HTML
           <!doctype html>
           <body>
-            <a href="#{ActivityPub::TagManager.instance.url_for(account)}" rel="me">Follow me on Mastodon</a>
+            <a href="#{ActivityPub::TagManager.instance.url_for(account)}" rel="me">Follow me on Truecolors</a>
           </body>
         HTML
       end
@@ -36,7 +36,7 @@ RSpec.describe VerifyLinkService do
         <<~HTML
           <!doctype html>
           <body>
-            <a href="#{ActivityPub::TagManager.instance.url_for(account)}" rel="me noopener noreferrer" target="_blank">Follow me on Mastodon</a>
+            <a href="#{ActivityPub::TagManager.instance.url_for(account)}" rel="me noopener noreferrer" target="_blank">Follow me on Truecolors</a>
           </body>
         HTML
       end
@@ -51,7 +51,7 @@ RSpec.describe VerifyLinkService do
         <<~HTML
           <!doctype html>
           <body>
-            <a href="#{ActivityPub::TagManager.instance.url_for(account)}" rel=ME>Follow me on Mastodon</a>
+            <a href="#{ActivityPub::TagManager.instance.url_for(account)}" rel=ME>Follow me on Truecolors</a>
           </body>
         HTML
       end
@@ -135,7 +135,7 @@ RSpec.describe VerifyLinkService do
             <link type="text/html" rel="me" />
           </head>
           <body>
-            <a rel="me" target="_blank">Follow me on Mastodon</a>
+            <a rel="me" target="_blank">Follow me on Truecolors</a>
           </body>
         HTML
       end
@@ -175,7 +175,7 @@ RSpec.describe VerifyLinkService do
         <<~HTML
           <!doctype html>
           <body>
-            <a href="https://profile.example.com/alice" rel="me">Follow me on Mastodon</a>
+            <a href="https://profile.example.com/alice" rel="me">Follow me on Truecolors</a>
           </body>
         HTML
       end
@@ -187,12 +187,12 @@ RSpec.describe VerifyLinkService do
 
     context 'when the link contains a link with a missing protocol slash' do
       # This was seen in the wild where a user had three pages:
-      # 1. their mastodon profile, which linked to github and the personal website
-      # 2. their personal website correctly linking back to mastodon
+      # 1. their truecolors profile, which linked to github and the personal website
+      # 2. their personal website correctly linking back to truecolors
       # 3. a github profile that was linking to the personal website, but with
       #    a malformed protocol of http:/
       #
-      # This caused link verification between the mastodon profile and the
+      # This caused link verification between the truecolors profile and the
       # website to fail.
       #
       # apparently github allows the user to enter website URLs with a single

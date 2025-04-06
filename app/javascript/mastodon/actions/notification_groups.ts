@@ -3,28 +3,28 @@ import { createAction } from '@reduxjs/toolkit';
 import {
   apiClearNotifications,
   apiFetchNotificationGroups,
-} from 'mastodon/api/notifications';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
+} from 'truecolors/api/notifications';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
 import type {
   ApiNotificationGroupJSON,
   ApiNotificationJSON,
   NotificationType,
-} from 'mastodon/api_types/notifications';
-import { allNotificationTypes } from 'mastodon/api_types/notifications';
-import type { ApiStatusJSON } from 'mastodon/api_types/statuses';
-import { usePendingItems } from 'mastodon/initial_state';
-import type { NotificationGap } from 'mastodon/reducers/notification_groups';
+} from 'truecolors/api_types/notifications';
+import { allNotificationTypes } from 'truecolors/api_types/notifications';
+import type { ApiStatusJSON } from 'truecolors/api_types/statuses';
+import { usePendingItems } from 'truecolors/initial_state';
+import type { NotificationGap } from 'truecolors/reducers/notification_groups';
 import {
   selectSettingsNotificationsExcludedTypes,
   selectSettingsNotificationsGroupFollows,
   selectSettingsNotificationsQuickFilterActive,
   selectSettingsNotificationsShows,
-} from 'mastodon/selectors/settings';
-import type { AppDispatch, RootState } from 'mastodon/store';
+} from 'truecolors/selectors/settings';
+import type { AppDispatch, RootState } from 'truecolors/store';
 import {
   createAppAsyncThunk,
   createDataLoadingThunk,
-} from 'mastodon/store/typed_functions';
+} from 'truecolors/store/typed_functions';
 
 import { importFetchedAccounts, importFetchedStatuses } from './importer';
 import { NOTIFICATIONS_FILTER_SET } from './notifications';

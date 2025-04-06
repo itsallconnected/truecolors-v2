@@ -3,8 +3,8 @@ import { useCallback, useState } from 'react';
 import { useIntl, defineMessages } from 'react-intl';
 
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import { Icon } from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
+import { Icon } from 'truecolors/components/icon';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
 
 const messages = defineMessages({
   load_more: { id: 'status.load_more', defaultMessage: 'Load more' },

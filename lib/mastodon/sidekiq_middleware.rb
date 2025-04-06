@@ -1,13 +1,13 @@
 # frozen_string_literal: true
 
-class Mastodon::SidekiqMiddleware
+class Truecolors::SidekiqMiddleware
   BACKTRACE_LIMIT = 3
 
   def call(_worker_class, job, _queue, &block)
     setup_query_log_tags(job) do
-      Chewy.strategy(:mastodon, &block)
+      Chewy.strategy(:truecolors, &block)
     end
-  rescue Mastodon::HostValidationError
+  rescue Truecolors::HostValidationError
     # Do not retry
   rescue => e
     clean_up_elasticsearch_connections!

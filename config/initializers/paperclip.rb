@@ -93,8 +93,8 @@ if ENV['S3_ENABLED'] == 'true'
   Paperclip::Attachment.default_options[:s3_headers]['X-Amz-Storage-Class'] = ENV['S3_STORAGE_CLASS'] if ENV.has_key?('S3_STORAGE_CLASS')
 
   # Some S3-compatible providers might not actually be compatible with some APIs
-  # used by kt-paperclip, see https://github.com/mastodon/mastodon/issues/16822
-  # and https://github.com/mastodon/mastodon/issues/26394
+  # used by kt-paperclip, see https://github.com/truecolors/truecolors/issues/16822
+  # and https://github.com/truecolors/truecolors/issues/26394
   module Paperclip
     module Storage
       module S3Extensions

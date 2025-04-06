@@ -10,7 +10,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 
 import { length } from 'stringz';
 
-import { missingAltTextModal } from 'mastodon/initial_state';
+import { missingAltTextModal } from 'truecolors/initial_state';
 
 import AutosuggestInput from '../../../components/autosuggest_input';
 import AutosuggestTextarea from '../../../components/autosuggest_textarea';

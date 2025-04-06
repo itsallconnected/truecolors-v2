@@ -11,16 +11,16 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 import { HotKeys } from 'react-hotkeys';
 
-import { focusApp, unfocusApp, changeLayout } from 'mastodon/actions/app';
-import { synchronouslySubmitMarkers, submitMarkers, fetchMarkers } from 'mastodon/actions/markers';
-import { fetchNotifications } from 'mastodon/actions/notification_groups';
-import { INTRODUCTION_VERSION } from 'mastodon/actions/onboarding';
-import { AlertsController } from 'mastodon/components/alerts_controller';
-import { HoverCardController } from 'mastodon/components/hover_card_controller';
-import { PictureInPicture } from 'mastodon/features/picture_in_picture';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { layoutFromWindow } from 'mastodon/is_mobile';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { focusApp, unfocusApp, changeLayout } from 'truecolors/actions/app';
+import { synchronouslySubmitMarkers, submitMarkers, fetchMarkers } from 'truecolors/actions/markers';
+import { fetchNotifications } from 'truecolors/actions/notification_groups';
+import { INTRODUCTION_VERSION } from 'truecolors/actions/onboarding';
+import { AlertsController } from 'truecolors/components/alerts_controller';
+import { HoverCardController } from 'truecolors/components/hover_card_controller';
+import { PictureInPicture } from 'truecolors/features/picture_in_picture';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
+import { layoutFromWindow } from 'truecolors/is_mobile';
+import { WithRouterPropTypes } from 'truecolors/utils/react_router';
 
 import { uploadCompose, resetCompose, changeComposeSpoilerness } from '../../actions/compose';
 import { clearHeight } from '../../actions/height_cache';
@@ -84,7 +84,7 @@ import '../../components/status';
 import ChatTimeline from '../chat';
 
 const messages = defineMessages({
-  beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave Mastodon.' },
+  beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave Truecolors.' },
 });
 
 const mapStateToProps = state => ({
@@ -508,7 +508,7 @@ class UI extends PureComponent {
 
     const { history } = this.props;
 
-    if (history.location?.state?.fromMastodon) {
+    if (history.location?.state?.fromTruecolors) {
       history.goBack();
     } else {
       history.push('/');

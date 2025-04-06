@@ -1,7 +1,7 @@
 ---
 kab:
   about:
-    about_mastodon_html: 'Azeṭṭa ametti n uzekka: Ulac deg-s asussen, ulac taɛessast n tsuddiwin fell-ak, yebna ɣef leqder d ttrebga, daɣen d akeslemmas! Akked Maṣṭudun, isefka-inek ad qimen inek!'
+    about_truecolors_html: 'Azeṭṭa ametti n uzekka: Ulac deg-s asussen, ulac taɛessast n tsuddiwin fell-ak, yebna ɣef leqder d ttrebga, daɣen d akeslemmas! Akked Maṣṭudun, isefka-inek ad qimen inek!'
     contact_missing: Ur yettusbadu ara
     contact_unavailable: Wlac
     hosted_on: Maṣṭudun yersen deg %{domain}
@@ -466,8 +466,8 @@ kab:
     advanced_web_interface: Agrudem n web leqqayen
     discovery: Asnirem
     localization:
-      body: Mastodon suqqlen-t-id yiwiziwen.
-      guide_link: https://crowdin.com/project/mastodon
+      body: Truecolors suqqlen-t-id yiwiziwen.
+      guide_link: https://crowdin.com/project/truecolors
       guide_link_text: Yal yiwen·t y·tezmer a ttekki.
     sensitive_content: Agbur amḥulfu
   application_mailer:
@@ -492,9 +492,9 @@ kab:
       welcome_title: Ansuf yessek·em, %{name}!
     delete_account: Kkes amiḍan
     description:
-      prefix_invited_by_user: "@%{name} inced-ik·ikem ad ternuḍ ɣer uqeddac-a n Mastodon!"
+      prefix_invited_by_user: "@%{name} inced-ik·ikem ad ternuḍ ɣer uqeddac-a n Truecolors!"
       prefix_sign_up: Zeddi di Maṣṭudun ass-a!
-      suffix: S umiḍan, tzemreḍ ad tḍefreḍ imdanen, ad d-tessufɣeḍ tisuffaɣ d wembadal n yiznan akked yiseqdacen n yal aqeddac Mastodon d wayen-nniḍen!
+      suffix: S umiḍan, tzemreḍ ad tḍefreḍ imdanen, ad d-tessufɣeḍ tisuffaɣ d wembadal n yiznan akked yiseqdacen n yal aqeddac Truecolors d wayen-nniḍen!
     didnt_get_confirmation: Ur d-teṭṭifeḍ ara aseɣwen n usentem ?
     dont_have_your_security_key: Ulac ɣur-k·m tasarut-ik·im n tɣellist?
     forgot_password: Tettud awal-ik uffir?
@@ -765,7 +765,7 @@ kab:
     current_session: Tiɣimit tamirant
     date: Azemz
     description: "%{browser} s %{platform}"
-    explanation: Ha-t-en yiminigen web ikecmen akka tura ɣer umiḍan-ik·im Mastodon.
+    explanation: Ha-t-en yiminigen web ikecmen akka tura ɣer umiḍan-ik·im Truecolors.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -840,7 +840,7 @@ kab:
   themes:
     contrast: Maṣṭudun (agnil awriran)
     default: Maṣṭudun (Aberkan)
-    mastodon-light: Maṣṭudun (Aceɛlal)
+    truecolors-light: Maṣṭudun (Aceɛlal)
   time:
     formats:
       default: "%d %b %Y, %H:%M"
@@ -873,7 +873,7 @@ kab:
       apps_android_action: Awi-t-id seg Google Play
       apps_ios_action: Sader-it-id seg App Store
       apps_step: Zdem-d isnasen-nneɣ unṣiben.
-      apps_title: Isnasen n Mastodon
+      apps_title: Isnasen n Truecolors
       edit_profile_action: Sagen
       edit_profile_title: Sagen amaɣnu-inek·inem
       feature_action: Issin ugar
@@ -887,8 +887,8 @@ kab:
       post_step: Ini-as azul i umaḍal s uḍris, s tiwlafin, s tividyutin neɣ s tefranin.
       post_title: Aru tasuffeɣt-inek·inem tamezwarut
       share_action: Bḍu
-      share_step: Init-asen i yimeddukal-nwen amek ara ken-id-afen deg Mastodon.
-      share_title: Bḍu amaɣnu-inek·inem n Mastodon
+      share_step: Init-asen i yimeddukal-nwen amek ara ken-id-afen deg Truecolors.
+      share_title: Bḍu amaɣnu-inek·inem n Truecolors
       sign_in_action: Qqen
       subject: Ansuf ɣer Maṣṭudun
       title: Ansuf yessek·em, %{name}!

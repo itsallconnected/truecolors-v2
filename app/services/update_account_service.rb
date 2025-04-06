@@ -12,7 +12,7 @@ class UpdateAccountService < BaseService
       check_links(account)
       process_hashtags(account)
     end
-  rescue Mastodon::DimensionsValidationError, Mastodon::StreamValidationError => e
+  rescue Truecolors::DimensionsValidationError, Truecolors::StreamValidationError => e
     account.errors.add(:avatar, e.message)
     false
   end

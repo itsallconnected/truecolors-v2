@@ -34,7 +34,7 @@ class MediaController < ApplicationController
 
   def verify_permitted_status!
     authorize @media_attachment.status, :show?
-  rescue Mastodon::NotPermittedError
+  rescue Truecolors::NotPermittedError
     not_found
   end
 

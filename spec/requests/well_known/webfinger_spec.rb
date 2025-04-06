@@ -125,7 +125,7 @@ RSpec.describe 'The /.well-known/webfinger endpoint' do
 
       expect(response.parsed_body)
         .to include(
-          subject: 'acct:mastodon.internal@cb6e6126.ngrok.io',
+          subject: 'acct:truecolors.internal@cb6e6126.ngrok.io',
           aliases: ['https://cb6e6126.ngrok.io/actor']
         )
     end

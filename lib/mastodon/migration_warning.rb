@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Mastodon
+module Truecolors
   module MigrationWarning
     WARNING_SECONDS = 10
 

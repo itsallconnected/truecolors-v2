@@ -10,16 +10,16 @@ import { useSelector, useDispatch } from 'react-redux';
 
 import DeleteIcon from '@/material-icons/400-24px/delete.svg?react';
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import { initBlockModal } from 'mastodon/actions/blocks';
-import { initMuteModal } from 'mastodon/actions/mutes';
-import { acceptNotificationRequest, dismissNotificationRequest } from 'mastodon/actions/notification_requests';
-import { initReport } from 'mastodon/actions/reports';
-import { Avatar } from 'mastodon/components/avatar';
-import { CheckBox } from 'mastodon/components/check_box';
-import { IconButton } from 'mastodon/components/icon_button';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
-import { makeGetAccount } from 'mastodon/selectors';
-import { toCappedNumber } from 'mastodon/utils/numbers';
+import { initBlockModal } from 'truecolors/actions/blocks';
+import { initMuteModal } from 'truecolors/actions/mutes';
+import { acceptNotificationRequest, dismissNotificationRequest } from 'truecolors/actions/notification_requests';
+import { initReport } from 'truecolors/actions/reports';
+import { Avatar } from 'truecolors/components/avatar';
+import { CheckBox } from 'truecolors/components/check_box';
+import { IconButton } from 'truecolors/components/icon_button';
+import DropdownMenuContainer from 'truecolors/containers/dropdown_menu_container';
+import { makeGetAccount } from 'truecolors/selectors';
+import { toCappedNumber } from 'truecolors/utils/numbers';
 
 const getAccount = makeGetAccount();
 

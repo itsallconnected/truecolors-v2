@@ -8,10 +8,10 @@ import { useDispatch } from 'react-redux';
 import InventoryIcon from '@/material-icons/400-24px/inventory_2.svg?react';
 import PersonAlertIcon from '@/material-icons/400-24px/person_alert.svg?react';
 import ShieldQuestionIcon from '@/material-icons/400-24px/shield_question.svg?react';
-import { closeModal } from 'mastodon/actions/modal';
-import { updateNotificationsPolicy } from 'mastodon/actions/notification_policies';
-import { Button } from 'mastodon/components/button';
-import { Icon } from 'mastodon/components/icon';
+import { closeModal } from 'truecolors/actions/modal';
+import { updateNotificationsPolicy } from 'truecolors/actions/notification_policies';
+import { Button } from 'truecolors/components/button';
+import { Icon } from 'truecolors/components/icon';
 
 export const IgnoreNotificationsModal = ({ filterType }) => {
   const dispatch = useDispatch();
@@ -75,7 +75,7 @@ export const IgnoreNotificationsModal = ({ filterType }) => {
         </div>
 
         <div>
-          <FormattedMessage id='ignore_notifications_modal.disclaimer' defaultMessage="Mastodon cannot inform users that you've ignored their notifications. Ignoring notifications will not stop the messages themselves from being sent." />
+          <FormattedMessage id='ignore_notifications_modal.disclaimer' defaultMessage="Truecolors cannot inform users that you've ignored their notifications. Ignoring notifications will not stop the messages themselves from being sent." />
         </div>
       </div>
 

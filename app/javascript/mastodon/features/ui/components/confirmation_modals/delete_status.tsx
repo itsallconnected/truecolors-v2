@@ -2,8 +2,8 @@ import { useCallback } from 'react';
 
 import { defineMessages, useIntl } from 'react-intl';
 
-import { deleteStatus } from 'mastodon/actions/statuses';
-import { useAppDispatch } from 'mastodon/store';
+import { deleteStatus } from 'truecolors/actions/statuses';
+import { useAppDispatch } from 'truecolors/store';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

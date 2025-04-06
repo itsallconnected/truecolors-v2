@@ -1,7 +1,7 @@
 ---
 fa:
   about:
-    about_mastodon_html: 'شبکه‌ی اجتماعی آینده: بدون تبلیغات، بدون شنود از طرف شرکت‌ها، طراحی اخلاق‌مدار، و معماری غیرمتمرکز! با ماستودون صاحب داده‌های خودتان باشید!'
+    about_truecolors_html: 'شبکه‌ی اجتماعی آینده: بدون تبلیغات، بدون شنود از طرف شرکت‌ها، طراحی اخلاق‌مدار، و معماری غیرمتمرکز! با ماستودون صاحب داده‌های خودتان باشید!'
     contact_missing: تنظیم نشده
     contact_unavailable: موجود نیست
     hosted_on: ماستودون، میزبانی‌شده روی %{domain}
@@ -1115,7 +1115,7 @@ fa:
     discovery: کاوش
     localization:
       body: ماستودون توسط داوطلبان ترجمه شده است.
-      guide_link: https://crowdin.com/project/mastodon
+      guide_link: https://crowdin.com/project/truecolors
       guide_link_text: همه می‌توانند کمک کنند.
     sensitive_content: محتوای حساس
   application_mailer:
@@ -1881,7 +1881,7 @@ fa:
   themes:
     contrast: ماستودون (سایه‌روشن بالا)
     default: ماستودون (تیره)
-    mastodon-light: ماستودون (روشن)
+    truecolors-light: ماستودون (روشن)
     system: خودکار (استفاده از زمینهٔ سامانه)
   time:
     formats:

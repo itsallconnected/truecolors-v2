@@ -56,9 +56,9 @@ class Report < ApplicationRecord
   validate :validate_rule_ids, if: -> { (category_changed? || rule_ids_changed?) && violation? }
 
   # entries here need to be kept in sync with the front-end:
-  # - app/javascript/mastodon/features/notifications/components/report.jsx
-  # - app/javascript/mastodon/features/report/category.jsx
-  # - app/javascript/mastodon/components/admin/ReportReasonSelector.jsx
+  # - app/javascript/truecolors/features/notifications/components/report.jsx
+  # - app/javascript/truecolors/features/report/category.jsx
+  # - app/javascript/truecolors/components/admin/ReportReasonSelector.jsx
   enum :category, {
     other: 0,
     spam: 1_000,

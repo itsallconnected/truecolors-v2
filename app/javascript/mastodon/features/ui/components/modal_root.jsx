@@ -3,8 +3,8 @@ import { PureComponent } from 'react';
 
 import { Helmet } from 'react-helmet';
 
-import Base from 'mastodon/components/modal_root';
-import { AltTextModal } from 'mastodon/features/alt_text_modal';
+import Base from 'truecolors/components/modal_root';
+import { AltTextModal } from 'truecolors/features/alt_text_modal';
 import {
   MuteModal,
   BlockModal,
@@ -19,8 +19,8 @@ import {
   ClosedRegistrationsModal,
   IgnoreNotificationsModal,
   AnnualReportModal,
-} from 'mastodon/features/ui/util/async-components';
-import { getScrollbarWidth } from 'mastodon/utils/scrollbar';
+} from 'truecolors/features/ui/util/async-components';
+import { getScrollbarWidth } from 'truecolors/utils/scrollbar';
 
 import BundleContainer from '../containers/bundle_container';
 

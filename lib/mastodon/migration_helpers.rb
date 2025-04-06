@@ -38,7 +38,7 @@
 # This is bad form, but there are enough differences that it's impractical to do
 # otherwise:
 
-module Mastodon
+module Truecolors
   module MigrationHelpers
     class CorruptionError < StandardError
       attr_reader :index_name
@@ -48,7 +48,7 @@ module Mastodon
 
         super "The index `#{index_name}` seems to be corrupted, it contains duplicate rows. " \
           'For information on how to fix this, see our documentation: ' \
-          'https://docs.joinmastodon.org/admin/troubleshooting/index-corruption/'
+          'https://docs.jointruecolors.org/admin/troubleshooting/index-corruption/'
       end
 
       def cause
@@ -730,7 +730,7 @@ module Mastodon
 Your database user is not allowed to create, drop, or execute triggers on the
 table #{table}.
 
-If you are using PostgreSQL you can solve this by logging in to the Mastodon
+If you are using PostgreSQL you can solve this by logging in to the Truecolors
 database (#{dbname}) using a super user and running:
 
     ALTER USER #{user} WITH SUPERUSER

@@ -59,7 +59,7 @@ if ENV.keys.any? { |name| name.match?(/OTEL_.*_ENDPOINT/) }
       },
     })
 
-    prefix    = ENV.fetch('OTEL_SERVICE_NAME_PREFIX', 'mastodon')
+    prefix    = ENV.fetch('OTEL_SERVICE_NAME_PREFIX', 'truecolors')
     separator = ENV.fetch('OTEL_SERVICE_NAME_SEPARATOR', '/')
 
     c.service_name =  case $PROGRAM_NAME
@@ -67,12 +67,12 @@ if ENV.keys.any? { |name| name.match?(/OTEL_.*_ENDPOINT/) }
                       else
                         "#{prefix}#{separator}#{$PROGRAM_NAME.split('/').last}"
                       end
-    c.service_version = Mastodon::Version.to_s
+    c.service_version = Truecolors::Version.to_s
 
-    if Mastodon::Version.source_commit.present?
+    if Truecolors::Version.source_commit.present?
       c.resource = OpenTelemetry::SDK::Resources::Resource.create(
-        'vcs.repository.ref.revision' => Mastodon::Version.source_commit,
-        'vcs.repository.url.full' => Mastodon::Version.source_base_url
+        'vcs.repository.ref.revision' => Truecolors::Version.source_commit,
+        'vcs.repository.url.full' => Truecolors::Version.source_base_url
       )
     end
   end
@@ -103,4 +103,4 @@ if ENV.keys.any? { |name| name.match?(/OTEL_.*_ENDPOINT/) }
 
 end
 
-MastodonOTELTracer = OpenTelemetry.tracer_provider.tracer('mastodon')
+TruecolorsOTELTracer = OpenTelemetry.tracer_provider.tracer('truecolors')

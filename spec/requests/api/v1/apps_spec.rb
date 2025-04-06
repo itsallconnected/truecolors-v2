@@ -73,7 +73,7 @@ RSpec.describe 'Apps' do
       end
     end
 
-    # FIXME: This is a bug: https://github.com/mastodon/mastodon/issues/30152
+    # FIXME: This is a bug: https://github.com/truecolors/truecolors/issues/30152
     context 'with scopes as an array' do
       let(:scopes) { %w(read write follow) }
 

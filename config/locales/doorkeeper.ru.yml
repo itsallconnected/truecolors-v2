@@ -123,7 +123,7 @@ ru:
         admin/accounts: Управление учётными записями
         admin/all: Все административные функции
         admin/reports: Управление отчётами
-        all: Полный доступ к вашей учетной записи Mastodon
+        all: Полный доступ к вашей учетной записи Truecolors
         blocks: Блокировки
         bookmarks: Закладки
         conversations: Диалоги
@@ -136,7 +136,7 @@ ru:
         media: Медиафайлы
         mutes: Игнорирует
         notifications: Уведомления
-        profile: Ваш профиль Mastodon
+        profile: Ваш профиль Truecolors
         push: Push-уведомления
         reports: Обращения
         search: Поиск

@@ -1,6 +1,6 @@
 import renderer from 'react-test-renderer';
 
-import { render, fireEvent, screen } from 'mastodon/test_helpers';
+import { render, fireEvent, screen } from 'truecolors/test_helpers';
 
 import { Button } from '../button';
 

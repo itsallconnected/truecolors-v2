@@ -6,8 +6,8 @@ import { FormattedMessage } from 'react-intl';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 
-import { Button } from 'mastodon/components/button';
-import { toServerSideType } from 'mastodon/utils/filters';
+import { Button } from 'truecolors/components/button';
+import { toServerSideType } from 'truecolors/utils/filters';
 
 const mapStateToProps = (state, { filterId }) => ({
   filter: state.getIn(['filters', filterId]),

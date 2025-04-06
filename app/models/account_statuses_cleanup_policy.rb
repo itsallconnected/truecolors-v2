@@ -79,7 +79,7 @@ class AccountStatusesCleanupPolicy < ApplicationRecord
   # deletion, while not starting anew on each run.
   def compute_cutoff_id
     min_id = last_inspected || 0
-    max_id = Mastodon::Snowflake.id_at(min_status_age.seconds.ago, with_random: false)
+    max_id = Truecolors::Snowflake.id_at(min_status_age.seconds.ago, with_random: false)
     subquery = account_statuses.where(id: min_id..max_id)
     subquery = subquery.select(:id).reorder(id: :asc).limit(EARLY_SEARCH_CUTOFF)
 
@@ -135,9 +135,9 @@ class AccountStatusesCleanupPolicy < ApplicationRecord
 
   def old_enough_scope(max_id = nil)
     # Filtering on `id` rather than `min_status_age` ago will treat
-    # non-snowflake statuses as older than they really are, but Mastodon
+    # non-snowflake statuses as older than they really are, but Truecolors
     # has switched to snowflake IDs significantly over 2 years ago anyway.
-    snowflake_id = Mastodon::Snowflake.id_at(min_status_age.seconds.ago, with_random: false)
+    snowflake_id = Truecolors::Snowflake.id_at(min_status_age.seconds.ago, with_random: false)
 
     max_id = snowflake_id if max_id.nil? || snowflake_id < max_id
 

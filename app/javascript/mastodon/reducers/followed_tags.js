@@ -7,7 +7,7 @@ import {
   FOLLOWED_HASHTAGS_EXPAND_REQUEST,
   FOLLOWED_HASHTAGS_EXPAND_SUCCESS,
   FOLLOWED_HASHTAGS_EXPAND_FAIL,
-} from 'mastodon/actions/tags';
+} from 'truecolors/actions/tags';
 
 const initialState = ImmutableMap({
   items: ImmutableList(),

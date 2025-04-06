@@ -3,8 +3,8 @@ import { Record, List } from 'immutable';
 
 import escapeTextContentForBrowser from 'escape-html';
 
-import type { ApiPollJSON, ApiPollOptionJSON } from 'mastodon/api_types/polls';
-import emojify from 'mastodon/features/emoji/emoji';
+import type { ApiPollJSON, ApiPollOptionJSON } from 'truecolors/api_types/polls';
+import emojify from 'truecolors/features/emoji/emoji';
 
 import { CustomEmojiFactory, makeEmojiMap } from './custom_emoji';
 import type { CustomEmoji, EmojiMap } from './custom_emoji';

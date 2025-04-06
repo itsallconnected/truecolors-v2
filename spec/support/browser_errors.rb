@@ -16,7 +16,7 @@ RSpec.configure do |config|
   config.after(:each, :js, type: :system) do
     # Classes of intermittent ignorable errors
     ignored_errors = [
-      /Error while trying to use the following icon from the Manifest/, # https://github.com/mastodon/mastodon/pull/30793
+      /Error while trying to use the following icon from the Manifest/, # https://github.com/truecolors/truecolors/pull/30793
       /Manifest: Line: 1, column: 1, Syntax error/, # Similar parsing/interruption issue as above
     ].concat(@ignored_js_errors_for_spec)
 

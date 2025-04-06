@@ -293,7 +293,7 @@ class FeedManager
       over_limit ||= redis.zcard(timeline_key) >= limit
       if over_limit
         oldest_home_score = redis.zrange(timeline_key, 0, 0, with_scores: true).first.last.to_i
-        last_status_score = Mastodon::Snowflake.id_at(target_account.last_status_at, with_random: false)
+        last_status_score = Truecolors::Snowflake.id_at(target_account.last_status_at, with_random: false)
 
         # If the feed is full and this account has not posted more recently
         # than the last item on the feed, then we can skip the whole account
@@ -334,7 +334,7 @@ class FeedManager
       over_limit ||= redis.zcard(timeline_key) >= limit
       if over_limit
         oldest_home_score = redis.zrange(timeline_key, 0, 0, with_scores: true).first.last.to_i
-        last_status_score = Mastodon::Snowflake.id_at(target_account.last_status_at, with_random: false)
+        last_status_score = Truecolors::Snowflake.id_at(target_account.last_status_at, with_random: false)
 
         # If the feed is full and this account has not posted more recently
         # than the last item on the feed, then we can skip the whole account

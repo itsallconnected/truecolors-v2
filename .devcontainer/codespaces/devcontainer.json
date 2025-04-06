@@ -1,5 +1,5 @@
 {
-  "name": "Mastodon on GitHub Codespaces",
+  "name": "Truecolors on GitHub Codespaces",
   "dockerComposeFile": "../compose.yaml",
   "service": "app",
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",

@@ -1,10 +1,10 @@
 # frozen_string_literal: true
 
-module Mastodon::Feature
+module Truecolors::Feature
   class << self
     def enabled_features
       @enabled_features ||=
-        (Rails.configuration.x.mastodon.experimental_features || '').split(',').map(&:strip)
+        (Rails.configuration.x.truecolors.experimental_features || '').split(',').map(&:strip)
     end
 
     def method_missing(name)

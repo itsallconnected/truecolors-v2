@@ -1,10 +1,10 @@
 ---
 sco:
   about:
-    about_mastodon_html: 'The social network o wir future: Nae adverts, nae corporate surveillance; ethical design, an decentralization! Ain yer ain data wi Mastodon!'
+    about_truecolors_html: 'The social network o wir future: Nae adverts, nae corporate surveillance; ethical design, an decentralization! Ain yer ain data wi Truecolors!'
     contact_missing: No set
     contact_unavailable: N/A
-    hosted_on: Mastodon hostit on %{domain}
+    hosted_on: Truecolors hostit on %{domain}
     title: Aboot
   accounts:
     followers:
@@ -601,7 +601,7 @@ sco:
         moderation: Moderation
         special: Special
       delete: Delete
-      description_html: Wi <strong>uiser roles</strong>, ye kin customize whit functions an areas o Mastodon yer uisers kin access.
+      description_html: Wi <strong>uiser roles</strong>, ye kin customize whit functions an areas o Truecolors yer uisers kin access.
       edit: Edit '%{name}' role
       everyone: Defaut permissions
       everyone_full_description_html: This is the <strong>base role</strong> affectin <strong>aw uisers</strong>, even thaim athoot a assignt role. Aw ither roles inherit permissions fae it.
@@ -662,17 +662,17 @@ sco:
         rules_hint: There a dedicatit area fir the rules thit yer uisers ur expectit tae haud tae.
         title: Aboot
       appearance:
-        preamble: Customize Mastodon's wab interface.
+        preamble: Customize Truecolors's wab interface.
         title: Appearance
       branding:
-        preamble: Yer server's ain brandin haes it staun oot fae ither servers in the netwirk. This information wull mibbie get displayit athort a variety o environments, sic as Mastodon's wab interface, native applications, in link previews on ither wabsteids an athin messaging apps, an mair asides. Fir this raison, it is best fir tae keep this information claer, short an concise.
+        preamble: Yer server's ain brandin haes it staun oot fae ither servers in the netwirk. This information wull mibbie get displayit athort a variety o environments, sic as Truecolors's wab interface, native applications, in link previews on ither wabsteids an athin messaging apps, an mair asides. Fir this raison, it is best fir tae keep this information claer, short an concise.
         title: Brandin
       content_retention:
-        preamble: Control hou uiser-generatit content is stored in Mastodon.
+        preamble: Control hou uiser-generatit content is stored in Truecolors.
         title: Content retention
       discovery:
         follow_recommendations: Follae recommendations
-        preamble: Bringin forret interestin content helps ye tae bring in new uisers thit mibbie wullnae ken oniebody on Mastodon yit. Control hou various discovery features wirk on yer server.
+        preamble: Bringin forret interestin content helps ye tae bring in new uisers thit mibbie wullnae ken oniebody on Truecolors yit. Control hou various discovery features wirk on yer server.
         profile_directory: Profile directory
         public_timelines: Public timelines
         title: Discovery
@@ -814,7 +814,7 @@ sco:
     webhooks:
       add_new: Add enpynt
       delete: Delete
-      description_html: A <strong>wabhook</strong> lets Mastodon push <strong>rael-time notifications</strong> aboot srlectit events tae yer ain application, sae thit yer application kin <strong>automatically trigger reactions</strong>.
+      description_html: A <strong>wabhook</strong> lets Truecolors push <strong>rael-time notifications</strong> aboot srlectit events tae yer ain application, sae thit yer application kin <strong>automatically trigger reactions</strong>.
       disable: Turn aff
       disabled: Turnt aff
       edit: Edit enpynt
@@ -874,8 +874,8 @@ sco:
     confirmation_dialogs: Confirmation dialogs
     discovery: Discovery
     localization:
-      body: Mastodon is translatit bi volunteers.
-      guide_link: https://crowdin.com/project/mastodon
+      body: Truecolors is translatit bi volunteers.
+      guide_link: https://crowdin.com/project/truecolors
       guide_link_text: Awbody kin contribute.
     sensitive_content: Sensitive content
   application_mailer:
@@ -895,9 +895,9 @@ sco:
     delete_account: Delete accoont
     delete_account_html: If ye'r wantin tae delete yer accoont, ye kin <a href="%{path}">dae it here</a>. Ye'll get asked fir confirmation.
     description:
-      prefix_invited_by_user: "@%{name} invites ye tae jyne this server o Mastodon!"
-      prefix_sign_up: Sign up on Mastodon the day!
-      suffix: Wi a accoont, ye'll be able tae follae fowk, post updates an exchynge messages wi uisers fae onie Mastodon server an mair!
+      prefix_invited_by_user: "@%{name} invites ye tae jyne this server o Truecolors!"
+      prefix_sign_up: Sign up on Truecolors the day!
+      suffix: Wi a accoont, ye'll be able tae follae fowk, post updates an exchynge messages wi uisers fae onie Truecolors server an mair!
     dont_have_your_security_key: Dinnae hae yer security key?
     forgot_password: Forgot yer passwird?
     invalid_reset_password_token: Passwird reset token isnae valid or expirit. Please request a new ane.
@@ -1013,7 +1013,7 @@ sco:
       content: We're sorry, but somethin went wrang on oor en.
       title: This page isnae correct
     '503': The page cuidnae be served doon tae a temporary server failure.
-    noscript_html: Fir tae uise the Mastodon wab application, please turn on JavaScript. Alternatively, try ane o the <a href="%{apps_path}">native apps</a> fir Mastodon fir yer platform.
+    noscript_html: Fir tae uise the Truecolors wab application, please turn on JavaScript. Alternatively, try ane o the <a href="%{apps_path}">native apps</a> fir Truecolors fir yer platform.
   existing_username_validator:
     not_found: cuidnae fin a local uiser wi that uisernemm
     not_found_multiple: cuidnae fin %{usernames}
@@ -1327,7 +1327,7 @@ sco:
       weibo: Weibo
     current_session: Current session
     description: "%{browser} on %{platform}"
-    explanation: Thir's the wab broosers logged in tae yer Mastodon accoont the noo.
+    explanation: Thir's the wab broosers logged in tae yer Truecolors accoont the noo.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1351,7 +1351,7 @@ sco:
     aliases: Accoont aliases
     appearance: Appearance
     authorized_apps: Authorized apps
-    back: Back tae Mastodon
+    back: Back tae Truecolors
     delete: Accoont deletion
     development: Development
     edit_profile: Edit profile
@@ -1444,9 +1444,9 @@ sco:
   tags:
     does_not_match_previous_name: disnae match the previous nemm
   themes:
-    contrast: Mastodon (Heich contrast)
-    default: Mastodon (Daurk)
-    mastodon-light: Mastodon (Licht)
+    contrast: Truecolors (Heich contrast)
+    default: Truecolors (Daurk)
+    truecolors-light: Truecolors (Licht)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
@@ -1519,7 +1519,7 @@ sco:
         suspend: Accoont suspendit
     welcome:
       explanation: Here some tips fir tae get ye stertit
-      subject: Welcome tae Mastodon, 'mon in
+      subject: Welcome tae Truecolors, 'mon in
       title: Welcome aboord, %{name}!
   users:
     follow_limit_reached: Ye cannae follae mair than %{limit} fowk

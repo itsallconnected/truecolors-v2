@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/canonical_email_blocks'
+require 'truecolors/cli/canonical_email_blocks'
 
-RSpec.describe Mastodon::CLI::CanonicalEmailBlocks do
+RSpec.describe Truecolors::CLI::CanonicalEmailBlocks do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

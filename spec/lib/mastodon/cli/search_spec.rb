@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/search'
+require 'truecolors/cli/search'
 
-RSpec.describe Mastodon::CLI::Search do
+RSpec.describe Truecolors::CLI::Search do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

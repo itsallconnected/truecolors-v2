@@ -281,7 +281,7 @@ RSpec.describe 'signature verification concern' do
         expect(response.parsed_body).to match(
           signed_request: true,
           signature_actor_id: nil,
-          error: 'Mastodon requires the Digest header to be signed when doing a POST request'
+          error: 'Truecolors requires the Digest header to be signed when doing a POST request'
         )
       end
     end

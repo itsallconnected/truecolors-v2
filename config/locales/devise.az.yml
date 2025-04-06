@@ -24,22 +24,22 @@ az:
         explanation: Siz %{host} saytında bu e-poçt ilə hesab yaratmısınız. Onu aktivləşdirməkdən bir klik uzaqlıqdasınız. Əgər bu siz olmamısınızsa, zəhmət olmasa, bu e-məktuba məhəl qoymayın.
         explanation_when_pending: Bu e-poçt ünvanı ilə %{host} saytına dəvət üçün müraciət etmisiniz. Siz e-poçt ünvanınızı təsdiqlədikdən sonra müraciətinizi nəzərdən keçirəcəyik. Siz məlumatlarınızı dəyişdirmək və ya hesabınızı silmək üçün daxil ola bilərsiniz, lakin hesabınız təsdiqlənənə qədər əksər funksiyaları istifadə edə bilməzsiniz. Müraciətiniz rədd edilərsə, məlumatlarınız silinəcək, buna görə də sizdən heç bir tədbir tələb olunmayacaq. Əgər bu siz deyildinizsə, zəhmət, bu e-məktuba məhəl qoymayın.
         extra_html: Həmçinin zəhmət olmasa, <a href="%{terms_path}">serverin qaydalarını</a> və <a href="%{policy_path}">istifadə şərtlərini</a> oxuyun.
-        subject: 'Mastodon: %{instance} üçün təsdiqlənmə təlimatları'
+        subject: 'Truecolors: %{instance} üçün təsdiqlənmə təlimatları'
         title: E-poçt ünvanını təsdiqlə
       email_changed:
         explanation: 'Hesabınız üçün e-poçt ünvanı buna dəyişdirilir:'
         extra: E-poçtunuzu dəyişməmisinizsə, çox güman ki, kimsə hesabınıza giriş əldə edib. Zəhmət olmasa, parolunuzu dərhal dəyişdirin və ya hesabınıza daxil ola bilməyəcəksinizsə, server admini ilə əlaqə saxlayın.
-        subject: 'Mastodon: E-poçt dəyişdirildi'
+        subject: 'Truecolors: E-poçt dəyişdirildi'
         title: Yeni e-poçt ünvanı
       password_change:
         explanation: Hesabınızın parolu dəyişdirilib.
         extra: Parolunuzu dəyişməmisinizsə, çox güman ki, kimsə hesabınıza giriş əldə edib. Zəhmət olmasa, parolunuzu dərhal dəyişdirin və ya hesabınıza daxil ola bilməyəcəksinizsə, server admini ilə əlaqə saxlayın.
-        subject: 'Mastodon: Parol dəyişdirildi'
+        subject: 'Truecolors: Parol dəyişdirildi'
         title: Parol dəyişdirildi
       reconfirmation_instructions:
         explanation: E-poçtunuzu dəyişdirmək üçün yeni ünvanı təsdiqləyin.
-        extra: Əgər bu dəyişiklik sizin tərəfinizdən deyilsə, zəhmət olmasa, bu e-məktuba məhəl qoymayın. Siz yuxarıdakı linkə daxil olana qədər Mastodon hesabının e-poçt ünvanı dəyişməyəcək.
-        subject: 'Mastodon: %{instance} üçün e-poçtu təsdiqlə'
+        extra: Əgər bu dəyişiklik sizin tərəfinizdən deyilsə, zəhmət olmasa, bu e-məktuba məhəl qoymayın. Siz yuxarıdakı linkə daxil olana qədər Truecolors hesabının e-poçt ünvanı dəyişməyəcək.
+        subject: 'Truecolors: %{instance} üçün e-poçtu təsdiqlə'
         title: E-poçt ünvanını təsdiqlə
       reset_password_instructions:
         action: Parolu dəyiş

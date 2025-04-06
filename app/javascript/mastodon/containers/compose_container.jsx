@@ -1,13 +1,13 @@
 import { Provider } from 'react-redux';
 
-import { fetchCustomEmojis } from 'mastodon/actions/custom_emojis';
-import { fetchServer } from 'mastodon/actions/server';
-import { hydrateStore } from 'mastodon/actions/store';
-import { Router } from 'mastodon/components/router';
-import Compose from 'mastodon/features/standalone/compose';
-import initialState from 'mastodon/initial_state';
-import { IntlProvider } from 'mastodon/locales';
-import { store } from 'mastodon/store';
+import { fetchCustomEmojis } from 'truecolors/actions/custom_emojis';
+import { fetchServer } from 'truecolors/actions/server';
+import { hydrateStore } from 'truecolors/actions/store';
+import { Router } from 'truecolors/components/router';
+import Compose from 'truecolors/features/standalone/compose';
+import initialState from 'truecolors/initial_state';
+import { IntlProvider } from 'truecolors/locales';
+import { store } from 'truecolors/store';
 
 if (initialState) {
   store.dispatch(hydrateStore(initialState));

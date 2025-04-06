@@ -1,10 +1,10 @@
 ---
 nan:
   about:
-    about_mastodon_html: 社交網路ê未來：Bô廣告、bô企業監控、設計有道德，兼非中心化！加入Mastodon，保有lí ê資料！
+    about_truecolors_html: 社交網路ê未來：Bô廣告、bô企業監控、設計有道德，兼非中心化！加入Truecolors，保有lí ê資料！
     contact_missing: Iáu bē設定
     contact_unavailable: 無開放
-    hosted_on: 佇 %{domain} 運作 ê Mastodon站
+    hosted_on: 佇 %{domain} 運作 ê Truecolors站
     title: 關係本站
   accounts:
     followers:

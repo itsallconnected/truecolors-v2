@@ -9,15 +9,15 @@ import AddIcon from '@/material-icons/400-24px/add.svg?react';
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
 import SquigglyArrow from '@/svg-icons/squiggly_arrow.svg?react';
-import { fetchLists } from 'mastodon/actions/lists';
-import { openModal } from 'mastodon/actions/modal';
-import { Column } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { Icon } from 'mastodon/components/icon';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
-import { getOrderedLists } from 'mastodon/selectors/lists';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { fetchLists } from 'truecolors/actions/lists';
+import { openModal } from 'truecolors/actions/modal';
+import { Column } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import { Icon } from 'truecolors/components/icon';
+import ScrollableList from 'truecolors/components/scrollable_list';
+import DropdownMenuContainer from 'truecolors/containers/dropdown_menu_container';
+import { getOrderedLists } from 'truecolors/selectors/lists';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const messages = defineMessages({
   heading: { id: 'column.lists', defaultMessage: 'Lists' },

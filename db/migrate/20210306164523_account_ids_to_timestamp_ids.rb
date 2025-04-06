@@ -8,7 +8,7 @@ class AccountIdsToTimestampIds < ActiveRecord::Migration[5.2]
     end
 
     # Make sure we have a sequence to use.
-    Mastodon::Snowflake.ensure_id_sequences_exist
+    Truecolors::Snowflake.ensure_id_sequences_exist
   end
 
   def down

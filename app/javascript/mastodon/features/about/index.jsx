@@ -12,13 +12,13 @@ import { connect } from 'react-redux';
 
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
 import ExpandMoreIcon from '@/material-icons/400-24px/expand_more.svg?react';
-import { fetchServer, fetchExtendedDescription, fetchDomainBlocks  } from 'mastodon/actions/server';
-import { Account } from 'mastodon/components/account';
-import Column from 'mastodon/components/column';
-import { Icon  }  from 'mastodon/components/icon';
-import { ServerHeroImage } from 'mastodon/components/server_hero_image';
-import { Skeleton } from 'mastodon/components/skeleton';
-import { LinkFooter} from 'mastodon/features/ui/components/link_footer';
+import { fetchServer, fetchExtendedDescription, fetchDomainBlocks  } from 'truecolors/actions/server';
+import { Account } from 'truecolors/components/account';
+import Column from 'truecolors/components/column';
+import { Icon  }  from 'truecolors/components/icon';
+import { ServerHeroImage } from 'truecolors/components/server_hero_image';
+import { Skeleton } from 'truecolors/components/skeleton';
+import { LinkFooter} from 'truecolors/features/ui/components/link_footer';
 
 const messages = defineMessages({
   title: { id: 'column.about', defaultMessage: 'About' },
@@ -123,7 +123,7 @@ class About extends PureComponent {
           <div className='about__header'>
             <ServerHeroImage blurhash={server.getIn(['thumbnail', 'blurhash'])} src={server.getIn(['thumbnail', 'url'])} srcSet={server.getIn(['thumbnail', 'versions'])?.map((value, key) => `${value} ${key.replace('@', '')}`).join(', ')} className='about__header__hero' />
             <h1>{isLoading ? <Skeleton width='10ch' /> : server.get('domain')}</h1>
-            <p><FormattedMessage id='about.powered_by' defaultMessage='Decentralized social media powered by {mastodon}' values={{ mastodon: <a href='https://joinmastodon.org' className='about__mail' target='_blank' rel='noopener'>Mastodon</a> }} /></p>
+            <p><FormattedMessage id='about.powered_by' defaultMessage='Decentralized social media powered by {truecolors}' values={{ truecolors: <a href='https://jointruecolors.org' className='about__mail' target='_blank' rel='noopener'>Truecolors</a> }} /></p>
           </div>
 
           <div className='about__meta'>
@@ -187,7 +187,7 @@ class About extends PureComponent {
               </>
             ) : (domainBlocks.get('isAvailable') ? (
               <>
-                <p><FormattedMessage id='about.domain_blocks.preamble' defaultMessage='Mastodon generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.' /></p>
+                <p><FormattedMessage id='about.domain_blocks.preamble' defaultMessage='Truecolors generally allows you to view content from and interact with users from any other server in the fediverse. These are the exceptions that have been made on this particular server.' /></p>
 
                 {domainBlocks.get('items').size > 0 && (
                   <div className='about__domain-blocks'>
@@ -212,7 +212,7 @@ class About extends PureComponent {
           <LinkFooter />
 
           <div className='about__footer'>
-            <p><FormattedMessage id='about.disclaimer' defaultMessage='Mastodon is free, open-source software, and a trademark of Mastodon gGmbH.' /></p>
+            <p><FormattedMessage id='about.disclaimer' defaultMessage='Truecolors is free, open-source software, and a trademark of Truecolors gGmbH.' /></p>
           </div>
         </div>
 

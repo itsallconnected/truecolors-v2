@@ -14,11 +14,11 @@ import type { State, Placement } from 'react-overlays/usePopper';
 import CancelIcon from '@/material-icons/400-24px/cancel-fill.svg?react';
 import SearchIcon from '@/material-icons/400-24px/search.svg?react';
 import TranslateIcon from '@/material-icons/400-24px/translate.svg?react';
-import { changeComposeLanguage } from 'mastodon/actions/compose';
-import { Icon } from 'mastodon/components/icon';
-import { languages as preloadedLanguages } from 'mastodon/initial_state';
-import type { RootState } from 'mastodon/store';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { changeComposeLanguage } from 'truecolors/actions/compose';
+import { Icon } from 'truecolors/components/icon';
+import { languages as preloadedLanguages } from 'truecolors/initial_state';
+import type { RootState } from 'truecolors/store';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { debouncedGuess } from '../util/language_detection';
 

@@ -7,11 +7,11 @@ import { connect } from 'react-redux';
 
 import SettingsIcon from '@/material-icons/400-20px/settings.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { requestBrowserPermission } from 'mastodon/actions/notifications';
-import { changeSetting } from 'mastodon/actions/settings';
-import { Button } from 'mastodon/components/button';
-import { Icon }  from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
+import { requestBrowserPermission } from 'truecolors/actions/notifications';
+import { changeSetting } from 'truecolors/actions/settings';
+import { Button } from 'truecolors/components/button';
+import { Icon }  from 'truecolors/components/icon';
+import { IconButton } from 'truecolors/components/icon_button';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },
@@ -42,7 +42,7 @@ class NotificationsPermissionBanner extends PureComponent {
         </div>
 
         <h2><FormattedMessage id='notifications_permission_banner.title' defaultMessage='Never miss a thing' /></h2>
-        <p><FormattedMessage id='notifications_permission_banner.how_to_control' defaultMessage="To receive notifications when Mastodon isn't open, enable desktop notifications. You can control precisely which types of interactions generate desktop notifications through the {icon} button above once they're enabled." values={{ icon: <Icon id='sliders' icon={SettingsIcon} /> }} /></p>
+        <p><FormattedMessage id='notifications_permission_banner.how_to_control' defaultMessage="To receive notifications when Truecolors isn't open, enable desktop notifications. You can control precisely which types of interactions generate desktop notifications through the {icon} button above once they're enabled." values={{ icon: <Icon id='sliders' icon={SettingsIcon} /> }} /></p>
         <Button onClick={this.handleClick}><FormattedMessage id='notifications_permission_banner.enable' defaultMessage='Enable desktop notifications' /></Button>
       </div>
     );

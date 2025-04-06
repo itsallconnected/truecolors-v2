@@ -62,7 +62,7 @@ module SignatureVerification
 
     return actor unless verify_signature(actor, signature, compare_signed_string).nil?
 
-    # Compatibility quirk with older Mastodon versions
+    # Compatibility quirk with older Truecolors versions
     compare_signed_string = build_signed_string(include_query_string: false)
     return actor unless verify_signature(actor, signature, compare_signed_string).nil?
 
@@ -73,16 +73,16 @@ module SignatureVerification
     compare_signed_string = build_signed_string(include_query_string: true)
     return actor unless verify_signature(actor, signature, compare_signed_string).nil?
 
-    # Compatibility quirk with older Mastodon versions
+    # Compatibility quirk with older Truecolors versions
     compare_signed_string = build_signed_string(include_query_string: false)
     return actor unless verify_signature(actor, signature, compare_signed_string).nil?
 
     fail_with! "Verification failed for #{actor.to_log_human_identifier} #{actor.uri} using rsa-sha256 (RSASSA-PKCS1-v1_5 with SHA-256)", signed_string: compare_signed_string, signature: signature_params['signature']
   rescue SignatureVerificationError => e
     fail_with! e.message
-  rescue *Mastodon::HTTP_CONNECTION_ERRORS => e
+  rescue *Truecolors::HTTP_CONNECTION_ERRORS => e
     fail_with! "Failed to fetch remote data: #{e.message}"
-  rescue Mastodon::UnexpectedResponseError
+  rescue Truecolors::UnexpectedResponseError
     fail_with! 'Failed to fetch remote data (got unexpected reply from server)'
   rescue Stoplight::Error::RedLight
     fail_with! 'Fetching attempt skipped because of recent connection failure'
@@ -116,10 +116,10 @@ module SignatureVerification
   end
 
   def verify_signature_strength!
-    raise SignatureVerificationError, 'Mastodon requires the Date header or (created) pseudo-header to be signed' unless signed_headers.include?('date') || signed_headers.include?('(created)')
-    raise SignatureVerificationError, 'Mastodon requires the Digest header or (request-target) pseudo-header to be signed' unless signed_headers.include?(HttpSignatureDraft::REQUEST_TARGET) || signed_headers.include?('digest')
-    raise SignatureVerificationError, 'Mastodon requires the Host header to be signed when doing a GET request' if request.get? && !signed_headers.include?('host')
-    raise SignatureVerificationError, 'Mastodon requires the Digest header to be signed when doing a POST request' if request.post? && !signed_headers.include?('digest')
+    raise SignatureVerificationError, 'Truecolors requires the Date header or (created) pseudo-header to be signed' unless signed_headers.include?('date') || signed_headers.include?('(created)')
+    raise SignatureVerificationError, 'Truecolors requires the Digest header or (request-target) pseudo-header to be signed' unless signed_headers.include?(HttpSignatureDraft::REQUEST_TARGET) || signed_headers.include?('digest')
+    raise SignatureVerificationError, 'Truecolors requires the Host header to be signed when doing a GET request' if request.get? && !signed_headers.include?('host')
+    raise SignatureVerificationError, 'Truecolors requires the Digest header to be signed when doing a POST request' if request.post? && !signed_headers.include?('digest')
   end
 
   def verify_body_digest!
@@ -128,7 +128,7 @@ module SignatureVerification
 
     digests = request.headers['Digest'].split(',').map { |digest| digest.split('=', 2) }.map { |key, value| [key.downcase, value] }
     sha256  = digests.assoc('sha-256')
-    raise SignatureVerificationError, "Mastodon only supports SHA-256 in Digest header. Offered algorithms: #{digests.map(&:first).join(', ')}" if sha256.nil?
+    raise SignatureVerificationError, "Truecolors only supports SHA-256 in Digest header. Offered algorithms: #{digests.map(&:first).join(', ')}" if sha256.nil?
 
     return if body_digest == sha256[1]
 
@@ -159,7 +159,7 @@ module SignatureVerification
         if include_query_string
           "#{HttpSignatureDraft::REQUEST_TARGET}: #{request.method.downcase} #{request.original_fullpath}"
         else
-          # Current versions of Mastodon incorrectly omit the query string from the (request-target) pseudo-header.
+          # Current versions of Truecolors incorrectly omit the query string from the (request-target) pseudo-header.
           # Therefore, temporarily support such incorrect signatures for compatibility.
           # TODO: remove eventually some time after release of the fixed version
           "#{HttpSignatureDraft::REQUEST_TARGET}: #{request.method.downcase} #{request.path}"
@@ -232,9 +232,9 @@ module SignatureVerification
       account ||= stoplight_wrapper.run { ActivityPub::FetchRemoteKeyService.new.call(key_id, suppress_errors: false) }
       account
     end
-  rescue Mastodon::PrivateNetworkAddressError => e
+  rescue Truecolors::PrivateNetworkAddressError => e
     raise SignatureVerificationError, "Requests to private network addresses are disallowed (tried to query #{e.host})"
-  rescue Mastodon::HostValidationError, ActivityPub::FetchRemoteActorService::Error, ActivityPub::FetchRemoteKeyService::Error, Webfinger::Error => e
+  rescue Truecolors::HostValidationError, ActivityPub::FetchRemoteActorService::Error, ActivityPub::FetchRemoteKeyService::Error, Webfinger::Error => e
     raise SignatureVerificationError, e.message
   end
 
@@ -250,9 +250,9 @@ module SignatureVerification
     return actor.refresh! if actor.respond_to?(:refresh!) && actor.possibly_stale?
 
     ActivityPub::FetchRemoteActorService.new.call(actor.uri, only_key: true, suppress_errors: false)
-  rescue Mastodon::PrivateNetworkAddressError => e
+  rescue Truecolors::PrivateNetworkAddressError => e
     raise SignatureVerificationError, "Requests to private network addresses are disallowed (tried to query #{e.host})"
-  rescue Mastodon::HostValidationError, ActivityPub::FetchRemoteActorService::Error, Webfinger::Error => e
+  rescue Truecolors::HostValidationError, ActivityPub::FetchRemoteActorService::Error, Webfinger::Error => e
     raise SignatureVerificationError, e.message
   end
 end

@@ -34,7 +34,7 @@ class TextFormatter
     return ''.html_safe if text.blank?
 
     html = nil
-    MastodonOTELTracer.in_span('TextFormatter#to_s extract_and_rewrite') do
+    TruecolorsOTELTracer.in_span('TextFormatter#to_s extract_and_rewrite') do
       html = rewrite do |entity|
         if entity[:url]
           link_to_url(entity)
@@ -47,7 +47,7 @@ class TextFormatter
     end
 
     if multiline?
-      MastodonOTELTracer.in_span('TextFormatter#to_s simple_format') do
+      TruecolorsOTELTracer.in_span('TextFormatter#to_s simple_format') do
         html = simple_format(html, {}, sanitize: false).delete("\n")
       end
     end
@@ -106,13 +106,13 @@ class TextFormatter
   end
 
   def link_to_url(entity)
-    MastodonOTELTracer.in_span('TextFormatter#link_to_url') do
+    TruecolorsOTELTracer.in_span('TextFormatter#link_to_url') do
       TextFormatter.shortened_link(entity[:url], rel_me: with_rel_me?)
     end
   end
 
   def link_to_hashtag(entity)
-    MastodonOTELTracer.in_span('TextFormatter#link_to_hashtag') do
+    TruecolorsOTELTracer.in_span('TextFormatter#link_to_hashtag') do
       hashtag = entity[:hashtag]
       url     = tag_url(hashtag)
 
@@ -123,7 +123,7 @@ class TextFormatter
   end
 
   def link_to_mention(entity)
-    MastodonOTELTracer.in_span('TextFormatter#link_to_mention') do
+    TruecolorsOTELTracer.in_span('TextFormatter#link_to_mention') do
       username, domain = entity[:screen_name].split('@')
       domain           = nil if local_domain?(domain)
       account          = nil

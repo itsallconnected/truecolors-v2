@@ -1,5 +1,5 @@
-import type { ApiSearchResultsJSON } from 'mastodon/api_types/search';
-import type { ApiHashtagJSON } from 'mastodon/api_types/tags';
+import type { ApiSearchResultsJSON } from 'truecolors/api_types/search';
+import type { ApiHashtagJSON } from 'truecolors/api_types/tags';
 
 export type SearchType = 'account' | 'hashtag' | 'accounts' | 'statuses';
 

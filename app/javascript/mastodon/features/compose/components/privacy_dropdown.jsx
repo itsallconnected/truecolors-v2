@@ -11,12 +11,12 @@ import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?re
 import LockIcon from '@/material-icons/400-24px/lock.svg?react';
 import PublicIcon from '@/material-icons/400-24px/public.svg?react';
 import QuietTimeIcon from '@/material-icons/400-24px/quiet_time.svg?react';
-import { DropdownSelector } from 'mastodon/components/dropdown_selector';
-import { Icon }  from 'mastodon/components/icon';
+import { DropdownSelector } from 'truecolors/components/dropdown_selector';
+import { Icon }  from 'truecolors/components/icon';
 
 const messages = defineMessages({
   public_short: { id: 'privacy.public.short', defaultMessage: 'Public' },
-  public_long: { id: 'privacy.public.long', defaultMessage: 'Anyone on and off Mastodon' },
+  public_long: { id: 'privacy.public.long', defaultMessage: 'Anyone on and off Truecolors' },
   unlisted_short: { id: 'privacy.unlisted.short', defaultMessage: 'Quiet public' },
   unlisted_long: { id: 'privacy.unlisted.long', defaultMessage: 'Fewer algorithmic fanfares' },
   private_short: { id: 'privacy.private.short', defaultMessage: 'Followers' },
@@ -24,7 +24,7 @@ const messages = defineMessages({
   direct_short: { id: 'privacy.direct.short', defaultMessage: 'Specific people' },
   direct_long: { id: 'privacy.direct.long', defaultMessage: 'Everyone mentioned in the post' },
   change_privacy: { id: 'privacy.change', defaultMessage: 'Change post privacy' },
-  unlisted_extra: { id: 'privacy.unlisted.additional', defaultMessage: 'This behaves exactly like public, except the post will not appear in live feeds or hashtags, explore, or Mastodon search, even if you are opted-in account-wide.' },
+  unlisted_extra: { id: 'privacy.unlisted.additional', defaultMessage: 'This behaves exactly like public, except the post will not appear in live feeds or hashtags, explore, or Truecolors search, even if you are opted-in account-wide.' },
 });
 
 class PrivacyDropdown extends PureComponent {

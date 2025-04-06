@@ -67,11 +67,11 @@ class InstancePresenter < ActiveModelSerializers::Model
   end
 
   def version
-    Mastodon::Version.to_s
+    Truecolors::Version.to_s
   end
 
   def source_url
-    Mastodon::Version.source_url
+    Truecolors::Version.source_url
   end
 
   def thumbnail

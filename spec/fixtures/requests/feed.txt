@@ -84,7 +84,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
  <updated>2016-03-19T20:35:53+00:00</updated>
  <link rel="ostatus:conversation" href="tag:quitter.no,2016-03-19:objectType=thread:nonce=c4a61886d5cad4c2"/>
  <ostatus:conversation>tag:quitter.no,2016-03-19:objectType=thread:nonce=c4a61886d5cad4c2</ostatus:conversation>
- <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="https://mastodon.social/users/Gargron"/>
+ <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="https://truecolors.social/users/Gargron"/>
  <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/collection" href="http://activityschema.org/collection/public"/>
  <link rel="self" type="application/atom+xml" href="https://quitter.no/api/statuses/show/1273635.atom"/>
  <link rel="edit" type="application/atom+xml" href="https://quitter.no/api/statuses/show/1273635.atom"/>
@@ -117,17 +117,17 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
  <activity:object-type>http://activitystrea.ms/schema/1.0/comment</activity:object-type>
  <id>tag:quitter.no,2016-03-19:noticeId=1269381:objectType=comment</id>
  <title>New comment by gargron</title>
- <content type="html">@&lt;a href=&quot;https://mastodon.social/users/Gargron&quot; class=&quot;h-card mention&quot; title=&quot;Eugen&quot;&gt;gargron&lt;/a&gt; I have to wonder if this will appear as a reply to the right status, and not just a mention.</content>
+ <content type="html">@&lt;a href=&quot;https://truecolors.social/users/Gargron&quot; class=&quot;h-card mention&quot; title=&quot;Eugen&quot;&gt;gargron&lt;/a&gt; I have to wonder if this will appear as a reply to the right status, and not just a mention.</content>
  <link rel="alternate" type="text/html" href="https://quitter.no/notice/1269381"/>
  <status_net notice_id="1269381"></status_net>
  <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>
  <published>2016-03-19T00:10:14+00:00</published>
  <updated>2016-03-19T00:10:14+00:00</updated>
- <thr:in-reply-to ref="tag:mastodon.social,2016-03-18:objectId=60:objectType=Status" href="https://quitter.no/notice/1269244"></thr:in-reply-to>
+ <thr:in-reply-to ref="tag:truecolors.social,2016-03-18:objectId=60:objectType=Status" href="https://quitter.no/notice/1269244"></thr:in-reply-to>
  <link rel="related" href="https://quitter.no/notice/1269244"/>
  <link rel="ostatus:conversation" href="tag:quitter.no,2016-03-18:objectType=thread:nonce=d05c6330fbe23fb9"/>
  <ostatus:conversation>tag:quitter.no,2016-03-18:objectType=thread:nonce=d05c6330fbe23fb9</ostatus:conversation>
- <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="https://mastodon.social/users/Gargron"/>
+ <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/person" href="https://truecolors.social/users/Gargron"/>
  <link rel="mentioned" ostatus:object-type="http://activitystrea.ms/schema/1.0/collection" href="http://activityschema.org/collection/public"/>
  <link rel="self" type="application/atom+xml" href="https://quitter.no/api/statuses/show/1269381.atom"/>
  <link rel="edit" type="application/atom+xml" href="https://quitter.no/api/statuses/show/1269381.atom"/>
@@ -198,17 +198,17 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
 <entry>
  <id>tag:quitter.no,2016-03-16:subscription:7477:person:15743:2016-03-16T21:24:13+01:00</id>
  <title>ＤＩＧＩＴＡＬ ＣＡＴ (gargron)'s status on Wednesday, 16-Mar-2016 21:24:13 CET</title>
- <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://mastodon.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
+ <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://truecolors.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
  <link rel="alternate" type="text/html" href="https://quitter.no/notice/1256972"/>
  <activity:verb>http://activitystrea.ms/schema/1.0/follow</activity:verb>
  <published>2016-03-16T20:24:13+00:00</published>
  <updated>2016-03-16T20:24:13+00:00</updated>
  <activity:object>
   <activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
-  <id>https://mastodon.social/users/Gargron</id>
+  <id>https://truecolors.social/users/Gargron</id>
   <title>Eugen</title>
   <summary>Software engineer, free time musician and ＤＩＧＩＴＡＬ ＳＰＯＲＴＳ enthusiast. Likes cats. Warning: May contain memes</summary>
-  <link rel="alternate" type="text/html" href="https://mastodon.social/users/Gargron"/>
+  <link rel="alternate" type="text/html" href="https://truecolors.social/users/Gargron"/>
   <link rel="avatar" type="image/gif" media:width="96" media:height="96" href="https://quitter.no/avatar/15743-original-20160316180410.gif"/>
   <link rel="avatar" type="image/gif" media:width="96" media:height="96" href="https://quitter.no/avatar/15743-original-20160316180410.gif"/>
   <link rel="avatar" type="image/gif" media:width="48" media:height="48" href="https://quitter.no/avatar/15743-48-20160316180416.gif"/>
@@ -227,7 +227,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
 <entry>
  <id>tag:quitter.no,2016-03-16:subscription:7477:person:15743:2016-03-16T21:22:38+01:00</id>
  <title></title>
- <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://mastodon.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
+ <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://truecolors.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
  <link rel="alternate" type="text/html" href="https://quitter.no/notice/1256966"/>
  <activity:verb>http://activitystrea.ms/schema/1.0/follow</activity:verb>
  <published>2016-03-16T20:22:38+00:00</published>
@@ -236,7 +236,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
   <activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
   <id>tag:quitter.no,2016-03-16:subscription:7477:person:15743:2016-03-16T21:22:38+01:00</id>
   <title>New person by gargron</title>
-  <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://mastodon.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
+  <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://truecolors.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
   <link rel="alternate" type="text/html" href="https://quitter.no/notice/1256966"/>
   <status_net notice_id="1256966"></status_net>
  </activity:object>
@@ -250,7 +250,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
 <entry>
  <id>tag:quitter.no,2016-03-16:subscription:7477:person:15743:2016-03-16T21:16:14+01:00</id>
  <title></title>
- <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://mastodon.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
+ <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://truecolors.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
  <link rel="alternate" type="text/html" href="https://quitter.no/notice/1256939"/>
  <activity:verb>http://activitystrea.ms/schema/1.0/follow</activity:verb>
  <published>2016-03-16T20:16:15+00:00</published>
@@ -259,7 +259,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
   <activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
   <id>tag:quitter.no,2016-03-16:subscription:7477:person:15743:2016-03-16T21:16:14+01:00</id>
   <title>New person by gargron</title>
-  <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://mastodon.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
+  <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://truecolors.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
   <link rel="alternate" type="text/html" href="https://quitter.no/notice/1256939"/>
   <status_net notice_id="1256939"></status_net>
  </activity:object>
@@ -319,7 +319,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
 <entry>
  <id>tag:quitter.no,2016-03-16:subscription:7477:person:15743:2016-03-16T19:04:16+01:00</id>
  <title></title>
- <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://mastodon.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
+ <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://truecolors.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
  <link rel="alternate" type="text/html" href="https://quitter.no/notice/1256253"/>
  <activity:verb>http://activitystrea.ms/schema/1.0/follow</activity:verb>
  <published>2016-03-16T18:04:16+00:00</published>
@@ -328,7 +328,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
   <activity:object-type>http://activitystrea.ms/schema/1.0/person</activity:object-type>
   <id>tag:quitter.no,2016-03-16:subscription:7477:person:15743:2016-03-16T19:04:16+01:00</id>
   <title>New person by gargron</title>
-  <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://mastodon.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
+  <content type="html">&lt;a href=&quot;https://quitter.no/gargron&quot;&gt;ＤＩＧＩＴＡＬ ＣＡＴ&lt;/a&gt; started following &lt;a href=&quot;https://truecolors.social/users/Gargron&quot;&gt;Eugen&lt;/a&gt;.</content>
   <link rel="alternate" type="text/html" href="https://quitter.no/notice/1256253"/>
   <status_net notice_id="1256253"></status_net>
  </activity:object>
@@ -363,7 +363,7 @@ Strict-Transport-Security: max-age=31536000; includeSubdomains;
  <activity:object-type>http://activitystrea.ms/schema/1.0/comment</activity:object-type>
  <id>tag:quitter.no,2016-03-15:noticeId=1250742:objectType=comment</id>
  <title>New comment by gargron</title>
- <content type="html">@&lt;a href=&quot;https://social.umeahackerspace.se/user/2&quot; class=&quot;h-card mention&quot; title=&quot;&amp;lt;Mikael &amp;amp; Nordfeldth&amp;gt;&quot;&gt;mmn&lt;/a&gt; I'm like reeeeally close to actually deploying the first production instance of Mastodon, but it bugs me that there's gonna be that issue with avatars and profiles not updating :(</content>
+ <content type="html">@&lt;a href=&quot;https://social.umeahackerspace.se/user/2&quot; class=&quot;h-card mention&quot; title=&quot;&amp;lt;Mikael &amp;amp; Nordfeldth&amp;gt;&quot;&gt;mmn&lt;/a&gt; I'm like reeeeally close to actually deploying the first production instance of Truecolors, but it bugs me that there's gonna be that issue with avatars and profiles not updating :(</content>
  <link rel="alternate" type="text/html" href="https://quitter.no/notice/1250742"/>
  <status_net notice_id="1250742"></status_net>
  <activity:verb>http://activitystrea.ms/schema/1.0/post</activity:verb>

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { authorizeFollowRequest, rejectFollowRequest } from 'mastodon/actions/accounts';
+import { authorizeFollowRequest, rejectFollowRequest } from 'truecolors/actions/accounts';
 
 import FollowRequestNote from '../components/follow_request_note';
 

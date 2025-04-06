@@ -5,10 +5,10 @@ import {
   blockAccountSuccess,
   muteAccountSuccess,
   rejectFollowRequestSuccess,
-} from 'mastodon/actions/accounts_typed';
-import { focusApp, unfocusApp } from 'mastodon/actions/app';
-import { blockDomainSuccess } from 'mastodon/actions/domain_blocks_typed';
-import { fetchMarkers } from 'mastodon/actions/markers';
+} from 'truecolors/actions/accounts_typed';
+import { focusApp, unfocusApp } from 'truecolors/actions/app';
+import { blockDomainSuccess } from 'truecolors/actions/domain_blocks_typed';
+import { fetchMarkers } from 'truecolors/actions/markers';
 import {
   clearNotifications,
   fetchNotifications,
@@ -21,24 +21,24 @@ import {
   unmountNotifications,
   refreshStaleNotificationGroups,
   pollRecentNotifications,
-} from 'mastodon/actions/notification_groups';
+} from 'truecolors/actions/notification_groups';
 import {
   disconnectTimeline,
   timelineDelete,
-} from 'mastodon/actions/timelines_typed';
+} from 'truecolors/actions/timelines_typed';
 import type {
   ApiNotificationJSON,
   ApiNotificationGroupJSON,
   NotificationType,
-} from 'mastodon/api_types/notifications';
-import { compareId } from 'mastodon/compare_id';
-import { usePendingItems } from 'mastodon/initial_state';
+} from 'truecolors/api_types/notifications';
+import { compareId } from 'truecolors/compare_id';
+import { usePendingItems } from 'truecolors/initial_state';
 import {
   NOTIFICATIONS_GROUP_MAX_AVATARS,
   createNotificationGroupFromJSON,
   createNotificationGroupFromNotificationJSON,
-} from 'mastodon/models/notification_group';
-import type { NotificationGroup } from 'mastodon/models/notification_group';
+} from 'truecolors/models/notification_group';
+import type { NotificationGroup } from 'truecolors/models/notification_group';
 
 const NOTIFICATIONS_TRIM_LIMIT = 50;
 

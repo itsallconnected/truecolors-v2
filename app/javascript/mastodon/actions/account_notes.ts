@@ -1,5 +1,5 @@
-import { apiSubmitAccountNote } from 'mastodon/api/accounts';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+import { apiSubmitAccountNote } from 'truecolors/api/accounts';
+import { createDataLoadingThunk } from 'truecolors/store/typed_functions';
 
 export const submitAccountNote = createDataLoadingThunk(
   'account_note/submit',

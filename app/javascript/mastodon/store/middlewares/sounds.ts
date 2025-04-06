@@ -1,8 +1,8 @@
 import { isAction } from '@reduxjs/toolkit';
 import type { Middleware, UnknownAction } from '@reduxjs/toolkit';
 
-import ready from 'mastodon/ready';
-import { assetHost } from 'mastodon/utils/config';
+import ready from 'truecolors/ready';
+import { assetHost } from 'truecolors/utils/config';
 
 import type { RootState } from '..';
 

@@ -53,7 +53,7 @@ class ActivityPub::Dereferencer
         json = body_to_json(res.body_with_limit)
         json if json.present? && json['id'] == uri
       else
-        raise Mastodon::UnexpectedResponseError, res unless response_successful?(res) || response_error_unsalvageable?(res)
+        raise Truecolors::UnexpectedResponseError, res unless response_successful?(res) || response_error_unsalvageable?(res)
       end
     end
   end

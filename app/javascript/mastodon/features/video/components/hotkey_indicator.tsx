@@ -3,8 +3,8 @@ import type { MessageDescriptor } from 'react-intl';
 
 import { useTransition, animated } from '@react-spring/web';
 
-import { Icon } from 'mastodon/components/icon';
-import type { IconProp } from 'mastodon/components/icon';
+import { Icon } from 'truecolors/components/icon';
+import type { IconProp } from 'truecolors/components/icon';
 
 export interface HotkeyEvent {
   key: number;

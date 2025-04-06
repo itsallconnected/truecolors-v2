@@ -109,11 +109,11 @@ RSpec.describe ApplicationController do
 
     it 'returns user\'s theme when it is set' do
       current_user = Fabricate(:user)
-      current_user.settings.update(theme: 'mastodon-light')
+      current_user.settings.update(theme: 'truecolors-light')
       current_user.save
       sign_in current_user
 
-      expect(controller.view_context.current_theme).to eq 'mastodon-light'
+      expect(controller.view_context.current_theme).to eq 'truecolors-light'
     end
   end
 

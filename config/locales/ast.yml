@@ -1,9 +1,9 @@
 ---
 ast:
   about:
-    about_mastodon_html: 'La rede social del futuru: ¡ensin anuncios nin vixilancia, con un diseñu éticu y descentralizáu! Controla los tos datos con Mastodon.'
+    about_truecolors_html: 'La rede social del futuru: ¡ensin anuncios nin vixilancia, con un diseñu éticu y descentralizáu! Controla los tos datos con Truecolors.'
     contact_unavailable: N/D
-    hosted_on: 'Mastodon ta agospiáu en: %{domain}'
+    hosted_on: 'Truecolors ta agospiáu en: %{domain}'
     title: Tocante a
   accounts:
     last_active: última actividá
@@ -306,17 +306,17 @@ ast:
         manage_rules: Xestionar les normes del sirvidor
         title: Tocante a
       appearance:
-        preamble: Personaliza la interfaz web de Mastodon.
+        preamble: Personaliza la interfaz web de Truecolors.
         title: Aspeutu
       branding:
-        preamble: La marca del to sirvidor estrémalu d'otros sirvidores de la rede. Ye posible qu'esta información apaeza nuna variedá d'entornos, como la interfaz web de Mastodon, les aplicaciones natives, nes previsualizaciones de los enllaces d'otros sitios web, dientro de les aplicaciones de mensaxería, etc. Por esti motivu, lo meyor ye qu'esta información seya clara, curtia y concisa.
+        preamble: La marca del to sirvidor estrémalu d'otros sirvidores de la rede. Ye posible qu'esta información apaeza nuna variedá d'entornos, como la interfaz web de Truecolors, les aplicaciones natives, nes previsualizaciones de los enllaces d'otros sitios web, dientro de les aplicaciones de mensaxería, etc. Por esti motivu, lo meyor ye qu'esta información seya clara, curtia y concisa.
         title: Marca
       content_retention:
-        preamble: Controla cómo s'atroxa'l conteníu xeneráu polos perfiles en Mastodon.
+        preamble: Controla cómo s'atroxa'l conteníu xeneráu polos perfiles en Truecolors.
         title: Retención del conteníu
       discovery:
         follow_recommendations: Recomendación de cuentes
-        preamble: L'apaición de conteníu interesante ye fundamental p'atrayer persones nueves que nun conozan nada de Mastodon. Controla'l funcionamientu de delles funciones de descubrimientu d'esti sirvidor.
+        preamble: L'apaición de conteníu interesante ye fundamental p'atrayer persones nueves que nun conozan nada de Truecolors. Controla'l funcionamientu de delles funciones de descubrimientu d'esti sirvidor.
         profile_directory: Direutoriu de perfiles
         public_timelines: Llinies de tiempu públiques
         publish_discovered_servers: Espublizamientu de sirvidores descubiertos
@@ -396,7 +396,7 @@ ast:
     webhooks:
       add_new: Amestar un estremu
       delete: Desaniciar
-      description_html: Un <strong>webhook</strong> permite a Mastodon unviar <strong>avisos en tiempu real</strong> de los eventos escoyíos sobre la to aplicación pa qu'esta pueda <strong>executar aiciones automáticamente</strong>.
+      description_html: Un <strong>webhook</strong> permite a Truecolors unviar <strong>avisos en tiempu real</strong> de los eventos escoyíos sobre la to aplicación pa qu'esta pueda <strong>executar aiciones automáticamente</strong>.
       disable: Desactivar
       disabled: Desactivóse
       edit: Editar l'estremu
@@ -436,8 +436,8 @@ ast:
     confirmation_dialogs: Diálogos de confirmación
     discovery: Descubrimientu
     localization:
-      body: Mastodon tradúcenlu voluntarios,
-      guide_link: https://crowdin.com/project/mastodon
+      body: Truecolors tradúcenlu voluntarios,
+      guide_link: https://crowdin.com/project/truecolors
       guide_link_text: tol mundu pue collaborar.
     sensitive_content: Conteníu sensible
   applications:
@@ -451,7 +451,7 @@ ast:
     delete_account: Desaniciu de la cuenta
     delete_account_html: Si quies desaniciar la cuenta, pues facelo <a href="%{path}">equí</a>. Vamos pidite que confirmes l'aición.
     description:
-      prefix_sign_up: "¡Rexístrate güei en Mastodon!"
+      prefix_sign_up: "¡Rexístrate güei en Truecolors!"
     didnt_get_confirmation: "¿Nun recibiesti l'enllaz de confirmación?"
     dont_have_your_security_key: "¿Nun tienes una llave de seguranza?"
     forgot_password: "¿Escaeciesti la contraseña?"
@@ -543,7 +543,7 @@ ast:
       content: Sentímoslo, mas prodúxose dalgún error nel sirvidor.
       title: La páxina nun ye correuta
     '503': Nun se pudo sirvir la páxina pola mor d'un fallu temporal del sirvidor.
-    noscript_html: Pa usar l'aplicación web de Mastodon, activa JavaScript. Tamién pues probar una de les <a href="%{apps_path}">aplicaciones natives</a> de Mastodon pa la to plataforma.
+    noscript_html: Pa usar l'aplicación web de Truecolors, activa JavaScript. Tamién pues probar una de les <a href="%{apps_path}">aplicaciones natives</a> de Truecolors pa la to plataforma.
   exports:
     archive_takeout:
       date: Data
@@ -709,7 +709,7 @@ ast:
     posting_defaults: Configuración predeterminada del espublizamientu d'artículos
     public_timelines: Llinies de tiempu públiques
   privacy:
-    hint_html: "<strong>Personaliza cómo quies que s'atope esti perfil y los sos artículos.</strong> Hai una variedá de funciones de Mastodon que puen ayudate a algamar audiencies más grandes cuando s'activen. Dedica un momentu pa revisar estes opciones y asegurate de que s'axusten al to casu."
+    hint_html: "<strong>Personaliza cómo quies que s'atope esti perfil y los sos artículos.</strong> Hai una variedá de funciones de Truecolors que puen ayudate a algamar audiencies más grandes cuando s'activen. Dedica un momentu pa revisar estes opciones y asegurate de que s'axusten al to casu."
     privacy: Privacidá
     reach: Algame
     reach_hint_html: Controla si quies que te descubran y te sigan perfiles nuevos. ¿Quies que los tos artículos apaezan na pantalla «Esploración»? ¿Quies qu'otres persones te vean na recomendación de cuentes? ¿Quies aceptar toles solicitúes de siguimientu automáticamente o tener un control minuciosu de caúna?
@@ -777,7 +777,7 @@ ast:
     account_settings: Configuración de la cuenta
     appearance: Aspeutu
     authorized_apps: Aplicaciones autorizaes
-    back: Volver a Mastodon
+    back: Volver a Truecolors
     development: Desendolcu
     edit_profile: Edición del perfil
     featured_tags: Etiquetes destacaes
@@ -843,9 +843,9 @@ ast:
   tags:
     does_not_match_previous_name: nun concasa col nome anterior
   themes:
-    contrast: Mastodon (contraste altu)
-    default: Mastodon (escuridá)
-    mastodon-light: Mastodon (claridá)
+    contrast: Truecolors (contraste altu)
+    default: Truecolors (escuridá)
+    truecolors-light: Truecolors (claridá)
   two_factor_authentication:
     enabled: L'autenticación en dos pasos ta activada
     enabled_success: L'autenticación en dos pasos activóse correutamente
@@ -873,7 +873,7 @@ ast:
         none: Alvertencia
         suspend: Cuenta suspendida
     welcome:
-      apps_title: Aplicaciones de Mastodon
+      apps_title: Aplicaciones de Truecolors
       edit_profile_title: Personalización del perfil
       explanation: Equí tienes dalgunos conseyos pa que comiences
       feature_action: Saber más
@@ -887,7 +887,7 @@ ast:
       hashtags_view_more: Ver más etiquetes en tendencia
       post_step: Saluda al mundu con semeyes, vídeos, testu o encuestes.
       sign_in_action: Aniciar la sesión
-      subject: Afáyate en Mastodon
+      subject: Afáyate en Truecolors
       title: "¡Afáyate, %{name}!"
   users:
     follow_limit_reached: Nun pues siguir a más de %{limit} persones

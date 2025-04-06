@@ -1,5 +1,5 @@
-import { apiGetTag, apiFollowTag, apiUnfollowTag } from 'mastodon/api/tags';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+import { apiGetTag, apiFollowTag, apiUnfollowTag } from 'truecolors/api/tags';
+import { createDataLoadingThunk } from 'truecolors/store/typed_functions';
 
 export const fetchHashtag = createDataLoadingThunk(
   'tags/fetch',

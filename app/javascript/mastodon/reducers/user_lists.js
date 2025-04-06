@@ -3,12 +3,12 @@ import { Map as ImmutableMap, List as ImmutableList, fromJS } from 'immutable';
 import {
   expandDirectory,
   fetchDirectory
-} from 'mastodon/actions/directory';
+} from 'truecolors/actions/directory';
 import {
   FEATURED_TAGS_FETCH_REQUEST,
   FEATURED_TAGS_FETCH_SUCCESS,
   FEATURED_TAGS_FETCH_FAIL,
-} from 'mastodon/actions/featured_tags';
+} from 'truecolors/actions/featured_tags';
 
 import {
   FOLLOWERS_FETCH_REQUEST,

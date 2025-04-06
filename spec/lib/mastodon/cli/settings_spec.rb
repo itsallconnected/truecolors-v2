@@ -1,15 +1,15 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/settings'
+require 'truecolors/cli/settings'
 
-RSpec.describe Mastodon::CLI::Settings do
+RSpec.describe Truecolors::CLI::Settings do
   it_behaves_like 'CLI Command'
 
   describe 'subcommand "registrations"' do
     subject { cli.invoke(action, arguments, options) }
 
-    let(:cli) { Mastodon::CLI::Registrations.new }
+    let(:cli) { Truecolors::CLI::Registrations.new }
     let(:arguments) { [] }
     let(:options) { {} }
 

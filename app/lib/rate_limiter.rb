@@ -35,7 +35,7 @@ class RateLimiter
       redis.expire(key, (@period - (last_epoch_time % @period) + 1).to_i)
     end
 
-    raise Mastodon::RateLimitExceededError if count.present? && count.to_i >= @limit
+    raise Truecolors::RateLimitExceededError if count.present? && count.to_i >= @limit
 
     redis.incr(key)
   end

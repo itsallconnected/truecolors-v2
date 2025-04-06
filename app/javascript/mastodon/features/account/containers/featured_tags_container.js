@@ -1,7 +1,7 @@
 import { List as ImmutableList } from 'immutable';
 import { connect } from 'react-redux';
 
-import { makeGetAccount } from 'mastodon/selectors';
+import { makeGetAccount } from 'truecolors/selectors';
 
 import FeaturedTags from '../components/featured_tags';
 

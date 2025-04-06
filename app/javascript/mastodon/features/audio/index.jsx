@@ -15,9 +15,9 @@ import PlayArrowIcon from '@/material-icons/400-24px/play_arrow-fill.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off-fill.svg?react';
 import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
-import { Icon }  from 'mastodon/components/icon';
-import { SpoilerButton } from 'mastodon/components/spoiler_button';
-import { formatTime, getPointerPosition, fileNameFromURL } from 'mastodon/features/video';
+import { Icon }  from 'truecolors/components/icon';
+import { SpoilerButton } from 'truecolors/components/spoiler_button';
+import { formatTime, getPointerPosition, fileNameFromURL } from 'truecolors/features/video';
 
 import { Blurhash } from '../../components/blurhash';
 import { displayMedia, useBlurhash } from '../../initial_state';

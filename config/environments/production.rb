@@ -70,7 +70,7 @@ Rails.application.configure do
 
   # Use a real queuing backend for Active Job (and separate queues per environment).
   # config.active_job.queue_adapter = :resque
-  # config.active_job.queue_name_prefix = "mastodon_production"
+  # config.active_job.queue_name_prefix = "truecolors_production"
 
   # Disable caching for Action Mailer templates even if Action Controller
   # caching is enabled.
@@ -84,7 +84,7 @@ Rails.application.configure do
   # the I18n.default_locale when a translation cannot be found).
   # This setting would typically be `true` to use the `I18n.default_locale`.
   # Some locales are missing translation entries and would have errors:
-  # https://github.com/mastodon/mastodon/pull/24727
+  # https://github.com/truecolors/truecolors/pull/24727
   config.i18n.fallbacks = [:en]
 
   # Don't log any deprecations.
@@ -149,7 +149,7 @@ Rails.application.configure do
   config.action_mailer.delivery_method = ENV.fetch('SMTP_DELIVERY_METHOD', 'smtp').to_sym
 
   config.action_dispatch.default_headers = {
-    'Server' => 'Mastodon',
+    'Server' => 'Truecolors',
     'X-Frame-Options' => 'DENY',
     'X-Content-Type-Options' => 'nosniff',
     'X-XSS-Protection' => '0',

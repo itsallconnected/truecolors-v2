@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class Cache < Base
     desc 'clear', 'Clear out the cache storage'
     def clear

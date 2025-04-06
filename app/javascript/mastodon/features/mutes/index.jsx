@@ -11,7 +11,7 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off.svg?react';
-import { Account } from 'mastodon/components/account';
+import { Account } from 'truecolors/components/account';
 
 import { fetchMutes, expandMutes } from '../../actions/mutes';
 import { LoadingIndicator } from '../../components/loading_indicator';

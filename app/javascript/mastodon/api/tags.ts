@@ -1,5 +1,5 @@
-import { apiRequestPost, apiRequestGet } from 'mastodon/api';
-import type { ApiHashtagJSON } from 'mastodon/api_types/tags';
+import { apiRequestPost, apiRequestGet } from 'truecolors/api';
+import type { ApiHashtagJSON } from 'truecolors/api_types/tags';
 
 export const apiGetTag = (tagId: string) =>
   apiRequestGet<ApiHashtagJSON>(`v1/tags/${tagId}`);

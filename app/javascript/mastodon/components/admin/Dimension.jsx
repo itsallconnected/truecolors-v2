@@ -3,9 +3,9 @@ import { PureComponent } from 'react';
 
 import { FormattedNumber } from 'react-intl';
 
-import api from 'mastodon/api';
-import { Skeleton } from 'mastodon/components/skeleton';
-import { roundTo10 } from 'mastodon/utils/numbers';
+import api from 'truecolors/api';
+import { Skeleton } from 'truecolors/components/skeleton';
+import { roundTo10 } from 'truecolors/utils/numbers';
 
 export default class Dimension extends PureComponent {
 

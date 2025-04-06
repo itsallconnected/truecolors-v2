@@ -1,10 +1,10 @@
 ---
 ku:
   about:
-    about_mastodon_html: 'Tora civakî ya pêşerojê: Ne reklam, ne şopandina şîrketan, dîzayna nenavendî! Bi Mastodon re bibe xwediyê daneyên xwe!'
+    about_truecolors_html: 'Tora civakî ya pêşerojê: Ne reklam, ne şopandina şîrketan, dîzayna nenavendî! Bi Truecolors re bibe xwediyê daneyên xwe!'
     contact_missing: Nehate sazkirin
     contact_unavailable: Tune
-    hosted_on: Mastodon li ser %{domain} tê pêşkêşkirin
+    hosted_on: Truecolors li ser %{domain} tê pêşkêşkirin
     title: Derbar
   accounts:
     followers:
@@ -605,7 +605,7 @@ ku:
         moderation: Çavdêrî
         special: Taybet
       delete: Jê bibe
-      description_html: Bi <strong>rolên bikarhêner</strong>, tu dikarî fonksiyon û deverên Mastodon ku bikarhênerên wê dikarin xwe bigihînin kesane bikî.
+      description_html: Bi <strong>rolên bikarhêner</strong>, tu dikarî fonksiyon û deverên Truecolors ku bikarhênerên wê dikarin xwe bigihînin kesane bikî.
       edit: Rolê '%{name}' serrast bike
       everyone: Mafdayînên berdest
       everyone_full_description_html: Ev <strong>rola bingehîn</strong> bandorê li <strong>hemû bikarhêneran</strong> dike, tevî yên bêyî rolek diyarkirî jî. Hemû rolên din mafdayînan jê digirin.
@@ -666,20 +666,20 @@ ku:
         rules_hint: Ji bo rêbazên ku ji bikarhênerên ve tê hêvîkirin ku pê ve girêdayî bin deverek veqetandî heye.
         title: Derbar
       appearance:
-        preamble: Navrûya tevnê ya Mastodon kesane bike.
+        preamble: Navrûya tevnê ya Truecolors kesane bike.
         title: Xuyang
       branding:
-        preamble: Navnîşa rajekarê te wê ji rajekarên din ên di torê de cuda bike. Dibe ku ev zanyarî li ser cihên cuda, wekî navrûya bikarhêneriyê tevnê ya Mastodon, sepanên resen, di pêşdîtinên girêdanê de li ser malperên din û di nav sepanên peyamî de, û hwd werin nîşandan. Ji bo vê yekê, çêtir e ku mirov van zanyariyan zelal, kurt û bê kêmasî werin nîşandan.
+        preamble: Navnîşa rajekarê te wê ji rajekarên din ên di torê de cuda bike. Dibe ku ev zanyarî li ser cihên cuda, wekî navrûya bikarhêneriyê tevnê ya Truecolors, sepanên resen, di pêşdîtinên girêdanê de li ser malperên din û di nav sepanên peyamî de, û hwd werin nîşandan. Ji bo vê yekê, çêtir e ku mirov van zanyariyan zelal, kurt û bê kêmasî werin nîşandan.
         title: Marka
       content_retention:
-        preamble: Kontrol bike ka naveroka ku ji aliyê bikarhêner ve hatiye çêkirin di Mastodon de çawa tê tomarkirin.
+        preamble: Kontrol bike ka naveroka ku ji aliyê bikarhêner ve hatiye çêkirin di Truecolors de çawa tê tomarkirin.
         title: Parastina naverokê
       default_noindex:
         desc_html: Bandorê li ser hemû bikarhênerên ku bi xwe ev sazkarî neguhertine
         title: Pêlrêçkirna bikarhêneran ji motorê lêgerînê dûr bixe
       discovery:
         follow_recommendations: Pêşniyarên şopandinê
-        preamble: Rûbirûbûna naveroka balkêş ji bo bikarhênerên nû yên ku li ser Mastodon kesek nas nakin pir bi bandor e. Kontrol bike ka çend taybetmendiyên vekolînê li ser rajekarê te çawa dixebite.
+        preamble: Rûbirûbûna naveroka balkêş ji bo bikarhênerên nû yên ku li ser Truecolors kesek nas nakin pir bi bandor e. Kontrol bike ka çend taybetmendiyên vekolînê li ser rajekarê te çawa dixebite.
         profile_directory: Rêgeha profîlê
         public_timelines: Demnameya gelemperî
         title: Vekolîne
@@ -821,7 +821,7 @@ ku:
     webhooks:
       add_new: Xala dawîbûnê tevlî bike
       delete: Jê bibe
-      description_html: "<strong>çengeleke tevnê</strong> dihêle ku Mastodon <strong>agahdariyên dema-rastîn</strong> ên derbarê çalakiyên hilbijartî de bisepîne ser sepana te, bi vî awayî sepana te dikare <strong>reaksiyonan bi awayekî bixweber nîşan bide</strong>."
+      description_html: "<strong>çengeleke tevnê</strong> dihêle ku Truecolors <strong>agahdariyên dema-rastîn</strong> ên derbarê çalakiyên hilbijartî de bisepîne ser sepana te, bi vî awayî sepana te dikare <strong>reaksiyonan bi awayekî bixweber nîşan bide</strong>."
       disable: Neçalak bike
       disabled: Neçalakkirî
       edit: Xala dawîbûnê serrast bike
@@ -881,8 +881,8 @@ ku:
     confirmation_dialogs: Gotûbêjên piştrastkirî
     discovery: Vedîtin
     localization:
-      body: Mastodon ji aliyê xêrxwazan tê wergerandin.
-      guide_link: https://crowdin.com/project/mastodon
+      body: Truecolors ji aliyê xêrxwazan tê wergerandin.
+      guide_link: https://crowdin.com/project/truecolors
       guide_link_text: Herkes dikare beşdar bibe.
     sensitive_content: Naveroka hestiyarî
   application_mailer:
@@ -902,9 +902,9 @@ ku:
     delete_account: Ajimêr jê bibe
     delete_account_html: Ku tu dixwazî ajimêra xwe jê bibe, tu dikarî <a href="%{path}">li vir bidomîne</a>. Ji te tê xwestin ku were pejirandin.
     description:
-      prefix_invited_by_user: "@%{name} te vedixwîne ku tu beşdarî vê rajekara Mastodon-ê bibî!"
-      prefix_sign_up: Îro li Mastodonê tomar bibe!
-      suffix: Bi ajimêrekê, tu yê karibî kesan bişopînî, rojanekirinan bişînî û bi bikarhênerên ji her rajekarê Mastodon re peyaman bişînî û bêtir!
+      prefix_invited_by_user: "@%{name} te vedixwîne ku tu beşdarî vê rajekara Truecolors-ê bibî!"
+      prefix_sign_up: Îro li Truecolorsê tomar bibe!
+      suffix: Bi ajimêrekê, tu yê karibî kesan bişopînî, rojanekirinan bişînî û bi bikarhênerên ji her rajekarê Truecolors re peyaman bişînî û bêtir!
     dont_have_your_security_key: Kilîda te ya ewlehiyê tune ye?
     forgot_password: Te borînpeyva xwe ji bîr kir?
     invalid_reset_password_token: Ji nû ve sazkirina borînpeyvê nederbasdar e an jî qediya ye. Jkx daxwaza yeka nû bike.
@@ -1023,7 +1023,7 @@ ku:
       content: Em xemgîn in, lê tiştek di aliyê me de şaş çû.
       title: Ev rûpel ne rast e
     '503': Ji ber têkçûna rajekar a demkî rûpel nayê bikaranîn.
-    noscript_html: Ji bo ku tu sepanaa Mastodon a tevnê bi kar bîne, jkx JavaScript-ê çalak bike. Wekî din, yek ji <a href="%{apps_path}">sepanên xwemalî</a> ji bo Mastodon ji bo platforma xwe biceribîne.
+    noscript_html: Ji bo ku tu sepanaa Truecolors a tevnê bi kar bîne, jkx JavaScript-ê çalak bike. Wekî din, yek ji <a href="%{apps_path}">sepanên xwemalî</a> ji bo Truecolors ji bo platforma xwe biceribîne.
   existing_username_validator:
     not_found: nikaribû bikarhênerek herêmî bi wê navê bikarhêner bibîne
     not_found_multiple: "%{usernames} nehat dîtin"
@@ -1337,7 +1337,7 @@ ku:
       weibo: Weibo
     current_session: Danişîna heyî
     description: "%{platform} ser %{browser}"
-    explanation: Gerokên tevnê di dema heyî de hene ku têketin kirine di ajimêra te ya Mastodon.
+    explanation: Gerokên tevnê di dema heyî de hene ku têketin kirine di ajimêra te ya Truecolors.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -1361,7 +1361,7 @@ ku:
     aliases: Nûçikên ajimêra
     appearance: Xuyang
     authorized_apps: Rayedarê sepanan
-    back: Vegere bo Mastodon
+    back: Vegere bo Truecolors
     delete: Jêbirina ajimêr
     development: Pêşdebir
     edit_profile: Profîlê serrast bike
@@ -1454,9 +1454,9 @@ ku:
   tags:
     does_not_match_previous_name: bi navê berê re li hev nayê
   themes:
-    contrast: Mastodon (Dijberiya bilind)
-    default: Mastodon (Tarî)
-    mastodon-light: Mastodon (Ronahî)
+    contrast: Truecolors (Dijberiya bilind)
+    default: Truecolors (Tarî)
+    truecolors-light: Truecolors (Ronahî)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"
@@ -1529,7 +1529,7 @@ ku:
         suspend: Ajimêr hatiye rawestandin
     welcome:
       explanation: Li vir çend serişte hene ku tu dest pê bike
-      subject: Tu bi xêr hatî Mastodon
+      subject: Tu bi xêr hatî Truecolors
       title: Bi xêr hatî, %{name}!
   users:
     follow_limit_reached: Tu nikarî zêdetirî %{limit} kesan bişopînî

@@ -1,5 +1,5 @@
 # This file is designed for production server deployment, not local development work
-# For a containerized local dev environment, see: https://github.com/mastodon/mastodon/blob/main/docs/DEVELOPMENT.md#docker
+# For a containerized local dev environment, see: https://github.com/truecolors/truecolors/blob/main/docs/DEVELOPMENT.md#docker
 
 version: '3'
 services:
@@ -37,7 +37,7 @@ services:
   #     - "xpack.graph.enabled=false"
   #     - "xpack.ml.enabled=false"
   #     - "bootstrap.memory_lock=true"
-  #     - "cluster.name=es-mastodon"
+  #     - "cluster.name=es-truecolors"
   #     - "discovery.type=single-node"
   #     - "thread_pool.write.queue_size=1000"
   #   networks:
@@ -58,10 +58,10 @@ services:
   #     - '127.0.0.1:9200:9200'
 
   web:
-    image: tootsuite/mastodon:latest
+    image: tootsuite/truecolors:latest
     restart: always
     env_file: .env.production
-    command: bash -c "rm -f /mastodon/tmp/pids/server.pid; bundle exec rails s -p 3000"
+    command: bash -c "rm -f /truecolors/tmp/pids/server.pid; bundle exec rails s -p 3000"
     networks:
       - external_network
       - internal_network
@@ -75,14 +75,14 @@ services:
       - redis
       # - es
     volumes:
-      - /opt/mastodon/public/system:/mastodon/public/system
-      - /opt/mastodon/public/assets:/mastodon/public/assets
-      - /opt/mastodon/public/packs:/mastodon/public/packs
+      - /opt/truecolors/public/system:/truecolors/public/system
+      - /opt/truecolors/public/assets:/truecolors/public/assets
+      - /opt/truecolors/public/packs:/truecolors/public/packs
     extra_hosts:
       - "host.docker.internal:host-gateway"
 
   streaming:
-    image: tootsuite/mastodon:latest
+    image: tootsuite/truecolors:latest
     restart: always
     env_file: .env.production
     command: node ./streaming
@@ -101,7 +101,7 @@ services:
       - "host.docker.internal:host-gateway"
 
   sidekiq:
-    image: tootsuite/mastodon:latest
+    image: tootsuite/truecolors:latest
     restart: always
     env_file: .env.production
     command: bundle exec sidekiq
@@ -112,7 +112,7 @@ services:
       - external_network
       - internal_network
     volumes:
-      - /opt/mastodon/public/system:/mastodon/public/system
+      - /opt/truecolors/public/system:/truecolors/public/system
     healthcheck:
       test: ['CMD-SHELL', "ps aux | grep '[s]idekiq\ 6' || false"]
     extra_hosts:

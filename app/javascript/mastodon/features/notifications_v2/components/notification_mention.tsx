@@ -4,10 +4,10 @@ import { isEqual } from 'lodash';
 
 import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply-fill.svg?react';
-import { me } from 'mastodon/initial_state';
-import type { NotificationGroupMention } from 'mastodon/models/notification_group';
-import type { Status } from 'mastodon/models/status';
-import { useAppSelector } from 'mastodon/store';
+import { me } from 'truecolors/initial_state';
+import type { NotificationGroupMention } from 'truecolors/models/notification_group';
+import type { Status } from 'truecolors/models/status';
+import { useAppSelector } from 'truecolors/store';
 
 import type { LabelRenderer } from './notification_group_with_status';
 import { NotificationWithStatus } from './notification_with_status';

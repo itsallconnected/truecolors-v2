@@ -17,22 +17,22 @@ import Replay5Icon from '@/material-icons/400-24px/replay_5-fill.svg?react';
 import VolumeDownIcon from '@/material-icons/400-24px/volume_down-fill.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off-fill.svg?react';
 import VolumeUpIcon from '@/material-icons/400-24px/volume_up-fill.svg?react';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon } from 'mastodon/components/icon';
-import { SpoilerButton } from 'mastodon/components/spoiler_button';
+import { Blurhash } from 'truecolors/components/blurhash';
+import { Icon } from 'truecolors/components/icon';
+import { SpoilerButton } from 'truecolors/components/spoiler_button';
 import {
   isFullscreen,
   requestFullscreen,
   exitFullscreen,
   attachFullscreenListener,
   detachFullscreenListener,
-} from 'mastodon/features/ui/util/fullscreen';
+} from 'truecolors/features/ui/util/fullscreen';
 import {
   displayMedia,
   useBlurhash,
   reduceMotion,
-} from 'mastodon/initial_state';
-import { playerSettings } from 'mastodon/settings';
+} from 'truecolors/initial_state';
+import { playerSettings } from 'truecolors/settings';
 
 import { HotkeyIndicator } from './components/hotkey_indicator';
 import type { HotkeyEvent } from './components/hotkey_indicator';

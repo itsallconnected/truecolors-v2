@@ -18,46 +18,46 @@ import {
   unmuteAccount,
   pinAccount,
   unpinAccount,
-} from 'mastodon/actions/accounts';
-import { initBlockModal } from 'mastodon/actions/blocks';
-import { mentionCompose, directCompose } from 'mastodon/actions/compose';
+} from 'truecolors/actions/accounts';
+import { initBlockModal } from 'truecolors/actions/blocks';
+import { mentionCompose, directCompose } from 'truecolors/actions/compose';
 import {
   initDomainBlockModal,
   unblockDomain,
-} from 'mastodon/actions/domain_blocks';
-import { openModal } from 'mastodon/actions/modal';
-import { initMuteModal } from 'mastodon/actions/mutes';
-import { initReport } from 'mastodon/actions/reports';
-import { Avatar } from 'mastodon/components/avatar';
-import { Badge, AutomatedBadge, GroupBadge } from 'mastodon/components/badge';
-import { Button } from 'mastodon/components/button';
-import { CopyIconButton } from 'mastodon/components/copy_icon_button';
+} from 'truecolors/actions/domain_blocks';
+import { openModal } from 'truecolors/actions/modal';
+import { initMuteModal } from 'truecolors/actions/mutes';
+import { initReport } from 'truecolors/actions/reports';
+import { Avatar } from 'truecolors/components/avatar';
+import { Badge, AutomatedBadge, GroupBadge } from 'truecolors/components/badge';
+import { Button } from 'truecolors/components/button';
+import { CopyIconButton } from 'truecolors/components/copy_icon_button';
 import {
   FollowersCounter,
   FollowingCounter,
   StatusesCounter,
-} from 'mastodon/components/counters';
-import { FormattedDateWrapper } from 'mastodon/components/formatted_date';
-import { Icon } from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { ShortNumber } from 'mastodon/components/short_number';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
-import { DomainPill } from 'mastodon/features/account/components/domain_pill';
-import AccountNoteContainer from 'mastodon/features/account/containers/account_note_container';
-import FollowRequestNoteContainer from 'mastodon/features/account/containers/follow_request_note_container';
-import { useLinks } from 'mastodon/hooks/useLinks';
-import { useIdentity } from 'mastodon/identity_context';
-import { autoPlayGif, me, domain as localDomain } from 'mastodon/initial_state';
-import type { Account } from 'mastodon/models/account';
-import type { DropdownMenu } from 'mastodon/models/dropdown_menu';
-import type { Relationship } from 'mastodon/models/relationship';
+} from 'truecolors/components/counters';
+import { FormattedDateWrapper } from 'truecolors/components/formatted_date';
+import { Icon } from 'truecolors/components/icon';
+import { IconButton } from 'truecolors/components/icon_button';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { ShortNumber } from 'truecolors/components/short_number';
+import DropdownMenuContainer from 'truecolors/containers/dropdown_menu_container';
+import { DomainPill } from 'truecolors/features/account/components/domain_pill';
+import AccountNoteContainer from 'truecolors/features/account/containers/account_note_container';
+import FollowRequestNoteContainer from 'truecolors/features/account/containers/follow_request_note_container';
+import { useLinks } from 'truecolors/hooks/useLinks';
+import { useIdentity } from 'truecolors/identity_context';
+import { autoPlayGif, me, domain as localDomain } from 'truecolors/initial_state';
+import type { Account } from 'truecolors/models/account';
+import type { DropdownMenu } from 'truecolors/models/dropdown_menu';
+import type { Relationship } from 'truecolors/models/relationship';
 import {
   PERMISSION_MANAGE_USERS,
   PERMISSION_MANAGE_FEDERATION,
-} from 'mastodon/permissions';
-import { getAccountHidden } from 'mastodon/selectors/accounts';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+} from 'truecolors/permissions';
+import { getAccountHidden } from 'truecolors/selectors/accounts';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { MemorialNote } from './memorial_note';
 import { MovedNote } from './moved_note';

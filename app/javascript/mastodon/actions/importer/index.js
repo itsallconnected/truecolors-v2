@@ -1,4 +1,4 @@
-import { createPollFromServerJSON } from 'mastodon/models/poll';
+import { createPollFromServerJSON } from 'truecolors/models/poll';
 
 import { importAccounts } from '../accounts_typed';
 

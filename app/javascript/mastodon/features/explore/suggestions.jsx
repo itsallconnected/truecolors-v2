@@ -7,9 +7,9 @@ import { withRouter } from 'react-router-dom';
 
 import { connect } from 'react-redux';
 
-import { fetchSuggestions } from 'mastodon/actions/suggestions';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { fetchSuggestions } from 'truecolors/actions/suggestions';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { WithRouterPropTypes } from 'truecolors/utils/react_router';
 
 import { Card } from './components/card';
 

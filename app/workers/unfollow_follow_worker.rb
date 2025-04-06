@@ -11,7 +11,7 @@ class UnfollowFollowWorker
     new_target_account = Account.find(new_target_account_id)
 
     FollowMigrationService.new.call(follower_account, new_target_account, old_target_account, bypass_locked: bypass_locked)
-  rescue ActiveRecord::RecordNotFound, Mastodon::NotPermittedError
+  rescue ActiveRecord::RecordNotFound, Truecolors::NotPermittedError
     true
   end
 end

@@ -1,5 +1,5 @@
-import { ModerationWarning } from 'mastodon/features/notifications/components/moderation_warning';
-import type { NotificationGroupModerationWarning } from 'mastodon/models/notification_group';
+import { ModerationWarning } from 'truecolors/features/notifications/components/moderation_warning';
+import type { NotificationGroupModerationWarning } from 'truecolors/models/notification_group';
 
 export const NotificationModerationWarning: React.FC<{
   notification: NotificationGroupModerationWarning;

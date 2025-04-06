@@ -10,9 +10,9 @@ import type Immutable from 'immutable';
 
 import { Sparklines, SparklinesCurve } from 'react-sparklines';
 
-import { ShortNumber } from 'mastodon/components/short_number';
-import { Skeleton } from 'mastodon/components/skeleton';
-import type { Hashtag as HashtagType } from 'mastodon/models/tags';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { Skeleton } from 'truecolors/components/skeleton';
+import type { Hashtag as HashtagType } from 'truecolors/models/tags';
 
 interface SilentErrorBoundaryProps {
   children: React.ReactNode;

@@ -1,9 +1,9 @@
 import type { List as ImmutableList, Map as ImmutableMap } from 'immutable';
 
-import { apiUpdateMedia } from 'mastodon/api/compose';
-import type { ApiMediaAttachmentJSON } from 'mastodon/api_types/media_attachments';
-import type { MediaAttachment } from 'mastodon/models/media_attachment';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+import { apiUpdateMedia } from 'truecolors/api/compose';
+import type { ApiMediaAttachmentJSON } from 'truecolors/api_types/media_attachments';
+import type { MediaAttachment } from 'truecolors/models/media_attachment';
+import { createDataLoadingThunk } from 'truecolors/store/typed_functions';
 
 type SimulatedMediaAttachmentJSON = ApiMediaAttachmentJSON & {
   unattached?: boolean;

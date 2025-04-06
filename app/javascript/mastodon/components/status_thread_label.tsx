@@ -1,9 +1,9 @@
 import { FormattedMessage } from 'react-intl';
 
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
-import { Icon } from 'mastodon/components/icon';
-import { DisplayedName } from 'mastodon/features/notifications_v2/components/displayed_name';
-import { useAppSelector } from 'mastodon/store';
+import { Icon } from 'truecolors/components/icon';
+import { DisplayedName } from 'truecolors/features/notifications_v2/components/displayed_name';
+import { useAppSelector } from 'truecolors/store';
 
 export const StatusThreadLabel: React.FC<{
   accountId: string;

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/cache'
+require 'truecolors/cli/cache'
 
-RSpec.describe Mastodon::CLI::Cache do
+RSpec.describe Truecolors::CLI::Cache do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

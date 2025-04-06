@@ -17,7 +17,7 @@ RSpec.describe 'The /.well-known/oauth-authorization-server request' do
 
     expect(response.parsed_body).to include(
       issuer: root_url,
-      service_documentation: 'https://docs.joinmastodon.org/',
+      service_documentation: 'https://docs.jointruecolors.org/',
       authorization_endpoint: oauth_authorization_url,
       token_endpoint: oauth_token_url,
       userinfo_endpoint: oauth_userinfo_url,

@@ -12,12 +12,12 @@ module Authorization
   def authorize(*)
     super
   rescue Pundit::NotAuthorizedError
-    raise Mastodon::NotPermittedError
+    raise Truecolors::NotPermittedError
   end
 
   def authorize_with(user, record, query)
     Pundit.authorize(user, record, query)
   rescue Pundit::NotAuthorizedError
-    raise Mastodon::NotPermittedError
+    raise Truecolors::NotPermittedError
   end
 end

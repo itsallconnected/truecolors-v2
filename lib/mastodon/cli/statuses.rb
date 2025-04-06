@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class Statuses < Base
     include ActionView::Helpers::NumberHelper
 
@@ -42,7 +42,7 @@ module Mastodon::CLI
 
       start_at = Time.now.to_f
 
-      max_id   = Mastodon::Snowflake.id_at(options[:days].days.ago, with_random: false)
+      max_id   = Truecolors::Snowflake.id_at(options[:days].days.ago, with_random: false)
 
       unless options[:continue] && ActiveRecord::Base.connection.table_exists?('statuses_to_be_deleted')
         say('Extract the deletion target from statuses... This might take a while...')

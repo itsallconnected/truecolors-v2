@@ -2,9 +2,9 @@ import { useCallback } from 'react';
 
 import { defineMessages, FormattedMessage, useIntl } from 'react-intl';
 
-import { unfollowAccount } from 'mastodon/actions/accounts';
-import type { Account } from 'mastodon/models/account';
-import { useAppDispatch } from 'mastodon/store';
+import { unfollowAccount } from 'truecolors/actions/accounts';
+import type { Account } from 'truecolors/models/account';
+import { useAppDispatch } from 'truecolors/store';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

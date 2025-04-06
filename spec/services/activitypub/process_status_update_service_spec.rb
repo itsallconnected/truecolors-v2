@@ -51,7 +51,7 @@ RSpec.describe ActivityPub::ProcessStatusUpdateService do
     end
 
     context 'when the changes are only in sanitized-out HTML' do
-      let!(:status) { Fabricate(:status, text: '<p>Hello world <a href="https://joinmastodon.org" rel="nofollow">joinmastodon.org</a></p>', account: Fabricate(:account, domain: 'example.com')) }
+      let!(:status) { Fabricate(:status, text: '<p>Hello world <a href="https://jointruecolors.org" rel="nofollow">jointruecolors.org</a></p>', account: Fabricate(:account, domain: 'example.com')) }
 
       let(:payload) do
         {
@@ -59,7 +59,7 @@ RSpec.describe ActivityPub::ProcessStatusUpdateService do
           id: 'foo',
           type: 'Note',
           updated: '2021-09-08T22:39:25Z',
-          content: '<p>Hello world <a href="https://joinmastodon.org" rel="noreferrer">joinmastodon.org</a></p>',
+          content: '<p>Hello world <a href="https://jointruecolors.org" rel="noreferrer">jointruecolors.org</a></p>',
         }
       end
 

@@ -11,9 +11,9 @@ class MediaProxyController < ApplicationController
   before_action :authenticate_user!, if: :limited_federation_mode?
 
   rescue_from ActiveRecord::RecordInvalid, with: :not_found
-  rescue_from Mastodon::UnexpectedResponseError, with: :not_found
-  rescue_from Mastodon::NotPermittedError, with: :not_found
-  rescue_from(*Mastodon::HTTP_CONNECTION_ERRORS, with: :internal_server_error)
+  rescue_from Truecolors::UnexpectedResponseError, with: :not_found
+  rescue_from Truecolors::NotPermittedError, with: :not_found
+  rescue_from(*Truecolors::HTTP_CONNECTION_ERRORS, with: :internal_server_error)
 
   def show
     with_redis_lock("media_download:#{params[:id]}") do

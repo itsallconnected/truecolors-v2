@@ -40,7 +40,7 @@ RSpec.describe 'statuses/show.html.haml' do
     Module.new do
       def api_oembed_url(_) = ''
       def show_landing_strip? = true
-      def site_title = 'Mastodon'
+      def site_title = 'Truecolors'
       def site_hostname = 'truecolors.social'
       def full_asset_url(_) = '//asset.host/image.svg'
       def current_account = nil

@@ -24,7 +24,7 @@ class ActivityPub::ProcessCollectionService < BaseService
     if @json['signature'].present?
       # We have verified the signature, but in the compaction step above, might
       # have introduced incompatibilities with other servers that do not
-      # normalize the JSON-LD documents (for instance, previous Mastodon
+      # normalize the JSON-LD documents (for instance, previous Truecolors
       # versions), so skip redistribution if we can't get a safe document.
       patch_for_forwarding!(original_json, @json)
       @json.delete('signature') unless safe_for_forwarding?(original_json, @json)

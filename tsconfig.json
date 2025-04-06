@@ -15,13 +15,13 @@
     "incremental": true,
     "tsBuildInfoFile": "tmp/cache/tsconfig.tsbuildinfo",
     "paths": {
-      "mastodon": ["app/javascript/mastodon"],
-      "mastodon/*": ["app/javascript/mastodon/*"],
+      "truecolors": ["app/javascript/truecolors"],
+      "truecolors/*": ["app/javascript/truecolors/*"],
       "@/*": ["app/javascript/*"]
     }
   },
   "include": [
-    "app/javascript/mastodon",
+    "app/javascript/truecolors",
     "app/javascript/entrypoints",
     "app/javascript/types"
   ]

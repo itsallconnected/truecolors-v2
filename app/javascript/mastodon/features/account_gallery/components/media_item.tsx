@@ -5,13 +5,13 @@ import classNames from 'classnames';
 import HeadphonesIcon from '@/material-icons/400-24px/headphones-fill.svg?react';
 import MovieIcon from '@/material-icons/400-24px/movie-fill.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
-import { AltTextBadge } from 'mastodon/components/alt_text_badge';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon } from 'mastodon/components/icon';
-import { formatTime } from 'mastodon/features/video';
-import { autoPlayGif, displayMedia, useBlurhash } from 'mastodon/initial_state';
-import type { Status, MediaAttachment } from 'mastodon/models/status';
-import { useAppSelector } from 'mastodon/store';
+import { AltTextBadge } from 'truecolors/components/alt_text_badge';
+import { Blurhash } from 'truecolors/components/blurhash';
+import { Icon } from 'truecolors/components/icon';
+import { formatTime } from 'truecolors/features/video';
+import { autoPlayGif, displayMedia, useBlurhash } from 'truecolors/initial_state';
+import type { Status, MediaAttachment } from 'truecolors/models/status';
+import { useAppSelector } from 'truecolors/store';
 
 export const MediaItem: React.FC<{
   attachment: MediaAttachment;

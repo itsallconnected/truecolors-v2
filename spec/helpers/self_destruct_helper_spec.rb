@@ -4,8 +4,8 @@ require 'rails_helper'
 
 RSpec.describe SelfDestructHelper do
   describe '#self_destruct?' do
-    before { Rails.configuration.x.mastodon.self_destruct_value = destruct_value }
-    after { Rails.configuration.x.mastodon.self_destruct_value = nil }
+    before { Rails.configuration.x.truecolors.self_destruct_value = destruct_value }
+    after { Rails.configuration.x.truecolors.self_destruct_value = nil }
 
     context 'when SELF_DESTRUCT is unset' do
       let(:destruct_value) { nil }
@@ -24,7 +24,7 @@ RSpec.describe SelfDestructHelper do
     end
 
     context 'when SELF_DESTRUCT is set to value signed for the wrong purpose' do
-      let(:destruct_value) { Rails.configuration.x.mastodon.self_destruct_value = Rails.application.message_verifier('foo').generate('example.com') }
+      let(:destruct_value) { Rails.configuration.x.truecolors.self_destruct_value = Rails.application.message_verifier('foo').generate('example.com') }
 
       around do |example|
         ClimateControl.modify(
@@ -40,7 +40,7 @@ RSpec.describe SelfDestructHelper do
     end
 
     context 'when SELF_DESTRUCT is set to value signed for the wrong domain' do
-      let(:destruct_value) { Rails.configuration.x.mastodon.self_destruct_value = Rails.application.message_verifier(described_class::VERIFY_PURPOSE).generate('foo.com') }
+      let(:destruct_value) { Rails.configuration.x.truecolors.self_destruct_value = Rails.application.message_verifier(described_class::VERIFY_PURPOSE).generate('foo.com') }
 
       around do |example|
         ClimateControl.modify(
@@ -56,7 +56,7 @@ RSpec.describe SelfDestructHelper do
     end
 
     context 'when SELF_DESTRUCT is set to a correctly-signed value' do
-      let(:destruct_value) { Rails.configuration.x.mastodon.self_destruct_value = Rails.application.message_verifier(described_class::VERIFY_PURPOSE).generate('example.com') }
+      let(:destruct_value) { Rails.configuration.x.truecolors.self_destruct_value = Rails.application.message_verifier(described_class::VERIFY_PURPOSE).generate('example.com') }
 
       around do |example|
         ClimateControl.modify(

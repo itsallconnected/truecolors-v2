@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import ListAltActiveIcon from '@/material-icons/400-24px/list_alt-fill.svg?react';
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
-import { fetchLists } from 'mastodon/actions/lists';
+import { fetchLists } from 'truecolors/actions/lists';
 
 import ColumnLink from './column_link';
 

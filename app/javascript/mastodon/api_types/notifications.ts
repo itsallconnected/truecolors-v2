@@ -1,6 +1,6 @@
 // See app/serializers/rest/notification_group_serializer.rb
 
-import type { AccountWarningAction } from 'mastodon/models/notification_group';
+import type { AccountWarningAction } from 'truecolors/models/notification_group';
 
 import type { ApiAccountJSON } from './accounts';
 import type { ApiReportJSON } from './reports';

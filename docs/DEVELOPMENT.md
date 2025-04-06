@@ -17,7 +17,7 @@ complete the following steps:
   `vagrant plugin install vagrant-hostsupdater`
 - Run `vagrant up`
 - Run `vagrant ssh -c "cd /vagrant && bin/dev"`
-- Open `http://mastodon.local` in your browser
+- Open `http://truecolors.local` in your browser
 
 ### macOS
 
@@ -49,7 +49,7 @@ docker compose -f .devcontainer/compose.yaml exec app bin/dev
 ### Dev Containers
 
 Within IDEs that support the [Development Containers] specification, start the
-"Mastodon on local machine" container from the editor. The necessary `docker
+"Truecolors on local machine" container from the editor. The necessary `docker
 compose` commands to build and setup the container should run automatically. For
 **Visual Studio Code** this requires installing the [Dev Container extension].
 
@@ -63,10 +63,10 @@ development environment configured with the software needed for this project.
 - Click the button to create a new codespace, and confirm the options
 - Wait for the environment to build (takes a few minutes)
 - When the editor is ready, run `bin/dev` in the terminal
-- Wait for an _Open in Browser_ prompt. This will open Mastodon
+- Wait for an _Open in Browser_ prompt. This will open Truecolors
 - On the _Ports_ tab "stream" setting change _Port visibility_ → _Public_
 
-[codespace]: https://codespaces.new/mastodon/mastodon?quickstart=1&devcontainer_path=.devcontainer%2Fcodespaces%2Fdevcontainer.json
+[codespace]: https://codespaces.new/truecolors/truecolors?quickstart=1&devcontainer_path=.devcontainer%2Fcodespaces%2Fdevcontainer.json
 [CONTRIBUTING]: ../CONTRIBUTING.md
 [Dev Container extension]: https://containers.dev/supporting#dev-containers
 [Development Containers]: https://containers.dev/supporting

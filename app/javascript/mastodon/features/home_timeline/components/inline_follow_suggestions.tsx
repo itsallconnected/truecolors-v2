@@ -8,20 +8,20 @@ import ChevronLeftIcon from '@/material-icons/400-24px/chevron_left.svg?react';
 import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import InfoIcon from '@/material-icons/400-24px/info.svg?react';
-import { changeSetting } from 'mastodon/actions/settings';
+import { changeSetting } from 'truecolors/actions/settings';
 import {
   fetchSuggestions,
   dismissSuggestion,
-} from 'mastodon/actions/suggestions';
-import type { ApiSuggestionSourceJSON } from 'mastodon/api_types/suggestions';
-import { Avatar } from 'mastodon/components/avatar';
-import { DisplayName } from 'mastodon/components/display_name';
-import { FollowButton } from 'mastodon/components/follow_button';
-import { Icon } from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import { VerifiedBadge } from 'mastodon/components/verified_badge';
-import { domain } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'truecolors/actions/suggestions';
+import type { ApiSuggestionSourceJSON } from 'truecolors/api_types/suggestions';
+import { Avatar } from 'truecolors/components/avatar';
+import { DisplayName } from 'truecolors/components/display_name';
+import { FollowButton } from 'truecolors/components/follow_button';
+import { Icon } from 'truecolors/components/icon';
+import { IconButton } from 'truecolors/components/icon_button';
+import { VerifiedBadge } from 'truecolors/components/verified_badge';
+import { domain } from 'truecolors/initial_state';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   follow: { id: 'account.follow', defaultMessage: 'Follow' },

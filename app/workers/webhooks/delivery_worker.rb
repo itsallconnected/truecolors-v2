@@ -27,7 +27,7 @@ class Webhooks::DeliveryWorker
     )
 
     request.perform do |response|
-      raise Mastodon::UnexpectedResponseError, response unless response_successful?(response) || response_error_unsalvageable?(response)
+      raise Truecolors::UnexpectedResponseError, response unless response_successful?(response) || response_error_unsalvageable?(response)
     end
   end
 

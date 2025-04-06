@@ -5,8 +5,8 @@ import classNames from 'classnames';
 import { useSpring, animated, config } from '@react-spring/web';
 import { createUseGesture, dragAction, pinchAction } from '@use-gesture/react';
 
-import { Blurhash } from 'mastodon/components/blurhash';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
+import { Blurhash } from 'truecolors/components/blurhash';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
 
 const MIN_SCALE = 1;
 const MAX_SCALE = 4;

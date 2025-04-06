@@ -11,8 +11,8 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import RefreshIcon from '@/material-icons/400-24px/refresh.svg?react';
-import { Account } from 'mastodon/components/account';
-import { Icon }  from 'mastodon/components/icon';
+import { Account } from 'truecolors/components/account';
+import { Icon }  from 'truecolors/components/icon';
 
 import { fetchReblogs, expandReblogs } from '../../actions/interactions';
 import ColumnHeader from '../../components/column_header';

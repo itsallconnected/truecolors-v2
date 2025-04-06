@@ -6,11 +6,11 @@ import { Helmet } from 'react-helmet';
 import { NavLink, Switch, Route } from 'react-router-dom';
 
 import ExploreIcon from '@/material-icons/400-24px/explore.svg?react';
-import { Column } from 'mastodon/components/column';
-import type { ColumnRef } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { Search } from 'mastodon/features/compose/components/search';
-import { useIdentity } from 'mastodon/identity_context';
+import { Column } from 'truecolors/components/column';
+import type { ColumnRef } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import { Search } from 'truecolors/features/compose/components/search';
+import { useIdentity } from 'truecolors/identity_context';
 
 import Links from './links';
 import Statuses from './statuses';

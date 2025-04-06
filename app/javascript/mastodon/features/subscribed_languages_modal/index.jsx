@@ -9,11 +9,11 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { followAccount } from 'mastodon/actions/accounts';
-import { Button } from 'mastodon/components/button';
-import { IconButton } from 'mastodon/components/icon_button';
-import Option from 'mastodon/features/report/components/option';
-import { languages as preloadedLanguages } from 'mastodon/initial_state';
+import { followAccount } from 'truecolors/actions/accounts';
+import { Button } from 'truecolors/components/button';
+import { IconButton } from 'truecolors/components/icon_button';
+import Option from 'truecolors/features/report/components/option';
+import { languages as preloadedLanguages } from 'truecolors/initial_state';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/mastodon/sidekiq_middleware'
+require_relative '../../lib/truecolors/sidekiq_middleware'
 
 Sidekiq.configure_server do |config|
   config.redis = REDIS_CONFIGURATION.sidekiq
@@ -65,7 +65,7 @@ Sidekiq.configure_server do |config|
   end
 
   config.server_middleware do |chain|
-    chain.add Mastodon::SidekiqMiddleware
+    chain.add Truecolors::SidekiqMiddleware
   end
 
   config.server_middleware do |chain|

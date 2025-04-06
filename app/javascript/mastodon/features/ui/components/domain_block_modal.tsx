@@ -8,15 +8,15 @@ import HistoryIcon from '@/material-icons/400-24px/history.svg?react';
 import PersonRemoveIcon from '@/material-icons/400-24px/person_remove.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
-import { blockAccount } from 'mastodon/actions/accounts';
-import { blockDomain } from 'mastodon/actions/domain_blocks';
-import { closeModal } from 'mastodon/actions/modal';
-import { apiRequest } from 'mastodon/api';
-import { Button } from 'mastodon/components/button';
-import { Icon } from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { useAppDispatch } from 'mastodon/store';
+import { blockAccount } from 'truecolors/actions/accounts';
+import { blockDomain } from 'truecolors/actions/domain_blocks';
+import { closeModal } from 'truecolors/actions/modal';
+import { apiRequest } from 'truecolors/api';
+import { Button } from 'truecolors/components/button';
+import { Icon } from 'truecolors/components/icon';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { useAppDispatch } from 'truecolors/store';
 
 interface DomainBlockPreviewResponse {
   following_count: number;

@@ -1,12 +1,12 @@
 import { connect } from 'react-redux';
 
-import { openDropdownMenu, closeDropdownMenu } from 'mastodon/actions/dropdown_menu';
-import { fetchHistory } from 'mastodon/actions/history';
-import DropdownMenu from 'mastodon/components/dropdown_menu';
+import { openDropdownMenu, closeDropdownMenu } from 'truecolors/actions/dropdown_menu';
+import { fetchHistory } from 'truecolors/actions/history';
+import DropdownMenu from 'truecolors/components/dropdown_menu';
 
 /**
  *
- * @param {import('mastodon/store').RootState} state
+ * @param {import('truecolors/store').RootState} state
  * @param {*} props
  */
 const mapStateToProps = (state, { statusId }) => ({

@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 
 import { defineMessages, useIntl } from 'react-intl';
 
-import { logOut } from 'mastodon/utils/log_out';
+import { logOut } from 'truecolors/utils/log_out';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

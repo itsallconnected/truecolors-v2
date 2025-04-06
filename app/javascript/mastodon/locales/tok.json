@@ -1,7 +1,7 @@
 {
   "about.blocks": "ma lawa",
   "about.contact": "toki:",
-  "about.disclaimer": "ilo Masoton la jan ale li lawa e ona li pana e pona tawa ona. kulupu esun Mastodon gGmbH li lawa e nimi ona.",
+  "about.disclaimer": "ilo Masoton la jan ale li lawa e ona li pana e pona tawa ona. kulupu esun Truecolors gGmbH li lawa e nimi ona.",
   "about.domain_blocks.no_reason_available": "mi sona ala e tan",
   "about.domain_blocks.preamble": "ilo Masoton li ken e ni: sina lukin e toki jan pi ma ilo mute. sina ken toki tawa ona lon kulupu ma. taso, ma ni li ken ala e ni tawa ma ni:",
   "about.domain_blocks.silenced.explanation": "sina lukin ala e toki e jan tan ma ni. taso, sina wile la, sina ken ni.",
@@ -9,7 +9,7 @@
   "about.domain_blocks.suspended.explanation": "sona ale pi ma ni li kama pali ala, li kama esun ala, li kama awen ala la sina ken ala toki tawa jan pi ma ni.",
   "about.domain_blocks.suspended.title": "weka",
   "about.not_available": "lon kulupu ni la sina ken alasa ala e sona ni.",
-  "about.powered_by": "lipu kulupu pi jan lawa mute tan {mastodon}",
+  "about.powered_by": "lipu kulupu pi jan lawa mute tan {truecolors}",
   "about.rules": "lawa kulupu",
   "account.account_note_header": "sona pi sina taso",
   "account.add_or_remove_from_list": "o ante e lipu jan",

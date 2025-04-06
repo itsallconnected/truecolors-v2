@@ -1,6 +1,6 @@
 import Trie from 'substring-trie';
 
-import { assetHost } from 'mastodon/utils/config';
+import { assetHost } from 'truecolors/utils/config';
 
 import { autoPlayGif } from '../../initial_state';
 
@@ -99,7 +99,7 @@ const emojifyTextNode = (node, customEmojis) => {
 
       const isSystemTheme = !!document.body?.classList.contains('theme-system');
 
-      const theme = (isSystemTheme || document.body?.classList.contains('theme-mastodon-light')) ? 'light' : 'dark';
+      const theme = (isSystemTheme || document.body?.classList.contains('theme-truecolors-light')) ? 'light' : 'dark';
 
       const imageFilename = emojiFilename(filename, theme);
 

@@ -12,10 +12,10 @@ import BlockIcon from '@/material-icons/400-24px/block.svg?react';
 import CampaignIcon from '@/material-icons/400-24px/campaign.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
-import { blockAccount } from 'mastodon/actions/accounts';
-import { closeModal } from 'mastodon/actions/modal';
-import { Button } from 'mastodon/components/button';
-import { Icon } from 'mastodon/components/icon';
+import { blockAccount } from 'truecolors/actions/accounts';
+import { closeModal } from 'truecolors/actions/modal';
+import { Button } from 'truecolors/components/button';
+import { Icon } from 'truecolors/components/icon';
 
 export const BlockModal = ({ accountId, acct }) => {
   const dispatch = useDispatch();

@@ -1,4 +1,4 @@
-import type { ApiSuggestionJSON } from 'mastodon/api_types/suggestions';
+import type { ApiSuggestionJSON } from 'truecolors/api_types/suggestions';
 
 export interface Suggestion extends Omit<ApiSuggestionJSON, 'account'> {
   account_id: string;

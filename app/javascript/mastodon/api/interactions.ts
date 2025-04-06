@@ -1,5 +1,5 @@
-import { apiRequestPost } from 'mastodon/api';
-import type { Status, StatusVisibility } from 'mastodon/models/status';
+import { apiRequestPost } from 'truecolors/api';
+import type { Status, StatusVisibility } from 'truecolors/models/status';
 
 export const apiReblog = (statusId: string, visibility: StatusVisibility) =>
   apiRequestPost<{ reblog: Status }>(`v1/statuses/${statusId}/reblog`, {

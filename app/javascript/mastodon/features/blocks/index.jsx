@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import { debounce } from 'lodash';
 
 import BlockIcon from '@/material-icons/400-24px/block-fill.svg?react';
-import { Account } from 'mastodon/components/account';
+import { Account } from 'truecolors/components/account';
 
 import { fetchBlocks, expandBlocks } from '../../actions/blocks';
 import { LoadingIndicator } from '../../components/loading_indicator';

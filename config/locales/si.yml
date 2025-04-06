@@ -1,7 +1,7 @@
 ---
 si:
   about:
-    about_mastodon_html: 'අනාගත සමාජ ජාලය: දැන්වීම් නැත, සංස්ථානික අවේක්‍ෂණ නැත, යහපතට නිර්මිතයි සහ විමධ්‍යගතයි! මාස්ටඩන් සමඟ ඔබගේ දත්ත අයිතිව තබාගන්න!'
+    about_truecolors_html: 'අනාගත සමාජ ජාලය: දැන්වීම් නැත, සංස්ථානික අවේක්‍ෂණ නැත, යහපතට නිර්මිතයි සහ විමධ්‍යගතයි! මාස්ටඩන් සමඟ ඔබගේ දත්ත අයිතිව තබාගන්න!'
     contact_missing: සකසා නැත
     contact_unavailable: අ/නොවේ
     hosted_on: "%{domain} හරහා සත්කාරකත්‍වය ලබයි"
@@ -761,7 +761,7 @@ si:
     discovery: සොයාගැනීම
     localization:
       body: මාස්ටඩන් ස්වේච්ඡාවෙන් පරිවර්තනය කර ඇත.
-      guide_link: https://crowdin.com/project/mastodon
+      guide_link: https://crowdin.com/project/truecolors
       guide_link_text: පරිවර්තකයින්ට දායක වීමට හැකිය.
     sensitive_content: සංවේදී අන්තර්ගත
   application_mailer:
@@ -1312,7 +1312,7 @@ si:
     does_not_match_previous_name: පෙර නමට නොගැලපේ
   themes:
     default: මාස්ටඩන් (අඳුරු)
-    mastodon-light: මාස්ටඩන් (දීප්ත)
+    truecolors-light: මාස්ටඩන් (දීප්ත)
   time:
     formats:
       default: "%Y %b %d, %H:%M"

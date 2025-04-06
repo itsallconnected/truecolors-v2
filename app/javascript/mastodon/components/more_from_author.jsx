@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 import { FormattedMessage } from 'react-intl';
 
-import { IconLogo } from 'mastodon/components/logo';
-import { AuthorLink } from 'mastodon/features/explore/components/author_link';
+import { IconLogo } from 'truecolors/components/logo';
+import { AuthorLink } from 'truecolors/features/explore/components/author_link';
 
 export const MoreFromAuthor = ({ accountId }) => (
   <div className='more-from-author'>

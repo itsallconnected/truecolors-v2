@@ -1,4 +1,4 @@
-👋 Welcome to your Mastodon Dev Container!
+👋 Welcome to your Truecolors Dev Container!
 
 🛠️ Your environment is fully setup with all the required software.
 

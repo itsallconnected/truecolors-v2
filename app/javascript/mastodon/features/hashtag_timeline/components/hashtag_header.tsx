@@ -9,14 +9,14 @@ import {
   fetchHashtag,
   followHashtag,
   unfollowHashtag,
-} from 'mastodon/actions/tags_typed';
-import type { ApiHashtagJSON } from 'mastodon/api_types/tags';
-import { Button } from 'mastodon/components/button';
-import { ShortNumber } from 'mastodon/components/short_number';
-import DropdownMenu from 'mastodon/containers/dropdown_menu_container';
-import { useIdentity } from 'mastodon/identity_context';
-import { PERMISSION_MANAGE_TAXONOMIES } from 'mastodon/permissions';
-import { useAppDispatch } from 'mastodon/store';
+} from 'truecolors/actions/tags_typed';
+import type { ApiHashtagJSON } from 'truecolors/api_types/tags';
+import { Button } from 'truecolors/components/button';
+import { ShortNumber } from 'truecolors/components/short_number';
+import DropdownMenu from 'truecolors/containers/dropdown_menu_container';
+import { useIdentity } from 'truecolors/identity_context';
+import { PERMISSION_MANAGE_TAXONOMIES } from 'truecolors/permissions';
+import { useAppDispatch } from 'truecolors/store';
 
 const messages = defineMessages({
   followHashtag: { id: 'hashtag.follow', defaultMessage: 'Follow hashtag' },

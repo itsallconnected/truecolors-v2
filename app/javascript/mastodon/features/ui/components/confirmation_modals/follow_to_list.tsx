@@ -1,6 +1,6 @@
 import { defineMessages, FormattedMessage, useIntl } from 'react-intl';
 
-import { useAppSelector } from 'mastodon/store';
+import { useAppSelector } from 'truecolors/store';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

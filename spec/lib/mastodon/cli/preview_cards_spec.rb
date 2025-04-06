@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/preview_cards'
+require 'truecolors/cli/preview_cards'
 
-RSpec.describe Mastodon::CLI::PreviewCards do
+RSpec.describe Truecolors::CLI::PreviewCards do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

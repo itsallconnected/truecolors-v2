@@ -23,7 +23,7 @@ class Antispam
       super()
 
       status.created_at = Time.now.utc
-      status.id = Mastodon::Snowflake.id_at(status.created_at)
+      status.id = Truecolors::Snowflake.id_at(status.created_at)
       status.in_reply_to_account_id = status.thread&.account_id
 
       status.delete # Make sure this is not persisted

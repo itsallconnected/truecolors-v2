@@ -4,7 +4,7 @@ import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?re
 import LockIcon from '@/material-icons/400-24px/lock.svg?react';
 import PublicIcon from '@/material-icons/400-24px/public.svg?react';
 import QuietTimeIcon from '@/material-icons/400-24px/quiet_time.svg?react';
-import type { StatusVisibility } from 'mastodon/models/status';
+import type { StatusVisibility } from 'truecolors/models/status';
 
 import { Icon } from './icon';
 

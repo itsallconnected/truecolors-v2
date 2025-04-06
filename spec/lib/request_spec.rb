@@ -106,14 +106,14 @@ RSpec.describe Request do
         WebMock.enable!
       end
 
-      it 'raises Mastodon::ValidationError' do
+      it 'raises Truecolors::ValidationError' do
         resolver = instance_double(Resolv::DNS)
 
         allow(resolver).to receive(:getaddresses).with('example.com').and_return(%w(0.0.0.0 2001:db8::face))
         allow(resolver).to receive(:timeouts=).and_return(nil)
         allow(Resolv::DNS).to receive(:open).and_yield(resolver)
 
-        expect { subject.perform }.to raise_error Mastodon::ValidationError
+        expect { subject.perform }.to raise_error Truecolors::ValidationError
       end
     end
 
@@ -158,7 +158,7 @@ RSpec.describe Request do
   describe "response's body_with_limit method" do
     it 'rejects body more than 1 megabyte by default' do
       stub_request(:any, 'http://example.com').to_return(body: SecureRandom.random_bytes(2.megabytes))
-      expect { subject.perform(&:body_with_limit) }.to raise_error(Mastodon::LengthValidationError, 'Body size exceeds limit of 1048576')
+      expect { subject.perform(&:body_with_limit) }.to raise_error(Truecolors::LengthValidationError, 'Body size exceeds limit of 1048576')
     end
 
     it 'accepts body less than 1 megabyte by default' do
@@ -168,17 +168,17 @@ RSpec.describe Request do
 
     it 'rejects body by given size' do
       stub_request(:any, 'http://example.com').to_return(body: SecureRandom.random_bytes(2.kilobytes))
-      expect { subject.perform { |response| response.body_with_limit(1.kilobyte) } }.to raise_error(Mastodon::LengthValidationError, 'Body size exceeds limit of 1024')
+      expect { subject.perform { |response| response.body_with_limit(1.kilobyte) } }.to raise_error(Truecolors::LengthValidationError, 'Body size exceeds limit of 1024')
     end
 
     it 'rejects too large chunked body' do
       stub_request(:any, 'http://example.com').to_return(body: SecureRandom.random_bytes(2.megabytes), headers: { 'Transfer-Encoding' => 'chunked' })
-      expect { subject.perform(&:body_with_limit) }.to raise_error(Mastodon::LengthValidationError, 'Body size exceeds limit of 1048576')
+      expect { subject.perform(&:body_with_limit) }.to raise_error(Truecolors::LengthValidationError, 'Body size exceeds limit of 1048576')
     end
 
     it 'rejects too large monolithic body' do
       stub_request(:any, 'http://example.com').to_return(body: SecureRandom.random_bytes(2.megabytes), headers: { 'Content-Length' => 2.megabytes })
-      expect { subject.perform(&:body_with_limit) }.to raise_error(Mastodon::LengthValidationError, 'Content-Length 2097152 exceeds limit of 1048576')
+      expect { subject.perform(&:body_with_limit) }.to raise_error(Truecolors::LengthValidationError, 'Content-Length 2097152 exceeds limit of 1048576')
     end
 
     it 'truncates large monolithic body' do

@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/mastodon/migration_warning'
+require_relative '../../lib/truecolors/migration_warning'
 
 class FixAccountsUniqueIndex < ActiveRecord::Migration[5.2]
-  include Mastodon::MigrationWarning
+  include Truecolors::MigrationWarning
 
   class Account < ApplicationRecord
     # Dummy class, to make migration possible across version changes
@@ -43,7 +43,7 @@ class FixAccountsUniqueIndex < ActiveRecord::Migration[5.2]
   def up
     migration_duration_warning(<<~EXPLANATION)
       This migration will irreversibly delete user accounts with duplicate
-      usernames. You may use the `rake mastodon:maintenance:find_duplicate_usernames`
+      usernames. You may use the `rake truecolors:maintenance:find_duplicate_usernames`
       task to manually deal with such accounts before running this migration.
     EXPLANATION
 

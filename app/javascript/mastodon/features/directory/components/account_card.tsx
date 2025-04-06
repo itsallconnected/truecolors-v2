@@ -10,16 +10,16 @@ import {
   followAccount,
   unblockAccount,
   unmuteAccount,
-} from 'mastodon/actions/accounts';
-import { openModal } from 'mastodon/actions/modal';
-import { Avatar } from 'mastodon/components/avatar';
-import { Button } from 'mastodon/components/button';
-import { DisplayName } from 'mastodon/components/display_name';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { autoPlayGif, me } from 'mastodon/initial_state';
-import type { Account } from 'mastodon/models/account';
-import { makeGetAccount } from 'mastodon/selectors';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'truecolors/actions/accounts';
+import { openModal } from 'truecolors/actions/modal';
+import { Avatar } from 'truecolors/components/avatar';
+import { Button } from 'truecolors/components/button';
+import { DisplayName } from 'truecolors/components/display_name';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { autoPlayGif, me } from 'truecolors/initial_state';
+import type { Account } from 'truecolors/models/account';
+import { makeGetAccount } from 'truecolors/selectors';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   unfollow: { id: 'account.unfollow', defaultMessage: 'Unfollow' },

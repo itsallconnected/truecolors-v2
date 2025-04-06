@@ -33,7 +33,7 @@ class FanOutOnWriteService < BaseService
     # This check re-queues the service to be run at a later time
     # with the full object, if something like it occurs
 
-    raise Mastodon::RaceConditionError if @status.visibility.nil?
+    raise Truecolors::RaceConditionError if @status.visibility.nil?
   end
 
   def fan_out_to_local_recipients!

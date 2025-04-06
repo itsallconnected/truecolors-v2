@@ -11,9 +11,9 @@ import { supportsPassiveEvents } from 'detect-passive-events';
 import Overlay from 'react-overlays/Overlay';
 
 import MoodIcon from '@/material-icons/400-20px/mood.svg?react';
-import { IconButton } from 'mastodon/components/icon_button';
-import emojiCompressed from 'mastodon/features/emoji/emoji_compressed';
-import { assetHost } from 'mastodon/utils/config';
+import { IconButton } from 'truecolors/components/icon_button';
+import emojiCompressed from 'truecolors/features/emoji/emoji_compressed';
+import { assetHost } from 'truecolors/utils/config';
 
 import { buildCustomEmojis, categoriesFromEmojis } from '../../emoji/emoji';
 import { EmojiPicker as EmojiPickerAsync } from '../../ui/util/async-components';

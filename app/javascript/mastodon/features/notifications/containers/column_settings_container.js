@@ -2,8 +2,8 @@ import { defineMessages, injectIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 
-import { openModal } from 'mastodon/actions/modal';
-import { fetchNotifications , setNotificationsFilter } from 'mastodon/actions/notification_groups';
+import { openModal } from 'truecolors/actions/modal';
+import { fetchNotifications , setNotificationsFilter } from 'truecolors/actions/notification_groups';
 
 import { showAlert } from '../../../actions/alerts';
 import { requestBrowserPermission } from '../../../actions/notifications';
@@ -16,7 +16,7 @@ const messages = defineMessages({
 });
 
 /**
- * @param {import('mastodon/store').RootState} state
+ * @param {import('truecolors/store').RootState} state
  */
 const mapStateToProps = state => ({
   settings: state.getIn(['settings', 'notifications']),

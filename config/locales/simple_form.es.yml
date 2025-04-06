@@ -4,10 +4,10 @@ es:
     hints:
       account:
         attribution_domains: Una por línea. Protege de falsas atribuciones.
-        discoverable: Tu perfil y publicaciones públicas pueden ser destacadas o recomendadas en varias áreas de Mastodon y tu perfil puede ser sugerido a otros usuarios.
+        discoverable: Tu perfil y publicaciones públicas pueden ser destacadas o recomendadas en varias áreas de Truecolors y tu perfil puede ser sugerido a otros usuarios.
         display_name: Tu nombre completo o tu apodo.
         fields: Tu carta de presentación, pronombres, edad, lo que quieras.
-        indexable: Tus publicaciones públicas pueden aparecer en los resultados de búsqueda en Mastodon. Las personas que han interactuado con tus publicaciones pueden ser capaces de buscarlas sin importar su visibilidad.
+        indexable: Tus publicaciones públicas pueden aparecer en los resultados de búsqueda en Truecolors. Las personas que han interactuado con tus publicaciones pueden ser capaces de buscarlas sin importar su visibilidad.
         note: Puedes mencionar a otras personas o etiquetas.
         show_collections: Las personas podrán navegar a través de tus seguidos y seguidores. Esto no impide que las personas que sigues sepan que las estás siguiendo.
         unlocked: Las personas podrán seguirte sin solicitar aprobación. Desmarca si quieres revisar las solicitudes de seguimiento y aceptar o rechazar nuevos seguidores.
@@ -55,7 +55,7 @@ es:
         phrase: Se aplicará sin importar las mayúsculas o los avisos de contenido de una publicación
         scopes: Qué APIs de la aplicación tendrán acceso. Si seleccionas el alcance de nivel mas alto, no necesitas seleccionar las individuales.
         setting_aggregate_reblogs: No mostrar nuevos impulsos para las publicaciones que han sido recientemente impulsadas (sólo afecta a los impulsos recibidos recientemente)
-        setting_always_send_emails: Normalmente las notificaciones por correo electrónico no se enviarán cuando estés usando Mastodon activamente
+        setting_always_send_emails: Normalmente las notificaciones por correo electrónico no se enviarán cuando estés usando Truecolors activamente
         setting_default_sensitive: El contenido multimedia sensible está oculto por defecto y puede ser mostrado con un click
         setting_display_media_default: Ocultar contenido multimedia marcado como sensible
         setting_display_media_hide_all: Siempre ocultar todo el contenido multimedia
@@ -85,8 +85,8 @@ es:
         bootstrap_timeline_accounts: Estas cuentas aparecerán en la parte superior de las recomendaciones de los nuevos usuarios.
         closed_registrations_message: Mostrado cuando los registros están cerrados
         content_cache_retention_period: Todas las publicaciones de otros servidores (incluso impulsos y respuestas) se eliminarán después del número de días especificado, sin tener en cuenta la interacción del usuario local con esos mensajes. Esto incluye mensajes donde un usuario local los ha marcado como marcadores o favoritos. Las menciones privadas entre usuarios de diferentes instancias también se perderán sin posibilidad de recuperación. El uso de esta configuración está destinado a instancias de propósito especial, y rompe muchas expectativas de los usuarios cuando se implementa para un uso de propósito general.
-        custom_css: Puedes aplicar estilos personalizados a la versión web de Mastodon.
-        favicon: WEBP, PNG, GIF o JPG. Reemplaza el favicon predeterminado de Mastodon con un icono personalizado.
+        custom_css: Puedes aplicar estilos personalizados a la versión web de Truecolors.
+        favicon: WEBP, PNG, GIF o JPG. Reemplaza el favicon predeterminado de Truecolors con un icono personalizado.
         mascot: Reemplaza la ilustración en la interfaz web avanzada.
         media_cache_retention_period: Los archivos multimedia de las publicaciones creadas por usuarios remotos se almacenan en caché en tu servidor. Cuando se establece un valor positivo, estos archivos se eliminarán después del número especificado de días. Si los datos multimedia se solicitan después de eliminarse, se volverán a descargar, si el contenido fuente todavía está disponible. Debido a restricciones en la frecuencia con la que las tarjetas de previsualización de enlaces realizan peticiones a sitios de terceros, se recomienda establecer este valor a al menos 14 días, o las tarjetas de previsualización de enlaces no se actualizarán bajo demanda antes de ese momento.
         min_age: Se pedirá a los usuarios que confirmen su fecha de nacimiento durante el registro
@@ -94,7 +94,7 @@ es:
         profile_directory: El directorio de perfiles lista a todos los usuarios que han optado por que su cuenta pueda ser descubierta.
         require_invite_text: Cuando los registros requieren aprobación manual, hace obligatoria la entrada de texto "¿Por qué quieres unirte?" en lugar de opcional
         site_contact_email: Cómo pueden ponerse en contacto contigo para consultas legales o de ayuda.
-        site_contact_username: Cómo pueden contactarte en Mastodon.
+        site_contact_username: Cómo pueden contactarte en Truecolors.
         site_extended_description: Cualquier información adicional que pueda ser útil para los visitantes y sus usuarios. Se puede estructurar con formato Markdown.
         site_short_description: Una breve descripción para ayudar a identificar su servidor de forma única. ¿Quién lo administra, a quién va dirigido?
         site_terms: Utiliza tu propia política de privacidad o déjala en blanco para usar la predeterminada Puede estructurarse con formato Markdown.
@@ -109,7 +109,7 @@ es:
       form_challenge:
         current_password: Estás entrando en un área segura
       imports:
-        data: Archivo CSV exportado desde otra instancia de Mastodon
+        data: Archivo CSV exportado desde otra instancia de Truecolors
       invite_request:
         text: Esto nos ayudará a revisar su aplicación
       ip_block:
@@ -148,7 +148,7 @@ es:
         min_age: No debería estar por debajo de la edad mínima requerida por las leyes de su jurisdicción.
       user:
         chosen_languages: Cuando se marca, solo se mostrarán las publicaciones en los idiomas seleccionados en las líneas de tiempo públicas
-        date_of_birth: Tenemos que asegurarnos de que al menos tienes %{age} años para usar Mastodon. No almacenaremos esta información.
+        date_of_birth: Tenemos que asegurarnos de que al menos tienes %{age} años para usar Truecolors. No almacenaremos esta información.
         role: El rol controla qué permisos tiene el usuario.
       user_role:
         color: Color que se utilizará para el rol a lo largo de la interfaz de usuario, como RGB en formato hexadecimal
@@ -324,7 +324,7 @@ es:
         software_updates:
           all: Notificar de cualquier actualización
           critical: Notificar solo de actualizaciones críticas
-          label: Hay disponible una nueva versión de Mastodon
+          label: Hay disponible una nueva versión de Truecolors
           none: No notificar nunca de actualizaciones (no recomendado)
           patch: Notificar de actualizaciones de errores
         trending_tag: Una nueva tendencia requiere revisión

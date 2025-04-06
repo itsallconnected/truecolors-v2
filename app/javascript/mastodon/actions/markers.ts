@@ -1,9 +1,9 @@
 import { debounce } from 'lodash';
 
-import type { MarkerJSON } from 'mastodon/api_types/markers';
-import { getAccessToken } from 'mastodon/initial_state';
-import type { AppDispatch, RootState } from 'mastodon/store';
-import { createAppAsyncThunk } from 'mastodon/store/typed_functions';
+import type { MarkerJSON } from 'truecolors/api_types/markers';
+import { getAccessToken } from 'truecolors/initial_state';
+import type { AppDispatch, RootState } from 'truecolors/store';
+import { createAppAsyncThunk } from 'truecolors/store/typed_functions';
 
 import api from '../api';
 import { compareId } from '../compare_id';

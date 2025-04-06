@@ -8,16 +8,16 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { submitReport } from 'mastodon/actions/reports';
-import { fetchServer } from 'mastodon/actions/server';
-import { expandAccountTimeline } from 'mastodon/actions/timelines';
-import { IconButton } from 'mastodon/components/icon_button';
-import Category from 'mastodon/features/report/category';
-import Comment from 'mastodon/features/report/comment';
-import Rules from 'mastodon/features/report/rules';
-import Statuses from 'mastodon/features/report/statuses';
-import Thanks from 'mastodon/features/report/thanks';
-import { makeGetAccount } from 'mastodon/selectors';
+import { submitReport } from 'truecolors/actions/reports';
+import { fetchServer } from 'truecolors/actions/server';
+import { expandAccountTimeline } from 'truecolors/actions/timelines';
+import { IconButton } from 'truecolors/components/icon_button';
+import Category from 'truecolors/features/report/category';
+import Comment from 'truecolors/features/report/comment';
+import Rules from 'truecolors/features/report/rules';
+import Statuses from 'truecolors/features/report/statuses';
+import Thanks from 'truecolors/features/report/thanks';
+import { makeGetAccount } from 'truecolors/selectors';
 
 const messages = defineMessages({
   close: { id: 'lightbox.close', defaultMessage: 'Close' },

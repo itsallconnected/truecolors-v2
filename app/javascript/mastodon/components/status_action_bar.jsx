@@ -21,9 +21,9 @@ import RepeatActiveIcon from '@/svg-icons/repeat_active.svg?react';
 import RepeatDisabledIcon from '@/svg-icons/repeat_disabled.svg?react';
 import RepeatPrivateIcon from '@/svg-icons/repeat_private.svg?react';
 import RepeatPrivateActiveIcon from '@/svg-icons/repeat_private_active.svg?react';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { PERMISSION_MANAGE_USERS, PERMISSION_MANAGE_FEDERATION } from 'mastodon/permissions';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
+import { PERMISSION_MANAGE_USERS, PERMISSION_MANAGE_FEDERATION } from 'truecolors/permissions';
+import { WithRouterPropTypes } from 'truecolors/utils/react_router';
 
 import DropdownMenuContainer from '../containers/dropdown_menu_container';
 import { me } from '../initial_state';

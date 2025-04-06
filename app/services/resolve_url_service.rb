@@ -54,7 +54,7 @@ class ResolveURLService < BaseService
 
     authorize_with @on_behalf_of, status, :show? unless status.nil?
     status
-  rescue Mastodon::NotPermittedError
+  rescue Truecolors::NotPermittedError
     nil
   end
 
@@ -119,7 +119,7 @@ class ResolveURLService < BaseService
 
     authorize_with @on_behalf_of, status, :show?
     status
-  rescue Mastodon::NotPermittedError
+  rescue Truecolors::NotPermittedError
     nil
   end
 end

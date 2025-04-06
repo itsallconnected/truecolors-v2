@@ -36,7 +36,7 @@ module ApplicationHelper
 
   def available_sign_up_path
     if closed_registrations? || omniauth_only?
-      'https://joinmastodon.org/#getting-started'
+      'https://jointruecolors.org/#getting-started'
     else
       ENV.fetch('SSO_ACCOUNT_SIGN_UP', new_user_registration_path)
     end
@@ -239,11 +239,11 @@ module ApplicationHelper
   end
 
   def app_store_url_ios
-    'https://apps.apple.com/app/mastodon-for-iphone-and-ipad/id1571998974'
+    'https://apps.apple.com/app/truecolors-for-iphone-and-ipad/id1571998974'
   end
 
   def app_store_url_android
-    'https://play.google.com/store/apps/details?id=org.joinmastodon.android'
+    'https://play.google.com/store/apps/details?id=org.jointruecolors.android'
   end
 
   private

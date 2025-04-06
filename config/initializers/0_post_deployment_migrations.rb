@@ -4,4 +4,4 @@
 # before other initializers as Rails may otherwise memoize a list of migrations
 # excluding the post deployment migrations.
 
-Mastodon::Database.add_post_migrate_path_to_rails
+Truecolors::Database.add_post_migrate_path_to_rails

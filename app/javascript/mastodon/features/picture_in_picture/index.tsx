@@ -1,9 +1,9 @@
 import { useCallback } from 'react';
 
-import { removePictureInPicture } from 'mastodon/actions/picture_in_picture';
-import Audio from 'mastodon/features/audio';
-import { Video } from 'mastodon/features/video';
-import { useAppDispatch, useAppSelector } from 'mastodon/store/typed_functions';
+import { removePictureInPicture } from 'truecolors/actions/picture_in_picture';
+import Audio from 'truecolors/features/audio';
+import { Video } from 'truecolors/features/video';
+import { useAppDispatch, useAppSelector } from 'truecolors/store/typed_functions';
 
 import Footer from './components/footer';
 import { Header } from './components/header';

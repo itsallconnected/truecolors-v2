@@ -1,6 +1,6 @@
-import { apiCreate, apiUpdate } from 'mastodon/api/lists';
-import type { List } from 'mastodon/models/list';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+import { apiCreate, apiUpdate } from 'truecolors/api/lists';
+import type { List } from 'truecolors/models/list';
+import { createDataLoadingThunk } from 'truecolors/store/typed_functions';
 
 export const createList = createDataLoadingThunk(
   'list/create',

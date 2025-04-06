@@ -27,10 +27,10 @@ RSpec.describe Admin::SystemCheck::SoftwareVersionCheck do
 
       context 'when checks are disabled' do
         around do |example|
-          original = Rails.configuration.x.mastodon.software_update_url
-          Rails.configuration.x.mastodon.software_update_url = ''
+          original = Rails.configuration.x.truecolors.software_update_url
+          Rails.configuration.x.truecolors.software_update_url = ''
           example.run
-          Rails.configuration.x.mastodon.software_update_url = original
+          Rails.configuration.x.truecolors.software_update_url = original
         end
 
         it 'returns true' do

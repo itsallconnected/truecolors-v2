@@ -10,7 +10,7 @@ import { connect } from 'react-redux';
 import { supportsPassiveEvents } from 'detect-passive-events';
 import { throttle } from 'lodash';
 
-import ScrollContainer from 'mastodon/containers/scroll_container';
+import ScrollContainer from 'truecolors/containers/scroll_container';
 
 import IntersectionObserverArticleContainer from '../containers/intersection_observer_article_container';
 import { attachFullscreenListener, detachFullscreenListener, isFullscreen } from '../features/ui/util/fullscreen';
@@ -26,7 +26,7 @@ const listenerOptions = supportsPassiveEvents ? { passive: true } : false;
 
 /**
  *
- * @param {import('mastodon/store').RootState} state
+ * @param {import('truecolors/store').RootState} state
  * @param {*} props
  */
 const mapStateToProps = (state, { scrollKey }) => {
@@ -90,7 +90,7 @@ class ScrollableList extends PureComponent {
 
   state = {
     fullscreen: null,
-    cachedMediaWidth: 250, // Default media/card width using default Mastodon theme
+    cachedMediaWidth: 250, // Default media/card width using default Truecolors theme
   };
 
   intersectionObserverWrapper = new IntersectionObserverWrapper();

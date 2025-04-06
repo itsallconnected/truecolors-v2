@@ -180,7 +180,7 @@ RSpec.describe ImportService, :inline_jobs do
 
   # Based on the bug report 20571 where UTF-8 encoded domains were rejecting import of their users
   #
-  # https://github.com/mastodon/mastodon/issues/20571
+  # https://github.com/truecolors/truecolors/issues/20571
   context 'with a utf-8 encoded domains' do
     subject { described_class.new }
 

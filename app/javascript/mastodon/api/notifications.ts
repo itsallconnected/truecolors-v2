@@ -3,12 +3,12 @@ import api, {
   getLinks,
   apiRequestGet,
   apiRequestPost,
-} from 'mastodon/api';
+} from 'truecolors/api';
 import type {
   ApiNotificationGroupsResultJSON,
   ApiNotificationRequestJSON,
   ApiNotificationJSON,
-} from 'mastodon/api_types/notifications';
+} from 'truecolors/api_types/notifications';
 
 export const apiFetchNotifications = async (
   params?: {

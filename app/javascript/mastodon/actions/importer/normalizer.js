@@ -1,6 +1,6 @@
 import escapeTextContentForBrowser from 'escape-html';
 
-import { makeEmojiMap } from 'mastodon/models/custom_emoji';
+import { makeEmojiMap } from 'truecolors/models/custom_emoji';
 
 import emojify from '../../features/emoji/emoji';
 import { expandSpoilers } from '../../initial_state';

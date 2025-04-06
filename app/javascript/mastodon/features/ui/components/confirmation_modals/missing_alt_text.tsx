@@ -4,10 +4,10 @@ import { defineMessages, useIntl } from 'react-intl';
 
 import type { Map as ImmutableMap, List as ImmutableList } from 'immutable';
 
-import { submitCompose } from 'mastodon/actions/compose';
-import { openModal } from 'mastodon/actions/modal';
-import type { MediaAttachment } from 'mastodon/models/media_attachment';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { submitCompose } from 'truecolors/actions/compose';
+import { openModal } from 'truecolors/actions/modal';
+import type { MediaAttachment } from 'truecolors/models/media_attachment';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

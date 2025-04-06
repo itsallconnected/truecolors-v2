@@ -1,7 +1,7 @@
 import type { List as ImmutableList } from 'immutable';
 
-import { apiGetDirectory } from 'mastodon/api/directory';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+import { apiGetDirectory } from 'truecolors/api/directory';
+import { createDataLoadingThunk } from 'truecolors/store/typed_functions';
 
 import { fetchRelationships } from './accounts';
 import { importFetchedAccounts } from './importer';

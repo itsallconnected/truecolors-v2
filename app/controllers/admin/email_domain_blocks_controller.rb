@@ -16,7 +16,7 @@ module Admin
       @form.save
     rescue ActionController::ParameterMissing
       flash[:alert] = I18n.t('admin.email_domain_blocks.no_email_domain_block_selected')
-    rescue Mastodon::NotPermittedError
+    rescue Truecolors::NotPermittedError
       flash[:alert] = I18n.t('admin.email_domain_blocks.not_permitted')
     ensure
       redirect_to admin_email_domain_blocks_path

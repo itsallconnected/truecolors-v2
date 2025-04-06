@@ -2,9 +2,9 @@ import { useCallback } from 'react';
 
 import { defineMessages, useIntl } from 'react-intl';
 
-import { replyCompose } from 'mastodon/actions/compose';
-import type { Status } from 'mastodon/models/status';
-import { useAppDispatch } from 'mastodon/store';
+import { replyCompose } from 'truecolors/actions/compose';
+import type { Status } from 'truecolors/models/status';
+import { useAppDispatch } from 'truecolors/store';
 
 import type { BaseConfirmationModalProps } from './confirmation_modal';
 import { ConfirmationModal } from './confirmation_modal';

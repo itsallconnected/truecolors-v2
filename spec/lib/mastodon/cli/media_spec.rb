@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/media'
+require 'truecolors/cli/media'
 
-RSpec.describe Mastodon::CLI::Media do
+RSpec.describe Truecolors::CLI::Media do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }
@@ -181,9 +181,9 @@ RSpec.describe Mastodon::CLI::Media do
 
     context 'with --days option' do
       before do
-        Fabricate(:media_attachment, remote_url: 'https://example.com/image.jpg', id: Mastodon::Snowflake.id_at(50.days.ago))
-        Fabricate(:media_attachment, remote_url: 'https://example.com/image.jpg', id: Mastodon::Snowflake.id_at(5.days.ago))
-        Fabricate(:media_attachment, remote_url: '', id: Mastodon::Snowflake.id_at(5.days.ago))
+        Fabricate(:media_attachment, remote_url: 'https://example.com/image.jpg', id: Truecolors::Snowflake.id_at(50.days.ago))
+        Fabricate(:media_attachment, remote_url: 'https://example.com/image.jpg', id: Truecolors::Snowflake.id_at(5.days.ago))
+        Fabricate(:media_attachment, remote_url: '', id: Truecolors::Snowflake.id_at(5.days.ago))
       end
 
       let(:options) { { days: 10 } }

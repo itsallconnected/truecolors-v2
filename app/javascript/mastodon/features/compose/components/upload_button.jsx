@@ -7,7 +7,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
 import PhotoLibraryIcon from '@/material-icons/400-20px/photo_library.svg?react';
-import { IconButton } from 'mastodon/components/icon_button';
+import { IconButton } from 'truecolors/components/icon_button';
 
 const messages = defineMessages({
   upload: { id: 'upload_button.label', defaultMessage: 'Add images, a video or an audio file' },

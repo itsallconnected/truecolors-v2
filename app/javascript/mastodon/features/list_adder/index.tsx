@@ -6,20 +6,20 @@ import { isFulfilled } from '@reduxjs/toolkit';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
-import { fetchLists } from 'mastodon/actions/lists';
-import { createList } from 'mastodon/actions/lists_typed';
+import { fetchLists } from 'truecolors/actions/lists';
+import { createList } from 'truecolors/actions/lists_typed';
 import {
   apiGetAccountLists,
   apiAddAccountToList,
   apiRemoveAccountFromList,
-} from 'mastodon/api/lists';
-import type { ApiListJSON } from 'mastodon/api_types/lists';
-import { Button } from 'mastodon/components/button';
-import { CheckBox } from 'mastodon/components/check_box';
-import { Icon } from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import { getOrderedLists } from 'mastodon/selectors/lists';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'truecolors/api/lists';
+import type { ApiListJSON } from 'truecolors/api_types/lists';
+import { Button } from 'truecolors/components/button';
+import { CheckBox } from 'truecolors/components/check_box';
+import { Icon } from 'truecolors/components/icon';
+import { IconButton } from 'truecolors/components/icon_button';
+import { getOrderedLists } from 'truecolors/selectors/lists';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   newList: {

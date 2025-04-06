@@ -1,7 +1,7 @@
 ---
 ckb:
   about:
-    about_mastodon_html: 'تۆڕی کۆمەڵایەتی داهاتوو: هیچ ڕیکلامێک، هیچ چاودێرییەکی کۆمپانیا، دیزاینی ئەخلاقی و لامەرکەزی! خاوەنی داتاکانت بە لە ماستۆدۆن!'
+    about_truecolors_html: 'تۆڕی کۆمەڵایەتی داهاتوو: هیچ ڕیکلامێک، هیچ چاودێرییەکی کۆمپانیا، دیزاینی ئەخلاقی و لامەرکەزی! خاوەنی داتاکانت بە لە ماستۆدۆن!'
     contact_missing: سازنەکراوە
     contact_unavailable: بوونی نییە
     hosted_on: مەستودۆن میوانداری کراوە لە %{domain}
@@ -952,7 +952,7 @@ ckb:
   themes:
     contrast: ماستۆدۆن (کۆنتراستی بەرز)
     default: ماستۆدۆن (ڕەش)
-    mastodon-light: ماستۆدۆن (کاڵ)
+    truecolors-light: ماستۆدۆن (کاڵ)
   two_factor_authentication:
     add: زیادکردن
     disable: لەکارخستنی 2FA

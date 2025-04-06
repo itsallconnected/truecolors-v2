@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { useRouteMatch, NavLink } from 'react-router-dom';
 
-import { Icon } from 'mastodon/components/icon';
+import { Icon } from 'truecolors/components/icon';
 
 const ColumnLink = ({ icon, activeIcon, iconComponent, activeIconComponent, text, to, href, method, badge, transparent, optional, ...other }) => {
   const match = useRouteMatch(to);

@@ -3,8 +3,8 @@ import type { Reducer } from '@reduxjs/toolkit';
 import {
   deployPictureInPictureAction,
   removePictureInPicture,
-} from 'mastodon/actions/picture_in_picture';
-import { timelineDelete } from 'mastodon/actions/timelines_typed';
+} from 'truecolors/actions/picture_in_picture';
+import { timelineDelete } from 'truecolors/actions/timelines_typed';
 
 export interface PIPMediaProps {
   src: string;

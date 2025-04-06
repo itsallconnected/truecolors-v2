@@ -127,7 +127,7 @@ RSpec.describe JsonLdHelper do
           {
             'obsolete' => 'http://ostatus.org#',
             'convo' => 'obsolete:conversation',
-            'new' => 'https://obscure-unreleased-test.joinmastodon.org/#',
+            'new' => 'https://obscure-unreleased-test.jointruecolors.org/#',
           },
         ],
         'type' => 'Create',

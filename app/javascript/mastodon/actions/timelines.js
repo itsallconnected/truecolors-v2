@@ -1,8 +1,8 @@
 import { Map as ImmutableMap, List as ImmutableList } from 'immutable';
 
-import api, { getLinks } from 'mastodon/api';
-import { compareId } from 'mastodon/compare_id';
-import { usePendingItems as preferPendingItems } from 'mastodon/initial_state';
+import api, { getLinks } from 'truecolors/api';
+import { compareId } from 'truecolors/compare_id';
+import { usePendingItems as preferPendingItems } from 'truecolors/initial_state';
 
 import { importFetchedStatus, importFetchedStatuses } from './importer';
 import { submitMarkers } from './markers';

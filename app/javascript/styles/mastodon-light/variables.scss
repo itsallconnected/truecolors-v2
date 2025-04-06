@@ -1,6 +1,6 @@
 @use 'sass:color';
 
-@use '../mastodon/functions' with (
+@use '../truecolors/functions' with (
   $darken-multiplier: 1,
   $lighten-multiplier: -1
 );
@@ -15,7 +15,7 @@ $classic-base-color: hsl(240deg, 16%, 19%);
 $classic-secondary-color: hsl(255deg, 25%, 88%);
 $classic-highlight-color: $blurple-500;
 
-@use '../mastodon/variables' with (
+@use '../truecolors/variables' with (
   $success-green: color.adjust(
       hsl(138deg, 32%, 35%),
       $lightness: 8%,

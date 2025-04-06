@@ -19,13 +19,13 @@ import {
   clickSearchResult,
   forgetSearchResult,
   openURL,
-} from 'mastodon/actions/search';
-import { Icon } from 'mastodon/components/icon';
-import { useIdentity } from 'mastodon/identity_context';
-import { domain, searchEnabled } from 'mastodon/initial_state';
-import type { RecentSearch, SearchType } from 'mastodon/models/search';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
-import { HASHTAG_REGEX } from 'mastodon/utils/hashtags';
+} from 'truecolors/actions/search';
+import { Icon } from 'truecolors/components/icon';
+import { useIdentity } from 'truecolors/identity_context';
+import { domain, searchEnabled } from 'truecolors/initial_state';
+import type { RecentSearch, SearchType } from 'truecolors/models/search';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
+import { HASHTAG_REGEX } from 'truecolors/utils/hashtags';
 
 const messages = defineMessages({
   placeholder: { id: 'search.placeholder', defaultMessage: 'Search' },
@@ -269,7 +269,7 @@ export const Search: React.FC<{
             label: (
               <FormattedMessage
                 id='search.quick_action.open_url'
-                defaultMessage='Open URL in Mastodon'
+                defaultMessage='Open URL in Truecolors'
               />
             ),
             action: async () => {

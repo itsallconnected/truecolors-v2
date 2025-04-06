@@ -1,6 +1,6 @@
 import { Map as ImmutableMap, fromJS } from 'immutable';
 
-import { timelineDelete } from 'mastodon/actions/timelines_typed';
+import { timelineDelete } from 'truecolors/actions/timelines_typed';
 
 import { STATUS_IMPORT, STATUSES_IMPORT } from '../actions/importer';
 import { normalizeStatusTranslation } from '../actions/importer/normalizer';

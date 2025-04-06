@@ -8,21 +8,21 @@ import { createSelector } from '@reduxjs/toolkit';
 import type { Map as ImmutableMap } from 'immutable';
 import { List as ImmutableList } from 'immutable';
 
-import { lookupAccount, fetchAccount } from 'mastodon/actions/accounts';
-import { openModal } from 'mastodon/actions/modal';
-import { expandAccountMediaTimeline } from 'mastodon/actions/timelines';
-import { ColumnBackButton } from 'mastodon/components/column_back_button';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import { TimelineHint } from 'mastodon/components/timeline_hint';
-import { AccountHeader } from 'mastodon/features/account_timeline/components/account_header';
-import { LimitedAccountHint } from 'mastodon/features/account_timeline/components/limited_account_hint';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import Column from 'mastodon/features/ui/components/column';
-import type { MediaAttachment } from 'mastodon/models/media_attachment';
-import { normalizeForLookup } from 'mastodon/reducers/accounts_map';
-import { getAccountHidden } from 'mastodon/selectors/accounts';
-import type { RootState } from 'mastodon/store';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { lookupAccount, fetchAccount } from 'truecolors/actions/accounts';
+import { openModal } from 'truecolors/actions/modal';
+import { expandAccountMediaTimeline } from 'truecolors/actions/timelines';
+import { ColumnBackButton } from 'truecolors/components/column_back_button';
+import ScrollableList from 'truecolors/components/scrollable_list';
+import { TimelineHint } from 'truecolors/components/timeline_hint';
+import { AccountHeader } from 'truecolors/features/account_timeline/components/account_header';
+import { LimitedAccountHint } from 'truecolors/features/account_timeline/components/limited_account_hint';
+import BundleColumnError from 'truecolors/features/ui/components/bundle_column_error';
+import Column from 'truecolors/features/ui/components/column';
+import type { MediaAttachment } from 'truecolors/models/media_attachment';
+import { normalizeForLookup } from 'truecolors/reducers/accounts_map';
+import { getAccountHidden } from 'truecolors/selectors/accounts';
+import type { RootState } from 'truecolors/store';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { MediaItem } from './components/media_item';
 

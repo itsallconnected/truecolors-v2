@@ -99,8 +99,8 @@ RSpec.describe ApplicationHelper do
         allow(Setting).to receive(:[]).with('registrations_mode').and_return 'none'
       end
 
-      it 'redirects to joinmastodon site' do
-        expect(helper.available_sign_up_path).to match(/joinmastodon.org/)
+      it 'redirects to jointruecolors site' do
+        expect(helper.available_sign_up_path).to match(/jointruecolors.org/)
       end
     end
 
@@ -111,8 +111,8 @@ RSpec.describe ApplicationHelper do
         end
       end
 
-      it 'redirects to joinmastodon site' do
-        expect(helper.available_sign_up_path).to match(/joinmastodon.org/)
+      it 'redirects to jointruecolors site' do
+        expect(helper.available_sign_up_path).to match(/jointruecolors.org/)
       end
     end
 

@@ -11,7 +11,7 @@ Chewy.logger                 = dev_null
 
 require 'ruby-progressbar/outputs/null'
 
-module Mastodon::CLI
+module Truecolors::CLI
   module ProgressHelper
     PROGRESS_FORMAT = '%c/%u |%b%i| %e'
 
@@ -47,7 +47,7 @@ module Mastodon::CLI
 
             progress.log("Processing #{item.id}") if options[:verbose]
 
-            Chewy.strategy(:mastodon) do
+            Chewy.strategy(:truecolors) do
               result = ActiveRecord::Base.connection_pool.with_connection do
                 yield(item)
               ensure

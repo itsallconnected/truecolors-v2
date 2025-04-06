@@ -42,7 +42,7 @@ RSpec.describe ActivityPub::DeliveryWorker do
 
       it 'raises error' do
         expect { subject.perform(payload, sender.id, url) }
-          .to raise_error Mastodon::UnexpectedResponseError
+          .to raise_error Truecolors::UnexpectedResponseError
       end
     end
   end

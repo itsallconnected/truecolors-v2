@@ -5,12 +5,12 @@ import classNames from 'classnames';
 
 import { HotKeys } from 'react-hotkeys';
 
-import { replyComposeById } from 'mastodon/actions/compose';
-import { navigateToStatus } from 'mastodon/actions/statuses';
-import type { IconProp } from 'mastodon/components/icon';
-import { Icon } from 'mastodon/components/icon';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { replyComposeById } from 'truecolors/actions/compose';
+import { navigateToStatus } from 'truecolors/actions/statuses';
+import type { IconProp } from 'truecolors/components/icon';
+import { Icon } from 'truecolors/components/icon';
+import { RelativeTimestamp } from 'truecolors/components/relative_timestamp';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { AvatarGroup } from './avatar_group';
 import { DisplayedName } from './displayed_name';

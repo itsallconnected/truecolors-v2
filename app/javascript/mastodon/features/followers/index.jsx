@@ -8,13 +8,13 @@ import { connect } from 'react-redux';
 
 import { debounce } from 'lodash';
 
-import { Account } from 'mastodon/components/account';
-import { TimelineHint } from 'mastodon/components/timeline_hint';
-import { AccountHeader } from 'mastodon/features/account_timeline/components/account_header';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import { normalizeForLookup } from 'mastodon/reducers/accounts_map';
-import { getAccountHidden } from 'mastodon/selectors/accounts';
-import { useAppSelector } from 'mastodon/store';
+import { Account } from 'truecolors/components/account';
+import { TimelineHint } from 'truecolors/components/timeline_hint';
+import { AccountHeader } from 'truecolors/features/account_timeline/components/account_header';
+import BundleColumnError from 'truecolors/features/ui/components/bundle_column_error';
+import { normalizeForLookup } from 'truecolors/reducers/accounts_map';
+import { getAccountHidden } from 'truecolors/selectors/accounts';
+import { useAppSelector } from 'truecolors/store';
 
 import {
   lookupAccount,

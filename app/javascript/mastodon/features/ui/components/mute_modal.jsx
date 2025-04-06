@@ -13,12 +13,12 @@ import CampaignIcon from '@/material-icons/400-24px/campaign.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import VisibilityOffIcon from '@/material-icons/400-24px/visibility_off.svg?react';
 import VolumeOffIcon from '@/material-icons/400-24px/volume_off.svg?react';
-import { muteAccount } from 'mastodon/actions/accounts';
-import { closeModal } from 'mastodon/actions/modal';
-import { Button } from 'mastodon/components/button';
-import { CheckBox } from 'mastodon/components/check_box';
-import { Icon } from 'mastodon/components/icon';
-import { RadioButton } from 'mastodon/components/radio_button';
+import { muteAccount } from 'truecolors/actions/accounts';
+import { closeModal } from 'truecolors/actions/modal';
+import { Button } from 'truecolors/components/button';
+import { CheckBox } from 'truecolors/components/check_box';
+import { Icon } from 'truecolors/components/icon';
+import { RadioButton } from 'truecolors/components/radio_button';
 
 const messages = defineMessages({
   minutes: { id: 'intervals.full.minutes', defaultMessage: '{number, plural, one {# minute} other {# minutes}}' },

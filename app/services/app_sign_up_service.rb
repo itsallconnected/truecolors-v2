@@ -8,7 +8,7 @@ class AppSignUpService < BaseService
     @remote_ip = remote_ip
     @params    = params
 
-    raise Mastodon::NotPermittedError unless allowed_registration?(remote_ip, invite)
+    raise Truecolors::NotPermittedError unless allowed_registration?(remote_ip, invite)
 
     ApplicationRecord.transaction do
       create_user!

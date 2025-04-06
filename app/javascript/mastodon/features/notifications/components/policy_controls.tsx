@@ -2,10 +2,10 @@ import { useCallback } from 'react';
 
 import { useIntl, defineMessages, FormattedMessage } from 'react-intl';
 
-import { openModal } from 'mastodon/actions/modal';
-import { updateNotificationsPolicy } from 'mastodon/actions/notification_policies';
-import type { AppDispatch } from 'mastodon/store';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { openModal } from 'truecolors/actions/modal';
+import { updateNotificationsPolicy } from 'truecolors/actions/notification_policies';
+import type { AppDispatch } from 'truecolors/store';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { SelectWithLabel } from './select_with_label';
 

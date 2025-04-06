@@ -23,6 +23,6 @@ class Api::V1::Statuses::MutesController < Api::V1::Statuses::BaseController
 
   def set_conversation
     @conversation = @status.conversation
-    raise Mastodon::ValidationError if @conversation.nil?
+    raise Truecolors::ValidationError if @conversation.nil?
   end
 end

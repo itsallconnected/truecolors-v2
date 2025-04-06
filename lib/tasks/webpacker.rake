@@ -21,12 +21,12 @@ namespace :webpacker do
       end
 
       unless is_valid
-        warn "Mastodon and Webpacker requires Yarn \"#{yarn_range}\" and you are using #{yarn_version}"
+        warn "Truecolors and Webpacker requires Yarn \"#{yarn_range}\" and you are using #{yarn_version}"
         warn 'Exiting!'
         exit!
       end
     rescue Errno::ENOENT
-      warn 'Yarn not installed. Please see the Mastodon documentation to install the correct version.'
+      warn 'Yarn not installed. Please see the Truecolors documentation to install the correct version.'
       warn 'Exiting!'
       exit!
     end

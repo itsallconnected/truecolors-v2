@@ -96,7 +96,7 @@ RSpec.describe 'Search API' do
       end
 
       context 'when search raises syntax error' do
-        before { allow(Search).to receive(:new).and_raise(Mastodon::SyntaxError) }
+        before { allow(Search).to receive(:new).and_raise(Truecolors::SyntaxError) }
 
         it 'returns http unprocessable_entity' do
           get '/api/v2/search', headers: headers, params: params

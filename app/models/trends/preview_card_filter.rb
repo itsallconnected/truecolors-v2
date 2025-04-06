@@ -42,7 +42,7 @@ class Trends::PreviewCardFilter
     when 'locale'
       PreviewCardTrend.where(language: value)
     else
-      raise Mastodon::InvalidParameterError, "Unknown filter: #{key}"
+      raise Truecolors::InvalidParameterError, "Unknown filter: #{key}"
     end
   end
 

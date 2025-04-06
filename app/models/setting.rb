@@ -12,7 +12,7 @@
 #
 
 # This file is derived from a fork of the `rails-settings-cached` gem available at
-# https://github.com/mastodon/rails-settings-cached/tree/v0.6.6-aliases-true, with
+# https://github.com/truecolors/rails-settings-cached/tree/v0.6.6-aliases-true, with
 # the original available at:
 # https://github.com/huacnlee/rails-settings-cached/tree/0.x
 

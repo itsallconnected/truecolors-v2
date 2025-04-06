@@ -30,9 +30,9 @@ import {
   rectSortingStrategy,
 } from '@dnd-kit/sortable';
 
-import { changeMediaOrder } from 'mastodon/actions/compose';
-import type { MediaAttachment } from 'mastodon/models/media_attachment';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { changeMediaOrder } from 'truecolors/actions/compose';
+import type { MediaAttachment } from 'truecolors/models/media_attachment';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { Upload } from './upload';
 import { UploadProgress } from './upload_progress';

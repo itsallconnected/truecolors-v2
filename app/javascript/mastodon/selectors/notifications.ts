@@ -1,9 +1,9 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import { compareId } from 'mastodon/compare_id';
-import type { NotificationGroup } from 'mastodon/models/notification_group';
-import type { NotificationGap } from 'mastodon/reducers/notification_groups';
-import type { RootState } from 'mastodon/store';
+import { compareId } from 'truecolors/compare_id';
+import type { NotificationGroup } from 'truecolors/models/notification_group';
+import type { NotificationGap } from 'truecolors/reducers/notification_groups';
+import type { RootState } from 'truecolors/store';
 
 import {
   selectSettingsNotificationsExcludedTypes,

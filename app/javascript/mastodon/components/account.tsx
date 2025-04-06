@@ -11,20 +11,20 @@ import {
   unblockAccount,
   muteAccount,
   unmuteAccount,
-} from 'mastodon/actions/accounts';
-import { initMuteModal } from 'mastodon/actions/mutes';
-import { Avatar } from 'mastodon/components/avatar';
-import { Button } from 'mastodon/components/button';
-import { FollowersCounter } from 'mastodon/components/counters';
-import { DisplayName } from 'mastodon/components/display_name';
-import { FollowButton } from 'mastodon/components/follow_button';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { Skeleton } from 'mastodon/components/skeleton';
-import { VerifiedBadge } from 'mastodon/components/verified_badge';
-import DropdownMenu from 'mastodon/containers/dropdown_menu_container';
-import { me } from 'mastodon/initial_state';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+} from 'truecolors/actions/accounts';
+import { initMuteModal } from 'truecolors/actions/mutes';
+import { Avatar } from 'truecolors/components/avatar';
+import { Button } from 'truecolors/components/button';
+import { FollowersCounter } from 'truecolors/components/counters';
+import { DisplayName } from 'truecolors/components/display_name';
+import { FollowButton } from 'truecolors/components/follow_button';
+import { RelativeTimestamp } from 'truecolors/components/relative_timestamp';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { Skeleton } from 'truecolors/components/skeleton';
+import { VerifiedBadge } from 'truecolors/components/verified_badge';
+import DropdownMenu from 'truecolors/containers/dropdown_menu_container';
+import { me } from 'truecolors/initial_state';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const messages = defineMessages({
   follow: { id: 'account.follow', defaultMessage: 'Follow' },

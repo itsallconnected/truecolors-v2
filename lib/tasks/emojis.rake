@@ -47,7 +47,7 @@ namespace :emojis do
   task :generate do
     source = 'http://www.unicode.org/Public/emoji/15.0/emoji-test.txt'
     codes  = []
-    dest   = Rails.root.join('app', 'javascript', 'mastodon', 'features', 'emoji', 'emoji_map.json')
+    dest   = Rails.root.join('app', 'javascript', 'truecolors', 'features', 'emoji', 'emoji_map.json')
 
     puts "Downloading emojos from source... (#{source})"
 
@@ -90,7 +90,7 @@ namespace :emojis do
 
   desc 'Generate emoji variants with white borders'
   task :generate_borders do
-    src = Rails.root.join('app', 'javascript', 'mastodon', 'features', 'emoji', 'emoji_map.json')
+    src = Rails.root.join('app', 'javascript', 'truecolors', 'features', 'emoji', 'emoji_map.json')
     emojis_light = '👽⚾🐔☁️💨🕊️👀🍥👻🐐❕❔⛸️🌩️🔊🔇📃🌧️🐏🍚🍙🐓🐑💀☠️🌨️🔉🔈💬💭🏐🏳️⚪⬜◽◻️▫️🪽🪿'
     emojis_dark = '🎱🐜⚫🖤⬛◼️◾◼️✒️▪️💣🎳📷📸♣️🕶️✴️🔌💂‍♀️📽️🍳🦍💂🔪🕳️🕹️🕋🖊️🖋️💂‍♂️🎤🎓🎥🎼♠️🎩🦃📼📹🎮🐃🏴🐞🕺📱📲🚲🪮🐦‍⬛'
 
@@ -107,7 +107,7 @@ namespace :emojis do
   desc 'Download the JSON sheet data of emojis'
   task :download_sheet_json do
     source = 'https://raw.githubusercontent.com/iamcal/emoji-data/refs/tags/v15.1.2/emoji.json'
-    dest   = Rails.root.join('app', 'javascript', 'mastodon', 'features', 'emoji', 'emoji_sheet.json')
+    dest   = Rails.root.join('app', 'javascript', 'truecolors', 'features', 'emoji', 'emoji_sheet.json')
 
     puts "Downloading emoji data from source... (#{source})"
 

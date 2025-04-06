@@ -8,9 +8,9 @@ import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 
 import PublicIcon from '@/material-icons/400-24px/public.svg?react';
-import { DismissableBanner } from 'mastodon/components/dismissable_banner';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { domain } from 'mastodon/initial_state';
+import { DismissableBanner } from 'truecolors/components/dismissable_banner';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
+import { domain } from 'truecolors/initial_state';
 
 import { addColumn, removeColumn, moveColumn } from '../../actions/columns';
 import { connectPublicStream } from '../../actions/streaming';

@@ -3,7 +3,7 @@
 class REST::StatusSerializer < ActiveModel::Serializer
   include FormattingHelper
 
-  # Please update `app/javascript/mastodon/api_types/statuses.ts` when making changes to the attributes
+  # Please update `app/javascript/truecolors/api_types/statuses.ts` when making changes to the attributes
 
   attributes :id, :created_at, :in_reply_to_id, :in_reply_to_account_id,
              :sensitive, :spoiler_text, :visibility, :language,

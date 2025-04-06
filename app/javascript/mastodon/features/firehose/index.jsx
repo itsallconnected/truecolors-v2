@@ -6,15 +6,15 @@ import { useIntl, defineMessages, FormattedMessage } from 'react-intl';
 import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 
-import { useIdentity } from '@/mastodon/identity_context';
+import { useIdentity } from '@/truecolors/identity_context';
 import PublicIcon from '@/material-icons/400-24px/public.svg?react';
-import { addColumn } from 'mastodon/actions/columns';
-import { changeSetting } from 'mastodon/actions/settings';
-import { connectPublicStream, connectCommunityStream } from 'mastodon/actions/streaming';
-import { expandPublicTimeline, expandCommunityTimeline } from 'mastodon/actions/timelines';
-import { DismissableBanner } from 'mastodon/components/dismissable_banner';
-import { domain } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { addColumn } from 'truecolors/actions/columns';
+import { changeSetting } from 'truecolors/actions/settings';
+import { connectPublicStream, connectCommunityStream } from 'truecolors/actions/streaming';
+import { expandPublicTimeline, expandCommunityTimeline } from 'truecolors/actions/timelines';
+import { DismissableBanner } from 'truecolors/components/dismissable_banner';
+import { domain } from 'truecolors/initial_state';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 import Column from '../../components/column';
 import ColumnHeader from '../../components/column_header';

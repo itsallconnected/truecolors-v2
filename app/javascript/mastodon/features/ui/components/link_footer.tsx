@@ -9,7 +9,7 @@ import {
   statusPageUrl,
   profile_directory as canProfileDirectory,
   termsOfServiceEnabled,
-} from 'mastodon/initial_state';
+} from 'truecolors/initial_state';
 
 const DividingCircle: React.FC = () => <span aria-hidden>{' · '}</span>;
 
@@ -71,12 +71,12 @@ export const LinkFooter: React.FC<{
       </p>
 
       <p>
-        <strong>Mastodon</strong>:{' '}
-        <a href='https://joinmastodon.org' target='_blank' rel='noopener'>
+        <strong>Truecolors</strong>:{' '}
+        <a href='https://jointruecolors.org' target='_blank' rel='noopener'>
           <FormattedMessage id='footer.about' defaultMessage='About' />
         </a>
         <DividingCircle />
-        <a href='https://joinmastodon.org/apps' target='_blank' rel='noopener'>
+        <a href='https://jointruecolors.org/apps' target='_blank' rel='noopener'>
           <FormattedMessage id='footer.get_app' defaultMessage='Get the app' />
         </a>
         <DividingCircle />

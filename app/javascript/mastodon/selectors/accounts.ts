@@ -1,11 +1,11 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { Record as ImmutableRecord } from 'immutable';
 
-import { me } from 'mastodon/initial_state';
-import { accountDefaultValues } from 'mastodon/models/account';
-import type { Account, AccountShape } from 'mastodon/models/account';
-import type { Relationship } from 'mastodon/models/relationship';
-import type { RootState } from 'mastodon/store';
+import { me } from 'truecolors/initial_state';
+import { accountDefaultValues } from 'truecolors/models/account';
+import type { Account, AccountShape } from 'truecolors/models/account';
+import type { Relationship } from 'truecolors/models/relationship';
+import type { RootState } from 'truecolors/store';
 
 const getAccountBase = (state: RootState, id: string) =>
   state.accounts.get(id, null);

@@ -6,12 +6,12 @@ import { useCallback } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import { toggleStatusSpoilers } from 'mastodon/actions/statuses';
-import { DetailedStatus } from 'mastodon/features/status/components/detailed_status';
-import { me } from 'mastodon/initial_state';
-import type { TopStatuses } from 'mastodon/models/annual_report';
-import { makeGetStatus, makeGetPictureInPicture } from 'mastodon/selectors';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { toggleStatusSpoilers } from 'truecolors/actions/statuses';
+import { DetailedStatus } from 'truecolors/features/status/components/detailed_status';
+import { me } from 'truecolors/initial_state';
+import type { TopStatuses } from 'truecolors/models/annual_report';
+import { makeGetStatus, makeGetPictureInPicture } from 'truecolors/selectors';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const getStatus = makeGetStatus() as unknown as (arg0: any, arg1: any) => any;
 const getPictureInPicture = makeGetPictureInPicture() as unknown as (

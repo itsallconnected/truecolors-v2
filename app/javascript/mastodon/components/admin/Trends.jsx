@@ -5,8 +5,8 @@ import { FormattedMessage } from 'react-intl';
 
 import classNames from 'classnames';
 
-import api from 'mastodon/api';
-import { Hashtag } from 'mastodon/components/hashtag';
+import api from 'truecolors/api';
+import { Hashtag } from 'truecolors/components/hashtag';
 
 export default class Trends extends PureComponent {
 

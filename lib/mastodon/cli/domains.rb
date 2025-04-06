@@ -3,7 +3,7 @@
 require 'concurrent'
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class Domains < Base
     option :concurrency, type: :numeric, default: 5, aliases: [:c]
     option :verbose, type: :boolean, aliases: [:v]
@@ -25,8 +25,8 @@ module Mastodon::CLI
       When the --by-uri option is given, DOMAIN is used to match the domain part of actor
       URIs rather than the domain part of the webfinger handle. For instance, an account
       that has the handle `foo@bar.com` but whose profile is at the URL
-      `https://mastodon-bar.com/users/foo`, would be purged by either
-      `tootctl domains purge bar.com` or `tootctl domains purge --by-uri mastodon-bar.com`.
+      `https://truecolors-bar.com/users/foo`, would be purged by either
+      `tootctl domains purge bar.com` or `tootctl domains purge --by-uri truecolors-bar.com`.
 
       When the --include-subdomains option is given, not only DOMAIN is deleted, but all
       subdomains as well. Note that this may be considerably slower.
@@ -102,7 +102,7 @@ module Mastodon::CLI
     option :exclude_suspended, type: :boolean, default: false, aliases: [:x]
     desc 'crawl [START]', 'Crawl all known peers, optionally beginning at START'
     long_desc <<-LONG_DESC
-      Crawl the fediverse by using the Mastodon REST API endpoints that expose
+      Crawl the fediverse by using the Truecolors REST API endpoints that expose
       all known peers, and collect statistics from those peers, as long as those
       peers support those API endpoints. When no START is given, the command uses
       this server's own database of known peers to seed the crawl.

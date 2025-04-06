@@ -5,13 +5,13 @@ import type { IntlShape } from 'react-intl';
 
 import classNames from 'classnames';
 
-import { dismissAlert } from 'mastodon/actions/alerts';
+import { dismissAlert } from 'truecolors/actions/alerts';
 import type {
   Alert,
   TranslatableString,
   TranslatableValues,
-} from 'mastodon/models/alert';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+} from 'truecolors/models/alert';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const formatIfNeeded = (
   intl: IntlShape,

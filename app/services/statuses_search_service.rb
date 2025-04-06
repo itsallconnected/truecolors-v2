@@ -2,7 +2,7 @@
 
 class StatusesSearchService < BaseService
   def call(query, account = nil, options = {})
-    MastodonOTELTracer.in_span('StatusesSearchService#call') do |span|
+    TruecolorsOTELTracer.in_span('StatusesSearchService#call') do |span|
       @query   = query&.strip
       @account = account
       @options = options
@@ -49,12 +49,12 @@ class StatusesSearchService < BaseService
     end
 
     if @options[:min_id]
-      timestamp = Mastodon::Snowflake.to_time(@options[:min_id].to_i)
+      timestamp = Truecolors::Snowflake.to_time(@options[:min_id].to_i)
       syntax_options << "after:\"#{timestamp.iso8601}\""
     end
 
     if @options[:max_id]
-      timestamp = Mastodon::Snowflake.to_time(@options[:max_id].to_i)
+      timestamp = Truecolors::Snowflake.to_time(@options[:max_id].to_i)
       syntax_options << "before:\"#{timestamp.iso8601}\""
     end
 

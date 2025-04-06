@@ -16,12 +16,12 @@ import {
   expandNotificationsForRequest,
   acceptNotificationRequest,
   dismissNotificationRequest,
-} from 'mastodon/actions/notification_requests';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { IconButton } from 'mastodon/components/icon_button';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import { SensitiveMediaContextProvider } from 'mastodon/features/ui/util/sensitive_media_context';
+} from 'truecolors/actions/notification_requests';
+import Column from 'truecolors/components/column';
+import ColumnHeader from 'truecolors/components/column_header';
+import { IconButton } from 'truecolors/components/icon_button';
+import ScrollableList from 'truecolors/components/scrollable_list';
+import { SensitiveMediaContextProvider } from 'truecolors/features/ui/util/sensitive_media_context';
 
 import NotificationContainer from './containers/notification_container';
 

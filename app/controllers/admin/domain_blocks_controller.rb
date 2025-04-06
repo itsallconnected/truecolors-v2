@@ -22,7 +22,7 @@ module Admin
       @form.save
     rescue ActionController::ParameterMissing
       flash[:alert] = I18n.t('admin.domain_blocks.no_domain_block_selected')
-    rescue Mastodon::NotPermittedError
+    rescue Truecolors::NotPermittedError
       flash[:alert] = I18n.t('admin.domain_blocks.not_permitted')
     else
       flash[:notice] = I18n.t('admin.domain_blocks.created_msg')

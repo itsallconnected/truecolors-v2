@@ -3,8 +3,8 @@ import { FormattedMessage } from 'react-intl';
 import { animated, useSpring } from '@react-spring/web';
 
 import UploadFileIcon from '@/material-icons/400-24px/upload_file.svg?react';
-import { Icon } from 'mastodon/components/icon';
-import { reduceMotion } from 'mastodon/initial_state';
+import { Icon } from 'truecolors/components/icon';
+import { reduceMotion } from 'truecolors/initial_state';
 
 interface UploadProgressProps {
   active: boolean;

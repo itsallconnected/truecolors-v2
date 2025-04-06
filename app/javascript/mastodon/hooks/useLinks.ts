@@ -4,8 +4,8 @@ import { useHistory } from 'react-router-dom';
 
 import { isFulfilled, isRejected } from '@reduxjs/toolkit';
 
-import { openURL } from 'mastodon/actions/search';
-import { useAppDispatch } from 'mastodon/store';
+import { openURL } from 'truecolors/actions/search';
+import { useAppDispatch } from 'truecolors/store';
 
 const isMentionClick = (element: HTMLAnchorElement) =>
   element.classList.contains('mention');

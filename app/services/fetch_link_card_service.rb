@@ -29,7 +29,7 @@ class FetchLinkCardService < BaseService
     end
 
     attach_card if @card&.persisted?
-  rescue *Mastodon::HTTP_CONNECTION_ERRORS, Addressable::URI::InvalidURIError, Mastodon::HostValidationError, Mastodon::LengthValidationError, Encoding::UndefinedConversionError, ActiveRecord::RecordInvalid => e
+  rescue *Truecolors::HTTP_CONNECTION_ERRORS, Addressable::URI::InvalidURIError, Truecolors::HostValidationError, Truecolors::LengthValidationError, Encoding::UndefinedConversionError, ActiveRecord::RecordInvalid => e
     Rails.logger.debug { "Error fetching link #{@original_url}: #{e}" }
     nil
   end
@@ -48,7 +48,7 @@ class FetchLinkCardService < BaseService
     headers = {
       'Accept' => 'text/html',
       'Accept-Language' => "#{I18n.default_locale}, *;q=0.5",
-      'User-Agent' => "#{Mastodon::Version.user_agent} Bot",
+      'User-Agent' => "#{Truecolors::Version.user_agent} Bot",
     }
 
     @html = Request.new(:get, @url).add_headers(headers).perform do |res|

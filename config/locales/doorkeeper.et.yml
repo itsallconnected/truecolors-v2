@@ -123,7 +123,7 @@ et:
         admin/accounts: Kontode haldus
         admin/all: Kõik haldusfunktsioonid
         admin/reports: Raportite haldus
-        all: Täielik ligipääs Su Mastodoni kontole
+        all: Täielik ligipääs Su Truecolorsi kontole
         blocks: Keelud
         bookmarks: Järjehoidjad
         conversations: Vestlused
@@ -136,7 +136,7 @@ et:
         media: Lisatud meedia
         mutes: Vaigistused
         notifications: Teavitused
-        profile: Sinu Mastodoni profiil
+        profile: Sinu Truecolorsi profiil
         push: Tõuketeated
         reports: Teavitused
         search: Otsing

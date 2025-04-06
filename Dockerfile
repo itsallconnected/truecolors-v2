@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.12
 
 # This file is designed for production server deployment, not local development work
-# For a containerized local dev environment, see: https://github.com/mastodon/mastodon/blob/main/docs/DEVELOPMENT.md#docker
+# For a containerized local dev environment, see: https://github.com/truecolors/truecolors/blob/main/docs/DEVELOPMENT.md#docker
 
 # Please see https://docs.docker.com/engine/reference/builder for information about
 # the extended buildx capabilities used in this file.
@@ -30,44 +30,44 @@ FROM ${BASE_REGISTRY}/ruby:${RUBY_VERSION}-slim-${DEBIAN_VERSION} AS ruby
 ARG MASTODON_VERSION_PRERELEASE=""
 # Append build metadata or fork information to version.rb [--build-arg MASTODON_VERSION_METADATA="pr-123456"]
 ARG MASTODON_VERSION_METADATA=""
-# Will be available as Mastodon::Version.source_commit
+# Will be available as Truecolors::Version.source_commit
 ARG SOURCE_COMMIT=""
 
 # Allow Ruby on Rails to serve static files
-# See: https://docs.joinmastodon.org/admin/config/#rails_serve_static_files
+# See: https://docs.jointruecolors.org/admin/config/#rails_serve_static_files
 ARG RAILS_SERVE_STATIC_FILES="true"
 # Allow to use YJIT compiler
 # See: https://github.com/ruby/ruby/blob/v3_2_4/doc/yjit/yjit.md
 ARG RUBY_YJIT_ENABLE="1"
 # Timezone used by the Docker container and runtime, change with [--build-arg TZ=Europe/Berlin]
 ARG TZ="Etc/UTC"
-# Linux UID (user id) for the mastodon user, change with [--build-arg UID=1234]
+# Linux UID (user id) for the truecolors user, change with [--build-arg UID=1234]
 ARG UID="991"
-# Linux GID (group id) for the mastodon user, change with [--build-arg GID=1234]
+# Linux GID (group id) for the truecolors user, change with [--build-arg GID=1234]
 ARG GID="991"
 
-# Apply Mastodon build options based on options above
+# Apply Truecolors build options based on options above
 ENV \
-  # Apply Mastodon version information
+  # Apply Truecolors version information
   MASTODON_VERSION_PRERELEASE="${MASTODON_VERSION_PRERELEASE}" \
   MASTODON_VERSION_METADATA="${MASTODON_VERSION_METADATA}" \
   SOURCE_COMMIT="${SOURCE_COMMIT}" \
-  # Apply Mastodon static files and YJIT options
+  # Apply Truecolors static files and YJIT options
   RAILS_SERVE_STATIC_FILES=${RAILS_SERVE_STATIC_FILES} \
   RUBY_YJIT_ENABLE=${RUBY_YJIT_ENABLE} \
   # Apply timezone
   TZ=${TZ}
 
 ENV \
-  # Configure the IP to bind Mastodon to when serving traffic
+  # Configure the IP to bind Truecolors to when serving traffic
   BIND="0.0.0.0" \
   # Use production settings for Yarn, Node.js and related tools
   NODE_ENV="production" \
   # Use production settings for Ruby on Rails
   RAILS_ENV="production" \
-  # Add Ruby and Mastodon installation to the PATH
+  # Add Ruby and Truecolors installation to the PATH
   DEBIAN_FRONTEND="noninteractive" \
-  PATH="${PATH}:/opt/ruby/bin:/opt/mastodon/bin" \
+  PATH="${PATH}:/opt/ruby/bin:/opt/truecolors/bin" \
   # Optimize jemalloc 5.x performance
   MALLOC_CONF="narenas:2,background_thread:true,thp:never,dirty_decay_ms:1000,muzzy_decay_ms:0" \
   # Enable libvips, should not be changed
@@ -87,14 +87,14 @@ RUN \
   rm -f /etc/apt/apt.conf.d/docker-clean; \
   # Sets timezone
   echo "${TZ}" > /etc/localtime; \
-  # Creates mastodon user/group and sets home directory
-  groupadd -g "${GID}" mastodon; \
-  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/mastodon mastodon; \
-  # Creates /mastodon symlink to /opt/mastodon
-  ln -s /opt/mastodon /mastodon;
+  # Creates truecolors user/group and sets home directory
+  groupadd -g "${GID}" truecolors; \
+  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/truecolors truecolors; \
+  # Creates /truecolors symlink to /opt/truecolors
+  ln -s /opt/truecolors /truecolors;
 
-# Set /opt/mastodon as working directory
-WORKDIR /opt/mastodon
+# Set /opt/truecolors as working directory
+WORKDIR /opt/truecolors
 
 # Add backport repository for some specific packages where we need the latest version
 RUN echo 'deb http://deb.debian.org/debian bookworm-backports main' >> /etc/apt/sources.list
@@ -255,7 +255,7 @@ FROM build AS bundler
 ARG TARGETPLATFORM
 
 # Copy Gemfile config into working directory
-COPY Gemfile* /opt/mastodon/
+COPY Gemfile* /opt/truecolors/
 
 RUN \
   # Mount Ruby Gem caches
@@ -276,8 +276,8 @@ FROM build AS precompiler
 
 ARG TARGETPLATFORM
 
-# Copy Mastodon sources into layer
-COPY . /opt/mastodon/
+# Copy Truecolors sources into layer
+COPY . /opt/truecolors/
 
 # Copy Node.js binaries/libraries into layer
 COPY --from=node /usr/local/bin /usr/local/bin
@@ -294,25 +294,25 @@ RUN \
   --mount=type=cache,id=corepack-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/corepack,sharing=locked \
   --mount=type=cache,id=yarn-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/yarn,sharing=locked \
   # Install Node.js packages
-  yarn workspaces focus --production @mastodon/mastodon;
+  yarn workspaces focus --production @truecolors/truecolors;
 
 # Copy libvips components into layer for precompiler
 COPY --from=libvips /usr/local/libvips/bin /usr/local/bin
 COPY --from=libvips /usr/local/libvips/lib /usr/local/lib
 # Copy bundler packages into layer for precompiler
-COPY --from=bundler /opt/mastodon /opt/mastodon/
+COPY --from=bundler /opt/truecolors /opt/truecolors/
 COPY --from=bundler /usr/local/bundle/ /usr/local/bundle/
 
 RUN \
   ldconfig; \
-  # Use Ruby on Rails to create Mastodon assets
+  # Use Ruby on Rails to create Truecolors assets
   SECRET_KEY_BASE_DUMMY=1 \
   bundle exec rails assets:precompile; \
   # Cleanup temporary files
-  rm -fr /opt/mastodon/tmp;
+  rm -fr /opt/truecolors/tmp;
 
-# Prep final Mastodon Ruby layer
-FROM ruby AS mastodon
+# Prep final Truecolors Ruby layer
+FROM ruby AS truecolors
 
 ARG TARGETPLATFORM
 
@@ -363,12 +363,12 @@ RUN \
   libx265-199 \
   ;
 
-# Copy Mastodon sources into final layer
-COPY . /opt/mastodon/
+# Copy Truecolors sources into final layer
+COPY . /opt/truecolors/
 
 # Copy compiled assets to layer
-COPY --from=precompiler /opt/mastodon/public/packs /opt/mastodon/public/packs
-COPY --from=precompiler /opt/mastodon/public/assets /opt/mastodon/public/assets
+COPY --from=precompiler /opt/truecolors/public/packs /opt/truecolors/public/packs
+COPY --from=precompiler /opt/truecolors/public/assets /opt/truecolors/public/assets
 # Copy bundler components to layer
 COPY --from=bundler /usr/local/bundle/ /usr/local/bundle/
 # Copy libvips components to layer
@@ -390,14 +390,14 @@ RUN \
   bundle exec bootsnap precompile --gemfile app/ lib/;
 
 RUN \
-  # Pre-create and chown system volume to Mastodon user
-  mkdir -p /opt/mastodon/public/system; \
-  chown mastodon:mastodon /opt/mastodon/public/system; \
-  # Set Mastodon user as owner of tmp folder
-  chown -R mastodon:mastodon /opt/mastodon/tmp;
+  # Pre-create and chown system volume to Truecolors user
+  mkdir -p /opt/truecolors/public/system; \
+  chown truecolors:truecolors /opt/truecolors/public/system; \
+  # Set Truecolors user as owner of tmp folder
+  chown -R truecolors:truecolors /opt/truecolors/tmp;
 
 # Set the running user for resulting container
-USER mastodon
+USER truecolors
 # Expose default Puma ports
 EXPOSE 3000
 # Set container tini as default entry point

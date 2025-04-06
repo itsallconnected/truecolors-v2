@@ -1,9 +1,9 @@
 import './public-path';
-import main from 'mastodon/main';
+import main from 'truecolors/main';
 
-import { start } from '../mastodon/common';
-import { loadLocale } from '../mastodon/locales';
-import { loadPolyfills } from '../mastodon/polyfills';
+import { start } from '../truecolors/common';
+import { loadLocale } from '../truecolors/locales';
+import { loadPolyfills } from '../truecolors/polyfills';
 
 start();
 

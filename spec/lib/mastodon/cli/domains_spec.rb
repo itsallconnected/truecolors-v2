@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/domains'
+require 'truecolors/cli/domains'
 
-RSpec.describe Mastodon::CLI::Domains do
+RSpec.describe Truecolors::CLI::Domains do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }
@@ -57,7 +57,7 @@ RSpec.describe Mastodon::CLI::Domains do
         stub_request(:get, 'https://host.example/api/v1/instance').to_return(status: 200, body: {}.to_json)
         stub_request(:get, 'https://host.example/api/v1/instance/peers').to_return(status: 200, body: {}.to_json)
         stub_request(:get, 'https://host.example/api/v1/instance/activity').to_return(status: 200, body: {}.to_json)
-        stub_const('Mastodon::CLI::Domains::CRAWL_SLEEP_TIME', 0)
+        stub_const('Truecolors::CLI::Domains::CRAWL_SLEEP_TIME', 0)
       end
 
       context 'with --format of summary' do

@@ -9,12 +9,12 @@ import { connect } from 'react-redux';
 import escapeTextContentForBrowser from 'escape-html';
 
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
-import { closeModal } from 'mastodon/actions/modal';
-import { IconButton } from 'mastodon/components/icon_button';
-import InlineAccount from 'mastodon/components/inline_account';
-import MediaAttachments from 'mastodon/components/media_attachments';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import emojify from 'mastodon/features/emoji/emoji';
+import { closeModal } from 'truecolors/actions/modal';
+import { IconButton } from 'truecolors/components/icon_button';
+import InlineAccount from 'truecolors/components/inline_account';
+import MediaAttachments from 'truecolors/components/media_attachments';
+import { RelativeTimestamp } from 'truecolors/components/relative_timestamp';
+import emojify from 'truecolors/features/emoji/emoji';
 
 const mapStateToProps = (state, { statusId }) => ({
   language: state.getIn(['statuses', statusId, 'language']),

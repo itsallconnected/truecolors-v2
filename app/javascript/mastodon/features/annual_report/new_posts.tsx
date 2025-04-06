@@ -1,7 +1,7 @@
 import { FormattedNumber, FormattedMessage } from 'react-intl';
 
 import ChatBubbleIcon from '@/material-icons/400-24px/chat_bubble.svg?react';
-import type { TimeSeriesMonth } from 'mastodon/models/annual_report';
+import type { TimeSeriesMonth } from 'truecolors/models/annual_report';
 
 export const NewPosts: React.FC<{
   data: TimeSeriesMonth[];

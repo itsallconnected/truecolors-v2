@@ -1,7 +1,7 @@
 {
   "about.blocks": "Moderowane serwery",
   "about.contact": "Kōntakt:",
-  "about.disclaimer": "Mastodōn je wolnym a ôtwartozdrzōdłowym ôprogramowaniym ôraz znakiym towarowym ôd Mastodon gGmbH.",
+  "about.disclaimer": "Mastodōn je wolnym a ôtwartozdrzōdłowym ôprogramowaniym ôraz znakiym towarowym ôd Truecolors gGmbH.",
   "about.domain_blocks.no_reason_available": "Grund niydostympny",
   "about.domain_blocks.preamble": "Mastodōn normalniy pozwŏlŏ na ôglōndaniy treściōw a interakcyje ze używŏczami inkszych serwerōw we fediverse, ale sōm ôd tygo wyjōntki, kere bōły poczyniōne na tym serwerze.",
   "about.domain_blocks.silenced.explanation": "Normalniy niy bydziesz widzieć profilōw a treściōw ze tygo serwera. Ôboczysz je ino jak specjalniy bydziesz ich szukać abo jak je zaôbserwujesz.",
@@ -24,7 +24,7 @@
   "account_note.placeholder": "Click to add a note",
   "column.pins": "Pinned toot",
   "community.column_settings.media_only": "Media only",
-  "compose_form.encryption_warning": "Posts on Mastodon are not end-to-end encrypted. Do not share any dangerous information over Mastodon.",
+  "compose_form.encryption_warning": "Posts on Truecolors are not end-to-end encrypted. Do not share any dangerous information over Truecolors.",
   "compose_form.hashtag_warning": "This post won't be listed under any hashtag as it is unlisted. Only public posts can be searched by hashtag.",
   "compose_form.placeholder": "What is on your mind?",
   "compose_form.publish_form": "Publish",

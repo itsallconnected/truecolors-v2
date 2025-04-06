@@ -1,5 +1,5 @@
-import { apiRequestPut } from 'mastodon/api';
-import type { ApiMediaAttachmentJSON } from 'mastodon/api_types/media_attachments';
+import { apiRequestPut } from 'truecolors/api';
+import type { ApiMediaAttachmentJSON } from 'truecolors/api_types/media_attachments';
 
 export const apiUpdateMedia = (
   id: string,

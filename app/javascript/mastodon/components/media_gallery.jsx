@@ -10,10 +10,10 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 
 import { debounce } from 'lodash';
 
-import { AltTextBadge } from 'mastodon/components/alt_text_badge';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { SpoilerButton } from 'mastodon/components/spoiler_button';
-import { formatTime } from 'mastodon/features/video';
+import { AltTextBadge } from 'truecolors/components/alt_text_badge';
+import { Blurhash } from 'truecolors/components/blurhash';
+import { SpoilerButton } from 'truecolors/components/spoiler_button';
+import { formatTime } from 'truecolors/features/video';
 
 import { autoPlayGif, displayMedia, useBlurhash } from '../initial_state';
 

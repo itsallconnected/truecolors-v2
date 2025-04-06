@@ -6,7 +6,7 @@ RSpec.describe 'Disabled OAuth routes' do
   # These routes are disabled via the doorkeeper configuration for
   # `admin_authenticator`, as these routes should only be accessible by server
   # administrators. For now, these routes are not properly designed and
-  # integrated into Mastodon, so we're disabling them completely
+  # integrated into Truecolors, so we're disabling them completely
   describe 'GET /oauth/applications' do
     it 'returns 403 forbidden' do
       get oauth_applications_path

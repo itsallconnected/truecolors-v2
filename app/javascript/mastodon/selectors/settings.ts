@@ -1,6 +1,6 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import type { RootState } from 'mastodon/store';
+import type { RootState } from 'truecolors/store';
 
 /* eslint-disable @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 // state.settings is not yet typed, so we disable some ESLint checks for those selectors

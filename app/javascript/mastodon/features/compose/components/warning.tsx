@@ -4,10 +4,10 @@ import { createSelector } from '@reduxjs/toolkit';
 
 import { animated, useSpring } from '@react-spring/web';
 
-import { me } from 'mastodon/initial_state';
-import { useAppSelector } from 'mastodon/store';
-import type { RootState } from 'mastodon/store';
-import { HASHTAG_PATTERN_REGEX } from 'mastodon/utils/hashtags';
+import { me } from 'truecolors/initial_state';
+import { useAppSelector } from 'truecolors/store';
+import type { RootState } from 'truecolors/store';
+import { HASHTAG_PATTERN_REGEX } from 'truecolors/utils/hashtags';
 
 const selector = createSelector(
   (state: RootState) => state.compose.get('privacy') as string,
@@ -60,7 +60,7 @@ export const Warning = () => {
       <WarningMessage>
         <FormattedMessage
           id='compose_form.encryption_warning'
-          defaultMessage='Posts on Mastodon are not end-to-end encrypted. Do not share any dangerous information over Mastodon.'
+          defaultMessage='Posts on Truecolors are not end-to-end encrypted. Do not share any dangerous information over Truecolors.'
         />{' '}
         <a href='/terms' target='_blank'>
           <FormattedMessage

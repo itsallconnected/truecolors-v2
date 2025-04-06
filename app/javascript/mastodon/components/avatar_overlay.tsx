@@ -1,6 +1,6 @@
-import { useHovering } from 'mastodon/hooks/useHovering';
-import { autoPlayGif } from 'mastodon/initial_state';
-import type { Account } from 'mastodon/models/account';
+import { useHovering } from 'truecolors/hooks/useHovering';
+import { autoPlayGif } from 'truecolors/initial_state';
+import type { Account } from 'truecolors/models/account';
 
 interface Props {
   account: Account | undefined; // FIXME: remove `undefined` once we know for sure its always there

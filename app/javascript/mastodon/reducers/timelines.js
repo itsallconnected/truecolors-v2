@@ -1,6 +1,6 @@
 import { Map as ImmutableMap, List as ImmutableList, OrderedSet as ImmutableOrderedSet, fromJS } from 'immutable';
 
-import { timelineDelete } from 'mastodon/actions/timelines_typed';
+import { timelineDelete } from 'truecolors/actions/timelines_typed';
 
 import {
   blockAccountSuccess,

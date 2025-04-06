@@ -7,8 +7,8 @@ import { Helmet } from 'react-helmet';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
 import InfoIcon from '@/material-icons/400-24px/info.svg?react';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
+import Column from 'truecolors/components/column';
+import ColumnHeader from 'truecolors/components/column_header';
 
 const messages = defineMessages({
   heading: { id: 'keyboard_shortcuts.heading', defaultMessage: 'Keyboard Shortcuts' },

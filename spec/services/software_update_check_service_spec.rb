@@ -6,7 +6,7 @@ RSpec.describe SoftwareUpdateCheckService do
   subject { described_class.new }
 
   shared_examples 'when the feature is enabled' do
-    let(:full_update_check_url) { "#{update_check_url}?version=#{Mastodon::Version.to_s.split('+')[0]}" }
+    let(:full_update_check_url) { "#{update_check_url}?version=#{Truecolors::Version.to_s.split('+')[0]}" }
 
     let(:devops_role)     { Fabricate(:user_role, name: 'DevOps', permissions: UserRole::FLAGS[:view_devops]) }
     let(:owner_user)      { Fabricate(:owner_user) }
@@ -63,19 +63,19 @@ RSpec.describe SoftwareUpdateCheckService do
               version: '4.2.1',
               urgent: false,
               type: 'patch',
-              releaseNotes: 'https://github.com/mastodon/mastodon/releases/v4.2.1',
+              releaseNotes: 'https://github.com/truecolors/truecolors/releases/v4.2.1',
             },
             {
               version: '4.3.0',
               urgent: false,
               type: 'minor',
-              releaseNotes: 'https://github.com/mastodon/mastodon/releases/v4.3.0',
+              releaseNotes: 'https://github.com/truecolors/truecolors/releases/v4.3.0',
             },
             {
               version: '5.0.0',
               urgent: false,
               type: 'minor',
-              releaseNotes: 'https://github.com/mastodon/mastodon/releases/v5.0.0',
+              releaseNotes: 'https://github.com/truecolors/truecolors/releases/v5.0.0',
             },
           ],
         }
@@ -106,7 +106,7 @@ RSpec.describe SoftwareUpdateCheckService do
                 version: '5.0.0',
                 urgent: true,
                 type: 'minor',
-                releaseNotes: 'https://github.com/mastodon/mastodon/releases/v5.0.0',
+                releaseNotes: 'https://github.com/truecolors/truecolors/releases/v5.0.0',
               },
             ],
           }
@@ -125,10 +125,10 @@ RSpec.describe SoftwareUpdateCheckService do
 
   context 'when update checking is disabled' do
     around do |example|
-      original = Rails.configuration.x.mastodon.software_update_url
-      Rails.configuration.x.mastodon.software_update_url = ''
+      original = Rails.configuration.x.truecolors.software_update_url
+      Rails.configuration.x.truecolors.software_update_url = ''
       example.run
-      Rails.configuration.x.mastodon.software_update_url = original
+      Rails.configuration.x.truecolors.software_update_url = original
     end
 
     before do
@@ -141,7 +141,7 @@ RSpec.describe SoftwareUpdateCheckService do
   end
 
   context 'when using the default update checking API' do
-    let(:update_check_url) { 'https://api.joinmastodon.org/update-check' }
+    let(:update_check_url) { 'https://api.jointruecolors.org/update-check' }
 
     it_behaves_like 'when the feature is enabled'
   end
@@ -150,10 +150,10 @@ RSpec.describe SoftwareUpdateCheckService do
     let(:update_check_url) { 'https://api.example.com/update_check' }
 
     around do |example|
-      original = Rails.configuration.x.mastodon.software_update_url
-      Rails.configuration.x.mastodon.software_update_url = 'https://api.example.com/update_check'
+      original = Rails.configuration.x.truecolors.software_update_url
+      Rails.configuration.x.truecolors.software_update_url = 'https://api.example.com/update_check'
       example.run
-      Rails.configuration.x.mastodon.software_update_url = original
+      Rails.configuration.x.truecolors.software_update_url = original
     end
 
     it_behaves_like 'when the feature is enabled'

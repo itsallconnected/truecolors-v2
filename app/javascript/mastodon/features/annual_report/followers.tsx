@@ -2,8 +2,8 @@ import { FormattedMessage, FormattedNumber } from 'react-intl';
 
 import { Sparklines, SparklinesCurve } from 'react-sparklines';
 
-import { ShortNumber } from 'mastodon/components/short_number';
-import type { TimeSeriesMonth } from 'mastodon/models/annual_report';
+import { ShortNumber } from 'truecolors/components/short_number';
+import type { TimeSeriesMonth } from 'truecolors/models/annual_report';
 
 export const Followers: React.FC<{
   data: TimeSeriesMonth[];

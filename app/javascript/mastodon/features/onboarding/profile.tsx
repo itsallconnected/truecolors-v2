@@ -11,16 +11,16 @@ import Toggle from 'react-toggle';
 import AddPhotoAlternateIcon from '@/material-icons/400-24px/add_photo_alternate.svg?react';
 import EditIcon from '@/material-icons/400-24px/edit.svg?react';
 import PersonIcon from '@/material-icons/400-24px/person.svg?react';
-import { updateAccount } from 'mastodon/actions/accounts';
-import { closeOnboarding } from 'mastodon/actions/onboarding';
-import { Button } from 'mastodon/components/button';
-import { Column } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { Icon } from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { me } from 'mastodon/initial_state';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
-import { unescapeHTML } from 'mastodon/utils/html';
+import { updateAccount } from 'truecolors/actions/accounts';
+import { closeOnboarding } from 'truecolors/actions/onboarding';
+import { Button } from 'truecolors/components/button';
+import { Column } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import { Icon } from 'truecolors/components/icon';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { me } from 'truecolors/initial_state';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
+import { unescapeHTML } from 'truecolors/utils/html';
 
 const messages = defineMessages({
   title: {
@@ -289,7 +289,7 @@ export const Profile: React.FC<{
               <span className='hint'>
                 <FormattedMessage
                   id='onboarding.profile.discoverable_hint'
-                  defaultMessage='When you opt in to discoverability on Mastodon, your posts may appear in search results and trending, and your profile may be suggested to people with similar interests to you.'
+                  defaultMessage='When you opt in to discoverability on Truecolors, your posts may appear in search results and trending, and your profile may be suggested to people with similar interests to you.'
                 />
               </span>
             </div>

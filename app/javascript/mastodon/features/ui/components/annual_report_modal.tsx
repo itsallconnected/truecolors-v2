@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-import { AnnualReport } from 'mastodon/features/annual_report';
+import { AnnualReport } from 'truecolors/features/annual_report';
 
 const AnnualReportModal: React.FC<{
   year: string;

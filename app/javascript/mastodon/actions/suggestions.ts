@@ -1,8 +1,8 @@
 import {
   apiGetSuggestions,
   apiDeleteSuggestion,
-} from 'mastodon/api/suggestions';
-import { createDataLoadingThunk } from 'mastodon/store/typed_functions';
+} from 'truecolors/api/suggestions';
+import { createDataLoadingThunk } from 'truecolors/store/typed_functions';
 
 import { fetchRelationships } from './accounts';
 import { importFetchedAccounts } from './importer';

@@ -3,9 +3,9 @@
 require 'rails_helper'
 require 'prometheus_exporter'
 require 'prometheus_exporter/middleware'
-require 'mastodon/middleware/prometheus_queue_time'
+require 'truecolors/middleware/prometheus_queue_time'
 
-RSpec.describe Mastodon::Middleware::PrometheusQueueTime do
+RSpec.describe Truecolors::Middleware::PrometheusQueueTime do
   subject { described_class.new(app, client:) }
 
   let(:app) do

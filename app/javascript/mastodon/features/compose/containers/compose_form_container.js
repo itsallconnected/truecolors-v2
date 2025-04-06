@@ -9,8 +9,8 @@ import {
   changeComposeSpoilerText,
   insertEmojiCompose,
   uploadCompose,
-} from 'mastodon/actions/compose';
-import { openModal } from 'mastodon/actions/modal';
+} from 'truecolors/actions/compose';
+import { openModal } from 'truecolors/actions/modal';
 
 import ComposeForm from '../components/compose_form';
 

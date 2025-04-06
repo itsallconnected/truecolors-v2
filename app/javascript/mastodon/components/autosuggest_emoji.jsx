@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { PureComponent } from 'react';
 
-import { assetHost } from 'mastodon/utils/config';
+import { assetHost } from 'truecolors/utils/config';
 
 import { unicodeMapping } from '../features/emoji/emoji_unicode_mapping_light';
 

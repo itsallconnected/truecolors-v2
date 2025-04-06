@@ -10,20 +10,20 @@ import { useSelector, useDispatch } from 'react-redux';
 import ArrowDropDownIcon from '@/material-icons/400-24px/arrow_drop_down.svg?react';
 import InventoryIcon from '@/material-icons/400-24px/inventory_2.svg?react';
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import { openModal } from 'mastodon/actions/modal';
+import { openModal } from 'truecolors/actions/modal';
 import {
   fetchNotificationRequests,
   expandNotificationRequests,
   acceptNotificationRequests,
   dismissNotificationRequests,
-} from 'mastodon/actions/notification_requests';
-import { changeSetting } from 'mastodon/actions/settings';
-import { CheckBox } from 'mastodon/components/check_box';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { Icon } from 'mastodon/components/icon';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
+} from 'truecolors/actions/notification_requests';
+import { changeSetting } from 'truecolors/actions/settings';
+import { CheckBox } from 'truecolors/components/check_box';
+import Column from 'truecolors/components/column';
+import ColumnHeader from 'truecolors/components/column_header';
+import { Icon } from 'truecolors/components/icon';
+import ScrollableList from 'truecolors/components/scrollable_list';
+import DropdownMenuContainer from 'truecolors/containers/dropdown_menu_container';
 
 import { NotificationRequest } from './components/notification_request';
 import { PolicyControls } from './components/policy_controls';

@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class Search < Base
     # Indices are sorted by amount of data to be expected in each, so that
     # smaller indices can go online sooner

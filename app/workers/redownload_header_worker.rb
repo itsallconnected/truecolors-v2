@@ -17,7 +17,7 @@ class RedownloadHeaderWorker
     account.save!
   rescue ActiveRecord::RecordNotFound
     # Do nothing
-  rescue Mastodon::UnexpectedResponseError => e
+  rescue Truecolors::UnexpectedResponseError => e
     response = e.response
 
     if response_error_unsalvageable?(response)

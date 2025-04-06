@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Mastodon::RedisConfiguration
+class Truecolors::RedisConfiguration
   DEFAULTS = {
     host: 'localhost',
     port: 6379,
@@ -41,7 +41,7 @@ class Mastodon::RedisConfiguration
   end
 
   def base_namespace
-    return "mastodon_test#{ENV.fetch('TEST_ENV_NUMBER', nil)}" if Rails.env.test?
+    return "truecolors_test#{ENV.fetch('TEST_ENV_NUMBER', nil)}" if Rails.env.test?
 
     namespace
   end

@@ -1,5 +1,5 @@
-import { browserHistory } from 'mastodon/components/router';
-import { debounceWithDispatchAndArguments } from 'mastodon/utils/debounce';
+import { browserHistory } from 'truecolors/components/router';
+import { debounceWithDispatchAndArguments } from 'truecolors/utils/debounce';
 
 import api, { getLinks } from '../api';
 

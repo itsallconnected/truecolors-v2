@@ -2,7 +2,7 @@
 
 require 'action_dispatch/middleware/static'
 
-module Mastodon
+module Truecolors
   module Middleware
     class PublicFileServer
       SERVICE_WORKER_TTL = 7.days.to_i

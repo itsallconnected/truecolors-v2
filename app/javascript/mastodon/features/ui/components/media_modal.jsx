@@ -14,13 +14,13 @@ import ChevronRightIcon from '@/material-icons/400-24px/chevron_right.svg?react'
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import FitScreenIcon from '@/material-icons/400-24px/fit_screen.svg?react';
 import ActualSizeIcon from '@/svg-icons/actual_size.svg?react';
-import { getAverageFromBlurhash } from 'mastodon/blurhash';
-import { GIFV } from 'mastodon/components/gifv';
-import { Icon }  from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import Footer from 'mastodon/features/picture_in_picture/components/footer';
-import { Video } from 'mastodon/features/video';
-import { disableSwiping } from 'mastodon/initial_state';
+import { getAverageFromBlurhash } from 'truecolors/blurhash';
+import { GIFV } from 'truecolors/components/gifv';
+import { Icon }  from 'truecolors/components/icon';
+import { IconButton } from 'truecolors/components/icon_button';
+import Footer from 'truecolors/features/picture_in_picture/components/footer';
+import { Video } from 'truecolors/features/video';
+import { disableSwiping } from 'truecolors/initial_state';
 
 import { ZoomableImage } from './zoomable_image';
 

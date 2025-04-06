@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/ip_blocks'
+require 'truecolors/cli/ip_blocks'
 
-RSpec.describe Mastodon::CLI::IpBlocks do
+RSpec.describe Truecolors::CLI::IpBlocks do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

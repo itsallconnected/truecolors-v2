@@ -1,7 +1,7 @@
 import type { Reducer } from '@reduxjs/toolkit';
 import { Record as ImmutableRecord, Stack } from 'immutable';
 
-import { timelineDelete } from 'mastodon/actions/timelines_typed';
+import { timelineDelete } from 'truecolors/actions/timelines_typed';
 
 import type { ModalType } from '../actions/modal';
 import { openModal, closeModal } from '../actions/modal';

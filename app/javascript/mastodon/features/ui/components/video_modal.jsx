@@ -4,9 +4,9 @@ import ImmutablePropTypes from 'react-immutable-proptypes';
 import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
-import { getAverageFromBlurhash } from 'mastodon/blurhash';
-import Footer from 'mastodon/features/picture_in_picture/components/footer';
-import { Video } from 'mastodon/features/video';
+import { getAverageFromBlurhash } from 'truecolors/blurhash';
+import Footer from 'truecolors/features/picture_in_picture/components/footer';
+import { Video } from 'truecolors/features/video';
 
 const mapStateToProps = (state, { statusId }) => ({
   status: state.getIn(['statuses', statusId]),

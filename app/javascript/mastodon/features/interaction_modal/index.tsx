@@ -12,16 +12,16 @@ import PersonAddIcon from '@/material-icons/400-24px/person_add.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
 import StarIcon from '@/material-icons/400-24px/star.svg?react';
-import { openModal, closeModal } from 'mastodon/actions/modal';
-import { apiRequest } from 'mastodon/api';
-import { Button } from 'mastodon/components/button';
-import { Icon } from 'mastodon/components/icon';
+import { openModal, closeModal } from 'truecolors/actions/modal';
+import { apiRequest } from 'truecolors/api';
+import { Button } from 'truecolors/components/button';
+import { Icon } from 'truecolors/components/icon';
 import {
   domain as localDomain,
   registrationsOpen,
   sso_redirect,
-} from 'mastodon/initial_state';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+} from 'truecolors/initial_state';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const messages = defineMessages({
   loginPrompt: {
@@ -39,9 +39,9 @@ interface LoginFormMessage {
   template?: string;
 }
 
-const PERSISTENCE_KEY = 'mastodon_home';
+const PERSISTENCE_KEY = 'truecolors_home';
 
-const EXAMPLE_VALUE = 'username@mastodon.social';
+const EXAMPLE_VALUE = 'username@truecolors.social';
 
 const isValidDomain = (value: string) => {
   const url = new URL('https:///path');

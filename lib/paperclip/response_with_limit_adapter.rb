@@ -29,7 +29,7 @@ module Paperclip
 
       source.response.body.each do |chunk|
         bytes_read += chunk.bytesize
-        raise Mastodon::LengthValidationError, "Body size exceeds limit of #{source.limit}" if bytes_read > source.limit
+        raise Truecolors::LengthValidationError, "Body size exceeds limit of #{source.limit}" if bytes_read > source.limit
 
         destination.write(chunk)
         chunk.clear

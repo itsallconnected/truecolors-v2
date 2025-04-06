@@ -1,7 +1,7 @@
 Authors
 =======
 
-Mastodon is available on [GitHub](https://github.com/mastodon/mastodon)
+Truecolors is available on [GitHub](https://github.com/truecolors/truecolors)
 and provided thanks to the work of the following contributors:
 
 * [Gargron](https://github.com/Gargron)
@@ -201,7 +201,7 @@ and provided thanks to the work of the following contributors:
 * [joenepraat](https://github.com/joenepraat)
 * [leopku](https://github.com/leopku)
 * [SansPseudoFix](https://github.com/SansPseudoFix)
-* [spla](mailto:sp@mastodont.cat)
+* [spla](mailto:sp@truecolorst.cat)
 * [tomfhowe](https://github.com/tomfhowe)
 * [noraworld](https://github.com/noraworld)
 * [aji-su](https://github.com/aji-su)
@@ -950,7 +950,7 @@ and provided thanks to the work of the following contributors:
 * [西小倉宏信](mailto:nishiko@mindia.jp)
 * [雨宮美羽](mailto:k737566@gmail.com)
 
-This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/mastodon/mastodon/graphs/contributors) instead.
+This document is provided for informational purposes only. Since it is only updated once per release, the version you are looking at may be currently out of date. To see the full list of contributors, consider looking at the [git history](https://github.com/truecolors/truecolors/graphs/contributors) instead.
 
 Additional edits have been made in this fork of mine, that now includes a Chat module implemented with Converse.js via XMPP server outside of the docker container running the platform: 
 * [itsallconnected](mailto:itsallconnected@proton.me)
@@ -958,7 +958,7 @@ Additional edits have been made in this fork of mine, that now includes a Chat m
 
 ## Translators
 
-Following people have contributed to translation of Mastodon:
+Following people have contributed to translation of Truecolors:
 
 - GunChleoc (*Scottish Gaelic*)
 - KNTRO (*Spanish, Argentina*)
@@ -998,7 +998,7 @@ Following people have contributed to translation of Mastodon:
 - palindromordnilap (*Corsican, Esperanto, French*)
 - danialbehzadi (*Persian*)
 - stanionut12 (*Romanian*)
-- mastodon-linguist (*Chinese Simplified*)
+- truecolors-linguist (*Chinese Simplified*)
 - lapor (*Slovenian*)
 - Brawaru (*Albanian, Armenian, Catalan, Danish, French, Galician, German, Greek, Hungarian, Italian, Kabyle, Korean, Polish, Portuguese, Russian, Swedish, Tamil, Ukrainian, Vietnamese*)
 - ManeraKai (*Arabic*)

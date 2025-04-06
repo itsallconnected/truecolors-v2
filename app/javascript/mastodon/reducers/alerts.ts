@@ -1,7 +1,7 @@
 import { createReducer } from '@reduxjs/toolkit';
 
-import { showAlert, dismissAlert, clearAlerts } from 'mastodon/actions/alerts';
-import type { Alert } from 'mastodon/models/alert';
+import { showAlert, dismissAlert, clearAlerts } from 'truecolors/actions/alerts';
+import type { Alert } from 'truecolors/models/alert';
 
 const initialState: Alert[] = [];
 

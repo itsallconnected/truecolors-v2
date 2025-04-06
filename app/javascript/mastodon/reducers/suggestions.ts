@@ -3,14 +3,14 @@ import { createReducer, isAnyOf } from '@reduxjs/toolkit';
 import {
   blockAccountSuccess,
   muteAccountSuccess,
-} from 'mastodon/actions/accounts';
-import { blockDomainSuccess } from 'mastodon/actions/domain_blocks';
+} from 'truecolors/actions/accounts';
+import { blockDomainSuccess } from 'truecolors/actions/domain_blocks';
 import {
   fetchSuggestions,
   dismissSuggestion,
-} from 'mastodon/actions/suggestions';
-import { createSuggestion } from 'mastodon/models/suggestion';
-import type { Suggestion } from 'mastodon/models/suggestion';
+} from 'truecolors/actions/suggestions';
+import { createSuggestion } from 'truecolors/models/suggestion';
+import type { Suggestion } from 'truecolors/models/suggestion';
 
 interface State {
   items: Suggestion[];

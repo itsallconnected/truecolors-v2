@@ -3,8 +3,8 @@ import { useCallback } from 'react';
 import { defineMessages, useIntl } from 'react-intl';
 
 import LockOpenIcon from '@/material-icons/400-24px/lock_open.svg?react';
-import { unblockDomain } from 'mastodon/actions/domain_blocks';
-import { useAppDispatch } from 'mastodon/store';
+import { unblockDomain } from 'truecolors/actions/domain_blocks';
+import { useAppDispatch } from 'truecolors/store';
 
 import { IconButton } from './icon_button';
 

@@ -114,7 +114,7 @@ class REST::InstanceSerializer < ActiveModel::Serializer
   end
 
   def api_versions
-    Mastodon::Version.api_versions
+    Truecolors::Version.api_versions
   end
 
   private

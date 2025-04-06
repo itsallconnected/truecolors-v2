@@ -8,13 +8,13 @@ import type { List as ImmutableList, RecordOf } from 'immutable';
 
 import BarChart4BarsIcon from '@/material-icons/400-24px/bar_chart_4_bars.svg?react';
 import PhotoLibraryIcon from '@/material-icons/400-24px/photo_library.svg?react';
-import { toggleStatusSpoilers } from 'mastodon/actions/statuses';
-import { Avatar } from 'mastodon/components/avatar';
-import { ContentWarning } from 'mastodon/components/content_warning';
-import { DisplayName } from 'mastodon/components/display_name';
-import { Icon } from 'mastodon/components/icon';
-import type { Status } from 'mastodon/models/status';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { toggleStatusSpoilers } from 'truecolors/actions/statuses';
+import { Avatar } from 'truecolors/components/avatar';
+import { ContentWarning } from 'truecolors/components/content_warning';
+import { DisplayName } from 'truecolors/components/display_name';
+import { Icon } from 'truecolors/components/icon';
+import type { Status } from 'truecolors/models/status';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { EmbeddedStatusContent } from './embedded_status_content';
 

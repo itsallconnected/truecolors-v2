@@ -25,27 +25,27 @@ ARG MASTODON_VERSION_METADATA=""
 
 # Timezone used by the Docker container and runtime, change with [--build-arg TZ=Europe/Berlin]
 ARG TZ="Etc/UTC"
-# Linux UID (user id) for the mastodon user, change with [--build-arg UID=1234]
+# Linux UID (user id) for the truecolors user, change with [--build-arg UID=1234]
 ARG UID="991"
-# Linux GID (group id) for the mastodon user, change with [--build-arg GID=1234]
+# Linux GID (group id) for the truecolors user, change with [--build-arg GID=1234]
 ARG GID="991"
 
-# Apply Mastodon build options based on options above
+# Apply Truecolors build options based on options above
 ENV \
-# Apply Mastodon version information
+# Apply Truecolors version information
   MASTODON_VERSION_PRERELEASE="${MASTODON_VERSION_PRERELEASE}" \
   MASTODON_VERSION_METADATA="${MASTODON_VERSION_METADATA}" \
 # Apply timezone
   TZ=${TZ}
 
 ENV \
-# Configure the IP to bind Mastodon to when serving traffic
+# Configure the IP to bind Truecolors to when serving traffic
   BIND="0.0.0.0" \
 # Explicitly set PORT to match the exposed port
   PORT=4000 \
 # Use production settings for Yarn, Node and related nodejs based tools
   NODE_ENV="production" \
-# Add Ruby and Mastodon installation to the PATH
+# Add Ruby and Truecolors installation to the PATH
   DEBIAN_FRONTEND="noninteractive"
 
 # Set default shell used for running commands
@@ -60,11 +60,11 @@ RUN \
   rm -f /etc/apt/apt.conf.d/docker-clean; \
 # Sets timezone
   echo "${TZ}" > /etc/localtime; \
-# Creates mastodon user/group and sets home directory
-  groupadd -g "${GID}" mastodon; \
-  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/mastodon mastodon; \
-# Creates symlink for /mastodon folder
-  ln -s /opt/mastodon /mastodon;
+# Creates truecolors user/group and sets home directory
+  groupadd -g "${GID}" truecolors; \
+  useradd -l -u "${UID}" -g "${GID}" -m -d /opt/truecolors truecolors; \
+# Creates symlink for /truecolors folder
+  ln -s /opt/truecolors /truecolors;
 
 # hadolint ignore=DL3008,DL3005
 RUN \
@@ -81,14 +81,14 @@ RUN \
     wget \
   ;
 
-# Set /opt/mastodon as working directory
-WORKDIR /opt/mastodon
+# Set /opt/truecolors as working directory
+WORKDIR /opt/truecolors
 
 # Copy Node package configuration files from build system to container
-COPY package.json yarn.lock .yarnrc.yml /opt/mastodon/
-COPY .yarn /opt/mastodon/.yarn
+COPY package.json yarn.lock .yarnrc.yml /opt/truecolors/
+COPY .yarn /opt/truecolors/.yarn
 # Copy Streaming source code from build system to container
-COPY ./streaming /opt/mastodon/streaming
+COPY ./streaming /opt/truecolors/streaming
 
 RUN \
 # Mount local Corepack and Yarn caches from Docker buildx caches
@@ -104,10 +104,10 @@ RUN \
 --mount=type=cache,id=corepack-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/corepack,sharing=locked \
 --mount=type=cache,id=yarn-cache-${TARGETPLATFORM},target=/usr/local/share/.cache/yarn,sharing=locked \
 # Install Node packages
-  yarn workspaces focus --production @mastodon/streaming;
+  yarn workspaces focus --production @truecolors/streaming;
 
 # Set the running user for resulting container
-USER mastodon
+USER truecolors
 # Expose default Streaming ports
 EXPOSE 4000
 # Run streaming when started

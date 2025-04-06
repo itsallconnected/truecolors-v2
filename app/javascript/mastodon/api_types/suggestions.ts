@@ -1,4 +1,4 @@
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
 
 export type ApiSuggestionSourceJSON =
   | 'featured'

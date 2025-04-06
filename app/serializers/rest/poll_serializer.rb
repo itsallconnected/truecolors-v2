@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class REST::PollSerializer < ActiveModel::Serializer
-  # Please update `app/javascript/mastodon/api_types/polls.ts` when making changes to the attributes
+  # Please update `app/javascript/truecolors/api_types/polls.ts` when making changes to the attributes
 
   attributes :id, :expires_at, :expired,
              :multiple, :votes_count, :voters_count

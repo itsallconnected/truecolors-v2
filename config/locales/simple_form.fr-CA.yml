@@ -4,10 +4,10 @@ fr-CA:
     hints:
       account:
         attribution_domains: Un par ligne. Protège contre les fausses attributions.
-        discoverable: Vos messages publics et votre profil peuvent être mis en avant ou recommandés dans diverses parties de Mastodon et votre profil peut être suggéré à d’autres utilisateurs.
+        discoverable: Vos messages publics et votre profil peuvent être mis en avant ou recommandés dans diverses parties de Truecolors et votre profil peut être suggéré à d’autres utilisateurs.
         display_name: Votre nom complet ou votre nom cool.
         fields: Votre page d'accueil, pronoms, âge, tout ce que vous voulez.
-        indexable: Vos messages publics peuvent apparaître dans les résultats de recherche sur Mastodon. Les personnes qui ont interagi avec vos messages peuvent les trouver dans une recherche quoi qu’il arrive.
+        indexable: Vos messages publics peuvent apparaître dans les résultats de recherche sur Truecolors. Les personnes qui ont interagi avec vos messages peuvent les trouver dans une recherche quoi qu’il arrive.
         note: 'Vous pouvez @mentionner d’autres personnes ou des #hashtags.'
         show_collections: Les gens pourront voir les personnes que vous suivez ou qui vous suivent. Ceux que vous suivez verront que vous les suivez dans tous les cas.
         unlocked: Les personnes pourront vous suivre sans en demander la permission. Décochez cette case si vous souhaitez examiner les demandes de suivi et choisir d'accepter ou de rejeter les nouveaux followers.
@@ -55,7 +55,7 @@ fr-CA:
         phrase: Sera filtré peu importe la casse ou l’avertissement de contenu du message
         scopes: À quelles APIs l’application sera autorisée à accéder. Si vous sélectionnez une permission générale, vous n’avez pas besoin de sélectionner les permissions plus précises.
         setting_aggregate_reblogs: Ne pas afficher les nouveaux partages pour les messages déjà récemment partagés (n’affecte que les partages futurs)
-        setting_always_send_emails: Normalement, les notifications par courriel ne seront pas envoyées lorsque vous utilisez Mastodon activement
+        setting_always_send_emails: Normalement, les notifications par courriel ne seront pas envoyées lorsque vous utilisez Truecolors activement
         setting_default_sensitive: Les médias sensibles sont cachés par défaut et peuvent être révélés d’un simple clic
         setting_display_media_default: Masquer les médias marqués comme sensibles
         setting_display_media_hide_all: Toujours masquer les médias
@@ -80,13 +80,13 @@ fr-CA:
           warn: Cacher le contenu filtré derrière un avertissement mentionnant le nom du filtre
       form_admin_settings:
         activity_api_enabled: Nombre de messages publiés localement, de comptes actifs et de nouvelles inscriptions par tranche hebdomadaire
-        app_icon: WEBP, PNG, GIF ou JPG. Remplace la favicon Mastodon par défaut avec une icône personnalisée.
+        app_icon: WEBP, PNG, GIF ou JPG. Remplace la favicon Truecolors par défaut avec une icône personnalisée.
         backups_retention_period: Les utilisateur·rice·s ont la possibilité de générer des archives de leurs messages pour les télécharger plus tard. Lorsqu'elles sont définies à une valeur positive, ces archives seront automatiquement supprimées de votre stockage après le nombre de jours spécifié.
         bootstrap_timeline_accounts: Ces comptes seront épinglés en tête de liste des recommandations pour les nouveaux utilisateurs.
         closed_registrations_message: Affiché lorsque les inscriptions sont fermées
         content_cache_retention_period: Tous les messages provenant d'autres serveurs (y compris les partages et les réponses) seront supprimés passé le nombre de jours spécifié, sans tenir compte de l'interaction de l'utilisateur·rice local·e avec ces messages. Cela inclut les messages qu'un·e utilisateur·rice aurait marqué comme signets ou comme favoris. Les mentions privées entre utilisateur·rice·s de différentes instances seront également perdues et impossibles à restaurer. L'utilisation de ce paramètre est destinée à des instances spécifiques et contrevient à de nombreuses attentes des utilisateurs lorsqu'elle est appliquée à des fins d'utilisation ordinaires.
-        custom_css: Vous pouvez appliquer des styles personnalisés sur la version Web de Mastodon.
-        favicon: WEBP, PNG, GIF ou JPG. Remplace la favicon Mastodon par défaut avec une icône personnalisée.
+        custom_css: Vous pouvez appliquer des styles personnalisés sur la version Web de Truecolors.
+        favicon: WEBP, PNG, GIF ou JPG. Remplace la favicon Truecolors par défaut avec une icône personnalisée.
         mascot: Remplace l'illustration dans l'interface Web avancée.
         media_cache_retention_period: Les fichiers médias des messages publiés par des utilisateurs distants sont mis en cache sur votre serveur. Lorsque cette valeur est positive, les médias sont supprimés au terme du nombre de jours spécifié. Si les données des médias sont demandées après leur suppression, elles seront téléchargées à nouveau, dans la mesure où le contenu source est toujours disponible. En raison des restrictions concernant la fréquence à laquelle les cartes de prévisualisation des liens interrogent des sites tiers, il est recommandé de fixer cette valeur à au moins 14 jours, faute de quoi les cartes de prévisualisation des liens ne seront pas mises à jour à la demande avant cette échéance.
         min_age: Les utilisateurs seront invités à confirmer leur date de naissance lors de l'inscription
@@ -94,7 +94,7 @@ fr-CA:
         profile_directory: L'annuaire des profils répertorie tous les utilisateurs qui ont opté pour être découverts.
         require_invite_text: Lorsque les inscriptions nécessitent une approbation manuelle, rendre le texte de l’invitation "Pourquoi voulez-vous vous inscrire ?" obligatoire plutôt que facultatif
         site_contact_email: Comment les personnes peuvent vous joindre pour des demandes de renseignements juridiques ou d'assistance.
-        site_contact_username: Comment les gens peuvent vous contacter sur Mastodon.
+        site_contact_username: Comment les gens peuvent vous contacter sur Truecolors.
         site_extended_description: Toute information supplémentaire qui peut être utile aux visiteurs et à vos utilisateurs. Peut être structurée avec la syntaxe Markdown.
         site_short_description: Une courte description pour aider à identifier de manière unique votre serveur. Qui l'exécute, à qui il est destiné ?
         site_terms: Utilisez votre propre politique de confidentialité ou laissez vide pour utiliser la syntaxe par défaut. Peut être structurée avec la syntaxe Markdown.
@@ -109,7 +109,7 @@ fr-CA:
       form_challenge:
         current_password: Vous entrez une zone sécurisée
       imports:
-        data: Un fichier CSV généré par un autre serveur de Mastodon
+        data: Un fichier CSV généré par un autre serveur de Truecolors
       invite_request:
         text: Cela nous aidera à considérer votre demande
       ip_block:
@@ -148,7 +148,7 @@ fr-CA:
         min_age: Ne doit pas être en dessous de l’âge minimum requis par les lois de votre juridiction.
       user:
         chosen_languages: Lorsque coché, seuls les messages dans les langues sélectionnées seront affichés sur les fils publics
-        date_of_birth: Nous devons nous assurer que vous avez au moins %{age} pour utiliser Mastodon. Nous ne conserverons pas ces informations.
+        date_of_birth: Nous devons nous assurer que vous avez au moins %{age} pour utiliser Truecolors. Nous ne conserverons pas ces informations.
         role: Le rôle définit quelles autorisations a l'utilisateur⋅rice.
       user_role:
         color: Couleur à attribuer au rôle dans l'interface, au format hexadécimal RVB
@@ -324,7 +324,7 @@ fr-CA:
         software_updates:
           all: Notifier toutes les mises à jour
           critical: Notifier pour les mises à jour critiques uniquement
-          label: Une nouvelle mise à jour de Mastodon est disponible
+          label: Une nouvelle mise à jour de Truecolors est disponible
           none: Ne jamais notifier des mises à jour (déconseillé)
           patch: Notifier pour des mises à jour de corrections de bug
         trending_tag: Nouvelle tendance nécessitant supervision

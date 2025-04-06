@@ -9,7 +9,7 @@ export const PERMISSION_VIEW_DASHBOARD = 0x0000000000000008;
 // These helpers don't quite align with the names/categories in UserRole,
 // but are likely "good enough" for the use cases at present.
 //
-// See: https://docs.joinmastodon.org/entities/Role/#permission-flags
+// See: https://docs.jointruecolors.org/entities/Role/#permission-flags
 
 export function canViewAdminDashboard(permissions: number) {
   return (

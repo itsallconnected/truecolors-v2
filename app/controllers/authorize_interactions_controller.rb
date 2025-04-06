@@ -21,7 +21,7 @@ class AuthorizeInteractionsController < ApplicationController
   def set_resource
     @resource = located_resource
     authorize(@resource, :show?) if @resource.is_a?(Status)
-  rescue Mastodon::NotPermittedError
+  rescue Truecolors::NotPermittedError
     not_found
   end
 

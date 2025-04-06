@@ -9,11 +9,11 @@ import { useDispatch, useSelector } from 'react-redux';
 import BarChart4BarsIcon from '@/material-icons/400-24px/bar_chart_4_bars.svg?react';
 import CloseIcon from '@/material-icons/400-24px/close.svg?react';
 import PhotoLibraryIcon from '@/material-icons/400-24px/photo_library.svg?react';
-import { cancelReplyCompose } from 'mastodon/actions/compose';
-import { Icon } from 'mastodon/components/icon';
-import { IconButton } from 'mastodon/components/icon_button';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import { EmbeddedStatusContent } from 'mastodon/features/notifications_v2/components/embedded_status_content';
+import { cancelReplyCompose } from 'truecolors/actions/compose';
+import { Icon } from 'truecolors/components/icon';
+import { IconButton } from 'truecolors/components/icon_button';
+import { RelativeTimestamp } from 'truecolors/components/relative_timestamp';
+import { EmbeddedStatusContent } from 'truecolors/features/notifications_v2/components/embedded_status_content';
 
 const messages = defineMessages({
   cancel: { id: 'reply_indicator.cancel', defaultMessage: 'Cancel' },

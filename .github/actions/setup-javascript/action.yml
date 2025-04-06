@@ -1,5 +1,5 @@
 name: 'Setup Javascript'
-description: 'Setup a Javascript environment ready to run the Mastodon code'
+description: 'Setup a Javascript environment ready to run the Truecolors code'
 inputs:
   onlyProduction:
     description: Only install production dependencies

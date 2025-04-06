@@ -1,6 +1,6 @@
 import { FormattedMessage } from 'react-intl';
 
-import type { NameAndCount } from 'mastodon/models/annual_report';
+import type { NameAndCount } from 'truecolors/models/annual_report';
 
 export const MostUsedHashtag: React.FC<{
   data: NameAndCount[];

@@ -2,10 +2,10 @@ import { useMemo } from 'react';
 
 import { HotKeys } from 'react-hotkeys';
 
-import { navigateToProfile } from 'mastodon/actions/accounts';
-import { mentionComposeById } from 'mastodon/actions/compose';
-import type { NotificationGroup as NotificationGroupModel } from 'mastodon/models/notification_group';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { navigateToProfile } from 'truecolors/actions/accounts';
+import { mentionComposeById } from 'truecolors/actions/compose';
+import type { NotificationGroup as NotificationGroupModel } from 'truecolors/models/notification_group';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { NotificationAdminReport } from './notification_admin_report';
 import { NotificationAdminSignUp } from './notification_admin_sign_up';

@@ -14,11 +14,11 @@ import { HotKeys } from 'react-hotkeys';
 import AlternateEmailIcon from '@/material-icons/400-24px/alternate_email.svg?react';
 import PushPinIcon from '@/material-icons/400-24px/push_pin.svg?react';
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
-import { ContentWarning } from 'mastodon/components/content_warning';
-import { FilterWarning } from 'mastodon/components/filter_warning';
-import { Icon }  from 'mastodon/components/icon';
-import PictureInPicturePlaceholder from 'mastodon/components/picture_in_picture_placeholder';
-import { withOptionalRouter, WithOptionalRouterPropTypes } from 'mastodon/utils/react_router';
+import { ContentWarning } from 'truecolors/components/content_warning';
+import { FilterWarning } from 'truecolors/components/filter_warning';
+import { Icon }  from 'truecolors/components/icon';
+import PictureInPicturePlaceholder from 'truecolors/components/picture_in_picture_placeholder';
+import { withOptionalRouter, WithOptionalRouterPropTypes } from 'truecolors/utils/react_router';
 
 import Card from '../features/status/components/card';
 // We use the component (and not the container) since we do not want

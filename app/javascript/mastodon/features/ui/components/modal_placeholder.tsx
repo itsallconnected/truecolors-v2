@@ -2,9 +2,9 @@ import { useCallback } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import { Button } from 'mastodon/components/button';
-import { GIF } from 'mastodon/components/gif';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
+import { Button } from 'truecolors/components/button';
+import { GIF } from 'truecolors/components/gif';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
 
 export const ModalPlaceholder: React.FC<{
   loading: boolean;

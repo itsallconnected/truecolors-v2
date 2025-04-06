@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 
-import { makeGetStatus } from 'mastodon/selectors';
+import { makeGetStatus } from 'truecolors/selectors';
 
 import StatusCheckBox from '../components/status_check_box';
 

@@ -6,6 +6,6 @@ RSpec.shared_examples 'CLI Command' do
   end
 
   it 'descends from the CLI base class' do
-    expect(described_class.new).to be_a(Mastodon::CLI::Base)
+    expect(described_class.new).to be_a(Truecolors::CLI::Base)
   end
 end

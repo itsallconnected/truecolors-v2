@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class Media < Base
     include ActionView::Helpers::NumberHelper
 
@@ -235,7 +235,7 @@ module Mastodon::CLI
         fail_with_message 'Specify the source of media attachments'
       end
 
-      scope = scope.where('media_attachments.id > ?', Mastodon::Snowflake.id_at(options[:days].days.ago, with_random: false)) if options[:days].present?
+      scope = scope.where('media_attachments.id > ?', Truecolors::Snowflake.id_at(options[:days].days.ago, with_random: false)) if options[:days].present?
 
       processed, aggregate = parallelize_with_progress(scope) do |media_attachment|
         next if media_attachment.remote_url.blank? || (!options[:force] && media_attachment.file_file_name.present?)
@@ -253,7 +253,7 @@ module Mastodon::CLI
       say("Downloaded #{processed} media attachments (approx. #{number_to_human_size(aggregate)})#{dry_run_mode_suffix}", :green, true)
     end
 
-    desc 'usage', 'Calculate disk space consumed by Mastodon'
+    desc 'usage', 'Calculate disk space consumed by Truecolors'
     def usage
       print_table [
         %w(Object Total Local),

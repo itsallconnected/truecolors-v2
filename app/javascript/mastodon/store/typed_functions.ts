@@ -159,7 +159,7 @@ export function createDataLoadingThunk<
  *
  *   You can also omit this parameter and pass `thunkOptions` directly
  * @param maybeThunkOptions
- *   Additional Mastodon specific options for the thunk. Currently supports:
+ *   Additional Truecolors specific options for the thunk. Currently supports:
  *   - `useLoadingBar` to display a loading bar while this action is pending. Defaults to true.
  *   - `condition` is passed to `createAsyncThunk` (https://redux-toolkit.js.org/api/createAsyncThunk#canceling-before-execution)
  * @returns The created thunk

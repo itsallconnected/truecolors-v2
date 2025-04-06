@@ -39,7 +39,7 @@ class Form::AccountBatch
 
     accounts.each do |target_account|
       FollowService.new.call(current_account, target_account)
-    rescue Mastodon::NotPermittedError, ActiveRecord::RecordNotFound => e
+    rescue Truecolors::NotPermittedError, ActiveRecord::RecordNotFound => e
       error ||= e
     end
 
@@ -132,7 +132,7 @@ class Form::AccountBatch
       authorize(report, :update?)
       log_action(:resolve, report)
       report.resolve!(current_account)
-    rescue Mastodon::NotPermittedError
+    rescue Truecolors::NotPermittedError
       # This should not happen, but just in case, do not fail early
     end
   end

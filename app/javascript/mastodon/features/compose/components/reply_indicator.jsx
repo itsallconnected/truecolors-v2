@@ -6,10 +6,10 @@ import { useSelector } from 'react-redux';
 
 import BarChart4BarsIcon from '@/material-icons/400-24px/bar_chart_4_bars.svg?react';
 import PhotoLibraryIcon from '@/material-icons/400-24px/photo_library.svg?react';
-import { Avatar } from 'mastodon/components/avatar';
-import { DisplayName } from 'mastodon/components/display_name';
-import { Icon } from 'mastodon/components/icon';
-import { EmbeddedStatusContent } from 'mastodon/features/notifications_v2/components/embedded_status_content';
+import { Avatar } from 'truecolors/components/avatar';
+import { DisplayName } from 'truecolors/components/display_name';
+import { Icon } from 'truecolors/components/icon';
+import { EmbeddedStatusContent } from 'truecolors/features/notifications_v2/components/embedded_status_content';
 
 export const ReplyIndicator = () => {
   const inReplyToId = useSelector(state => state.getIn(['compose', 'in_reply_to']));

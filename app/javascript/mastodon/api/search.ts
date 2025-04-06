@@ -1,8 +1,8 @@
-import { apiRequestGet } from 'mastodon/api';
+import { apiRequestGet } from 'truecolors/api';
 import type {
   ApiSearchType,
   ApiSearchResultsJSON,
-} from 'mastodon/api_types/search';
+} from 'truecolors/api_types/search';
 
 export const apiGetSearch = (params: {
   q: string;

@@ -13,7 +13,7 @@ import {
   SERVER_DOMAIN_BLOCKS_FETCH_REQUEST,
   SERVER_DOMAIN_BLOCKS_FETCH_SUCCESS,
   SERVER_DOMAIN_BLOCKS_FETCH_FAIL,
-} from 'mastodon/actions/server';
+} from 'truecolors/actions/server';
 
 const initialState = ImmutableMap({
   server: ImmutableMap({

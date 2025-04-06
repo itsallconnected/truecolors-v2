@@ -12,18 +12,18 @@ import { connect } from 'react-redux';
 import DeleteIcon from '@/material-icons/400-24px/delete.svg?react';
 import EditIcon from '@/material-icons/400-24px/edit.svg?react';
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
-import { addColumn, removeColumn, moveColumn } from 'mastodon/actions/columns';
-import { fetchList } from 'mastodon/actions/lists';
-import { openModal } from 'mastodon/actions/modal';
-import { connectListStream } from 'mastodon/actions/streaming';
-import { expandListTimeline } from 'mastodon/actions/timelines';
-import Column from 'mastodon/components/column';
-import ColumnHeader from 'mastodon/components/column_header';
-import { Icon }  from 'mastodon/components/icon';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import BundleColumnError from 'mastodon/features/ui/components/bundle_column_error';
-import StatusListContainer from 'mastodon/features/ui/containers/status_list_container';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { addColumn, removeColumn, moveColumn } from 'truecolors/actions/columns';
+import { fetchList } from 'truecolors/actions/lists';
+import { openModal } from 'truecolors/actions/modal';
+import { connectListStream } from 'truecolors/actions/streaming';
+import { expandListTimeline } from 'truecolors/actions/timelines';
+import Column from 'truecolors/components/column';
+import ColumnHeader from 'truecolors/components/column_header';
+import { Icon }  from 'truecolors/components/icon';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import BundleColumnError from 'truecolors/features/ui/components/bundle_column_error';
+import StatusListContainer from 'truecolors/features/ui/containers/status_list_container';
+import { WithRouterPropTypes } from 'truecolors/utils/react_router';
 
 const mapStateToProps = (state, props) => ({
   list: state.getIn(['lists', props.params.id]),

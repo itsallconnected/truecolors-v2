@@ -111,7 +111,7 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
       media_attachment.download_file! if media_attachment.remote_url_previously_changed?
       media_attachment.download_thumbnail! if media_attachment.thumbnail_remote_url_previously_changed?
       media_attachment.save
-    rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS
+    rescue Truecolors::UnexpectedResponseError, *Truecolors::HTTP_CONNECTION_ERRORS
       RedownloadMediaWorker.perform_in(rand(30..600).seconds, media_attachment.id)
     rescue Seahorse::Client::NetworkingError => e
       Rails.logger.warn "Error storing media attachment: #{e}"
@@ -218,7 +218,7 @@ class ActivityPub::ProcessStatusUpdateService < BaseService
       account ||= ActivityPub::FetchRemoteAccountService.new.call(href, request_id: @request_id)
 
       account&.id
-    rescue Mastodon::UnexpectedResponseError, *Mastodon::HTTP_CONNECTION_ERRORS
+    rescue Truecolors::UnexpectedResponseError, *Truecolors::HTTP_CONNECTION_ERRORS
       # Since previous mentions are about already-known accounts,
       # they don't try to resolve again and won't fall into this case.
       # In other words, this failure case is only for new mentions and won't

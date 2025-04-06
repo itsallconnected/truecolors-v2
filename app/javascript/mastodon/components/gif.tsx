@@ -1,5 +1,5 @@
-import { useHovering } from 'mastodon/hooks/useHovering';
-import { autoPlayGif } from 'mastodon/initial_state';
+import { useHovering } from 'truecolors/hooks/useHovering';
+import { autoPlayGif } from 'truecolors/initial_state';
 
 export const GIF: React.FC<{
   src: string;

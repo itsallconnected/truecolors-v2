@@ -1,8 +1,8 @@
-import { apiRequestGet } from 'mastodon/api';
+import { apiRequestGet } from 'truecolors/api';
 import type {
   ApiTermsOfServiceJSON,
   ApiPrivacyPolicyJSON,
-} from 'mastodon/api_types/instance';
+} from 'truecolors/api_types/instance';
 
 export const apiGetTermsOfService = (version?: string) =>
   apiRequestGet<ApiTermsOfServiceJSON>(

@@ -5,12 +5,12 @@ import { FormattedMessage } from 'react-intl';
 import { Link } from 'react-router-dom';
 
 import PersonAddIcon from '@/material-icons/400-24px/person_add-fill.svg?react';
-import { FollowersCounter } from 'mastodon/components/counters';
-import { FollowButton } from 'mastodon/components/follow_button';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { me } from 'mastodon/initial_state';
-import type { NotificationGroupFollow } from 'mastodon/models/notification_group';
-import { useAppSelector } from 'mastodon/store';
+import { FollowersCounter } from 'truecolors/components/counters';
+import { FollowButton } from 'truecolors/components/follow_button';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { me } from 'truecolors/initial_state';
+import type { NotificationGroupFollow } from 'truecolors/models/notification_group';
+import { useAppSelector } from 'truecolors/store';
 
 import type { LabelRenderer } from './notification_group_with_status';
 import { NotificationGroupWithStatus } from './notification_group_with_status';

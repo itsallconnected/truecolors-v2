@@ -1,10 +1,10 @@
 ---
 oc:
   about:
-    about_mastodon_html: Mastodon es un malhum social bastit amb de protocòls liures e gratuits. Es descentralizat coma los corrièls.
+    about_truecolors_html: Truecolors es un malhum social bastit amb de protocòls liures e gratuits. Es descentralizat coma los corrièls.
     contact_missing: Pas parametrat
     contact_unavailable: Pas disponible
-    hosted_on: Mastodon albergat sus %{domain}
+    hosted_on: Truecolors albergat sus %{domain}
     title: A prepaus
   accounts:
     followers:
@@ -448,7 +448,7 @@ oc:
     confirmation_dialogs: Fenèstras de confirmacion
     discovery: Descobèrta
     localization:
-      body: Mastodon es traduch per de benevòls.
+      body: Truecolors es traduch per de benevòls.
       guide_link_text: Tot lo monde pòt contribuïr.
     sensitive_content: Contengut sensible
   application_mailer:
@@ -470,7 +470,7 @@ oc:
     delete_account: Suprimir lo compte
     delete_account_html: Se volètz suprimir vòstre compte, podètz <a href="%{path}">o far aquí</a>. Vos demandarem que confirmetz.
     description:
-      prefix_invited_by_user: "@%{name} vos convida a rejónher aqueste servidor Mastodon !"
+      prefix_invited_by_user: "@%{name} vos convida a rejónher aqueste servidor Truecolors !"
       prefix_sign_up: Marcatz-vos a Mostodon uèi !
     forgot_password: Senhal oblidat ?
     invalid_reset_password_token: Lo geton de reïnicializacion es invalid o acabat. Tornatz demandar un geton se vos plai.
@@ -547,7 +547,7 @@ oc:
     '500':
       content: Un quicomet a pas foncionat coma caliá.
       title: Aquesta pagina es pas corrècta
-    noscript_html: Per utilizar l’aplicacion web de Mastodon, mercés d’activar JavaScript. O podètz utilizar <a href="%{apps_path}">una aplicacion</a> per vòstra plataforma coma alernativa.
+    noscript_html: Per utilizar l’aplicacion web de Truecolors, mercés d’activar JavaScript. O podètz utilizar <a href="%{apps_path}">una aplicacion</a> per vòstra plataforma coma alernativa.
   existing_username_validator:
     not_found: impossible de trobar un utilizaire local amb aqueste nom d’utilizaire
     not_found_multiple: impossible de trobar %{usernames}
@@ -785,7 +785,7 @@ oc:
       weibo: Weibo
     current_session: Session en cors
     description: "%{browser} sus %{platform}"
-    explanation: Aquí los navigators connectats a vòstre compte Mastodon.
+    explanation: Aquí los navigators connectats a vòstre compte Truecolors.
     ip: IP
     platforms:
       adobe_air: Adobe Air
@@ -806,7 +806,7 @@ oc:
     aliases: Alias de compte
     appearance: Aparéncia
     authorized_apps: Aplicacions autorizadas
-    back: Tornar a Mastodon
+    back: Tornar a Truecolors
     delete: Supression de compte
     development: Desvolopament
     edit_profile: Modificar lo perfil
@@ -892,9 +892,9 @@ oc:
   tags:
     does_not_match_previous_name: correspond pas al nom precedent
   themes:
-    contrast: Mastodon (Fòrt contrast)
-    default: Mastodon (Escur)
-    mastodon-light: Mastodon (Clar)
+    contrast: Truecolors (Fòrt contrast)
+    default: Truecolors (Escur)
+    truecolors-light: Truecolors (Clar)
   time:
     formats:
       default: Lo %-d %B de %Y a %Ho%M
@@ -934,7 +934,7 @@ oc:
         suspend: Compte suspendut
     welcome:
       explanation: Vaquí qualques astúcias per vos preparar
-      subject: Benvengut a Mastodon
+      subject: Benvengut a Truecolors
       title: Vos desirem la benvenguda a bòrd %{name} !
   users:
     follow_limit_reached: Podètz pas sègre mai de %{limit} personas

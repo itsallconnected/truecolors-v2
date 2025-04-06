@@ -50,7 +50,7 @@ class ReportFilter
     when :target_origin
       target_origin_scope(value)
     else
-      raise Mastodon::InvalidParameterError, "Unknown filter: #{key}"
+      raise Truecolors::InvalidParameterError, "Unknown filter: #{key}"
     end
   end
 
@@ -61,7 +61,7 @@ class ReportFilter
     when :remote
       Report.where(target_account: Account.remote)
     else
-      raise Mastodon::InvalidParameterError, "Unknown value: #{value}"
+      raise Truecolors::InvalidParameterError, "Unknown value: #{value}"
     end
   end
 end

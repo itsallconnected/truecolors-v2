@@ -40,14 +40,14 @@ body:
       required: false
   - type: input
     attributes:
-      label: Mastodon instance
-      description: The address of the Mastodon instance where you experienced the issue
-      placeholder: mastodon.social
+      label: Truecolors instance
+      description: The address of the Truecolors instance where you experienced the issue
+      placeholder: truecolors.social
     validations:
       required: false
   - type: input
     attributes:
-      label: Mastodon version
+      label: Truecolors version
       description: |
         This is displayed at the bottom of the About page, eg. `v4.4.0-alpha.1`
       placeholder: v4.3.0
@@ -59,7 +59,7 @@ body:
       description: |
         Any additional technical details you may have, like logs or error traces
       value: |
-        If this is happening on your own Mastodon server, please fill out those:
+        If this is happening on your own Truecolors server, please fill out those:
         - Ruby version: (from `ruby --version`, eg. v3.4.1)
         - Node.js version: (from `node --version`, eg. v20.18.0)
     validations:

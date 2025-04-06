@@ -56,9 +56,9 @@ module Attachmentable
     return unless width.present? && height.present?
 
     if attachment.content_type == 'image/gif' && width * height > GIF_MATRIX_LIMIT
-      raise Mastodon::DimensionsValidationError, "#{width}x#{height} GIF files are not supported"
+      raise Truecolors::DimensionsValidationError, "#{width}x#{height} GIF files are not supported"
     elsif width * height > MAX_MATRIX_LIMIT
-      raise Mastodon::DimensionsValidationError, "#{width}x#{height} images are not supported"
+      raise Truecolors::DimensionsValidationError, "#{width}x#{height} images are not supported"
     end
   end
 

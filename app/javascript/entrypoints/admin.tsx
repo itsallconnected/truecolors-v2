@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 import Rails from '@rails/ujs';
 
-import ready from '../mastodon/ready';
+import ready from '../truecolors/ready';
 
 const setAnnouncementEndsAttributes = (target: HTMLInputElement) => {
   const valid = target.value && target.validity.valid;
@@ -269,11 +269,11 @@ async function mountReactComponent(element: Element) {
   const componentProps = JSON.parse(stringProps) as object;
 
   const { default: AdminComponent } = await import(
-    '@/mastodon/containers/admin_component'
+    '@/truecolors/containers/admin_component'
   );
 
   const { default: Component } = (await import(
-    `@/mastodon/components/admin/${componentName}`
+    `@/truecolors/components/admin/${componentName}`
   )) as { default: React.ComponentType };
 
   const root = createRoot(element);

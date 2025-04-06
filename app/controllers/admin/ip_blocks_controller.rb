@@ -35,7 +35,7 @@ module Admin
       @form.save
     rescue ActionController::ParameterMissing
       flash[:alert] = I18n.t('admin.ip_blocks.no_ip_block_selected')
-    rescue Mastodon::NotPermittedError
+    rescue Truecolors::NotPermittedError
       flash[:alert] = I18n.t('admin.custom_emojis.not_permitted')
     ensure
       redirect_to admin_ip_blocks_path

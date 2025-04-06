@@ -2,8 +2,8 @@ import PropTypes from 'prop-types';
 
 import { Link } from 'react-router-dom';
 
-import { Avatar } from 'mastodon/components/avatar';
-import { useAppSelector } from 'mastodon/store';
+import { Avatar } from 'truecolors/components/avatar';
+import { useAppSelector } from 'truecolors/store';
 
 export const AuthorLink = ({ accountId }) => {
   const account = useAppSelector(state => state.getIn(['accounts', accountId]));

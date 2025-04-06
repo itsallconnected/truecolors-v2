@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/emoji'
+require 'truecolors/cli/emoji'
 
-RSpec.describe Mastodon::CLI::Emoji do
+RSpec.describe Truecolors::CLI::Emoji do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

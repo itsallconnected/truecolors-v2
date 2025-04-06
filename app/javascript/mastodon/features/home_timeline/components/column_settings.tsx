@@ -7,7 +7,7 @@ import { useCallback } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { changeSetting } from '../../../actions/settings';
 import SettingToggle from '../../notifications/components/setting_toggle';

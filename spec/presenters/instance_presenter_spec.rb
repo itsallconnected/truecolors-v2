@@ -86,13 +86,13 @@ RSpec.describe InstancePresenter do
         end
       end
 
-      it 'defaults to the core mastodon repo URL' do
-        expect(instance_presenter.source_url).to eq('https://github.com/mastodon/mastodon')
+      it 'defaults to the core truecolors repo URL' do
+        expect(instance_presenter.source_url).to eq('https://github.com/truecolors/truecolors')
       end
     end
 
     def reload_configuration
-      Rails.configuration.x.mastodon = Rails.application.config_for(:mastodon)
+      Rails.configuration.x.truecolors = Rails.application.config_for(:truecolors)
     end
   end
 

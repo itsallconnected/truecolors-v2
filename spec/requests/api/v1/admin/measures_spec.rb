@@ -11,15 +11,15 @@ RSpec.describe 'Admin Measures' do
     {
       keys: %w(instance_accounts instance_follows instance_followers),
       instance_accounts: {
-        domain: 'mastodon.social',
+        domain: 'truecolors.social',
         include_subdomains: true,
       },
       instance_follows: {
-        domain: 'mastodon.social',
+        domain: 'truecolors.social',
         include_subdomains: true,
       },
       instance_followers: {
-        domain: 'mastodon.social',
+        domain: 'truecolors.social',
         include_subdomains: true,
       },
     }

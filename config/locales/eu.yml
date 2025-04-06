@@ -1,10 +1,10 @@
 ---
 eu:
   about:
-    about_mastodon_html: 'Etorkizuneko sare soziala: ez iragarkirik eta ez zelatatze korporatiborik, diseinu etikoa eta deszentralizazioa! Izan zure datuen jabea Mastodonekin!'
+    about_truecolors_html: 'Etorkizuneko sare soziala: ez iragarkirik eta ez zelatatze korporatiborik, diseinu etikoa eta deszentralizazioa! Izan zure datuen jabea Truecolorsekin!'
     contact_missing: Ezarri gabe
     contact_unavailable: E/E
-    hosted_on: Mastodon %{domain} domeinuan ostatatua
+    hosted_on: Truecolors %{domain} domeinuan ostatatua
     title: Honi buruz
   accounts:
     followers:
@@ -668,7 +668,7 @@ eu:
         moderation: Moderazioa
         special: Berezia
       delete: Ezabatu
-      description_html: "<strong>Erabiltzaile rolak</strong> erabiliz erabiltzaileek Mastodonen ze funtzio eta lekutara sarbidea duten pertsonalizatu dezakezu."
+      description_html: "<strong>Erabiltzaile rolak</strong> erabiliz erabiltzaileek Truecolorsen ze funtzio eta lekutara sarbidea duten pertsonalizatu dezakezu."
       edit: Editatu '%{name}' rola
       everyone: Baimen lehenetsiak
       everyone_full_description_html: Hau <strong>erabiltzaile guztiei</strong> eragiten dien <strong>oinarrizko rola</strong> da, rol bat esleitu gabekoei ere bai. Gainerako rolek honetatik heredatzen dituzte baimenak.
@@ -729,24 +729,24 @@ eu:
         rules_hint: Erabiltzaileek jarraitu behar dituzten arauei eskainitako atal bat dago.
         title: Honi buruz
       appearance:
-        preamble: Mastodonen web interfazea pertsonalizatu.
+        preamble: Truecolorsen web interfazea pertsonalizatu.
         title: Itxura
       branding:
-        preamble: 'Zure zerbitzariaren markak sareko beste zerbitzarietatik bereizten du. Informazio hau hainbat ingurunetan bistaratuko da: Mastodonen web interfazean, aplikazio natiboetan, esteken aurrebistak beste webguneetan eta mezularitza aplikazioetan eta abar. Horregatik, informazio hau garbia eta laburra izatea komeni da.'
+        preamble: 'Zure zerbitzariaren markak sareko beste zerbitzarietatik bereizten du. Informazio hau hainbat ingurunetan bistaratuko da: Truecolorsen web interfazean, aplikazio natiboetan, esteken aurrebistak beste webguneetan eta mezularitza aplikazioetan eta abar. Horregatik, informazio hau garbia eta laburra izatea komeni da.'
         title: Marka
       captcha_enabled:
         desc_html: Hori egiteko hCaptcha-ko scriptak behar dira, hirugarrenenak izanik, segurtasun eta pribatutasun arazoak ekarri ditzaketeenak. Horrez gain, <strong>script horiengatik nabarmen zailagoa egiten zaie pertsona batzuei izena ematea (batez ere desgaitasunen bat duenei)</strong>. Hori dela eta, hausnartu beste neurri batzuk hartu ditzakezun, esaterako onarpenean oinarritutako izen ematea, edo gonbidapenen bidezkoa.
         title: Eskatu erabiltzaile berriei CAPTCHA bat ebazteko beren kontua berresteko
       content_retention:
         danger_zone: Eremu arriskutsua
-        preamble: Kontrolatu erabiltzaileek sortutako edukia nola biltegiratzen den Mastodonen.
+        preamble: Kontrolatu erabiltzaileek sortutako edukia nola biltegiratzen den Truecolorsen.
         title: Edukia atxikitzea
       default_noindex:
         desc_html: Ezarpen hau aldatu ez duten erabiltzaile guztiei eragingo die
         title: Erabiltzaileei bilaketa-motorraren indexaziotik at egoteko aukera ematen die lehenetsitako aukera modura
       discovery:
         follow_recommendations: Jarraitzeko gomendioak
-        preamble: Eduki interesgarria aurkitzea garrantzitsua da Mastodoneko erabiltzaile berrientzat, behar bada inor ez dutelako ezagutuko. Kontrolatu zure zerbitzariko aurkikuntza-ezaugarriek nola funtzionatzen duten.
+        preamble: Eduki interesgarria aurkitzea garrantzitsua da Truecolorseko erabiltzaile berrientzat, behar bada inor ez dutelako ezagutuko. Kontrolatu zure zerbitzariko aurkikuntza-ezaugarriek nola funtzionatzen duten.
         profile_directory: Profil-direktorioa
         public_timelines: Denbora-lerro publikoak
         publish_discovered_servers: Argitaratu aurkitutako zerbitzariak
@@ -834,7 +834,7 @@ eu:
         message_html: Elasticsearch indexatze-mapeatzeak zaharkituta daude. Exekutatu <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Ikusi dokumentazioa
-        message_html: Zure Elasticsearch-eko klusterrak nodo bat baino gehiago dauka, baina Mastodonek ezin ditu erabili ez dagoelako horretarako konfiguratuta.
+        message_html: Zure Elasticsearch-eko klusterrak nodo bat baino gehiago dauka, baina Truecolorsek ezin ditu erabili ez dagoelako horretarako konfiguratuta.
       elasticsearch_preset_single_node:
         action: Ikusi dokumentazioa
         message_html: 'Zure Elasticsearch-eko klusterrak nodo bakarra dauka, hortaz, <code>ES_PRESET</code> balore honetan ezarri beharko zenuke: <code>single_node_cluster</code>.'
@@ -852,10 +852,10 @@ eu:
         message_html: Ez da ari Sidekiq prozesurik exekutatzen %{value} ilad(et)an. Egiaztatu Sidekiq konfigurazioa
       software_version_critical_check:
         action: Ikusi eguneraketa eskuragarriak
-        message_html: Mastodon eguneraketa kritikoa eskuragarri, mesedez eguneratu ahal bezain azkar.
+        message_html: Truecolors eguneraketa kritikoa eskuragarri, mesedez eguneratu ahal bezain azkar.
       software_version_patch_check:
         action: Ikusi eguneraketa eskuragarriak
-        message_html: Mastodon akats konponketa eguneratze bat eskuragarri dago.
+        message_html: Truecolors akats konponketa eguneratze bat eskuragarri dago.
       upload_check_privacy_error:
         action: Ikus hemen informazio gehiagorako
         message_html: "<strong>Zure zerbitzaria ez dago ongi konfiguratua. Zure erabiltzaileen pribatutasuna arriskuan dago.</strong>"
@@ -937,7 +937,7 @@ eu:
     webhooks:
       add_new: Gehitu amaiera-puntua
       delete: Ezabatu
-      description_html: "<strong>Webhook</strong> batek aukera ematen dio Mastodoni zure aplikazioari aukeratutako gertaeren <strong>jakinarazpenak denbora errealean</strong> bidaltzeko, zure aplikazioak <strong>automatikoki erantzunak abiarazi ditzan</strong>."
+      description_html: "<strong>Webhook</strong> batek aukera ematen dio Truecolorsi zure aplikazioari aukeratutako gertaeren <strong>jakinarazpenak denbora errealean</strong> bidaltzeko, zure aplikazioak <strong>automatikoki erantzunak abiarazi ditzan</strong>."
       disable: Desgaitu
       disabled: Desgaituta
       edit: Editatu amaiera-puntua
@@ -971,7 +971,7 @@ eu:
       next_steps: Apelazioa onartu dezakezu moderazio erabakia desegiteko, edo ez ikusia egin.
       subject: "%{username} erabiltzailea %{instance} instantziako moderazio erabaki bat apelatzen ari da"
     new_critical_software_updates:
-      body: Mastodon-en bertsio kritiko berriak kaleratu dira, agian lehenbailehen eguneratu nahi duzu!
+      body: Truecolors-en bertsio kritiko berriak kaleratu dira, agian lehenbailehen eguneratu nahi duzu!
       subject: "%{instance} ek eguneraketa kritikoak eskuragarri ditu!"
     new_pending_account:
       body: Kontu berriaren xehetasunak azpian daude. Eskaera hau onartu edo ukatu dezakezu.
@@ -981,8 +981,8 @@ eu:
       body_remote: "%{domain} domeinuko norbaitek %{target} salatu du"
       subject: Salaketa berria %{instance} instantzian (#%{id})
     new_software_updates:
-      body: Mastodon bertsio berria atera da, eguneratu nahiko duzu, ezta!
-      subject: Mastodon bertsio berriak %{instance} rentzat eskuragarri daude!
+      body: Truecolors bertsio berria atera da, eguneratu nahiko duzu, ezta!
+      subject: Truecolors bertsio berriak %{instance} rentzat eskuragarri daude!
     new_trends:
       body: 'Ondorengo elementuak berrikusi behar dira publikoki bistaratu aurretik:'
       new_trending_links:
@@ -1006,8 +1006,8 @@ eu:
     confirmation_dialogs: Berrespen dialogoak
     discovery: Aurkitzea
     localization:
-      body: Mastodon boluntarioek itzultzen dute.
-      guide_link: https://crowdin.com/project/mastodon
+      body: Truecolors boluntarioek itzultzen dute.
+      guide_link: https://crowdin.com/project/truecolors
       guide_link_text: Edonork lagundu dezake.
     sensitive_content: Eduki hunkigarria
   application_mailer:
@@ -1041,9 +1041,9 @@ eu:
     delete_account: Ezabatu kontua
     delete_account_html: Kontua ezabatu nahi baduzu, <a href="%{path}">jarraitu hemen</a>. Berrestea eskatuko zaizu.
     description:
-      prefix_invited_by_user: "@%{name} erabiltzaileak Mastodon zerbitzari honetara elkartzera gonbidatzen zaitu!"
-      prefix_sign_up: Eman izena Mastodon-en!
-      suffix: Kontu bat baduzu, jendeari jarraitu ahal izango diozu, bidalketak sortu eta Mastodon zein kanpoko zerbitzarietako erabiltzaileekin elkarrizketan aritu!
+      prefix_invited_by_user: "@%{name} erabiltzaileak Truecolors zerbitzari honetara elkartzera gonbidatzen zaitu!"
+      prefix_sign_up: Eman izena Truecolors-en!
+      suffix: Kontu bat baduzu, jendeari jarraitu ahal izango diozu, bidalketak sortu eta Truecolors zein kanpoko zerbitzarietako erabiltzaileekin elkarrizketan aritu!
     didnt_get_confirmation: Ez al duzu berrespen-esteka jaso?
     dont_have_your_security_key: Ez daukazu zure segurtasun gakoa?
     forgot_password: Pasahitza ahaztu duzu?
@@ -1182,7 +1182,7 @@ eu:
       content: Sentitzen dugu, zerbait okerra gertatu da gure aldean.
       title: Orri hau ez da zuzena
     '503': Orria ezin izan da zerbitzatu zerbitzariaren behin behineko arazo bat dela eta.
-    noscript_html: Mastodon web aplikazioa erabiltzeko, gaitu JavaScript. Bestela, probatu Mastodon plataformarako <a href="%{apps_path}">aplikazio natibo</a>ren bat.
+    noscript_html: Truecolors web aplikazioa erabiltzeko, gaitu JavaScript. Bestela, probatu Truecolors plataformarako <a href="%{apps_path}">aplikazio natibo</a>ren bat.
   existing_username_validator:
     not_found: ezin izan da izen hori duen kide lokalik aurkitu
     not_found_multiple: ezin izan dira aurkitu %{usernames}
@@ -1478,13 +1478,13 @@ eu:
     posting_defaults: Bidalketarako lehenetsitakoak
     public_timelines: Denbora-lerro publikoak
   privacy:
-    hint_html: "<strong>Pertsonalizatu nola nahi duzun zure profila eta argitalpenak aurkitzea.</strong> Mastodonen hainbat ezaugarri gaituta daudenean lagungarri izan dakizkizuke publiko zabalago batera iristeko. Hartu une bat ezarpen horiek berrikusteko, zure erabilerara egokitzen direla ziurtatzeko."
+    hint_html: "<strong>Pertsonalizatu nola nahi duzun zure profila eta argitalpenak aurkitzea.</strong> Truecolorsen hainbat ezaugarri gaituta daudenean lagungarri izan dakizkizuke publiko zabalago batera iristeko. Hartu une bat ezarpen horiek berrikusteko, zure erabilerara egokitzen direla ziurtatzeko."
     privacy: Pribatutasuna
     privacy_hint_html: Kontrolatu besteen onurarako zenbat partekatu nahi duzun. Jendeak profil interesgarriak eta aplikazio apartak aurki ditzazke zuk nor jarraitzen duzun eta argitaratzeko darabilzun aplikazioak ikustean, baina baliteke ezkutuan mantentzea nahiago izatea.
     reach: Irismena
     reach_hint_html: Kontrolatu jende berriak zu jarrai eta aurki zaitzakeen. Zure mezuak Arakatu pantailan agertzea nahi duzu? Beste pertsona batzuek nor jarraitzeko gomendioetan zu ikus zaitzaten nahi duzu? Automatikoki onartu nahi dituzu jarraitzaile berri guztiak, edo bakoitzaren gainean erabaki?
     search: Bilatu
-    search_hint_html: Kontrolatu nola aurki zaitzaketen. Nahi duzu jendeak publikoki argitaratu duzunagatik aurki zaitzala? Nahi duzu Mastodonetik kanpoko pertsonek weba arakatzean zure profila aurki dezatela? Kontuan izan bilaketa-motor guztien erabateko bazterketa ezin dela bermatu jendaurreko informaziorako.
+    search_hint_html: Kontrolatu nola aurki zaitzaketen. Nahi duzu jendeak publikoki argitaratu duzunagatik aurki zaitzala? Nahi duzu Truecolorsetik kanpoko pertsonek weba arakatzean zure profila aurki dezatela? Kontuan izan bilaketa-motor guztien erabateko bazterketa ezin dela bermatu jendaurreko informaziorako.
     title: Pribatutasuna eta irismena
   privacy_policy:
     title: Pribatutasun politika
@@ -1558,7 +1558,7 @@ eu:
     current_session: Uneko saioa
     date: Data
     description: "%{browser} - %{platform}"
-    explanation: Zure Mastodon kontuan saioa hasita duten nabigatzaileak daude.
+    explanation: Zure Truecolors kontuan saioa hasita duten nabigatzaileak daude.
     ip: IP-a
     platforms:
       adobe_air: Adobe Air
@@ -1584,7 +1584,7 @@ eu:
     aliases: Kontuaren ezizenak
     appearance: Itxura
     authorized_apps: Baimendutako aplikazioak
-    back: Itzuli Mastodon-era
+    back: Itzuli Truecolors-era
     delete: Kontuaren ezabaketa
     development: Garapena
     edit_profile: Editatu profila
@@ -1690,9 +1690,9 @@ eu:
   tags:
     does_not_match_previous_name: ez dator aurreko izenarekin bat
   themes:
-    contrast: Mastodon (Kontraste altua)
-    default: Mastodon (Iluna)
-    mastodon-light: Mastodon (Argia)
+    contrast: Truecolors (Kontraste altua)
+    default: Truecolors (Iluna)
+    truecolors-light: Truecolors (Argia)
     system: Automatikoa (erabili sistemaren gaia)
   time:
     formats:
@@ -1732,7 +1732,7 @@ eu:
       subtitle: Zure apelazioa baztertu da.
       title: Apelazioa baztertuta
     backup_ready:
-      explanation: Mastodon kontuaren babeskopia osoa eskatu duzu.
+      explanation: Truecolors kontuaren babeskopia osoa eskatu duzu.
       extra: Deskargatzeko prest!
       subject: Zure artxiboa deskargatzeko prest dago
       title: Artxiboa jasotzea
@@ -1784,7 +1784,7 @@ eu:
       apps_android_action: Eskuratu Google Play-en
       apps_ios_action: Deskargatu App Store-n
       apps_step: Deskargatu gure aplikazio ofizialak.
-      apps_title: Mastodon-en aplikazioak
+      apps_title: Truecolors-en aplikazioak
       checklist_subtitle: 'Murgil zaitez sare sozialen aro berri honetan:'
       checklist_title: Ongietorrien kontrol-zerrenda
       edit_profile_action: Pertsonalizatu
@@ -1792,16 +1792,16 @@ eu:
       edit_profile_title: Pertsonalizatu profila
       explanation: Hona hasteko aholku batzuk
       feature_action: Informazio gehiago
-      feature_audience: Mastodon-ek hartzaileak kudeatzeko aukera paregabea eskaintzen dizu tartean inor egon gabe. Mastodon zeure azpiegituran inplementatua izanik, lineako beste edozein Mastodon zerbitzarko edonor jarrai dezakezu, baita edonork zeu jarraitu ere. Soilik zeure kontrolpean.
+      feature_audience: Truecolors-ek hartzaileak kudeatzeko aukera paregabea eskaintzen dizu tartean inor egon gabe. Truecolors zeure azpiegituran inplementatua izanik, lineako beste edozein Truecolors zerbitzarko edonor jarrai dezakezu, baita edonork zeu jarraitu ere. Soilik zeure kontrolpean.
       feature_audience_title: Bildu hartzaileak uste osoarekin
-      feature_control: Aski ondo dakizu zer ikusi nahi duzun hasierako jarioan. Denbora galarazten duten algoritmorik edo iragarkirik gabe. Jarraitu beste Mastodon zerbitzarietako edozein kontu bakarretik eta jaso bere argitalpenak ordena kronologikoan. Zure interneteko txokoa zu bezala izan dadila.
+      feature_control: Aski ondo dakizu zer ikusi nahi duzun hasierako jarioan. Denbora galarazten duten algoritmorik edo iragarkirik gabe. Jarraitu beste Truecolors zerbitzarietako edozein kontu bakarretik eta jaso bere argitalpenak ordena kronologikoan. Zure interneteko txokoa zu bezala izan dadila.
       feature_control_title: Egon zure denbora-lerroaren kontrolpean
-      feature_creativity: Mastodon-ek audioa, bideoa edo irudia duen argitalpenak, erabilerraztasun-azalpenak, inkestak, edukiaren abisuak, abatar animatuak, emoji pertsonalizatuak, miniaturen mozketaren kontrola eta funtzio gehiago onartzen ditu, linean aditzera eman zaitezen laguntzeko. Artea, musika edo podcastak partekatzen badituzu, Mastodon hortxe duzu.
+      feature_creativity: Truecolors-ek audioa, bideoa edo irudia duen argitalpenak, erabilerraztasun-azalpenak, inkestak, edukiaren abisuak, abatar animatuak, emoji pertsonalizatuak, miniaturen mozketaren kontrola eta funtzio gehiago onartzen ditu, linean aditzera eman zaitezen laguntzeko. Artea, musika edo podcastak partekatzen badituzu, Truecolors hortxe duzu.
       feature_creativity_title: Sormen paregabea
-      feature_moderation: Mastodon-ek erabakiak hartzeko ahalmena dakar bueltan. Zerbitzari bakoitzak bere arau eta murrizketa propioak sortzen ditu, lokalki indarrean jartzen dira eta ez orokorki korporazioen sare-sozialen gisa. Era honetara, jende talde ezberdinen mesedeak asetzeko malguago bilakatzen da. Batu bertako arauekin ados zauden zerbitzari batera edo ostatatu zeurea.
+      feature_moderation: Truecolors-ek erabakiak hartzeko ahalmena dakar bueltan. Zerbitzari bakoitzak bere arau eta murrizketa propioak sortzen ditu, lokalki indarrean jartzen dira eta ez orokorki korporazioen sare-sozialen gisa. Era honetara, jende talde ezberdinen mesedeak asetzeko malguago bilakatzen da. Batu bertako arauekin ados zauden zerbitzari batera edo ostatatu zeurea.
       feature_moderation_title: Moderazioa behar lukeen bezalaxe
       follow_action: Jarraitu
-      follow_step: Jende interesgarria jarraitzean datza Mastodon.
+      follow_step: Jende interesgarria jarraitzean datza Truecolors.
       follow_title: Pertsonalizatu hasierako jarioa
       follows_subtitle: Jarraitu kontu ospetsuak
       follows_title: Nor jarraitu
@@ -1816,10 +1816,10 @@ eu:
       post_step: Agurtu munduari testu, argazki, bideo zein inkesta batekin.
       post_title: Idatzi zeure lehen argitalpena
       share_action: Partekatu
-      share_step: Esaiezu lagunei nola aurki zaitzaketen Mastodon-en.
-      share_title: Partekatu Mastodon profila
+      share_step: Esaiezu lagunei nola aurki zaitzaketen Truecolors-en.
+      share_title: Partekatu Truecolors profila
       sign_in_action: Hasi saioa
-      subject: Ongi etorri Mastodon-era
+      subject: Ongi etorri Truecolors-era
       title: Ongi etorri, %{name}!
   users:
     follow_limit_reached: Ezin dituzu %{limit} pertsona baino gehiago jarraitu
@@ -1831,7 +1831,7 @@ eu:
   verification:
     extra_instructions_html: <strong>Aholkua:</strong> webguneko esteka ikusezina izan daiteke. Muina <code>rel="me"</code> da, erabiltzaileak sortutako edukia duten webguneetan beste inor zure burutzat aurkeztea eragozten duena. <code>a</code> beharrean <code>esteka</code> motako etiketa bat ere erabil dezakezu orriaren goiburuan, baina HTMLak erabilgarri egon behar du JavaScript exekutatu gabe.
     here_is_how: Argibidea
-    hint_html: "<strong>Mastodonen nortasun-egiaztapena guztiontzat da.</strong> Web estandar irekietan oinarritua, orain eta betiko doan. Behar duzun guztia jendeak ezagutzen duen webgune pertsonal bat da. Mastodon profiletik webgune honetara estekatzen duzunean, webguneak Mastodon profilera estekatzen duela egiaztatuko dugu eta adierazle bat erakutsiko du."
+    hint_html: "<strong>Truecolorsen nortasun-egiaztapena guztiontzat da.</strong> Web estandar irekietan oinarritua, orain eta betiko doan. Behar duzun guztia jendeak ezagutzen duen webgune pertsonal bat da. Truecolors profiletik webgune honetara estekatzen duzunean, webguneak Truecolors profilera estekatzen duela egiaztatuko dugu eta adierazle bat erakutsiko du."
     instructions_html: Kopiatu eta itsatsi ondoko kodea zure webguneko HTMLan. Ondoren, gehitu zure webgunearen helbidea zure profileko eremu gehigarrietako batean, "Editatu profila" fitxatik eta gorde aldaketak.
     verification: Egiaztaketa
     verified_links: Zure lotura egiaztatuak

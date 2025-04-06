@@ -19,7 +19,7 @@ class MentionResolveWorker
     status.mentions.upsert({ account_id: account.id, silent: false }, unique_by: %w(status_id account_id))
   rescue ActiveRecord::RecordNotFound
     # Do nothing
-  rescue Mastodon::UnexpectedResponseError => e
+  rescue Truecolors::UnexpectedResponseError => e
     response = e.response
 
     if response_error_unsalvageable?(response)

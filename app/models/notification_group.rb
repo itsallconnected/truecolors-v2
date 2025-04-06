@@ -3,7 +3,7 @@
 class NotificationGroup < ActiveModelSerializers::Model
   attributes :group_key, :sample_accounts, :notifications_count, :notification, :most_recent_notification_id, :pagination_data
 
-  # Try to keep this consistent with `app/javascript/mastodon/models/notification_group.ts`
+  # Try to keep this consistent with `app/javascript/truecolors/models/notification_group.ts`
   SAMPLE_ACCOUNTS_SIZE = 8
 
   def self.from_notifications(notifications, pagination_range: nil, grouped_types: nil)

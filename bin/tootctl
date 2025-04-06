@@ -2,11 +2,11 @@
 APP_PATH = File.expand_path('../config/application', __dir__)
 
 require_relative '../config/boot'
-require_relative '../lib/mastodon/cli/main'
+require_relative '../lib/truecolors/cli/main'
 
 begin
-  Chewy.strategy(:mastodon) do
-    Mastodon::CLI::Main.start(ARGV, debug: true) # Enables the script to rescue `Thor::Error`
+  Chewy.strategy(:truecolors) do
+    Truecolors::CLI::Main.start(ARGV, debug: true) # Enables the script to rescue `Thor::Error`
   end
 rescue Thor::Error => e
   Thor::Shell::Color

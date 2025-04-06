@@ -8,8 +8,8 @@ import type {
   UsePopperOptions,
 } from 'react-overlays/esm/usePopper';
 
-import { HoverCardAccount } from 'mastodon/components/hover_card_account';
-import { useTimeout } from 'mastodon/hooks/useTimeout';
+import { HoverCardAccount } from 'truecolors/components/hover_card_account';
+import { useTimeout } from 'truecolors/hooks/useTimeout';
 
 const offset = [-12, 4] as OffsetValue;
 const enterDelay = 750;

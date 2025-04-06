@@ -3,7 +3,7 @@ import { Map as ImmutableMap } from 'immutable';
 import { connect } from 'react-redux';
 
 
-import { addReaction, removeReaction, dismissAnnouncement } from 'mastodon/actions/announcements';
+import { addReaction, removeReaction, dismissAnnouncement } from 'truecolors/actions/announcements';
 
 import Announcements from '../components/announcements';
 

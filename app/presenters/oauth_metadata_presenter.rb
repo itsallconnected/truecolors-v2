@@ -15,7 +15,7 @@ class OauthMetadataPresenter < ActiveModelSerializers::Model
   end
 
   def service_documentation
-    'https://docs.joinmastodon.org/'
+    'https://docs.jointruecolors.org/'
   end
 
   def authorization_endpoint
@@ -32,7 +32,7 @@ class OauthMetadataPresenter < ActiveModelSerializers::Model
 
   # As the api_v1_apps route doesn't technically conform to the specification
   # for OAuth 2.0 Dynamic Client Registration defined in RFC 7591 we use a
-  # non-standard property for now to indicate the mastodon specific registration
+  # non-standard property for now to indicate the truecolors specific registration
   # endpoint. See: https://datatracker.ietf.org/doc/html/rfc7591
   def app_registration_endpoint
     api_v1_apps_url

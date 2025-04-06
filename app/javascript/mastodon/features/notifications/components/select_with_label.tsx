@@ -7,9 +7,9 @@ import type { Placement, State as PopperState } from '@popperjs/core';
 import Overlay from 'react-overlays/Overlay';
 
 import ArrowDropDownIcon from '@/material-icons/400-24px/arrow_drop_down.svg?react';
-import type { SelectItem } from 'mastodon/components/dropdown_selector';
-import { DropdownSelector } from 'mastodon/components/dropdown_selector';
-import { Icon } from 'mastodon/components/icon';
+import type { SelectItem } from 'truecolors/components/dropdown_selector';
+import { DropdownSelector } from 'truecolors/components/dropdown_selector';
+import { Icon } from 'truecolors/components/icon';
 
 interface DropdownProps {
   value: string;

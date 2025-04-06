@@ -5,7 +5,7 @@ import lurker from '@/images/archetypes/lurker.png';
 import oracle from '@/images/archetypes/oracle.png';
 import pollster from '@/images/archetypes/pollster.png';
 import replier from '@/images/archetypes/replier.png';
-import type { Archetype as ArchetypeData } from 'mastodon/models/annual_report';
+import type { Archetype as ArchetypeData } from 'truecolors/models/annual_report';
 
 export const Archetype: React.FC<{
   data: ArchetypeData;

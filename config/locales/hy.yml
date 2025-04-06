@@ -1,7 +1,7 @@
 ---
 hy:
   about:
-    about_mastodon_html: Ապագայի սոցցանցը։ Ոչ մի գովազդ, ոչ մի կորպորատիվ վերահսկողութիւն, էթիկական դիզայն, եւ ապակենտրոնացում։ Մաստադոնում դու ես քո տուեալների տէրը։
+    about_truecolors_html: Ապագայի սոցցանցը։ Ոչ մի գովազդ, ոչ մի կորպորատիվ վերահսկողութիւն, էթիկական դիզայն, եւ ապակենտրոնացում։ Մաստադոնում դու ես քո տուեալների տէրը։
     contact_missing: Սահմանված չէ
     contact_unavailable: Ոչինչ չկա
     hosted_on: Մաստոդոնը տեղակայուած է %{domain}ում
@@ -798,9 +798,9 @@ hy:
   stream_entries:
     sensitive_content: Կասկածելի բովանդակութիւն
   themes:
-    contrast: Mastodon (բարձր կոնտրաստով)
-    default: Mastodon (Մուգ)
-    mastodon-light: Mastodon (Լուսավոր)
+    contrast: Truecolors (բարձր կոնտրաստով)
+    default: Truecolors (Մուգ)
+    truecolors-light: Truecolors (Լուսավոր)
   time:
     formats:
       default: "%b %d, %Y, %H:%M"

@@ -1,5 +1,5 @@
-import { apiRequestGet } from 'mastodon/api';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
+import { apiRequestGet } from 'truecolors/api';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
 
 export const apiGetDirectory = (
   params: {

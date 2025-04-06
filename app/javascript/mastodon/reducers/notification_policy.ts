@@ -4,8 +4,8 @@ import {
   fetchNotificationPolicy,
   decreasePendingRequestsCount,
   updateNotificationsPolicy,
-} from 'mastodon/actions/notification_policies';
-import type { NotificationPolicy } from 'mastodon/models/notification_policy';
+} from 'truecolors/actions/notification_policies';
+import type { NotificationPolicy } from 'truecolors/models/notification_policy';
 
 export const notificationPolicyReducer =
   createReducer<NotificationPolicy | null>(null, (builder) => {

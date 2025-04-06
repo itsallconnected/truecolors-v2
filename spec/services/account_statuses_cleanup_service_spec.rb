@@ -100,7 +100,7 @@ RSpec.describe AccountStatusesCleanupService do
         end
 
         def oldest_deletable_record_id
-          Mastodon::Snowflake.id_at(
+          Truecolors::Snowflake.id_at(
             account_policy.min_status_age.seconds.ago,
             with_random: false
           )

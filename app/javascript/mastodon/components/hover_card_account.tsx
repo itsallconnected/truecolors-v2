@@ -5,17 +5,17 @@ import { FormattedMessage } from 'react-intl';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
-import { fetchAccount } from 'mastodon/actions/accounts';
-import { AccountBio } from 'mastodon/components/account_bio';
-import { AccountFields } from 'mastodon/components/account_fields';
-import { Avatar } from 'mastodon/components/avatar';
-import { FollowersCounter } from 'mastodon/components/counters';
-import { DisplayName } from 'mastodon/components/display_name';
-import { FollowButton } from 'mastodon/components/follow_button';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { domain } from 'mastodon/initial_state';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { fetchAccount } from 'truecolors/actions/accounts';
+import { AccountBio } from 'truecolors/components/account_bio';
+import { AccountFields } from 'truecolors/components/account_fields';
+import { Avatar } from 'truecolors/components/avatar';
+import { FollowersCounter } from 'truecolors/components/counters';
+import { DisplayName } from 'truecolors/components/display_name';
+import { FollowButton } from 'truecolors/components/follow_button';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { domain } from 'truecolors/initial_state';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 export const HoverCardAccount = forwardRef<
   HTMLDivElement,

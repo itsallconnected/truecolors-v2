@@ -1,5 +1,5 @@
-import { apiRequestGet, apiRequestDelete } from 'mastodon/api';
-import type { ApiSuggestionJSON } from 'mastodon/api_types/suggestions';
+import { apiRequestGet, apiRequestDelete } from 'truecolors/api';
+import type { ApiSuggestionJSON } from 'truecolors/api_types/suggestions';
 
 export const apiGetSuggestions = (limit: number) =>
   apiRequestGet<ApiSuggestionJSON[]>('v2/suggestions', { limit });

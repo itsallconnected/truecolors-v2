@@ -1,6 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import type { ApiNotificationJSON } from 'mastodon/api_types/notifications';
+import type { ApiNotificationJSON } from 'truecolors/api_types/notifications';
 
 export const notificationsUpdate = createAction(
   'notifications/update',

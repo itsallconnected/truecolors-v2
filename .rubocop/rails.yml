@@ -18,7 +18,7 @@ Rails/RakeEnvironment:
   Exclude: # Tasks are doing local work which do not need full env loaded
     - lib/tasks/auto_annotate_models.rake
     - lib/tasks/emojis.rake
-    - lib/tasks/mastodon.rake
+    - lib/tasks/truecolors.rake
     - lib/tasks/repo.rake
     - lib/tasks/statistics.rake
 

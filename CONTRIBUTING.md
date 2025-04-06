@@ -1,12 +1,12 @@
 # Contributing
 
-Thank you for considering contributing to Mastodon 🐘
+Thank you for considering contributing to Truecolors 🐘
 
 You can contribute in the following ways:
 
 - Finding and reporting bugs
-- Translating the Mastodon interface into various languages
-- Contributing code to Mastodon by fixing bugs or implementing features
+- Translating the Truecolors interface into various languages
+- Contributing code to Truecolors by fixing bugs or implementing features
 - Improving the documentation
 
 Please review the org-level [contribution guidelines] for high-level acceptance
@@ -28,7 +28,7 @@ there are not duplicate bug reports or feature requests.
 Translations are community contributed via [Crowdin]. They are periodically
 reviewed and merged into the codebase.
 
-[![Crowdin](https://d322cqt584bo4o.cloudfront.net/mastodon/localized.svg)](https://crowdin.com/project/mastodon)
+[![Crowdin](https://d322cqt584bo4o.cloudfront.net/truecolors/localized.svg)](https://crowdin.com/project/truecolors)
 
 ## Pull Requests
 
@@ -47,7 +47,7 @@ aim to keep each distinct PR to a "smallest viable change" chunk of work.
 
 Unless the Pull Request is about refactoring code, updating dependencies or
 other internal tasks, assume that the audience are not developers, but a
-Mastodon user or server admin, and try to describe it from their perspective.
+Truecolors user or server admin, and try to describe it from their perspective.
 
 The final commit in the main branch will carry the title from the PR. The main
 branch is then fed into the changelog and ultimately into release notes. We try
@@ -73,13 +73,13 @@ particular, please keep in mind:
 
 ## Documentation
 
-The [Mastodon documentation] is a statically generated site that contains guides
+The [Truecolors documentation] is a statically generated site that contains guides
 and API docs. Improvements are made via PRs to the [documentation repository].
 
-[contribution guidelines]: https://github.com/mastodon/.github/blob/main/CONTRIBUTING.md
-[Crowdin]: https://crowdin.com/project/mastodon
+[contribution guidelines]: https://github.com/truecolors/.github/blob/main/CONTRIBUTING.md
+[Crowdin]: https://crowdin.com/project/truecolors
 [DEVELOPMENT]: docs/DEVELOPMENT.md
-[documentation repository]: https://github.com/mastodon/documentation
-[GitHub Issues]: https://github.com/mastodon/mastodon/issues
+[documentation repository]: https://github.com/truecolors/documentation
+[GitHub Issues]: https://github.com/truecolors/truecolors/issues
 [keepachangelog]: https://keepachangelog.com/en/1.0.0/
-[Mastodon documentation]: https://docs.joinmastodon.org
+[Truecolors documentation]: https://docs.jointruecolors.org

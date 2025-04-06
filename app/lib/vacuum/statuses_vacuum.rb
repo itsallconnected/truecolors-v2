@@ -38,7 +38,7 @@ class Vacuum::StatusesVacuum
   end
 
   def retention_period_as_id
-    Mastodon::Snowflake.id_at(@retention_period.ago, with_random: false)
+    Truecolors::Snowflake.id_at(@retention_period.ago, with_random: false)
   end
 
   def remove_from_index(status_ids, index)

@@ -7,7 +7,7 @@ on:
       - 'stable-*'
     paths:
       - crowdin.yml
-      - app/javascript/mastodon/locales/en.json
+      - app/javascript/truecolors/locales/en.json
       - config/locales/en.yml
       - config/locales/simple_form.en.yml
       - config/locales/activerecord.en.yml
@@ -18,7 +18,7 @@ on:
 jobs:
   upload-translations:
     runs-on: ubuntu-latest
-    if: github.repository == 'mastodon/mastodon'
+    if: github.repository == 'truecolors/truecolors'
 
     steps:
       - name: Checkout

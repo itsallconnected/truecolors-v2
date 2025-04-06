@@ -17,7 +17,7 @@ Metrics/AbcSize:
 # Configuration parameters: CountBlocks, CountModifierForms, Max.
 Metrics/BlockNesting:
   Exclude:
-    - 'lib/tasks/mastodon.rake'
+    - 'lib/tasks/truecolors.rake'
 
 # Configuration parameters: AllowedMethods, AllowedPatterns.
 Metrics/CyclomaticComplexity:

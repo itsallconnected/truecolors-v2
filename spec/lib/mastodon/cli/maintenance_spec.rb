@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
 require 'rails_helper'
-require 'mastodon/cli/maintenance'
+require 'truecolors/cli/maintenance'
 
-RSpec.describe Mastodon::CLI::Maintenance do
+RSpec.describe Truecolors::CLI::Maintenance do
   subject { cli.invoke(action, arguments, options) }
 
   let(:cli) { described_class.new }

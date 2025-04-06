@@ -84,7 +84,7 @@ class ActivityPub::FetchRemoteStatusService < BaseService
   def fetch_status(uri, id_is_known, on_behalf_of = nil)
     begin
       fetch_resource(uri, id_is_known, on_behalf_of, raise_on_error: :all)
-    rescue Mastodon::UnexpectedResponseError => e
+    rescue Truecolors::UnexpectedResponseError => e
       return unless e.response.code == 404
 
       # If this is a 404 from a public status from a remote account, delete it

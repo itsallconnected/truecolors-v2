@@ -1,4 +1,4 @@
-import { browserHistory } from 'mastodon/components/router';
+import { browserHistory } from 'truecolors/components/router';
 
 import api from '../api';
 

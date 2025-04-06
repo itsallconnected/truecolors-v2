@@ -1,7 +1,7 @@
 import { Map as ImmutableMap, List as ImmutableList, OrderedSet as ImmutableOrderedSet, fromJS } from 'immutable';
 
-import { changeUploadCompose } from 'mastodon/actions/compose_typed';
-import { timelineDelete } from 'mastodon/actions/timelines_typed';
+import { changeUploadCompose } from 'truecolors/actions/compose_typed';
+import { timelineDelete } from 'truecolors/actions/timelines_typed';
 
 import {
   COMPOSE_MOUNT,

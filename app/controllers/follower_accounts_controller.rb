@@ -18,7 +18,7 @@ class FollowerAccountsController < ApplicationController
       end
 
       format.json do
-        raise Mastodon::NotPermittedError if page_requested? && @account.hide_collections?
+        raise Truecolors::NotPermittedError if page_requested? && @account.hide_collections?
 
         expires_in(page_requested? ? 0 : 3.minutes, public: public_fetch_mode?)
 

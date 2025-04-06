@@ -1,8 +1,8 @@
 /* eslint-disable react/jsx-no-useless-fragment */
 import { FormattedMessage, FormattedNumber } from 'react-intl';
 
-import { domain } from 'mastodon/initial_state';
-import type { Percentiles } from 'mastodon/models/annual_report';
+import { domain } from 'truecolors/initial_state';
+import type { Percentiles } from 'truecolors/models/annual_report';
 
 export const Percentile: React.FC<{
   data: Percentiles;

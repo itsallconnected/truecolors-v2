@@ -1,4 +1,4 @@
-@use '../mastodon/functions' as *;
+@use '../truecolors/functions' as *;
 
 // Dependent colors
 $black: #000000;
@@ -13,7 +13,7 @@ $ui-primary-color: $classic-primary-color !default;
 $ui-secondary-color: $classic-secondary-color !default;
 $ui-highlight-color: $classic-highlight-color !default;
 
-@use '../mastodon/variables' with (
+@use '../truecolors/variables' with (
   $darker-text-color: lighten($ui-primary-color, 20%),
   $dark-text-color: lighten($ui-primary-color, 12%),
   $secondary-text-color: lighten($ui-secondary-color, 6%),

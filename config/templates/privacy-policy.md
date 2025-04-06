@@ -34,7 +34,7 @@ of companies that %{domain} does not own or control, or to individuals that
   **Please keep in mind that the operators of the server and any receiving
   server may view such messages**, and that recipients may screenshot, copy or
   otherwise re-share them. **Do not share any sensitive information over
-  Mastodon.**
+  Truecolors.**
 - **IPs and other metadata**: When you log in, we record the IP address you log
   in from, as well as the name of your browser application. All the logged in
   sessions are available for your review and revocation in the settings. The
@@ -45,7 +45,7 @@ of companies that %{domain} does not own or control, or to individuals that
 
 Any of the information we collect from you may be used in the following ways:
 
-- To provide the core functionality of Mastodon. You can only interact with
+- To provide the core functionality of Truecolors. You can only interact with
   other people's content and post your own content when you are logged in. For
   example, you may follow other people to view their combined posts in your own
   personalized home timeline.

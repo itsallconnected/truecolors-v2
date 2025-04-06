@@ -4,7 +4,7 @@ import { PureComponent } from 'react';
 import classNames from 'classnames';
 
 import CheckIcon from '@/material-icons/400-24px/done.svg?react';
-import { Icon }  from 'mastodon/components/icon';
+import { Icon }  from 'truecolors/components/icon';
 
 export default class Option extends PureComponent {
 

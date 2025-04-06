@@ -1,4 +1,4 @@
-import { isDevelopment } from 'mastodon/utils/environment';
+import { isDevelopment } from 'truecolors/utils/environment';
 
 export interface LocaleData {
   locale: string;

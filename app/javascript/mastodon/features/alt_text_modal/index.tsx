@@ -20,21 +20,21 @@ import tesseractWorkerPath from 'tesseract.js/dist/worker.min.js';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import tesseractCorePath from 'tesseract.js-core/tesseract-core.wasm.js';
 
-import { showAlertForError } from 'mastodon/actions/alerts';
-import { uploadThumbnail } from 'mastodon/actions/compose';
-import { changeUploadCompose } from 'mastodon/actions/compose_typed';
-import { Button } from 'mastodon/components/button';
-import { GIFV } from 'mastodon/components/gifv';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { Skeleton } from 'mastodon/components/skeleton';
-import Audio from 'mastodon/features/audio';
-import { CharacterCounter } from 'mastodon/features/compose/components/character_counter';
-import { Tesseract as fetchTesseract } from 'mastodon/features/ui/util/async-components';
-import { Video, getPointerPosition } from 'mastodon/features/video';
-import { me } from 'mastodon/initial_state';
-import type { MediaAttachment } from 'mastodon/models/media_attachment';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
-import { assetHost } from 'mastodon/utils/config';
+import { showAlertForError } from 'truecolors/actions/alerts';
+import { uploadThumbnail } from 'truecolors/actions/compose';
+import { changeUploadCompose } from 'truecolors/actions/compose_typed';
+import { Button } from 'truecolors/components/button';
+import { GIFV } from 'truecolors/components/gifv';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { Skeleton } from 'truecolors/components/skeleton';
+import Audio from 'truecolors/features/audio';
+import { CharacterCounter } from 'truecolors/features/compose/components/character_counter';
+import { Tesseract as fetchTesseract } from 'truecolors/features/ui/util/async-components';
+import { Video, getPointerPosition } from 'truecolors/features/video';
+import { me } from 'truecolors/initial_state';
+import type { MediaAttachment } from 'truecolors/models/media_attachment';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
+import { assetHost } from 'truecolors/utils/config';
 
 import { InfoButton } from './components/info_button';
 

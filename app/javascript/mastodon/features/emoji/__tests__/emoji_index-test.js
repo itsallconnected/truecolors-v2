@@ -53,12 +53,12 @@ describe('emoji_index', () => {
   it('(different behavior from emoji-mart) do not erases custom emoji if not passed again', () => {
     const custom = [
       {
-        id: 'mastodon',
-        name: 'mastodon',
-        short_names: ['mastodon'],
+        id: 'truecolors',
+        name: 'truecolors',
+        short_names: ['truecolors'],
         text: '',
         emoticons: [],
-        keywords: ['mastodon'],
+        keywords: ['truecolors'],
         imageUrl: 'http://example.com',
         custom: true,
       },
@@ -68,7 +68,7 @@ describe('emoji_index', () => {
     const expected = [];
     const lightExpected = [
       {
-        id: 'mastodon',
+        id: 'truecolors',
         custom: true,
       },
     ];
@@ -79,12 +79,12 @@ describe('emoji_index', () => {
   it('(different behavior from emoji-mart) erases custom emoji if another is passed', () => {
     const custom = [
       {
-        id: 'mastodon',
-        name: 'mastodon',
-        short_names: ['mastodon'],
+        id: 'truecolors',
+        name: 'truecolors',
+        short_names: ['truecolors'],
         text: '',
         emoticons: [],
-        keywords: ['mastodon'],
+        keywords: ['truecolors'],
         imageUrl: 'http://example.com',
         custom: true,
       },
@@ -99,12 +99,12 @@ describe('emoji_index', () => {
   it('handles custom emoji', () => {
     const custom = [
       {
-        id: 'mastodon',
-        name: 'mastodon',
-        short_names: ['mastodon'],
+        id: 'truecolors',
+        name: 'truecolors',
+        short_names: ['truecolors'],
         text: '',
         emoticons: [],
-        keywords: ['mastodon'],
+        keywords: ['truecolors'],
         imageUrl: 'http://example.com',
         custom: true,
       },
@@ -113,7 +113,7 @@ describe('emoji_index', () => {
     emojiIndex.search('', { custom });
     const expected = [
       {
-        id: 'mastodon',
+        id: 'truecolors',
         custom: true,
       },
     ];

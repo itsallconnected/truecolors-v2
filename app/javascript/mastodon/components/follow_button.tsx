@@ -4,13 +4,13 @@ import { useIntl, defineMessages } from 'react-intl';
 
 import classNames from 'classnames';
 
-import { useIdentity } from '@/mastodon/identity_context';
-import { fetchRelationships, followAccount } from 'mastodon/actions/accounts';
-import { openModal } from 'mastodon/actions/modal';
-import { Button } from 'mastodon/components/button';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { me } from 'mastodon/initial_state';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { useIdentity } from '@/truecolors/identity_context';
+import { fetchRelationships, followAccount } from 'truecolors/actions/accounts';
+import { openModal } from 'truecolors/actions/modal';
+import { Button } from 'truecolors/components/button';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { me } from 'truecolors/initial_state';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   unfollow: { id: 'account.unfollow', defaultMessage: 'Unfollow' },

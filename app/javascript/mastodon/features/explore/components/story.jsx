@@ -8,10 +8,10 @@ import { Link } from 'react-router-dom';
 
 
 
-import { Blurhash } from 'mastodon/components/blurhash';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import { ShortNumber } from 'mastodon/components/short_number';
-import { Skeleton } from 'mastodon/components/skeleton';
+import { Blurhash } from 'truecolors/components/blurhash';
+import { RelativeTimestamp } from 'truecolors/components/relative_timestamp';
+import { ShortNumber } from 'truecolors/components/short_number';
+import { Skeleton } from 'truecolors/components/skeleton';
 
 import { AuthorLink } from './author_link';
 

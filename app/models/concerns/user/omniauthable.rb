@@ -74,7 +74,7 @@ module User::Omniauthable
 
       begin
         user.account.avatar_remote_url = auth.info.image if /\A#{URI::DEFAULT_PARSER.make_regexp(%w(http https))}\z/.match?(auth.info.image)
-      rescue Mastodon::UnexpectedResponseError
+      rescue Truecolors::UnexpectedResponseError
         user.account.avatar_remote_url = nil
       end
 

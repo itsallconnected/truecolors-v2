@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class REST::NotificationPolicySerializer < ActiveModel::Serializer
-  # Please update `app/javascript/mastodon/api_types/notification_policies.ts` when making changes to the attributes
+  # Please update `app/javascript/truecolors/api_types/notification_policies.ts` when making changes to the attributes
 
   attributes :for_not_following,
              :for_not_followers,

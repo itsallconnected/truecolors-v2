@@ -3,7 +3,7 @@ import { createReducer, isAnyOf } from '@reduxjs/toolkit';
 import {
   blockAccountSuccess,
   muteAccountSuccess,
-} from 'mastodon/actions/accounts';
+} from 'truecolors/actions/accounts';
 import {
   fetchNotificationRequests,
   expandNotificationRequests,
@@ -14,9 +14,9 @@ import {
   dismissNotificationRequest,
   acceptNotificationRequests,
   dismissNotificationRequests,
-} from 'mastodon/actions/notification_requests';
-import type { NotificationRequest } from 'mastodon/models/notification_request';
-import { createNotificationRequestFromJSON } from 'mastodon/models/notification_request';
+} from 'truecolors/actions/notification_requests';
+import type { NotificationRequest } from 'truecolors/models/notification_request';
+import { createNotificationRequestFromJSON } from 'truecolors/models/notification_request';
 
 import { notificationToMap } from './notifications';
 

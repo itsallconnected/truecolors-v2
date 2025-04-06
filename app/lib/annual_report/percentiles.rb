@@ -2,7 +2,7 @@
 
 class AnnualReport::Percentiles < AnnualReport::Source
   def self.prepare(year)
-    AnnualReport::StatusesPerAccountCount.connection.exec_query(<<~SQL.squish, nil, [year, Mastodon::Snowflake.id_at(DateTime.new(year).beginning_of_year), Mastodon::Snowflake.id_at(DateTime.new(year).end_of_year)])
+    AnnualReport::StatusesPerAccountCount.connection.exec_query(<<~SQL.squish, nil, [year, Truecolors::Snowflake.id_at(DateTime.new(year).beginning_of_year), Truecolors::Snowflake.id_at(DateTime.new(year).end_of_year)])
       INSERT INTO annual_report_statuses_per_account_counts (year, account_id, statuses_count)
       SELECT $1, account_id, count(*)
       FROM statuses

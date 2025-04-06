@@ -37,7 +37,7 @@ class Admin::SystemCheck::MediaPrivacyCheck < Admin::SystemCheck::BaseCheck
     Request.new(:get, directory_url, allow_local: true).perform do |res|
       if res.truncated_body&.include?(filename)
         @failure_message = use_storage? ? :upload_check_privacy_error_object_storage : :upload_check_privacy_error
-        @failure_action = 'https://docs.joinmastodon.org/admin/optional/object-storage/#FS'
+        @failure_action = 'https://docs.jointruecolors.org/admin/optional/object-storage/#FS'
       end
     end
   rescue
@@ -69,7 +69,7 @@ class Admin::SystemCheck::MediaPrivacyCheck < Admin::SystemCheck::BaseCheck
     Request.new(:get, bucket_url, allow_local: true).perform do |res|
       if res.truncated_body&.include?('ListBucketResult')
         @failure_message = :upload_check_privacy_error_object_storage
-        @failure_action  = 'https://docs.joinmastodon.org/admin/optional/object-storage/#S3'
+        @failure_action  = 'https://docs.jointruecolors.org/admin/optional/object-storage/#S3'
       end
     end
   end

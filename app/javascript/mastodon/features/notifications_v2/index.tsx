@@ -16,23 +16,23 @@ import {
   markNotificationsAsRead,
   mountNotifications,
   unmountNotifications,
-} from 'mastodon/actions/notification_groups';
-import { compareId } from 'mastodon/compare_id';
-import { Icon } from 'mastodon/components/icon';
-import { NotSignedInIndicator } from 'mastodon/components/not_signed_in_indicator';
-import { useIdentity } from 'mastodon/identity_context';
-import type { NotificationGap } from 'mastodon/reducers/notification_groups';
+} from 'truecolors/actions/notification_groups';
+import { compareId } from 'truecolors/compare_id';
+import { Icon } from 'truecolors/components/icon';
+import { NotSignedInIndicator } from 'truecolors/components/not_signed_in_indicator';
+import { useIdentity } from 'truecolors/identity_context';
+import type { NotificationGap } from 'truecolors/reducers/notification_groups';
 import {
   selectUnreadNotificationGroupsCount,
   selectPendingNotificationGroupsCount,
   selectAnyPendingNotification,
   selectNotificationGroups,
-} from 'mastodon/selectors/notifications';
+} from 'truecolors/selectors/notifications';
 import {
   selectNeedsNotificationPermission,
   selectSettingsNotificationsShowUnread,
-} from 'mastodon/selectors/settings';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'truecolors/selectors/settings';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 import { addColumn, removeColumn, moveColumn } from '../../actions/columns';
 import { submitMarkers } from '../../actions/markers';

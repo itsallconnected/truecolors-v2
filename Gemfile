@@ -14,7 +14,7 @@ gem 'haml-rails', '~>2.0'
 gem 'pg', '~> 1.5'
 gem 'pghero'
 
-gem 'aws-sdk-core', '< 3.216.0', require: false # TODO: https://github.com/mastodon/mastodon/pull/34173#issuecomment-2733378873
+gem 'aws-sdk-core', '< 3.216.0', require: false # TODO: https://github.com/truecolors/truecolors/pull/34173#issuecomment-2733378873
 gem 'aws-sdk-s3', '~> 1.123', require: false
 gem 'blurhash', '~> 0.1'
 gem 'fog-core', '<= 2.6.0'
@@ -96,7 +96,7 @@ gem 'twitter-text', '~> 3.1.0'
 gem 'tzinfo-data', '~> 1.2023'
 gem 'webauthn', '~> 3.0'
 gem 'webpacker', '~> 5.4'
-gem 'webpush', github: 'mastodon/webpush', ref: '9631ac63045cfabddacc69fc06e919b4c13eb913'
+gem 'webpush', github: 'truecolors/webpush', ref: '9631ac63045cfabddacc69fc06e919b4c13eb913'
 
 gem 'json-ld'
 gem 'json-ld-preloaded', '~> 3.2'

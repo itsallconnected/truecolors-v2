@@ -2,7 +2,7 @@
 
 class TagSearchService < BaseService
   def call(query, options = {})
-    MastodonOTELTracer.in_span('TagSearchService#call') do |span|
+    TruecolorsOTELTracer.in_span('TagSearchService#call') do |span|
       @query   = query.strip.delete_prefix('#')
       @offset  = options.delete(:offset).to_i
       @limit   = options.delete(:limit).to_i

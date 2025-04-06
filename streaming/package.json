@@ -1,16 +1,16 @@
 {
-  "name": "@mastodon/streaming",
+  "name": "@truecolors/streaming",
   "license": "AGPL-3.0-or-later",
   "packageManager": "yarn@4.7.0",
   "engines": {
     "node": ">=18"
   },
-  "description": "Mastodon's Streaming Server",
+  "description": "Truecolors's Streaming Server",
   "private": true,
   "type": "module",
   "repository": {
     "type": "git",
-    "url": "https://github.com/mastodon/mastodon.git"
+    "url": "https://github.com/truecolors/truecolors.git"
   },
   "scripts": {
     "start": "node ./index.js",

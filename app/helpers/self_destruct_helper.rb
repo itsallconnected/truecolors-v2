@@ -4,7 +4,7 @@ module SelfDestructHelper
   VERIFY_PURPOSE = 'self-destruct'
 
   def self.self_destruct?
-    value = Rails.configuration.x.mastodon.self_destruct_value
+    value = Rails.configuration.x.truecolors.self_destruct_value
     value.present? && Rails.application.message_verifier(VERIFY_PURPOSE).verify(value) == ENV['LOCAL_DOMAIN']
   rescue ActiveSupport::MessageVerifier::InvalidSignature
     false

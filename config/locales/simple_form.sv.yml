@@ -4,10 +4,10 @@ sv:
     hints:
       account:
         attribution_domains: En per rad. Skyddar mot falska attributioner.
-        discoverable: Dina offentliga inlägg och din profil kan komma att presenteras eller rekommenderas inom olika områden av Mastodon och din profil kan komma att föreslås till andra användare.
+        discoverable: Dina offentliga inlägg och din profil kan komma att presenteras eller rekommenderas inom olika områden av Truecolors och din profil kan komma att föreslås till andra användare.
         display_name: Ditt fullständiga namn eller ditt roliga namn.
         fields: Din hemsida, ditt pronomen, din ålder, vadhelst du vill.
-        indexable: Dina offentliga inlägg kan visas i sökresultat på Mastodon. Personer som har interagerat med dina inlägg kan söka dem oavsett.
+        indexable: Dina offentliga inlägg kan visas i sökresultat på Truecolors. Personer som har interagerat med dina inlägg kan söka dem oavsett.
         note: 'Du kan @nämna andra personer eller #hashtaggar.'
         show_collections: Andra kan se vem du följer och vem som följer dig. De du följer kan alltid se att du följer dem.
         unlocked: Andra kommer att kunna följa dig utan att begära godkännande. Avmarkera om du vill granska följeslagare och välja om du vill acceptera eller avvisa nya följare.
@@ -55,7 +55,7 @@ sv:
         phrase: Matchas oavsett användande i text eller innehållsvarning för ett inlägg
         scopes: 'Vilka API: er applikationen kommer tillåtas åtkomst till. Om du väljer en omfattning på högstanivån behöver du inte välja individuella sådana.'
         setting_aggregate_reblogs: Visa inte nya boostar för inlägg som nyligen blivit boostade (påverkar endast nymottagna boostar)
-        setting_always_send_emails: E-postnotiser kommer vanligtvis inte skickas när du aktivt använder Mastodon
+        setting_always_send_emails: E-postnotiser kommer vanligtvis inte skickas när du aktivt använder Truecolors
         setting_default_sensitive: Känslig media döljs som standard och kan visas med ett klick
         setting_display_media_default: Dölj media markerad som känslig
         setting_display_media_hide_all: Dölj alltid all media
@@ -84,7 +84,7 @@ sv:
         bootstrap_timeline_accounts: Dessa konton kommer fästas högst upp i nya användares följrekommendationer.
         closed_registrations_message: Visas när nyregistreringar är avstängda
         content_cache_retention_period: Alla inlägg från andra servrar (inklusive booster och svar) kommer att raderas efter det angivna antalet dagar, utan hänsyn till någon lokal användarinteraktion med dessa inlägg. Detta inkluderar inlägg där en lokal användare har markerat det som bokmärke eller favoriter. Privata omnämnanden mellan användare från olika instanser kommer också att gå förlorade och blir omöjliga att återställa. Användningen av denna inställning är avsedd för specialfall och bryter många användarförväntningar när de implementeras för allmänt bruk.
-        custom_css: Du kan använda anpassade stilar på webbversionen av Mastodon.
+        custom_css: Du kan använda anpassade stilar på webbversionen av Truecolors.
         favicon: WEBP, PNG, GIF eller JPG. Används på mobila enheter istället för appens egen ikon.
         mascot: Åsidosätter illustrationen i det avancerade webbgränssnittet.
         media_cache_retention_period: Mediafiler från inlägg som gjorts av fjärranvändare cachas på din server. När inställd på ett positivt värde kommer media att raderas efter det angivna antalet dagar. Om mediadatat begärs efter att det har raderats, kommer det att laddas ned igen om källinnehållet fortfarande är tillgängligt. På grund av begränsningar för hur ofta förhandsgranskningskort för länkar hämtas från tredjepartswebbplatser, rekommenderas det att ange detta värde till minst 14 dagar, annars kommer förhandsgranskningskorten inte att uppdateras på begäran före den tiden.
@@ -92,7 +92,7 @@ sv:
         profile_directory: Profilkatalogen visar alla användare som har samtyckt till att bli upptäckbara.
         require_invite_text: Gör fältet "Varför vill du gå med?" obligatoriskt när nyregistreringar kräver manuellt godkännande
         site_contact_email: Hur människor kan nå dig för juridiska spörsmål eller supportfrågor.
-        site_contact_username: Hur folk kan nå dig på Mastodon.
+        site_contact_username: Hur folk kan nå dig på Truecolors.
         site_extended_description: Eventuell övrig information som kan vara användbar för besökare och dina användare. Kan struktureras med Markdown-syntax.
         site_short_description: En kort beskrivning för att unikt identifiera din server. Vem är det som driver den, vilka är den till för?
         site_terms: Använd din egen sekretesspolicy eller lämna tomt för att använda standardinställningen. Kan struktureras med Markdown-syntax.
@@ -107,7 +107,7 @@ sv:
       form_challenge:
         current_password: Du går in i ett säkert område
       imports:
-        data: CSV-fil som exporterats från en annan Mastodon-server
+        data: CSV-fil som exporterats från en annan Truecolors-server
       invite_request:
         text: Detta kommer hjälpa oss att granska din ansökan
       ip_block:
@@ -308,7 +308,7 @@ sv:
         software_updates:
           all: Meddela om alla uppdateringar
           critical: Meddela endast om kritiska uppdateringar
-          label: En ny version av Mastodon är tillgänglig
+          label: En ny version av Truecolors är tillgänglig
           none: Meddela inte om uppdateringar (rekommenderas inte)
           patch: Meddela vid buggfix-uppdateringar
         trending_tag: En ny trend kräver granskning

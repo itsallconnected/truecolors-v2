@@ -1,4 +1,4 @@
-import api from 'mastodon/api';
+import api from 'truecolors/api';
 
 export async function logOut() {
   try {

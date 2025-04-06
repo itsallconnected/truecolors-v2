@@ -14,7 +14,7 @@ RSpec.describe Admin::Metrics::Dimension::SoftwareVersionsDimension do
     it 'reports on the running software' do
       expect(subject.data.map(&:symbolize_keys))
         .to include(
-          include(key: 'mastodon', value: Mastodon::Version.to_s),
+          include(key: 'truecolors', value: Truecolors::Version.to_s),
           include(key: 'ruby', value: include(RUBY_VERSION))
         )
     end

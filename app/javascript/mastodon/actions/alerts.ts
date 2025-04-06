@@ -5,7 +5,7 @@ import { createAction } from '@reduxjs/toolkit';
 import { AxiosError } from 'axios';
 import type { AxiosResponse } from 'axios';
 
-import type { Alert } from 'mastodon/models/alert';
+import type { Alert } from 'truecolors/models/alert';
 
 interface ApiErrorResponse {
   error?: string;

@@ -25,14 +25,14 @@ class ApplicationController < ActionController::Base
   helper_method :skip_csrf_meta_tags?
 
   rescue_from ActionController::ParameterMissing, Paperclip::AdapterRegistry::NoHandlerError, with: :bad_request
-  rescue_from Mastodon::NotPermittedError, with: :forbidden
+  rescue_from Truecolors::NotPermittedError, with: :forbidden
   rescue_from ActionController::RoutingError, ActiveRecord::RecordNotFound, with: :not_found
   rescue_from ActionController::UnknownFormat, with: :not_acceptable
   rescue_from ActionController::InvalidAuthenticityToken, with: :unprocessable_entity
-  rescue_from Mastodon::RateLimitExceededError, with: :too_many_requests
+  rescue_from Truecolors::RateLimitExceededError, with: :too_many_requests
 
-  rescue_from(*Mastodon::HTTP_CONNECTION_ERRORS, with: :internal_server_error)
-  rescue_from Mastodon::RaceConditionError, Stoplight::Error::RedLight, ActiveRecord::SerializationFailure, with: :service_unavailable
+  rescue_from(*Truecolors::HTTP_CONNECTION_ERRORS, with: :internal_server_error)
+  rescue_from Truecolors::RaceConditionError, Stoplight::Error::RedLight, ActiveRecord::SerializationFailure, with: :service_unavailable
 
   rescue_from Seahorse::Client::NetworkingError do |e|
     Rails.logger.warn "Storage server error: #{e}"

@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require_relative '../../lib/mastodon/migration_helpers'
-require_relative '../../lib/mastodon/migration_warning'
+require_relative '../../lib/truecolors/migration_helpers'
+require_relative '../../lib/truecolors/migration_warning'
 
 class IdsToBigints < ActiveRecord::Migration[5.1]
-  include Mastodon::MigrationHelpers
-  include Mastodon::MigrationWarning
+  include Truecolors::MigrationHelpers
+  include Truecolors::MigrationWarning
 
   TABLE_COLUMN_MAPPING = [
     [:account_domain_blocks, :account_id],
@@ -101,7 +101,7 @@ class IdsToBigints < ActiveRecord::Migration[5.1]
       This migration has some sections that can be safely interrupted
       and restarted later, and will tell you when those are occurring.
 
-      For more information, see https://github.com/mastodon/mastodon/pull/5088
+      For more information, see https://github.com/truecolors/truecolors/pull/5088
     EXPLANATION
   end
 

@@ -5,12 +5,12 @@ import { defineMessages, FormattedMessage, useIntl } from 'react-intl';
 import classNames from 'classnames';
 
 import RepeatIcon from '@/material-icons/400-24px/repeat.svg?react';
-import { Button } from 'mastodon/components/button';
-import { Icon } from 'mastodon/components/icon';
-import PrivacyDropdown from 'mastodon/features/compose/components/privacy_dropdown';
-import { EmbeddedStatus } from 'mastodon/features/notifications_v2/components/embedded_status';
-import type { Status, StatusVisibility } from 'mastodon/models/status';
-import { useAppSelector } from 'mastodon/store';
+import { Button } from 'truecolors/components/button';
+import { Icon } from 'truecolors/components/icon';
+import PrivacyDropdown from 'truecolors/features/compose/components/privacy_dropdown';
+import { EmbeddedStatus } from 'truecolors/features/notifications_v2/components/embedded_status';
+import type { Status, StatusVisibility } from 'truecolors/models/status';
+import { useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   cancel_reblog: {

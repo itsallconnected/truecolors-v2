@@ -8,18 +8,18 @@ import { Link } from 'react-router-dom';
 import { useDebouncedCallback } from 'use-debounce';
 
 import PersonIcon from '@/material-icons/400-24px/person.svg?react';
-import { fetchRelationships } from 'mastodon/actions/accounts';
-import { importFetchedAccounts } from 'mastodon/actions/importer';
-import { fetchSuggestions } from 'mastodon/actions/suggestions';
-import { markAsPartial } from 'mastodon/actions/timelines';
-import { apiRequest } from 'mastodon/api';
-import type { ApiAccountJSON } from 'mastodon/api_types/accounts';
-import { Account } from 'mastodon/components/account';
-import { Column } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { ColumnSearchHeader } from 'mastodon/components/column_search_header';
-import ScrollableList from 'mastodon/components/scrollable_list';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+import { fetchRelationships } from 'truecolors/actions/accounts';
+import { importFetchedAccounts } from 'truecolors/actions/importer';
+import { fetchSuggestions } from 'truecolors/actions/suggestions';
+import { markAsPartial } from 'truecolors/actions/timelines';
+import { apiRequest } from 'truecolors/api';
+import type { ApiAccountJSON } from 'truecolors/api_types/accounts';
+import { Account } from 'truecolors/components/account';
+import { Column } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import { ColumnSearchHeader } from 'truecolors/components/column_search_header';
+import ScrollableList from 'truecolors/components/scrollable_list';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const messages = defineMessages({
   title: {

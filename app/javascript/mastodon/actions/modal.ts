@@ -1,6 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import type { ModalProps } from 'mastodon/reducers/modal';
+import type { ModalProps } from 'truecolors/reducers/modal';
 
 import type { MODAL_COMPONENTS } from '../features/ui/components/modal_root';
 

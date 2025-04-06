@@ -25,7 +25,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-module Mastodon
+module Truecolors
   module Database
     def self.add_post_migrate_path_to_rails(force: false)
       return if ENV['SKIP_POST_DEPLOYMENT_MIGRATIONS'] && !force

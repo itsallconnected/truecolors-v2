@@ -5,7 +5,7 @@ import { CacheFirst } from 'workbox-strategies';
 
 import { handleNotificationClick, handlePush } from './web_push_notifications';
 
-const CACHE_NAME_PREFIX = 'mastodon-';
+const CACHE_NAME_PREFIX = 'truecolors-';
 
 function openWebCache() {
   return caches.open(`${CACHE_NAME_PREFIX}web`);
@@ -77,7 +77,7 @@ self.addEventListener('fetch', function(event) {
       if (response.ok || response.type === 'opaqueredirect') {
         return Promise.all([
           asyncCache.then(cache => cache.delete('/')),
-          indexedDB.deleteDatabase('mastodon'),
+          indexedDB.deleteDatabase('truecolors'),
         ]).then(() => response);
       }
 

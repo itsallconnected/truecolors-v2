@@ -8,10 +8,10 @@ import { withRouter } from 'react-router-dom';
 import ImmutablePropTypes from 'react-immutable-proptypes';
 import { connect } from 'react-redux';
 
-import { fetchTrendingLinks } from 'mastodon/actions/trends';
-import { DismissableBanner } from 'mastodon/components/dismissable_banner';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { WithRouterPropTypes } from 'mastodon/utils/react_router';
+import { fetchTrendingLinks } from 'truecolors/actions/trends';
+import { DismissableBanner } from 'truecolors/components/dismissable_banner';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { WithRouterPropTypes } from 'truecolors/utils/react_router';
 
 import { Story } from './components/story';
 

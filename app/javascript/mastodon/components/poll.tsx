@@ -10,16 +10,16 @@ import escapeTextContentForBrowser from 'escape-html';
 import { debounce } from 'lodash';
 
 import CheckIcon from '@/material-icons/400-24px/check.svg?react';
-import { openModal } from 'mastodon/actions/modal';
-import { fetchPoll, vote } from 'mastodon/actions/polls';
-import { Icon } from 'mastodon/components/icon';
-import emojify from 'mastodon/features/emoji/emoji';
-import { useIdentity } from 'mastodon/identity_context';
-import { reduceMotion } from 'mastodon/initial_state';
-import { makeEmojiMap } from 'mastodon/models/custom_emoji';
-import type * as Model from 'mastodon/models/poll';
-import type { Status } from 'mastodon/models/status';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { openModal } from 'truecolors/actions/modal';
+import { fetchPoll, vote } from 'truecolors/actions/polls';
+import { Icon } from 'truecolors/components/icon';
+import emojify from 'truecolors/features/emoji/emoji';
+import { useIdentity } from 'truecolors/identity_context';
+import { reduceMotion } from 'truecolors/initial_state';
+import { makeEmojiMap } from 'truecolors/models/custom_emoji';
+import type * as Model from 'truecolors/models/poll';
+import type { Status } from 'truecolors/models/status';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 import { RelativeTimestamp } from './relative_timestamp';
 

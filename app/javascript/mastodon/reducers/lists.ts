@@ -1,10 +1,10 @@
 import type { Reducer } from '@reduxjs/toolkit';
 import { Map as ImmutableMap } from 'immutable';
 
-import { createList, updateList } from 'mastodon/actions/lists_typed';
-import type { ApiListJSON } from 'mastodon/api_types/lists';
-import { createList as createListFromJSON } from 'mastodon/models/list';
-import type { List } from 'mastodon/models/list';
+import { createList, updateList } from 'truecolors/actions/lists_typed';
+import type { ApiListJSON } from 'truecolors/api_types/lists';
+import { createList as createListFromJSON } from 'truecolors/models/list';
+import type { List } from 'truecolors/models/list';
 
 import {
   LIST_FETCH_SUCCESS,

@@ -4,11 +4,11 @@ import { FormattedMessage, useIntl, defineMessages } from 'react-intl';
 
 import { Helmet } from 'react-helmet';
 
-import { apiGetPrivacyPolicy } from 'mastodon/api/instance';
-import type { ApiPrivacyPolicyJSON } from 'mastodon/api_types/instance';
-import { Column } from 'mastodon/components/column';
-import { FormattedDateWrapper } from 'mastodon/components/formatted_date';
-import { Skeleton } from 'mastodon/components/skeleton';
+import { apiGetPrivacyPolicy } from 'truecolors/api/instance';
+import type { ApiPrivacyPolicyJSON } from 'truecolors/api_types/instance';
+import { Column } from 'truecolors/components/column';
+import { FormattedDateWrapper } from 'truecolors/components/formatted_date';
+import { Skeleton } from 'truecolors/components/skeleton';
 
 const messages = defineMessages({
   title: { id: 'privacy_policy.title', defaultMessage: 'Privacy Policy' },

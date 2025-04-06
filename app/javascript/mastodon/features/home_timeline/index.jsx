@@ -10,12 +10,12 @@ import { connect } from 'react-redux';
 
 import CampaignIcon from '@/material-icons/400-24px/campaign.svg?react';
 import HomeIcon from '@/material-icons/400-24px/home-fill.svg?react';
-import { fetchAnnouncements, toggleShowAnnouncements } from 'mastodon/actions/announcements';
-import { IconWithBadge } from 'mastodon/components/icon_with_badge';
-import { NotSignedInIndicator } from 'mastodon/components/not_signed_in_indicator';
-import AnnouncementsContainer from 'mastodon/features/getting_started/containers/announcements_container';
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { criticalUpdatesPending } from 'mastodon/initial_state';
+import { fetchAnnouncements, toggleShowAnnouncements } from 'truecolors/actions/announcements';
+import { IconWithBadge } from 'truecolors/components/icon_with_badge';
+import { NotSignedInIndicator } from 'truecolors/components/not_signed_in_indicator';
+import AnnouncementsContainer from 'truecolors/features/getting_started/containers/announcements_container';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
+import { criticalUpdatesPending } from 'truecolors/initial_state';
 
 import { addColumn, removeColumn, moveColumn } from '../../actions/columns';
 import { expandHomeTimeline } from '../../actions/timelines';

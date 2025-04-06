@@ -34,17 +34,17 @@ require_relative '../lib/paperclip/transcoder'
 require_relative '../lib/paperclip/type_corrector'
 require_relative '../lib/paperclip/response_with_limit_adapter'
 require_relative '../lib/terrapin/multi_pipe_extensions'
-require_relative '../lib/mastodon/middleware/public_file_server'
-require_relative '../lib/mastodon/middleware/socket_cleanup'
-require_relative '../lib/mastodon/feature'
-require_relative '../lib/mastodon/snowflake'
-require_relative '../lib/mastodon/version'
+require_relative '../lib/truecolors/middleware/public_file_server'
+require_relative '../lib/truecolors/middleware/socket_cleanup'
+require_relative '../lib/truecolors/feature'
+require_relative '../lib/truecolors/snowflake'
+require_relative '../lib/truecolors/version'
 require_relative '../lib/devise/strategies/two_factor_ldap_authenticatable'
 require_relative '../lib/devise/strategies/two_factor_pam_authenticatable'
 require_relative '../lib/elasticsearch/client_extensions'
 require_relative '../lib/chewy/settings_extensions'
 require_relative '../lib/chewy/index_extensions'
-require_relative '../lib/chewy/strategy/mastodon'
+require_relative '../lib/chewy/strategy/truecolors'
 require_relative '../lib/chewy/strategy/bypass_with_warning'
 require_relative '../lib/webpacker/manifest_extensions'
 require_relative '../lib/webpacker/helper_extensions'
@@ -57,7 +57,7 @@ require_relative '../lib/simple_navigation/item_extensions'
 
 Bundler.require(:pam_authentication) if ENV['PAM_ENABLED'] == 'true'
 
-module Mastodon
+module Truecolors
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 8.0
@@ -88,13 +88,13 @@ module Mastodon
     # We use our own middleware for this
     config.public_file_server.enabled = false
 
-    config.middleware.use Mastodon::Middleware::PublicFileServer if Rails.env.local? || ENV['RAILS_SERVE_STATIC_FILES'] == 'true'
+    config.middleware.use Truecolors::Middleware::PublicFileServer if Rails.env.local? || ENV['RAILS_SERVE_STATIC_FILES'] == 'true'
     config.middleware.use Rack::Attack
-    config.middleware.use Mastodon::Middleware::SocketCleanup
+    config.middleware.use Truecolors::Middleware::SocketCleanup
 
     config.before_configuration do
-      require 'mastodon/redis_configuration'
-      ::REDIS_CONFIGURATION = Mastodon::RedisConfiguration.new
+      require 'truecolors/redis_configuration'
+      ::REDIS_CONFIGURATION = Truecolors::RedisConfiguration.new
 
       config.x.use_vips = ENV['MASTODON_USE_LIBVIPS'] == 'true'
 
@@ -106,7 +106,7 @@ module Mastodon
     end
 
     config.x.captcha = config_for(:captcha)
-    config.x.mastodon = config_for(:mastodon)
+    config.x.truecolors = config_for(:truecolors)
     config.x.translation = config_for(:translation)
 
     if ENV.fetch('QUERY_LOG_TAGS_ENABLED', 'false') == 'true'

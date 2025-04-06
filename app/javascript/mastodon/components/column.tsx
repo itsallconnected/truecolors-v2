@@ -1,7 +1,7 @@
 import { forwardRef, useRef, useImperativeHandle } from 'react';
 import type { Ref } from 'react';
 
-import { scrollTop } from 'mastodon/scroll';
+import { scrollTop } from 'truecolors/scroll';
 
 export interface ColumnRef {
   scrollTop: () => void;

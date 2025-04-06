@@ -3,7 +3,7 @@
 require 'rubygems/package'
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class IpBlocks < Base
     option :severity, required: true, enum: IpBlock.severities.keys, desc: 'Severity of the block'
     option :comment, aliases: [:c], desc: 'Optional comment'

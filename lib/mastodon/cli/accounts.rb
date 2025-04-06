@@ -2,7 +2,7 @@
 
 require_relative 'base'
 
-module Mastodon::CLI
+module Truecolors::CLI
   class Accounts < Base
     option :all, type: :boolean
     desc 'rotate [USERNAME]', 'Generate and broadcast new keys'
@@ -304,7 +304,7 @@ module Mastodon::CLI
 
         begin
           code = Request.new(:head, account.uri).perform(&:code)
-        rescue *Mastodon::HTTP_CONNECTION_ERRORS, Mastodon::PrivateNetworkAddressError
+        rescue *Truecolors::HTTP_CONNECTION_ERRORS, Truecolors::PrivateNetworkAddressError
           skip_domains << account.domain
         end
 
@@ -368,7 +368,7 @@ module Mastodon::CLI
             account.reset_avatar!
             account.reset_header!
             account.save
-          rescue Mastodon::UnexpectedResponseError
+          rescue Truecolors::UnexpectedResponseError
             say("Account failed: #{user}@#{domain}", :red)
           end
         end

@@ -1,5 +1,5 @@
 import './public-path';
-import ready from '../mastodon/ready';
+import ready from '../truecolors/ready';
 
 ready(() => {
   const image = document.querySelector<HTMLImageElement>('img');

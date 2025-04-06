@@ -2,7 +2,7 @@
 
 require 'rails_helper'
 
-RSpec.describe Mastodon::Feature do
+RSpec.describe Truecolors::Feature do
   describe '::testing_only_enabled?' do
     subject { described_class.testing_only_enabled? }
 

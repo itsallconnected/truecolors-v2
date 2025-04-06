@@ -7,8 +7,8 @@ import type {
   ApiNotificationJSON,
   NotificationType,
   NotificationWithStatusType,
-} from 'mastodon/api_types/notifications';
-import type { ApiReportJSON } from 'mastodon/api_types/reports';
+} from 'truecolors/api_types/notifications';
+import type { ApiReportJSON } from 'truecolors/api_types/reports';
 
 // Maximum number of avatars displayed in a notification group
 // This corresponds to the max lenght of `group.sampleAccountIds`

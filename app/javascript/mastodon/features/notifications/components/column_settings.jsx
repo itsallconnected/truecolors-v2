@@ -5,8 +5,8 @@ import { FormattedMessage } from 'react-intl';
 
 import ImmutablePropTypes from 'react-immutable-proptypes';
 
-import { identityContextPropShape, withIdentity } from 'mastodon/identity_context';
-import { PERMISSION_MANAGE_USERS, PERMISSION_MANAGE_REPORTS } from 'mastodon/permissions';
+import { identityContextPropShape, withIdentity } from 'truecolors/identity_context';
+import { PERMISSION_MANAGE_USERS, PERMISSION_MANAGE_REPORTS } from 'truecolors/permissions';
 
 import ClearColumnButton from './clear_column_button';
 import GrantPermissionButton from './grant_permission_button';

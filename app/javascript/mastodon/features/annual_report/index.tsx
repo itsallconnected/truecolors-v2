@@ -5,14 +5,14 @@ import { FormattedMessage } from 'react-intl';
 import {
   importFetchedStatuses,
   importFetchedAccounts,
-} from 'mastodon/actions/importer';
-import { apiRequestGet, apiRequestPost } from 'mastodon/api';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { me } from 'mastodon/initial_state';
-import type { Account } from 'mastodon/models/account';
-import type { AnnualReport as AnnualReportData } from 'mastodon/models/annual_report';
-import type { Status } from 'mastodon/models/status';
-import { useAppSelector, useAppDispatch } from 'mastodon/store';
+} from 'truecolors/actions/importer';
+import { apiRequestGet, apiRequestPost } from 'truecolors/api';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { me } from 'truecolors/initial_state';
+import type { Account } from 'truecolors/models/account';
+import type { AnnualReport as AnnualReportData } from 'truecolors/models/annual_report';
+import type { Status } from 'truecolors/models/status';
+import { useAppSelector, useAppDispatch } from 'truecolors/store';
 
 import { Archetype } from './archetype';
 import { Followers } from './followers';
@@ -71,7 +71,7 @@ export const AnnualReport: React.FC<{
         <h1>
           <FormattedMessage
             id='annual_report.summary.thanks'
-            defaultMessage='Thanks for being part of Mastodon!'
+            defaultMessage='Thanks for being part of Truecolors!'
           />
         </h1>
         <p>

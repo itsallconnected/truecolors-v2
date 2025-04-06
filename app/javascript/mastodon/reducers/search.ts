@@ -1,8 +1,8 @@
 import { createReducer, isAnyOf } from '@reduxjs/toolkit';
 
-import type { ApiSearchType } from 'mastodon/api_types/search';
-import type { RecentSearch, SearchResults } from 'mastodon/models/search';
-import { createSearchResults } from 'mastodon/models/search';
+import type { ApiSearchType } from 'truecolors/api_types/search';
+import type { RecentSearch, SearchResults } from 'truecolors/models/search';
+import { createSearchResults } from 'truecolors/models/search';
 
 import {
   updateSearchHistory,

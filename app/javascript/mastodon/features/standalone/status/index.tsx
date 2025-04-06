@@ -6,15 +6,15 @@ import { useEffect, useCallback } from 'react';
 
 import { Provider } from 'react-redux';
 
-import { fetchStatus, toggleStatusSpoilers } from 'mastodon/actions/statuses';
-import { hydrateStore } from 'mastodon/actions/store';
-import { Router } from 'mastodon/components/router';
-import { DetailedStatus } from 'mastodon/features/status/components/detailed_status';
-import { useRenderSignal } from 'mastodon/hooks/useRenderSignal';
-import initialState from 'mastodon/initial_state';
-import { IntlProvider } from 'mastodon/locales';
-import { makeGetStatus, makeGetPictureInPicture } from 'mastodon/selectors';
-import { store, useAppSelector, useAppDispatch } from 'mastodon/store';
+import { fetchStatus, toggleStatusSpoilers } from 'truecolors/actions/statuses';
+import { hydrateStore } from 'truecolors/actions/store';
+import { Router } from 'truecolors/components/router';
+import { DetailedStatus } from 'truecolors/features/status/components/detailed_status';
+import { useRenderSignal } from 'truecolors/hooks/useRenderSignal';
+import initialState from 'truecolors/initial_state';
+import { IntlProvider } from 'truecolors/locales';
+import { makeGetStatus, makeGetPictureInPicture } from 'truecolors/selectors';
+import { store, useAppSelector, useAppDispatch } from 'truecolors/store';
 
 const getStatus = makeGetStatus() as unknown as (arg0: any, arg1: any) => any;
 const getPictureInPicture = makeGetPictureInPicture() as unknown as (

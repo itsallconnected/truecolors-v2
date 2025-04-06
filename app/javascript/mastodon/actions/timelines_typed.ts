@@ -1,6 +1,6 @@
 import { createAction } from '@reduxjs/toolkit';
 
-import { usePendingItems as preferPendingItems } from 'mastodon/initial_state';
+import { usePendingItems as preferPendingItems } from 'truecolors/initial_state';
 
 export const disconnectTimeline = createAction(
   'timeline/disconnect',

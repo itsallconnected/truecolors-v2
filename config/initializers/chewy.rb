@@ -29,11 +29,11 @@ Chewy.settings = {
 # or not. However, mind that for the Rails console, the :urgent
 # strategy is set automatically with no way to override it.
 Chewy.root_strategy              = :bypass_with_warning if Rails.env.production?
-Chewy.request_strategy           = :mastodon
+Chewy.request_strategy           = :truecolors
 Chewy.use_after_commit_callbacks = false
 
 # Elasticsearch uses Faraday internally. Faraday interprets the
 # http_proxy env variable by default which leads to issues when
-# Mastodon is run with hidden services enabled, because
+# Truecolors is run with hidden services enabled, because
 # Elasticsearch is *not* supposed to be accessed through a proxy
 Faraday.ignore_env_proxy = true

@@ -2,7 +2,7 @@ import { useCallback } from 'react';
 
 import { FormattedMessage } from 'react-intl';
 
-import { Button } from 'mastodon/components/button';
+import { Button } from 'truecolors/components/button';
 
 export interface BaseConfirmationModalProps {
   onClose: () => void;

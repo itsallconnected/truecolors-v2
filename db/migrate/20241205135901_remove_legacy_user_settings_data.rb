@@ -9,7 +9,7 @@ class RemoveLegacyUserSettingsData < ActiveRecord::Migration[7.2]
         AND thing_id IS NOT NULL
     SQL
 
-    # When running these migrations on mastodon.social, we saw 'notification_emails'
+    # When running these migrations on truecolors.social, we saw 'notification_emails'
     # and 'interactions' records that were not associated to a user and caused a
     # migration issue.
     # While I have not been able to pinpoint the exact cause of the issue, it is likely

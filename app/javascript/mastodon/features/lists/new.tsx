@@ -10,14 +10,14 @@ import { isFulfilled } from '@reduxjs/toolkit';
 import Toggle from 'react-toggle';
 
 import ListAltIcon from '@/material-icons/400-24px/list_alt.svg?react';
-import { fetchList } from 'mastodon/actions/lists';
-import { createList, updateList } from 'mastodon/actions/lists_typed';
-import { apiGetAccounts } from 'mastodon/api/lists';
-import type { RepliesPolicyType } from 'mastodon/api_types/lists';
-import { Column } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { fetchList } from 'truecolors/actions/lists';
+import { createList, updateList } from 'truecolors/actions/lists_typed';
+import { apiGetAccounts } from 'truecolors/api/lists';
+import type { RepliesPolicyType } from 'truecolors/api_types/lists';
+import { Column } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 const messages = defineMessages({
   edit: { id: 'column.edit_list', defaultMessage: 'Edit list' },

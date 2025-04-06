@@ -12,12 +12,12 @@ import { CSS } from '@dnd-kit/utilities';
 import CloseIcon from '@/material-icons/400-20px/close.svg?react';
 import EditIcon from '@/material-icons/400-24px/edit.svg?react';
 import WarningIcon from '@/material-icons/400-24px/warning.svg?react';
-import { undoUploadCompose } from 'mastodon/actions/compose';
-import { openModal } from 'mastodon/actions/modal';
-import { Blurhash } from 'mastodon/components/blurhash';
-import { Icon } from 'mastodon/components/icon';
-import type { MediaAttachment } from 'mastodon/models/media_attachment';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+import { undoUploadCompose } from 'truecolors/actions/compose';
+import { openModal } from 'truecolors/actions/modal';
+import { Blurhash } from 'truecolors/components/blurhash';
+import { Icon } from 'truecolors/components/icon';
+import type { MediaAttachment } from 'truecolors/models/media_attachment';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 export const Upload: React.FC<{
   id: string;

@@ -5,8 +5,8 @@ import { defineMessages, useIntl } from 'react-intl';
 import { useDispatch } from 'react-redux';
 
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
-import { openModal } from 'mastodon/actions/modal';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
+import { openModal } from 'truecolors/actions/modal';
+import DropdownMenuContainer from 'truecolors/containers/dropdown_menu_container';
 
 const messages = defineMessages({
   edit_profile: { id: 'account.edit_profile', defaultMessage: 'Edit profile' },

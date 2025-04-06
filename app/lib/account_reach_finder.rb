@@ -51,7 +51,7 @@ class AccountReachFinder
   end
 
   def oldest_status_id
-    Mastodon::Snowflake
+    Truecolors::Snowflake
       .id_at(recent_date_cutoff, with_random: false)
   end
 

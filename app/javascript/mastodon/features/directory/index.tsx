@@ -13,17 +13,17 @@ import {
   removeColumn,
   moveColumn,
   changeColumnParams,
-} from 'mastodon/actions/columns';
-import { fetchDirectory, expandDirectory } from 'mastodon/actions/directory';
-import { Column } from 'mastodon/components/column';
-import type { ColumnRef } from 'mastodon/components/column';
-import { ColumnHeader } from 'mastodon/components/column_header';
-import { LoadMore } from 'mastodon/components/load_more';
-import { LoadingIndicator } from 'mastodon/components/loading_indicator';
-import { RadioButton } from 'mastodon/components/radio_button';
-import ScrollContainer from 'mastodon/containers/scroll_container';
-import { useSearchParam } from 'mastodon/hooks/useSearchParam';
-import { useAppDispatch, useAppSelector } from 'mastodon/store';
+} from 'truecolors/actions/columns';
+import { fetchDirectory, expandDirectory } from 'truecolors/actions/directory';
+import { Column } from 'truecolors/components/column';
+import type { ColumnRef } from 'truecolors/components/column';
+import { ColumnHeader } from 'truecolors/components/column_header';
+import { LoadMore } from 'truecolors/components/load_more';
+import { LoadingIndicator } from 'truecolors/components/loading_indicator';
+import { RadioButton } from 'truecolors/components/radio_button';
+import ScrollContainer from 'truecolors/containers/scroll_container';
+import { useSearchParam } from 'truecolors/hooks/useSearchParam';
+import { useAppDispatch, useAppSelector } from 'truecolors/store';
 
 import { AccountCard } from './components/account_card';
 

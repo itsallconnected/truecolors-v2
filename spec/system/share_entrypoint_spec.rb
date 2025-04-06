@@ -16,8 +16,8 @@ RSpec.describe 'Share page', :js, :streaming do
     visit share_path
 
     expect(page)
-      .to have_css('.modal-layout__mastodon')
-      .and have_css('div#mastodon-compose')
+      .to have_css('.modal-layout__truecolors')
+      .and have_css('div#truecolors-compose')
       .and have_css('.compose-form__submit')
 
     fill_in_form
@@ -39,7 +39,7 @@ RSpec.describe 'Share page', :js, :streaming do
     JSON.parse(
       Rails
         .root
-        .join('app', 'javascript', 'mastodon', 'locales', 'en.json')
+        .join('app', 'javascript', 'truecolors', 'locales', 'en.json')
         .read
     )
   end

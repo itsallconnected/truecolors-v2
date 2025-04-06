@@ -22,7 +22,7 @@ echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo deb
 echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
 sudo apt-get install iptables-persistent -y
 
-# Add packages to build and run Mastodon
+# Add packages to build and run Truecolors
 sudo apt-get install \
   git-core \
   g++ \
@@ -106,7 +106,7 @@ rvm install ruby-$RUBY_VERSION --disable-binary
 
 # Configure database
 sudo -u postgres createuser -U postgres vagrant -s
-sudo -u postgres createdb -U postgres mastodon_development
+sudo -u postgres createdb -U postgres truecolors_development
 
 cd /vagrant # This is where the host folder/repo is mounted
 
@@ -119,7 +119,7 @@ sudo corepack enable
 corepack prepare
 yarn install
 
-# Build Mastodon
+# Build Truecolors
 export RAILS_ENV=development
 export $(cat ".env.vagrant" | xargs)
 bundle exec rails db:setup
@@ -137,7 +137,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.box = "ubuntu/focal64"
 
   config.vm.provider :virtualbox do |vb|
-    vb.name = "mastodon"
+    vb.name = "truecolors"
     vb.customize ["modifyvm", :id, "--memory", "8192"]
     vb.customize ["modifyvm", :id, "--cpus", "3"]
 
@@ -158,13 +158,13 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
 
   # This uses the vagrant-hostsupdater plugin, and lets you
-  # access the development site at http://mastodon.local.
+  # access the development site at http://truecolors.local.
   # If you change it, also change it in .env.vagrant before provisioning
   # the vagrant server to update the development build.
   #
   # To install:
   #   $ vagrant plugin install vagrant-hostsupdater
-  config.vm.hostname = "mastodon.local"
+  config.vm.hostname = "truecolors.local"
 
   if defined?(VagrantPlugins::HostsUpdater)
     config.vm.network :private_network, ip: "192.168.42.42", nictype: "virtio"

@@ -73,7 +73,7 @@ RSpec.describe Trends::Tags do
     let!(:yesterday) { today - 1.day }
 
     let!(:tag_cats) { Fabricate(:tag, name: 'Catstodon', trendable: true) }
-    let!(:tag_dogs) { Fabricate(:tag, name: 'DogsOfMastodon', trendable: true) }
+    let!(:tag_dogs) { Fabricate(:tag, name: 'DogsOfTruecolors', trendable: true) }
     let!(:tag_ocs) { Fabricate(:tag, name: 'OCs', trendable: true) }
 
     before do

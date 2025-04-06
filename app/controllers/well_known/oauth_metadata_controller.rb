@@ -9,7 +9,7 @@ module WellKnown
     serialization_scope nil
 
     def show
-      # Due to this document potentially changing between Mastodon versions (as
+      # Due to this document potentially changing between Truecolors versions (as
       # new OAuth scopes are added), we don't use expires_in to cache upstream,
       # instead just caching in the rails cache:
       render_with_cache(

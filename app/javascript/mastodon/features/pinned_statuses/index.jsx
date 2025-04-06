@@ -9,7 +9,7 @@ import ImmutablePureComponent from 'react-immutable-pure-component';
 import { connect } from 'react-redux';
 
 import PushPinIcon from '@/material-icons/400-24px/push_pin.svg?react';
-import { getStatusList } from 'mastodon/selectors';
+import { getStatusList } from 'truecolors/selectors';
 
 import { fetchPinnedStatuses } from '../../actions/pin_statuses';
 import StatusList from '../../components/status_list';

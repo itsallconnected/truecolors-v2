@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import { Avatar } from 'mastodon/components/avatar';
-import { NOTIFICATIONS_GROUP_MAX_AVATARS } from 'mastodon/models/notification_group';
-import { useAppSelector } from 'mastodon/store';
+import { Avatar } from 'truecolors/components/avatar';
+import { NOTIFICATIONS_GROUP_MAX_AVATARS } from 'truecolors/models/notification_group';
+import { useAppSelector } from 'truecolors/store';
 
 const AvatarWrapper: React.FC<{ accountId: string }> = ({ accountId }) => {
   const account = useAppSelector((state) => state.accounts.get(accountId));

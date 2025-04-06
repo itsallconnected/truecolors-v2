@@ -72,7 +72,7 @@
     });
 
     // Legacy embeds
-    document.querySelectorAll('iframe.mastodon-embed').forEach(iframe => {
+    document.querySelectorAll('iframe.truecolors-embed').forEach(iframe => {
       var id = generateId(embeds);
 
       embeds.set(id, iframe);
@@ -94,7 +94,7 @@
     });
 
     // New generation of embeds
-    document.querySelectorAll('blockquote.mastodon-embed').forEach(container => {
+    document.querySelectorAll('blockquote.truecolors-embed').forEach(container => {
       var id = generateId(embeds);
 
       embeds.set(id, container);

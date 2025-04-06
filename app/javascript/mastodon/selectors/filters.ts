@@ -1,12 +1,12 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import type { RootState } from 'mastodon/store';
-import { toServerSideType } from 'mastodon/utils/filters';
+import type { RootState } from 'truecolors/store';
+import { toServerSideType } from 'truecolors/utils/filters';
 
-// TODO: move to `app/javascript/mastodon/models` and use more globally
+// TODO: move to `app/javascript/truecolors/models` and use more globally
 type Filter = Immutable.Map<string, unknown>;
 
-// TODO: move to `app/javascript/mastodon/models` and use more globally
+// TODO: move to `app/javascript/truecolors/models` and use more globally
 type FilterResult = Immutable.Map<string, unknown>;
 
 export const getFilters = createSelector(

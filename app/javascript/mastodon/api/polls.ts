@@ -1,5 +1,5 @@
-import { apiRequestGet, apiRequestPost } from 'mastodon/api';
-import type { ApiPollJSON } from 'mastodon/api_types/polls';
+import { apiRequestGet, apiRequestPost } from 'truecolors/api';
+import type { ApiPollJSON } from 'truecolors/api_types/polls';
 
 export const apiGetPoll = (pollId: string) =>
   apiRequestGet<ApiPollJSON>(`/v1/polls/${pollId}`);

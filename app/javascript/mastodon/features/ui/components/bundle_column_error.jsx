@@ -7,9 +7,9 @@ import classNames from 'classnames';
 import { Helmet } from 'react-helmet';
 import { Link } from 'react-router-dom';
 
-import { Button } from 'mastodon/components/button';
-import Column from 'mastodon/components/column';
-import { GIF } from 'mastodon/components/gif';
+import { Button } from 'truecolors/components/button';
+import Column from 'truecolors/components/column';
+import { GIF } from 'truecolors/components/gif';
 
 class CopyButton extends PureComponent {
 

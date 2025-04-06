@@ -36,7 +36,7 @@ class Admin::TagFilter
     when :order
       order_scope(value)
     else
-      raise Mastodon::InvalidParameterError, "Unknown filter: #{key}"
+      raise Truecolors::InvalidParameterError, "Unknown filter: #{key}"
     end
   end
 
@@ -57,7 +57,7 @@ class Admin::TagFilter
     when 'not_usable'
       Tag.not_usable
     else
-      raise Mastodon::InvalidParameterError, "Unknown status: #{value}"
+      raise Truecolors::InvalidParameterError, "Unknown status: #{value}"
     end
   end
 
@@ -68,7 +68,7 @@ class Admin::TagFilter
     when 'oldest'
       Tag.order(created_at: :asc)
     else
-      raise Mastodon::InvalidParameterError, "Unknown order: #{value}"
+      raise Truecolors::InvalidParameterError, "Unknown order: #{value}"
     end
   end
 end

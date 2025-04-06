@@ -15,18 +15,18 @@ import { HotKeys } from 'react-hotkeys';
 
 import MoreHorizIcon from '@/material-icons/400-24px/more_horiz.svg?react';
 import ReplyIcon from '@/material-icons/400-24px/reply.svg?react';
-import { replyCompose } from 'mastodon/actions/compose';
-import { markConversationRead, deleteConversation } from 'mastodon/actions/conversations';
-import { openModal } from 'mastodon/actions/modal';
-import { muteStatus, unmuteStatus, toggleStatusSpoilers } from 'mastodon/actions/statuses';
-import AttachmentList from 'mastodon/components/attachment_list';
-import AvatarComposite from 'mastodon/components/avatar_composite';
-import { IconButton } from 'mastodon/components/icon_button';
-import { RelativeTimestamp } from 'mastodon/components/relative_timestamp';
-import StatusContent from 'mastodon/components/status_content';
-import DropdownMenuContainer from 'mastodon/containers/dropdown_menu_container';
-import { autoPlayGif } from 'mastodon/initial_state';
-import { makeGetStatus } from 'mastodon/selectors';
+import { replyCompose } from 'truecolors/actions/compose';
+import { markConversationRead, deleteConversation } from 'truecolors/actions/conversations';
+import { openModal } from 'truecolors/actions/modal';
+import { muteStatus, unmuteStatus, toggleStatusSpoilers } from 'truecolors/actions/statuses';
+import AttachmentList from 'truecolors/components/attachment_list';
+import AvatarComposite from 'truecolors/components/avatar_composite';
+import { IconButton } from 'truecolors/components/icon_button';
+import { RelativeTimestamp } from 'truecolors/components/relative_timestamp';
+import StatusContent from 'truecolors/components/status_content';
+import DropdownMenuContainer from 'truecolors/containers/dropdown_menu_container';
+import { autoPlayGif } from 'truecolors/initial_state';
+import { makeGetStatus } from 'truecolors/selectors';
 
 const messages = defineMessages({
   more: { id: 'status.more', defaultMessage: 'More' },

@@ -10,15 +10,15 @@ import type {
 } from 'history';
 import { createBrowserHistory } from 'history';
 
-import { layoutFromWindow } from 'mastodon/is_mobile';
-import { isDevelopment } from 'mastodon/utils/environment';
+import { layoutFromWindow } from 'truecolors/is_mobile';
+import { isDevelopment } from 'truecolors/utils/environment';
 
-interface MastodonLocationState {
-  fromMastodon?: boolean;
-  mastodonModalKey?: string;
+interface TruecolorsLocationState {
+  fromTruecolors?: boolean;
+  truecolorsModalKey?: string;
 }
 
-type LocationState = MastodonLocationState | null | undefined;
+type LocationState = TruecolorsLocationState | null | undefined;
 
 type HistoryPath = Path | LocationDescriptor<LocationState>;
 
@@ -60,23 +60,23 @@ function normalizePath(
   return location;
 }
 
-browserHistory.push = (path: HistoryPath, state?: MastodonLocationState) => {
+browserHistory.push = (path: HistoryPath, state?: TruecolorsLocationState) => {
   const location = normalizePath(path, state);
 
   location.state = location.state ?? {};
-  location.state.fromMastodon = true;
+  location.state.fromTruecolors = true;
 
   originalPush(location);
 };
 
-browserHistory.replace = (path: HistoryPath, state?: MastodonLocationState) => {
+browserHistory.replace = (path: HistoryPath, state?: TruecolorsLocationState) => {
   const location = normalizePath(path, state);
 
   if (!location.pathname) return;
 
-  if (browserHistory.location.state?.fromMastodon) {
+  if (browserHistory.location.state?.fromTruecolors) {
     location.state = location.state ?? {};
-    location.state.fromMastodon = true;
+    location.state.fromTruecolors = true;
   }
 
   originalReplace(location);
