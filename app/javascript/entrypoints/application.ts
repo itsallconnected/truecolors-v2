@@ -1,9 +1,9 @@
 import './public-path';
-import main from '../trucolors/main';
+import main from '../truecolors/main';
 
-import { start } from '../trucolors/common';
-import { loadLocale } from '../trucolors/locales';
-import { loadPolyfills } from '../trucolors/polyfills';
+import { start } from '../truecolors/common';
+import { loadLocale } from '../truecolors/locales';
+import { loadPolyfills } from '../truecolors/polyfills';
 
 start();
 
