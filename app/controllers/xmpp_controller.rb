@@ -5,7 +5,7 @@ class XmppController < ApplicationController
 
   def credentials
     credential = current_user.xmpp_credential
-    
+
     if credential.nil?
       render json: {}, status: 404
     else
