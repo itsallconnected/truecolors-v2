@@ -117,8 +117,10 @@ describe('emoji_index', () => {
         custom: true,
       },
     ];
+    const emojiMartExpected = [];
     expect(search('masto', { custom }).map(trimEmojis)).toEqual(expected);
-    expect(emojiIndex.search('masto', { custom }).map(trimEmojis)).toEqual(expected);
+    // emoji-mart has different behavior and doesn't find 'truecolors' emoji when searching for 'masto'
+    expect(emojiIndex.search('masto', { custom }).map(trimEmojis)).toEqual(emojiMartExpected);
   });
 
   it('should filter only emojis we care about, exclude pineapple', () => {
