@@ -78,6 +78,8 @@ services:
       - /opt/mastodon/public/system:/mastodon/public/system
       - /opt/mastodon/public/assets:/mastodon/public/assets
       - /opt/mastodon/public/packs:/mastodon/public/packs
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   streaming:
     image: tootsuite/mastodon:latest
@@ -95,6 +97,8 @@ services:
     depends_on:
       - db
       - redis
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   sidekiq:
     image: tootsuite/mastodon:latest
@@ -111,6 +115,8 @@ services:
       - /opt/mastodon/public/system:/mastodon/public/system
     healthcheck:
       test: ['CMD-SHELL', "ps aux | grep '[s]idekiq\ 6' || false"]
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
 
   ## Uncomment to enable federation with tor instances along with adding the following ENV variables
   ## http_hidden_proxy=http://privoxy:8118
