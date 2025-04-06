@@ -1,6 +1,10 @@
 import { createReducer } from '@reduxjs/toolkit';
 
-import { showAlert, dismissAlert, clearAlerts } from 'truecolors/actions/alerts';
+import {
+  showAlert,
+  dismissAlert,
+  clearAlerts,
+} from 'truecolors/actions/alerts';
 import type { Alert } from 'truecolors/models/alert';
 
 const initialState: Alert[] = [];

@@ -3,7 +3,10 @@ import { Record, List } from 'immutable';
 
 import escapeTextContentForBrowser from 'escape-html';
 
-import type { ApiPollJSON, ApiPollOptionJSON } from 'truecolors/api_types/polls';
+import type {
+  ApiPollJSON,
+  ApiPollOptionJSON,
+} from 'truecolors/api_types/polls';
 import emojify from 'truecolors/features/emoji/emoji';
 
 import { CustomEmojiFactory, makeEmojiMap } from './custom_emoji';

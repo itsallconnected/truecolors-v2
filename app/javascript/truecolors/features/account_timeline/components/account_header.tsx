@@ -48,7 +48,11 @@ import AccountNoteContainer from 'truecolors/features/account/containers/account
 import FollowRequestNoteContainer from 'truecolors/features/account/containers/follow_request_note_container';
 import { useLinks } from 'truecolors/hooks/useLinks';
 import { useIdentity } from 'truecolors/identity_context';
-import { autoPlayGif, me, domain as localDomain } from 'truecolors/initial_state';
+import {
+  autoPlayGif,
+  me,
+  domain as localDomain,
+} from 'truecolors/initial_state';
 import type { Account } from 'truecolors/models/account';
 import type { DropdownMenu } from 'truecolors/models/dropdown_menu';
 import type { Relationship } from 'truecolors/models/relationship';

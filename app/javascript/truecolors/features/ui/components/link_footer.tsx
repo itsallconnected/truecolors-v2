@@ -76,7 +76,11 @@ export const LinkFooter: React.FC<{
           <FormattedMessage id='footer.about' defaultMessage='About' />
         </a>
         <DividingCircle />
-        <a href='https://jointruecolors.org/apps' target='_blank' rel='noopener'>
+        <a
+          href='https://jointruecolors.org/apps'
+          target='_blank'
+          rel='noopener'
+        >
           <FormattedMessage id='footer.get_app' defaultMessage='Get the app' />
         </a>
         <DividingCircle />

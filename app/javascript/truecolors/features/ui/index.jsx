@@ -28,6 +28,11 @@ import { fetchServer, fetchServerTranslationLanguages } from '../../actions/serv
 import { expandHomeTimeline } from '../../actions/timelines';
 import initialState, { me, owner, singleUserMode, trendsEnabled, trendsAsLanding, disableHoverCards } from '../../initial_state';
 
+import '../../components/status';
+import ChatTimeline from '../chat';
+import { ColumnsContextProvider } from './util/columns_context';
+import { WrappedSwitch, WrappedRoute } from './util/react_router_helpers';
+
 import BundleColumnError from './components/bundle_column_error';
 import Header from './components/header';
 import { UploadArea } from './components/upload_area';
@@ -74,14 +79,6 @@ import {
   PrivacyPolicy,
   TermsOfService,
 } from './util/async-components';
-import { ColumnsContextProvider } from './util/columns_context';
-import { WrappedSwitch, WrappedRoute } from './util/react_router_helpers';
-
-// Dummy import, to make sure that <Status /> ends up in the application bundle.
-// Without this it ends up in ~8 very commonly used bundles.
-import '../../components/status';
-
-import ChatTimeline from '../chat';
 
 const messages = defineMessages({
   beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave Truecolors.' },

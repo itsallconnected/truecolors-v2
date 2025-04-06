@@ -69,7 +69,10 @@ browserHistory.push = (path: HistoryPath, state?: TruecolorsLocationState) => {
   originalPush(location);
 };
 
-browserHistory.replace = (path: HistoryPath, state?: TruecolorsLocationState) => {
+browserHistory.replace = (
+  path: HistoryPath,
+  state?: TruecolorsLocationState,
+) => {
   const location = normalizePath(path, state);
 
   if (!location.pathname) return;

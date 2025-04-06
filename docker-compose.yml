@@ -79,7 +79,7 @@ services:
       - /opt/truecolors/public/assets:/truecolors/public/assets
       - /opt/truecolors/public/packs:/truecolors/public/packs
     extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - 'host.docker.internal:host-gateway'
 
   streaming:
     image: tootsuite/truecolors:latest
@@ -98,7 +98,7 @@ services:
       - db
       - redis
     extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - 'host.docker.internal:host-gateway'
 
   sidekiq:
     image: tootsuite/truecolors:latest
@@ -116,7 +116,7 @@ services:
     healthcheck:
       test: ['CMD-SHELL', "ps aux | grep '[s]idekiq\ 6' || false"]
     extra_hosts:
-      - "host.docker.internal:host-gateway"
+      - 'host.docker.internal:host-gateway'
 
   ## Uncomment to enable federation with tor instances along with adding the following ENV variables
   ## http_hidden_proxy=http://privoxy:8118

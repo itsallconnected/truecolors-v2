@@ -9,7 +9,11 @@ import { AltTextBadge } from 'truecolors/components/alt_text_badge';
 import { Blurhash } from 'truecolors/components/blurhash';
 import { Icon } from 'truecolors/components/icon';
 import { formatTime } from 'truecolors/features/video';
-import { autoPlayGif, displayMedia, useBlurhash } from 'truecolors/initial_state';
+import {
+  autoPlayGif,
+  displayMedia,
+  useBlurhash,
+} from 'truecolors/initial_state';
 import type { Status, MediaAttachment } from 'truecolors/models/status';
 import { useAppSelector } from 'truecolors/store';
 
