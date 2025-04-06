@@ -20,9 +20,7 @@ module Truecolors
       return true if ENV["TRUECOLORS_FEATURE_#{name.to_s.upcase}"] == 'true'
       
       # If defined with a proc, call it with args
-      if feature.is_a?(Proc)
-        return feature.call(**args)
-      end
+      return feature.call(**args) if feature.is_a?(Proc)
       
       # Otherwise use the static boolean value
       feature == true
@@ -41,7 +39,7 @@ module Truecolors
     # 
     # @return [Hash] A hash of feature names and their enabled status
     def self.all
-      features.keys.map { |name| [name, enabled?(name)] }.to_h
+      features.keys.index_with { |name| enabled?(name) }
     end
 
     class << self
@@ -56,8 +54,8 @@ module Truecolors
       
       def feature_enabled_in_database?(_name)
         # This would normally check a database table for override values
-        # For now, return nil (use default value)
-        nil
+        # For now, return false (use default value)
+        false
       end
     end
   end

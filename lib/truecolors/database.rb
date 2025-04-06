@@ -35,7 +35,7 @@ module Truecolors
 
     class << self
       # Ensures that post-migration tasks are run after initial schema load
-      # 
+      #
       # @param force [Boolean] Force reload of paths even if already loaded
       def add_post_migrate_path_to_rails(force: false)
         return if !force && ActiveRecord::Base.connection.migration_context.migrations_paths.include?(POST_MIGRATION_PATH)
@@ -49,7 +49,7 @@ module Truecolors
       # @return [Integer] Current database version
       def schema_version
         if ActiveRecord::Base.connection.table_exists?(:schema_migrations)
-          ActiveRecord::SchemaMigration.maximum(:version)&.to_i || 0
+          ActiveRecord::SchemaMigration.maximum(:version).to_i || 0
         else
           0
         end
@@ -60,7 +60,7 @@ module Truecolors
       # @return [Time] Timestamp of the last migration
       def schema_version_as_time
         timestamp = schema_version
-        timestamp ? Time.at(timestamp / 1000) : nil
+        timestamp.positive? ? Time.zone.at(timestamp / 1000) : nil
       end
       
       # Check if the database is in a pre-migration state
@@ -70,9 +70,7 @@ module Truecolors
         begin
           # Attempt to check for schema migrations
           ActiveRecord::Base.connection.table_exists?(:schema_migrations)
-        rescue ActiveRecord::NoDatabaseError
-          return true
-        rescue ActiveRecord::StatementInvalid
+        rescue ActiveRecord::NoDatabaseError, ActiveRecord::StatementInvalid
           return true
         end
         
