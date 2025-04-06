@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 
 import Rails from '@rails/ujs';
 
-import ready from '../truecolors/ready';
+import ready from '../trucolors/ready';
 
 const setAnnouncementEndsAttributes = (target: HTMLInputElement) => {
   const valid = target.value && target.validity.valid;
@@ -269,11 +269,11 @@ async function mountReactComponent(element: Element) {
   const componentProps = JSON.parse(stringProps) as object;
 
   const { default: AdminComponent } = await import(
-    '@/truecolors/containers/admin_component'
+    '../trucolors/containers/admin_component'
   );
 
   const { default: Component } = (await import(
-    `@/truecolors/components/admin/${componentName}`
+    `../trucolors/components/admin/${componentName}`
   )) as { default: React.ComponentType };
 
   const root = createRoot(element);

@@ -1,11 +1,11 @@
 import { createSelector } from '@reduxjs/toolkit';
 import { Record as ImmutableRecord } from 'immutable';
 
-import { me } from 'truecolors/initial_state';
-import { accountDefaultValues } from 'truecolors/models/account';
-import type { Account, AccountShape } from 'truecolors/models/account';
-import type { Relationship } from 'truecolors/models/relationship';
-import type { RootState } from 'truecolors/store';
+import { me } from '../trucolors/initial_state';
+import { accountDefaultValues } from '../trucolors/models/account';
+import type { Account, AccountShape } from '../trucolors/models/account';
+import type { Relationship } from '../trucolors/models/relationship';
+import type { RootState } from '../trucolors/store';
 
 const getAccountBase = (state: RootState, id: string) =>
   state.accounts.get(id, null);

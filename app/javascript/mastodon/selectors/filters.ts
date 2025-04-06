@@ -1,7 +1,7 @@
 import { createSelector } from '@reduxjs/toolkit';
 
-import type { RootState } from 'truecolors/store';
-import { toServerSideType } from 'truecolors/utils/filters';
+import type { RootState } from '../trucolors/store';
+import { toServerSideType } from '../trucolors/utils/filters';
 
 // TODO: move to `app/javascript/truecolors/models` and use more globally
 type Filter = Immutable.Map<string, unknown>;
