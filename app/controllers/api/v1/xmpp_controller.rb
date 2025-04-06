@@ -30,4 +30,4 @@ class Api::V1::XmppController < Api::BaseController
     jid = "#{current_account.username}@#{ENV.fetch('XMPP_DOMAIN', 'localhost')}"
     XmppCredential.create!(user: current_user, jid: jid)
   end
-end 
+end

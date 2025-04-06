@@ -15,4 +15,4 @@ class XmppController < ApplicationController
       }
     end
   end
-end 
+end
