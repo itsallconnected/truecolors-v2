@@ -230,3 +230,7 @@ gem 'rubyzip', '~> 2.3'
 gem 'hcaptcha', '~> 7.1'
 
 gem 'mail', '~> 2.8'
+
+gem 'fernet', '~> 2.3'
+gem 'sidekiq', '~> 6.5'
+gem 'open3', require: false

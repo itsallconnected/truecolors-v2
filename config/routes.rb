@@ -211,4 +211,11 @@ Rails.application.routes.draw do
 
   match '/', via: [:post, :put, :patch, :delete], to: 'application#raise_not_found', format: false
   match '*unmatched_route', via: :all, to: 'application#raise_not_found', format: false
+
+  namespace :api, defaults: { format: :json } do
+    namespace :v1 do
+      resources :chat_rooms
+      resources :crew_agents, only: [:index, :show]
+    end
+  end
 end

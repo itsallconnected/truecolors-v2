@@ -334,6 +334,10 @@ RUN \
   libreadline8 \
   libssl3 \
   libyaml-0-2 \
+  # Python dependencies for CrewAI
+  python3 \
+  python3-pip \
+  python3-dev \
   # libvips components
   libcgif0 \
   libexif12 \
@@ -362,6 +366,10 @@ RUN \
   libx264-164 \
   libx265-199 \
   ;
+
+# Copy Python requirements file and install dependencies
+COPY lib/crewai/requirements.txt /opt/truecolors/lib/crewai/requirements.txt
+RUN pip3 install --no-cache-dir -r /opt/truecolors/lib/crewai/requirements.txt
 
 # Copy Truecolors sources into final layer
 COPY . /opt/truecolors/

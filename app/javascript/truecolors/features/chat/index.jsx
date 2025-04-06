@@ -130,6 +130,24 @@ class ChatTimeline extends React.PureComponent {
     }));
   };
 
+  handleAgentHelp = () => {
+    const { dispatch, intl } = this.props;
+    
+    dispatch(openModal('AGENT_HELP', {
+      title: 'Agent Commands',
+      agents: [
+        { name: 'planner', description: 'Help plan events and projects' },
+        { name: 'researcher', description: 'Research topics and provide summaries' },
+        { name: 'strategist', description: 'Help with outreach strategy' },
+        { name: 'mediator', description: 'Help resolve conflicts' }
+      ],
+      commands: [
+        { format: '@agent_name task_name content', description: 'Run a specific task' },
+        { format: '@agent_name content', description: 'Use the default task' }
+      ]
+    }));
+  };
+
   setRef = (c) => {
     this.column = c;
   };
@@ -147,6 +165,13 @@ class ChatTimeline extends React.PureComponent {
           showBackButton
           multiColumn={multiColumn}
           onSettings={this.handleOpenSettings}
+          additionalButtons={[
+            {
+              icon: 'question',
+              title: 'Agent Help',
+              onClick: this.handleAgentHelp
+            }
+          ]}
         />
         
         <div className='chat-timeline__container'>

@@ -135,6 +135,45 @@ services:
   #     - external_network
   #     - internal_network
 
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    restart: unless-stopped
+    volumes:
+      - ./ollama:/root/.ollama
+    ports:
+      - "127.0.0.1:11434:11434"  # Only expose locally
+    deploy:
+      resources:
+        limits:
+          memory: 35G  # Increased from 8G to 35G
+          cpus: '4'   # Adjust based on your server capacity
+    environment:
+      - OLLAMA_HOST=0.0.0.0
+    networks:
+      - internal_network  # Use your existing network
+      
+  crewai-bot:
+    image: tootsuite/truecolors:latest
+    restart: always
+    env_file: .env.production
+    environment:
+      - OLLAMA_HOST=http://ollama:11434
+    command: bash -c "bundle exec rails crew_bot:start"
+    depends_on:
+      - db
+      - redis
+      - ollama
+    networks:
+      - external_network
+      - internal_network
+    volumes:
+      - /opt/truecolors/public/system:/truecolors/public/system
+    healthcheck:
+      test: ['CMD-SHELL', "ps aux | grep '[p]ython.*xmpp_bot.py' || exit 1"]
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
+
 networks:
   external_network:
   internal_network:

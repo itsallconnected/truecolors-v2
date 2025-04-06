@@ -74,3 +74,13 @@ docker-compose.override.yml
 
 # Ignore local-only rspec configuration
 .rspec-local
+
+# Ignore Ollama model files
+/ollama/
+
+# Ignore generated service files
+/tmp/crewai-xmpp-bot.service
+
+# Ignore .env.production but keep the example
+.env.production
+!.env.production.example

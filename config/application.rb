@@ -123,5 +123,8 @@ module Truecolors
       Devise::FailureApp.include AbstractController::Callbacks
       Devise::FailureApp.include Localized
     end
+
+    # Add lib to load path for Python scripts
+    config.autoload_paths << Rails.root.join('lib')
   end
 end

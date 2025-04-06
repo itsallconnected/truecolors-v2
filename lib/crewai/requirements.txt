@@ -1,0 +1,7 @@
+slixmpp==1.8.4
+crewai==0.108.0
+langchain==0.1.5
+langchain-ollama==0.0.2
+cryptography==41.0.5
+psycopg2-binary==2.9.9
+pyyaml==6.0.1

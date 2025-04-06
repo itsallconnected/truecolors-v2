@@ -38,6 +38,14 @@ class XmppCredential < ApplicationRecord
   # Encrypts the password in the database for additional security
   encrypts :password
   
+  # Add this scope to find the bot credential
+  scope :bot, -> { where(bot: true) }
+  
+  # Add this method to check if this is a bot credential
+  def bot?
+    bot == true
+  end
+  
   private
   
   def ensure_password

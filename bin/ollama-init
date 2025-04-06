@@ -1,0 +1,37 @@
+#!/bin/bash
+echo "Initializing Ollama with Mixtral model..."
+
+echo "Checking if Ollama is ready..."
+MAX_RETRIES=30
+COUNT=0
+
+while true; do
+  if curl -s --fail http://ollama:11434/api/tags > /dev/null 2>&1; then
+    break
+  fi
+
+  COUNT=$((COUNT+1))
+  if [ $COUNT -ge $MAX_RETRIES ]; then
+    echo "Ollama service not available after $MAX_RETRIES attempts, exiting."
+    exit 1
+  fi
+
+  echo "Waiting for Ollama service to be ready... ($COUNT/$MAX_RETRIES)"
+  sleep 10
+done
+
+echo "Ollama is ready, checking for Mixtral model..."
+
+if curl -s http://ollama:11434/api/tags | grep -q "mixtral"; then
+  echo "Mixtral model already exists"
+else
+  echo "Pulling Mixtral model (this may take a while)..."
+  if curl -X POST http://ollama:11434/api/pull -d '{"name":"mixtral"}'; then
+    echo "Mixtral model pulled successfully!"
+  else
+    echo "Error pulling Mixtral model"
+    exit 1
+  fi
+fi
+
+echo "Ollama initialization complete!"

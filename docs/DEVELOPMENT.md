@@ -73,3 +73,49 @@ development environment configured with the software needed for this project.
 [Docker]: https://docs.docker.com
 [GitHub Codespaces]: https://docs.github.com/en/codespaces
 [Homebrew]: https://brew.sh
+
+## Setting up the systemd service
+
+1. Copy the service file:
+   ```bash
+   cp deployment/crewai-xmpp-bot.service /etc/systemd/system/
+   ```
+
+2. Edit the file to replace placeholders:
+   - %CREWAI_BOT_JID% - The JID from running `rails crewai:init_bot`
+   - %CREWAI_BOT_PASSWORD% - The password from running `rails crewai:init_bot`
+   - %DATABASE_URL% - Your database URL
+
+3. Enable and start the service:
+   ```bash
+   systemctl daemon-reload
+   systemctl enable crewai-xmpp-bot
+   systemctl start crewai-xmpp-bot
+   ```
+
+## Setting up CrewAI with Ollama
+
+1. Install Python dependencies:
+   ```bash
+   pip install slixmpp==1.8.4 crewai==0.108.0 langchain==0.1.5 langchain-ollama==0.0.2 cryptography==41.0.5 psycopg2-binary==2.9.9 pyyaml==6.0.1
+   ```
+
+2. Install Ollama:
+   ```bash
+   curl -fsSL https://ollama.com/install.sh | sh
+   ```
+
+3. Pull the required model:
+   ```bash
+   ollama pull mixtral
+   ```
+
+4. Initialize the CrewAI bot user:
+   ```bash
+   rails crew_bot:start
+   ```
+
+5. Load agent configurations:
+   ```bash
+   rails crew_bot:load_config
+   ```

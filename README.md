@@ -47,6 +47,64 @@ Truecolors is a **free, open-source social network server** based on ActivityPub
 
 **OAuth2 and a straightforward REST API** - Truecolors acts as an OAuth2 provider, so 3rd party apps can use the REST and Streaming APIs. This results in a rich app ecosystem with a lot of choices!
 
+## Quick Setup with CrewAI and Ollama Integration
+
+TrueColors now includes AI agents for your XMPP chatrooms using CrewAI with Ollama for local model execution.
+
+### One-Command Deployment
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/your-username/truecolors.git
+   cd truecolors
+   ```
+
+2. Create your `.env.production` file:
+   ```bash
+   cp .env.production.example .env.production
+   # Edit the file with your specific configuration
+   nano .env.production
+   ```
+
+3. Run the setup script:
+   ```bash
+   chmod +x setup.sh
+   ./setup.sh
+   ```
+
+The script will:
+- Build all Docker containers
+- Initialize the database
+- Start all services
+- Download and configure the Mixtral model for Ollama
+- Set up the CrewAI bot
+
+### Available AI Agents
+
+In any XMPP chatroom, you can use these agents:
+
+- **@planner** - Helps with planning events and projects
+- **@researcher** - Provides research and information on topics
+- **@strategist** - Assists with outreach and communication strategies
+- **@mediator** - Helps resolve conflicts
+
+### Agent Commands
+
+Use these commands in your chat:
+```
+@agent_name task_name your content here
+```
+
+Example:
+```
+@researcher research_topic What is the impact of social media on local activism?
+```
+
+For a complete list of available tasks, type any agent name with help:
+```
+@researcher help
+```
+
 ## Deployment
 
 ### Tech stack
