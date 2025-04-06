@@ -5,7 +5,6 @@ import ColumnSettings from '../components/column_settings';
 /**
  * Maps Redux state to props for ColumnSettings component
  * Provides chat settings from the Redux store
- * 
  * @param {Object} state - Redux state
  * @returns {Object} Props for ColumnSettings
  */
@@ -16,7 +15,6 @@ const mapStateToProps = state => ({
 /**
  * Maps dispatch functions to props for ColumnSettings component
  * Provides onChange handler to update chat settings
- * 
  * @param {Function} dispatch - Redux dispatch function
  * @returns {Object} Props for ColumnSettings
  */

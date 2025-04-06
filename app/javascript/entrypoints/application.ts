@@ -1,8 +1,8 @@
 import './public-path';
-import main from '../truecolors/main';
 
 import { start } from '../truecolors/common';
 import { loadLocale } from '../truecolors/locales';
+import main from '../truecolors/main';
 import { loadPolyfills } from '../truecolors/polyfills';
 
 start();

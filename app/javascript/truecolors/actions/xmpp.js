@@ -1,6 +1,7 @@
-import api from '../api';
 import { defineMessages } from 'react-intl';
-import { showAlertForError } from './alerts';
+
+import api from '../api';
+import { showAlert, showAlertForError } from './alerts';
 
 export const XMPP_FETCH_CREDENTIALS_REQUEST = 'XMPP_FETCH_CREDENTIALS_REQUEST';
 export const XMPP_FETCH_CREDENTIALS_SUCCESS = 'XMPP_FETCH_CREDENTIALS_SUCCESS';
@@ -29,7 +30,7 @@ export function fetchXmppCredentials() {
         credentials: response.data,
       });
       
-      return Promise.resolve(response.data);
+      return response.data;
     }).catch(error => {
       dispatch({
         type: XMPP_FETCH_CREDENTIALS_FAIL,
@@ -37,7 +38,7 @@ export function fetchXmppCredentials() {
       });
       
       dispatch(showAlertForError(error));
-      return Promise.reject(error);
+      throw error;
     });
   };
 }
@@ -49,7 +50,7 @@ export function fetchXmppCredentials() {
  * @returns {function} Thunk action that dispatches XMPP_REGENERATE_CREDENTIALS actions
  */
 export function regenerateXmppCredentials() {
-  return (dispatch, getState) => {
+  return (dispatch) => {
     dispatch({ type: XMPP_REGENERATE_CREDENTIALS_REQUEST });
     
     return api().post('/api/v1/xmpp/regenerate').then(response => {
@@ -61,7 +62,7 @@ export function regenerateXmppCredentials() {
       // Show success message
       dispatch(showAlert('success', messages.regenerate_success));
       
-      return Promise.resolve(response.data);
+      return response.data;
     }).catch(error => {
       dispatch({
         type: XMPP_REGENERATE_CREDENTIALS_FAIL,
@@ -71,7 +72,7 @@ export function regenerateXmppCredentials() {
       // Show error message
       dispatch(showAlert('error', messages.regenerate_error));
       
-      return Promise.reject(error);
+      throw error;
     });
   };
 } 
