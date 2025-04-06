@@ -1,0 +1,3 @@
+# Ignore minified files
+**/*.min.css
+public/converse-assets/**/*.css 
