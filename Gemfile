@@ -96,7 +96,7 @@ gem 'twitter-text', '~> 3.1.0'
 gem 'tzinfo-data', '~> 1.2023'
 gem 'webauthn', '~> 3.0'
 gem 'webpacker', '~> 5.4'
-gem 'webpush', github: 'truecolors/webpush', ref: '9631ac63045cfabddacc69fc06e919b4c13eb913'
+gem 'webpush', github: 'mastodon/webpush', ref: '9631ac63045cfabddacc69fc06e919b4c13eb913'
 
 gem 'json-ld'
 gem 'json-ld-preloaded', '~> 3.2'
