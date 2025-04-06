@@ -44,19 +44,21 @@ module Truecolors
       features.keys.map { |name| [name, enabled?(name)] }.to_h
     end
 
-    private
+    class << self
+      private
 
-    def self.features
-      @features ||= {
-        'chat' => true,
-        'xmpp' => true
-      }
-    end
-    
-    def self.feature_enabled_in_database?(name)
-      # This would normally check a database table for override values
-      # For now, return nil (use default value)
-      nil
+      def features
+        @features ||= {
+          'chat' => true,
+          'xmpp' => true
+        }
+      end
+      
+      def feature_enabled_in_database?(_name)
+        # This would normally check a database table for override values
+        # For now, return nil (use default value)
+        nil
+      end
     end
   end
 end
