@@ -23,12 +23,18 @@
 #  fk_rails_...  (creator_id => users.id)
 #
 
+# Use Python integration to access CrewAI
+require 'open3'
+require 'json'
+require 'securerandom'
+
 class ChatRoom < ApplicationRecord
   # The ChatRoom model represents an XMPP multi-user chat room (MUC)
   
   belongs_to :creator, class_name: 'User', optional: true
   has_many :chat_messages, foreign_key: 'room_id', dependent: :destroy, inverse_of: :room
   has_many :crew_agents, dependent: :destroy
+  has_many :crew_tasks, dependent: :destroy
   
   validates :room_jid, presence: true, uniqueness: true
   validates :name, presence: true
@@ -46,6 +52,79 @@ class ChatRoom < ApplicationRecord
   def ai_enabled?
     # Check if there are any CrewAgent records associated with this room
     CrewAgent.exists?(chat_room_id: id)
+  rescue => e
+    Rails.logger.error("Error checking for AI agents: #{e.message}")
+    raise "CrewAI is required but encountered an error: #{e.message}"
+  end
+  
+  # Method to create a CrewAI crew with all agents for this room through Python
+  def create_crew(tasks = [])
+    agents = crew_agents.active.map(&:to_crew_ai_agent).compact
+    raise "No active agents available for this room" if agents.empty?
+    
+    # Prepare crew data for Python
+    crew_data = {
+      agents: agents,
+      tasks: tasks,
+      verbose: Rails.env.development?
+    }
+    
+    # Call Python helper to create the crew
+    python_script = Rails.root.join('lib', 'crewai', 'create_crew.py')
+    
+    # Verify that the Python script exists
+    unless File.exist?(python_script)
+      Rails.logger.error("CrewAI Python script not found: #{python_script}")
+      raise "CrewAI Python script not found: #{python_script}"
+    end
+    
+    # Execute the Python script with the crew data
+    command = "python #{python_script} '#{crew_data.to_json.gsub("'", "\\'")}'"
+    stdout, stderr, status = Open3.capture3(command)
+    
+    unless status.success?
+      Rails.logger.error("Error creating CrewAI crew: #{stderr}")
+      raise "CrewAI is required but encountered an error: #{stderr}"
+    end
+    
+    # Parse the JSON output to get the crew ID
+    result = JSON.parse(stdout)
+    
+    # Return the crew ID from Python
+    result["crew_id"]
+  rescue => e
+    Rails.logger.error("Error creating CrewAI crew: #{e.message}")
+    raise "CrewAI is required but encountered an error: #{e.message}"
+  end
+  
+  # Method to run a crew's tasks and get the result
+  def run_crew(crew_id)
+    # Call Python helper to run the crew
+    python_script = Rails.root.join('lib', 'crewai', 'run_crew.py')
+    
+    # Verify that the Python script exists
+    unless File.exist?(python_script)
+      Rails.logger.error("CrewAI Python script not found: #{python_script}")
+      raise "CrewAI Python script not found: #{python_script}"
+    end
+    
+    # Execute the Python script with the crew ID
+    command = "python #{python_script} #{crew_id}"
+    stdout, stderr, status = Open3.capture3(command)
+    
+    unless status.success?
+      Rails.logger.error("Error running CrewAI crew: #{stderr}")
+      raise "CrewAI is required but encountered an error: #{stderr}"
+    end
+    
+    # Parse the JSON output to get the result
+    result = JSON.parse(stdout)
+    
+    # Return the result
+    result["result"]
+  rescue => e
+    Rails.logger.error("Error running CrewAI crew: #{e.message}")
+    raise "CrewAI is required but encountered an error: #{e.message}"
   end
   
   private

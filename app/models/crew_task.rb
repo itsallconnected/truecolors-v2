@@ -26,6 +26,10 @@
 #  fk_rails_...  (crew_agent_id => crew_agents.id)
 #
 
+# Use Python integration to access CrewAI
+require 'open3'
+require 'json'
+
 class CrewTask < ApplicationRecord
   # The CrewTask model represents tasks that can be assigned to AI agents
   # Tasks are associated with a specific chat room and optionally with a specific agent
@@ -60,5 +64,52 @@ class CrewTask < ApplicationRecord
   # Method to get expected outputs format
   def expected_output
     config['expected_output'] || 'text'
+  end
+  
+  # Creates a CrewAI-compatible Task object through Python
+  def to_crew_ai_task(agent_obj = nil, inputs = {})
+    agent = agent_obj || (crew_agent.present? ? crew_agent.to_crew_ai_agent : nil)
+    raise "No agent available for task" if agent.nil?
+    
+    # Replace placeholders in description with input values
+    task_description = description.dup
+    inputs.each do |key, value|
+      task_description.gsub!("{#{key}}", value.to_s)
+    end
+    
+    # Prepare task data for Python
+    task_data = {
+      description: task_description,
+      expected_output: expected_output,
+      agent_id: agent,
+      tools: tools
+    }
+    
+    # Call Python helper to create the task
+    python_script = Rails.root.join('lib', 'crewai', 'create_task.py')
+    
+    # Verify that the Python script exists
+    unless File.exist?(python_script)
+      Rails.logger.error("CrewAI Python script not found: #{python_script}")
+      raise "CrewAI Python script not found: #{python_script}"
+    end
+    
+    # Execute the Python script with the task data
+    command = "python #{python_script} '#{task_data.to_json.gsub("'", "\\'")}'"
+    stdout, stderr, status = Open3.capture3(command)
+    
+    unless status.success?
+      Rails.logger.error "Error creating CrewAI task: #{stderr}"
+      raise "CrewAI is required but encountered an error: #{stderr}"
+    end
+    
+    # Parse the JSON output to get the task ID
+    result = JSON.parse(stdout)
+    
+    # Return the task ID from Python
+    result["task_id"]
+  rescue => e
+    Rails.logger.error "Error creating CrewAI task: #{e.message}"
+    raise "CrewAI is required but encountered an error: #{e.message}"
   end
 end
