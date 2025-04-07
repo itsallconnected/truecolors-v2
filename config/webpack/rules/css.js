@@ -22,6 +22,9 @@ module.exports = {
       options: {
         implementation: require('sass'),
         sourceMap: true,
+        sassOptions: {
+          outputStyle: 'expanded',
+        },
       },
     },
   ],
