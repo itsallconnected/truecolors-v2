@@ -98,6 +98,10 @@ gem 'webauthn', '~> 3.0'
 gem 'webpacker', '~> 5.4'
 gem 'webpush', github: 'mastodon/webpush', ref: '9631ac63045cfabddacc69fc06e919b4c13eb913'
 
+# Added for CrewAI integration - Ruby encryption library
+gem 'fernet', '~> 2.3'
+gem 'open3', require: false
+
 gem 'json-ld'
 gem 'json-ld-preloaded', '~> 3.2'
 gem 'rdf-normalize', '~> 0.5'
@@ -230,7 +234,3 @@ gem 'rubyzip', '~> 2.3'
 gem 'hcaptcha', '~> 7.1'
 
 gem 'mail', '~> 2.8'
-
-gem 'fernet', '~> 2.3'
-gem 'sidekiq', '~> 6.5'
-gem 'open3', require: false

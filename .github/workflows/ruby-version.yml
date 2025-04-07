@@ -1,0 +1,28 @@
+name: Ruby Version Sync
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly at midnight on Sunday
+
+jobs:
+  sync-ruby-version:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Check and update Ruby version
+        run: |
+          echo "3.2.2" > .ruby-version
+          if [[ -n $(git status --porcelain) ]]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add .ruby-version
+            git commit -m "Update Ruby version to 3.2.2 for consistency"
+            git push
+          else
+            echo "Ruby version already at 3.2.2, no changes needed"
+          fi 
