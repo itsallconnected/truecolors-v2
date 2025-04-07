@@ -43,6 +43,9 @@ jobs:
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript
 
+      - name: Install Babel decorator plugin
+        run: yarn add --dev @babel/plugin-proposal-decorators
+
       - name: ESLint
         run: yarn lint:js --max-warnings 0
 
