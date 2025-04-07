@@ -92,6 +92,9 @@ jobs:
           # Known problematic timestamps - add any known duplicates here
           KNOWN_PROBLEMATIC = ['20180813113448', '20190511152737']
           
+          # Known problematic class names
+          KNOWN_PROBLEMATIC_CLASSES = ['CreateXmppCredentials']
+          
           # Get all migration files
           migration_files = Dir.glob(File.join('db', '**', '[0-9]*_*.rb'))
           puts "Found #{migration_files.size} migration files"
@@ -104,7 +107,7 @@ jobs:
             migrations_by_timestamp[timestamp] << file_path
           end
           
-          # Find duplicates
+          # Find duplicates by timestamp
           duplicates = migrations_by_timestamp.select { |_ts, files| files.size > 1 }
           
           # Add known problematic timestamps
@@ -139,32 +142,83 @@ jobs:
             end
           end
           
-          if duplicates.empty?
-            puts "No duplicate migrations found!"
+          # Now find and fix class name duplicates
+          puts "Looking for class name duplicates..."
+          
+          # Extract class names from all migration files
+          migrations_by_class = {}
+          migration_files = Dir.glob(File.join('db', '**', '[0-9]*_*.rb'))
+          
+          migration_files.each do |file_path|
+            content = File.read(file_path)
+            # Simple regex to extract class name - could be improved
+            if content =~ /class\s+(\w+)\s+</
+              class_name = $1
+              migrations_by_class[class_name] ||= []
+              migrations_by_class[class_name] << file_path
+            end
+          end
+          
+          # Find duplicates by class name
+          class_duplicates = migrations_by_class.select { |_name, files| files.size > 1 }
+          class_duplicates.merge!(migrations_by_class.select { |name, _files| KNOWN_PROBLEMATIC_CLASSES.include?(name) })
+          
+          if class_duplicates.any?
+            puts "Found #{class_duplicates.size} duplicate class names to fix:"
+            
+            class_duplicates.each do |class_name, files|
+              puts "- Class name #{class_name} appears in #{files.size} files:"
+              files.each { |f| puts "  * #{f}" }
+              
+              # Skip the first file, fix the others by adding a number suffix to the class name
+              files[1..-1].each_with_index do |file_path, index|
+                if File.exist?(file_path)
+                  content = File.read(file_path)
+                  new_class_name = "#{class_name}V#{index + 2}"
+                  
+                  puts "  Updating: #{file_path}"
+                  puts "  Changing class name from #{class_name} to #{new_class_name}"
+                  
+                  updated_content = content.gsub(/class\s+#{class_name}\s+</, "class #{new_class_name} <")
+                  File.write(file_path, updated_content)
+                end
+              end
+              
+              puts "  Fixed duplicate class name: #{class_name}"
+            end
+          else
+            puts "No duplicate class names found."
+          end
+          
+          if duplicates.empty? && class_duplicates.empty?
+            puts "No migration duplicates found!"
             exit 0
           end
           
-          puts "Found #{duplicates.size} duplicate migrations to fix:"
-          
-          # Process duplicates
-          duplicates.each do |timestamp, files|
-            puts "- Timestamp #{timestamp} has #{files.size} files:"
-            files.each { |f| puts "  * #{f}" }
+          # Process timestamp duplicates
+          if duplicates.any?
+            puts "Found #{duplicates.size} duplicate timestamps to fix:"
             
-            # Keep one file (preferring db/migrate/ over post_migrate)
-            files_to_keep = files.select { |f| f.include?('/migrate/') && !f.include?('/post_migrate/') }
-            file_to_keep = files_to_keep.first || files.first
-            
-            puts "  Keeping: #{file_to_keep}"
-            
-            # Remove other duplicates
-            files_to_remove = files - [file_to_keep]
-            files_to_remove.each do |file|
-              puts "  Removing: #{file}"
-              File.delete(file) if File.exist?(file)
+            # Process duplicates
+            duplicates.each do |timestamp, files|
+              puts "- Timestamp #{timestamp} has #{files.size} files:"
+              files.each { |f| puts "  * #{f}" }
+              
+              # Keep one file (preferring db/migrate/ over post_migrate)
+              files_to_keep = files.select { |f| f.include?('/migrate/') && !f.include?('/post_migrate/') }
+              file_to_keep = files_to_keep.first || files.first
+              
+              puts "  Keeping: #{file_to_keep}"
+              
+              # Remove other duplicates
+              files_to_remove = files - [file_to_keep]
+              files_to_remove.each do |file|
+                puts "  Removing: #{file}"
+                File.delete(file) if File.exist?(file)
+              end
+              
+              puts "  Fixed duplicate: #{timestamp}"
             end
-            
-            puts "  Fixed duplicate: #{timestamp}"
           end
           
           puts "All duplicate migrations have been fixed!"

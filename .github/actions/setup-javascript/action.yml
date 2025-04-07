@@ -17,29 +17,37 @@ runs:
     - name: Enable and prepare Corepack
       shell: bash
       run: |
-        # Enable Corepack and prepare Yarn
+        # Enable Corepack and ensure we use the correct Yarn version
+        echo "Enabling Corepack for Yarn version management..."
+        
+        # Enable Corepack - available in Node.js 16.9.0+ by default
+        if ! command -v corepack &> /dev/null; then
+          echo "Installing Corepack manually..."
+          npm install -g corepack
+        fi
+        
+        # Enable Corepack
         corepack enable
         
-        # Check what Yarn version is specified in package.json
-        YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9.]*')
-        echo "Project requires Yarn version: $YARN_VERSION"
+        # Extract requested Yarn version from package.json
+        if grep -q '"packageManager"' package.json; then
+          YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9][0-9.]*')
+          echo "Project requires Yarn version: $YARN_VERSION from package.json"
+          
+          # Force preparing specific version
+          corepack prepare yarn@$YARN_VERSION --activate
+          echo "YARN_ENABLE_IMMUTABLE_INSTALLS=false" >> $GITHUB_ENV
+        else
+          echo "No packageManager field found in package.json, using default Yarn"
+          corepack prepare yarn@stable --activate
+        fi
         
-        # Explicitly prepare the specific version
-        corepack prepare yarn@$YARN_VERSION --activate
-        
-        # Force use of the correct Yarn version
-        echo "YARN_ENABLE_IMMUTABLE_INSTALLS=false" >> $GITHUB_ENV
-        
-        # Fix PATH to ensure we're using the Corepack-managed Yarn
-        export PATH="$(npm config get prefix)/lib/node_modules/.bin:$PATH"
-        
-        # Manually create a wrapper script for Yarn if needed
+        # Create custom Yarn wrapper if needed
         if ! which yarn | grep -q "corepack/yarn"; then
+          echo "Creating wrapper script for Yarn..."
           mkdir -p ~/.local/bin
-          cat > ~/.local/bin/yarn << 'EOFYARN'
-#!/bin/bash
-exec "$(which node)" "$(which corepack)" yarn "$@"
-EOFYARN
+          echo '#!/bin/bash' > ~/.local/bin/yarn
+          echo 'exec "$(which node)" "$(which corepack)" yarn "$@"' >> ~/.local/bin/yarn
           chmod +x ~/.local/bin/yarn
           export PATH="$HOME/.local/bin:$PATH"
         fi
