@@ -6,13 +6,20 @@ import logging
 class PostgresMemory(BaseChatMemory):
     def __init__(self, db_url, room_id, encryption_key):
         super().__init__()
-        self.conn = psycopg2.connect(db_url)
+        self.db_url = db_url
         self.room_id = room_id
         self.fernet = Fernet(encryption_key)
+        self.conn = None
+        try:
+            self.conn = psycopg2.connect(db_url)
+        except Exception as e:
+            logging.error(f"Error connecting to database: {e}")
         
     def load_memory_variables(self, inputs):
+        conn = None
         try:
-            with self.conn.cursor() as cur:
+            conn = psycopg2.connect(self.db_url)
+            with conn.cursor() as cur:
                 cur.execute(
                     "SELECT encrypted_content FROM chat_messages WHERE room_id=%s ORDER BY created_at ASC LIMIT 100",
                     (self.room_id,)
@@ -41,8 +48,12 @@ class PostgresMemory(BaseChatMemory):
             logging.error(f"Error loading memory variables: {e}")
             # Return empty context so the conversation can still proceed
             return {"chat_history": ""}
+        finally:
+            if conn is not None and not conn.closed:
+                conn.close()
             
     def save_context(self, inputs, outputs):
+        conn = None
         try:
             # Get input content or use fallback
             input_content = inputs.get('input', '')
@@ -63,32 +74,46 @@ class PostgresMemory(BaseChatMemory):
                 encrypted = f"ERROR_ENCRYPTING: {message}".encode()
             
             try:
-                with self.conn.cursor() as cur:
+                conn = psycopg2.connect(self.db_url)
+                with conn.cursor() as cur:
                     cur.execute(
                         "INSERT INTO chat_messages (room_id, encrypted_content) VALUES (%s, %s)",
                         (self.room_id, encrypted)
                     )
-                    self.conn.commit()
+                    conn.commit()
             except Exception as e:
                 logging.error(f"Database error when saving context: {e}")
                 # Try to reconnect if connection was lost
                 try:
-                    self.conn = psycopg2.connect(self.db_url)
-                    with self.conn.cursor() as cur:
+                    if conn is not None and not conn.closed:
+                        conn.close()
+                    conn = psycopg2.connect(self.db_url)
+                    with conn.cursor() as cur:
                         cur.execute(
                             "INSERT INTO chat_messages (room_id, encrypted_content) VALUES (%s, %s)",
                             (self.room_id, encrypted)
                         )
-                        self.conn.commit()
+                        conn.commit()
                 except Exception as reconnect_error:
                     logging.error(f"Reconnection failed: {reconnect_error}")
         except Exception as e:
             logging.error(f"Unexpected error in save_context: {e}")
+        finally:
+            if conn is not None and not conn.closed:
+                conn.close()
             
     def clear(self):
-        with self.conn.cursor() as cur:
-            cur.execute("DELETE FROM chat_messages WHERE room_id=%s", (self.room_id,))
-            self.conn.commit()
+        conn = None
+        try:
+            conn = psycopg2.connect(self.db_url)
+            with conn.cursor() as cur:
+                cur.execute("DELETE FROM chat_messages WHERE room_id=%s", (self.room_id,))
+                conn.commit()
+        except Exception as e:
+            logging.error(f"Error clearing memory: {e}")
+        finally:
+            if conn is not None and not conn.closed:
+                conn.close()
 
     def summarize_if_needed(self, history, max_tokens=8000):
         """Summarize history if it gets too long"""

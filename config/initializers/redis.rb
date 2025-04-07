@@ -6,9 +6,9 @@ Redis.sadd_returns_boolean = false
 if ENV['PRECOMPILING_ASSETS'] || ENV['CI'] || (defined?(Rake) && Rake.application.top_level_tasks.any? { |task| task.include?('assets:') })
   # Create a null Redis object without redefining the Redis class itself
   null_redis = Object.new.tap do |o|
-    def o.method_missing(*args)
+    def o.method_missing(method_name, *args)
       # Return sensible defaults based on common Redis methods
-      case args[0].to_s
+      case method_name.to_s
       when /ping/
         "PONG"
       when /get|hget/
@@ -24,7 +24,7 @@ if ENV['PRECOMPILING_ASSETS'] || ENV['CI'] || (defined?(Rake) && Rake.applicatio
       end
     end
     
-    def o.respond_to_missing?(method, include_private = false)
+    def o.respond_to_missing?(_, _ = false)
       true # Pretend to respond to all Redis methods
     end
   end

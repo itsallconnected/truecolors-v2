@@ -1,27 +1,37 @@
+name: Build Container Image
+
 on:
   workflow_call:
     inputs:
       cache:
         type: boolean
         default: true
+        description: "Whether to use GitHub Actions cache for Docker layers"
       push_to_images:
         type: string
+        description: "Comma-separated list of image names to push to"
       version_prerelease:
         type: string
+        description: "Prerelease version string"
       version_metadata:
         type: string
+        description: "Version metadata string"
       flavor:
         type: string
+        description: "Docker metadata flavor"
       tags:
         type: string
+        description: "Docker tags to apply"
       labels:
         type: string
+        description: "Docker labels to apply"
       file_to_build:
         type: string
+        description: "Dockerfile path to use for building"
 
 # This builds multiple images with one runner each, allowing us to build for multiple architectures
 # using Github's runners.
-# The two-step process is adapted form:
+# The two-step process is adapted from:
 # https://docs.docker.com/build/ci/github-actions/multi-platform/#distribute-build-across-multiple-runners
 jobs:
   # Build each (amd64 and arm64) image separately

@@ -16,12 +16,16 @@ jobs:
     env:
       RAILS_ENV: production
       NODE_ENV: production
-      RAILS_MASTER_KEY: ${{ secrets.RAILS_MASTER_KEY }}
       PRECOMPILING_ASSETS: true
       CI: true
       
     steps:
       - uses: actions/checkout@v4
+      
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libidn11-dev
       
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1

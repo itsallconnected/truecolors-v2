@@ -6,13 +6,13 @@ from langchain_ollama import ChatOllama
 import yaml
 import psycopg2
 from cryptography.fernet import Fernet
-from pg_memory import PostgresMemory
+from .pg_memory import PostgresMemory
 import time
 from functools import wraps
 import os
-from metrics import Metrics
-from cache import ResponseCache
-from session import SessionManager
+from .metrics import Metrics
+from .cache import ResponseCache
+from .session import SessionManager
 
 def retry_on_exception(max_retries=3, delay=2):
     def decorator(func):
@@ -104,32 +104,33 @@ class TrueColorsBot(ClientXMPP):
                 break
     
     @retry_on_exception(max_retries=3, delay=2)
-    @metrics.time_function('process_agent_message')
     async def process_agent_message(self, agent_name, body, room_jid):
-        # Get room info and encryption key
-        conn = psycopg2.connect(self.db_url)
-        with conn.cursor() as cursor:
-            cursor.execute("SELECT id, room_key FROM chat_rooms WHERE xmpp_jid = %s", (room_jid,))
-            result = cursor.fetchone()
-            if not result:
-                self.send_message(mto=room_jid, 
-                                 mbody="Error: Room not registered in database", 
-                                 mtype='groupchat')
-                return
-                
-            room_id, encrypted_key = result
-        conn.close()
-        
-        # Extract task from message
-        parts = body.split(' ', 2)
-        task_name = parts[1] if len(parts) > 1 else "default"
-        content = parts[2] if len(parts) > 2 else ""
-        
-        # Encrypt content for Ollama (using room key)
-        fernet = Fernet(encrypted_key)
-        encrypted_content = fernet.encrypt(content.encode()).decode()
-        
+        # Track metrics
+        start_time = time.time()
         try:
+            # Get room info and encryption key
+            conn = psycopg2.connect(self.db_url)
+            with conn.cursor() as cursor:
+                cursor.execute("SELECT id, room_key FROM chat_rooms WHERE xmpp_jid = %s", (room_jid,))
+                result = cursor.fetchone()
+                if not result:
+                    self.send_message(mto=room_jid, 
+                                    mbody="Error: Room not registered in database", 
+                                    mtype='groupchat')
+                    return
+                    
+                room_id, encrypted_key = result
+            conn.close()
+            
+            # Extract task from message
+            parts = body.split(' ', 2)
+            task_name = parts[1] if len(parts) > 1 else "default"
+            content = parts[2] if len(parts) > 2 else ""
+            
+            # Encrypt content for Ollama (using room key)
+            fernet = Fernet(encrypted_key)
+            encrypted_content = fernet.encrypt(content.encode()).decode()
+            
             # Initialize memory with encryption
             memory = PostgresMemory(
                 db_url=self.db_url,
@@ -171,8 +172,8 @@ class TrueColorsBot(ClientXMPP):
                 
                 # Tell user we're processing
                 self.send_message(mto=room_jid, 
-                                 mbody=f"Processing request for {agent_name} / {task_name}...", 
-                                 mtype='groupchat')
+                                mbody=f"Processing request for {agent_name} / {task_name}...", 
+                                mtype='groupchat')
                 
                 # Run the crew and get encrypted result
                 result = await asyncio.to_thread(crew.kickoff, inputs={"input": encrypted_content})
@@ -188,13 +189,17 @@ class TrueColorsBot(ClientXMPP):
                 
             else:
                 self.send_message(mto=room_jid, 
-                                 mbody=f"Unknown task: {task_name}", 
-                                 mtype='groupchat')
+                                mbody=f"Unknown task: {task_name}", 
+                                mtype='groupchat')
         except Exception as e:
             logging.error(f"Error processing message: {e}")
             self.send_message(mto=room_jid, 
-                             mbody=f"Error: {str(e)}", 
-                             mtype='groupchat')
+                            mbody=f"Error: {str(e)}", 
+                            mtype='groupchat')
+        finally:
+            # Record metrics
+            execution_time = time.time() - start_time
+            self.metrics.record_time('process_agent_message', execution_time)
 
     async def save_interaction(self, room_id, agent_name, task_name, input_content, result):
         """Save the interaction in the database for future reference"""

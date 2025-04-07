@@ -142,6 +142,11 @@ jobs:
         run: |
           tar xvzf artifacts.tar.gz
 
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libidn11-dev
+
       - name: Set up Ruby environment
         uses: ./.github/actions/setup-ruby
         with:
@@ -178,8 +183,6 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           files: coverage/lcov/*.lcov
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   test-libvips:
     name: Libvips tests
@@ -265,8 +268,6 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           files: coverage/lcov/truecolors.lcov
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   test-e2e:
     name: End to End testing
