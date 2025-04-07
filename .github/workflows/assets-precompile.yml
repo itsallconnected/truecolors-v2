@@ -18,6 +18,9 @@ jobs:
       NODE_ENV: production
       PRECOMPILING_ASSETS: true
       CI: true
+      ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY }}
+      ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY }}
+      ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT }}
 
     steps:
       - uses: actions/checkout@v4
@@ -46,6 +49,7 @@ jobs:
       - name: Precompile assets
         run: |
           echo "Setting up asset precompilation environment..."
+          echo "Encryption keys available: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY != '' && secrets.ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY != '' && secrets.ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT != '' }}"
           bundle exec rake assets:precompile
 
       - name: Check asset size

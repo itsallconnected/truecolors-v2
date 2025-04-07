@@ -122,6 +122,18 @@ jobs:
       BUNDLE_FROZEN: false
       PRECOMPILING_ASSETS: true
       CI: true
+      BUNDLE_CLEAN: true
+      BUNDLE_WITHOUT: 'development:production'
+      BUNDLE_JOBS: 3
+      BUNDLE_RETRY: 3
+      ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY }}
+      ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY }}
+      ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT }}
+      SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
+      OTP_SECRET: ${{ secrets.OTP_SECRET }}
+      REDIS_HOST: localhost
+      REDIS_PORT: 6379
+      XMPP_DOMAIN: example.org
 
     strategy:
       fail-fast: false
