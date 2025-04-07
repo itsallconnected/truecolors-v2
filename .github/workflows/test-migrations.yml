@@ -86,19 +86,19 @@ jobs:
           #!/usr/bin/env ruby
           # Stand-alone script that doesn't require Rails to be loaded
           require 'fileutils'
-          
+
           puts "Starting migration check..."
-          
+
           # Known problematic timestamps - add any known duplicates here
           KNOWN_PROBLEMATIC = ['20180813113448', '20190511152737']
-          
+
           # Known problematic class names
           KNOWN_PROBLEMATIC_CLASSES = ['CreateXmppCredentials']
-          
+
           # Get all migration files
           migration_files = Dir.glob(File.join('db', '**', '[0-9]*_*.rb'))
           puts "Found #{migration_files.size} migration files"
-          
+
           # Group by timestamp
           migrations_by_timestamp = {}
           migration_files.each do |file_path|
@@ -106,10 +106,10 @@ jobs:
             migrations_by_timestamp[timestamp] ||= []
             migrations_by_timestamp[timestamp] << file_path
           end
-          
+
           # Find duplicates by timestamp
           duplicates = migrations_by_timestamp.select { |_ts, files| files.size > 1 }
-          
+
           # Add known problematic timestamps
           KNOWN_PROBLEMATIC.each do |timestamp|
             if migrations_by_timestamp.key?(timestamp) && migrations_by_timestamp[timestamp].size == 1
@@ -141,14 +141,14 @@ jobs:
               end
             end
           end
-          
+
           # Now find and fix class name duplicates
           puts "Looking for class name duplicates..."
-          
+
           # Extract class names from all migration files
           migrations_by_class = {}
           migration_files = Dir.glob(File.join('db', '**', '[0-9]*_*.rb'))
-          
+
           migration_files.each do |file_path|
             content = File.read(file_path)
             # Simple regex to extract class name - could be improved
@@ -158,11 +158,11 @@ jobs:
               migrations_by_class[class_name] << file_path
             end
           end
-          
+
           # Find duplicates by class name
           class_duplicates = migrations_by_class.select { |_name, files| files.size > 1 }
           class_duplicates.merge!(migrations_by_class.select { |name, _files| KNOWN_PROBLEMATIC_CLASSES.include?(name) })
-          
+
           if class_duplicates.any?
             puts "Found #{class_duplicates.size} duplicate class names to fix:"
             
@@ -189,12 +189,12 @@ jobs:
           else
             puts "No duplicate class names found."
           end
-          
+
           if duplicates.empty? && class_duplicates.empty?
             puts "No migration duplicates found!"
             exit 0
           end
-          
+
           # Process timestamp duplicates
           if duplicates.any?
             puts "Found #{duplicates.size} duplicate timestamps to fix:"
@@ -220,10 +220,10 @@ jobs:
               puts "  Fixed duplicate: #{timestamp}"
             end
           end
-          
+
           puts "All duplicate migrations have been fixed!"
           EOL
-          
+
           # Run the script immediately
           ruby fix_migrations.rb
 
