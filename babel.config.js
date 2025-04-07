@@ -21,6 +21,7 @@ module.exports = (api) => {
   const plugins = [
     ['formatjs'],
     'preval',
+    ['@babel/plugin-proposal-decorators', { legacy: true }],
   ];
 
   switch (env) {

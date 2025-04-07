@@ -142,6 +142,7 @@
     "workbox-window": "^7.0.0"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.25.9",
     "@formatjs/cli": "^6.1.1",
     "@testing-library/dom": "^10.2.0",
     "@testing-library/jest-dom": "^6.0.0",

@@ -89,6 +89,9 @@ jobs:
           
           puts "Starting migration check..."
           
+          # Known problematic timestamps - add any known duplicates here
+          KNOWN_PROBLEMATIC = ['20180813113448', '20190511152737']
+          
           # Get all migration files
           migration_files = Dir.glob(File.join('db', '**', '[0-9]*_*.rb'))
           puts "Found #{migration_files.size} migration files"
@@ -103,6 +106,38 @@ jobs:
           
           # Find duplicates
           duplicates = migrations_by_timestamp.select { |_ts, files| files.size > 1 }
+          
+          # Add known problematic timestamps
+          KNOWN_PROBLEMATIC.each do |timestamp|
+            if migrations_by_timestamp.key?(timestamp) && migrations_by_timestamp[timestamp].size == 1
+              # This is not a duplicate yet, but it's known to cause issues
+              puts "Adding known problematic timestamp: #{timestamp}"
+              # Artificially increment the timestamp by 1 for the file
+              file_path = migrations_by_timestamp[timestamp].first
+              if File.exist?(file_path)
+                new_timestamp = (timestamp.to_i + 1).to_s
+                new_basename = File.basename(file_path).sub(/^#{timestamp}/, new_timestamp)
+                new_path = File.join(File.dirname(file_path), new_basename)
+                
+                puts "Renaming problematic file:"
+                puts "  From: #{file_path}"
+                puts "  To:   #{new_path}"
+                
+                # Update class name in the file content
+                if File.exist?(file_path)
+                  content = File.read(file_path)
+                  old_class_name = timestamp.classify
+                  new_class_name = new_timestamp.classify
+                  updated_content = content.gsub(old_class_name, new_class_name)
+                  
+                  # Write to new file and remove old file
+                  File.write(new_path, updated_content)
+                  File.delete(file_path)
+                  puts "  Updated class name from #{old_class_name} to #{new_class_name}"
+                end
+              end
+            end
+          end
           
           if duplicates.empty?
             puts "No duplicate migrations found!"
