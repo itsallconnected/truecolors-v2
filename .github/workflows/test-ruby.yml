@@ -45,6 +45,11 @@ jobs:
       - name: Install Babel decorator plugin
         run: yarn add --dev @babel/plugin-proposal-decorators
 
+      - name: Set up Python for CrewAI
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
       - name: Install XMPP/CrewAI/Ollama dependencies
         run: |
           # Install Python dependencies for CrewAI integration
@@ -499,6 +504,9 @@ jobs:
       ES_ENABLED: true
       ES_HOST: localhost
       ES_PORT: 9200
+      CREWAI_ENABLED: true
+      OLLAMA_HOST: ${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}
+      OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}
 
     strategy:
       fail-fast: false
@@ -531,6 +539,16 @@ jobs:
 
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript
+
+      - name: Set up Python for CrewAI
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies for CrewAI
+        run: |
+          python -m pip install --upgrade pip
+          pip install crewai langchain-ollama slixmpp cryptography psycopg2-binary pyyaml
 
       - name: Load database schema
         run: './bin/rails db:create db:schema:load db:seed'
