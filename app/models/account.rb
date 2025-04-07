@@ -504,14 +504,14 @@ class Account < ApplicationRecord
 
   def update_xmpp_credentials
     return unless local? && user.present? && user.xmpp_credential.present?
-    
+
     old_jid = user.xmpp_credential.jid
     domain = ENV.fetch('XMPP_DOMAIN', 'localhost')
     new_jid = "#{username}@#{domain}"
-    
+
     # Update the JID in the credential
     user.xmpp_credential.update(jid: new_jid)
-    
+
     # Schedule worker to update the XMPP user
     XmppUsernameUpdateWorker.perform_async(user.id, old_jid, new_jid)
   end

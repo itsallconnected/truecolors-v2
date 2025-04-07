@@ -7,7 +7,7 @@
 # id                 :bigint(8)        not null, primary key
 # room_jid           :string           not null
 # name               :string           not null
-# encryption_key     :string           
+# encryption_key     :string
 # creator_id         :bigint(8)
 # public             :boolean          default(FALSE)
 # created_at         :datetime         not null
@@ -27,7 +27,7 @@ class ChatRoom < ApplicationRecord
   # The ChatRoom model represents an XMPP multi-user chat room (MUC)
   
   belongs_to :creator, class_name: 'User', optional: true
-  has_many :chat_messages, foreign_key: 'room_id', dependent: :destroy
+  has_many :chat_messages, foreign_key: 'room_id', dependent: :destroy, inverse_of: :room
   has_many :crew_agents, dependent: :destroy
   
   validates :room_jid, presence: true, uniqueness: true
@@ -45,7 +45,7 @@ class ChatRoom < ApplicationRecord
   # Method to check if the room has AI agents enabled
   def ai_enabled?
     # Check if there are any CrewAgent records associated with this room
-    CrewAgent.where(chat_room_id: id).exists?
+    CrewAgent.exists?(chat_room_id: id)
   end
   
   private

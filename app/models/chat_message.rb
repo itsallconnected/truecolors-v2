@@ -6,11 +6,11 @@
 #
 # id             :bigint(8)        not null, primary key
 # room_id        :bigint(8)        not null
-# sender_id      :bigint(8)        
+# sender_id      :bigint(8)
 # content        :text             not null
 # encrypted      :boolean          default(TRUE)
-# agent_name     :string           
-# task_name      :string           
+# agent_name     :string
+# task_name      :string
 # created_at     :datetime         not null
 # updated_at     :datetime         not null
 #
@@ -52,7 +52,7 @@ class ChatMessage < ApplicationRecord
   def excerpt(length = 100)
     return '' if content.blank?
     
-    if encrypted && !sender_id.present?
+    if encrypted && sender_id.blank?
       '[Encrypted message]'
     else
       content.truncate(length)

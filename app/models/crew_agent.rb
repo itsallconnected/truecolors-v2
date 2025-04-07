@@ -8,7 +8,7 @@
 # name           :string           not null
 # role           :string           not null
 # goal           :text             not null
-# backstory      :text             
+# backstory      :text
 # chat_room_id   :bigint(8)        
 # active         :boolean          default(TRUE)
 # config         :jsonb            default({})
