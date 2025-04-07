@@ -68,7 +68,7 @@ jobs:
           echo "Using Node.js version: $(node -v)"
           echo "Using Yarn from: $(which yarn)"
           echo "Yarn version: $(yarn --version)"
-          
+
           # Explicitly prepare the required Yarn version from package.json if needed
           if grep -q '"packageManager"' package.json; then
             YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9][0-9.]*')

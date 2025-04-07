@@ -29,6 +29,8 @@
 # Use Python integration to access CrewAI
 require 'open3'
 require 'json'
+require 'shellwords'
+require 'tempfile'
 
 class CrewTask < ApplicationRecord
   # The CrewTask model represents tasks that can be assigned to AI agents
@@ -94,20 +96,29 @@ class CrewTask < ApplicationRecord
       raise "CrewAI Python script not found: #{python_script}"
     end
     
-    # Execute the Python script with the task data
-    command = "python #{python_script} '#{task_data.to_json.gsub("'", "\\'")}'"
-    stdout, stderr, status = Open3.capture3(command)
-    
-    unless status.success?
-      Rails.logger.error "Error creating CrewAI task: #{stderr}"
-      raise "CrewAI is required but encountered an error: #{stderr}"
+    # Write JSON data to a temp file instead of passing via command line
+    temp_file = Tempfile.new(['task_data', '.json'])
+    begin
+      temp_file.write(task_data.to_json)
+      temp_file.close
+      
+      # Execute the Python script with the file path
+      command = ["python", python_script.to_s, temp_file.path]
+      stdout, stderr, status = Open3.capture3(*command)
+      
+      unless status.success?
+        Rails.logger.error "Error creating CrewAI task: #{stderr}"
+        raise "CrewAI is required but encountered an error: #{stderr}"
+      end
+      
+      # Parse the JSON output to get the task ID
+      result = JSON.parse(stdout)
+      
+      # Return the task ID from Python
+      result["task_id"]
+    ensure
+      temp_file.unlink
     end
-    
-    # Parse the JSON output to get the task ID
-    result = JSON.parse(stdout)
-    
-    # Return the task ID from Python
-    result["task_id"]
   rescue => e
     Rails.logger.error "Error creating CrewAI task: #{e.message}"
     raise "CrewAI is required but encountered an error: #{e.message}"

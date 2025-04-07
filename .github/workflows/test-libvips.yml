@@ -57,13 +57,13 @@ jobs:
 
       - name: Install Babel decorator plugin
         run: yarn add --dev @babel/plugin-proposal-decorators
-      
+
       - name: Install XMPP/CrewAI/Ollama dependencies
         run: |
           # Install Python dependencies for CrewAI integration
           python -m pip install --upgrade pip
           pip install crewai langchain-ollama slixmpp cryptography psycopg2-binary pyyaml
-          
+
           # Set CrewAI and Ollama configuration
           echo "CREWAI_ENABLED=true" >> $GITHUB_ENV
           echo "OLLAMA_HOST=${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}" >> $GITHUB_ENV

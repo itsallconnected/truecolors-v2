@@ -6,10 +6,11 @@
 if defined?(Truecolors::Feature) && Truecolors::Feature.enabled?(:xmpp) && ENV['CREWAI_ENABLED'] != 'false'
   require 'open3'
   require 'json'
+  require 'shellwords'
   
   # Verify Python and CrewAI are available
-  python_check_cmd = "python -c \"import crewai; import langchain_ollama; print('CrewAI available')\""
-  stdout, stderr, status = Open3.capture3(python_check_cmd)
+  python_check_cmd = ["python", "-c", "import crewai; import langchain_ollama; print('CrewAI available')"]
+  stdout, stderr, status = Open3.capture3(*python_check_cmd)
   
   unless status.success?
     error_message = "CrewAI Python module not available: #{stderr.strip}"
@@ -81,7 +82,7 @@ if defined?(Truecolors::Feature) && Truecolors::Feature.enabled?(:xmpp) && ENV['
   end
   
   # Execute the Python initialization script
-  stdout, stderr, status = Open3.capture3("python #{python_init_script}")
+  stdout, stderr, status = Open3.capture3("python", python_init_script.to_s)
   
   unless status.success?
     error_message = "CrewAI initialization failed: #{stderr.strip}"

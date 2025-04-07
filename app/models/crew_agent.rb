@@ -28,6 +28,8 @@
 # Use Python integration to access CrewAI
 require 'open3'
 require 'json'
+require 'shellwords'
+require 'tempfile'
 
 class CrewAgent < ApplicationRecord
   # The CrewAgent model represents an AI agent in the CrewAI framework
@@ -87,20 +89,29 @@ class CrewAgent < ApplicationRecord
       raise "CrewAI Python script not found: #{python_script}"
     end
     
-    # Execute the Python script with the agent data
-    command = "python #{python_script} '#{agent_data.to_json.gsub("'", "\\'")}'"
-    stdout, stderr, status = Open3.capture3(command)
-    
-    unless status.success?
-      Rails.logger.error "Error creating CrewAI agent: #{stderr}"
-      raise "CrewAI is required but encountered an error: #{stderr}"
+    # Write JSON data to a temp file instead of passing via command line
+    temp_file = Tempfile.new(['agent_data', '.json'])
+    begin
+      temp_file.write(agent_data.to_json)
+      temp_file.close
+      
+      # Execute the Python script with the file path
+      command = ["python", python_script.to_s, temp_file.path]
+      stdout, stderr, status = Open3.capture3(*command)
+      
+      unless status.success?
+        Rails.logger.error "Error creating CrewAI agent: #{stderr}"
+        raise "CrewAI is required but encountered an error: #{stderr}"
+      end
+      
+      # Parse the JSON output to get the agent ID
+      result = JSON.parse(stdout)
+      
+      # Return the agent ID from Python
+      result["agent_id"]
+    ensure
+      temp_file.unlink
     end
-    
-    # Parse the JSON output to get the agent ID
-    result = JSON.parse(stdout)
-    
-    # Return the agent ID from Python
-    result["agent_id"]
   rescue => e
     Rails.logger.error "Error creating CrewAI agent: #{e.message}"
     raise "CrewAI is required but encountered an error: #{e.message}"

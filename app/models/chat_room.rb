@@ -27,6 +27,8 @@
 require 'open3'
 require 'json'
 require 'securerandom'
+require 'shellwords'
+require 'tempfile'
 
 class ChatRoom < ApplicationRecord
   # The ChatRoom model represents an XMPP multi-user chat room (MUC)
@@ -78,20 +80,29 @@ class ChatRoom < ApplicationRecord
       raise "CrewAI Python script not found: #{python_script}"
     end
     
-    # Execute the Python script with the crew data
-    command = "python #{python_script} '#{crew_data.to_json.gsub("'", "\\'")}'"
-    stdout, stderr, status = Open3.capture3(command)
-    
-    unless status.success?
-      Rails.logger.error("Error creating CrewAI crew: #{stderr}")
-      raise "CrewAI is required but encountered an error: #{stderr}"
+    # Write JSON data to a temp file instead of passing via command line
+    temp_file = Tempfile.new(['crew_data', '.json'])
+    begin
+      temp_file.write(crew_data.to_json)
+      temp_file.close
+      
+      # Execute the Python script with the file path
+      command = ["python", python_script.to_s, temp_file.path]
+      stdout, stderr, status = Open3.capture3(*command)
+      
+      unless status.success?
+        Rails.logger.error("Error creating CrewAI crew: #{stderr}")
+        raise "CrewAI is required but encountered an error: #{stderr}"
+      end
+      
+      # Parse the JSON output to get the crew ID
+      result = JSON.parse(stdout)
+      
+      # Return the crew ID from Python
+      result["crew_id"]
+    ensure
+      temp_file.unlink
     end
-    
-    # Parse the JSON output to get the crew ID
-    result = JSON.parse(stdout)
-    
-    # Return the crew ID from Python
-    result["crew_id"]
   rescue => e
     Rails.logger.error("Error creating CrewAI crew: #{e.message}")
     raise "CrewAI is required but encountered an error: #{e.message}"
@@ -109,8 +120,8 @@ class ChatRoom < ApplicationRecord
     end
     
     # Execute the Python script with the crew ID
-    command = "python #{python_script} #{crew_id}"
-    stdout, stderr, status = Open3.capture3(command)
+    command = ["python", python_script.to_s, crew_id.to_s]
+    stdout, stderr, status = Open3.capture3(*command)
     
     unless status.success?
       Rails.logger.error("Error running CrewAI crew: #{stderr}")
