@@ -17,12 +17,30 @@ runs:
     - name: Enable and prepare Corepack
       shell: bash
       run: |
+        # Enable Corepack and prepare Yarn
         corepack enable
         corepack prepare --activate
-        # Force the use of corepack-managed yarn
-        node --no-warnings -e "const fs=require('fs'); const path=require('path'); const yarnPath=path.join(process.env.HOME, '.corepack/yarn/current/bin/yarn'); if(!fs.existsSync(yarnPath)) { console.error('Corepack yarn installation not found.'); process.exit(1); }"
-        which yarn
-        yarn --version
+        
+        # Fix PATH to ensure we're using the Corepack-managed Yarn
+        export PATH="$(npm config get prefix)/lib/node_modules/.bin:$PATH"
+        
+        # Manually create a wrapper script for Yarn if needed
+        if ! which yarn | grep -q "corepack/yarn"; then
+          mkdir -p ~/.local/bin
+          cat > ~/.local/bin/yarn <<EOL
+        #!/bin/bash
+        exec "$(which node)" "$(which corepack)" yarn "\$@"
+        EOL
+          chmod +x ~/.local/bin/yarn
+          export PATH="$HOME/.local/bin:$PATH"
+        fi
+        
+        # Print diagnostic information
+        echo "Using Yarn from: $(which yarn)"
+        echo "Yarn version: $(yarn --version)"
+        
+        # Make PATH changes available to subsequent steps
+        echo "PATH=$PATH" >> $GITHUB_ENV
 
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path

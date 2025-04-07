@@ -21,7 +21,7 @@ class FollowService < BaseService
     @options        = { bypass_locked: false, bypass_limit: false, with_rate_limit: false }.merge(options)
 
     raise ActiveRecord::RecordNotFound if following_not_possible?
-    raise Truecolors::NotPermittedError  if following_not_allowed?
+    raise Truecolors::NotPermittedError if following_not_allowed?
 
     if @source_account.following?(@target_account)
       return change_follow_options!
