@@ -10,13 +10,13 @@ module Truecolors
   module VERSION
     # Major version number
     MAJOR = 1
-    
+
     # Minor version number
     MINOR = 0
-    
+
     # Patch version number
     PATCH = 0
-    
+
     # Pre-release designation, if any (e.g., 'alpha.1', 'beta.2', etc.)
     PRE = nil
 
@@ -64,9 +64,7 @@ module Truecolors
     def to_s
       components = [to_a.join('.')]
       components << "-#{prerelease}" if prerelease.present?
-      components << "+#{build_metadata}" if build_metadata.present?
-      components.join
-    end
+      components << "+#{build_metadata}" components.join if build_metadata.present?
 
     def gem_version
       @gem_version ||= Gem::Version.new(to_s.split('+')[0])

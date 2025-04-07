@@ -34,7 +34,7 @@ write:
 
 # Output translation data using the given representation
 # Available: i18n, json, yaml, yaml_po
-data:
+data_output:
   write:
     format: yaml
 
@@ -48,7 +48,7 @@ data:
     - config/locales/**/*.%{locale}.yml
 
   write:
-    - ['{devise, simple_form, doorkeeper}.*', 'config/locales/\1.%{locale}.yml']
+    - ['{devise,simple_form,doorkeeper}.*', 'config/locales/\1.%{locale}.yml']
     - config/locales/%{locale}.yml
 
   yaml:

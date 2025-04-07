@@ -38,12 +38,12 @@ module Truecolors
         $$ LANGUAGE plpgsql VOLATILE;
       SQL
     end
-    
+
     # Class method to ensure ID sequences exist in the database
     # This is used after schema loading
     def self.ensure_id_sequences_exist
       conn = ActiveRecord::Base.connection
-      
+
       # Check if the sequence already exists
       unless conn.execute("SELECT 1 FROM pg_class WHERE relname = 'timestamp_id_seq'").any?
         # Create a sequence for the timestamp ID
@@ -58,7 +58,7 @@ module Truecolors
     # @param epoch [Integer] Custom epoch in milliseconds
     def initialize(worker_id = 0, epoch = DEFAULT_EPOCH)
       raise ArgumentError, "Worker ID must be between 0 and #{MAX_WORKER_ID}" if worker_id.negative? || worker_id > MAX_WORKER_ID
-      
+
       @worker_id = worker_id
       @epoch = epoch
       @mutex = Mutex.new
@@ -72,9 +72,7 @@ module Truecolors
       @mutex.synchronize do
         timestamp = current_time
 
-        if timestamp < @last_timestamp
-          raise StandardError, "Clock moved backwards! #{@last_timestamp - timestamp}ms"
-        end
+        raise StandardError, "Clock moved backwards! #{@last_timestamp - timestamp}ms" if timestamp < @last_timestamp
 
         if timestamp == @last_timestamp
           @sequence = (@sequence + 1) & MAX_SEQUENCE

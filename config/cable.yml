@@ -14,4 +14,3 @@ production:
   channel_prefix: truecolors_production
   driver: <%= ENV.fetch("REDIS_DRIVER", "ruby") %>
   id: <%= ENV.fetch("REDIS_ID", nil) %>
-  error_handler: ->(error) { Rails.logger.error("Redis error: #{error}") } 

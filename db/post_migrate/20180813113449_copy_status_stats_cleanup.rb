@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class CopyStatusStatsCleanup < ActiveRecord::Migration[5.2]
+class CopyStatusStatsCleanup20180813113449 < ActiveRecord::Migration[5.2]
   disable_ddl_transaction!
 
   def change

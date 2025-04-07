@@ -6,28 +6,28 @@ on:
       cache:
         type: boolean
         default: true
-        description: "Whether to use GitHub Actions cache for Docker layers"
+        description: 'Whether to use GitHub Actions cache for Docker layers'
       push_to_images:
         type: string
-        description: "Comma-separated list of image names to push to"
+        description: 'Comma-separated list of image names to push to'
       version_prerelease:
         type: string
-        description: "Prerelease version string"
+        description: 'Prerelease version string'
       version_metadata:
         type: string
-        description: "Version metadata string"
+        description: 'Version metadata string'
       flavor:
         type: string
-        description: "Docker metadata flavor"
+        description: 'Docker metadata flavor'
       tags:
         type: string
-        description: "Docker tags to apply"
+        description: 'Docker tags to apply'
       labels:
         type: string
-        description: "Docker labels to apply"
+        description: 'Docker labels to apply'
       file_to_build:
         type: string
-        description: "Dockerfile path to use for building"
+        description: 'Dockerfile path to use for building'
 
 # This builds multiple images with one runner each, allowing us to build for multiple architectures
 # using Github's runners.

@@ -13,101 +13,101 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
           bundler-cache: true
-      
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'yarn'
-      
+
       - name: Enable Corepack for Yarn version management
         run: |
           corepack enable
           corepack prepare yarn@4.7.0 --activate
-      
+
       - name: Install dependencies
         run: |
           bundle config set --local frozen false
           bundle install --jobs 4
-      
+
       - name: Fix script permissions
         run: |
           # Fix permissions on bin/*
           chmod +x bin/* || true
           # Fix normalize-all-locales.rb permission
           chmod +x normalize-all-locales.rb || true
-      
+
       - name: Run Rubocop check
         run: |
           bundle exec rubocop --auto-correct || true
-      
+
       - name: Run Prettier check
         run: |
           yarn install
           yarn prettier --write "**/*.{js,jsx,ts,tsx,css,scss,json,yml,yaml}" || true
-  
+
   assets:
     runs-on: ubuntu-latest
-    
+
     env:
       RAILS_ENV: production
       NODE_ENV: production
       PRECOMPILING_ASSETS: true
       CI: true
       OTP_SECRET: dummy-otp-secret-for-ci
-      
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libidn11-dev
-      
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
           bundler-cache: true
-          
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '18'
           cache: 'yarn'
-          
+
       - name: Enable Corepack for Yarn version management
         run: |
           corepack enable
           corepack prepare yarn@4.7.0 --activate
-          
+
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript
         with:
           onlyProduction: 'true'
-          
+
       - name: Install dependencies
         run: |
           bundle config set --local frozen false
           bundle install --jobs 4 --retry 3
-          
+
       - name: Precompile assets
         run: |
           echo "Setting up asset precompilation environment..."
           bundle exec rake assets:precompile
-  
+
   migrations:
     runs-on: ubuntu-latest
-    
+
     services:
       postgres:
         image: postgres:14-alpine
@@ -131,7 +131,7 @@ jobs:
           --health-retries 5
         ports:
           - 6379:6379
-    
+
     env:
       RAILS_ENV: test
       DB_HOST: localhost
@@ -140,29 +140,29 @@ jobs:
       PRECOMPILING_ASSETS: true
       CI: true
       OTP_SECRET: dummy-otp-secret-for-ci
-      
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Install system dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y libidn11-dev
-      
+
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
           bundler-cache: true
-          
+
       - name: Install dependencies
         run: |
           bundle config set --local frozen false
           bundle install --jobs 4 --retry 3
-          
+
       - name: Run db:prepare to test migrations
         run: |
           bin/rails db:create
           bin/rails db:migrate:up VERSION=20250407100000 # Run fix_duplicate_migrations first
           bin/rails db:schema:load
-          bin/rails db:migrate 
+          bin/rails db:migrate

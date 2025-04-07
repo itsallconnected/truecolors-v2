@@ -3,10 +3,10 @@ name: Normalize ALL i18n Files
 on:
   push:
     branches:
-      - "main"
+      - 'main'
   pull_request:
     paths:
-      - "config/locales/**/*.yml"
+      - 'config/locales/**/*.yml'
   workflow_dispatch:
 
 permissions:
@@ -25,7 +25,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.2.2"
+          ruby-version: '3.2.2'
           bundler-cache: true
 
       - name: Install i18n-tasks and dependencies
@@ -77,7 +77,7 @@ jobs:
           git add config/locales/
           git commit -m "Normalize ALL i18n YAML files [skip ci]"
           git push || echo "::warning::Failed to push changes, but workflow will continue"
-      
+
       # For pull requests
       - name: Add changes to pull request
         if: steps.git-check.outputs.changes == 'true' && github.event_name == 'pull_request'
@@ -86,4 +86,4 @@ jobs:
           git config --local user.name "GitHub Action - i18n Normalizer"
           git add config/locales/
           git commit -m "Normalize i18n files"
-          git push 
+          git push
