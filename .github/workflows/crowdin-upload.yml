@@ -1,37 +1,14 @@
-name: Crowdin / Upload translations
+name: Crowdin / Upload translations [DISABLED]
 
+# This workflow is completely disabled - Crowdin integration is not used in this project
 on:
-  push:
-    branches:
-      - 'main'
-      - 'stable-*'
-    paths:
-      - crowdin.yml
-      - app/javascript/truecolors/locales/en.json
-      - config/locales/en.yml
-      - config/locales/simple_form.en.yml
-      - config/locales/activerecord.en.yml
-      - config/locales/devise.en.yml
-      - config/locales/doorkeeper.en.yml
-      - .github/workflows/crowdin-upload.yml
+  workflow_dispatch: # Only manual triggers allowed
 
 jobs:
   upload-translations:
     runs-on: ubuntu-latest
-    if: false # Disabled - not using Crowdin at this time
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: crowdin action
-        uses: crowdin/github-action@v2
-        with:
-          upload_sources: true
-          upload_translations: false
-          download_translations: false
-          crowdin_branch_name: ${{ github.base_ref || github.ref_name }}
-
-        env:
-          CROWDIN_PROJECT_ID: ${{ vars.CROWDIN_PROJECT_ID }}
-          CROWDIN_PERSONAL_TOKEN: ${{ secrets.CROWDIN_PERSONAL_TOKEN }}
+      - name: Crowdin integration disabled
+        run: |
+          echo "Crowdin integration has been disabled for this project."
+          echo "This is a placeholder workflow that does nothing."
