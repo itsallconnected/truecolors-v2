@@ -78,6 +78,12 @@ docker-compose.override.yml
 # Ignore Ollama model files
 /ollama/
 
+# Ignore Crowdin files (Crowdin integration disabled)
+crowdin.yml
+crowdin-cli.jar
+*.crowdin-cli.yml
+.crowdin.yml
+
 # Ignore generated service files
 /tmp/crewai-xmpp-bot.service
 

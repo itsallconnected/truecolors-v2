@@ -1,4 +1,5 @@
 # i18n-tasks finds and manages missing and unused translations: https://github.com/glebm/i18n-tasks
+# NOTE: Crowdin integration has been disabled in this project. All translations are managed locally.
 
 # YAML normalization config
 ---

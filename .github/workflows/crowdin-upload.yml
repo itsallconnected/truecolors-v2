@@ -18,7 +18,7 @@ on:
 jobs:
   upload-translations:
     runs-on: ubuntu-latest
-    if: github.repository == 'truecolors/truecolors'
+    if: false # Disabled - not using Crowdin at this time
 
     steps:
       - name: Checkout
