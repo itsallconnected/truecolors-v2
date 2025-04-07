@@ -2,7 +2,7 @@ name: Fix Gem Dependencies
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 # Add permissions for GitHub Actions
@@ -24,7 +24,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.2.2
+          ruby-version: "3.2.2"
           bundler-cache: true
       
       - name: Update Gemfile
@@ -39,7 +39,8 @@ jobs:
           bundle config set --local frozen false
           # Remove old lockfile and generate fresh one
           rm -f Gemfile.lock
-          bundle lock
+          # Preserve platforms when generating new lockfile
+          bundle lock --add-platform ruby
       
       - name: Commit changes
         run: |

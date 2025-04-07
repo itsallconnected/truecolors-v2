@@ -42,6 +42,43 @@ module Truecolors
       features.keys.index_with { |name| enabled?(name) }
     end
 
+    # Determine if specified features are enabled globally
+    #
+    # @param features [Array<String,Symbol>] List of features to check
+    # @return [Boolean] True if all specified features are enabled
+    def self.enabled?(*features)
+      features.all? do |feature|
+        truecolors_config.key?('experimental_features') &&
+          feature_enabled_in_experimental?(feature)
+      end
+    end
+
+    # Determine if a specified feature is enabled in experimental features
+    #
+    # @param feature [String,Symbol] The feature to check
+    # @return [Boolean] True if the specified feature is enabled
+    def self.feature_enabled_in_experimental?(feature)
+      features = ENV.fetch('EXPERIMENTAL_FEATURES', truecolors_config['experimental_features'])
+      return false if features.blank?
+
+      features.split(',').map(&:strip).include?(feature.to_s)
+    end
+
+    # Get the TrueColors configuration from Rails
+    #
+    # @return [Hash] TrueColors configuration from Rails
+    def self.truecolors_config
+      Rails.application.config_for(:truecolors).fetch(Rails.env.to_s, {})
+    rescue
+      # Failsafe for when the file is missing or invalid
+      {
+        'experimental_features' => ENV.fetch('EXPERIMENTAL_FEATURES', ''),
+        'features' => {
+          'xmpp' => true,
+        },
+      }
+    end
+
     class << self
       private
 

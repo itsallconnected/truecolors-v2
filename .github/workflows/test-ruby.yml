@@ -142,7 +142,7 @@ jobs:
       - name: Set up Ruby environment
         uses: ./.github/actions/setup-ruby
         with:
-          ruby-version: ${{ matrix.ruby-version}}
+          ruby-version: "3.2.2"
           additional-system-dependencies: ffmpeg imagemagick libpam-dev
 
       - name: Allow bundle modifications

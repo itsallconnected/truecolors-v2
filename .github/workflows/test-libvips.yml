@@ -3,16 +3,16 @@ name: Test libvips
 on:
   push:
     branches:
-      - 'main'
-      - 'stable-*'
+      - "main"
+      - "stable-*"
     paths:
-      - '.github/workflows/test-libvips.yml'
-      - 'Gemfile*'
-      - '**/*.rb'
+      - ".github/workflows/test-libvips.yml"
+      - "Gemfile*"
+      - "**/*.rb"
   pull_request:
     branches:
-      - 'main'
-      - 'stable-*'
+      - "main"
+      - "stable-*"
 
 env:
   BUNDLE_FROZEN: false
@@ -27,7 +27,7 @@ jobs:
       - name: Set up Ruby environment
         uses: ./.github/actions/setup-ruby
         with:
-          ruby-version: '3.2.2'
+          ruby-version: "3.2.2"
           
       - name: Allow bundle modifications
         run: |

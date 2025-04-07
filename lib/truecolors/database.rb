@@ -38,9 +38,22 @@ module Truecolors
       #
       # @param force [Boolean] Force reload of paths even if already loaded
       def add_post_migrate_path_to_rails(force: false)
-        return if !force && ActiveRecord::Base.connection.migration_context.migrations_paths.include?(POST_MIGRATION_PATH)
-
-        ActiveRecord::Base.connection.migration_context.migrations_paths << POST_MIGRATION_PATH
+        # Check if migrations_paths is already included or if connection doesn't support migration_context
+        # Rails 8.0 compatibility
+        if !force && 
+          (ActiveRecord::Base.connection.respond_to?(:migration_context) && 
+           ActiveRecord::Base.connection.migration_context.migrations_paths.include?(POST_MIGRATION_PATH))
+          return
+        end
+        
+        # Add migration paths based on Rails version
+        if ActiveRecord::Base.connection.respond_to?(:migration_context)
+          ActiveRecord::Base.connection.migration_context.migrations_paths << POST_MIGRATION_PATH
+        else
+          # Rails 8.0+ compatibility
+          ActiveRecord::MigrationContext.new([MIGRATION_PATH]).migrations_paths << POST_MIGRATION_PATH
+        end
+        
         ActiveRecord::Tasks::DatabaseTasks.migrations_paths << POST_MIGRATION_PATH
       end
 

@@ -1,8 +1,13 @@
 # frozen_string_literal: true
 
 module Truecolors
-  # Version information for Truecolors
-  module Version
+  # Returns the version of the currently loaded Truecolors
+  # as a <tt>Gem::Version</tt>
+  def self.version
+    Gem::Version.new VERSION::STRING
+  end
+
+  module VERSION
     # Major version number
     MAJOR = 1
     
@@ -15,12 +20,17 @@ module Truecolors
     # Pre-release designation, if any (e.g., 'alpha.1', 'beta.2', etc.)
     PRE = nil
 
+    STRING = [MAJOR, MINOR, PATCH, PRE].compact.join('.')
+
     # Compile the version string
     # @return [String] version string
     def self.to_s
       [MAJOR, MINOR, PATCH].join('.') + (PRE ? "-#{PRE}" : '')
     end
+  end
 
+  # Version information for Truecolors
+  module Version
     module_function
 
     def major
@@ -64,7 +74,7 @@ module Truecolors
 
     def api_versions
       {
-        truecolors: 5,
+        truecolors: 5
       }
     end
 

@@ -1,33 +1,42 @@
 # frozen_string_literal: true
 
 module Truecolors
-  class RedisConfiguration
-    class << self
-      def establish_pool(pool_size)
-        ::Redis.new(redis_params.merge(id: "connection", size: pool_size))
-      end
+  # Configuration for Redis connections in Truecolors
+  module RedisConfiguration
+    def pool_size
+      ENV.fetch('REDIS_POOL_SIZE', 5).to_i
+    end
 
-      def sentinel?
-        redis_params[:host].start_with?('redis://')
-      end
+    def namespace
+      ENV.fetch('REDIS_NAMESPACE', nil)
+    end
 
-      def redis_params
-        return @redis_params if defined?(@redis_params)
+    def redis
+      @redis ||= begin
+        single_redis = ::Redis.new(redis_params.merge(id: 'connection', size: pool_size))
 
-        @redis_params = {
-          host: ENV.fetch('REDIS_HOST', 'localhost'),
-          port: ENV.fetch('REDIS_PORT', 6379).to_i,
-          password: ENV.fetch('REDIS_PASSWORD', nil),
-          db: ENV.fetch('REDIS_DB', 0).to_i,
-        }
-
-        if ENV['REDIS_URL'].present?
-          @redis_params = { url: ENV['REDIS_URL'] }
+        if namespace
+          Redis::Namespace.new(namespace, redis: single_redis)
+        else
+          single_redis
         end
-
-        @redis_params.compact!
-        @redis_params
       end
+    end
+
+    def redis_params
+      if ENV['REDIS_URL'].present?
+        URI.parse(ENV['REDIS_URL'])
+      else
+        {}
+      end
+    end
+
+    def sentinel?
+      redis_params[:host].start_with?('redis://')
+    end
+
+    def establish_pool(pool_size)
+      ::Redis.new(redis_params.merge(id: "connection", size: pool_size))
     end
 
     def initialize
@@ -67,10 +76,6 @@ module Truecolors
 
     def driver
       ENV['REDIS_DRIVER'] == 'ruby' ? :ruby : :hiredis
-    end
-
-    def namespace
-      @namespace ||= ENV.fetch('REDIS_NAMESPACE', nil)
     end
 
     def base_namespace

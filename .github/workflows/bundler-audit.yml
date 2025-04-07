@@ -25,6 +25,9 @@ jobs:
         with:
           ruby-version: '3.2.2'
 
+      - name: Make bundler-audit executable
+        run: chmod +x bin/bundler-audit
+
       - name: Allow bundle modifications
         run: |
           bundle config set --local frozen false
