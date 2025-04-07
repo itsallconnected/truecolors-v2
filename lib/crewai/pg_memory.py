@@ -101,7 +101,7 @@ class PostgresMemory(BaseChatMemory):
                 from langchain_ollama import ChatOllama
                 
                 summarizer = ChatOllama(
-                    model="mixtral",
+                    model="phi3:mini",
                     temperature=0.3  # Lower temperature for more factual summary
                 )
                 

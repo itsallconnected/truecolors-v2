@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Initializing Ollama with Mixtral model..."
+echo "Initializing Ollama with Phi-3 Mini model..."
 
 echo "Checking if Ollama is ready..."
 MAX_RETRIES=30
@@ -20,16 +20,16 @@ while true; do
   sleep 10
 done
 
-echo "Ollama is ready, checking for Mixtral model..."
+echo "Ollama is ready, checking for Phi-3 Mini model..."
 
-if curl -s http://ollama:11434/api/tags | grep -q "mixtral"; then
-  echo "Mixtral model already exists"
+if curl -s http://ollama:11434/api/tags | grep -q "phi3:mini"; then
+  echo "Phi-3 Mini model already exists"
 else
-  echo "Pulling Mixtral model (this may take a while)..."
-  if curl -X POST http://ollama:11434/api/pull -d '{"name":"mixtral"}'; then
-    echo "Mixtral model pulled successfully!"
+  echo "Pulling Phi-3 Mini model (this may take a while)..."
+  if curl -X POST http://ollama:11434/api/pull -d '{"name":"phi3:mini"}'; then
+    echo "Phi-3 Mini model pulled successfully!"
   else
-    echo "Error pulling Mixtral model"
+    echo "Error pulling Phi-3 Mini model"
     exit 1
   fi
 fi

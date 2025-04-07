@@ -146,12 +146,12 @@ services:
     deploy:
       resources:
         limits:
-          memory: 35G  # Increased from 8G to 35G
-          cpus: '4'   # Adjust based on your server capacity
+          memory: 2G  # 2GB allocation - half of available system memory
+          cpus: '1.0'  # Use 1 of the 2 available vCPUs
     environment:
       - OLLAMA_HOST=0.0.0.0
     networks:
-      - internal_network  # Use your existing network
+      - internal_network
       
   crewai-bot:
     image: tootsuite/truecolors:latest

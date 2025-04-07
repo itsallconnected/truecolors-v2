@@ -29,32 +29,25 @@ jobs:
     strategy:
       fail-fast: false
 
-      matrix:
-        postgres:
-          - 14-alpine
-          - 15-alpine
-          - 16-alpine
-          - 17-alpine
-
     services:
       postgres:
-        image: postgres:${{ matrix.postgres}}
+        image: postgres:17
         env:
           POSTGRES_PASSWORD: postgres
           POSTGRES_USER: postgres
         options: >-
           --health-cmd pg_isready
-          --health-interval 10ms
+          --health-interval 10s
           --health-timeout 3s
           --health-retries 50
         ports:
           - 5432:5432
 
       redis:
-        image: redis:7-alpine
+        image: redis:7
         options: >-
           --health-cmd "redis-cli ping"
-          --health-interval 10ms
+          --health-interval 10s
           --health-timeout 3s
           --health-retries 50
         ports:

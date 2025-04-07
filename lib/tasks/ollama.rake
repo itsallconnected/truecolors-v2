@@ -6,7 +6,7 @@ namespace :ollama do
     puts "Initializing Ollama..."
     
     ollama_host = ENV['OLLAMA_HOST'] || 'http://ollama:11434'
-    model_name = ENV['OLLAMA_MODEL'] || 'mixtral'
+    model_name = ENV['OLLAMA_MODEL'] || 'phi3:mini'
     
     require 'net/http'
     require 'json'
@@ -84,7 +84,7 @@ namespace :ollama do
         puts "✅ Ollama is available"
         
         # Check if model is available
-        model_name = ENV['OLLAMA_MODEL'] || 'mixtral'
+        model_name = ENV['OLLAMA_MODEL'] || 'mixtral:instruct'
         models = JSON.parse(response.body)
         models_array = models['models'] || models
         
@@ -107,7 +107,7 @@ namespace :ollama do
   
   desc "Pull Ollama model specified in OLLAMA_MODEL env var"
   task pull: :environment do
-    model_name = ENV['OLLAMA_MODEL'] || 'mixtral'
+    model_name = ENV['OLLAMA_MODEL'] || 'mixtral:instruct'
     ollama_host = ENV['OLLAMA_HOST'] || 'http://localhost:11434'
     
     puts "Pulling Ollama model: #{model_name} from #{ollama_host}..."

@@ -146,10 +146,10 @@ class TrueColorsBot(ClientXMPP):
                 memory=memory,
                 verbose=True,
                 llm=ChatOllama(
-                    model="mixtral",
+                    model="phi3:mini",
                     temperature=0.7,
                     top_p=0.9,
-                    max_tokens=4096
+                    max_tokens=1024
                 )
             )
             
