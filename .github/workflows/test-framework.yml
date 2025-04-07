@@ -13,6 +13,8 @@ on:
 jobs:
   lint:
     runs-on: ubuntu-latest
+    env:
+      YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
     steps:
       - uses: actions/checkout@v4
@@ -36,6 +38,7 @@ jobs:
           YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9.]*')
           echo "Project requires Yarn version: $YARN_VERSION"
           corepack prepare yarn@$YARN_VERSION --activate
+          echo "YARN_ENABLE_IMMUTABLE_INSTALLS=false" >> $GITHUB_ENV
 
       - name: Install Babel decorator plugin
         run: yarn add --dev @babel/plugin-proposal-decorators
@@ -85,6 +88,7 @@ jobs:
       CREWAI_ENABLED: 'true'
       OLLAMA_HOST: ${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}
       OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}
+      YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
     steps:
       - uses: actions/checkout@v4
@@ -100,27 +104,37 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          node-version: '18'
-          cache: 'yarn'
+          python-version: '3.10'
 
-      - name: Enable Corepack for Yarn version management
+      - name: Install Python dependencies for CrewAI
         run: |
-          corepack enable
-          # Extract Yarn version from package.json
-          YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9.]*')
-          echo "Project requires Yarn version: $YARN_VERSION"
-          corepack prepare yarn@$YARN_VERSION --activate
-
-      - name: Install Babel decorator plugin
-        run: yarn add --dev @babel/plugin-proposal-decorators
+          python -m pip install --upgrade pip
+          pip install crewai ollama
 
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript
         with:
           onlyProduction: 'true'
+
+      - name: Verify Yarn setup
+        run: |
+          # Print diagnostic information
+          echo "Using Node.js version: $(node -v)"
+          echo "Using Yarn from: $(which yarn)"
+          echo "Yarn version: $(yarn --version)"
+          
+          # Explicitly prepare the required Yarn version from package.json if needed
+          if grep -q '"packageManager"' package.json; then
+            YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9][0-9.]*')
+            echo "Project requires Yarn version: $YARN_VERSION"
+            corepack prepare yarn@$YARN_VERSION --activate
+          fi
+
+      - name: Install Babel decorator plugin
+        run: yarn add --dev @babel/plugin-proposal-decorators
 
       - name: Install dependencies
         run: |
@@ -182,6 +196,7 @@ jobs:
       CREWAI_ENABLED: 'true'
       OLLAMA_HOST: ${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}
       OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}
+      YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
     steps:
       - uses: actions/checkout@v4
@@ -196,6 +211,36 @@ jobs:
         with:
           ruby-version: '3.2.2'
           bundler-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies for CrewAI
+        run: |
+          python -m pip install --upgrade pip
+          pip install crewai ollama
+
+      - name: Set up Javascript environment
+        uses: ./.github/actions/setup-javascript
+
+      - name: Verify Yarn setup
+        run: |
+          # Print diagnostic information
+          echo "Using Node.js version: $(node -v)"
+          echo "Using Yarn from: $(which yarn)"
+          echo "Yarn version: $(yarn --version)"
+          
+          # Explicitly prepare the required Yarn version from package.json if needed
+          if grep -q '"packageManager"' package.json; then
+            YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9][0-9.]*')
+            echo "Project requires Yarn version: $YARN_VERSION"
+            corepack prepare yarn@$YARN_VERSION --activate
+          fi
+
+      - name: Install Babel decorator plugin
+        run: yarn add --dev @babel/plugin-proposal-decorators
 
       - name: Install dependencies
         run: |

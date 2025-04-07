@@ -129,7 +129,7 @@ class ChatTimeline extends React.PureComponent {
   };
 
   handleAgentHelp = () => {
-    const { dispatch, intl } = this.props;
+    const { dispatch } = this.props;
     
     dispatch(openModal('AGENT_HELP', {
       title: 'Agent Commands',

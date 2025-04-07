@@ -1,12 +1,11 @@
 import { createRoot } from 'react-dom/client';
 
-import Truecolors from './containers/truecolors.jsx';
-
 import { setupBrowserNotifications } from 'truecolors/actions/notifications';
 import { me } from 'truecolors/initial_state';
 import * as perf from 'truecolors/performance';
 import ready from 'truecolors/ready';
 import { store } from 'truecolors/store';
+import Truecolors from './containers/truecolors';
 
 import { isProduction } from './utils/environment';
 

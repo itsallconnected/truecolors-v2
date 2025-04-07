@@ -1,4 +1,5 @@
 import { connect } from 'react-redux';
+
 import { toggleChatSetting } from '../../../actions/chat';
 import ColumnSettings from '../components/column_settings';
 

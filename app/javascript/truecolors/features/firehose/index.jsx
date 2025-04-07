@@ -7,7 +7,6 @@ import { Helmet } from 'react-helmet';
 import { NavLink } from 'react-router-dom';
 
 import { useIdentity } from '@/truecolors/identity_context';
-import PublicIcon from '@/material-icons/400-24px/public.svg?react';
 import { addColumn } from 'truecolors/actions/columns';
 import { changeSetting } from 'truecolors/actions/settings';
 import { connectPublicStream, connectCommunityStream } from 'truecolors/actions/streaming';
@@ -15,6 +14,7 @@ import { expandPublicTimeline, expandCommunityTimeline } from 'truecolors/action
 import { DismissableBanner } from 'truecolors/components/dismissable_banner';
 import { domain } from 'truecolors/initial_state';
 import { useAppDispatch, useAppSelector } from 'truecolors/store';
+import PublicIcon from '@/material-icons/400-24px/public.svg?react';
 
 import Column from '../../components/column';
 import ColumnHeader from '../../components/column_header';
