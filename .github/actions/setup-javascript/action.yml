@@ -83,5 +83,5 @@ runs:
       shell: bash
       run: |
         echo "Installing production dependencies only..."
-        yarn install --no-dev
+        yarn workspaces focus --production
       if: inputs.onlyProduction != 'false'
