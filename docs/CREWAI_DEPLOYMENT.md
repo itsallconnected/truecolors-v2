@@ -39,4 +39,3 @@ systemctl --user start ollama
 ### 3. Configure Environment Variables
 
 Add these to your `.env.production` file:
-

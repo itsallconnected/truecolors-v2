@@ -54,12 +54,14 @@ TrueColors now includes AI agents for your XMPP chatrooms using CrewAI with Olla
 ### One-Command Deployment
 
 1. Clone this repository:
+
    ```bash
    git clone https://github.com/your-username/truecolors.git
    cd truecolors
    ```
 
 2. Create your `.env.production` file:
+
    ```bash
    cp .env.production.example .env.production
    # Edit the file with your specific configuration
@@ -73,6 +75,7 @@ TrueColors now includes AI agents for your XMPP chatrooms using CrewAI with Olla
    ```
 
 The script will:
+
 - Build all Docker containers
 - Initialize the database
 - Start all services
@@ -91,16 +94,19 @@ In any XMPP chatroom, you can use these agents:
 ### Agent Commands
 
 Use these commands in your chat:
+
 ```
 @agent_name task_name your content here
 ```
 
 Example:
+
 ```
 @researcher research_topic What is the impact of social media on local activism?
 ```
 
 For a complete list of available tasks, type any agent name with help:
+
 ```
 @researcher help
 ```

@@ -142,17 +142,17 @@ services:
     volumes:
       - ./ollama:/root/.ollama
     ports:
-      - "127.0.0.1:11434:11434"  # Only expose locally
+      - '127.0.0.1:11434:11434' # Only expose locally
     deploy:
       resources:
         limits:
-          memory: 2G  # 2GB allocation - half of available system memory
-          cpus: '1.0'  # Use 1 of the 2 available vCPUs
+          memory: 2G # 2GB allocation - half of available system memory
+          cpus: '1.0' # Use 1 of the 2 available vCPUs
     environment:
       - OLLAMA_HOST=0.0.0.0
     networks:
       - internal_network
-      
+
   crewai-bot:
     image: tootsuite/truecolors:latest
     restart: always

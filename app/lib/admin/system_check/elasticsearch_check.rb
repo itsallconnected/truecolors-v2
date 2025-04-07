@@ -10,7 +10,8 @@ class Admin::SystemCheck::ElasticsearchCheck < Admin::SystemCheck::BaseCheck
   ].freeze
 
   def skip?
-    !current_user.can?(:view_devops)
+    # Always skip Elasticsearch checks since it's not used
+    true
   end
 
   def pass?

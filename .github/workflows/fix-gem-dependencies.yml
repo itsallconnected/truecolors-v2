@@ -1,0 +1,41 @@
+name: Fix Gem Dependencies
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  fix-dependencies:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.2.2
+          bundler-cache: true
+      
+      - name: Update Gemfile
+        run: |
+          # Ensure our new gems are explicitly listed
+          grep -q "fernet" Gemfile || echo -e "\n# CrewAI integration\ngem 'fernet', '~> 2.3'" >> Gemfile
+          grep -q "open3" Gemfile || echo -e "gem 'open3', require: false" >> Gemfile
+      
+      - name: Regenerate Gemfile.lock
+        run: |
+          # Allow changes to Gemfile.lock
+          bundle config set --local frozen false
+          # Remove old lockfile and generate fresh one
+          rm -f Gemfile.lock
+          bundle lock
+      
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Gemfile Gemfile.lock
+          git commit -m "Fix Gemfile.lock for CrewAI dependencies" || echo "No changes to commit"
+          git push 

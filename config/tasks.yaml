@@ -3,7 +3,7 @@ plan_event:
     Help plan a community event based on a short description provided by the user.
     The result should include a title, objective, 5 key milestones with deadlines,
     and assigned agent roles if needed.
-    
+
     Event Details: {content}
   expected_output: >
     A complete project plan with clear responsibilities and a rough timeline.
@@ -12,7 +12,7 @@ topic_research:
   description: >
     Research the provided topic and return a plain-English summary of key insights,
     links to references, and open questions that remain.
-    
+
     Topic: {content}
   expected_output: >
     A clear, well-structured summary of the topic in 3 paragraphs with links and citations.
@@ -20,27 +20,27 @@ topic_research:
 generate_strategy:
   description: >
     Based on a goal or community objective, draft a strategic approach to achieve it.
-    
+
     Objective: {content}
   expected_output: >
     A 4-step strategy outline with reasoning behind each step and possible pitfalls.
 
 default:
-  description: "Assist the user with their question or request: {content}"
+  description: 'Assist the user with their question or request: {content}'
   expected_output: "A helpful, informative response addressing the user's needs"
 
 create_plan:
-  description: "Create a detailed action plan for the following goal or project: {content}"
-  expected_output: "A structured plan with timeline, milestones, and action items"
+  description: 'Create a detailed action plan for the following goal or project: {content}'
+  expected_output: 'A structured plan with timeline, milestones, and action items'
 
 research_topic:
-  description: "Research and provide a comprehensive summary of: {content}"
-  expected_output: "Well-organized research findings with key points and relevant information"
+  description: 'Research and provide a comprehensive summary of: {content}'
+  expected_output: 'Well-organized research findings with key points and relevant information'
 
 create_strategy:
-  description: "Develop a communication or outreach strategy for the following scenario: {content}"
-  expected_output: "A detailed strategy with target audience analysis, key messages, and implementation steps"
+  description: 'Develop a communication or outreach strategy for the following scenario: {content}'
+  expected_output: 'A detailed strategy with target audience analysis, key messages, and implementation steps'
 
 resolve_conflict:
-  description: "Help analyze and resolve the following conflict or disagreement: {content}"
-  expected_output: "A balanced analysis of the situation with proposed resolution approaches and next steps"
+  description: 'Help analyze and resolve the following conflict or disagreement: {content}'
+  expected_output: 'A balanced analysis of the situation with proposed resolution approaches and next steps'

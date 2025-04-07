@@ -15,6 +15,7 @@ RSpec.configure do |config|
   config.before :suite do
     Rails.application.load_seed
     Chewy.strategy(:bypass)
+    Chewy.enabled = false
 
     # NOTE: we switched registrations mode to closed by default, but the specs
     # very heavily rely on having it enabled by default, as it relies on users

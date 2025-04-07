@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-enabled         = ENV['ES_ENABLED'] == 'true'
+enabled         = false # Always disable Elasticsearch
 host            = ENV.fetch('ES_HOST') { 'localhost' }
 port            = ENV.fetch('ES_PORT') { 9200 }
 user            = ENV.fetch('ES_USER', nil).presence
