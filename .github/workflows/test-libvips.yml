@@ -3,16 +3,16 @@ name: Test libvips
 on:
   push:
     branches:
-      - "main"
-      - "stable-*"
+      - 'main'
+      - 'stable-*'
     paths:
-      - ".github/workflows/test-libvips.yml"
-      - "Gemfile*"
-      - "**/*.rb"
+      - '.github/workflows/test-libvips.yml'
+      - 'Gemfile*'
+      - '**/*.rb'
   pull_request:
     branches:
-      - "main"
-      - "stable-*"
+      - 'main'
+      - 'stable-*'
 
 env:
   BUNDLE_FROZEN: false
@@ -20,25 +20,25 @@ env:
 jobs:
   test:
     runs-on: ubuntu-latest
-    
+
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Set up Ruby environment
         uses: ./.github/actions/setup-ruby
         with:
-          ruby-version: "3.2.2"
-          
+          ruby-version: '3.2.2'
+
       - name: Allow bundle modifications
         run: |
           bundle config set --local frozen false
           bundle install --jobs 4
-          
+
       - name: Install libvips
         run: |
           sudo apt-get update
           sudo apt-get install -y libvips-dev
-          
+
       - name: Test libvips
         run: |
-          bundle exec ruby -e "require 'vips'; puts Vips::LIBRARY_VERSION" 
+          bundle exec ruby -e "require 'vips'; puts Vips::LIBRARY_VERSION"

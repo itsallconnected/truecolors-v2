@@ -24,8 +24,8 @@ namespace :crew_bot do
       cmd = "python #{bot_script} --jid #{bot_jid} --password #{bot_password} --db-url #{db_url}"
       
       puts "Starting CrewAI XMPP bot..."
-      Open3.popen2e(cmd) do |stdin, stdout_err, wait_thr|
-        while line = stdout_err.gets
+      Open3.popen2e(cmd) do |_stdin, stdout_err, wait_thr|
+        while (line = stdout_err.gets)
           puts line
         end
         

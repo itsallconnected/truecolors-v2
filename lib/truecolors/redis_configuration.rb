@@ -2,7 +2,11 @@
 
 module Truecolors
   # Configuration for Redis connections in Truecolors
-  module RedisConfiguration
+  class RedisConfiguration
+    def initialize
+      # Initialize configuration (kept for compatibility)
+    end
+
     def pool_size
       ENV.fetch('REDIS_POOL_SIZE', 5).to_i
     end
@@ -36,11 +40,25 @@ module Truecolors
     end
 
     def establish_pool(pool_size)
-      ::Redis.new(redis_params.merge(id: "connection", size: pool_size))
+      ::Redis.new(redis_params.merge(id: 'connection', size: pool_size))
     end
 
-    def initialize
-      self.class.redis_params
+    def driver
+      ENV['REDIS_DRIVER'] == 'ruby' ? :ruby : :hiredis
+    end
+
+    def base_namespace
+      return "truecolors_test#{ENV.fetch('TEST_ENV_NUMBER', nil)}" if Rails.env.test?
+
+      namespace
+    end
+
+    def sidekiq_namespace
+      namespace
+    end
+
+    def cache_namespace
+      namespace ? "#{namespace}_cache" : 'cache'
     end
 
     DEFAULTS = {
@@ -73,24 +91,6 @@ module Truecolors
     end
 
     private
-
-    def driver
-      ENV['REDIS_DRIVER'] == 'ruby' ? :ruby : :hiredis
-    end
-
-    def base_namespace
-      return "truecolors_test#{ENV.fetch('TEST_ENV_NUMBER', nil)}" if Rails.env.test?
-
-      namespace
-    end
-
-    def sidekiq_namespace
-      namespace
-    end
-
-    def cache_namespace
-      namespace ? "#{namespace}_cache" : 'cache'
-    end
 
     def setup_config(prefix: nil, defaults: {})
       prefix = "#{prefix}REDIS_"

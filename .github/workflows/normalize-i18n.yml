@@ -1,0 +1,37 @@
+name: Normalize i18n files
+
+on:
+  push:
+    branches:
+      - "main"
+    paths:
+      - "config/locales/**/*.yml"
+
+jobs:
+  normalize:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+          fetch-depth: 0
+      
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.2.2"
+          bundler-cache: true
+      
+      - name: Normalize i18n files
+        run: |
+          bundle exec i18n-tasks normalize
+      
+      - name: Commit changes if needed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add config/locales/
+          git commit -m "Normalize i18n files" || echo "No changes to commit"
+          git push 

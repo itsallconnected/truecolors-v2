@@ -31,9 +31,9 @@ module Api
         if @chat_room.save
           # Trigger background job to create room on XMPP server
           CreateXmppRoomWorker.perform_async(@chat_room.id)
-          render json: @chat_room, serializer: REST::ChatRoomSerializer, status: :created
+          render json: @chat_room, serializer: REST::ChatRoomSerializer, status: 201
         else
-          render json: { error: @chat_room.errors.full_messages.join(', ') }, status: :unprocessable_entity
+          render json: { error: @chat_room.errors.full_messages.join(', ') }, status: 422
         end
       end
       
@@ -53,7 +53,7 @@ module Api
         if @chat_room.update(chat_room_params)
           render json: @chat_room
         else
-          render json: { error: @chat_room.errors.full_messages.join(', ') }, status: :unprocessable_entity
+          render json: { error: @chat_room.errors.full_messages.join(', ') }, status: 422
         end
       end
       

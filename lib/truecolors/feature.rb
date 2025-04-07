@@ -42,12 +42,12 @@ module Truecolors
       features.keys.index_with { |name| enabled?(name) }
     end
 
-    # Determine if specified features are enabled globally
+    # Determine if all specified features are enabled globally via experimental features
     #
-    # @param features [Array<String,Symbol>] List of features to check
+    # @param feature_list [Array<String,Symbol>] List of features to check
     # @return [Boolean] True if all specified features are enabled
-    def self.enabled?(*features)
-      features.all? do |feature|
+    def self.all_features_enabled?(*feature_list)
+      feature_list.all? do |feature|
         truecolors_config.key?('experimental_features') &&
           feature_enabled_in_experimental?(feature)
       end
@@ -74,8 +74,8 @@ module Truecolors
       {
         'experimental_features' => ENV.fetch('EXPERIMENTAL_FEATURES', ''),
         'features' => {
-          'xmpp' => true,
-        },
+          'xmpp' => true
+        }
       }
     end
 

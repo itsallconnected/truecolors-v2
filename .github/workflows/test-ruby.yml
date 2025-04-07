@@ -142,7 +142,7 @@ jobs:
       - name: Set up Ruby environment
         uses: ./.github/actions/setup-ruby
         with:
-          ruby-version: "3.2.2"
+          ruby-version: '3.2.2'
           additional-system-dependencies: ffmpeg imagemagick libpam-dev
 
       - name: Allow bundle modifications
@@ -356,7 +356,7 @@ jobs:
   test-search:
     name: Elastic Search integration testing
     runs-on: ubuntu-latest
-    if: false  # Disable Elasticsearch tests completely
+    if: false # Disable Elasticsearch tests completely
 
     needs:
       - build
