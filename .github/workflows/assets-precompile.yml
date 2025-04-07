@@ -26,9 +26,10 @@ jobs:
       XMPP_DOMAIN: ${{ secrets.XMPP_DOMAIN }}
       XMPP_BOSH_URL: ${{ secrets.XMPP_BOSH_URL }}
       XMPP_WEBSOCKET_URL: ${{ secrets.XMPP_WEBSOCKET_URL }}
-      CREWAI_ENABLED: ${{ secrets.CREWAI_ENABLED || 'true' }}
+      CREWAI_ENABLED: true
       OLLAMA_HOST: ${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}
       OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}
+      YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
     steps:
       - uses: actions/checkout@v4
@@ -43,6 +44,16 @@ jobs:
         with:
           ruby-version: '3.2.2'
           bundler-cache: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies for CrewAI
+        run: |
+          python -m pip install --upgrade pip
+          pip install crewai ollama
 
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript
