@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import { defineMessages, injectIntl, FormattedMessage } from 'react-intl';
+
 import ImmutablePureComponent from 'react-immutable-pure-component';
 
 import SettingToggle from '../../notifications/components/setting_toggle';
