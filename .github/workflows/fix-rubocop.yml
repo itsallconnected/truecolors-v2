@@ -1,0 +1,77 @@
+name: Fix Rubocop Issues
+
+on:
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  fix-lint:
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: write
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
+          
+      - name: Install dependencies
+        run: |
+          bundle config set --local frozen false
+          bundle install --jobs 4
+          
+      - name: Fix Script Permissions
+        run: |
+          # Fix permissions on Ruby scripts and bin files
+          find . -name "*.rb" -type f -path "*/bin/*" | xargs chmod +x || true
+          # Make normalize-all-locales.rb executable
+          chmod +x normalize-all-locales.rb || true
+          # Make all bin/ scripts executable
+          chmod +x bin/* || true
+          # Show permissions for verification
+          ls -la bin/
+          [ -f normalize-all-locales.rb ] && ls -la normalize-all-locales.rb
+          
+      - name: Fix trailing whitespace and basic issues
+        run: |
+          bundle exec rubocop --only Layout/TrailingWhitespace,Layout/TrailingEmptyLines,Layout/EmptyLineAfterGuardClause -a
+          
+      - name: Fix method indentation issues
+        run: |
+          bundle exec rubocop --only Layout/MultilineMethodCallIndentation -a
+          
+      - name: Fix string literal issues
+        run: |
+          bundle exec rubocop --only Style/StringLiterals,Style/TrailingCommaInHashLiteral -a
+          
+      - name: Run remaining auto-corrections
+        run: |
+          bundle exec rubocop -a
+          
+      - name: Run deeper auto-corrections
+        run: |
+          bundle exec rubocop -A
+          
+      - name: Check for changes
+        id: git-check
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+          
+      - name: Commit changes
+        if: steps.git-check.outputs.changes == 'true'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - Rubocop Fixer"
+          git add .
+          git commit -m "Fix linting issues with Rubocop [skip ci]"
+          git push 

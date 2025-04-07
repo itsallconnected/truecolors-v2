@@ -51,13 +51,13 @@ jobs:
       - name: Normalize files using i18n-tasks directly
         run: |
           echo "Normalizing locale files with i18n-tasks..."
-          i18n-tasks normalize --keep-order --no-sort --line-width=999999
+          i18n-tasks normalize
           echo "Normalization with i18n-tasks completed"
 
       - name: Verify normalization
         run: |
           echo "Verifying normalization..."
-          i18n-tasks check-normalized --verbose || (echo "::warning::Some files could not be fully normalized, but continuing" && exit 0)
+          i18n-tasks check-normalized || (echo "::warning::Some files could not be fully normalized, but continuing" && exit 0)
 
       - name: Check if there are changes
         id: git-check

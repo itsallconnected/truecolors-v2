@@ -29,17 +29,15 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
           
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Set up Javascript environment
+        uses: ./.github/actions/setup-javascript
         with:
-          node-version: '20'
-          cache: 'yarn'
+          onlyProduction: 'true'
           
       - name: Install dependencies
         run: |
           bundle config set --local frozen false
           bundle install --jobs 4 --retry 3
-          yarn install
           
       - name: Precompile assets
         run: |

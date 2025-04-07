@@ -14,9 +14,12 @@ runs:
         node-version-file: '.nvmrc'
 
     # The following is needed because we can not use `cache: true` for `setup-node`, as it does not support Corepack yet and mess up with the cache location if ran after Node is installed
-    - name: Enable corepack
+    - name: Enable and prepare Corepack
       shell: bash
-      run: corepack enable
+      run: |
+        corepack enable
+        corepack prepare --activate
+        yarn --version
 
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path

@@ -13,7 +13,7 @@ Dir.glob('config/locales/**/*.yml').each do |file_path|
     content = File.read(file_path)
     
     # Ensure it starts with --- on a line by itself
-    content = "#{content.start_with?('---' + "\n") ? '' : "---\n"}#{content.sub(/^---\s*\n/, '')}"
+    content = "#{content.start_with?("---\n") ? '' : "---\n"}#{content.sub(/^---\s*\n/, '')}"
     
     # Parse the YAML
     data = YAML.load(content)
@@ -32,4 +32,4 @@ Dir.glob('config/locales/**/*.yml').each do |file_path|
   end
 end
 
-puts 'All locale files have been normalized.' 
+puts I18n.t('admin.maintenance.i18n_normalization_complete', default: 'All locale files have been normalized.') 

@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+set -e
+
+echo "=== Running Rubocop auto-correct for easy fixes ==="
+bundle exec rubocop -a
+
+echo "=== Running Rubocop auto-correct-all for deeper fixes ==="
+bundle exec rubocop -A
+
+echo "=== Setting correct permissions on scripts ==="
+find . -name "*.rb" -type f -perm +111 -o -path "*/bin/*" -type f | xargs chmod +x
+
+echo "=== Verifying normalize-all-locales.rb has execute permissions ==="
+chmod +x normalize-all-locales.rb 2>/dev/null || true
+
+echo "=== Checking remaining issues ==="
+bundle exec rubocop || echo "There may still be issues that need manual fixing"
+
+echo "=== All automated fixes complete ===" 
