@@ -30,8 +30,6 @@ import initialState, { me, owner, singleUserMode, trendsEnabled, trendsAsLanding
 
 import '../../components/status';
 import ChatTimeline from '../chat';
-import { ColumnsContextProvider } from './util/columns_context';
-import { WrappedSwitch, WrappedRoute } from './util/react_router_helpers';
 
 import BundleColumnError from './components/bundle_column_error';
 import Header from './components/header';
@@ -79,6 +77,8 @@ import {
   PrivacyPolicy,
   TermsOfService,
 } from './util/async-components';
+import { ColumnsContextProvider } from './util/columns_context';
+import { WrappedSwitch, WrappedRoute } from './util/react_router_helpers';
 
 const messages = defineMessages({
   beforeUnload: { id: 'ui.beforeunload', defaultMessage: 'Your draft will be lost if you leave Truecolors.' },

@@ -5,8 +5,8 @@ import { me } from 'truecolors/initial_state';
 import * as perf from 'truecolors/performance';
 import ready from 'truecolors/ready';
 import { store } from 'truecolors/store';
-import Truecolors from './containers/truecolors';
 
+import Truecolors from './containers/truecolors';
 import { isProduction } from './utils/environment';
 
 /**

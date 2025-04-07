@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { connect } from 'react-redux';
+
 import { defineMessages, injectIntl } from 'react-intl';
 
-import { fetchXmppCredentials } from '../../actions/xmpp';
-import { mountConverse, unmountConverse } from '../../actions/chat';
+import { connect } from 'react-redux';
+
 import { openModal } from '../../actions/modal';
+import { mountConverse, unmountConverse } from '../../actions/chat';
+import { fetchXmppCredentials } from '../../actions/xmpp';
 import ColumnHeader from '../../components/column_header';
 import LoadingIndicator from '../../components/loading_indicator';
 import Column from '../ui/components/column';
