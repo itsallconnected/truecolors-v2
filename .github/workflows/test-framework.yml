@@ -82,7 +82,7 @@ jobs:
       XMPP_BOSH_URL: ${{ secrets.XMPP_BOSH_URL }}
       XMPP_WEBSOCKET_URL: ${{ secrets.XMPP_WEBSOCKET_URL }}
       # Add CrewAI and Ollama configuration
-      CREWAI_ENABLED: ${{ secrets.CREWAI_ENABLED || 'true' }}
+      CREWAI_ENABLED: 'true'
       OLLAMA_HOST: ${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}
       OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}
 
@@ -179,7 +179,7 @@ jobs:
       XMPP_BOSH_URL: ${{ secrets.XMPP_BOSH_URL }}
       XMPP_WEBSOCKET_URL: ${{ secrets.XMPP_WEBSOCKET_URL }}
       # Add CrewAI and Ollama configuration
-      CREWAI_ENABLED: ${{ secrets.CREWAI_ENABLED || 'true' }}
+      CREWAI_ENABLED: 'true'
       OLLAMA_HOST: ${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}
       OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}
 

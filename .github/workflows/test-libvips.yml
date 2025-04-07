@@ -32,7 +32,12 @@ env:
   FETCH_REPLIES_MAX_GLOBAL: 1000
   FETCH_REPLIES_MAX_SINGLE: 500
   FETCH_REPLIES_MAX_PAGES: 500
-
+  # Add XMPP configuration
+  XMPP_DOMAIN: ${{ secrets.XMPP_DOMAIN }}
+  XMPP_BOSH_URL: ${{ secrets.XMPP_BOSH_URL }}
+  XMPP_WEBSOCKET_URL: ${{ secrets.XMPP_WEBSOCKET_URL }}
+  XMPP_ADMIN_JID: ${{ secrets.XMPP_ADMIN_JID }}
+  XMPP_ADMIN_PASSWORD: ${{ secrets.XMPP_ADMIN_PASSWORD }}
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -45,9 +50,30 @@ jobs:
         with:
           ruby-version: '3.2.2'
 
+      - name: Set up Javascript environment
+        uses: ./.github/actions/setup-javascript
+        with:
+          onlyProduction: 'true'
+
+      - name: Install Babel decorator plugin
+        run: yarn add --dev @babel/plugin-proposal-decorators
+      
+      - name: Install XMPP/CrewAI/Ollama dependencies
+        run: |
+          # Install Python dependencies for CrewAI integration
+          python -m pip install --upgrade pip
+          pip install crewai langchain-ollama slixmpp cryptography psycopg2-binary pyyaml
+          
+          # Set CrewAI and Ollama configuration
+          echo "CREWAI_ENABLED=true" >> $GITHUB_ENV
+          echo "OLLAMA_HOST=${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}" >> $GITHUB_ENV
+          echo "OLLAMA_MODEL=${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}" >> $GITHUB_ENV
+
       - name: Allow bundle modifications
         run: |
           bundle config set --local frozen false
+          # Ensure fernet gem is installed for encryption
+          bundle add fernet || true
           bundle install --jobs 4
 
       - name: Install libvips
