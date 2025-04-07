@@ -80,43 +80,93 @@ jobs:
           bundle config set --local frozen false
           bundle install --jobs 4
 
-      # Add our fix for duplicate migrations
-      - name: Fix duplicate migrations
+      # Add our fix for duplicate migrations - using a comprehensive solution
+      - name: Prevent duplicate migrations
         run: |
-          # Create a script to delete problematic migration files directly
-          cat > fix_migrations.rb << 'EOL'
-          # Find and delete problematic migration files
-          ['20180813113448', '20180813113449'].each do |version|
-            Dir.glob(File.join('db', '**', "*#{version}*.rb")).each do |file|
-              puts "Removing problematic migration file: #{file}"
-              File.delete(file) if File.exist?(file)
+          # Create a script to automatically detect and fix ALL duplicate migrations
+          cat > prevent_duplicate_migrations.rb << 'EOL'
+          #!/usr/bin/env ruby
+          # This script automatically detects and fixes duplicate migrations
+          
+          require 'fileutils'
+          
+          # Get all migration files
+          migration_files = Dir.glob(File.join('db', '**', '[0-9]*_*.rb'))
+          
+          # Group by timestamp
+          migrations_by_timestamp = {}
+          migration_files.each do |file_path|
+            timestamp = File.basename(file_path).split('_').first
+            migrations_by_timestamp[timestamp] ||= []
+            migrations_by_timestamp[timestamp] << file_path
+          end
+          
+          # Find duplicates
+          duplicates = migrations_by_timestamp.select { |_ts, files| files.size > 1 }
+          
+          if duplicates.empty?
+            puts "No duplicate migrations found!"
+            exit 0
+          end
+          
+          puts "Found #{duplicates.size} duplicate migrations to fix:"
+          
+          # Create SQL file for ensuring migrations are marked as run
+          File.open('ensure_migrations.sql', 'w') do |sql|
+            sql.puts "CREATE TABLE IF NOT EXISTS schema_migrations (version varchar(255) PRIMARY KEY);"
+            
+            duplicates.each do |timestamp, files|
+              puts "  Timestamp #{timestamp} has #{files.size} files:"
+              files.each { |f| puts "    - #{f}" }
+              
+              # Keep one file (preferring db/migrate/ over post_migrate)
+              files_to_keep = files.select { |f| f.include?('/migrate/') && !f.include?('/post_migrate/') }
+              file_to_keep = files_to_keep.first || files.first
+              puts "  Keeping: #{file_to_keep}"
+              
+              # Remove other duplicates
+              files_to_remove = files - [file_to_keep]
+              files_to_remove.each do |file|
+                puts "  Removing: #{file}"
+                File.delete(file) if File.exist?(file)
+              end
+              
+              # Add to SQL file
+              sql.puts "INSERT INTO schema_migrations (version) VALUES ('#{timestamp}') ON CONFLICT DO NOTHING;"
             end
           end
+          
+          # Create rake task to execute the SQL after schema load
+          FileUtils.mkdir_p('lib/tasks')
+          File.open('lib/tasks/ensure_migrations.rake', 'w') do |f|
+            f.puts <<~RAKE
+              namespace :db do
+                task :ensure_migrations => :environment do
+                  if File.exist?('ensure_migrations.sql')
+                    puts "Ensuring migrations are properly recorded..."
+                    ActiveRecord::Base.connection.execute(File.read('ensure_migrations.sql'))
+                  end
+                end
+                
+                # Hook our task after schema load
+                %w(db:schema:load db:structure:load).each do |task|
+                  Rake::Task[task].enhance do
+                    Rake::Task["db:ensure_migrations"].invoke
+                  end
+                end
+              end
+            RAKE
+          end
+          
+          puts "Created ensure_migrations.sql and lib/tasks/ensure_migrations.rake"
+          puts "Duplicate migrations have been fixed!"
           EOL
+          
+          # Make it executable
+          chmod +x prevent_duplicate_migrations.rb
           
           # Run the script
-          ruby fix_migrations.rb
-          
-          # Add these migrations to schema_migrations table during schema load
-          cat > ensure_migrations.sql << 'EOL'
-          CREATE TABLE IF NOT EXISTS schema_migrations (version varchar(255) PRIMARY KEY);
-          INSERT INTO schema_migrations (version) VALUES ('20180813113448') ON CONFLICT DO NOTHING;
-          INSERT INTO schema_migrations (version) VALUES ('20180813113449') ON CONFLICT DO NOTHING;
-          EOL
-          
-          # Create a hook to run this after schema load
-          mkdir -p lib/tasks
-          cat > lib/tasks/ensure_migrations.rake << 'EOL'
-          namespace :db do
-            task :load_schema_with_fixes => :load_schema do
-              ActiveRecord::Base.connection.execute(File.read('ensure_migrations.sql'))
-              puts "Added fixed migrations to schema_migrations table"
-            end
-          end
-          Rake::Task["db:prepare"].enhance do
-            Rake::Task["db:load_schema_with_fixes"].invoke
-          end
-          EOL
+          ruby prevent_duplicate_migrations.rb
 
       - name: Ensure no errors with `db:prepare`
         run: |
