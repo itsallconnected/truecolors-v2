@@ -31,7 +31,8 @@ if defined?(Truecolors::Feature) && Truecolors::Feature.enabled?(:xmpp) && ENV['
       import json
       
       try:
-          from crewai import Agent, Task, Crew, CrewAI
+          from crewai import Agent, Task, Crew
+          from crewai.core.crew import config as crew_config
           from langchain_ollama import ChatOllama
           import psycopg2
           
@@ -48,15 +49,15 @@ if defined?(Truecolors::Feature) && Truecolors::Feature.enabled?(:xmpp) && ENV['
           if os.environ.get("OLLAMA_HOST"):
               os.environ["LANGCHAIN_OLLAMA_BASE_URL"] = os.environ.get("OLLAMA_HOST")
           
-          # Initialize CrewAI
-          CrewAI.configure(
-              memory="postgres",
-              agent_defaults={
-                  "verbose": config["verbose"],
-                  "memory": True
-              },
-              rpg_mode=config["rpg_mode"]
-          )
+          # Initialize CrewAI - method depends on version
+          # For newer versions of crewai that support proper configuration
+          crew_config.memory = "postgres"
+          crew_config.agent_defaults = {
+              "verbose": config["verbose"],
+              "memory": True
+          }
+          if hasattr(crew_config, "rpg_mode"):
+              crew_config.rpg_mode = config["rpg_mode"]
           
           # Print success message and config
           print(json.dumps({
