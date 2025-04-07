@@ -133,10 +133,10 @@ class User < ApplicationRecord
   before_validation :sanitize_role
   before_create :set_approved
   before_create :set_age_verified_at
+  before_destroy :remove_xmpp_credentials
   after_commit :send_pending_devise_notifications
   after_create_commit :trigger_webhooks
   after_create_commit :create_xmpp_credentials
-  before_destroy :remove_xmpp_credentials
 
   normalizes :locale, with: ->(locale) { I18n.available_locales.exclude?(locale.to_sym) ? nil : locale }
   normalizes :time_zone, with: ->(time_zone) { ActiveSupport::TimeZone[time_zone].nil? ? nil : time_zone }

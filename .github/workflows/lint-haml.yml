@@ -30,6 +30,9 @@ jobs:
           bundle config set --local frozen false
           bundle install --jobs 4
 
+      - name: Make haml-lint executable
+        run: chmod +x bin/haml-lint
+
       - name: Run haml-lint
         run: |
           echo "::add-matcher::.github/workflows/haml-lint-problem-matcher.json"

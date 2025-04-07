@@ -5,12 +5,21 @@ on:
     branches: [ main ]
   workflow_dispatch:
 
+# Add permissions for GitHub Actions
+permissions:
+  contents: write
+
 jobs:
   fix-dependencies:
     runs-on: ubuntu-latest
     
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Using PAT instead of GITHUB_TOKEN for better permissions
+          token: ${{ secrets.PERSONAL_ACCESS_TOKEN || secrets.GITHUB_TOKEN }}
+          persist-credentials: true
+          fetch-depth: 0
       
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
