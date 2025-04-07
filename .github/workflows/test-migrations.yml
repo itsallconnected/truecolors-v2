@@ -87,6 +87,14 @@ jobs:
           # Stand-alone script that doesn't require Rails to be loaded
           require 'fileutils'
 
+          # Add our own implementation of classify since we're not loading Rails
+          def classify(str)
+            # Convert timestamps like "20190511152737" to a class name
+            # Migration class names are typically based on the portion after the timestamp
+            # For this script we'll just capitalize each character segment
+            str.gsub(/(?:^|_)([a-z\d]*)/) { $1.capitalize }
+          end
+
           puts "Starting migration check..."
 
           # Known problematic timestamps - add any known duplicates here
@@ -129,14 +137,24 @@ jobs:
                 # Update class name in the file content
                 if File.exist?(file_path)
                   content = File.read(file_path)
-                  old_class_name = timestamp.classify
-                  new_class_name = new_timestamp.classify
-                  updated_content = content.gsub(old_class_name, new_class_name)
-                  
-                  # Write to new file and remove old file
-                  File.write(new_path, updated_content)
-                  File.delete(file_path)
-                  puts "  Updated class name from #{old_class_name} to #{new_class_name}"
+                  # Instead of using classify, extract the class name directly from the file
+                  if content =~ /class\s+(\w+)\s+</
+                    old_class_name = $1
+                    # Create a new class name by adding 1 to the end or incrementing a counter
+                    new_class_name = "#{old_class_name}1"
+                    
+                    puts "  Updating class name from #{old_class_name} to #{new_class_name}"
+                    updated_content = content.gsub(/class\s+#{old_class_name}\s+</, "class #{new_class_name} <")
+                    
+                    # Write to new file and remove old file
+                    File.write(new_path, updated_content)
+                    File.delete(file_path)
+                    puts "  Updated class name from #{old_class_name} to #{new_class_name}"
+                  else
+                    # Just rename without changing content if class name not found
+                    FileUtils.mv(file_path, new_path)
+                    puts "  Renamed file without changing content (class not found)"
+                  end
                 end
               end
             end
