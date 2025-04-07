@@ -64,7 +64,9 @@ module Truecolors
     def to_s
       components = [to_a.join('.')]
       components << "-#{prerelease}" if prerelease.present?
-      components << "+#{build_metadata}" components.join if build_metadata.present?
+      components << "+#{build_metadata}" if build_metadata.present?
+      components.join
+    end
 
     def gem_version
       @gem_version ||= Gem::Version.new(to_s.split('+')[0])
