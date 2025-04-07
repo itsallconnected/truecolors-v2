@@ -36,10 +36,10 @@ runs:
         # Manually create a wrapper script for Yarn if needed
         if ! which yarn | grep -q "corepack/yarn"; then
           mkdir -p ~/.local/bin
-          cat > ~/.local/bin/yarn <<EOL
+          cat > ~/.local/bin/yarn << 'EOFYARN'
 #!/bin/bash
-exec "$(which node)" "$(which corepack)" yarn "\$@"
-EOL
+exec "$(which node)" "$(which corepack)" yarn "$@"
+EOFYARN
           chmod +x ~/.local/bin/yarn
           export PATH="$HOME/.local/bin:$PATH"
         fi
