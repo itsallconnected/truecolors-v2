@@ -70,28 +70,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Ruby environment
-        uses: ./.github/actions/setup-ruby
-        with:
-          ruby-version: '3.2.2'
-
-      - name: Allow bundle modifications
-        run: |
-          bundle config set --local frozen false
-          bundle install --jobs 4
-
-      # Add our fix for duplicate migrations - using a comprehensive solution
+      # Add our fix for duplicate migrations as early as possible
       - name: Prevent duplicate migrations
         run: |
-          # Create a script to automatically detect and fix ALL duplicate migrations
-          cat > prevent_duplicate_migrations.rb << 'EOL'
+          echo "Scanning for and fixing duplicate migrations immediately after checkout..."
+          # Simple version that doesn't require Rails - run this BEFORE any Rails code is loaded
+          cat > fix_migrations.rb << 'EOL'
           #!/usr/bin/env ruby
-          # This script automatically detects and fixes duplicate migrations
-          
+          # Stand-alone script that doesn't require Rails to be loaded
           require 'fileutils'
+          
+          puts "Starting migration check..."
           
           # Get all migration files
           migration_files = Dir.glob(File.join('db', '**', '[0-9]*_*.rb'))
+          puts "Found #{migration_files.size} migration files"
           
           # Group by timestamp
           migrations_by_timestamp = {}
@@ -111,62 +104,42 @@ jobs:
           
           puts "Found #{duplicates.size} duplicate migrations to fix:"
           
-          # Create SQL file for ensuring migrations are marked as run
-          File.open('ensure_migrations.sql', 'w') do |sql|
-            sql.puts "CREATE TABLE IF NOT EXISTS schema_migrations (version varchar(255) PRIMARY KEY);"
+          # Process duplicates
+          duplicates.each do |timestamp, files|
+            puts "- Timestamp #{timestamp} has #{files.size} files:"
+            files.each { |f| puts "  * #{f}" }
             
-            duplicates.each do |timestamp, files|
-              puts "  Timestamp #{timestamp} has #{files.size} files:"
-              files.each { |f| puts "    - #{f}" }
-              
-              # Keep one file (preferring db/migrate/ over post_migrate)
-              files_to_keep = files.select { |f| f.include?('/migrate/') && !f.include?('/post_migrate/') }
-              file_to_keep = files_to_keep.first || files.first
-              puts "  Keeping: #{file_to_keep}"
-              
-              # Remove other duplicates
-              files_to_remove = files - [file_to_keep]
-              files_to_remove.each do |file|
-                puts "  Removing: #{file}"
-                File.delete(file) if File.exist?(file)
-              end
-              
-              # Add to SQL file
-              sql.puts "INSERT INTO schema_migrations (version) VALUES ('#{timestamp}') ON CONFLICT DO NOTHING;"
+            # Keep one file (preferring db/migrate/ over post_migrate)
+            files_to_keep = files.select { |f| f.include?('/migrate/') && !f.include?('/post_migrate/') }
+            file_to_keep = files_to_keep.first || files.first
+            
+            puts "  Keeping: #{file_to_keep}"
+            
+            # Remove other duplicates
+            files_to_remove = files - [file_to_keep]
+            files_to_remove.each do |file|
+              puts "  Removing: #{file}"
+              File.delete(file) if File.exist?(file)
             end
+            
+            puts "  Fixed duplicate: #{timestamp}"
           end
           
-          # Create rake task to execute the SQL after schema load
-          FileUtils.mkdir_p('lib/tasks')
-          File.open('lib/tasks/ensure_migrations.rake', 'w') do |f|
-            f.puts <<~RAKE
-              namespace :db do
-                task :ensure_migrations => :environment do
-                  if File.exist?('ensure_migrations.sql')
-                    puts "Ensuring migrations are properly recorded..."
-                    ActiveRecord::Base.connection.execute(File.read('ensure_migrations.sql'))
-                  end
-                end
-                
-                # Hook our task after schema load
-                %w(db:schema:load db:structure:load).each do |task|
-                  Rake::Task[task].enhance do
-                    Rake::Task["db:ensure_migrations"].invoke
-                  end
-                end
-              end
-            RAKE
-          end
-          
-          puts "Created ensure_migrations.sql and lib/tasks/ensure_migrations.rake"
-          puts "Duplicate migrations have been fixed!"
+          puts "All duplicate migrations have been fixed!"
           EOL
           
-          # Make it executable
-          chmod +x prevent_duplicate_migrations.rb
-          
-          # Run the script
-          ruby prevent_duplicate_migrations.rb
+          # Run the script immediately
+          ruby fix_migrations.rb
+
+      - name: Set up Ruby environment
+        uses: ./.github/actions/setup-ruby
+        with:
+          ruby-version: '3.2.2'
+
+      - name: Allow bundle modifications
+        run: |
+          bundle config set --local frozen false
+          bundle install --jobs 4
 
       - name: Ensure no errors with `db:prepare`
         run: |
