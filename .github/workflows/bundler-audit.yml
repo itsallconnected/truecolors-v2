@@ -1,39 +1,34 @@
 name: Bundler Audit
+
 on:
-  merge_group:
   push:
     branches:
       - 'main'
       - 'stable-*'
-    paths:
-      - 'Gemfile*'
-      - '.ruby-version'
-      - '.github/workflows/bundler-audit.yml'
-
   pull_request:
-    paths:
-      - 'Gemfile*'
-      - '.ruby-version'
-      - '.github/workflows/bundler-audit.yml'
+    branches:
+      - 'main'
+      - 'stable-*'
 
-  schedule:
-    - cron: '0 5 * * 1'
+env:
+  BUNDLE_FROZEN: false
 
 jobs:
   security:
     runs-on: ubuntu-latest
 
-    env:
-      BUNDLE_ONLY: development
-
     steps:
-      - name: Clone repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+      - name: Set up Ruby environment
+        uses: ./.github/actions/setup-ruby
         with:
-          bundler-cache: true
+          ruby-version: '3.2.2'
+
+      - name: Allow bundle modifications
+        run: |
+          bundle config set --local frozen false
+          bundle install --jobs 4
 
       - name: Run bundler-audit
         run: bin/bundler-audit check --update

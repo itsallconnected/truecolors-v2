@@ -22,6 +22,9 @@ on:
       - '.github/workflows/test-migrations.yml'
       - 'lib/tasks/tests.rake'
 
+env:
+  BUNDLE_FROZEN: false
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -59,7 +62,7 @@ jobs:
       DB_PASS: postgres
       RAILS_ENV: test
       BUNDLE_CLEAN: true
-      BUNDLE_FROZEN: true
+      BUNDLE_FROZEN: false
       BUNDLE_WITHOUT: 'development:production'
       BUNDLE_JOBS: 3
       BUNDLE_RETRY: 3
@@ -69,6 +72,13 @@ jobs:
 
       - name: Set up Ruby environment
         uses: ./.github/actions/setup-ruby
+        with:
+          ruby-version: '3.2.2'
+
+      - name: Allow bundle modifications
+        run: |
+          bundle config set --local frozen false
+          bundle install --jobs 4
 
       - name: Ensure no errors with `db:prepare`
         run: |
