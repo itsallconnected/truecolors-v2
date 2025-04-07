@@ -9,11 +9,11 @@ module Api
       # GET /api/v1/chat_rooms
       def index
         @chat_rooms = ChatRoom.where(public: true)
-                     .or(ChatRoom.where(creator_id: current_user.id))
-                     .order(created_at: :desc)
-                     .page(params[:page])
-                     .per(20)
-                     
+                             .or(ChatRoom.where(creator_id: current_user.id))
+                             .order(created_at: :desc)
+                             .page(params[:page])
+                             .per(20)
+                             
         render json: @chat_rooms, each_serializer: REST::ChatRoomSerializer
       end
       
@@ -42,10 +42,10 @@ module Api
         authorize @chat_room, :show?
         
         @messages = @chat_room.chat_messages
-                   .order(created_at: :desc)
-                   .page(params[:page])
-                   .per(20)
-                   
+                             .order(created_at: :desc)
+                             .page(params[:page])
+                             .per(20)
+                             
         render json: @messages, each_serializer: REST::ChatMessageSerializer
       end
       

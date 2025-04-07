@@ -160,7 +160,7 @@ Rails.application.configure do
   config.x.otp_secret = if ENV['SECRET_KEY_BASE_DUMMY']
                           SecureRandom.hex(64)
                         else
-                          ENV.fetch('OTP_SECRET')
+                          ENV.fetch('OTP_SECRET', SecureRandom.hex(32))
                         end
 
   # Enable DNS rebinding protection and other `Host` header attacks.

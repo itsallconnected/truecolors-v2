@@ -8,7 +8,7 @@ module Truecolors
   # - 12 bits of sequence number
   class Snowflake
     # The epoch for Truecolors IDs (January 1, 2016 UTC)
-    DEFAULT_EPOCH = 1451606400_000
+    DEFAULT_EPOCH = 1_451_606_400_000
 
     # Maximum worker ID (10 bits)
     MAX_WORKER_ID = 1023
@@ -20,7 +20,7 @@ module Truecolors
     # This is used during database initialization
     def self.define_timestamp_id
       # Define ID generation functions in the database
-      ActiveRecord::Base.connection.execute(<<~SQL)
+      ActiveRecord::Base.connection.execute(<<~SQL.squish)
         CREATE OR REPLACE FUNCTION timestamp_id(table_name text, id bigint DEFAULT NULL)
         RETURNS bigint AS $$
         DECLARE
@@ -47,7 +47,7 @@ module Truecolors
       # Check if the sequence already exists
       unless conn.execute("SELECT 1 FROM pg_class WHERE relname = 'timestamp_id_seq'").any?
         # Create a sequence for the timestamp ID
-        conn.execute("CREATE SEQUENCE timestamp_id_seq START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;")
+        conn.execute('CREATE SEQUENCE timestamp_id_seq START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;')
       end
     end
 
@@ -58,6 +58,7 @@ module Truecolors
     # @param epoch [Integer] Custom epoch in milliseconds
     def initialize(worker_id = 0, epoch = DEFAULT_EPOCH)
       raise ArgumentError, "Worker ID must be between 0 and #{MAX_WORKER_ID}" if worker_id.negative? || worker_id > MAX_WORKER_ID
+      
       @worker_id = worker_id
       @epoch = epoch
       @mutex = Mutex.new
@@ -77,9 +78,7 @@ module Truecolors
 
         if timestamp == @last_timestamp
           @sequence = (@sequence + 1) & MAX_SEQUENCE
-          if @sequence.zero?
-            timestamp = next_timestamp(@last_timestamp)
-          end
+          timestamp = next_timestamp(@last_timestamp) if @sequence.zero?
         else
           @sequence = 0
         end

@@ -6,7 +6,7 @@ Redis.sadd_returns_boolean = false
 if ENV['PRECOMPILING_ASSETS'] || ENV['CI'] || (defined?(Rake) && Rake.application.top_level_tasks.any? { |task| task.include?('assets:') })
   # Create a null Redis object without redefining the Redis class itself
   null_redis = Object.new.tap do |o|
-    def o.method_missing(method_name, *args)
+    def o.method_missing(method_name, *)
       # Return sensible defaults based on common Redis methods
       case method_name.to_s
       when /ping/
@@ -51,7 +51,7 @@ else
     end
   end
 
-  # Set Redis.current for backward compatibility without redefining Redis
+  # Set Redis.current for backward compatibility without redefining
   Redis.define_singleton_method(:current) do
     RedisConfiguration.redis
   end

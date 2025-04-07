@@ -74,7 +74,7 @@ module Truecolors
       {
         'experimental_features' => ENV.fetch('EXPERIMENTAL_FEATURES', ''),
         'features' => {
-          'xmpp' => true
+          'xmpp' => true,
         }
       }
     end
@@ -85,7 +85,7 @@ module Truecolors
       def features
         @features ||= {
           'chat' => true,
-          'xmpp' => true
+          'xmpp' => true,
         }
       end
       

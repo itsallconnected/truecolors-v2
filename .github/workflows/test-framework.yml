@@ -23,6 +23,17 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
       
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'yarn'
+      
+      - name: Enable Corepack for Yarn version management
+        run: |
+          corepack enable
+          corepack prepare yarn@4.7.0 --activate
+      
       - name: Install dependencies
         run: |
           bundle config set --local frozen false
@@ -52,6 +63,7 @@ jobs:
       NODE_ENV: production
       PRECOMPILING_ASSETS: true
       CI: true
+      OTP_SECRET: dummy-otp-secret-for-ci
       
     steps:
       - uses: actions/checkout@v4
@@ -66,6 +78,17 @@ jobs:
         with:
           ruby-version: '3.2.2'
           bundler-cache: true
+          
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'yarn'
+          
+      - name: Enable Corepack for Yarn version management
+        run: |
+          corepack enable
+          corepack prepare yarn@4.7.0 --activate
           
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript
@@ -116,6 +139,7 @@ jobs:
       DB_PASS: postgres
       PRECOMPILING_ASSETS: true
       CI: true
+      OTP_SECRET: dummy-otp-secret-for-ci
       
     steps:
       - uses: actions/checkout@v4
@@ -139,5 +163,6 @@ jobs:
       - name: Run db:prepare to test migrations
         run: |
           bin/rails db:create
+          bin/rails db:migrate:up VERSION=20250407100000 # Run fix_duplicate_migrations first
           bin/rails db:schema:load
           bin/rails db:migrate 
