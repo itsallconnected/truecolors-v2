@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - "main"
+  pull_request:
+    paths:
+      - "config/locales/**/*.yml"
   workflow_dispatch:
 
 permissions:
@@ -48,24 +51,39 @@ jobs:
       - name: Normalize files using i18n-tasks directly
         run: |
           echo "Normalizing locale files with i18n-tasks..."
-          i18n-tasks normalize
+          i18n-tasks normalize --keep-order --no-sort --line-width=999999
           echo "Normalization with i18n-tasks completed"
 
       - name: Verify normalization
         run: |
           echo "Verifying normalization..."
-          i18n-tasks check-normalized || (echo "::warning::Some files could not be fully normalized, but continuing" && exit 0)
+          i18n-tasks check-normalized --verbose || (echo "::warning::Some files could not be fully normalized, but continuing" && exit 0)
 
-      - name: Commit changes if any
+      - name: Check if there are changes
+        id: git-check
+        run: |
+          if [[ -n $(git status --porcelain) ]]; then
+            echo "changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "changes=false" >> $GITHUB_OUTPUT
+          fi
+
+      # For direct pushes to main
+      - name: Commit changes if any (main branch)
+        if: steps.git-check.outputs.changes == 'true' && github.event_name != 'pull_request'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action - i18n Normalizer"
-          
-          if git diff --name-only | grep -q "\.yml$"; then
-            echo "Changes detected, committing..."
-            git add config/locales/
-            git commit -m "Normalize ALL i18n YAML files [skip ci]"
-            git push || echo "::warning::Failed to push changes, but workflow will continue"
-          else
-            echo "No changes to commit"
-          fi 
+          git add config/locales/
+          git commit -m "Normalize ALL i18n YAML files [skip ci]"
+          git push || echo "::warning::Failed to push changes, but workflow will continue"
+      
+      # For pull requests
+      - name: Add changes to pull request
+        if: steps.git-check.outputs.changes == 'true' && github.event_name == 'pull_request'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action - i18n Normalizer"
+          git add config/locales/
+          git commit -m "Normalize i18n files"
+          git push 
