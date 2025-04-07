@@ -33,7 +33,8 @@ lad:
       help:
         native_redirect_uri: Utiliza %{native_redirect_uri} para provas lokalas
         redirect_uri: Uza una linya por URI
-        scopes: Separa los ambitos kon espasyos. Deshalo en blanko para kulanear los ambitos predeterminados.
+        scopes: Separa los ambitos kon espasyos. Deshalo en blanko para kulanear los
+          ambitos predeterminados.
       index:
         application: Aplikasyon
         callback_url: URL de callback
@@ -71,7 +72,9 @@ lad:
         revoke: Estas siguro?
       index:
         authorized_at: Autorizado el %{date}
-        description_html: Estas son las aplikasyones ke pueden akseder tu kuento uzando el API. Si ay aplikasyones aki las kualas no rekoneses, o unas ke no se komporten bien, puedes revokar sus akseso.
+        description_html: Estas son las aplikasyones ke pueden akseder tu kuento uzando
+          el API. Si ay aplikasyones aki las kualas no rekoneses, o unas ke no se
+          komporten bien, puedes revokar sus akseso.
         last_used_at: Ultimo uzo el %{date}
         never_used: Nunkua uzado
         scopes: Permisos
@@ -79,27 +82,43 @@ lad:
         title: Tus aplikasyones autorizadas
     errors:
       messages:
-        access_denied: El patron del rekurso o el sirvidor de autorizasyon refuzo tu solisitud.
-        credential_flow_not_configured: Las kredensyalas de kod del patron del rekurso no funksyonan porke Doorkeeper.configure.resource_owner_from_credentials no esta konfigurado.
-        invalid_client: La autentifikasyon del mushteri no reushida porke el mushteri no es konesido, no ay autentifikasyon del mushteri inkluyida, o el metodo de autentifikasyon no es suportada.
-        invalid_grant: La konsesyon de autorizasyon ofresida es invalida, kadukada, revokada, no koensida kon el URI de readreso utilizado en la solisitud de autorizasyon, o fue emitida para otro mushteri.
+        access_denied: El patron del rekurso o el sirvidor de autorizasyon refuzo
+          tu solisitud.
+        credential_flow_not_configured: Las kredensyalas de kod del patron del rekurso
+          no funksyonan porke Doorkeeper.configure.resource_owner_from_credentials
+          no esta konfigurado.
+        invalid_client: La autentifikasyon del mushteri no reushida porke el mushteri
+          no es konesido, no ay autentifikasyon del mushteri inkluyida, o el metodo
+          de autentifikasyon no es suportada.
+        invalid_grant: La konsesyon de autorizasyon ofresida es invalida, kadukada,
+          revokada, no koensida kon el URI de readreso utilizado en la solisitud de
+          autorizasyon, o fue emitida para otro mushteri.
         invalid_redirect_uri: El URI de readreso inkluydo no es valido.
         invalid_request:
           missing_param: 'Parametro rekerido no topado: %{value}.'
-          request_not_authorized: Solisitud deve ser autorizada. Parametro rekerido para autorizar la solisitud no topado o no valido.
-          unknown: La solisitud no tiene un parametro rekerido, inkluye una valuta de parametro no suportada o es yerrado de otra forma.
-        invalid_resource_owner: Las kredensyalas de patron del rekurso no son validas o patron del rekurso no topado
+          request_not_authorized: Solisitud deve ser autorizada. Parametro rekerido
+            para autorizar la solisitud no topado o no valido.
+          unknown: La solisitud no tiene un parametro rekerido, inkluye una valuta
+            de parametro no suportada o es yerrado de otra forma.
+        invalid_resource_owner: Las kredensyalas de patron del rekurso no son validas
+          o patron del rekurso no topado
         invalid_scope: El ambito pedido es invalido, no konesido o yerrado.
         invalid_token:
           expired: El token de akseso tiene kadukado
           revoked: El token de akseso fue revokado
           unknown: El token de akseso no es valido
-        resource_owner_authenticator_not_configured: El patron del rekurso no topado porke Doorkeeper.configure.resource_owner_authenticator no esta konfigurado.
-        server_error: El sirvidor de autorizasyon topo una kondisyon no ekspektada ke no le permite kumplir kon la solisitud.
-        temporarily_unavailable: El sirvidor de autorizasyon agora no puede realizar la solisitud porke el sirvidor esta sobrekargado o basho mantenimiento.
-        unauthorized_client: El mushteri no esta autorizado para realizar esta solisitud uzando este metodo.
-        unsupported_grant_type: El tipo de konsesyon de autorizasyon no esta suportado por el sirvidor de autentifikasyon.
-        unsupported_response_type: El sirvidor de autorizasyon no suporta este tipo de repuesta.
+        resource_owner_authenticator_not_configured: El patron del rekurso no topado
+          porke Doorkeeper.configure.resource_owner_authenticator no esta konfigurado.
+        server_error: El sirvidor de autorizasyon topo una kondisyon no ekspektada
+          ke no le permite kumplir kon la solisitud.
+        temporarily_unavailable: El sirvidor de autorizasyon agora no puede realizar
+          la solisitud porke el sirvidor esta sobrekargado o basho mantenimiento.
+        unauthorized_client: El mushteri no esta autorizado para realizar esta solisitud
+          uzando este metodo.
+        unsupported_grant_type: El tipo de konsesyon de autorizasyon no esta suportado
+          por el sirvidor de autentifikasyon.
+        unsupported_response_type: El sirvidor de autorizasyon no suporta este tipo
+          de repuesta.
     flash:
       applications:
         create:
@@ -149,18 +168,24 @@ lad:
     scopes:
       admin:read: meldar todos los datos en el sirvidor
       admin:read:accounts: meldar informasyon sensivle en todos los kuentos
-      admin:read:canonical_email_blocks: meldar informasyon sensivle de todos blokos kanonikos de posta
+      admin:read:canonical_email_blocks: meldar informasyon sensivle de todos blokos
+        kanonikos de posta
       admin:read:domain_allows: meldar informasyon sensivle de todos los domenos permitidos
-      admin:read:domain_blocks: meldar informasyon sensivle de todos los blokos de domeno
-      admin:read:email_domain_blocks: meldar informasyon sensivle de todos los blokos de domenos de posta
+      admin:read:domain_blocks: meldar informasyon sensivle de todos los blokos de
+        domeno
+      admin:read:email_domain_blocks: meldar informasyon sensivle de todos los blokos
+        de domenos de posta
       admin:read:ip_blocks: meldar informasyon sensivle de todos los blokos de IP
-      admin:read:reports: meldar informasyon sensivle de todos los raportos i kuentos raportados
+      admin:read:reports: meldar informasyon sensivle de todos los raportos i kuentos
+        raportados
       admin:write: modifikar todos los datos en el sirvidor
       admin:write:accounts: fazer aksyones de moderasyon en kuentos
-      admin:write:canonical_email_blocks: fazer aksyones de moderasyon en blokos kanonikos de posta
+      admin:write:canonical_email_blocks: fazer aksyones de moderasyon en blokos kanonikos
+        de posta
       admin:write:domain_allows: fazer aksyones de moderasyon en domenos permitidos
       admin:write:domain_blocks: fazer aksyones de moderasyon en blokos de domeno
-      admin:write:email_domain_blocks: fazer aksyones de moderasyon en blokos de domenos de posta
+      admin:write:email_domain_blocks: fazer aksyones de moderasyon en blokos de domenos
+        de posta
       admin:write:ip_blocks: fazer aksyones de moderasyon en blokos de IP
       admin:write:reports: fazer aksyones de moderasyon en raportos
       crypto: kulanear shifrasyon de lado a lado

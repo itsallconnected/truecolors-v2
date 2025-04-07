@@ -24,7 +24,8 @@ fy:
         account:
           attributes:
             fields:
-              fields_with_values_missing_labels: befettet wearden mei ûntbrekkende labels
+              fields_with_values_missing_labels: befettet wearden mei ûntbrekkende
+                labels
             username:
               invalid: mei allinnich letters, nûmers en ûnderstreekjes befetsje
               reserved: reservearre
@@ -68,4 +69,5 @@ fy:
         webhook:
           attributes:
             events:
-              invalid_permissions: kin gjin barrens befetsje dêr’t jo gjin rjochten foar hawwe
+              invalid_permissions: kin gjin barrens befetsje dêr’t jo gjin rjochten
+                foar hawwe

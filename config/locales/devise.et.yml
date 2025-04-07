@@ -3,8 +3,12 @@ et:
   devise:
     confirmations:
       confirmed: Sinu e-postiaadress on edukalt kinnitatud.
-      send_instructions: Saad paari minuti pärast juhistega e-kirja, kuidas oma e-posti aadress kinnitada. Palun kontrolli oma rämpsposti kausta, kui selline e-kiri ei saabunud.
-      send_paranoid_instructions: Kui sinu e-postiaadress on meie andmebaasis, saad paari minuti pärast juhistega e-kirja, kuidas oma e-posti aadress kinnitada. Palun kontrolli oma rämpsposti kausta, kui selline e-kiri ei saabunud.
+      send_instructions: Saad paari minuti pärast juhistega e-kirja, kuidas oma e-posti
+        aadress kinnitada. Palun kontrolli oma rämpsposti kausta, kui selline e-kiri
+        ei saabunud.
+      send_paranoid_instructions: Kui sinu e-postiaadress on meie andmebaasis, saad
+        paari minuti pärast juhistega e-kirja, kuidas oma e-posti aadress kinnitada.
+        Palun kontrolli oma rämpsposti kausta, kui selline e-kiri ei saabunud.
     failure:
       already_authenticated: Oled juba sisse loginud.
       inactive: Sinu konto pole veel aktiveeritud.
@@ -21,30 +25,46 @@ et:
       confirmation_instructions:
         action: Kinnita e-postiaadress
         action_with_app: Kinnita ja naase %{app}
-        explanation: Oled loonud %{host} konto selle e-postiaadressiga. Oled konto aktiveerimisest ühe kliki kaugusel. Kui see polnud sina, palun eira seda kirja.
-        explanation_when_pending: "Selle e-postiaadressiga on esitatud taotlus saada %{host} kasutajaks. E-postiaadress vajab kinnitamist. Pärast seda vaatame me taotluse üle. Saad siseneda, et oma andmeid muuta või konto kustutada, aga enamustele tegevustele ei pääse enne ligi, kui konto on meie moderaatorite poolt kinnitatud. Kui konto on kinnitatud, saabub selle kohta eraldi e-kiri.\nKui taotlus lükatakse aga tagasi, kustutatakse ka andmed ja mingit järeltegevust pole vaja. \nKui see polnud sina, siis palume seda kirja eirata."
-        extra_html: Palun tutvu <a href="%{terms_path}">meie serveri reeglitega</a> ning <a href="%{policy_path}">meie kasutustingimustega</a>.
+        explanation: Oled loonud %{host} konto selle e-postiaadressiga. Oled konto
+          aktiveerimisest ühe kliki kaugusel. Kui see polnud sina, palun eira seda
+          kirja.
+        explanation_when_pending: "Selle e-postiaadressiga on esitatud taotlus saada
+          %{host} kasutajaks. E-postiaadress vajab kinnitamist. Pärast seda vaatame
+          me taotluse üle. Saad siseneda, et oma andmeid muuta või konto kustutada,
+          aga enamustele tegevustele ei pääse enne ligi, kui konto on meie moderaatorite
+          poolt kinnitatud. Kui konto on kinnitatud, saabub selle kohta eraldi e-kiri.\nKui
+          taotlus lükatakse aga tagasi, kustutatakse ka andmed ja mingit järeltegevust
+          pole vaja. \nKui see polnud sina, siis palume seda kirja eirata."
+        extra_html: Palun tutvu <a href="%{terms_path}">meie serveri reeglitega</a>
+          ning <a href="%{policy_path}">meie kasutustingimustega</a>.
         subject: 'Truecolors: %{instance} kinnitamisjuhised'
         title: Kinnita e-postiaadress
       email_changed:
         explanation: 'Sinu konto e-postiaadress muudetakse:'
-        extra: Kui sa ei muutnud oma e-posti, on tõenäoline, et kellelgi on ligipääs su kontole. Palun muuda koheselt oma salasõna. Kui oled aga oma kontost välja lukustatud, võta ühendust oma serveri administraatoriga.
+        extra: Kui sa ei muutnud oma e-posti, on tõenäoline, et kellelgi on ligipääs
+          su kontole. Palun muuda koheselt oma salasõna. Kui oled aga oma kontost
+          välja lukustatud, võta ühendust oma serveri administraatoriga.
         subject: 'Truecolors: e-post muudetud'
         title: Uus e-postiaadress
       password_change:
         explanation: Konto salasõna on vahetatud.
-        extra: Kui sa ei muutnud oma salasõna, on tõenäoline, et keegi on su kontole ligi pääsenud. Palun muuda viivitamata oma salasõna. Kui sa oma kontole ligi ei pääse, võta ühendust serveri haldajaga.
+        extra: Kui sa ei muutnud oma salasõna, on tõenäoline, et keegi on su kontole
+          ligi pääsenud. Palun muuda viivitamata oma salasõna. Kui sa oma kontole
+          ligi ei pääse, võta ühendust serveri haldajaga.
         subject: 'Truecolors: salasõna muudetud'
         title: Salasõna muudetud
       reconfirmation_instructions:
         explanation: Kinnita uus aadress, et oma e-posti aadress muuta.
-        extra: Kui see muudatus pole sinu poolt algatatud, palun eira seda kirja. Selle Truecolorsi konto e-postiaadress ei muutu enne, kui vajutad üleval olevale lingile.
+        extra: Kui see muudatus pole sinu poolt algatatud, palun eira seda kirja.
+          Selle Truecolorsi konto e-postiaadress ei muutu enne, kui vajutad üleval
+          olevale lingile.
         subject: 'Truecolors: kinnita e-postiaadress %{instance} jaoks'
         title: Kinnita e-postiaadress
       reset_password_instructions:
         action: Salasõna muutmine
         explanation: Kontole on küsitud uut salasõna.
-        extra: Kui see tuleb üllatusena, võib seda kirja eirata. Salasõna ei muutu enne ülaoleva lingi külastamist ja uue salasõna määramist.
+        extra: Kui see tuleb üllatusena, võib seda kirja eirata. Salasõna ei muutu
+          enne ülaoleva lingi külastamist ja uue salasõna määramist.
         subject: 'Truecolors: salasõna lähtestamisjuhendid'
         title: Salasõna lähtestamine
       two_factor_disabled:
@@ -53,7 +73,8 @@ et:
         subtitle: Kaheastmeline autoriseerimine on sinu konto jaoks nüüd välja lülitatud.
         title: 2FA keelatud
       two_factor_enabled:
-        explanation: Sisenemiseks on vaja seotud kaheastmelise autoriseerimise äpi genereeritud võtit.
+        explanation: Sisenemiseks on vaja seotud kaheastmelise autoriseerimise äpi
+          genereeritud võtit.
         subject: 'Truecolors: kaheastmeline autentimine sisse lülitatud'
         subtitle: Sinu konto jaoks on kaheastmeline autoriseerimine sisse lülitatud.
         title: 2FA lubatud
@@ -75,7 +96,8 @@ et:
           title: Üks sinu turvavõtmetest on kustutatud
       webauthn_disabled:
         explanation: Turvavõtmega autoriseerimine on sinu konto jaoks välja lülitatud.
-        extra: Sisenemine on nüüd võimalik vaid seotud kaheastmelise autoriseerimise äpi genereeritud võtmega.
+        extra: Sisenemine on nüüd võimalik vaid seotud kaheastmelise autoriseerimise
+          äpi genereeritud võtmega.
         subject: 'Truecolors: autentimine turvavõtmega on välja lülitatud'
         title: Turvavõtmed on välja lülitatud
       webauthn_enabled:
@@ -87,27 +109,42 @@ et:
       failure: Ei saanud sind tuvastada %{kind} kaudu, kuna "%{reason}".
       success: Tuvastamine %{kind} konto järgi õnnestus.
     passwords:
-      no_token: Sellele leheküljele ei pääse tulemata salasõna lähtestamise e-kirjast. Kui tuled salasõna lähtestamise e-kirjast, palun veendu, et kasutasid tervet saadetud URLi.
-      send_instructions: Kui sinu e-postiaadress on meie andmebaasis, saad paari minuti pärast juhistega e-kirja, kuidas oma salasõna taastada. Palun kontrolli rämpsposti kausta, kui selline e-kiri ei saabunud.
-      send_paranoid_instructions: Kui sinu e-postiaadress on meie andmebaasis, saad paari minuti pärast juhistega e-kirja, kuidas oma salasõna taastada. Palun kontrolli rämpsposti kausta, kui selline e-kiri ei saabunud.
+      no_token: Sellele leheküljele ei pääse tulemata salasõna lähtestamise e-kirjast.
+        Kui tuled salasõna lähtestamise e-kirjast, palun veendu, et kasutasid tervet
+        saadetud URLi.
+      send_instructions: Kui sinu e-postiaadress on meie andmebaasis, saad paari minuti
+        pärast juhistega e-kirja, kuidas oma salasõna taastada. Palun kontrolli rämpsposti
+        kausta, kui selline e-kiri ei saabunud.
+      send_paranoid_instructions: Kui sinu e-postiaadress on meie andmebaasis, saad
+        paari minuti pärast juhistega e-kirja, kuidas oma salasõna taastada. Palun
+        kontrolli rämpsposti kausta, kui selline e-kiri ei saabunud.
       updated: Salasõna muutmine õnnestus. Oled nüüd sisse logitud.
       updated_not_active: Sinu salasõna muutmine õnnestus.
     registrations:
-      destroyed: Nägemist! Sinu konto sulgemine õnnestus. Me loodame sind varsti taas näha.
-      update_needs_confirmation: Konto uuendamine õnnestus, kuid e-postiaadress tuleb veel kinnitada. Palun kontrolli oma e-posti ning järgi kirjas olevat kinnituslinki, et e-postiaadress kinnitada. Palun kontrolli rämpspostikausta, kui selline kiri ei saabunud.
+      destroyed: Nägemist! Sinu konto sulgemine õnnestus. Me loodame sind varsti taas
+        näha.
+      update_needs_confirmation: Konto uuendamine õnnestus, kuid e-postiaadress tuleb
+        veel kinnitada. Palun kontrolli oma e-posti ning järgi kirjas olevat kinnituslinki,
+        et e-postiaadress kinnitada. Palun kontrolli rämpspostikausta, kui selline
+        kiri ei saabunud.
       updated: Konto uuendamine õnnestus.
     sessions:
       already_signed_out: Väljumine õnnestus.
       signed_in: Sisenemine õnnestus.
       signed_out: Väljumine õnnestus.
     unlocks:
-      send_instructions: Saad paari minuti pärast juhistega e-kirja, kuidas oma konto lukust lahti teha. Palun kontrolli oma rämpsposti kausta, kui selline kiri ei saabunud.
-      send_paranoid_instructions: Kui konto on olemas, saabub paari minuti pärast e-kiri juhistega, kuidas konto lukust lahti teha. Palun kontrolli rämpsposti kausta, kui selline e-kiri ei saabunud.
+      send_instructions: Saad paari minuti pärast juhistega e-kirja, kuidas oma konto
+        lukust lahti teha. Palun kontrolli oma rämpsposti kausta, kui selline kiri
+        ei saabunud.
+      send_paranoid_instructions: Kui konto on olemas, saabub paari minuti pärast
+        e-kiri juhistega, kuidas konto lukust lahti teha. Palun kontrolli rämpsposti
+        kausta, kui selline e-kiri ei saabunud.
       unlocked: Sinu konto avamine õnnestus. Jätkamiseks palun logi sisse.
   errors:
     messages:
       already_confirmed: on juba kinnitatud, palun proovi sisse logida
-      confirmation_period_expired: peab olema kinnitatud ajavahemikus %{period}, palun taotle uuesti
+      confirmation_period_expired: peab olema kinnitatud ajavahemikus %{period}, palun
+        taotle uuesti
       expired: on aegunud, palun taotle uuesti
       not_found: ei leitud
       not_locked: ei olnud lukustatud

@@ -66,7 +66,8 @@ fi:
           attributes:
             permissions_as_keys:
               dangerous: sisällytä käyttöoikeuksia, jotka eivät ole turvallisia perusroolille
-              elevated: ei voi sisältää käyttöoikeuksia, joita nykyisellä roolillasi ei ole
+              elevated: ei voi sisältää käyttöoikeuksia, joita nykyisellä roolillasi
+                ei ole
               own_role: ei voi muuttaa nykyisellä roolillasi
             position:
               elevated: ei voi olla korkeampi kuin nykyinen roolisi
@@ -74,4 +75,5 @@ fi:
         webhook:
           attributes:
             events:
-              invalid_permissions: ei voi sisältää tapahtumia, joihin sinulla ei ole oikeuksia
+              invalid_permissions: ei voi sisältää tapahtumia, joihin sinulla ei ole
+                oikeuksia

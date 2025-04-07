@@ -33,7 +33,8 @@ tr:
       help:
         native_redirect_uri: Yerel testler için %{native_redirect_uri} kullanın
         redirect_uri: URL başına tek satır kullanın
-        scopes: Kapsamları boşluklarla ayırın. Varsayılan kapsamları kullanmak için boş bırakın.
+        scopes: Kapsamları boşluklarla ayırın. Varsayılan kapsamları kullanmak için
+          boş bırakın.
       index:
         application: Uygulama
         callback_url: Geri Dönüş bağlantısı
@@ -60,7 +61,8 @@ tr:
       error:
         title: Bir hata oluştu
       new:
-        prompt_html: "%{client_name} hesabınıze erişmek için izin istiyor. <strong>Bu isteği sadece bu kaynağı tanıyor ve güveniyorsanız onaylayın.</strong>"
+        prompt_html: "%{client_name} hesabınıze erişmek için izin istiyor. <strong>Bu
+          isteği sadece bu kaynağı tanıyor ve güveniyorsanız onaylayın.</strong>"
         review_permissions: İzinleri incele
         title: İzin gerekli
       show:
@@ -72,7 +74,9 @@ tr:
         revoke: Emin misiniz?
       index:
         authorized_at: "%{date} tarihinde onaylandı"
-        description_html: Bunlar, API aracılığıyla hesabınıza erişebilen uygulamalardır. Eğer burada tanımadığınız uygulamalar veya kötü davranan bir uygulama var, erişimini kaldırabilirsiniz.
+        description_html: Bunlar, API aracılığıyla hesabınıza erişebilen uygulamalardır.
+          Eğer burada tanımadığınız uygulamalar veya kötü davranan bir uygulama var,
+          erişimini kaldırabilirsiniz.
         last_used_at: En son %{date} tarihinde kullanıldı
         never_used: Hiç kullanılmadı
         scopes: İzinler
@@ -81,26 +85,41 @@ tr:
     errors:
       messages:
         access_denied: Kaynak sahibi veya yetkilendirme sunucusu isteği reddetti.
-        credential_flow_not_configured: Kaynak Sahibi Parolası Kimlik Bilgileri akışı Doorkeeper.configure.resource_owner_from_credentials 'ın yapılandırılmamış olması nedeniyle başarısız oldu.
-        invalid_client: İstemcinin kimlik doğrulaması bilinmeyen istemci, istemci kimlik doğrulamasının dahil olmaması veya desteklenmeyen kimlik doğrulama yöntemi nedeniyle başarısız oldu.
+        credential_flow_not_configured: Kaynak Sahibi Parolası Kimlik Bilgileri akışı
+          Doorkeeper.configure.resource_owner_from_credentials 'ın yapılandırılmamış
+          olması nedeniyle başarısız oldu.
+        invalid_client: İstemcinin kimlik doğrulaması bilinmeyen istemci, istemci
+          kimlik doğrulamasının dahil olmaması veya desteklenmeyen kimlik doğrulama
+          yöntemi nedeniyle başarısız oldu.
         invalid_code_challenge_method: Kod zorluk metodu S256 olmalı, düz yöntem desteklenmiyor.
-        invalid_grant: Sağlanan yetkilendirme izni geçersiz, süresi dolmuş, iptal edilmiş, yetkilendirme isteğinde kullanılan yönlendirme URL'siyle eşleşmiyor veya başka bir istemciye verilmiş.
+        invalid_grant: Sağlanan yetkilendirme izni geçersiz, süresi dolmuş, iptal
+          edilmiş, yetkilendirme isteğinde kullanılan yönlendirme URL'siyle eşleşmiyor
+          veya başka bir istemciye verilmiş.
         invalid_redirect_uri: Dahil edilmiş yönlendirme uri'si geçersiz.
         invalid_request:
           missing_param: 'Gerekli parametre eksik: %{value}.'
-          request_not_authorized: İsteğin yetkilendirilmesi gerekiyor. İsteği yetkilendirmek için gereken parametre eksik veya geçersiz.
-          unknown: İstekte gerekli bir parametre eksik, desteklenmeyen bir parametre değeri içeriyor veya aksi durumda hatalı biçimlendirilmiş.
-        invalid_resource_owner: Sağlanan kaynak sahibi kimlik bilgileri geçerli değil veya kaynak sahibi bulunamıyor
-        invalid_scope: İstenen kapsam geçersiz, bilinmeyen veya hatalı biçimlendirilmiş olabilir.
+          request_not_authorized: İsteğin yetkilendirilmesi gerekiyor. İsteği yetkilendirmek
+            için gereken parametre eksik veya geçersiz.
+          unknown: İstekte gerekli bir parametre eksik, desteklenmeyen bir parametre
+            değeri içeriyor veya aksi durumda hatalı biçimlendirilmiş.
+        invalid_resource_owner: Sağlanan kaynak sahibi kimlik bilgileri geçerli değil
+          veya kaynak sahibi bulunamıyor
+        invalid_scope: İstenen kapsam geçersiz, bilinmeyen veya hatalı biçimlendirilmiş
+          olabilir.
         invalid_token:
           expired: Erişim belirtecinin süresi doldu
           revoked: Erişim belirteci iptal edildi
           unknown: Erişim belirteci geçersiz
-        resource_owner_authenticator_not_configured: Kaynak Sahibi yapılandırılmamış Doorkeeper.configure.resource_owner_authenticator nedeniyle başarısız oldu.
-        server_error: Yetkilendirme sunucunun isteği yerine getirmesini engelleyen beklenmeyen bir koşulla karşılaştı.
-        temporarily_unavailable: Yetkilendirme sunucusu şu anda sunucunun geçici bir aşırı yüklenmesi veya bakımı nedeniyle isteği yerine getiremiyor.
-        unauthorized_client: İstemci bu yöntemi kullanarak bu isteği gerçekleştirmek için yetkili değil.
-        unsupported_grant_type: Yetkilendirme izni türü, yetkilendirme sunucusu tarafından desteklenmiyor.
+        resource_owner_authenticator_not_configured: Kaynak Sahibi yapılandırılmamış
+          Doorkeeper.configure.resource_owner_authenticator nedeniyle başarısız oldu.
+        server_error: Yetkilendirme sunucunun isteği yerine getirmesini engelleyen
+          beklenmeyen bir koşulla karşılaştı.
+        temporarily_unavailable: Yetkilendirme sunucusu şu anda sunucunun geçici bir
+          aşırı yüklenmesi veya bakımı nedeniyle isteği yerine getiremiyor.
+        unauthorized_client: İstemci bu yöntemi kullanarak bu isteği gerçekleştirmek
+          için yetkili değil.
+        unsupported_grant_type: Yetkilendirme izni türü, yetkilendirme sunucusu tarafından
+          desteklenmiyor.
         unsupported_response_type: Yetkilendirme sunucusu bu yanıt türünü desteklemiyor.
     flash:
       applications:
@@ -151,18 +170,23 @@ tr:
     scopes:
       admin:read: sunucudaki tüm verileri okuma
       admin:read:accounts: tüm hesapların hassas bilgilerini okuma
-      admin:read:canonical_email_blocks: tüm kurallı e-posta engellerinin hassas bilgilerini okuma
+      admin:read:canonical_email_blocks: tüm kurallı e-posta engellerinin hassas bilgilerini
+        okuma
       admin:read:domain_allows: tüm alan adı izinlerinin hassas bilgilerini okuma
       admin:read:domain_blocks: tüm alan adı engellerinin hassas bilgilerini okuma
-      admin:read:email_domain_blocks: tüm e-posta alan adı engellerinin hassas bilgilerini okuma
+      admin:read:email_domain_blocks: tüm e-posta alan adı engellerinin hassas bilgilerini
+        okuma
       admin:read:ip_blocks: tüm IP engellerinin hassas bilgilerini okuma
-      admin:read:reports: tüm raporların ve raporlanan hesapların hassas bilgilerini okuma
+      admin:read:reports: tüm raporların ve raporlanan hesapların hassas bilgilerini
+        okuma
       admin:write: sunucudaki tüm verileri değiştirin
       admin:write:accounts: hesaplarda denetleme eylemleri gerçekleştirin
-      admin:write:canonical_email_blocks: kurallı e-posta engellemeleri için denetleme eylemleri gerçekleştirin
+      admin:write:canonical_email_blocks: kurallı e-posta engellemeleri için denetleme
+        eylemleri gerçekleştirin
       admin:write:domain_allows: alan adı izinleri için denetleme eylemleri gerçekleştirin
       admin:write:domain_blocks: alan adı engellemeleri için denetleme eylemleri gerçekleştirin
-      admin:write:email_domain_blocks: e-posta alan adı engellemeleri için denetleme eylemleri gerçekleştirin
+      admin:write:email_domain_blocks: e-posta alan adı engellemeleri için denetleme
+        eylemleri gerçekleştirin
       admin:write:ip_blocks: ıp blokları üzerinde moderasyon eylemleri gerçekleştir
       admin:write:reports: raporlarda denetleme eylemleri gerçekleştirin
       crypto: uçtan uca şifreleme kullan

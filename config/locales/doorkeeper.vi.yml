@@ -60,7 +60,8 @@ vi:
       error:
         title: Một lỗi đã xảy ra
       new:
-        prompt_html: "%{client_name} cần được bạn cho phép truy cập vào tài khoản. <strong>Cho phép nếu bạn tin tưởng ứng dụng này.</strong>"
+        prompt_html: "%{client_name} cần được bạn cho phép truy cập vào tài khoản.
+          <strong>Cho phép nếu bạn tin tưởng ứng dụng này.</strong>"
         review_permissions: Quyền truy cập
         title: Yêu cầu truy cập
       show:
@@ -72,7 +73,9 @@ vi:
         revoke: Bạn có chắc không?
       index:
         authorized_at: Cho phép vào %{date}
-        description_html: Đây là những ứng dụng có thể truy cập tài khoản của bạn bằng API. Nếu có ứng dụng bạn không nhận ra ở đây hoặc ứng dụng hoạt động sai, bạn có thể thu hồi quyền truy cập của ứng dụng đó.
+        description_html: Đây là những ứng dụng có thể truy cập tài khoản của bạn
+          bằng API. Nếu có ứng dụng bạn không nhận ra ở đây hoặc ứng dụng hoạt động
+          sai, bạn có thể thu hồi quyền truy cập của ứng dụng đó.
         last_used_at: Dùng lần cuối %{date}
         never_used: Chưa dùng
         scopes: Quyền cho phép
@@ -81,27 +84,43 @@ vi:
     errors:
       messages:
         access_denied: Chủ sở hữu tài nguyên hoặc máy chủ đã từ chối yêu cầu.
-        credential_flow_not_configured: Resource Owner Password Credentials không thành công do Doorkeeper.configure.resource_owner_from_credentials không được định cấu hình.
-        invalid_client: Xác minh ứng dụng khách không thành công do máy khách mơ hồ, không bao gồm xác thực ứng dụng khách hoặc phương thức xác thực không được hỗ trợ.
-        invalid_code_challenge_method: Phương pháp thử thách mã phải là S256, phương pháp plain không được hỗ trợ.
-        invalid_grant: Yêu cầu không hợp lệ, hết hạn, bị gỡ hoặc không khớp với tài khoản đã cấp phép. Hoặc xung đột với ứng dụng khác.
+        credential_flow_not_configured: Resource Owner Password Credentials không
+          thành công do Doorkeeper.configure.resource_owner_from_credentials không
+          được định cấu hình.
+        invalid_client: Xác minh ứng dụng khách không thành công do máy khách mơ hồ,
+          không bao gồm xác thực ứng dụng khách hoặc phương thức xác thực không được
+          hỗ trợ.
+        invalid_code_challenge_method: Phương pháp thử thách mã phải là S256, phương
+          pháp plain không được hỗ trợ.
+        invalid_grant: Yêu cầu không hợp lệ, hết hạn, bị gỡ hoặc không khớp với tài
+          khoản đã cấp phép. Hoặc xung đột với ứng dụng khác.
         invalid_redirect_uri: URL chuyển hướng không hợp lệ.
         invalid_request:
           missing_param: 'Thiếu tham số bắt buộc: %{value}.'
-          request_not_authorized: Yêu cầu cần được cho phép trước. Tham số bắt buộc bị thiếu hoặc vô giá trị.
-          unknown: Thiếu tham số bắt buộc. Có thể giá trị tham số không được hỗ trợ, hoặc không đúng định dạng.
-        invalid_resource_owner: Thông tin xác minh chủ sở hữu tài nguyên được cung cấp không hợp lệ hoặc không thể tìm thấy chủ sở hữu tài nguyên
+          request_not_authorized: Yêu cầu cần được cho phép trước. Tham số bắt buộc
+            bị thiếu hoặc vô giá trị.
+          unknown: Thiếu tham số bắt buộc. Có thể giá trị tham số không được hỗ trợ,
+            hoặc không đúng định dạng.
+        invalid_resource_owner: Thông tin xác minh chủ sở hữu tài nguyên được cung
+          cấp không hợp lệ hoặc không thể tìm thấy chủ sở hữu tài nguyên
         invalid_scope: Quyền yêu cầu không hợp lệ, không có thật hoặc sai định dạng.
         invalid_token:
           expired: Mã thông báo truy cập đã hết hạn
           revoked: Mã token đăng nhập đã bị hủy
           unknown: Mã thông báo truy cập không hợp lệ
-        resource_owner_authenticator_not_configured: Chủ sở hữu tài nguyên tìm thấy thất bại do Doorkeeper.configure.resource_owner_authenticator không được định cấu hình.
-        server_error: Có một điều kiện không thể chấp nhận khiến máy chủ không thực hiện yêu cầu.
-        temporarily_unavailable: Máy chủ này hiện không thể xử lý yêu cầu do đang quá tải hoặc bảo trì.
-        unauthorized_client: Khách hàng không được phép thực hiện yêu cầu này bằng phương pháp này.
-        unsupported_grant_type: Máy chủ này không cho phép ứng dụng có quyền truy cập.
-        unsupported_response_type: Máy chủ không hỗ trợ kiểu giao thức truyền thông này.
+        resource_owner_authenticator_not_configured: Chủ sở hữu tài nguyên tìm thấy
+          thất bại do Doorkeeper.configure.resource_owner_authenticator không được
+          định cấu hình.
+        server_error: Có một điều kiện không thể chấp nhận khiến máy chủ không thực
+          hiện yêu cầu.
+        temporarily_unavailable: Máy chủ này hiện không thể xử lý yêu cầu do đang
+          quá tải hoặc bảo trì.
+        unauthorized_client: Khách hàng không được phép thực hiện yêu cầu này bằng
+          phương pháp này.
+        unsupported_grant_type: Máy chủ này không cho phép ứng dụng có quyền truy
+          cập.
+        unsupported_response_type: Máy chủ không hỗ trợ kiểu giao thức truyền thông
+          này.
     flash:
       applications:
         create:
@@ -151,18 +170,22 @@ vi:
     scopes:
       admin:read: đọc mọi dữ liệu trên máy chủ
       admin:read:accounts: đọc thông tin nhạy cảm của mọi tài khoản
-      admin:read:canonical_email_blocks: đọc thông tin nhạy cảm của mọi khối email biến thể
+      admin:read:canonical_email_blocks: đọc thông tin nhạy cảm của mọi khối email
+        biến thể
       admin:read:domain_allows: đọc thông tin nhạy cảm của mọi máy chủ liên hợp
       admin:read:domain_blocks: đọc thông tin nhạy cảm của mọi máy chủ chặn
-      admin:read:email_domain_blocks: đọc thông tin nhạy cảm của mọi tên miền email chặn
+      admin:read:email_domain_blocks: đọc thông tin nhạy cảm của mọi tên miền email
+        chặn
       admin:read:ip_blocks: đọc thông tin nhạy cảm của mọi IP chặn
       admin:read:reports: đọc thông tin của các báo cáo và các tài khoản bị báo cáo
       admin:write: sửa đổi tất cả dữ liệu trên máy chủ
       admin:write:accounts: áp đặt hành động kiểm duyệt trên tài khoản
-      admin:write:canonical_email_blocks: áp đặt kiểm duyệt đối với chặn email biến thể
+      admin:write:canonical_email_blocks: áp đặt kiểm duyệt đối với chặn email biến
+        thể
       admin:write:domain_allows: áp đặt kiểm duyệt đối với các email cho phép
       admin:write:domain_blocks: áp đặt kiểm duyệt đối với các tên miền chặn
-      admin:write:email_domain_blocks: áp đặt kiểm duyệt đối với các tên miền email chặn
+      admin:write:email_domain_blocks: áp đặt kiểm duyệt đối với các tên miền email
+        chặn
       admin:write:ip_blocks: áp đặt kiểm duyệt với các IP chặn
       admin:write:reports: áp đặt kiểm duyệt với các báo cáo
       crypto: dùng mã hóa đầu cuối

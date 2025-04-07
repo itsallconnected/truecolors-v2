@@ -51,20 +51,26 @@ ast:
         revoke: "¿De xuru que quies facer esta aición?"
       index:
         authorized_at: 'Data d''autorización: %{date}'
-        description_html: Estes son les aplicaciones que puen acceder a la cuenta cola API. Si equí hai aplicaciones que nun conoces o hai dalguna aplicación que nun funciona correutamente, pues revocar el so accesu.
+        description_html: Estes son les aplicaciones que puen acceder a la cuenta
+          cola API. Si equí hai aplicaciones que nun conoces o hai dalguna aplicación
+          que nun funciona correutamente, pues revocar el so accesu.
         last_used_at: 'Últimu usu: %{date}'
         never_used: Enxamás s'usó
         scopes: Permisos
         title: Les aplicaciones qu'autoricesti
     errors:
       messages:
-        access_denied: El propietariu del recursu o'l sirvidor d'autorización negó la solicitú.
+        access_denied: El propietariu del recursu o'l sirvidor d'autorización negó
+          la solicitú.
         invalid_token:
           revoked: Revocóse'l pase d'accesu
           unknown: El pase d'accesu nun ye válidu
-        server_error: El sirvidor d'autorización atopó una condición inesperada qu'evitó que cumpliera la solicitú.
-        unauthorized_client: El veceru nun ta autorizáu pa facer esta solicitú con esti métodu.
-        unsupported_response_type: El sirvidor d'autorización nun ye compatible con esti tipu de respuesta.
+        server_error: El sirvidor d'autorización atopó una condición inesperada qu'evitó
+          que cumpliera la solicitú.
+        unauthorized_client: El veceru nun ta autorizáu pa facer esta solicitú con
+          esti métodu.
+        unsupported_response_type: El sirvidor d'autorización nun ye compatible con
+          esti tipu de respuesta.
     grouped_scopes:
       access:
         read: Accesu de namás llectura

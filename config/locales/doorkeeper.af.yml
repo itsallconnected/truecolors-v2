@@ -33,7 +33,8 @@ af:
       help:
         native_redirect_uri: Gebruik %{native_redirect_uri} vir plaaslike toetse
         redirect_uri: Gebruik een reël per URI
-        scopes: Verdeel omvanggrense met spasies. Laat dit leeg om verstekomvange te gebruik.
+        scopes: Verdeel omvanggrense met spasies. Laat dit leeg om verstekomvange
+          te gebruik.
       index:
         application: Toepassing
         callback_url: Terugroep-URL
@@ -71,7 +72,10 @@ af:
         revoke: Is jy seker?
       index:
         authorized_at: Bemagtig op %{date}
-        description_html: Hierdie toepassings kan deur middel van die API tot jou rekening toegang verkry. As jy van hierdie toepassings nie herken nie, of by ’n toepassing wangedrag bespeur, kan jy dit verdere toegang tot jou rekening weier.
+        description_html: Hierdie toepassings kan deur middel van die API tot jou
+          rekening toegang verkry. As jy van hierdie toepassings nie herken nie, of
+          by ’n toepassing wangedrag bespeur, kan jy dit verdere toegang tot jou rekening
+          weier.
         last_used_at: Laas gebruik op %{date}
         never_used: Nooit gebruik nie
         scopes: Magtigings
@@ -80,7 +84,9 @@ af:
     errors:
       messages:
         access_denied: Die hulpbroneienaar of magtigingsbediener het die aansoek afgekeur.
-        credential_flow_not_configured: Magtigingsbewysvloei van die hulpbroneienaar het gefaal omdat Doorkeeper.configure.resource_owner_from_credentials nie opgestel is nie.
+        credential_flow_not_configured: Magtigingsbewysvloei van die hulpbroneienaar
+          het gefaal omdat Doorkeeper.configure.resource_owner_from_credentials nie
+          opgestel is nie.
     flash:
       applications:
         create:
@@ -125,7 +131,8 @@ af:
     scopes:
       admin:read: lees alle data op die bediener
       admin:read:accounts: lees sensitiewe inligting van alle rekeninge
-      admin:read:reports: lees sensitiewe inligting van alle verslae end aangeklaagde rekeninge
+      admin:read:reports: lees sensitiewe inligting van alle verslae end aangeklaagde
+        rekeninge
       admin:write: verander alle data op die bediener
       admin:write:accounts: modereer rekeninge
       admin:write:reports: modereer verslae

@@ -33,7 +33,8 @@ he:
       help:
         native_redirect_uri: שימוש ב %{native_redirect_uri} לבדיקות מקומיות
         redirect_uri: שימוש בשורה אחת לכל קישורית
-        scopes: יש להפריד תחומים בעזרת רווחים. נה להשאיר ריק על מנת להשתמש בתחום ברירת המחדל.
+        scopes: יש להפריד תחומים בעזרת רווחים. נה להשאיר ריק על מנת להשתמש בתחום ברירת
+          המחדל.
       index:
         application: יישום
         callback_url: כתובת גישה חוזרת (Callback URL)
@@ -60,7 +61,8 @@ he:
       error:
         title: התרחשה שגיאה
       new:
-        prompt_html: היישום %{client_name} מבקש גישה לחשבונך. <strong>אשרו רק אם אתם מזהים את הבקשה וסומכים על מקור הבקשה.</strong>
+        prompt_html: היישום %{client_name} מבקש גישה לחשבונך. <strong>אשרו רק אם אתם
+          מזהים את הבקשה וסומכים על מקור הבקשה.</strong>
         review_permissions: עיון בהרשאות
         title: נדרשת הרשאה
       show:
@@ -72,7 +74,9 @@ he:
         revoke: בטוח?
       index:
         authorized_at: אושר ב-%{date}
-        description_html: אלה אפליקציות שיכולות לגשת לחשבונך בעזרת הממשק. אם ישנן כאן אפליקציות שאינך מזהה, או אפליקציה שאינה פועלת כראוי, ניתן להסיר את הגישה שלה.
+        description_html: אלה אפליקציות שיכולות לגשת לחשבונך בעזרת הממשק. אם ישנן
+          כאן אפליקציות שאינך מזהה, או אפליקציה שאינה פועלת כראוי, ניתן להסיר את הגישה
+          שלה.
         last_used_at: נראה לאחרונה ב-%{date}
         never_used: מעולם לא היה בשימוש
         scopes: הרשאות
@@ -81,24 +85,32 @@ he:
     errors:
       messages:
         access_denied: בעלי המשאב או שרת ההרשאה דחו את הבקשה.
-        credential_flow_not_configured: התהליך "Resource Owner Password Credentials" נכשל בשל חוסר בתצורת Doorkeeper.configure.resource_owner_from_credentials.
-        invalid_client: הרשאת הלקוח נכשלה עקב לקוח שאינו ידוע, חוסר בהרשאת לקוח או שיטת הרשאה שאינה נתמכת.
-        invalid_code_challenge_method: הצופן חייב להיות בשיטת S256, לא תומכים בבלתי מוצפן.
-        invalid_grant: חוזה ההרשאה המצורף אינו חוקי, אינו תקף, מבוטל, או שאינו מתאים לקישורית ההפניה שבשימוש על ידי בקשת ההרשאה, או שהופק על ידי לקוח אחר.
+        credential_flow_not_configured: התהליך "Resource Owner Password Credentials"
+          נכשל בשל חוסר בתצורת Doorkeeper.configure.resource_owner_from_credentials.
+        invalid_client: הרשאת הלקוח נכשלה עקב לקוח שאינו ידוע, חוסר בהרשאת לקוח או
+          שיטת הרשאה שאינה נתמכת.
+        invalid_code_challenge_method: הצופן חייב להיות בשיטת S256, לא תומכים בבלתי
+          מוצפן.
+        invalid_grant: חוזה ההרשאה המצורף אינו חוקי, אינו תקף, מבוטל, או שאינו מתאים
+          לקישורית ההפניה שבשימוש על ידי בקשת ההרשאה, או שהופק על ידי לקוח אחר.
         invalid_redirect_uri: קישורית ההפניה המצורפת אינה חוקית.
         invalid_request:
           missing_param: 'חסר פרמטר נדרש: %{value}.'
-          request_not_authorized: יש לאשר את הבקשה. פרמטר הנדרש על מנת לאשר את הבקשה חסר או לקוי.
+          request_not_authorized: יש לאשר את הבקשה. פרמטר הנדרש על מנת לאשר את הבקשה
+            חסר או לקוי.
           unknown: הבקשה חסרה פרמטר נדרש, כוללת ערך שלא נתמך או לקויה בדרך אחרת.
-        invalid_resource_owner: הרשאות בעלי המשאב שהוזנו אינן חוקיות, או שלא ניתן למצוא את בעלי המשאב
+        invalid_resource_owner: הרשאות בעלי המשאב שהוזנו אינן חוקיות, או שלא ניתן
+          למצוא את בעלי המשאב
         invalid_scope: התחום המבוקש אינו חוקי, אינו ידוע, או שתצורותו שגויה.
         invalid_token:
           expired: פג תוקף אסימון הגישה
           revoked: בוטל תוקף אסימון הגישה
           unknown: אסימון הגישה אינו חוקי
-        resource_owner_authenticator_not_configured: חיפוש בעלי המשאב נכשל מכיוון שתצורת Doorkeeper.configure.resource_owner_authenticator לא הושלמה.
+        resource_owner_authenticator_not_configured: חיפוש בעלי המשאב נכשל מכיוון
+          שתצורת Doorkeeper.configure.resource_owner_authenticator לא הושלמה.
         server_error: שרת ההרשאות נתקל במצב בלתי צפוי, שמונע ממנו להשלים את הבקשה.
-        temporarily_unavailable: שרת ההרשאות לא מסוגל לטפל בבקשה בעת זו עקב עומס זמני או עקב תחזוקה של השרת.
+        temporarily_unavailable: שרת ההרשאות לא מסוגל לטפל בבקשה בעת זו עקב עומס זמני
+          או עקב תחזוקה של השרת.
         unauthorized_client: הלקוח אינו מאושר להגיש בקשה זו בשיטה זו.
         unsupported_grant_type: סוג חוזה הרשאה זה אינו נתמך על ידי שרת ההרשאות.
         unsupported_response_type: שרת ההרשאות לא תומך בסוג תגובה זה.
@@ -152,9 +164,11 @@ he:
       admin:read: לקרוא את כל המידע על השרת
       admin:read:accounts: לקרוא מידע רגיש בכל החשבונות
       admin:read:canonical_email_blocks: קריאת התכנים הרגישים של רשומות חסימות הדואל
-      admin:read:domain_allows: קריאת התכנים הרגישים של שמות המתחמים (דומיינים) הבלתי חסומים
+      admin:read:domain_allows: קריאת התכנים הרגישים של שמות המתחמים (דומיינים) הבלתי
+        חסומים
       admin:read:domain_blocks: קריאת התכנים הרגישים של שמות המתחמים (דומיינים) החסומים
-      admin:read:email_domain_blocks: קריאת התכנים הרגישים של שמות המתחמים (דומיינים) החסומים לדואל
+      admin:read:email_domain_blocks: קריאת התכנים הרגישים של שמות המתחמים (דומיינים)
+        החסומים לדואל
       admin:read:ip_blocks: קריאת התכנים הרגישים של חסימות כתובות IP
       admin:read:reports: לקרוא מידע רגיש בכל הדוחות וכל החשבונות המדווחים
       admin:write: לשנות את כל המידע על השרת

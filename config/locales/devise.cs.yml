@@ -3,8 +3,13 @@ cs:
   devise:
     confirmations:
       confirmed: Vaše e-mailová adresa byla úspěšně ověřena.
-      send_instructions: Za několik minut obdržíte e-mail s instrukcemi pro potvrzení vašeho účtu. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
-      send_paranoid_instructions: Pokud je vaše e-mailová adresa v naší databázi, obdržíte za několik minut e-mail s instrukcemi pro potvrzení vaší e-mailové adresy. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
+      send_instructions: Za několik minut obdržíte e-mail s instrukcemi pro potvrzení
+        vašeho účtu. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky
+        „spam“.
+      send_paranoid_instructions: Pokud je vaše e-mailová adresa v naší databázi,
+        obdržíte za několik minut e-mail s instrukcemi pro potvrzení vaší e-mailové
+        adresy. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky
+        „spam“.
     failure:
       already_authenticated: Již jste přihlášeni.
       inactive: Váš účet ještě není aktivován.
@@ -12,7 +17,8 @@ cs:
       last_attempt: Máte ještě jeden pokus, než bude váš účet uzamčen.
       locked: Váš účet je uzamčen.
       not_found_in_database: Neplatné %{authentication_keys} nebo heslo.
-      omniauth_user_creation_failure: Při vytvoření účtu pro tuto identitu se nastala chyba.
+      omniauth_user_creation_failure: Při vytvoření účtu pro tuto identitu se nastala
+        chyba.
       pending: Váš účet je stále posuzován.
       timeout: Vaše relace vypršela. Pro pokračování se prosím přihlaste znovu.
       unauthenticated: Před pokračováním se musíte přihlásit nebo zaregistrovat.
@@ -21,30 +27,44 @@ cs:
       confirmation_instructions:
         action: Potvrdit e-mailovou adresu
         action_with_app: Potvrdit a vrátit se do %{app}
-        explanation: S touto e-mailovou adresou jste si vytvořili účet na serveru %{host}. K jeho aktivaci vám zbývá jedno kliknutí. Pokud jste to nebyli vy, považujte tento e-mail za bezpředmětný.
-        explanation_when_pending: S touto e-mailovou adresu jste požádali o pozváku na %{host}. Jakmile svou e-mailovou adresu potvrdíte, vaši žádost posoudíme. Můžete se přihlásit ke změně podrobností svého účtu nebo jeho smazání, ale do schválení účtu nebudete mít k většině funkcí přístup. Pokud bude vaše žádost zamítnuta, vaše data budou odstraněna, a nebude od vás vyžadována žádná další akce. Pokud jste to nebyli vy, považujte tento e-mail za bezpředmětný.
-        extra_html: Přečtěte si prosím také <a href="%{terms_path}">pravidla tohoto serveru</a> a <a href="%{policy_path}">naše podmínky užití</a>.
+        explanation: S touto e-mailovou adresou jste si vytvořili účet na serveru
+          %{host}. K jeho aktivaci vám zbývá jedno kliknutí. Pokud jste to nebyli
+          vy, považujte tento e-mail za bezpředmětný.
+        explanation_when_pending: S touto e-mailovou adresu jste požádali o pozváku
+          na %{host}. Jakmile svou e-mailovou adresu potvrdíte, vaši žádost posoudíme.
+          Můžete se přihlásit ke změně podrobností svého účtu nebo jeho smazání, ale
+          do schválení účtu nebudete mít k většině funkcí přístup. Pokud bude vaše
+          žádost zamítnuta, vaše data budou odstraněna, a nebude od vás vyžadována
+          žádná další akce. Pokud jste to nebyli vy, považujte tento e-mail za bezpředmětný.
+        extra_html: Přečtěte si prosím také <a href="%{terms_path}">pravidla tohoto
+          serveru</a> a <a href="%{policy_path}">naše podmínky užití</a>.
         subject: 'Truecolors: Potvrzení účtu na serveru %{instance}'
         title: Potvrďte e-mailovou adresu
       email_changed:
         explanation: 'E-mailová adresa vašeho účtu byla změněna na:'
-        extra: Pokud jste si e-mailovou adresu neměnili, je pravděpodobné, že někdo jiný získal přístup k vašemu účtu. Změňte si prosím okamžitě heslo, nebo, pokud se nemůžete na účet přihlásit, kontaktujte administrátora serveru.
+        extra: Pokud jste si e-mailovou adresu neměnili, je pravděpodobné, že někdo
+          jiný získal přístup k vašemu účtu. Změňte si prosím okamžitě heslo, nebo,
+          pokud se nemůžete na účet přihlásit, kontaktujte administrátora serveru.
         subject: 'Truecolors: E-mailová adresa byla změněna'
         title: Nová e-mailová adresa
       password_change:
         explanation: Heslo k vašemu účtu bylo změněno.
-        extra: Pokud jste si heslo neměnili, je pravděpodobné, že někdo jiný získal přístup k vašemu účtu. Změňte si prosím okamžitě heslo, nebo, pokud se nemůžete na účet přihlásit, kontaktujte administrátora serveru.
+        extra: Pokud jste si heslo neměnili, je pravděpodobné, že někdo jiný získal
+          přístup k vašemu účtu. Změňte si prosím okamžitě heslo, nebo, pokud se nemůžete
+          na účet přihlásit, kontaktujte administrátora serveru.
         subject: 'Truecolors: Heslo bylo změněno'
         title: Heslo bylo změněno
       reconfirmation_instructions:
         explanation: Pro změnu e-mailu potvrďte novou adresu.
-        extra: Pokud jste si tuto změnu nevyžádali vy, považujte tento e-mail za bezpředmětný. Pokud výše uvedenou adresu nenavštívíte, e-mailová adresa změněna nebude.
+        extra: Pokud jste si tuto změnu nevyžádali vy, považujte tento e-mail za bezpředmětný.
+          Pokud výše uvedenou adresu nenavštívíte, e-mailová adresa změněna nebude.
         subject: 'Truecolors: Potvrďte e-mail pro %{instance}'
         title: Ověřit e-mailovou adresu
       reset_password_instructions:
         action: Změnit heslo
         explanation: Pro svůj účet jste si vyžádali nové heslo.
-        extra: Pokud jste si tuto změnu nevyžádali vy, považujte tento e-mail za bezpředmětný. Pokud výše uvedenou adresu nenavštívíte, vaše heslo změněno nebude.
+        extra: Pokud jste si tuto změnu nevyžádali vy, považujte tento e-mail za bezpředmětný.
+          Pokud výše uvedenou adresu nenavštívíte, vaše heslo změněno nebude.
         subject: 'Truecolors: Instrukce pro obnovení hesla'
         title: Obnovení hesla
       two_factor_disabled:
@@ -53,7 +73,8 @@ cs:
         subtitle: Dvoufaktorové ověřování vašeho účtu bylo vypnuto.
         title: Dvoufázové ověření bylo vypnuto
       two_factor_enabled:
-        explanation: Pro přihlášení bude vyžadován token generovaný spárovanou TOTP aplikací.
+        explanation: Pro přihlášení bude vyžadován token generovaný spárovanou TOTP
+          aplikací.
         subject: 'Truecolors: Dvoufázové ověření bylo zapnuto'
         subtitle: Dvoufaktorové ověřování vašeho účtu bylo zapnuto.
         title: Dvoufázové ověření bylo zapnuto
@@ -74,12 +95,15 @@ cs:
           subject: 'Truecolors: Bezpečnostní klíč byl smazán'
           title: Jeden z vašich bezpečnostních klíčů byl smazán
       webauthn_disabled:
-        explanation: 'Truecolors: Přihlašování pomocí bezpečnostními klíčemi bylo pro váš účet vypnuto.'
-        extra: Přihlášení je nyní možné pouze pomocí tokenem vygenerovaný spárovanou TOTP aplikací.
+        explanation: 'Truecolors: Přihlašování pomocí bezpečnostními klíčemi bylo
+          pro váš účet vypnuto.'
+        extra: Přihlášení je nyní možné pouze pomocí tokenem vygenerovaný spárovanou
+          TOTP aplikací.
         subject: 'Truecolors: Přihlašování pomocí bezpečnostními klíčemi bylo vypnuto'
         title: Bezpečnostní klíče byly zakázány
       webauthn_enabled:
-        explanation: 'Truecolors: Přihlašování bezpečnostními klíči bylo pro váš účet povoleno.'
+        explanation: 'Truecolors: Přihlašování bezpečnostními klíči bylo pro váš účet
+          povoleno.'
         extra: Váš bezpečnostní klíč nyní může být použit pro přihlášení.
         subject: 'Truecolors: Přihlašování bezpečnostními klíči bylo povoleno'
         title: Bezpečnostní klíče byly povoleny
@@ -87,27 +111,40 @@ cs:
       failure: Nelze vás ověřit z %{kind}, protože „%{reason}“.
       success: Úspěšně ověřeno z účtu %{kind}.
     passwords:
-      no_token: Tuto stránku nemůžete navštívit, pokud nepřicházíte z e-mailu pro obnovení hesla. Pokud z něj přicházíte, ujistěte se, že jste použili celou URL adresu z e-mailu.
-      send_instructions: Pokud je vaše e-mailová adresa v naší databázi, za několik minut obdržíte e-mail s odkazem pro obnovení vašeho hesla. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
-      send_paranoid_instructions: Pokud je vaše e-mailová adresa v naší databázi, za několik minut obdržíte e-mail s odkazem pro obnovení vašeho hesla. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
+      no_token: Tuto stránku nemůžete navštívit, pokud nepřicházíte z e-mailu pro
+        obnovení hesla. Pokud z něj přicházíte, ujistěte se, že jste použili celou
+        URL adresu z e-mailu.
+      send_instructions: Pokud je vaše e-mailová adresa v naší databázi, za několik
+        minut obdržíte e-mail s odkazem pro obnovení vašeho hesla. Pokud tento e-mail
+        neobdržíte, podívejte se prosím také do složky „spam“.
+      send_paranoid_instructions: Pokud je vaše e-mailová adresa v naší databázi,
+        za několik minut obdržíte e-mail s odkazem pro obnovení vašeho hesla. Pokud
+        tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
       updated: Vaše heslo bylo úspěšně změněno. Nyní jste přihlášeni.
       updated_not_active: Vaše heslo bylo úspěšně změněno.
     registrations:
       destroyed: Sbohem! Váš účet byl úspěšně zrušen. Doufáme, že vás opět brzy uvidíme.
-      update_needs_confirmation: Váš účet byl úspěšně aktualizován, ale je potřeba ověřit vaši novou e-mailovou adresu. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
+      update_needs_confirmation: Váš účet byl úspěšně aktualizován, ale je potřeba
+        ověřit vaši novou e-mailovou adresu. Pokud tento e-mail neobdržíte, podívejte
+        se prosím také do složky „spam“.
       updated: Váš účet byl úspěšně aktualizován.
     sessions:
       already_signed_out: Odhlášení proběhlo úspěšně.
       signed_in: Přihlášení proběhlo úspěšně.
       signed_out: Odhlášení proběhlo úspěšně.
     unlocks:
-      send_instructions: Za několik minut obdržíte e-mail s instrukcemi pro odemčení vašeho účtu. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
-      send_paranoid_instructions: Pokud váš účet existuje, za několik minut obdržíte e-mail s instrukcemi pro odemčení vašeho účtu. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky „spam“.
+      send_instructions: Za několik minut obdržíte e-mail s instrukcemi pro odemčení
+        vašeho účtu. Pokud tento e-mail neobdržíte, podívejte se prosím také do složky
+        „spam“.
+      send_paranoid_instructions: Pokud váš účet existuje, za několik minut obdržíte
+        e-mail s instrukcemi pro odemčení vašeho účtu. Pokud tento e-mail neobdržíte,
+        podívejte se prosím také do složky „spam“.
       unlocked: Váš účet byl úspěšně odemčen. Pro pokračování se prosím přihlaste.
   errors:
     messages:
       already_confirmed: byl již potvrzen, zkuste se prosím přihlásit
-      confirmation_period_expired: musí být potvrzen do %{period}, vyžádejte si prosím nový
+      confirmation_period_expired: musí být potvrzen do %{period}, vyžádejte si prosím
+        nový
       expired: vypršel, vyžádejte si prosím nový
       not_found: nenalezen
       not_locked: nebyl uzamčen

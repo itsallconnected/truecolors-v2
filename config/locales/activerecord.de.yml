@@ -24,7 +24,8 @@ de:
         account:
           attributes:
             fields:
-              fields_with_values_missing_labels: enthält Werte, bei denen Beschriftungen fehlen
+              fields_with_values_missing_labels: enthält Werte, bei denen Beschriftungen
+                fehlen
             username:
               invalid: nur Buchstaben, Ziffern und Unterstriche
               reserved: ist bereits vergeben
@@ -65,8 +66,10 @@ de:
         user_role:
           attributes:
             permissions_as_keys:
-              dangerous: enthält Berechtigungen, die für die Basisrolle nicht sicher sind
-              elevated: kann keine Berechtigungen enthalten, die deine aktuelle Rolle nicht besitzt
+              dangerous: enthält Berechtigungen, die für die Basisrolle nicht sicher
+                sind
+              elevated: kann keine Berechtigungen enthalten, die deine aktuelle Rolle
+                nicht besitzt
               own_role: kann mit deiner aktuellen Rolle nicht geändert werden
             position:
               elevated: darf nicht höher als deine derzeitige Rolle sein
@@ -74,4 +77,5 @@ de:
         webhook:
           attributes:
             events:
-              invalid_permissions: kann keine Ereignisse einschließen, für die du keine Berechtigung hast
+              invalid_permissions: kann keine Ereignisse einschließen, für die du
+                keine Berechtigung hast

@@ -3,8 +3,12 @@ nn:
   devise:
     confirmations:
       confirmed: E-posten din er stadfesta.
-      send_instructions: Om nokre få minutt får du ein e-post som fortel deg korleis du skal stadfesta e-postadressa di. Sjekk søppelpostmappa di om du ikkje fekk e-posten.
-      send_paranoid_instructions: Om vi har e-postadressa di i databasen vår, får du ein e-post som fortel deg korleis du skal stadfesta e-postadressa om nokre få minutt. Ver venleg og sjekk søppelpostmappa di om du ikkje fekk denne e-posten.
+      send_instructions: Om nokre få minutt får du ein e-post som fortel deg korleis
+        du skal stadfesta e-postadressa di. Sjekk søppelpostmappa di om du ikkje fekk
+        e-posten.
+      send_paranoid_instructions: Om vi har e-postadressa di i databasen vår, får
+        du ein e-post som fortel deg korleis du skal stadfesta e-postadressa om nokre
+        få minutt. Ver venleg og sjekk søppelpostmappa di om du ikkje fekk denne e-posten.
     failure:
       already_authenticated: Du er allereie logga inn.
       inactive: Kontoen din er ikkje aktiv enno.
@@ -21,30 +25,45 @@ nn:
       confirmation_instructions:
         action: Stadfest e-postadresse
         action_with_app: Stadfest og gå tilbake til %{app}
-        explanation: Du har registrert deg på %{host} med denne e-postadressa. Du er eitt klikk unna aktivere kontoen. Om det ikkje var deg, berre oversjå denne e-posten.
-        explanation_when_pending: Du har søkt om en invitasjon til %{host} med denne e-postadressa. Når du har stadfesta e-postadressa di, vil vi gå gjennom søknaden. Du kan logge på for å endre detaljar eller slette kontoen, men du har ikke tilgang til dei fleste funksjonane før kontoen din er godkjent. Dersom søknaden din vert avslått, vil dataene dine verte sletta, så du treng ikkje gjera meir. Dersom dette ikke var deg, berre oversjå denne e-posten.
-        extra_html: Ta ein kikk på <a href="%{terms_path}">reglane på instansen</a> og <a href="%{policy_path}">bruksvilkåra våre</a>.
+        explanation: Du har registrert deg på %{host} med denne e-postadressa. Du
+          er eitt klikk unna aktivere kontoen. Om det ikkje var deg, berre oversjå
+          denne e-posten.
+        explanation_when_pending: Du har søkt om en invitasjon til %{host} med denne
+          e-postadressa. Når du har stadfesta e-postadressa di, vil vi gå gjennom
+          søknaden. Du kan logge på for å endre detaljar eller slette kontoen, men
+          du har ikke tilgang til dei fleste funksjonane før kontoen din er godkjent.
+          Dersom søknaden din vert avslått, vil dataene dine verte sletta, så du treng
+          ikkje gjera meir. Dersom dette ikke var deg, berre oversjå denne e-posten.
+        extra_html: Ta ein kikk på <a href="%{terms_path}">reglane på instansen</a>
+          og <a href="%{policy_path}">bruksvilkåra våre</a>.
         subject: 'Truecolors: Instruksjonar for stadfesting hos %{instance}'
         title: Stadfest e-postadresse
       email_changed:
         explanation: 'E-postadressa til kontoen din vert endra til:'
-        extra: Dersom du ikkje har endra e-postadressa di, er det truleg at nokon har fått tilgang til kontoen din. Bytt straks passordet ditt, eller kontakt tenaradministratoren dersom du har vorte låst ut av kontoen.
+        extra: Dersom du ikkje har endra e-postadressa di, er det truleg at nokon
+          har fått tilgang til kontoen din. Bytt straks passordet ditt, eller kontakt
+          tenaradministratoren dersom du har vorte låst ut av kontoen.
         subject: 'Truecolors: E-postadressa er endra'
         title: Ny e-postadresse
       password_change:
         explanation: Passordet til kontoen din er endra.
-        extra: Om du ikkje har endra passordet er det sannsynleg at nokon har fått tilgang til kontoen din. Ver venleg og skift passordet ditt med det same eller tak kontakt med tenaradministratoren om du er sperra ute av kontoen din.
+        extra: Om du ikkje har endra passordet er det sannsynleg at nokon har fått
+          tilgang til kontoen din. Ver venleg og skift passordet ditt med det same
+          eller tak kontakt med tenaradministratoren om du er sperra ute av kontoen
+          din.
         subject: 'Truecolors: Passord endra'
         title: Passord endra
       reconfirmation_instructions:
         explanation: Stadfest den nye adressa for å byta e-postadressa di.
-        extra: Oversjå denne eposten dersom du ikkje gjorde endra. E-postadressa for Truecolors-kontoen vert ikkje endra før lenka over vert trykt på.
+        extra: Oversjå denne eposten dersom du ikkje gjorde endra. E-postadressa for
+          Truecolors-kontoen vert ikkje endra før lenka over vert trykt på.
         subject: 'Truecolors: Stadfest e-post for %{instance}'
         title: Stadfest e-postadresse
       reset_password_instructions:
         action: Endre passord
         explanation: Du har bedt om eit nytt passord til kontoen din.
-        extra: Om du ikkje bad om dette, ignorer denne e-posten. Passordet ditt vert ikkje endra før du går inn på lenkja ovanfor og lagar eit nytt.
+        extra: Om du ikkje bad om dette, ignorer denne e-posten. Passordet ditt vert
+          ikkje endra før du går inn på lenkja ovanfor og lagar eit nytt.
         subject: 'Truecolors: Instuksjonar for å endra passord'
         title: Attstilling av passord
       two_factor_disabled:
@@ -53,14 +72,17 @@ nn:
         subtitle: Tofaktorinnlogging for denne kontoen er skrudd av.
         title: 2FA deaktivert
       two_factor_enabled:
-        explanation: Du treng ein kode frå den tilkopla tofaktor-appen din for å logga inn.
+        explanation: Du treng ein kode frå den tilkopla tofaktor-appen din for å logga
+          inn.
         subject: 'Truecolors: To-faktor-autentisering aktivert'
         subtitle: Tofaktorpålogging er skrudd på for kontoen din.
         title: 2FA aktivert
       two_factor_recovery_codes_changed:
         explanation: Dei førre gjenopprettingskodane er ugyldige og nye er genererte.
-        subject: 'Truecolors: To-faktor-gjenopprettingskodar har vorte genererte på nytt'
-        subtitle: Dei førre innloggingskodane er ikkje gyldige lenger, og nye kodar er laga.
+        subject: 'Truecolors: To-faktor-gjenopprettingskodar har vorte genererte på
+          nytt'
+        subtitle: Dei førre innloggingskodane er ikkje gyldige lenger, og nye kodar
+          er laga.
         title: 2FA-gjenopprettingskodane er endra
       unlock_instructions:
         subject: 'Truecolors: Instruksjonar for å opne kontoen igjen'
@@ -75,7 +97,8 @@ nn:
           title: Ein av sikkerheitsnøklane dine har blitt sletta
       webauthn_disabled:
         explanation: Innlogging med tryggingsnykjel er skrudd av for kontoen din.
-        extra: No kan du logga inn med berre kodane som er laga av den tilkopla tofaktor-appen din.
+        extra: No kan du logga inn med berre kodane som er laga av den tilkopla tofaktor-appen
+          din.
         subject: 'Truecolors: Autentisering med sikkerheitsnøklar vart skrudd av'
         title: Sikkerheitsnøklar deaktivert
       webauthn_enabled:
@@ -87,27 +110,39 @@ nn:
       failure: Kunne ikkje autentisere deg frå %{kind} fordi "%{reason}".
       success: Autentisert frå %{kind}-konto.
     passwords:
-      no_token: Du har ikkje tilgang til denne sida utan ha gått via ein e-post som gjeld å nullstille passordet. Dersom det var det du gjorde, dobbelsjekk at du har kopiert heile URLen.
-      send_instructions: Om me har epostadressa di i databasen vår, får du ein epost med ei lenke til å gjenopprette passordet om nokre få minutt. Sjekk søppelpostmappa di om du ikkje fekk denne eposten.
-      send_paranoid_instructions: Om me har epostadressa di i databasen vår, får du ei lenke til å endra passordet om nokre få minutt. Ver venleg å sjekke søppelpostmappa om du ikkje fekk denne eposten.
+      no_token: Du har ikkje tilgang til denne sida utan ha gått via ein e-post som
+        gjeld å nullstille passordet. Dersom det var det du gjorde, dobbelsjekk at
+        du har kopiert heile URLen.
+      send_instructions: Om me har epostadressa di i databasen vår, får du ein epost
+        med ei lenke til å gjenopprette passordet om nokre få minutt. Sjekk søppelpostmappa
+        di om du ikkje fekk denne eposten.
+      send_paranoid_instructions: Om me har epostadressa di i databasen vår, får du
+        ei lenke til å endra passordet om nokre få minutt. Ver venleg å sjekke søppelpostmappa
+        om du ikkje fekk denne eposten.
       updated: Passordet ditt er endra. No er du logga inn.
       updated_not_active: Passordet ditt er endra.
     registrations:
       destroyed: Ha det! Kontoen din er sletta. Me vonar å sjå deg igjen snart.
-      update_needs_confirmation: Du har oppdatert kontoen din, men me må stadfesta den nye epostadressa. Sjekk innboksen og fylg lenka for å stadfeste adressa di. Sjekk søppelpostmappa dersom du ikkje har fått denne eposten.
+      update_needs_confirmation: Du har oppdatert kontoen din, men me må stadfesta
+        den nye epostadressa. Sjekk innboksen og fylg lenka for å stadfeste adressa
+        di. Sjekk søppelpostmappa dersom du ikkje har fått denne eposten.
       updated: Kontoen har vorte oppdatert.
     sessions:
       already_signed_out: Logga ut.
       signed_in: Logga inn.
       signed_out: Logga ut.
     unlocks:
-      send_instructions: Om nokre minutt får du ein epost med instruksjonar for korleis du kan låse opp kontoen din. Sjekk søppelpostmappa om du ikkje finn den eposten.
-      send_paranoid_instructions: Dersom du har konto her, får du ein epost med instruksjonar for korleis du kan låse opp kontoen din om nokre minutt. Sjekk søppelpostmappa om du ikkje finn den eposten.
+      send_instructions: Om nokre minutt får du ein epost med instruksjonar for korleis
+        du kan låse opp kontoen din. Sjekk søppelpostmappa om du ikkje finn den eposten.
+      send_paranoid_instructions: Dersom du har konto her, får du ein epost med instruksjonar
+        for korleis du kan låse opp kontoen din om nokre minutt. Sjekk søppelpostmappa
+        om du ikkje finn den eposten.
       unlocked: Kontoen din har vorte låst opp. Logg inn for å halde fram.
   errors:
     messages:
       already_confirmed: er allereie stadfesta, prøv å logge inn
-      confirmation_period_expired: må verte stadfesta innan %{period}, spør etter ein ny
+      confirmation_period_expired: må verte stadfesta innan %{period}, spør etter
+        ein ny
       expired: er utgått, ver venleg å be om ein ny ein
       not_found: ikkje funne
       not_locked: var ikkje låst

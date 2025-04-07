@@ -33,7 +33,8 @@ sq:
       help:
         native_redirect_uri: Përdor %{native_redirect_uri} për teste vendore
         redirect_uri: Përdorni një URI për rresht
-        scopes: Ndajini fushëveprimet me hapësira. Që të përdoren fushëveprimet parazgjedhje, lëreni të zbrazët.
+        scopes: Ndajini fushëveprimet me hapësira. Që të përdoren fushëveprimet parazgjedhje,
+          lëreni të zbrazët.
       index:
         application: Aplikacion
         callback_url: URL Callback-u
@@ -60,7 +61,8 @@ sq:
       error:
         title: Ndodhi një gabim
       new:
-        prompt_html: "%{client_name} do të donte leje të hyjë në llogarinë tuaj. <strong>Miratojeni këtë kërkesë vetëm nëse e njihni dhe e besoni këtë burim.</strong>"
+        prompt_html: "%{client_name} do të donte leje të hyjë në llogarinë tuaj. <strong>Miratojeni
+          këtë kërkesë vetëm nëse e njihni dhe e besoni këtë burim.</strong>"
         review_permissions: Shqyrtoni leje
         title: Lypset autorizim
       show:
@@ -72,7 +74,9 @@ sq:
         revoke: A jeni i sigurt?
       index:
         authorized_at: Autorizuar më %{date}
-        description_html: Këto janë aplikacione që mund të hyjnë në llogarinë tuaj duke përdorur API-n. Nëse këtu ka aplikacione që nuk i njihni, ose një aplikacion po sillet ndryshe nga sa pritet, mund t’i shfuqizoni hyrjen.
+        description_html: Këto janë aplikacione që mund të hyjnë në llogarinë tuaj
+          duke përdorur API-n. Nëse këtu ka aplikacione që nuk i njihni, ose një aplikacion
+          po sillet ndryshe nga sa pritet, mund t’i shfuqizoni hyrjen.
         last_used_at: Përdorur së fundi më %{date}
         never_used: I papërdorur ndonjëherë
         scopes: Leje
@@ -80,28 +84,47 @@ sq:
         title: Aplikacionet tuaja të autorizuar
     errors:
       messages:
-        access_denied: I zoti i burimit ose shërbyesi i autorizimit e hodhi poshtë kërkesën.
-        credential_flow_not_configured: Rrjedha për Kredenciale Fjalëkalimi të të Zotit të Burimit dështoi për shkak se Doorkeeper.configure.resource_owner_from_credentials është i paformësuar.
-        invalid_client: Mirëfilltësimi i klientit dështoi për shkak klienti të panjohur, mospërfshirjeje mirëfilltësimi klienti, ose metode të pambuluar mirëfilltësimi.
-        invalid_code_challenge_method: Metoda me kod duhet të jetë e llojit S256, e thjeshta nuk mbulohet.
-        invalid_grant: Autorizimi i dhënë është i pavlefshëm, ka skaduar, është shfuqizuar, s’përputhet me URI-n e ridrejtimit të përdorur te kërkesa e autorizimit, ose është emetuar për klient tjetër.
+        access_denied: I zoti i burimit ose shërbyesi i autorizimit e hodhi poshtë
+          kërkesën.
+        credential_flow_not_configured: Rrjedha për Kredenciale Fjalëkalimi të të
+          Zotit të Burimit dështoi për shkak se Doorkeeper.configure.resource_owner_from_credentials
+          është i paformësuar.
+        invalid_client: Mirëfilltësimi i klientit dështoi për shkak klienti të panjohur,
+          mospërfshirjeje mirëfilltësimi klienti, ose metode të pambuluar mirëfilltësimi.
+        invalid_code_challenge_method: Metoda me kod duhet të jetë e llojit S256,
+          e thjeshta nuk mbulohet.
+        invalid_grant: Autorizimi i dhënë është i pavlefshëm, ka skaduar, është shfuqizuar,
+          s’përputhet me URI-n e ridrejtimit të përdorur te kërkesa e autorizimit,
+          ose është emetuar për klient tjetër.
         invalid_redirect_uri: URI e ridrejtimit s’është e vlefshme.
         invalid_request:
           missing_param: 'Mungon parametër i domosdoshëm: %{value}.'
-          request_not_authorized: Kërkesa duhet autorizuar. Një parametër i domosdoshëm për autorizimin e kërkesës mungon ose është i pavlefshëm.
-          unknown: Kërkesës i mungon një parametër i domosdoshëm, përfshin një vlerë parametri që nuk mbulohet, ose përndryshe është formuar keq.
-        invalid_resource_owner: Kredencialet e dhëna për të zotin e burimit s’janë të vlefshme, ose s’gjendet i zoti i burimit
-        invalid_scope: Fushëveprimi i kërkuar është i pavlefshëm, i panjohur ose i keqformuar.
+          request_not_authorized: Kërkesa duhet autorizuar. Një parametër i domosdoshëm
+            për autorizimin e kërkesës mungon ose është i pavlefshëm.
+          unknown: Kërkesës i mungon një parametër i domosdoshëm, përfshin një vlerë
+            parametri që nuk mbulohet, ose përndryshe është formuar keq.
+        invalid_resource_owner: Kredencialet e dhëna për të zotin e burimit s’janë
+          të vlefshme, ose s’gjendet i zoti i burimit
+        invalid_scope: Fushëveprimi i kërkuar është i pavlefshëm, i panjohur ose i
+          keqformuar.
         invalid_token:
           expired: Token-i i hyrjeve skadoi
           revoked: Token-i i hyrjeve u shfuqizua
           unknown: Token-i i hyrjeve është i pavlefshëm
-        resource_owner_authenticator_not_configured: Gjetja e të Zotit të Burimit dështoi, ngaqë Doorkeeper.configure.resource_owner_authenticator s’është i formësuar.
-        server_error: Shërbyesi i autorizimit hasi një kusht të papritur, i cili e pengoi të plotësonte kërkesën.
-        temporarily_unavailable: Shërbyesi i mirëfilltësimeve hëpërhë s’është në gjendje të trajtojë kërkesën, për shkak të një mbingarkese të përkohshme ose ndonjë mirëmbajtjeje të shërbyesit.
-        unauthorized_client: Klienti s’është i autorizuar të kryejë këtë kërkesë duke përdorur këtë metodë.
-        unsupported_grant_type: Lloji i dhënë i autorizimeve nuk mbulohet nga shërbyesi i autorizimeve.
-        unsupported_response_type: Shërbyesi i autorizimeve nuk e mbulon këtë lloj përgjigjeje.
+        resource_owner_authenticator_not_configured: Gjetja e të Zotit të Burimit
+          dështoi, ngaqë Doorkeeper.configure.resource_owner_authenticator s’është
+          i formësuar.
+        server_error: Shërbyesi i autorizimit hasi një kusht të papritur, i cili e
+          pengoi të plotësonte kërkesën.
+        temporarily_unavailable: Shërbyesi i mirëfilltësimeve hëpërhë s’është në gjendje
+          të trajtojë kërkesën, për shkak të një mbingarkese të përkohshme ose ndonjë
+          mirëmbajtjeje të shërbyesit.
+        unauthorized_client: Klienti s’është i autorizuar të kryejë këtë kërkesë duke
+          përdorur këtë metodë.
+        unsupported_grant_type: Lloji i dhënë i autorizimeve nuk mbulohet nga shërbyesi
+          i autorizimeve.
+        unsupported_response_type: Shërbyesi i autorizimeve nuk e mbulon këtë lloj
+          përgjigjeje.
     flash:
       applications:
         create:
@@ -151,18 +174,24 @@ sq:
     scopes:
       admin:read: të lexojë krejt të dhënat te shërbyesi
       admin:read:accounts: të lexojë hollësi rezervat të krejt llogarive
-      admin:read:canonical_email_blocks: të lexojë hollësi rezervat të krejt bllokimeve të zakonshëm të email-eve
+      admin:read:canonical_email_blocks: të lexojë hollësi rezervat të krejt bllokimeve
+        të zakonshëm të email-eve
       admin:read:domain_allows: të lexojë hollësi rezervat të krejt lejimeve të përkatësive
-      admin:read:domain_blocks: të lexojë hollësi rezervat të krejt bllokimeve të përkatësive
-      admin:read:email_domain_blocks: të lexojë hollësi rezervat të krejt bllokimeve të përkatësive të email-eve
+      admin:read:domain_blocks: të lexojë hollësi rezervat të krejt bllokimeve të
+        përkatësive
+      admin:read:email_domain_blocks: të lexojë hollësi rezervat të krejt bllokimeve
+        të përkatësive të email-eve
       admin:read:ip_blocks: të lexojë hollësi rezervat të krejt bllokimeve të IP-ve
-      admin:read:reports: të lexojë hollësi rezervat të krejt raportimeve dhe të llogarive të raportuara
+      admin:read:reports: të lexojë hollësi rezervat të krejt raportimeve dhe të llogarive
+        të raportuara
       admin:write: të përpunojë krejt të dhënat në shërbyes
       admin:write:accounts: të kryejë veprime moderimi në llogaritë
-      admin:write:canonical_email_blocks: të kryejë veprime moderimi në bllokime të zakonshëm të email-eve
+      admin:write:canonical_email_blocks: të kryejë veprime moderimi në bllokime të
+        zakonshëm të email-eve
       admin:write:domain_allows: të kryejë veprime moderimi mbi lejime përkatësish
       admin:write:domain_blocks: të kryejë veprime moderimi mbi bllokime përkatësish
-      admin:write:email_domain_blocks: të kryejë veprime moderimi mbi lejime përkatësish email
+      admin:write:email_domain_blocks: të kryejë veprime moderimi mbi lejime përkatësish
+        email
       admin:write:ip_blocks: të kryejë veprime moderimi mbi bllokime IP-sh
       admin:write:reports: të kryejë veprime moderimi në raportime
       crypto: përdor fshehtëzim skaj-më-skaj

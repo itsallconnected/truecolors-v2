@@ -33,7 +33,8 @@ sr-Latn:
       help:
         native_redirect_uri: Koristite %{native_redirect_uri} za lokalno testiranje
         redirect_uri: Koristite jednu liniju po URI-ju
-        scopes: Odvojite opsege važenja sa belinama. Ostavite prazno za podrazumevane opsege važenja.
+        scopes: Odvojite opsege važenja sa belinama. Ostavite prazno za podrazumevane
+          opsege važenja.
       index:
         application: Aplikacija
         callback_url: Adresa za povratni poziv
@@ -71,7 +72,9 @@ sr-Latn:
         revoke: Da li ste sigurni?
       index:
         authorized_at: Autorizovano dana %{date}
-        description_html: Ovo su aplikacije koje mogu da pristupe tvom nalogu pomoću API-ja. Ako ovde postoje aplikacije koje ne prepoznaješ ili se neka aplikacija ne ponaša dobro, možeš opozvati njeno pravo pristupa.
+        description_html: Ovo su aplikacije koje mogu da pristupe tvom nalogu pomoću
+          API-ja. Ako ovde postoje aplikacije koje ne prepoznaješ ili se neka aplikacija
+          ne ponaša dobro, možeš opozvati njeno pravo pristupa.
         last_used_at: Poslednji put korišćeno dana %{date}
         never_used: Nikada nije korišćeno
         scopes: Dozvole
@@ -80,26 +83,39 @@ sr-Latn:
     errors:
       messages:
         access_denied: Vlasnik resursa ili autorizacioni server su odbili zahtev.
-        credential_flow_not_configured: Tok Resource Owner Password Credentials nije uspeo pošto je Doorkeeper.configure.resource_owner_from_credentials neiskonfigurisan.
-        invalid_client: Klijentska identifikacija nije uspela zbog nepoznatog klijenta, zato što klijent nije uključio identifikaciju ili zato što je iskorišćen nepodržani identifikacioni metod.
-        invalid_code_challenge_method: Metod izazova koda mora biti S256, običan nije podržan.
-        invalid_grant: Zadata identifikaciona dozvola je neispravna, istekla, opozvana, ne poklapa se sa adresom preusmeravanja ili je izdata nekog drugom klijentu.
+        credential_flow_not_configured: Tok Resource Owner Password Credentials nije
+          uspeo pošto je Doorkeeper.configure.resource_owner_from_credentials neiskonfigurisan.
+        invalid_client: Klijentska identifikacija nije uspela zbog nepoznatog klijenta,
+          zato što klijent nije uključio identifikaciju ili zato što je iskorišćen
+          nepodržani identifikacioni metod.
+        invalid_code_challenge_method: Metod izazova koda mora biti S256, običan nije
+          podržan.
+        invalid_grant: Zadata identifikaciona dozvola je neispravna, istekla, opozvana,
+          ne poklapa se sa adresom preusmeravanja ili je izdata nekog drugom klijentu.
         invalid_redirect_uri: Uključena adresa preusmeravanja nije ispravna.
         invalid_request:
           missing_param: 'Nedostaje obavezni parametar: %{value}.'
-          request_not_authorized: Zahtev mora biti autorizovan. Obavezni parametar za autorizaciju zahteva nedostaje ili je nevažeći.
-          unknown: Obavezni parametar u zahtevu nedostaje, u zahtevu se nalazi nepodržana vrednost parametra ili je parametar na neki drugi način pogrešno formiran.
-        invalid_resource_owner: Zadati kredencijali vlasnika resursa nisu ispravni ili vlasnik resursa ne može biti nađen
-        invalid_scope: Zahtevani opseg važenja nije ispravan, nepoznat je ili je na neki drugi način pogrešan.
+          request_not_authorized: Zahtev mora biti autorizovan. Obavezni parametar
+            za autorizaciju zahteva nedostaje ili je nevažeći.
+          unknown: Obavezni parametar u zahtevu nedostaje, u zahtevu se nalazi nepodržana
+            vrednost parametra ili je parametar na neki drugi način pogrešno formiran.
+        invalid_resource_owner: Zadati kredencijali vlasnika resursa nisu ispravni
+          ili vlasnik resursa ne može biti nađen
+        invalid_scope: Zahtevani opseg važenja nije ispravan, nepoznat je ili je na
+          neki drugi način pogrešan.
         invalid_token:
           expired: Pristupni token je istekao
           revoked: Pristupni token je opozvan
           unknown: Pristupni token nije ispravan
-        resource_owner_authenticator_not_configured: Greška u pronalaženju vlasnika resursa pošto Doorkeeper.configure.resource_owner_authenticator nije konfigurisan.
-        server_error: Identifikacioni server je naišao na neočekivanu situaciju zbog koje nije ispunio upućeni zahtev.
-        temporarily_unavailable: Identifikacioni server trenutno ne može da obradi zahtev jer je privremeno preopterećen ili je u režimu održavanja.
+        resource_owner_authenticator_not_configured: Greška u pronalaženju vlasnika
+          resursa pošto Doorkeeper.configure.resource_owner_authenticator nije konfigurisan.
+        server_error: Identifikacioni server je naišao na neočekivanu situaciju zbog
+          koje nije ispunio upućeni zahtev.
+        temporarily_unavailable: Identifikacioni server trenutno ne može da obradi
+          zahtev jer je privremeno preopterećen ili je u režimu održavanja.
         unauthorized_client: Klijent nije ovlašćen da izvrši ovaj zahtev ovim metodom.
-        unsupported_grant_type: Tip autorizacione dozvole nije podržan od strane autorizacionog servera.
+        unsupported_grant_type: Tip autorizacione dozvole nije podržan od strane autorizacionog
+          servera.
         unsupported_response_type: Autorizacioni server ne podržava ovaj tip odgovora.
     flash:
       applications:
@@ -150,18 +166,23 @@ sr-Latn:
     scopes:
       admin:read: čitanje svih podataka na serveru
       admin:read:accounts: čitanje osetljivih podataka za sve naloge
-      admin:read:canonical_email_blocks: pročitaj osetljive informacije i kanonske imejl blokove
+      admin:read:canonical_email_blocks: pročitaj osetljive informacije i kanonske
+        imejl blokove
       admin:read:domain_allows: pročitaj osetljive informacije za sve dozvole domena
       admin:read:domain_blocks: pročitaj osetljive informacije za sve blokove domena
-      admin:read:email_domain_blocks: pročitaj osetljive informacije svih blokova imejl domena
+      admin:read:email_domain_blocks: pročitaj osetljive informacije svih blokova
+        imejl domena
       admin:read:ip_blocks: pročitaj osetljive informacije za sve IP blokove
-      admin:read:reports: čitanje osetljivih podataka svih izveštaja i prijavljenih naloga
+      admin:read:reports: čitanje osetljivih podataka svih izveštaja i prijavljenih
+        naloga
       admin:write: menjanje svih podataka na serveru
       admin:write:accounts: vršenje moderatorskih aktivnosti nad nalozima
-      admin:write:canonical_email_blocks: izvrši moderacijske radnje nad kanonskim imejl blokovima
+      admin:write:canonical_email_blocks: izvrši moderacijske radnje nad kanonskim
+        imejl blokovima
       admin:write:domain_allows: izvrši moderacijske radnje nad dozvolama domena
       admin:write:domain_blocks: izvrši moderatorske aktivnosti na blokovima domena
-      admin:write:email_domain_blocks: izvrši moderacijske radnje nad blokovima imejl domena
+      admin:write:email_domain_blocks: izvrši moderacijske radnje nad blokovima imejl
+        domena
       admin:write:ip_blocks: izvrši moderatorske aktivnosti na IP blokovima
       admin:write:reports: vršenje moderatorskih aktivnosti nad izveštajima
       crypto: korišćenje end-to-end enkripcije

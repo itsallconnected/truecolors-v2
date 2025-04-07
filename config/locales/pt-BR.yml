@@ -1,7 +1,9 @@
 ---
 pt-BR:
   about:
-    about_truecolors_html: 'A rede social do futuro: Sem anúncios, sem vigilância corporativa, com design ético e muita descentralização! Possua seus próprios dados com o Truecolors!'
+    about_truecolors_html: 'A rede social do futuro: Sem anúncios, sem vigilância
+      corporativa, com design ético e muita descentralização! Possua seus próprios
+      dados com o Truecolors!'
     contact_missing: Não definido
     contact_unavailable: Não disponível
     hosted_on: Truecolors hospedado em %{domain}
@@ -11,7 +13,9 @@ pt-BR:
       one: Seguidor
       other: Seguidores
     following: Seguindo
-    instance_actor_flash: Esta conta é um ator virtual usado para representar o próprio servidor e não um usuário individual. É utilizada para fins de federação e não deve ser suspensa.
+    instance_actor_flash: Esta conta é um ator virtual usado para representar o próprio
+      servidor e não um usuário individual. É utilizada para fins de federação e não
+      deve ser suspensa.
     last_active: última atividade
     link_verified_on: O link foi verificado em %{date}
     nothing_here: Nada aqui!
@@ -59,7 +63,8 @@ pt-BR:
       delete: Excluir dados
       deleted: Excluído
       demote: Rebaixar
-      destroyed_msg: Os dados de %{username} estão na fila para serem excluídos em breve
+      destroyed_msg: Os dados de %{username} estão na fila para serem excluídos em
+        breve
       disable: Congelar
       disable_sign_in_token_auth: Desativar autenticação via token por email
       disable_two_factor_authentication: Desativar autenticação de dois fatores
@@ -120,8 +125,12 @@ pt-BR:
       redownloaded_msg: O perfil de %{username} foi atualizado a partir da origem
       reject: Rejeitar
       rejected_msg: O pedido de registro de %{username} foi rejeitado
-      remote_suspension_irreversible: Os dados desta conta foram excluídos de forma irreversível.
-      remote_suspension_reversible_hint_html: A conta foi suspensa em seu servidor, e todos os dados serão removidos em %{date}. Até lá, o servidor remoto pode restaurar essa conta sem nenhum efeito negativo. Se você quer remover todos os dados desta conta imediatamente, você pode fazer isso abaixo.
+      remote_suspension_irreversible: Os dados desta conta foram excluídos de forma
+        irreversível.
+      remote_suspension_reversible_hint_html: A conta foi suspensa em seu servidor,
+        e todos os dados serão removidos em %{date}. Até lá, o servidor remoto pode
+        restaurar essa conta sem nenhum efeito negativo. Se você quer remover todos
+        os dados desta conta imediatamente, você pode fazer isso abaixo.
       remove_avatar: Remover imagem de perfil
       remove_header: Remover capa
       removed_avatar_msg: A imagem de perfil de %{username} foi removida
@@ -154,8 +163,13 @@ pt-BR:
       subscribe: Inscrever-se
       suspend: Suspender
       suspended: Suspendido
-      suspension_irreversible: Os dados desta conta foram excluídos de forma irreversível. Você pode remover a suspensão da conta para torná-la utilizável, mas ela não recuperará nenhum dado que ela possuía anteriormente.
-      suspension_reversible_hint_html: A conta foi suspensa e os dados serão totalmente removidos em %{date}. Até lá, a conta pode ser restaurada sem nenhum efeito negativo. Se você deseja remover todos os dados da conta imediatamente, você pode fazer isso abaixo.
+      suspension_irreversible: Os dados desta conta foram excluídos de forma irreversível.
+        Você pode remover a suspensão da conta para torná-la utilizável, mas ela não
+        recuperará nenhum dado que ela possuía anteriormente.
+      suspension_reversible_hint_html: A conta foi suspensa e os dados serão totalmente
+        removidos em %{date}. Até lá, a conta pode ser restaurada sem nenhum efeito
+        negativo. Se você deseja remover todos os dados da conta imediatamente, você
+        pode fazer isso abaixo.
       title: Contas
       unblock_email: Desbloquear endereço de e-mail
       unblocked_email_msg: O endereço de e-mail de %{username} foi desbloqueado
@@ -206,11 +220,13 @@ pt-BR:
         disable_2fa_user: Desativar autenticação de dois fatores
         disable_custom_emoji: Desativar emoji personalizado
         disable_relay: Desativar Retransmissão
-        disable_sign_in_token_auth_user: Desativar autenticação via Token de Email para Usuário
+        disable_sign_in_token_auth_user: Desativar autenticação via Token de Email
+          para Usuário
         disable_user: Desativar usuário
         enable_custom_emoji: Ativar emoji personalizado
         enable_relay: Ativar Retransmissão
-        enable_sign_in_token_auth_user: Ativar autenticação via Token de Email para Usuário
+        enable_sign_in_token_auth_user: Ativar autenticação via Token de Email para
+          Usuário
         enable_user: Ativar usuário
         memorialize_account: Converter conta em memorial
         promote_user: Promover usuário
@@ -238,15 +254,18 @@ pt-BR:
         update_status: Editar Status
         update_user_role: Atualizar cargo
       actions:
-        approve_appeal_html: "%{name} aprovou a revisão da decisão da moderação em %{target}"
+        approve_appeal_html: "%{name} aprovou a revisão da decisão da moderação em
+          %{target}"
         approve_user_html: "%{name} aprovado inscrição de %{target}"
-        assigned_to_self_report_html: "%{name} atribuiu a denúncia %{target} para si"
+        assigned_to_self_report_html: "%{name} atribuiu a denúncia %{target} para
+          si"
         change_email_user_html: "%{name} alterou o endereço de e-mail do usuário %{target}"
         change_role_user_html: "%{name} alterou o cargo de %{target}"
         confirm_user_html: "%{name} confirmou o endereço de e-mail do usuário %{target}"
         create_account_warning_html: "%{name} enviou um aviso para %{target}"
         create_announcement_html: "%{name} criou o novo anúncio %{target}"
-        create_canonical_email_block_html: "%{name} bloqueou o endereço de e-mail com o hash %{target}"
+        create_canonical_email_block_html: "%{name} bloqueou o endereço de e-mail
+          com o hash %{target}"
         create_custom_emoji_html: "%{name} enviou o novo emoji %{target}"
         create_domain_allow_html: "%{name} permitiu federação com domínio %{target}"
         create_domain_block_html: "%{name} bloqueou o domínio %{target}"
@@ -257,30 +276,38 @@ pt-BR:
         create_user_role_html: "%{name} criou o cargo %{target}"
         demote_user_html: "%{name} rebaixou o usuário %{target}"
         destroy_announcement_html: "%{name} excluiu o anúncio %{target}"
-        destroy_canonical_email_block_html: "%{name} desbloqueou o endereço e-mail com o hash %{target}"
+        destroy_canonical_email_block_html: "%{name} desbloqueou o endereço e-mail
+          com o hash %{target}"
         destroy_custom_emoji_html: "%{name} apagou o emoji %{target}"
         destroy_domain_allow_html: "%{name} bloqueou federação com domínio %{target}"
         destroy_domain_block_html: "%{name} desbloqueou o domínio %{target}"
-        destroy_email_domain_block_html: "%{name} desbloqueou o domínio de e-mail %{target}"
+        destroy_email_domain_block_html: "%{name} desbloqueou o domínio de e-mail
+          %{target}"
         destroy_instance_html: "%{name} limpou o domínio %{target}"
         destroy_ip_block_html: "%{name} excluiu a regra para o IP %{target}"
         destroy_relay_html: "%{name} excluiu uma retransmissão %{target}"
         destroy_status_html: "%{name} removeu a publicação de %{target}"
         destroy_unavailable_domain_html: "%{name} retomou a entrega ao domínio %{target}"
         destroy_user_role_html: "%{name} excluiu o cargo %{target}"
-        disable_2fa_user_html: "%{name} desativou a exigência da autenticação de dois fatores para o usuário %{target}"
+        disable_2fa_user_html: "%{name} desativou a exigência da autenticação de dois
+          fatores para o usuário %{target}"
         disable_custom_emoji_html: "%{name} desativou o emoji %{target}"
         disable_relay_html: "%{name} desativou uma retransmissão %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} desativou a autenticação via token por e-mail para %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} desativou a autenticação via
+          token por e-mail para %{target}"
         disable_user_html: "%{name} desativou o login para %{target}"
         enable_custom_emoji_html: "%{name} ativou o emoji %{target}"
         enable_relay_html: "%{name} ativou uma retransmissão %{target}"
-        enable_sign_in_token_auth_user_html: "%{name} ativou a autenticação via token por e-mail para %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} ativou a autenticação via token
+          por e-mail para %{target}"
         enable_user_html: "%{name} ativou o login para %{target}"
-        memorialize_account_html: "%{name} transformou a conta de %{target} em um memorial"
+        memorialize_account_html: "%{name} transformou a conta de %{target} em um
+          memorial"
         promote_user_html: "%{name} promoveu o usuário %{target}"
-        publish_terms_of_service_html: "%{name} publicou atualizações aos termos de serviço"
-        reject_appeal_html: "%{name} rejeitou a revisão da decisão da moderação em %{target}"
+        publish_terms_of_service_html: "%{name} publicou atualizações aos termos de
+          serviço"
+        reject_appeal_html: "%{name} rejeitou a revisão da decisão da moderação em
+          %{target}"
         reject_user_html: "%{name} rejeitou a inscrição de %{target}"
         remove_avatar_user_html: "%{name} removeu a imagem de perfil de %{target}"
         reopen_report_html: "%{name} reabriu a denúncia %{target}"
@@ -352,7 +379,8 @@ pt-BR:
       not_permitted: Você não tem permissão para executar esta ação
       overwrite: Sobrescrever
       shortcode: Atalho
-      shortcode_hint: Pelo menos 2 caracteres, apenas caracteres alfanuméricos e underlines ("_")
+      shortcode_hint: Pelo menos 2 caracteres, apenas caracteres alfanuméricos e underlines
+        ("_")
       title: Emojis personalizados
       uncategorized: Não categorizado
       unlist: Não listar
@@ -403,40 +431,55 @@ pt-BR:
         cancel: Cancelar
         confirm: Suspender
         permanent_action: Desfazer a suspensão não restaurará nenhum dado ou relacionamento.
-        preamble_html: Você está prestes a suspender <strong>%{domain}</strong> e seus subdomínios.
-        remove_all_data: Isto irá remover todo o conteúdo, mídia e dados de perfil para este domínio do seu servidor.
+        preamble_html: Você está prestes a suspender <strong>%{domain}</strong> e
+          seus subdomínios.
+        remove_all_data: Isto irá remover todo o conteúdo, mídia e dados de perfil
+          para este domínio do seu servidor.
         stop_communication: Seu servidor irá parar de se comunicar com esses servidores.
         title: Confirmar bloqueio de domínio para %{domain}
-        undo_relationships: Isso desfará qualquer relação entre as contas desses servidores e as suas.
+        undo_relationships: Isso desfará qualquer relação entre as contas desses servidores
+          e as suas.
       created_msg: Domínio está sendo bloqueado
       destroyed_msg: Domínio desbloqueado
       domain: Domínio
       edit: Editar bloqueio de domínio
       existing_domain_block: Você já impôs limites mais rigorosos em %{name}.
-      existing_domain_block_html: Você já impôs limites mais estritos em %{name}, você precisa <a href="%{unblock_url}">desbloqueá-lo</a> primeiro.
+      existing_domain_block_html: Você já impôs limites mais estritos em %{name},
+        você precisa <a href="%{unblock_url}">desbloqueá-lo</a> primeiro.
       export: Exportar
       import: Importar
       new:
         create: Criar bloqueio
-        hint: O bloqueio de domínio não vai prevenir a criação de entradas de contas na base de dados, mas vai retroativamente e automaticamente aplicar métodos específicos de moderação nessas contas.
+        hint: O bloqueio de domínio não vai prevenir a criação de entradas de contas
+          na base de dados, mas vai retroativamente e automaticamente aplicar métodos
+          específicos de moderação nessas contas.
         severity:
-          desc_html: "<strong>Silenciar</strong> vai tornar as publicações da conta invisíveis para qualquer um que não estiver lhe seguindo. <strong>Suspender</strong> vai remover todo o conteúdo, mídia e dados de perfil da conta. Use <strong>Nenhum</strong> se você só quer rejeitar arquivos de mídia."
+          desc_html: "<strong>Silenciar</strong> vai tornar as publicações da conta
+            invisíveis para qualquer um que não estiver lhe seguindo. <strong>Suspender</strong>
+            vai remover todo o conteúdo, mídia e dados de perfil da conta. Use <strong>Nenhum</strong>
+            se você só quer rejeitar arquivos de mídia."
           noop: Nenhum
           silence: Limitar
           suspend: Banir
         title: Novo bloqueio de domínio
-      no_domain_block_selected: Nenhum bloqueio de domínio foi alterado porque nenhum foi selecionado
+      no_domain_block_selected: Nenhum bloqueio de domínio foi alterado porque nenhum
+        foi selecionado
       not_permitted: Você não possui permissão para realizar esta ação
       obfuscate: Ofuscar nome de domínio
-      obfuscate_hint: Ofuscar parcialmente o domínio na lista se a exibição da lista de domínios limitados estiver habilitada
+      obfuscate_hint: Ofuscar parcialmente o domínio na lista se a exibição da lista
+        de domínios limitados estiver habilitada
       private_comment: Comentário privado
-      private_comment_hint: Comente sobre essa restrição ao domínio para uso interno dos moderadores.
+      private_comment_hint: Comente sobre essa restrição ao domínio para uso interno
+        dos moderadores.
       public_comment: Comentário público
-      public_comment_hint: Comente sobre essa restrição ao domínio para o público geral, caso a divulgação da lista de bloqueio esteja ativada.
+      public_comment_hint: Comente sobre essa restrição ao domínio para o público
+        geral, caso a divulgação da lista de bloqueio esteja ativada.
       reject_media: Rejeitar arquivos de mídia
-      reject_media_hint: Remove arquivos de mídia armazenados localmente e recusa fazer download de qualquer um no futuro. Irrelevante para suspensões
+      reject_media_hint: Remove arquivos de mídia armazenados localmente e recusa
+        fazer download de qualquer um no futuro. Irrelevante para suspensões
       reject_reports: Rejeitar denúncias
-      reject_reports_hint: Ignora todas as denúncias vindo deste domínio. Irrelevante para suspensões
+      reject_reports_hint: Ignora todas as denúncias vindo deste domínio. Irrelevante
+        para suspensões
       undo: Desfazer bloqueio de domínio
       view: Ver domínios bloqueados
     email_domain_blocks:
@@ -455,9 +498,14 @@ pt-BR:
         create: Adicionar domínio
         resolve: Resolver domínio
         title: Bloquear novo domínio de e-mail
-      no_email_domain_block_selected: Nenhum bloco de domínio de email foi alterado, pois, nenhum foi selecionado
+      no_email_domain_block_selected: Nenhum bloco de domínio de email foi alterado,
+        pois, nenhum foi selecionado
       not_permitted: Não permitido
-      resolved_dns_records_hint_html: O nome de domínio é associado aos seguintes domínios MX, que são responsáveis por aceitar e-mails. Ao bloquear um domínio MX, você bloqueará as inscrições de qualquer endereço de e-mail que use o mesmo domínio MX, mesmo que o nome de domínio visível seja diferente. <strong>Tenha cuidado para não bloquear os principais provedores de e-mail.</strong>
+      resolved_dns_records_hint_html: O nome de domínio é associado aos seguintes
+        domínios MX, que são responsáveis por aceitar e-mails. Ao bloquear um domínio
+        MX, você bloqueará as inscrições de qualquer endereço de e-mail que use o
+        mesmo domínio MX, mesmo que o nome de domínio visível seja diferente. <strong>Tenha
+        cuidado para não bloquear os principais provedores de e-mail.</strong>
       resolved_through_html: Resolvido através de %{domain}
       title: Domínios de e-mail bloqueados
     export_domain_allows:
@@ -466,17 +514,27 @@ pt-BR:
       no_file: Nenhum arquivo selecionado
     export_domain_blocks:
       import:
-        description_html: Você está prestes a importar uma lista de boqueio de domínio. Por favor, revise esta lista com muito cuidado, especialmente se você mesmo não criou esta lista.
+        description_html: Você está prestes a importar uma lista de boqueio de domínio.
+          Por favor, revise esta lista com muito cuidado, especialmente se você mesmo
+          não criou esta lista.
         existing_relationships_warning: Existem relações de seguimento
-        private_comment_description_html: 'Para ajudá-lo a rastrear de onde vêm os blocos importados, serão criados blocos importados com o seguinte comentário privado: <q>%{comment}</q>'
+        private_comment_description_html: 'Para ajudá-lo a rastrear de onde vêm os
+          blocos importados, serão criados blocos importados com o seguinte comentário
+          privado: <q>%{comment}</q>'
         private_comment_template: Importado de %{source} em %{date}
         title: Importar bloqueio de domínios
-      invalid_domain_block: 'Um ou mais blocos de domínio foram ignorados devido ao(s) seguinte(s) erro(s): %{error}'
+      invalid_domain_block: 'Um ou mais blocos de domínio foram ignorados devido ao(s)
+        seguinte(s) erro(s): %{error}'
       new:
         title: Importar bloqueio de domínios
       no_file: Nenhum arquivo selecionado
     follow_recommendations:
-      description_html: "<strong>A recomendação de contas ajuda os novos usuários a encontrar rapidamente conteúdo interessante</strong>. Quando um usuário ainda não tiver interagido o suficiente para gerar recomendações de contas, essas contas serão recomendadas. Essas recomendações são recalculadas diariamente a partir de uma lista de contas com alto engajamento e maior número de seguidores locais em uma dada língua."
+      description_html: "<strong>A recomendação de contas ajuda os novos usuários
+        a encontrar rapidamente conteúdo interessante</strong>. Quando um usuário
+        ainda não tiver interagido o suficiente para gerar recomendações de contas,
+        essas contas serão recomendadas. Essas recomendações são recalculadas diariamente
+        a partir de uma lista de contas com alto engajamento e maior número de seguidores
+        locais em uma dada língua."
       language: Na língua
       status: Situação
       suppress: Remover recomendação de contas
@@ -489,8 +547,12 @@ pt-BR:
         view_all: Ver todos os logs de auditoria
       availability:
         description_html:
-          one: Se a entrega ao domínio falhar em <strong>%{count} dia</strong> sem sucesso, nenhuma tentativa de entrega será feita a menos que uma entrega <em>do</em> domínio seja recebida.
-          other: Se a entrega ao domínio falhar em <strong>%{count} dias diferentes</strong> sem sucesso, nenhuma tentativa de entrega será feita a menos que uma entrega <em>do</em> domínio seja recebida.
+          one: Se a entrega ao domínio falhar em <strong>%{count} dia</strong> sem
+            sucesso, nenhuma tentativa de entrega será feita a menos que uma entrega
+            <em>do</em> domínio seja recebida.
+          other: Se a entrega ao domínio falhar em <strong>%{count} dias diferentes</strong>
+            sem sucesso, nenhuma tentativa de entrega será feita a menos que uma entrega
+            <em>do</em> domínio seja recebida.
         failure_threshold_reached: Limite de falhas atingido em %{date}.
         failures_recorded:
           one: Falha na tentativa em %{count} dia.
@@ -502,11 +564,14 @@ pt-BR:
       back_to_limited: Limitado
       back_to_warning: Aviso
       by_domain: Domínio
-      confirm_purge: Você tem certeza de que deseja excluir permanentemente os dados deste domínio?
+      confirm_purge: Você tem certeza de que deseja excluir permanentemente os dados
+        deste domínio?
       content_policies:
         comment: Nota interna
-        description_html: Você pode definir políticas de conteúdo que serão aplicadas a todas as contas deste domínio e a qualquer um dos seus subdomínios.
-        limited_federation_mode_description_html: Você pode escolher se deseja permitir a associação com este domínio.
+        description_html: Você pode definir políticas de conteúdo que serão aplicadas
+          a todas as contas deste domínio e a qualquer um dos seus subdomínios.
+        limited_federation_mode_description_html: Você pode escolher se deseja permitir
+          a associação com este domínio.
         policies:
           reject_media: Rejeitar mídia
           reject_reports: Rejeitar denúncias
@@ -533,7 +598,8 @@ pt-BR:
         unavailable: Indisponível
       delivery_available: Envio disponível
       delivery_error_days: Dias de erro de entrega
-      delivery_error_hint: Se a entrega não for possível durante %{count} dias, será automaticamente marcada como não realizável.
+      delivery_error_hint: Se a entrega não for possível durante %{count} dias, será
+        automaticamente marcada como não realizável.
       destroyed_msg: Dados de %{domain} agora estão na fila para exclusão iminente.
       empty: Nenhum domínio encontrado.
       known_accounts:
@@ -546,14 +612,17 @@ pt-BR:
       private_comment: Comentário privado
       public_comment: Comentário público
       purge: Limpar
-      purge_description_html: Se você acredita que este domínio está offline definitivamente, você pode excluir todos os registros de conta e dados associados deste domínio do seu armazenamento. Isso pode demorar um pouco.
+      purge_description_html: Se você acredita que este domínio está offline definitivamente,
+        você pode excluir todos os registros de conta e dados associados deste domínio
+        do seu armazenamento. Isso pode demorar um pouco.
       title: Federação
       total_blocked_by_us: Bloqueado por nós
       total_followed_by_them: Seguidos por eles
       total_followed_by_us: Seguidos por nós
       total_reported: Denúncias sobre eles
       total_storage: Mídias anexadas
-      totals_time_period_hint_html: Os totais exibidos abaixo incluem dados para todo o tempo.
+      totals_time_period_hint_html: Os totais exibidos abaixo incluem dados para todo
+        o tempo.
       unknown_instance: Atualmente não há registros deste domínio neste servidor.
     invites:
       deactivate_all: Desativar todos
@@ -583,17 +652,25 @@ pt-BR:
     relays:
       add_new: Adicionar novo repetidor
       delete: Excluir
-      description_html: Um <strong>repetidor de federação</strong> é um servidor intermediário que troca um grande volume de publicações públicas entre servidores que se inscrevem e publicam nele. <strong>Ele pode ser usado para ajudar os servidores pequenos e médios a descobrir o conteúdo pelo fediverso</strong>, que normalmente precisariam que usuários locais manualmente seguissem outras pessoas em servidores remotas.
+      description_html: Um <strong>repetidor de federação</strong> é um servidor intermediário
+        que troca um grande volume de publicações públicas entre servidores que se
+        inscrevem e publicam nele. <strong>Ele pode ser usado para ajudar os servidores
+        pequenos e médios a descobrir o conteúdo pelo fediverso</strong>, que normalmente
+        precisariam que usuários locais manualmente seguissem outras pessoas em servidores
+        remotas.
       disable: Desativar
       disabled: Desativado
       enable: Ativar
-      enable_hint: Uma vez ativado, seu servidor se inscreverá para receber todas as publicações deste repetidor e começará a enviar todas as publicações deste servidor para o repetidor.
+      enable_hint: Uma vez ativado, seu servidor se inscreverá para receber todas
+        as publicações deste repetidor e começará a enviar todas as publicações deste
+        servidor para o repetidor.
       enabled: Ativado
       inbox_url: Link do repetidor
       pending: Esperando pela aprovação do repetidor
       save_and_enable: Salvar e ativar
       setup: Configurar uma conexão de repetidor
-      signatures_not_enabled: Repetidores não funcionarão adequadamente enquanto o modo seguro ou o modo lista de permitidos estiverem ativos
+      signatures_not_enabled: Repetidores não funcionarão adequadamente enquanto o
+        modo seguro ou o modo lista de permitidos estiverem ativos
       status: Situação
       title: Repetidores
     report_notes:
@@ -607,14 +684,30 @@ pt-BR:
       action_log: Registros de auditoria
       action_taken_by: Atitude tomada por
       actions:
-        delete_description_html: As publicações denunciadas serão apagadas e um aviso de violação será mantido para te informar sobre o agravamento caso essa mesma conta cometa infrações no futuro.
-        mark_as_sensitive_description_html: Os conteúdos de mídia em publicações denunciadas serão marcados como sensíveis e um aviso de violação será mantido para te informar sobre o agravamento caso essa mesma conta comenta infrações no futuro.
-        other_description_html: Veja mais opções para controlar o comportamento da conta e personalizar a comunicação com a conta denunciada.
-        resolve_description_html: Nenhuma ação será tomada contra a conta denunciada, nenhuma violação será guardada e a denúncia será encerrada.
-        silence_description_html: A conta ficará visível apenas para aqueles que já a seguem ou que a procuram manualmente, limitando severamente seu alcance. Pode ser revertido a qualquer momento. Fecha todas as denúncias desta conta.
-        suspend_description_html: A conta e todo o seu conteúdo ficará inacessível e, eventualmente, excluído e interagir com ela será impossível. Reversível dentro de 30 dias. Encerra todas as denúncias contra esta conta.
-      actions_description_html: Decida qual ação tomar para responder a essa denúncia. Se você tomar uma ação punitiva contra a conta denunciada, uma notificação por e-mail será enviada ao usuário, exceto quando a categoria <strong>Spam</strong> for selecionada.
-      actions_description_remote_html: Decida quais medidas tomará para resolver esta denúncia. Isso só afetará como <strong>seu servidor</strong> se comunica com esta conta remota e manipula seu conteúdo.
+        delete_description_html: As publicações denunciadas serão apagadas e um aviso
+          de violação será mantido para te informar sobre o agravamento caso essa
+          mesma conta cometa infrações no futuro.
+        mark_as_sensitive_description_html: Os conteúdos de mídia em publicações denunciadas
+          serão marcados como sensíveis e um aviso de violação será mantido para te
+          informar sobre o agravamento caso essa mesma conta comenta infrações no
+          futuro.
+        other_description_html: Veja mais opções para controlar o comportamento da
+          conta e personalizar a comunicação com a conta denunciada.
+        resolve_description_html: Nenhuma ação será tomada contra a conta denunciada,
+          nenhuma violação será guardada e a denúncia será encerrada.
+        silence_description_html: A conta ficará visível apenas para aqueles que já
+          a seguem ou que a procuram manualmente, limitando severamente seu alcance.
+          Pode ser revertido a qualquer momento. Fecha todas as denúncias desta conta.
+        suspend_description_html: A conta e todo o seu conteúdo ficará inacessível
+          e, eventualmente, excluído e interagir com ela será impossível. Reversível
+          dentro de 30 dias. Encerra todas as denúncias contra esta conta.
+      actions_description_html: Decida qual ação tomar para responder a essa denúncia.
+        Se você tomar uma ação punitiva contra a conta denunciada, uma notificação
+        por e-mail será enviada ao usuário, exceto quando a categoria <strong>Spam</strong>
+        for selecionada.
+      actions_description_remote_html: Decida quais medidas tomará para resolver esta
+        denúncia. Isso só afetará como <strong>seu servidor</strong> se comunica com
+        esta conta remota e manipula seu conteúdo.
       actions_no_posts: Essa denúncia não tem nenhuma publicação associada para excluir
       add_to_report: Adicionar mais à denúncia
       already_suspended_badges:
@@ -626,7 +719,8 @@ pt-BR:
       by_target_domain: Domínio da conta denunciada
       cancel: Cancelar
       category: Categoria
-      category_description_html: O motivo pelo qual esta conta e/ou conteúdo foi denunciado será citado na comunicação com a conta denunciada
+      category_description_html: O motivo pelo qual esta conta e/ou conteúdo foi denunciado
+        será citado na comunicação com a conta denunciada
       comment:
         none: Nenhum
       comment_description_html: 'Para fornecer mais informações, %{name} escreveu:'
@@ -635,7 +729,9 @@ pt-BR:
       created_at: Denunciado
       delete_and_resolve: Excluir publicações
       forwarded: Encaminhados
-      forwarded_replies_explanation: Este relatório é de um usuário remoto e é sobre um conteúdo remoto. Ele foi encaminhado para você porque o conteúdo denunciado está em resposta a um de seus usuários.
+      forwarded_replies_explanation: Este relatório é de um usuário remoto e é sobre
+        um conteúdo remoto. Ele foi encaminhado para você porque o conteúdo denunciado
+        está em resposta a um de seus usuários.
       forwarded_to: Encaminhado para %{domain}
       mark_as_resolved: Marcar como resolvido
       mark_as_sensitive: Marcar como sensível
@@ -646,11 +742,14 @@ pt-BR:
         create_and_resolve: Resolver com nota
         create_and_unresolve: Reabrir com nota
         delete: Excluir
-        placeholder: Descreva quais ações foram tomadas ou quaisquer outras atualizações relacionadas...
+        placeholder: Descreva quais ações foram tomadas ou quaisquer outras atualizações
+          relacionadas...
         title: Notas
-      notes_description_html: Visualize e deixe anotações para outros moderadores e para você mesmo no futuro
+      notes_description_html: Visualize e deixe anotações para outros moderadores
+        e para você mesmo no futuro
       processed_msg: 'Relatório #%{id} processado com sucesso'
-      quick_actions_description_html: 'Tome uma ação rápida ou role para baixo para ver o conteúdo denunciado:'
+      quick_actions_description_html: 'Tome uma ação rápida ou role para baixo para
+        ver o conteúdo denunciado:'
       remote_user_placeholder: o usuário remoto de %{instance}
       reopen: Reabrir denúncia
       report: 'Denúncia #%{id}'
@@ -662,23 +761,36 @@ pt-BR:
       skip_to_actions: Pular para ações
       status: Estado
       statuses: Conteúdo denunciado
-      statuses_description_html: Conteúdo ofensivo será citado em comunicação com a conta denunciada
+      statuses_description_html: Conteúdo ofensivo será citado em comunicação com
+        a conta denunciada
       summary:
         action_preambles:
-          delete_html: 'Você está prestes a <strong>remover</strong> algumas das publicações de <strong>@%{acct}</strong>. Isso irá:'
-          mark_as_sensitive_html: 'Você está prestes a <strong>marcar</strong> algumas das publicações de <strong>@%{acct}</strong> como <strong>sensíveis</strong>. Isso irá:'
-          silence_html: 'Você está prestes a <strong>limitar</strong> <strong>a conta de @%{acct}</strong>. Isso irá:'
-          suspend_html: 'Você está prestes a <strong>suspender</strong> <strong>a conta de @%{acct}</strong>. Isso irá:'
+          delete_html: 'Você está prestes a <strong>remover</strong> algumas das publicações
+            de <strong>@%{acct}</strong>. Isso irá:'
+          mark_as_sensitive_html: 'Você está prestes a <strong>marcar</strong> algumas
+            das publicações de <strong>@%{acct}</strong> como <strong>sensíveis</strong>.
+            Isso irá:'
+          silence_html: 'Você está prestes a <strong>limitar</strong> <strong>a conta
+            de @%{acct}</strong>. Isso irá:'
+          suspend_html: 'Você está prestes a <strong>suspender</strong> <strong>a
+            conta de @%{acct}</strong>. Isso irá:'
         actions:
           delete_html: Remover as publicações ofensivas
           mark_as_sensitive_html: Marcar a mídia de posts ofensivos como sensível
-          silence_html: Limitar firmemente o alcance de <strong>@%{acct}</strong>, tornando seus perfis e conteúdos apenas visíveis para pessoas que já os estão seguindo ou olhando manualmente o perfil
-          suspend_html: Suspender <strong>@%{acct}</strong>, tornando seu perfil e conteúdo inacessíveis, impossibilitando a interação
+          silence_html: Limitar firmemente o alcance de <strong>@%{acct}</strong>,
+            tornando seus perfis e conteúdos apenas visíveis para pessoas que já os
+            estão seguindo ou olhando manualmente o perfil
+          suspend_html: Suspender <strong>@%{acct}</strong>, tornando seu perfil e
+            conteúdo inacessíveis, impossibilitando a interação
         close_report: 'Marcar denúncia #%{id} como resolvida'
-        close_reports_html: Marcar <strong>todas</strong> as denúncias contra <strong>@%{acct}</strong> como resolvidas
-        delete_data_html: Exclua o perfil e o conteúdo de <strong>@%{acct}</strong> daqui a 30 dias, a menos que a suspensão seja desfeita nesse meio tempo
-        preview_preamble_html: "<strong>@%{acct}</strong> receberá um aviso com o seguinte conteúdo:"
-        record_strike_html: Registre uma ação contra <strong>@%{acct}</strong> para te ajudar em futuras violações desta conta
+        close_reports_html: Marcar <strong>todas</strong> as denúncias contra <strong>@%{acct}</strong>
+          como resolvidas
+        delete_data_html: Exclua o perfil e o conteúdo de <strong>@%{acct}</strong>
+          daqui a 30 dias, a menos que a suspensão seja desfeita nesse meio tempo
+        preview_preamble_html: "<strong>@%{acct}</strong> receberá um aviso com o
+          seguinte conteúdo:"
+        record_strike_html: Registre uma ação contra <strong>@%{acct}</strong> para
+          te ajudar em futuras violações desta conta
         send_email_html: Enviar <strong>@%{acct}</strong> um e-mail de alerta
         warning_placeholder: Argumentos adicionais para a ação de moderação.
       target_origin: Origem da conta denunciada
@@ -700,87 +812,128 @@ pt-BR:
         moderation: Moderação
         special: Especial
       delete: Excluir
-      description_html: Com as <strong>funções de usuário</strong>, você pode personalizar quais funções e áreas do Truecolors seus usuários podem acessar.
+      description_html: Com as <strong>funções de usuário</strong>, você pode personalizar
+        quais funções e áreas do Truecolors seus usuários podem acessar.
       edit: Editar cargo '%{name}'
       everyone: Permissões padrão
-      everyone_full_description_html: Este é o <strong>cargo base</strong> que afeta <strong>todos os usuários</strong>, mesmo aqueles sem um cargo atribuído. Todos os outros cargos herdam as permissões dele.
+      everyone_full_description_html: Este é o <strong>cargo base</strong> que afeta
+        <strong>todos os usuários</strong>, mesmo aqueles sem um cargo atribuído.
+        Todos os outros cargos herdam as permissões dele.
       permissions_count:
         one: "%{count} permissão"
         other: "%{count} permissões"
       privileges:
         administrator: Administrador
-        administrator_description: Usuários com essa permissão irão ignorar todas as permissões
+        administrator_description: Usuários com essa permissão irão ignorar todas
+          as permissões
         delete_user_data: Apagar Dados de Usuário
-        delete_user_data_description: Permitir aos usuários apagar os dados de outros usuários instantaneamente
+        delete_user_data_description: Permitir aos usuários apagar os dados de outros
+          usuários instantaneamente
         invite_users: Convidar Usuários
-        invite_users_description: Permite que os usuários convidem novas pessoas para o servidor
+        invite_users_description: Permite que os usuários convidem novas pessoas para
+          o servidor
         manage_announcements: Gerenciar Avisos
-        manage_announcements_description: Permite aos usuários gerenciar anúncios no servidor
+        manage_announcements_description: Permite aos usuários gerenciar anúncios
+          no servidor
         manage_appeals: Gerenciar revisões
-        manage_appeals_description: Permite aos usuários visualizar as revisões das decisões da moderação
+        manage_appeals_description: Permite aos usuários visualizar as revisões das
+          decisões da moderação
         manage_blocks: Gerenciar Bloqueios
-        manage_blocks_description: Permite aos usuários bloquear provedores de e-mail e endereços IP
+        manage_blocks_description: Permite aos usuários bloquear provedores de e-mail
+          e endereços IP
         manage_custom_emojis: Gerenciar Emojis Personalizados
-        manage_custom_emojis_description: Permite aos usuários gerenciar emojis personalizados no servidor
+        manage_custom_emojis_description: Permite aos usuários gerenciar emojis personalizados
+          no servidor
         manage_federation: Gerenciar Federação
-        manage_federation_description: Permite aos usuários bloquear ou permitir federação com outros domínios e controlar a entregabilidade
+        manage_federation_description: Permite aos usuários bloquear ou permitir federação
+          com outros domínios e controlar a entregabilidade
         manage_invites: Gerenciar convites
-        manage_invites_description: Permite que os usuários naveguem e desativem os links de convites
+        manage_invites_description: Permite que os usuários naveguem e desativem os
+          links de convites
         manage_reports: Gerenciar denúncias
-        manage_reports_description: Permite aos usuários avaliar denúncias e realizar ações de moderação contra elas
+        manage_reports_description: Permite aos usuários avaliar denúncias e realizar
+          ações de moderação contra elas
         manage_roles: Gerenciar Funções
-        manage_roles_description: Permitir que os usuários gerenciem e atribuam cargos abaixo deles
+        manage_roles_description: Permitir que os usuários gerenciem e atribuam cargos
+          abaixo deles
         manage_rules: Gerenciar Regras
         manage_rules_description: Permite que os usuários alterarem as regras do servidor
         manage_settings: Gerenciar Configurações
-        manage_settings_description: Permite que os usuários alterem as configurações do site
+        manage_settings_description: Permite que os usuários alterem as configurações
+          do site
         manage_taxonomies: Gerenciar taxonomias
-        manage_taxonomies_description: Permite aos usuários rever o conteúdo em alta e atualizar as configurações de hashtag
+        manage_taxonomies_description: Permite aos usuários rever o conteúdo em alta
+          e atualizar as configurações de hashtag
         manage_user_access: Gerenciar Acesso de Usuário
-        manage_user_access_description: Permite aos usuários desativar a autenticação de dois fatores de outros usuários, alterar seu endereço de e-mail e redefinir sua senha
+        manage_user_access_description: Permite aos usuários desativar a autenticação
+          de dois fatores de outros usuários, alterar seu endereço de e-mail e redefinir
+          sua senha
         manage_users: Gerenciar usuários
-        manage_users_description: Permite aos usuários ver os detalhes de outros usuários e executar ações de moderação contra eles
+        manage_users_description: Permite aos usuários ver os detalhes de outros usuários
+          e executar ações de moderação contra eles
         manage_webhooks: Gerenciar Webhooks
-        manage_webhooks_description: Permite aos usuários configurar webhooks para eventos administrativos
+        manage_webhooks_description: Permite aos usuários configurar webhooks para
+          eventos administrativos
         view_audit_log: Ver o registro de auditoria
-        view_audit_log_description: Permite aos usuários ver um histórico de ações administrativas no servidor
+        view_audit_log_description: Permite aos usuários ver um histórico de ações
+          administrativas no servidor
         view_dashboard: Ver painel
-        view_dashboard_description: Permite que os usuários acessem o painel e várias métricas
+        view_dashboard_description: Permite que os usuários acessem o painel e várias
+          métricas
         view_devops: DevOps
-        view_devops_description: Permite aos usuários acessar os painéis da Sidekiq e pgHero
+        view_devops_description: Permite aos usuários acessar os painéis da Sidekiq
+          e pgHero
       title: Funções
     rules:
       add_new: Adicionar regra
       delete: Deletar
-      description_html: Embora a maioria afirme ter lido e concordado com os termos de serviço, geralmente as pessoas só leem depois de surgir um problema. <strong>Faça com que seja mais fácil ver as regras do seu servidor rapidamente fornecendo-as em uma lista.</strong> Tente manter cada regra curta e simples, mas também tente não dividi-las em muitos itens separados.
+      description_html: Embora a maioria afirme ter lido e concordado com os termos
+        de serviço, geralmente as pessoas só leem depois de surgir um problema. <strong>Faça
+        com que seja mais fácil ver as regras do seu servidor rapidamente fornecendo-as
+        em uma lista.</strong> Tente manter cada regra curta e simples, mas também
+        tente não dividi-las em muitos itens separados.
       edit: Editar regra
       empty: Nenhuma regra do servidor foi definida.
       title: Regras do servidor
     settings:
       about:
         manage_rules: Gerenciar regras do servidor
-        preamble: Forneça informações detalhadas sobre como o servidor é operado, moderado e financiado.
-        rules_hint: Existe uma área dedicada para as regras que os usuários devem aderir.
+        preamble: Forneça informações detalhadas sobre como o servidor é operado,
+          moderado e financiado.
+        rules_hint: Existe uma área dedicada para as regras que os usuários devem
+          aderir.
         title: Sobre
       appearance:
         preamble: Personalize a interface web do Truecolors.
         title: Aparência
       branding:
-        preamble: A marca do seu servidor o diferencia de outros servidores na rede. Essa informação pode ser exibida em vários ambientes, como a interface web do Truecolors, aplicativos nativos, pré-visualizações de links em outros sites, aplicativos de mensagens, etc. Por isso, é melhor manter essa informação clara, curta e concisa.
+        preamble: A marca do seu servidor o diferencia de outros servidores na rede.
+          Essa informação pode ser exibida em vários ambientes, como a interface web
+          do Truecolors, aplicativos nativos, pré-visualizações de links em outros
+          sites, aplicativos de mensagens, etc. Por isso, é melhor manter essa informação
+          clara, curta e concisa.
         title: Marca
       captcha_enabled:
-        desc_html: Isso é baseado em scripts externos de hCaptcha, o que pode ser uma preocupação de segurança e privacidade. Além disso, <strong>isso pode tornar o processo de registro significativamente menos acessível para algumas pessoas (especialmente deficientes)</strong>. Por estas razões, favor considerar medidas alternativas como o registro baseado em aprovação ou em convite.
+        desc_html: Isso é baseado em scripts externos de hCaptcha, o que pode ser
+          uma preocupação de segurança e privacidade. Além disso, <strong>isso pode
+          tornar o processo de registro significativamente menos acessível para algumas
+          pessoas (especialmente deficientes)</strong>. Por estas razões, favor considerar
+          medidas alternativas como o registro baseado em aprovação ou em convite.
         title: Exigir que novos usuários resolvam um CAPTCHA para confirmar sua conta
       content_retention:
         danger_zone: Zona de perigo
         preamble: Controlar como o conteúdo gerado pelo usuário é armazenado no Truecolors.
         title: Retenção de conteúdo
       default_noindex:
-        desc_html: Afeta qualquer usuário que não tenha alterado esta configuração manualmente
-        title: Optar por excluir usuários da indexação de mecanismos de pesquisa por padrão
+        desc_html: Afeta qualquer usuário que não tenha alterado esta configuração
+          manualmente
+        title: Optar por excluir usuários da indexação de mecanismos de pesquisa por
+          padrão
       discovery:
         follow_recommendations: Seguir recomendações
-        preamble: Navegar por um conteúdo interessante é fundamental para integrar novos usuários que podem não conhecer ninguém no Truecolors. Controle como várias características de descoberta funcionam no seu servidor.
+        preamble: Navegar por um conteúdo interessante é fundamental para integrar
+          novos usuários que podem não conhecer ninguém no Truecolors. Controle como
+          várias características de descoberta funcionam no seu servidor.
         profile_directory: Diretório de perfis
         public_timelines: Timelines públicas
         publish_discovered_servers: Publicar servidores descobertos
@@ -792,7 +945,8 @@ pt-BR:
         disabled: Para ninguém
         users: Para usuários locais logados
       registrations:
-        moderation_recommandation: Por favor, certifique-se de ter uma equipe de moderação adequada e reativa antes de abrir as inscrições para todos!
+        moderation_recommandation: Por favor, certifique-se de ter uma equipe de moderação
+          adequada e reativa antes de abrir as inscrições para todos!
         preamble: Controle quem pode criar uma conta no seu servidor.
         title: Inscrições
       registrations_mode:
@@ -800,11 +954,19 @@ pt-BR:
           approved: Aprovação necessária para criar conta
           none: Ninguém pode criar conta
           open: Qualquer um pode criar conta
-        warning_hint: Recomendamos o uso de "Aprovação necessária para se cadastrar", a menos que você esteja confiante de que sua equipe de moderação pode lidar com spam e registros maliciosos em tempo hábil.
+        warning_hint: Recomendamos o uso de "Aprovação necessária para se cadastrar",
+          a menos que você esteja confiante de que sua equipe de moderação pode lidar
+          com spam e registros maliciosos em tempo hábil.
       security:
         authorized_fetch: Exigir autenticação por parte de servidores federados
-        authorized_fetch_hint: Exigir autenticação de servidores federados permite uma aplicação mais rigorosa de bloqueios tanto de nível de usuário como de servidor. No entanto, isso traz como custo uma penalidade no desempenho, reduz o alcance das suas respostas e pode introduzir problemas de compatibilidade com alguns serviços federados. Além disso, não impedirá atores dedicados de consultar suas publicações e contas públicas.
-        authorized_fetch_overridden_hint: Você atualmente não pode alterar esta configuração porque ela é sobreposta por uma variável de ambiente.
+        authorized_fetch_hint: Exigir autenticação de servidores federados permite
+          uma aplicação mais rigorosa de bloqueios tanto de nível de usuário como
+          de servidor. No entanto, isso traz como custo uma penalidade no desempenho,
+          reduz o alcance das suas respostas e pode introduzir problemas de compatibilidade
+          com alguns serviços federados. Além disso, não impedirá atores dedicados
+          de consultar suas publicações e contas públicas.
+        authorized_fetch_overridden_hint: Você atualmente não pode alterar esta configuração
+          porque ela é sobreposta por uma variável de ambiente.
         federation_authentication: Aplicação de autenticação da Federação
       title: Configurações do servidor
     site_uploads:
@@ -812,7 +974,12 @@ pt-BR:
       destroyed_msg: Upload do site excluído com sucesso!
     software_updates:
       critical_update: Crítico — por favor, atualize rapidamente
-      description: É recomendável que você mantenha a instalação do Truecolors atualizada para se beneficiar das correções e das novas funcionalidades. Além disso, às vezes é imprescindível atualizar o Truecolors rapidamente para evitar problemas de segurança. Por esses motivos, o Truecolors verifica se há atualizações a cada 30 minutos e notificará você de acordo com as suas preferências de notificação por e-mail.
+      description: É recomendável que você mantenha a instalação do Truecolors atualizada
+        para se beneficiar das correções e das novas funcionalidades. Além disso,
+        às vezes é imprescindível atualizar o Truecolors rapidamente para evitar problemas
+        de segurança. Por esses motivos, o Truecolors verifica se há atualizações
+        a cada 30 minutos e notificará você de acordo com as suas preferências de
+        notificação por e-mail.
       documentation_link: Saiba mais
       release_notes: Notas de lançamento
       title: Atualizações disponíveis
@@ -841,7 +1008,8 @@ pt-BR:
         title: Mídia
       metadata: Metadados
       no_history: Esta publicação não foi editada
-      no_status_selected: Nenhuma publicação foi modificada porque nenhuma estava selecionada
+      no_status_selected: Nenhuma publicação foi modificada porque nenhuma estava
+        selecionada
       open: Publicação aberta
       original_status: Publicação original
       reblogs: Reblogs
@@ -857,7 +1025,8 @@ pt-BR:
       actions:
         delete_statuses: "%{name} excluiu as publicações de %{target}"
         disable: "%{name} congelou a conta de %{target}"
-        mark_statuses_as_sensitive: "%{name} marcou as publicações de %{target} como sensíveis"
+        mark_statuses_as_sensitive: "%{name} marcou as publicações de %{target} como
+          sensíveis"
         none: "%{name} enviou um aviso para %{target}"
         sensitive: "%{name} marcou as publicações de %{target} como sensíveis"
         silence: "%{name} limitou a conta de %{target}"
@@ -867,46 +1036,60 @@ pt-BR:
       appeal_rejected: Revisão rejeitada
     system_checks:
       database_schema_check:
-        message_html: Existem migrações de banco de dados pendentes. Execute-as para garantir que o aplicativo se comporte como esperado
+        message_html: Existem migrações de banco de dados pendentes. Execute-as para
+          garantir que o aplicativo se comporte como esperado
       elasticsearch_health_red:
-        message_html: O agrupamento de Elasticsearch não é saudável (estado vermelho); os recursos de pesquisa não estão disponíveis
+        message_html: O agrupamento de Elasticsearch não é saudável (estado vermelho);
+          os recursos de pesquisa não estão disponíveis
       elasticsearch_health_yellow:
-        message_html: O agrupamento de Elasticsearch não é saudável (estado amarelo); talvez você queira investigar o motivo
+        message_html: O agrupamento de Elasticsearch não é saudável (estado amarelo);
+          talvez você queira investigar o motivo
       elasticsearch_index_mismatch:
-        message_html: Os mapeamentos de índice do Elasticsearch estão desatualizados. Por favor, execute <code>tootctl search deploy --only=%{value}</code>
+        message_html: Os mapeamentos de índice do Elasticsearch estão desatualizados.
+          Por favor, execute <code>tootctl search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Ver documentação
-        message_html: Seu agrupamento de Elasticsearch tem mais de um nó, mas o Truecolors não está configurado para usá-los.
+        message_html: Seu agrupamento de Elasticsearch tem mais de um nó, mas o Truecolors
+          não está configurado para usá-los.
       elasticsearch_preset_single_node:
         action: Ver documentação
-        message_html: Seu agrupamento de Elasticsearch tem apenas um nó, <code>ES_PRESET</code> deve ser definido como <code>single_node_cluster</code>.
+        message_html: Seu agrupamento de Elasticsearch tem apenas um nó, <code>ES_PRESET</code>
+          deve ser definido como <code>single_node_cluster</code>.
       elasticsearch_reset_chewy:
-        message_html: Seu índice do sistema Elasticsearch está desatualizado devido a uma alteração de configuração. Por favor, execute <code>tootctl search deploy --reset-chewy</code> para atualizá-lo.
+        message_html: Seu índice do sistema Elasticsearch está desatualizado devido
+          a uma alteração de configuração. Por favor, execute <code>tootctl search
+          deploy --reset-chewy</code> para atualizá-lo.
       elasticsearch_running_check:
-        message_html: Não foi possível conectar ao Elasticsearch. Verifique se ele está em execução ou desative a pesquisa de texto completo
+        message_html: Não foi possível conectar ao Elasticsearch. Verifique se ele
+          está em execução ou desative a pesquisa de texto completo
       elasticsearch_version_check:
         message_html: 'Versão de Elasticsearch incompatível: %{value}'
-        version_comparison: A versão %{running_version} de Elasticsearch está em execução, porém é obrigatória a versão %{required_version}
+        version_comparison: A versão %{running_version} de Elasticsearch está em execução,
+          porém é obrigatória a versão %{required_version}
       rules_check:
         action: Gerenciar regras do servidor
         message_html: Você não definiu nenhuma regra de servidor.
       sidekiq_process_check:
-        message_html: Nenhum processo Sidekiq rodando para a(s) fila(s) %{value}. Por favor, revise a sua configuração para Sidekiq
+        message_html: Nenhum processo Sidekiq rodando para a(s) fila(s) %{value}.
+          Por favor, revise a sua configuração para Sidekiq
       software_version_check:
         action: Ver atualizações disponíveis
         message_html: Uma atualização do Truecolors está disponível.
       software_version_critical_check:
         action: Ver atualizações disponíveis
-        message_html: Uma atualização crítica do Truecolors está disponível. Por favor, atualize o mais rápido possível.
+        message_html: Uma atualização crítica do Truecolors está disponível. Por favor,
+          atualize o mais rápido possível.
       software_version_patch_check:
         action: Ver atualizações disponíveis
         message_html: Uma atualização do Truecolors para correções está disponível.
       upload_check_privacy_error:
         action: Confira aqui para mais informações
-        message_html: "<strong>Seu servidor está mal configurado. A privacidade de seus usuários está em risco.</strong>"
+        message_html: "<strong>Seu servidor está mal configurado. A privacidade de
+          seus usuários está em risco.</strong>"
       upload_check_privacy_error_object_storage:
         action: Confira aqui para mais informações
-        message_html: "<strong>Seu armazenamento de objetos está mal configurado. A privacidade de seus usuários está em risco.</strong>"
+        message_html: "<strong>Seu armazenamento de objetos está mal configurado.
+          A privacidade de seus usuários está em risco.</strong>"
     tags:
       moderation:
         not_trendable: Fora de moda
@@ -936,17 +1119,25 @@ pt-BR:
       generate: Usar modelo
       generates:
         action: Gerar
-        chance_to_review_html: "<strong>Os termos de serviço gerado não será publicado automaticamente.</strong>Você terá uma chance de revisar os resultados. Preencha os detalhes necessários para continuar"
-        explanation_html: O modelo de termos de serviço fornecido é apenas para fins informativos e não deve ser interpretado como aconselhamento jurídico sobre qualquer assunto. Consulte seu próprio advogado para esclarecer sua situação e dúvidas jurídicas específicas.
+        chance_to_review_html: "<strong>Os termos de serviço gerado não será publicado
+          automaticamente.</strong>Você terá uma chance de revisar os resultados.
+          Preencha os detalhes necessários para continuar"
+        explanation_html: O modelo de termos de serviço fornecido é apenas para fins
+          informativos e não deve ser interpretado como aconselhamento jurídico sobre
+          qualquer assunto. Consulte seu próprio advogado para esclarecer sua situação
+          e dúvidas jurídicas específicas.
         title: Configuração dos Termos de Serviço
       history: Histórico
       live: Em vigor
       no_history: Ainda não há alterações registradas nos termos de serviço.
-      no_terms_of_service_html: Atualmente, você não tem nenhum termo de serviço configurado. Os termos de serviço servem para fornecer clareza e protegê-lo de possíveis responsabilidades em disputas com seus usuários.
+      no_terms_of_service_html: Atualmente, você não tem nenhum termo de serviço configurado.
+        Os termos de serviço servem para fornecer clareza e protegê-lo de possíveis
+        responsabilidades em disputas com seus usuários.
       notified_on_html: Usuários notificados em %{date}
       notify_users: Notificar usuários
       preview:
-        explanation_html: 'O e-mail será enviado para <strong>%{display_count} usuários</strong> que se inscreveram antes de %{date}. O seguinte texto será incluído no e-mail:'
+        explanation_html: 'O e-mail será enviado para <strong>%{display_count} usuários</strong>
+          que se inscreveram antes de %{date}. O seguinte texto será incluído no e-mail:'
         send_preview: Enviar pŕevia para %{email}
         send_to_all:
           one: Enviar %{display_count} email
@@ -970,7 +1161,10 @@ pt-BR:
         confirm_allow_provider: Tem certeza que deseja permitir os provedores selecionados?
         confirm_disallow: Tem certeza que deseja vetar os links selecionados?
         confirm_disallow_provider: Tem certeza que deseja vetar os provedores selecionados?
-        description_html: Estes são links que estão sendo compartilhados por contas que seu servidor vê. Você pode ajudar seus usuários a descobrir o que está acontecendo no mundo. Nenhum link é exibido publicamente até que você aprove o editor. Você também pode permitir ou rejeitar links individuais.
+        description_html: Estes são links que estão sendo compartilhados por contas
+          que seu servidor vê. Você pode ajudar seus usuários a descobrir o que está
+          acontecendo no mundo. Nenhum link é exibido publicamente até que você aprove
+          o editor. Você também pode permitir ou rejeitar links individuais.
         disallow: Proibir link
         disallow_provider: Proibir autor
         no_link_selected: Nenhum link foi alterado como nenhum foi selecionado
@@ -980,13 +1174,17 @@ pt-BR:
           one: Compartilhado por uma pessoa na última semana
           other: Compartilhado por %{count} pessoas na última semana
         title: Em alta no momento
-        usage_comparison: Compartilhado %{today} vezes hoje, em comparação com %{yesterday} de ontem
+        usage_comparison: Compartilhado %{today} vezes hoje, em comparação com %{yesterday}
+          de ontem
       not_allowed_to_trend: Não tem permissão para criar tendências
       only_allowed: Somente permitido
       pending_review: Revisão pendente
       preview_card_providers:
         allowed: Links deste editor podem tender
-        description_html: Estes são domínios a partir dos quais links são comumente compartilhados em seu servidor. Links não tenderão publicamente a menos que o domínio do link seja aprovado. Sua aprovação (ou rejeição) estende-se aos subdomínios.
+        description_html: Estes são domínios a partir dos quais links são comumente
+          compartilhados em seu servidor. Links não tenderão publicamente a menos
+          que o domínio do link seja aprovado. Sua aprovação (ou rejeição) estende-se
+          aos subdomínios.
         rejected: Links deste editor não vão tender
         title: Editor
       rejected: Rejeitado
@@ -997,10 +1195,16 @@ pt-BR:
         confirm_allow_account: Tem certeza que deseja permitir as contas selecionadas?
         confirm_disallow: Tem certeza que deseja vetar os status selecionados?
         confirm_disallow_account: Tem certeza que deseja vetar as contas selecionadas?
-        description_html: Estes são as publicações que seu servidor sabe que estão sendo muito compartilhadas e favorecidas no momento. Isso pode ajudar seus usuários, novos e atuais, a encontrar mais pessoas para seguir. Nenhuma publicação é exibida publicamente até que você aprove o autor e o autor permitir que sua conta seja sugerida a outros. Você também pode permitir ou rejeitar publicações individuais.
+        description_html: Estes são as publicações que seu servidor sabe que estão
+          sendo muito compartilhadas e favorecidas no momento. Isso pode ajudar seus
+          usuários, novos e atuais, a encontrar mais pessoas para seguir. Nenhuma
+          publicação é exibida publicamente até que você aprove o autor e o autor
+          permitir que sua conta seja sugerida a outros. Você também pode permitir
+          ou rejeitar publicações individuais.
         disallow: Proibir publicação
         disallow_account: Proibir autor
-        no_status_selected: Nenhuma publicação em alta foi alterada, pois, nenhuma foi selecionada
+        no_status_selected: Nenhuma publicação em alta foi alterada, pois, nenhuma
+          foi selecionada
         not_discoverable: O autor optou por permitir que seja descoberto
         shared_by:
           one: Compartilhado ou favoritado uma vez
@@ -1014,7 +1218,10 @@ pt-BR:
           tag_servers_dimension: Servidores mais populares
           tag_servers_measure: servidores diferentes
           tag_uses_measure: usos
-        description_html: Estas são hashtags que atualmente estão aparecendo em várias postagens que sua instância vê. Isso pode ajudar seus usuários a descobrirem sobre o que as pessoas estão mais comentando no momento. Nenhuma hashtag é exibida publicamente até que você as aprove.
+        description_html: Estas são hashtags que atualmente estão aparecendo em várias
+          postagens que sua instância vê. Isso pode ajudar seus usuários a descobrirem
+          sobre o que as pessoas estão mais comentando no momento. Nenhuma hashtag
+          é exibida publicamente até que você as aprove.
         listable: Pode ser sugerido
         no_tag_selected: Nenhuma tag foi alterada, pois, nenhuma foi selecionada
         not_listable: Não será sugerido
@@ -1025,7 +1232,8 @@ pt-BR:
         trendable: Aparecerá em alta
         trending_rank: 'Em alta #%{rank}'
         usable: Pode ser usado
-        usage_comparison: Usado %{today} vezes hoje, em comparação com %{yesterday} de ontem
+        usage_comparison: Usado %{today} vezes hoje, em comparação com %{yesterday}
+          de ontem
         used_by_over_week:
           one: Usado por uma pessoa na última semana
           other: Usado por %{count} pessoas na última semana
@@ -1040,7 +1248,10 @@ pt-BR:
     webhooks:
       add_new: Adicionar endpoint
       delete: Excluir
-      description_html: Um <strong>webhook</strong> permite que o Truecolors envie <strong>notificações em tempo real</strong> sobre os eventos escolhidos para a sua própria aplicação, então sua aplicação pode <strong>acionar reações automaticamente</strong>.
+      description_html: Um <strong>webhook</strong> permite que o Truecolors envie
+        <strong>notificações em tempo real</strong> sobre os eventos escolhidos para
+        a sua própria aplicação, então sua aplicação pode <strong>acionar reações
+        automaticamente</strong>.
       disable: Desabilitar
       disabled: Desativado
       edit: Editar endpoint
@@ -1059,8 +1270,13 @@ pt-BR:
       webhook: Webhook
   admin_mailer:
     auto_close_registrations:
-      body: Devido à falta de atividade recente dos moderadores, as inscrições em %{instance} foram automaticamente alteradas para exigir revisão manual, para evitar que %{instance} seja usada como uma plataforma para potenciais atores mal-intencionados. Você pode alterá-la de volta para inscrições abertas a qualquer momento.
-      subject: As inscrições para %{instance} foram automaticamente alteradas para requerer aprovação
+      body: Devido à falta de atividade recente dos moderadores, as inscrições em
+        %{instance} foram automaticamente alteradas para exigir revisão manual, para
+        evitar que %{instance} seja usada como uma plataforma para potenciais atores
+        mal-intencionados. Você pode alterá-la de volta para inscrições abertas a
+        qualquer momento.
+      subject: As inscrições para %{instance} foram automaticamente alteradas para
+        requerer aprovação
     new_appeal:
       actions:
         delete_statuses: para excluir suas publicações
@@ -1070,11 +1286,15 @@ pt-BR:
         sensitive: para marcar sua conta como sensível
         silence: para limitar sua conta
         suspend: para suspender sua conta
-      body: "%{target} está solicitando uma revisão da decisão da moderação por %{action_taken_by} em %{date}, que era %{type}. Ele escreveu:"
-      next_steps: Você pode aprovar a revisão para desfazer a decisão da moderação ou ignorá-la.
-      subject: "%{username} está solicitando uma revisão da decisão da moderação em %{instance}"
+      body: "%{target} está solicitando uma revisão da decisão da moderação por %{action_taken_by}
+        em %{date}, que era %{type}. Ele escreveu:"
+      next_steps: Você pode aprovar a revisão para desfazer a decisão da moderação
+        ou ignorá-la.
+      subject: "%{username} está solicitando uma revisão da decisão da moderação em
+        %{instance}"
     new_critical_software_updates:
-      body: Novas versões críticas do Truecolors foram lançadas. Talvez queira atualizar o mais breve possível!
+      body: Novas versões críticas do Truecolors foram lançadas. Talvez queira atualizar
+        o mais breve possível!
       subject: Atualizações críticas do Truecolors estão disponíveis para %{instance}!
     new_pending_account:
       body: Os detalhes da nova conta estão abaixo. Você pode aprovar ou vetar.
@@ -1087,7 +1307,8 @@ pt-BR:
       body: Novas versões do Truecolors foram lançadas, talvez você queira atualizar!
       subject: Novas versões do Truecolors estão disponíveis para %{instance}!
     new_trends:
-      body: 'Os seguintes itens precisam de uma análise antes que possam ser exibidos publicamente:'
+      body: 'Os seguintes itens precisam de uma análise antes que possam ser exibidos
+        publicamente:'
       new_trending_links:
         title: Links em destaque
       new_trending_statuses:
@@ -1097,14 +1318,22 @@ pt-BR:
       subject: Novas tendências para revisão em %{instance}
   aliases:
     add_new: Criar alias
-    created_msg: Um novo atalho foi criado. Agora você pode iniciar a mudança da conta antiga.
-    deleted_msg: O atalho foi removido. Não será mais possível se mudar daquela conta para esta conta.
+    created_msg: Um novo atalho foi criado. Agora você pode iniciar a mudança da conta
+      antiga.
+    deleted_msg: O atalho foi removido. Não será mais possível se mudar daquela conta
+      para esta conta.
     empty: Você não tem alias.
-    hint_html: Se você quiser migrar de uma outra conta para esta, você pode criar um atalho aqui, o que é necessário antes que você possa migrar os seguidores da conta antiga para esta. Esta ação por si só é <strong>inofensiva e reversível</strong>. <strong>A migração da conta é iniciada pela conta antiga</strong>.
+    hint_html: Se você quiser migrar de uma outra conta para esta, você pode criar
+      um atalho aqui, o que é necessário antes que você possa migrar os seguidores
+      da conta antiga para esta. Esta ação por si só é <strong>inofensiva e reversível</strong>.
+      <strong>A migração da conta é iniciada pela conta antiga</strong>.
     remove: Desvincular alias
   appearance:
     advanced_web_interface: Interface avançada de colunas
-    advanced_web_interface_hint: 'Se você deseja usar toda a sua largura de tela, a interface avançada permite que você configure muitas colunas diferentes para ver tantas informações ao mesmo tempo quanto você deseja: Página inicial, notificações, linha local, linha global, qualquer número de listas e hashtags.'
+    advanced_web_interface_hint: 'Se você deseja usar toda a sua largura de tela,
+      a interface avançada permite que você configure muitas colunas diferentes para
+      ver tantas informações ao mesmo tempo quanto você deseja: Página inicial, notificações,
+      linha local, linha global, qualquer número de listas e hashtags.'
     animations_and_accessibility: Animações e acessibilidade
     confirmation_dialogs: Diálogos de confirmação
     discovery: Descobrir
@@ -1132,36 +1361,48 @@ pt-BR:
   auth:
     apply_for_account: Solicitar uma conta
     captcha_confirmation:
-      help_html: Se você tiver problemas para resolver o CAPTCHA, entre em contato conosco através do %{email} e poderemos ajudá-lo.
-      hint_html: Só mais uma coisa! Precisamos confirmar que você é um humano (isso é para que possamos evitar o spam!). Resolva o CAPTCHA abaixo e clique em "Continuar".
+      help_html: Se você tiver problemas para resolver o CAPTCHA, entre em contato
+        conosco através do %{email} e poderemos ajudá-lo.
+      hint_html: Só mais uma coisa! Precisamos confirmar que você é um humano (isso
+        é para que possamos evitar o spam!). Resolva o CAPTCHA abaixo e clique em
+        "Continuar".
       title: Verificação de segurança
     confirmations:
-      awaiting_review: Seu endereço de e-mail está confirmado! A equipe %{domain} está agora revisando a sua inscrição. Você receberá um e-mail se a sua conta for aprovada!
+      awaiting_review: Seu endereço de e-mail está confirmado! A equipe %{domain}
+        está agora revisando a sua inscrição. Você receberá um e-mail se a sua conta
+        for aprovada!
       awaiting_review_title: Seu cadastro está sendo analisado
       clicking_this_link: clicar este link
       login_link: entrar
       proceed_to_login_html: Agora você pode prosseguir para %{login_link}.
-      redirect_to_app_html: Você deveria ter sido redirecionado para o aplicativo <strong>%{app_name}</strong>. Se isso não aconteceu, tente %{clicking_this_link} ou volte manualmente para o aplicativo.
+      redirect_to_app_html: Você deveria ter sido redirecionado para o aplicativo
+        <strong>%{app_name}</strong>. Se isso não aconteceu, tente %{clicking_this_link}
+        ou volte manualmente para o aplicativo.
       registration_complete: Seu cadastro no %{domain} foi concluído!
       welcome_title: Boas vindas, %{name}!
-      wrong_email_hint: Se esse endereço de e-mail não estiver correto, você pode alterá-lo nas configurações da conta.
+      wrong_email_hint: Se esse endereço de e-mail não estiver correto, você pode
+        alterá-lo nas configurações da conta.
     delete_account: Excluir conta
-    delete_account_html: Se você deseja excluir sua conta, você pode <a href="%{path}">fazer isso aqui</a>. Uma confirmação será solicitada.
+    delete_account_html: Se você deseja excluir sua conta, você pode <a href="%{path}">fazer
+      isso aqui</a>. Uma confirmação será solicitada.
     description:
       prefix_invited_by_user: "@%{name} convidou você para entrar neste servidor Truecolors!"
       prefix_sign_up: Crie uma conta no Truecolors hoje!
-      suffix: Com uma conta, você poderá seguir pessoas, publicar atualizações, trocar mensagens com usuários de qualquer servidor Truecolors e muito mais!
+      suffix: Com uma conta, você poderá seguir pessoas, publicar atualizações, trocar
+        mensagens com usuários de qualquer servidor Truecolors e muito mais!
     didnt_get_confirmation: Não recebeu um e-mail de confirmação?
     dont_have_your_security_key: Não está com a sua chave de segurança?
     forgot_password: Esqueceu a sua senha?
-    invalid_reset_password_token: Código de alteração de senha é inválido ou expirou. Solicite um novo.
+    invalid_reset_password_token: Código de alteração de senha é inválido ou expirou.
+      Solicite um novo.
     link_to_otp: Digite um código de duas etapas do seu telefone ou um código de recuperação
     link_to_webauth: Use seu dispositivo de chave de segurança
     log_in_with: Iniciar sessão com
     login: Entrar
     logout: Sair
     migrate_account: Mudar-se para outra conta
-    migrate_account_html: Se você quer redirecionar essa conta para uma outra você pode <a href="%{path}">configurar isso aqui</a>.
+    migrate_account_html: Se você quer redirecionar essa conta para uma outra você
+      pode <a href="%{path}">configurar isso aqui</a>.
     or_log_in_with: Ou entre com
     progress:
       confirm: Confirmar e-mail
@@ -1180,39 +1421,55 @@ pt-BR:
       back: Voltar
       invited_by: 'Você pode juntar-se a %{domain} graças ao convite que recebeu de:'
       preamble: Estes são definidos e aplicados pelos moderadores de %{domain}.
-      preamble_invited: Antes de prosseguir, considere as regras de base definidas pelos moderadores de %{domain}.
+      preamble_invited: Antes de prosseguir, considere as regras de base definidas
+        pelos moderadores de %{domain}.
       title: Algumas regras básicas.
       title_invited: Você recebeu convite.
     security: Segurança
     set_new_password: Definir uma nova senha
     setup:
-      email_below_hint_html: Verifique a sua pasta de spam, ou solicite outra. Você pode corrigir o seu endereço de e-mail se estiver errado.
-      email_settings_hint_html: Clique no link que enviamos para %{email} para começar a usar o Truecolors. Estaremos esperando aqui.
+      email_below_hint_html: Verifique a sua pasta de spam, ou solicite outra. Você
+        pode corrigir o seu endereço de e-mail se estiver errado.
+      email_settings_hint_html: Clique no link que enviamos para %{email} para começar
+        a usar o Truecolors. Estaremos esperando aqui.
       link_not_received: Não recebeu um link?
-      new_confirmation_instructions_sent: Você receberá um novo e-mail com o link de confirmação em alguns minutos!
+      new_confirmation_instructions_sent: Você receberá um novo e-mail com o link
+        de confirmação em alguns minutos!
       title: Verifique sua caixa de entrada
     sign_in:
-      preamble_html: Entre com suas credenciais de domínios ( <strong>%{domain}</strong> ) . Se sua conta estiver hospedada em um servidor diferente, você não deve conseguir acessar este conteúdo.
+      preamble_html: Entre com suas credenciais de domínios ( <strong>%{domain}</strong>
+        ) . Se sua conta estiver hospedada em um servidor diferente, você não deve
+        conseguir acessar este conteúdo.
       title: Entrar em %{domain}
     sign_up:
-      manual_review: Inscrições no %{domain} passam pela revisão manual dos nossos moderadores. Para nos ajudar a processar o seu cadastro, escreva um pouco sobre você e por que você quer uma conta no %{domain}.
-      preamble: Com uma conta neste servidor do Truecolors, você poderá seguir qualquer outra pessoa no fediverso, independentemente de onde a conta dela esteja hospedada.
+      manual_review: Inscrições no %{domain} passam pela revisão manual dos nossos
+        moderadores. Para nos ajudar a processar o seu cadastro, escreva um pouco
+        sobre você e por que você quer uma conta no %{domain}.
+      preamble: Com uma conta neste servidor do Truecolors, você poderá seguir qualquer
+        outra pessoa no fediverso, independentemente de onde a conta dela esteja hospedada.
       title: Então vamos lá criar uma conta em %{domain}.
     status:
       account_status: Status da conta
       confirming: Confirmação por e-mail pendente.
       functional: Sua conta está totalmente operacional.
-      pending: Sua inscrição está aguardando revisão pela nossa equipe. Isto pode levar algum tempo. Você receberá um e-mail se sua inscrição for aprovada.
-      redirecting_to: Sua conta está inativa porque atualmente está redirecionando para %{acct}.
-      self_destruct: Como %{domain} está se encerrando, você só terá acesso limitado à sua conta.
+      pending: Sua inscrição está aguardando revisão pela nossa equipe. Isto pode
+        levar algum tempo. Você receberá um e-mail se sua inscrição for aprovada.
+      redirecting_to: Sua conta está inativa porque atualmente está redirecionando
+        para %{acct}.
+      self_destruct: Como %{domain} está se encerrando, você só terá acesso limitado
+        à sua conta.
       view_strikes: Veja os avisos anteriores em relação à sua conta
     too_fast: O formulário foi enviado muito rapidamente, tente novamente.
     use_security_key: Usar chave de segurança
-    user_agreement_html: Eu li e concordo com os <a href="%{terms_of_service_path}" target="_blank">termos de serviço</a> e <a href="%{privacy_policy_path}" target="_blank">política de privacidade</a>.
-    user_privacy_agreement_html: Eu li e concordo com a <a href="%{privacy_policy_path}" target="_blank">política de privacidade</a>.
+    user_agreement_html: Eu li e concordo com os <a href="%{terms_of_service_path}"
+      target="_blank">termos de serviço</a> e <a href="%{privacy_policy_path}" target="_blank">política
+      de privacidade</a>.
+    user_privacy_agreement_html: Eu li e concordo com a <a href="%{privacy_policy_path}"
+      target="_blank">política de privacidade</a>.
   author_attribution:
     example_title: Texto de amostra
-    hint_html: Você está escrevendo notícias ou artigos de blogs fora do Truecolors? Controle como você é credenciado quando eles forem compartilhados no Truecolors.
+    hint_html: Você está escrevendo notícias ou artigos de blogs fora do Truecolors?
+      Controle como você é credenciado quando eles forem compartilhados no Truecolors.
     instructions: 'Certifique-se que este código esteja no HTML do artigo:'
     more_from_html: Mais de %{name}
     s_blog: Blog do %{name}
@@ -1220,7 +1477,8 @@ pt-BR:
     title: Atribuição de autoria
   challenge:
     confirm: Continuar
-    hint_html: "<strong>Dica:</strong> Não pediremos novamente sua senha pela próxima hora."
+    hint_html: "<strong>Dica:</strong> Não pediremos novamente sua senha pela próxima
+      hora."
     invalid_password: Senha inválida
     prompt: Confirme sua senha para continuar
   crypto:
@@ -1252,13 +1510,18 @@ pt-BR:
     success_msg: Sua conta foi excluída
     warning:
       before: 'Antes de prosseguir, leia com cuidado:'
-      caches: Conteúdo que foi armazenado em cache por outros servidores pode continuar a existir
+      caches: Conteúdo que foi armazenado em cache por outros servidores pode continuar
+        a existir
       data_removal: Suas publicações e outros dados serão removidos permanentemente
-      email_change_html: Você pode <a href="%{path}">alterar seu endereço de e-mail</a> sem excluir sua conta
-      email_contact_html: Se ainda não chegar, você pode enviar um e-mail para <a href="mailto:%{email}">%{email}</a> para obter ajuda
-      email_reconfirmation_html: Se você não recebeu o e-mail de confirmação, você pode <a href="%{path}">solicitá-lo novamente</a>
+      email_change_html: Você pode <a href="%{path}">alterar seu endereço de e-mail</a>
+        sem excluir sua conta
+      email_contact_html: Se ainda não chegar, você pode enviar um e-mail para <a
+        href="mailto:%{email}">%{email}</a> para obter ajuda
+      email_reconfirmation_html: Se você não recebeu o e-mail de confirmação, você
+        pode <a href="%{path}">solicitá-lo novamente</a>
       irreversible: Você não conseguirá restaurar ou reativar a sua conta
-      more_details_html: Para mais detalhes, consulte a <a href="%{terms_path}">Política de Privacidade</a>.
+      more_details_html: Para mais detalhes, consulte a <a href="%{terms_path}">Política
+        de Privacidade</a>.
       username_available: Seu nome de usuário ficará disponível novamente
       username_unavailable: Seu nome de usuário permanecerá indisponível
   disputes:
@@ -1274,7 +1537,8 @@ pt-BR:
       approve_appeal: Aprovar revisão
       associated_report: Denúncia associada
       created_at: Datado
-      description_html: Estas são ações tomadas contra sua conta e avisos que foram enviados a você pela equipe de %{instance}.
+      description_html: Estas são ações tomadas contra sua conta e avisos que foram
+        enviados a você pela equipe de %{instance}.
       recipient: Endereçado para
       reject_appeal: Rejeitar revisão
       status: 'Publicação #%{id}'
@@ -1293,7 +1557,10 @@ pt-BR:
       your_appeal_rejected: Sua revisão foi rejeitada
   edit_profile:
     basic_information: Informações básicas
-    hint_html: "<strong>Personalize o que as pessoas veem no seu perfil público e ao lado de suas publicações.</strong> É mais provável que outras pessoas o sigam de volta e interajam com você quando você tiver um perfil preenchido e uma foto de perfil."
+    hint_html: "<strong>Personalize o que as pessoas veem no seu perfil público e
+      ao lado de suas publicações.</strong> É mais provável que outras pessoas o sigam
+      de volta e interajam com você quando você tiver um perfil preenchido e uma foto
+      de perfil."
     other: Outro
   errors:
     '400': A solicitação enviada é inválida ou incorreta.
@@ -1309,7 +1576,9 @@ pt-BR:
       content: Desculpe, algo deu errado por aqui.
       title: Esta página não está certa
     '503': A página não pôde ser carregada devido a uma falha temporária do servidor.
-    noscript_html: Para usar o aplicativo web do Truecolors, ative o JavaScript. Ou, se quiser, experimente um dos <a href="%{apps_path}">aplicativos nativos</a> para o Truecolors em sua plataforma.
+    noscript_html: Para usar o aplicativo web do Truecolors, ative o JavaScript. Ou,
+      se quiser, experimente um dos <a href="%{apps_path}">aplicativos nativos</a>
+      para o Truecolors em sua plataforma.
   existing_username_validator:
     not_found: não foi possível encontrar um usuário local com esse nome de usuário
     not_found_multiple: não foi possível encontrar %{usernames}
@@ -1317,7 +1586,10 @@ pt-BR:
     archive_takeout:
       date: Data
       download: Baixe o seu arquivo
-      hint_html: Você pode pedir um arquivo das suas <strong>publicações e mídias enviadas</strong>. Os dados exportados estarão no formato ActivityPub, que podem ser lidos por qualquer software compatível. Você pode pedir um arquivo a cada 7 dias.
+      hint_html: Você pode pedir um arquivo das suas <strong>publicações e mídias
+        enviadas</strong>. Os dados exportados estarão no formato ActivityPub, que
+        podem ser lidos por qualquer software compatível. Você pode pedir um arquivo
+        a cada 7 dias.
       in_progress: Preparando o seu arquivo...
       request: Solicitar o seu arquivo
       size: Tamanho
@@ -1332,7 +1604,10 @@ pt-BR:
     add_new: Adicionar hashtag
     errors:
       limit: Você já destacou o número máximo de hashtags
-    hint_html: "<strong>O que são hashtags em destaque?</strong> Elas são exibidas no seu perfil público e permitem que as pessoas acessem suas publicações públicos que contenham especificamente essas hashtags. São uma excelente ferramenta para acompanhar os trabalhos criativos ou os projetos de longo prazo."
+    hint_html: "<strong>O que são hashtags em destaque?</strong> Elas são exibidas
+      no seu perfil público e permitem que as pessoas acessem suas publicações públicos
+      que contenham especificamente essas hashtags. São uma excelente ferramenta para
+      acompanhar os trabalhos criativos ou os projetos de longo prazo."
   filters:
     contexts:
       account: Perfis
@@ -1344,10 +1619,14 @@ pt-BR:
       add_keyword: Adicionar palavra-chave
       keywords: Palavras-chave
       statuses: Publicações individuais
-      statuses_hint_html: Este filtro se aplica para selecionar posts individuais, independentemente de serem compatíveis com as palavras-chave abaixo. <a href="%{path}">Revise ou remova as publicações do filtro</a>.
+      statuses_hint_html: Este filtro se aplica para selecionar posts individuais,
+        independentemente de serem compatíveis com as palavras-chave abaixo. <a href="%{path}">Revise
+        ou remova as publicações do filtro</a>.
       title: Editar filtro
     errors:
-      deprecated_api_multiple_keywords: Estes parâmetros não podem ser alterados a partir deste aplicativo porque se aplicam a mais de uma palavra-chave de filtro. Use um aplicativo mais recente ou a interface web.
+      deprecated_api_multiple_keywords: Estes parâmetros não podem ser alterados a
+        partir deste aplicativo porque se aplicam a mais de uma palavra-chave de filtro.
+        Use um aplicativo mais recente ou a interface web.
       invalid_context: Contexto inválido ou nenhum contexto informado
     index:
       contexts: Filtros em %{contexts}
@@ -1373,7 +1652,9 @@ pt-BR:
       batch:
         remove: Remover do filtro
       index:
-        hint: Este filtro se aplica a publicações individuais, independentemente de outros critérios. Você pode adicionar mais postagens a este filtro a partir da interface web.
+        hint: Este filtro se aplica a publicações individuais, independentemente de
+          outros critérios. Você pode adicionar mais postagens a este filtro a partir
+          da interface web.
         title: Publicações filtradas
   generic:
     all: Tudo
@@ -1382,7 +1663,8 @@ pt-BR:
       other: Todos os <strong>%{count}</strong> itens nessa página estão selecionados.
     all_matching_items_selected_html:
       one: "<strong>%{count}</strong> item correspondente à sua pesquisa está selecionado."
-      other: Todos os <strong>%{count}</strong> itens correspondentes à sua pesquisa estão selecionados.
+      other: Todos os <strong>%{count}</strong> itens correspondentes à sua pesquisa
+        estão selecionados.
     cancel: Cancelar
     changes_saved_msg: Alterações salvas!
     confirm: Confirmar
@@ -1408,7 +1690,8 @@ pt-BR:
       too_large: O arquivo é muito grande
     failures: Falhas
     imported: Importado
-    mismatched_types_warning: Parece que você selecionou o tipo errado para esta importação, por favor verifique novamente.
+    mismatched_types_warning: Parece que você selecionou o tipo errado para esta importação,
+      por favor verifique novamente.
     modes:
       merge: Juntar
       merge_long: Manter os registros existentes e adicionar novos
@@ -1416,43 +1699,73 @@ pt-BR:
       overwrite_long: Substituir os registros atuais com os novos
     overwrite_preambles:
       blocking_html:
-        one: Você está prestes a <strong>trocar seu bloco de listas</strong> com mais de <strong>%{count} conta</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>substituir sua lista de blocos</strong> com mais de <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
+        one: Você está prestes a <strong>trocar seu bloco de listas</strong> com mais
+          de <strong>%{count} conta</strong> de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>substituir sua lista de blocos</strong>
+          com mais de <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
       bookmarks_html:
-        one: Você está prestes a <strong>substituir seus salvos</strong> por até <strong>%{count} publicação</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>substituir seus salvos</strong> por até <strong>%{count} publicações</strong> de <strong>%{filename}</strong>.
+        one: Você está prestes a <strong>substituir seus salvos</strong> por até <strong>%{count}
+          publicação</strong> de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>substituir seus salvos</strong> por até
+          <strong>%{count} publicações</strong> de <strong>%{filename}</strong>.
       domain_blocking_html:
-        one: Você está prestes a <strong>substituir seu bloco de lista do domínio</strong> com <strong>%{count} domínio</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>substituir sua lista de bloqueio de domínio</strong> com <strong>domínios%{count}</strong> de <strong>%{filename}</strong>.
+        one: Você está prestes a <strong>substituir seu bloco de lista do domínio</strong>
+          com <strong>%{count} domínio</strong> de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>substituir sua lista de bloqueio de domínio</strong>
+          com <strong>domínios%{count}</strong> de <strong>%{filename}</strong>.
       following_html:
-        one: Você está prestes a <strong>seguir</strong> <strong>%{count} contas</strong> de <strong>%{filename}</strong> e <strong>parar de seguir todos os outros</strong>.
-        other: Você está prestes a <strong>seguir</strong> até <strong>%{count} contas</strong> de <strong>%{filename}</strong> e <strong>deixar de seguir qualquer outra pessoa</strong>.
+        one: Você está prestes a <strong>seguir</strong> <strong>%{count} contas</strong>
+          de <strong>%{filename}</strong> e <strong>parar de seguir todos os outros</strong>.
+        other: Você está prestes a <strong>seguir</strong> até <strong>%{count} contas</strong>
+          de <strong>%{filename}</strong> e <strong>deixar de seguir qualquer outra
+          pessoa</strong>.
       lists_html:
-        one: Você está prestes a <strong>substituir suas listas</strong> pelo conteúdo de <strong>%{filename}</strong>. Até <strong>%{count} conta</strong> será adicionada às novas listas.
-        other: Você está prestes a <strong>substituir suas listas</strong> pelo conteúdo de <strong>%{filename}</strong>. Até <strong>%{count} contas</strong> serão adicionadas às novas listas.
+        one: Você está prestes a <strong>substituir suas listas</strong> pelo conteúdo
+          de <strong>%{filename}</strong>. Até <strong>%{count} conta</strong> será
+          adicionada às novas listas.
+        other: Você está prestes a <strong>substituir suas listas</strong> pelo conteúdo
+          de <strong>%{filename}</strong>. Até <strong>%{count} contas</strong> serão
+          adicionadas às novas listas.
       muting_html:
-        one: Você está prestes a <strong>substituir sua lista de contas silenciadas</strong> por até <strong>%{count} conta</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>substituir sua lista de contas silenciadas</strong> por até <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
+        one: Você está prestes a <strong>substituir sua lista de contas silenciadas</strong>
+          por até <strong>%{count} conta</strong> de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>substituir sua lista de contas silenciadas</strong>
+          por até <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
     preambles:
       blocking_html:
-        one: Você está prestes a <strong>bloquear</strong> até <strong>%{count} conta</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>bloquear</strong> até <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
+        one: Você está prestes a <strong>bloquear</strong> até <strong>%{count} conta</strong>
+          de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>bloquear</strong> até <strong>%{count}
+          contas</strong> de <strong>%{filename}</strong>.
       bookmarks_html:
-        one: Você está prestes a adicionar até <strong>%{count} post</strong> de <strong>%{filename}</strong> aos seus <strong>favoritos</strong>.
-        other: Você está prestes a adicionar até <strong>%{count} posts</strong> de <strong>%{filename}</strong> aos seus <strong>favoritos</strong>.
+        one: Você está prestes a adicionar até <strong>%{count} post</strong> de <strong>%{filename}</strong>
+          aos seus <strong>favoritos</strong>.
+        other: Você está prestes a adicionar até <strong>%{count} posts</strong> de
+          <strong>%{filename}</strong> aos seus <strong>favoritos</strong>.
       domain_blocking_html:
-        one: Você está prestes a <strong>bloquear</strong> até <strong>%{count} domínio</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>bloquear</strong> até <strong>%{count} domínios</strong> de <strong>%{filename}</strong>.
+        one: Você está prestes a <strong>bloquear</strong> até <strong>%{count} domínio</strong>
+          de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>bloquear</strong> até <strong>%{count}
+          domínios</strong> de <strong>%{filename}</strong>.
       following_html:
-        one: Você está prestes a <strong>seguir</strong> até <strong>%{count} conta</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>seguir</strong> até <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
+        one: Você está prestes a <strong>seguir</strong> até <strong>%{count} conta</strong>
+          de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>seguir</strong> até <strong>%{count} contas</strong>
+          de <strong>%{filename}</strong>.
       lists_html:
-        one: Você está prestes a adicionar até <strong>%{count} conta</strong> a partir de <strong>%{filename}</strong> para suas <strong>listas</strong>. Novas listas serão criadas se não houver uma para a qual adicionar.
-        other: Você está prestes a adicionar até <strong>%{count} contas</strong> a partir de <strong>%{filename}</strong> para suas <strong>listas</strong>. Novas listas serão criadas se não houver uma para a qual adicionar.
+        one: Você está prestes a adicionar até <strong>%{count} conta</strong> a partir
+          de <strong>%{filename}</strong> para suas <strong>listas</strong>. Novas
+          listas serão criadas se não houver uma para a qual adicionar.
+        other: Você está prestes a adicionar até <strong>%{count} contas</strong>
+          a partir de <strong>%{filename}</strong> para suas <strong>listas</strong>.
+          Novas listas serão criadas se não houver uma para a qual adicionar.
       muting_html:
-        one: Você está prestes a <strong>silenciar</strong> <strong>%{count}  conta</strong> de <strong>%{filename}</strong>.
-        other: Você está prestes a <strong>silenciar</strong> mais de <strong>%{count} contas</strong> de <strong>%{filename}</strong>.
-    preface: Você pode importar dados que você exportou de outro servidor, como a lista de pessoas que você segue ou bloqueou.
+        one: Você está prestes a <strong>silenciar</strong> <strong>%{count}  conta</strong>
+          de <strong>%{filename}</strong>.
+        other: Você está prestes a <strong>silenciar</strong> mais de <strong>%{count}
+          contas</strong> de <strong>%{filename}</strong>.
+    preface: Você pode importar dados que você exportou de outro servidor, como a
+      lista de pessoas que você segue ou bloqueou.
     recent_imports: Importações recentes
     states:
       finished: Finalizado
@@ -1513,7 +1826,8 @@ pt-BR:
       password: senha
       sign_in_token: código de segurança do e-mail
       webauthn: chaves de segurança
-    description_html: Se você vir atividades suspeitas ou não reconhecidas, considere alterar sua senha e ativar a autenticação de dois fatores.
+    description_html: Se você vir atividades suspeitas ou não reconhecidas, considere
+      alterar sua senha e ativar a autenticação de dois fatores.
     empty: Sem histórico de autenticação disponível
     failed_sign_in_html: Falha na tentativa de login com %{method} de %{ip} (%{browser})
     successful_sign_in_html: Login bem-sucedido com %{method} de %{ip} (%{browser})
@@ -1522,7 +1836,10 @@ pt-BR:
     unsubscribe:
       action: Sim, cancelar subscrição
       complete: Desinscrito
-      confirmation_html: Tem certeza que deseja cancelar a assinatura de %{type} para Truecolors no %{domain} para o seu endereço de e-mail %{email}? Você sempre pode se inscrever novamente nas <a href="%{settings_path}">configurações de notificação de email</a>.
+      confirmation_html: Tem certeza que deseja cancelar a assinatura de %{type} para
+        Truecolors no %{domain} para o seu endereço de e-mail %{email}? Você sempre
+        pode se inscrever novamente nas <a href="%{settings_path}">configurações de
+        notificação de email</a>.
       emails:
         notification_emails:
           favourite: emails de notificação favoritos
@@ -1530,19 +1847,25 @@ pt-BR:
           follow_request: emails de seguidores pendentes
           mention: emails de notificação de menções
           reblog: emails de notificação de boosts
-      resubscribe_html: Se você cancelou sua inscrição por engano, você pode se inscrever novamente em suas <a href="%{settings_path}"> configurações de notificações por e-mail</a>.
-      success_html: Você não mais receberá %{type} no Truecolors em %{domain} ao seu endereço de e-mail %{email}.
+      resubscribe_html: Se você cancelou sua inscrição por engano, você pode se inscrever
+        novamente em suas <a href="%{settings_path}"> configurações de notificações
+        por e-mail</a>.
+      success_html: Você não mais receberá %{type} no Truecolors em %{domain} ao seu
+        endereço de e-mail %{email}.
       title: Cancelar inscrição
   media_attachments:
     validations:
-      images_and_video: Não foi possível anexar um vídeo a uma publicação que já contém imagens
+      images_and_video: Não foi possível anexar um vídeo a uma publicação que já contém
+        imagens
       not_found: Mídia %{ids} não encontrada ou já anexada a outra publicação
-      not_ready: Não é possível anexar arquivos que não terminaram de ser processados. Tente novamente daqui a pouco!
+      not_ready: Não é possível anexar arquivos que não terminaram de ser processados.
+        Tente novamente daqui a pouco!
       too_many: Não foi possível anexar mais de 4 imagens
   migrations:
     acct: Mudou-se para
     cancel: Cancelar redirecionamento
-    cancel_explanation: Cancelar o redirecionamento reativará a sua conta atual, mas não trará de volta os seguidores que não foram migrados para aquela conta.
+    cancel_explanation: Cancelar o redirecionamento reativará a sua conta atual, mas
+      não trará de volta os seguidores que não foram migrados para aquela conta.
     cancelled_msg: Redirecionamento cancelado.
     errors:
       already_moved: é a mesma conta que você migrou
@@ -1552,30 +1875,39 @@ pt-BR:
       on_cooldown: Você está no período de espera
     followers_count: Seguidores no momento da mudança
     incoming_migrations: Migrando de outra conta
-    incoming_migrations_html: Para mover de outra conta para esta, você precisa <a href="%{path}">criar um alias</a>.
-    moved_msg: Agora sua conta está redirecionando para %{acct} e seus seguidores estão sendo movidos.
+    incoming_migrations_html: Para mover de outra conta para esta, você precisa <a
+      href="%{path}">criar um alias</a>.
+    moved_msg: Agora sua conta está redirecionando para %{acct} e seus seguidores
+      estão sendo movidos.
     not_redirecting: Sua conta não está redirecionando para nenhuma outra conta atualmente.
-    on_cooldown: Você migrou recentemente sua conta. Esta função ficará disponível novamente em %{count} dias.
+    on_cooldown: Você migrou recentemente sua conta. Esta função ficará disponível
+      novamente em %{count} dias.
     past_migrations: Migrações passadas
     proceed_with_move: Migrar seguidores
     redirected_msg: Agora sua conta está redirecionando para %{acct}.
     redirecting_to: Sua conta está redirecionando para %{acct}.
     set_redirect: Definir redirecionamento
     warning:
-      backreference_required: A nova conta deve primeiro ser configurada para que esta seja referenciada
+      backreference_required: A nova conta deve primeiro ser configurada para que
+        esta seja referenciada
       before: 'Antes de prosseguir, leia com cuidado:'
-      cooldown: Depois de se mudar, há um período de espera para poder efetuar uma nova mudança
-      disabled_account: Sua conta não estará totalmente funcional ao término deste processo. Entretanto, você terá acesso à exportação de dados bem como à reativação.
+      cooldown: Depois de se mudar, há um período de espera para poder efetuar uma
+        nova mudança
+      disabled_account: Sua conta não estará totalmente funcional ao término deste
+        processo. Entretanto, você terá acesso à exportação de dados bem como à reativação.
       followers: Esta ação moverá todos os seguidores da conta atual para a nova conta
-      only_redirect_html: Alternativamente, você pode <a href="%{path}">apenas colocar um redirecionamento no seu perfil</a>.
+      only_redirect_html: Alternativamente, você pode <a href="%{path}">apenas colocar
+        um redirecionamento no seu perfil</a>.
       other_data: Nenhum outro dado será movido automaticamente
-      redirect: O perfil atual da sua conta será atualizado com um aviso de redirecionamento e também será excluído das pesquisas
+      redirect: O perfil atual da sua conta será atualizado com um aviso de redirecionamento
+        e também será excluído das pesquisas
   moderation:
     title: Moderação
   move_handler:
     carry_blocks_over_text: Este usuário mudou de %{acct}, que você havia bloqueado.
     carry_mutes_over_text: Este usuário mudou de %{acct}, que você havia silenciado.
-    copy_account_note_text: 'Este usuário saiu de %{acct}, aqui estão suas notas anteriores sobre ele:'
+    copy_account_note_text: 'Este usuário saiu de %{acct}, aqui estão suas notas anteriores
+      sobre ele:'
   navigation:
     toggle_menu: Alternar menu
   notification_mailer:
@@ -1628,12 +1960,18 @@ pt-BR:
           trillion: TRI
   otp_authentication:
     code_hint: Digite o código gerado pelo seu aplicativo autenticador para confirmar
-    description_html: Se você ativar a <strong>autenticação de dois fatores</strong> usando um aplicativo autenticador, ao se conectar será exigido que você esteja com o seu telefone, que gerará tokens para você entrar.
+    description_html: Se você ativar a <strong>autenticação de dois fatores</strong>
+      usando um aplicativo autenticador, ao se conectar será exigido que você esteja
+      com o seu telefone, que gerará tokens para você entrar.
     enable: Habilitar
-    instructions_html: "<strong>Escaneie este código QR no Google Authenticator ou em um aplicativo TOTP similar no seu telefone</strong>. A partir de agora, esse aplicativo irá gerar tokens que você terá que digitar ao fazer login."
-    manual_instructions: 'Se você não pode escanear o código QR e precisa digitá-lo manualmente, aqui está o segredo em texto:'
+    instructions_html: "<strong>Escaneie este código QR no Google Authenticator ou
+      em um aplicativo TOTP similar no seu telefone</strong>. A partir de agora, esse
+      aplicativo irá gerar tokens que você terá que digitar ao fazer login."
+    manual_instructions: 'Se você não pode escanear o código QR e precisa digitá-lo
+      manualmente, aqui está o segredo em texto:'
     setup: Configurar
-    wrong_code: O código digitado é inválido! O horário do servidor e o horário do dispositivo estão corretos?
+    wrong_code: O código digitado é inválido! O horário do servidor e o horário do
+      dispositivo estão corretos?
   pagination:
     newer: Mais novo
     next: Próximo
@@ -1657,13 +1995,26 @@ pt-BR:
     posting_defaults: Padrões de publicação
     public_timelines: Linhas públicas
   privacy:
-    hint_html: "<strong>Personalize como você quer que seu perfil e suas publicações sejam encontrados.</strong> Uma variedade de funcionalidades no Truecolors pode ajudar a alcançar um público mais amplo quando habilitado. Reserve um momento para revisar estas configurações para garantir que atendem ao seu caso de uso."
+    hint_html: "<strong>Personalize como você quer que seu perfil e suas publicações
+      sejam encontrados.</strong> Uma variedade de funcionalidades no Truecolors pode
+      ajudar a alcançar um público mais amplo quando habilitado. Reserve um momento
+      para revisar estas configurações para garantir que atendem ao seu caso de uso."
     privacy: Privacidade
-    privacy_hint_html: Controle o quanto você deseja revelar para o benefício de outros. As pessoas descobrem perfis interessantes e aplicativos legais navegando pelos seguidores de outras pessoas e vendo de quais aplicativos eles publicam, mas você pode preferir manter isso oculto.
+    privacy_hint_html: Controle o quanto você deseja revelar para o benefício de outros.
+      As pessoas descobrem perfis interessantes e aplicativos legais navegando pelos
+      seguidores de outras pessoas e vendo de quais aplicativos eles publicam, mas
+      você pode preferir manter isso oculto.
     reach: Alcance
-    reach_hint_html: Controle se você quer ser descoberto e seguido por novas pessoas. Deseja que suas publicações apareçam na tela Explorar? Você quer que outras pessoas lhe vejam nas recomendações sobre quem seguir? Você quer aceitar todos os novos seguidores automaticamente ou ter controle granular sobre cada um?
+    reach_hint_html: Controle se você quer ser descoberto e seguido por novas pessoas.
+      Deseja que suas publicações apareçam na tela Explorar? Você quer que outras
+      pessoas lhe vejam nas recomendações sobre quem seguir? Você quer aceitar todos
+      os novos seguidores automaticamente ou ter controle granular sobre cada um?
     search: Buscar
-    search_hint_html: Controle como você deseja que lhe encontrem. Quer que as pessoas lhe encontrem pelo que você publicou abertamente? Quer que pessoas fora do Truecolors encontrem seu perfil quando pesquisarem na web? Por favor, tenha em mente que a exclusão total de todos os motores de busca não pode ser garantida para informações públicas.
+    search_hint_html: Controle como você deseja que lhe encontrem. Quer que as pessoas
+      lhe encontrem pelo que você publicou abertamente? Quer que pessoas fora do Truecolors
+      encontrem seu perfil quando pesquisarem na web? Por favor, tenha em mente que
+      a exclusão total de todos os motores de busca não pode ser garantida para informações
+      públicas.
     title: Privacidade e alcance
   privacy_policy:
     title: Política de Privacidade
@@ -1676,9 +2027,12 @@ pt-BR:
     title: Você está saindo de %{instance}.
   relationships:
     activity: Atividade da conta
-    confirm_follow_selected_followers: Tem certeza que deseja seguir os seguidores selecionados?
-    confirm_remove_selected_followers: Tem certeza que deseja remover os seguidores selecionados?
-    confirm_remove_selected_follows: Tem certeza que deseja remover os grupos seguidos selecionados?
+    confirm_follow_selected_followers: Tem certeza que deseja seguir os seguidores
+      selecionados?
+    confirm_remove_selected_followers: Tem certeza que deseja remover os seguidores
+      selecionados?
+    confirm_remove_selected_follows: Tem certeza que deseja remover os grupos seguidos
+      selecionados?
     dormant: Inativo
     follow_failure: Não foi possível seguir algumas das contas selecionadas.
     follow_selected_followers: Seguir os seguidores selecionados
@@ -1696,7 +2050,8 @@ pt-BR:
     remove_selected_follows: Deixar de seguir usuários selecionados
     status: Status da conta
   remote_follow:
-    missing_resource: Não foi possível encontrar o link de redirecionamento para sua conta
+    missing_resource: Não foi possível encontrar o link de redirecionamento para sua
+      conta
   reports:
     errors:
       invalid_rules: não faz referência a regras válidas
@@ -1706,11 +2061,14 @@ pt-BR:
       account: Publicações públicas de @%{acct}
       tag: 'Publicações públicas marcadas com #%{hashtag}'
   scheduled_statuses:
-    over_daily_limit: Você excedeu o limite de %{limit} publicações agendadas para esse dia
+    over_daily_limit: Você excedeu o limite de %{limit} publicações agendadas para
+      esse dia
     over_total_limit: Você excedeu o limite de %{limit} publicações agendadas
     too_soon: a data deve ser no futuro
   self_destruct:
-    lead_html: Infelizmente, <strong>%{domain}</strong> está se encerrando de forma permanente. Se você tem uma conta lá, não poderá continuar a usá-la, mas ainda pode solicitar uma cópia dos seus dados.
+    lead_html: Infelizmente, <strong>%{domain}</strong> está se encerrando de forma
+      permanente. Se você tem uma conta lá, não poderá continuar a usá-la, mas ainda
+      pode solicitar uma cópia dos seus dados.
     title: Este servidor está sendo fechado
   sessions:
     activity: Última atividade
@@ -1790,8 +2148,12 @@ pt-BR:
       user_domain_block: Você bloqueou %{target_name}
     lost_followers: Seguidores perdidos
     lost_follows: Seguidores perdidos
-    preamble: Você poderá perder seguidores e seguidores quando bloquear um domínio ou quando os seus moderadores decidirem suspender um servidor remoto. Quando isso acontecer, você poderá baixar listas de relações desfeitas, a serem inspecionadas e possivelmente importadas para outro servidor.
-    purged: As informações sobre este servidor foram eliminadas pelos administradores do seu servidor.
+    preamble: Você poderá perder seguidores e seguidores quando bloquear um domínio
+      ou quando os seus moderadores decidirem suspender um servidor remoto. Quando
+      isso acontecer, você poderá baixar listas de relações desfeitas, a serem inspecionadas
+      e possivelmente importadas para outro servidor.
+    purged: As informações sobre este servidor foram eliminadas pelos administradores
+      do seu servidor.
     type: Evento
   statuses:
     attached:
@@ -1816,7 +2178,8 @@ pt-BR:
       in_reply_not_found: A publicação que você quer responder parece não existir.
     over_character_limit: limite de caracteres de %{max} excedido
     pin_errors:
-      direct: Publicações visíveis apenas para usuários mencionados não podem ser fixadas
+      direct: Publicações visíveis apenas para usuários mencionados não podem ser
+        fixadas
       limit: Você alcançou o número limite de publicações fixadas
       ownership: As publicações dos outros não podem ser fixadas
       reblog: Um impulso não pode ser fixado
@@ -1831,13 +2194,18 @@ pt-BR:
       unlisted_long: Todos podem ver, mas não é listado em linhas do tempo públicas
   statuses_cleanup:
     enabled: Excluir publicações antigas automaticamente
-    enabled_hint: Exclui suas publicações automaticamente assim que elas alcançam sua validade, a não ser que se enquadrem em alguma das exceções abaixo
+    enabled_hint: Exclui suas publicações automaticamente assim que elas alcançam
+      sua validade, a não ser que se enquadrem em alguma das exceções abaixo
     exceptions: Exceções
-    explanation: Já que a exclusão de publicações é uma operação custosa, ela é feita lentamente quando o servidor não está ocupado. Por isso suas publicações podem ser excluídas algum tempo depois de alcançarem sua validade.
+    explanation: Já que a exclusão de publicações é uma operação custosa, ela é feita
+      lentamente quando o servidor não está ocupado. Por isso suas publicações podem
+      ser excluídas algum tempo depois de alcançarem sua validade.
     ignore_favs: Ignorar favoritos
     ignore_reblogs: Ignorar impulsos
     interaction_exceptions: Exceções baseadas nas interações
-    interaction_exceptions_explanation: Note que não há garantia de que as publicações sejam excluídas se ficarem abaixo do limite de favoritos ou boosts depois de tê-lo ultrapassado.
+    interaction_exceptions_explanation: Note que não há garantia de que as publicações
+      sejam excluídas se ficarem abaixo do limite de favoritos ou boosts depois de
+      tê-lo ultrapassado.
     keep_direct: Manter mensagens diretas
     keep_direct_hint: Não exclui nenhuma de suas mensagens diretas
     keep_media: Manter publicações com mídia
@@ -1861,9 +2229,13 @@ pt-BR:
       '7889238': 3 meses
     min_age_label: Validade
     min_favs: Manter publicações favoritadas por ao menos
-    min_favs_hint: Não exclui suas publicações que receberam pelo menos esta quantidade de favoritos. Deixe em branco para excluir publicações independentemente da quantidade de favoritos
+    min_favs_hint: Não exclui suas publicações que receberam pelo menos esta quantidade
+      de favoritos. Deixe em branco para excluir publicações independentemente da
+      quantidade de favoritos
     min_reblogs: Manter publicações impulsionadas por ao menos
-    min_reblogs_hint: Não exclui publicações que receberam pelo menos esta quantidade de impulsos. Deixe em branco para excluir publicações independentemente da quantidade de impulsos
+    min_reblogs_hint: Não exclui publicações que receberam pelo menos esta quantidade
+      de impulsos. Deixe em branco para excluir publicações independentemente da quantidade
+      de impulsos
   stream_entries:
     sensitive_content: Conteúdo sensível
   strikes:
@@ -1896,22 +2268,30 @@ pt-BR:
     enabled: Autenticação de dois fatores ativada
     enabled_success: Autenticação de dois fatores ativada
     generate_recovery_codes: Gerar códigos de recuperação
-    lost_recovery_codes: Os códigos de recuperação permitem que você recupere o acesso à sua conta caso perca o seu celular. Se você perdeu seus códigos de recuperação, você pode gerá-los novamente aqui. Seus códigos de recuperação anteriores serão invalidados.
+    lost_recovery_codes: Os códigos de recuperação permitem que você recupere o acesso
+      à sua conta caso perca o seu celular. Se você perdeu seus códigos de recuperação,
+      você pode gerá-los novamente aqui. Seus códigos de recuperação anteriores serão
+      invalidados.
     methods: Métodos de autenticação de dois fatores
     otp: Aplicativo autenticador
     recovery_codes: Códigos de recuperação de reserva
     recovery_codes_regenerated: Códigos de recuperação gerados
-    recovery_instructions_html: Se você perder acesso ao seu celular, você pode usar um dos códigos de recuperação abaixo para acessar a sua conta. <strong>Mantenha os códigos de recuperação em um local seguro</strong>. Por exemplo, você pode imprimi-los e guardá-los junto a outros documentos importantes.
+    recovery_instructions_html: Se você perder acesso ao seu celular, você pode usar
+      um dos códigos de recuperação abaixo para acessar a sua conta. <strong>Mantenha
+      os códigos de recuperação em um local seguro</strong>. Por exemplo, você pode
+      imprimi-los e guardá-los junto a outros documentos importantes.
     webauthn: Chaves de segurança
   user_mailer:
     appeal_approved:
       action: Configurações da conta
-      explanation: A revisão da punição na sua conta em %{strike_date} que você enviou em %{appeal_date} foi aprovada. Sua conta está novamente em situação regular.
+      explanation: A revisão da punição na sua conta em %{strike_date} que você enviou
+        em %{appeal_date} foi aprovada. Sua conta está novamente em situação regular.
       subject: Sua revisão de %{date} foi aprovada
       subtitle: Sua conta está novamente em boa situação.
       title: Revisão aprovada
     appeal_rejected:
-      explanation: A revisão da punição na sua conta em %{strike_date} que você enviou em %{appeal_date} foi rejeitada.
+      explanation: A revisão da punição na sua conta em %{strike_date} que você enviou
+        em %{appeal_date} foi rejeitada.
       subject: Sua revisão de %{date} foi rejeitada
       subtitle: Sua revisão foi rejeitada.
       title: Revisão rejeitada
@@ -1922,19 +2302,24 @@ pt-BR:
       title: Baixar arquivo
     failed_2fa:
       details: 'Aqui estão os detalhes da tentativa de acesso:'
-      explanation: Alguém tentou entrar em sua conta, mas forneceu um segundo fator de autenticação inválido.
-      further_actions_html: Se não foi você, recomendamos que %{action} imediatamente, pois ela pode ser comprometida.
+      explanation: Alguém tentou entrar em sua conta, mas forneceu um segundo fator
+        de autenticação inválido.
+      further_actions_html: Se não foi você, recomendamos que %{action} imediatamente,
+        pois ela pode ser comprometida.
       subject: Falha na autenticação do segundo fator
       title: Falha na autenticação do segundo fator
     suspicious_sign_in:
       change_password: Altere sua senha
       details: 'Aqui estão os detalhes do acesso:'
       explanation: Detectamos um login em sua conta a partir de um novo endereço IP.
-      further_actions_html: Se não foi você, recomendamos que você %{action} imediatamente e ative a autenticação de dois fatores para manter sua conta segura.
+      further_actions_html: Se não foi você, recomendamos que você %{action} imediatamente
+        e ative a autenticação de dois fatores para manter sua conta segura.
       subject: Sua conta foi acessada a partir de um novo endereço IP
       title: Um novo login
     terms_of_service_changed:
-      agreement: Ao continuar a usar %{domain}, você concorda com estes termos. Se discordar dos termos atualizados, poderá encerrar seu acordo com %{domain} a qualquer momento excluindo sua conta.
+      agreement: Ao continuar a usar %{domain}, você concorda com estes termos. Se
+        discordar dos termos atualizados, poderá encerrar seu acordo com %{domain}
+        a qualquer momento excluindo sua conta.
       changelog: 'Em resumo, veja o que essa atualização significa para você:'
       sign_off: A equipe do %{domain}
       subject: Atualizações dos nossos termos de serviço
@@ -1942,25 +2327,40 @@ pt-BR:
       title: atualização importante
     warning:
       appeal: Enviar uma revisão
-      appeal_description: Se você acredita que isso é um erro, você pode enviar uma revisão para a equipe de %{instance}.
+      appeal_description: Se você acredita que isso é um erro, você pode enviar uma
+        revisão para a equipe de %{instance}.
       categories:
         spam: Spam
         violation: O conteúdo viola as seguintes diretrizes da comunidade
       explanation:
-        delete_statuses: Algumas de suas publicações infringiram uma ou mais diretrizes da comunidade e foram removidas pelos moderadores de %{instance}.
-        disable: Você não poderá mais usar a sua conta, mas o seu perfil e outros dados permanecem intactos. Você pode solicitar um backup dos seus dados, mudar as configurações ou excluir sua conta.
-        mark_statuses_as_sensitive: Algumas de suas postagens foram marcadas como sensíveis por moderadores da %{instance}. Isso significa que as pessoas terão que clicar nas mídias em publicações antes de ser exibida uma prévia. Você pode marcar uma mídia como sensível quando postar futuramente.
-        sensitive: A partir de agora, todos os seus arquivos de mídia enviados serão marcados como confidenciais e escondidos por trás de um aviso de clique.
-        silence: Você ainda pode usar a sua conta, mas apenas pessoas que já te seguem verão suas publicações nessa instância, e você poderá ser excluído de vários recursos de descoberta. No entanto, outros ainda poderão te seguir manualmente.
-        suspend: Você não pode mais usar sua conta, e seu perfil e outros dados não estão mais acessíveis. Você ainda pode fazer o login para solicitar um backup dos seus dados até eles serem completamente removidos em cerca de 30 dias, porém manteremos alguns dados básicos para prevenir que você escape da suspensão.
+        delete_statuses: Algumas de suas publicações infringiram uma ou mais diretrizes
+          da comunidade e foram removidas pelos moderadores de %{instance}.
+        disable: Você não poderá mais usar a sua conta, mas o seu perfil e outros
+          dados permanecem intactos. Você pode solicitar um backup dos seus dados,
+          mudar as configurações ou excluir sua conta.
+        mark_statuses_as_sensitive: Algumas de suas postagens foram marcadas como
+          sensíveis por moderadores da %{instance}. Isso significa que as pessoas
+          terão que clicar nas mídias em publicações antes de ser exibida uma prévia.
+          Você pode marcar uma mídia como sensível quando postar futuramente.
+        sensitive: A partir de agora, todos os seus arquivos de mídia enviados serão
+          marcados como confidenciais e escondidos por trás de um aviso de clique.
+        silence: Você ainda pode usar a sua conta, mas apenas pessoas que já te seguem
+          verão suas publicações nessa instância, e você poderá ser excluído de vários
+          recursos de descoberta. No entanto, outros ainda poderão te seguir manualmente.
+        suspend: Você não pode mais usar sua conta, e seu perfil e outros dados não
+          estão mais acessíveis. Você ainda pode fazer o login para solicitar um backup
+          dos seus dados até eles serem completamente removidos em cerca de 30 dias,
+          porém manteremos alguns dados básicos para prevenir que você escape da suspensão.
       reason: 'Motivo:'
       statuses: 'Publicações citadas:'
       subject:
         delete_statuses: Suas publicações em %{acct} foram removidas
         disable: Sua conta %{acct} foi bloqueada
-        mark_statuses_as_sensitive: Suas publicações em %{acct} foram marcadas como sensíveis
+        mark_statuses_as_sensitive: Suas publicações em %{acct} foram marcadas como
+          sensíveis
         none: Aviso para %{acct}
-        sensitive: Suas publicações em %{acct} serão marcadas como sensíveis a partir de agora
+        sensitive: Suas publicações em %{acct} serão marcadas como sensíveis a partir
+          de agora
         silence: Sua conta %{acct} foi silenciada
         suspend: Sua conta %{acct} foi banida
       title:
@@ -1983,13 +2383,28 @@ pt-BR:
       edit_profile_title: Customize seu perfil
       explanation: Aqui estão algumas dicas para você começar
       feature_action: Saiba mais
-      feature_audience: O Truecolors oferece a você uma oportunidade única de gerenciar seu público sem intermediários. O Truecolors implantado em sua própria infraestrutura permite que você siga e seja seguido por qualquer outro servidor Truecolors online e está única e exclusivamente sob o seu controle.
+      feature_audience: O Truecolors oferece a você uma oportunidade única de gerenciar
+        seu público sem intermediários. O Truecolors implantado em sua própria infraestrutura
+        permite que você siga e seja seguido por qualquer outro servidor Truecolors
+        online e está única e exclusivamente sob o seu controle.
       feature_audience_title: Construa confiança com seu público
-      feature_control: Você sabe o que deseja ver na sua página inicial. Sem algoritmos ou anúncios para desperdiçar seu tempo. Siga qualquer pessoa em qualquer servidor Truecolors a partir de uma única conta e receba suas postagens em ordem cronológica, e faça o seu cantinho na internet um pouco mais a sua cara.
+      feature_control: Você sabe o que deseja ver na sua página inicial. Sem algoritmos
+        ou anúncios para desperdiçar seu tempo. Siga qualquer pessoa em qualquer servidor
+        Truecolors a partir de uma única conta e receba suas postagens em ordem cronológica,
+        e faça o seu cantinho na internet um pouco mais a sua cara.
       feature_control_title: Fique no controle da sua própria linha do tempo
-      feature_creativity: Truecolors oferece suporte a postagens de áudio, vídeo e imagem, descrições de acessibilidade, enquetes, avisos de conteúdo, avatares animados, emojis personalizados, recorte de miniaturas e muito mais, para ajudá-lo a se expressar online. Seja você publicando sua arte, sua música ou seu podcast, o Truecolors está lá para você.
+      feature_creativity: Truecolors oferece suporte a postagens de áudio, vídeo e
+        imagem, descrições de acessibilidade, enquetes, avisos de conteúdo, avatares
+        animados, emojis personalizados, recorte de miniaturas e muito mais, para
+        ajudá-lo a se expressar online. Seja você publicando sua arte, sua música
+        ou seu podcast, o Truecolors está lá para você.
       feature_creativity_title: Criatividade inigualável
-      feature_moderation: Truecolors devolve a tomada de decisão para suas mãos. Cada servidor cria suas próprias regras e regulamentos, que são aplicados localmente e não de cima para baixo como nas redes sociais corporativas, tornando-o o mais flexível em responder às necessidades de diferentes grupos de pessoas. Junte-se a um servidor com as regras com as quais você concorda, ou hospede o seu próprio.
+      feature_moderation: Truecolors devolve a tomada de decisão para suas mãos. Cada
+        servidor cria suas próprias regras e regulamentos, que são aplicados localmente
+        e não de cima para baixo como nas redes sociais corporativas, tornando-o o
+        mais flexível em responder às necessidades de diferentes grupos de pessoas.
+        Junte-se a um servidor com as regras com as quais você concorda, ou hospede
+        o seu próprio.
       feature_moderation_title: Moderando como deve ser
       follow_action: Seguir
       follow_step: Seguir pessoas interessantes é do que trata Truecolors.
@@ -2014,17 +2429,31 @@ pt-BR:
       title: Boas vindas, %{name}!
   users:
     follow_limit_reached: Você não pode seguir mais de %{limit} pessoas
-    go_to_sso_account_settings: Vá para as configurações de conta do seu provedor de identidade
+    go_to_sso_account_settings: Vá para as configurações de conta do seu provedor
+      de identidade
     invalid_otp_token: Código de dois fatores inválido
-    otp_lost_help_html: Se você perder o acesso à ambos, você pode entrar em contato com %{email}
+    otp_lost_help_html: Se você perder o acesso à ambos, você pode entrar em contato
+      com %{email}
     rate_limited: Muitas tentativas de autenticação; tente novamente mais tarde.
-    seamless_external_login: Você está logado através de um serviço externo, portanto as configurações de senha e e-mail não estão disponíveis.
+    seamless_external_login: Você está logado através de um serviço externo, portanto
+      as configurações de senha e e-mail não estão disponíveis.
     signed_in_as: 'Entrou como:'
   verification:
-    extra_instructions_html: <strong>Dica:</strong> O link do seu site não precisa ser visível. O importante é a parte <code>rel="me"</code>, que impede a personificação em sites com conteúdo gerado pelo usuário. Você pode até usar uma tag <code>link</code> no cabeçalho da página ao invés de uma tag <code>a</code>, mas é importante que o HTML esteja acessível sem executar JavaScript.
+    extra_instructions_html: <strong>Dica:</strong> O link do seu site não precisa
+      ser visível. O importante é a parte <code>rel="me"</code>, que impede a personificação
+      em sites com conteúdo gerado pelo usuário. Você pode até usar uma tag <code>link</code>
+      no cabeçalho da página ao invés de uma tag <code>a</code>, mas é importante
+      que o HTML esteja acessível sem executar JavaScript.
     here_is_how: Veja como
-    hint_html: "<strong>Verificar sua identidade no Truecolors é para todos.</strong> Utilizando padrões abertos da web e sem custo, agora e para sempre. Tudo o que você precisa é de um site pessoal pelo qual as pessoas o reconheçam. Você faz um link para este site do seu perfil, e nós verificamos se o site faz links de volta para o seu perfil. Se tudo estiver correto, apresentamos um indicador visual ao lado do link no seu perfil."
-    instructions_html: Copie o código abaixo e cole no HTML do seu site. Em seguida, adicione o endereço do seu site em um dos campos extras em seu perfil, na aba "Editar perfil", e salve as alterações.
+    hint_html: "<strong>Verificar sua identidade no Truecolors é para todos.</strong>
+      Utilizando padrões abertos da web e sem custo, agora e para sempre. Tudo o que
+      você precisa é de um site pessoal pelo qual as pessoas o reconheçam. Você faz
+      um link para este site do seu perfil, e nós verificamos se o site faz links
+      de volta para o seu perfil. Se tudo estiver correto, apresentamos um indicador
+      visual ao lado do link no seu perfil."
+    instructions_html: Copie o código abaixo e cole no HTML do seu site. Em seguida,
+      adicione o endereço do seu site em um dos campos extras em seu perfil, na aba
+      "Editar perfil", e salve as alterações.
     verification: Verificação
     verified_links: Seus links verificados
     website_verification: Verificação do site
@@ -2035,7 +2464,8 @@ pt-BR:
       success: Sua chave de segurança foi adicionada.
     delete: Excluir
     delete_confirmation: Você tem certeza de que deseja excluir esta chave de segurança?
-    description_html: Se você habilitar a <strong>autenticação por chave de segurança</strong>, o login exigirá que você use uma das suas chaves de segurança.
+    description_html: Se você habilitar a <strong>autenticação por chave de segurança</strong>,
+      o login exigirá que você use uma das suas chaves de segurança.
     destroy:
       error: Houve um problema ao excluir sua chave de segurança. Tente novamente.
       success: Sua chave de segurança foi excluída.

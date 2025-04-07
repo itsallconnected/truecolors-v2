@@ -33,7 +33,8 @@ lv:
       help:
         native_redirect_uri: Lokālajiem testiem izmanto %{native_redirect_uri}
         redirect_uri: Katram URI izmanto vienu līniju
-        scopes: Atdali darbības jomas ar atstarpēm. Lai izmantotu noklusējuma darbības jomas, atstāj tukšu.
+        scopes: Atdali darbības jomas ar atstarpēm. Lai izmantotu noklusējuma darbības
+          jomas, atstāj tukšu.
       index:
         application: Lietotne
         callback_url: Atzvanīšanas URL
@@ -60,7 +61,8 @@ lv:
       error:
         title: Radās kļūda
       new:
-        prompt_html: "%{client_name} vēlas atļauju piekļūt Tavam kontam. <strong>Apstiprini šo pieprasījumu tikai tad, ja atpazīsti un uzticies šim avotam!</strong>"
+        prompt_html: "%{client_name} vēlas atļauju piekļūt Tavam kontam. <strong>Apstiprini
+          šo pieprasījumu tikai tad, ja atpazīsti un uzticies šim avotam!</strong>"
         review_permissions: Pārskatīt atļaujas
         title: Nepieciešama autorizācija
       show:
@@ -72,7 +74,9 @@ lv:
         revoke: Vai tiešām?
       index:
         authorized_at: Autorizētas %{date}
-        description_html: Šīs ir lietotnes, kas var piekļūt Tavam kontam ar API. Ja šeit ir lietotnes, kuras neatpazīsti, vai lietotne darbojas ne tā, kā paredzēts, vari atsaukt tās piekļuvi.
+        description_html: Šīs ir lietotnes, kas var piekļūt Tavam kontam ar API. Ja
+          šeit ir lietotnes, kuras neatpazīsti, vai lietotne darbojas ne tā, kā paredzēts,
+          vari atsaukt tās piekļuvi.
         last_used_at: Pēdējo reizi lietotas %{date}
         never_used: Nekad nav lietotas
         scopes: Atļaujas
@@ -81,26 +85,41 @@ lv:
     errors:
       messages:
         access_denied: Resursa īpašnieks vai autorizācijas serveris pieprasījumu noraidīja.
-        credential_flow_not_configured: Resursa īpašnieka paroles akreditācijas datu plūsma neizdevās, jo Doorkeeper.configure.resource_owner_from_credentials nebija konfigurēts.
-        invalid_client: Klienta autentifikācija neizdevās nezināma klienta, klienta autentifikācijas vai neatbalstītas autentifikācijas metodes dēļ.
-        invalid_code_challenge_method: Koda izaicinājuma veidam jābūt S256, vienkāršs netiek atbalstīts.
-        invalid_grant: Sniegtā autorizācijas piekrišana nav derīga, tai ir beidzies derīguma termiņš, tā ir atsaukta, tā neatbilst autorizācijas pieprasījumā izmantotajam novirzīšanas URI vai tika izsniegta citam klientam.
+        credential_flow_not_configured: Resursa īpašnieka paroles akreditācijas datu
+          plūsma neizdevās, jo Doorkeeper.configure.resource_owner_from_credentials
+          nebija konfigurēts.
+        invalid_client: Klienta autentifikācija neizdevās nezināma klienta, klienta
+          autentifikācijas vai neatbalstītas autentifikācijas metodes dēļ.
+        invalid_code_challenge_method: Koda izaicinājuma veidam jābūt S256, vienkāršs
+          netiek atbalstīts.
+        invalid_grant: Sniegtā autorizācijas piekrišana nav derīga, tai ir beidzies
+          derīguma termiņš, tā ir atsaukta, tā neatbilst autorizācijas pieprasījumā
+          izmantotajam novirzīšanas URI vai tika izsniegta citam klientam.
         invalid_redirect_uri: Iekļauts novirzīšanas uri nav derīgs.
         invalid_request:
           missing_param: 'Trūkst pieprasītā parametra: %{value}.'
-          request_not_authorized: Pieprasījums ir jāautorizē. Trūkst vai nav derīgs pieprasījuma autorizēšanai nepieciešamais parametrs.
-          unknown: Pieprasījumā trūkst nepieciešamā parametra, tajā ir neatbalstīta parametra vērtība vai tas ir citādi nepareizi veidots.
-        invalid_resource_owner: Norādītie resursa īpašnieka akreditācijas dati nav derīgi, vai arī resursa īpašnieku nevar atrast
-        invalid_scope: Pieprasītā darbības joma nav derīga, nav zināma vai ir nepareizi veidota.
+          request_not_authorized: Pieprasījums ir jāautorizē. Trūkst vai nav derīgs
+            pieprasījuma autorizēšanai nepieciešamais parametrs.
+          unknown: Pieprasījumā trūkst nepieciešamā parametra, tajā ir neatbalstīta
+            parametra vērtība vai tas ir citādi nepareizi veidots.
+        invalid_resource_owner: Norādītie resursa īpašnieka akreditācijas dati nav
+          derīgi, vai arī resursa īpašnieku nevar atrast
+        invalid_scope: Pieprasītā darbības joma nav derīga, nav zināma vai ir nepareizi
+          veidota.
         invalid_token:
           expired: Piekļuves pilnvaras derīguma termiņš ir beidzies
           revoked: Piekļuves pilnvara tika atsaukta
           unknown: Piekļuves pilnvara nav derīga
-        resource_owner_authenticator_not_configured: Resursa īpašnieka atrašana neizdevās, jo Doorkeeper.configure.resource_owner_authenticator nav savienots.
-        server_error: Autorizācijas serverim radās neparedzēts nosacījums, kas neļāva izpildīt pieprasījumu.
-        temporarily_unavailable: Autorizācijas serveris pašlaik nevar apstrādāt pieprasījumu servera īslaicīgas pārslodzes vai apkopes dēļ.
-        unauthorized_client: Klients nav pilnvarots izpildīt šo pieprasījumu, izmantojot šo metodi.
-        unsupported_grant_type: Autorizācijas serveris neatbalsta atļaujas piešķiršanas veidu.
+        resource_owner_authenticator_not_configured: Resursa īpašnieka atrašana neizdevās,
+          jo Doorkeeper.configure.resource_owner_authenticator nav savienots.
+        server_error: Autorizācijas serverim radās neparedzēts nosacījums, kas neļāva
+          izpildīt pieprasījumu.
+        temporarily_unavailable: Autorizācijas serveris pašlaik nevar apstrādāt pieprasījumu
+          servera īslaicīgas pārslodzes vai apkopes dēļ.
+        unauthorized_client: Klients nav pilnvarots izpildīt šo pieprasījumu, izmantojot
+          šo metodi.
+        unsupported_grant_type: Autorizācijas serveris neatbalsta atļaujas piešķiršanas
+          veidu.
         unsupported_response_type: Autorizācijas serveris neatbalsta šo atbildes veidu.
     flash:
       applications:
@@ -151,18 +170,23 @@ lv:
     scopes:
       admin:read: lasīt visus datus uz servera
       admin:read:accounts: lasīt jūtīgu informāciju no visiem kontiem
-      admin:read:canonical_email_blocks: lasīt jūtīgu informāciju par visiem kanoniskajiem e-pasta blokiem
+      admin:read:canonical_email_blocks: lasīt jūtīgu informāciju par visiem kanoniskajiem
+        e-pasta blokiem
       admin:read:domain_allows: lasīt jūtīgu informāciju par visiem atļautajiem domēniem
       admin:read:domain_blocks: lasīt jūtīgu informāciju par visiem domēna blokiem
-      admin:read:email_domain_blocks: lasīt jūtīgu informāciju par visiem e-pasta domēna blokiem
+      admin:read:email_domain_blocks: lasīt jūtīgu informāciju par visiem e-pasta
+        domēna blokiem
       admin:read:ip_blocks: lasīt jūtīgu informāciju par visiem IP blokiem
-      admin:read:reports: lasīt jūtīgu informāciju no visiem pārskatiem un kontiem, par kuriem ziņots
+      admin:read:reports: lasīt jūtīgu informāciju no visiem pārskatiem un kontiem,
+        par kuriem ziņots
       admin:write: modificēt visus datus uz servera
       admin:write:accounts: veikt satura pārraudzības darbības kontos
-      admin:write:canonical_email_blocks: veikt satura pārraudzības darbības kanoniskajos e-pasta blokos
+      admin:write:canonical_email_blocks: veikt satura pārraudzības darbības kanoniskajos
+        e-pasta blokos
       admin:write:domain_allows: veikt satura pārraudzības darbības domēna atļaujā
       admin:write:domain_blocks: veikt satura pārraudzības darbības domēna blokos
-      admin:write:email_domain_blocks: veikt satura pārraudzības darbības e-pasta domēna blokos
+      admin:write:email_domain_blocks: veikt satura pārraudzības darbības e-pasta
+        domēna blokos
       admin:write:ip_blocks: veikt satura pārraudzības darbības IP blokos
       admin:write:reports: veikt satura pārraudzības darbības pārskatos
       crypto: lieto pilnīgu šifrēšanu

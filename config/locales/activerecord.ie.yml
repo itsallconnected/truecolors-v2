@@ -56,4 +56,5 @@ ie:
         webhook:
           attributes:
             events:
-              invalid_permissions: ne posse includer evenimentes por queles tu ne have li yures
+              invalid_permissions: ne posse includer evenimentes por queles tu ne
+                have li yures

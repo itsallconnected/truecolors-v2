@@ -1,7 +1,47 @@
 # i18n-tasks finds and manages missing and unused translations: https://github.com/glebm/i18n-tasks
 
-# The "main" locale.
+# YAML normalization config
+---
+# How to normalize keys: remove_unused, add_missing, or normalize_all (default)
+normalize: normalize_all
+
+# Paths or globs to scan for Rb files
+# ruby:
+#  - 'app/**/*.rb'
+#  - 'lib/**/*.rb'
+
+# Paths or globs to scan for YAML files
+yaml:
+  - 'config/locales/**/*.yml'
+
+# What root keys to normalize
+# Defaults to all root keys
+# roots: ['en']
+
+# Paths or globs to exclude from scanning and normalization
+# This can be used to refine the above includes
+# exclude:
+#   - 'app/assets/javascripts/translations.js'
+
+# Sort order
+# By default, alphabetical sorting is used
+sort: true
+
+# YAML writer options
+write:
+  line_width: ~  # No line width limit
+  format_keys: false  # Do not add/remove keys, only normalize values
+
+# Output translation data using the given representation
+# Available: i18n, json, yaml, yaml_po
+data:
+  write:
+    format: yaml
+
+# Default locale
 base_locale: en
+
+# The "main" locale.
 data:
   read:
     - config/locales/%{locale}.yml

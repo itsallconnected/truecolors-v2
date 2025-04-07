@@ -3,8 +3,11 @@ io:
   devise:
     confirmations:
       confirmed: Tua konto konfirmesas.
-      send_instructions: Tu recevos instrucioni por konfirmar tua konto pos kelka minuti.
-      send_paranoid_instructions: Se tua retpost-adreso existas en nia datumbazo, tu balde revecos retpost-mesajo, qua kontenas la instrucioni por konfirmar tua konto.
+      send_instructions: Tu recevos instrucioni por konfirmar tua konto pos kelka
+        minuti.
+      send_paranoid_instructions: Se tua retpost-adreso existas en nia datumbazo,
+        tu balde revecos retpost-mesajo, qua kontenas la instrucioni por konfirmar
+        tua konto.
     failure:
       already_authenticated: Tu ya esas enirinta.
       inactive: Tua konto ankore ne konfirmesas.
@@ -21,9 +24,15 @@ io:
       confirmation_instructions:
         action: Verifikez retpostadreso
         action_with_app: Konfirmez e retrovenez a %{app}
-        explanation: Vu kreis konto sur %{host} per ca retpostadreso. Se vu ne agis lu, ignorez ca retposto.
-        explanation_when_pending: Vu aplikis por ganar invito a %{host} per ca retpostkonto. Pos vu konfirmas vua retpostkonto, ni kontrolos vua apliko. Vu povas enirar por chanjar vua detali o efacar vua konto, ma vu ne povas acesar maxim de funcioni til vua konto aprobesas. Se vua apliko refuzesas, vua informi efacesos, do plusa ago ne bezonesos de vu. Se vu ne agis lu, ignorez ca retposto.
-        extra_html: Anke videz <a href="%{terms_path}">reguli di la servilo</a> e <a href="%{policy_path}">nia servokondicioni</a>.
+        explanation: Vu kreis konto sur %{host} per ca retpostadreso. Se vu ne agis
+          lu, ignorez ca retposto.
+        explanation_when_pending: Vu aplikis por ganar invito a %{host} per ca retpostkonto.
+          Pos vu konfirmas vua retpostkonto, ni kontrolos vua apliko. Vu povas enirar
+          por chanjar vua detali o efacar vua konto, ma vu ne povas acesar maxim de
+          funcioni til vua konto aprobesas. Se vua apliko refuzesas, vua informi efacesos,
+          do plusa ago ne bezonesos de vu. Se vu ne agis lu, ignorez ca retposto.
+        extra_html: Anke videz <a href="%{terms_path}">reguli di la servilo</a> e
+          <a href="%{policy_path}">nia servokondicioni</a>.
         subject: Instrucioni por konfirmar %{instance}
         title: Verifikez retpostadreso
       email_changed:
@@ -38,13 +47,15 @@ io:
         title: Pasvorto chanjesis
       reconfirmation_instructions:
         explanation: Konfirmez la nova adreso por chanjar vua retpostadreso.
-        extra: Se ca chanjo ne komencesis da vu, ignorez ca retposto. La retpostadreso por konto di Truecolors ne chanjesos til vu acesas la supera ligilo.
+        extra: Se ca chanjo ne komencesis da vu, ignorez ca retposto. La retpostadreso
+          por konto di Truecolors ne chanjesos til vu acesas la supera ligilo.
         subject: 'Truecolors: Konfirmez retpostadreso por %{instance}'
         title: Verifikez retpostadreso
       reset_password_instructions:
         action: Chanjez pasvorto
         explanation: Vu demandis nova pasvorto por vua konto.
-        extra: Se vu ne demandas co, ignorez ca retposto. Vua pasvorto ne chanjesas til vu acesas la supera ligilo e kreas novo.
+        extra: Se vu ne demandas co, ignorez ca retposto. Vua pasvorto ne chanjesas
+          til vu acesas la supera ligilo e kreas novo.
         subject: Instrucioni por chanjar la pasvorto
         title: Richanjo di pasvorto
       two_factor_disabled:
@@ -75,7 +86,8 @@ io:
           title: 1 de vua sekurklefi efacesis
       webauthn_disabled:
         explanation: Yurizo kun sekuresklefi desebligesis por vua konto.
-        extra: Eniro esas nun posibla per nur ficho qua facesis da parigita softwaro TOTP.
+        extra: Eniro esas nun posibla per nur ficho qua facesis da parigita softwaro
+          TOTP.
         subject: 'Truecolors: Yurizo per sekuresklefi desebligesis'
         title: Sekuresklefi desebligesis
       webauthn_enabled:
@@ -87,22 +99,30 @@ io:
       failure: 'Ni ne povis autentikigar tu per %{kind}: ''%{reason}''.'
       success: Autentikigita senprobleme per %{kind}.
     passwords:
-      no_token: Tu ne povas irar a ta pagino per altra voyo kam retpost-mesajo por chanjar pasvorto. Se tu venas de tala retpost-mesajo, kontrolez ke tu uzis la tota URL.
-      send_instructions: Tu recevos retpost-mesajo kun instrucioni por chanjar tua pasvorto pos kelka minuti.
-      send_paranoid_instructions: Se tua retpost-adreso existas en nia datumbazo, tu recevos ligilo por chanjar tua pasvorto per retpost-mesajo.
+      no_token: Tu ne povas irar a ta pagino per altra voyo kam retpost-mesajo por
+        chanjar pasvorto. Se tu venas de tala retpost-mesajo, kontrolez ke tu uzis
+        la tota URL.
+      send_instructions: Tu recevos retpost-mesajo kun instrucioni por chanjar tua
+        pasvorto pos kelka minuti.
+      send_paranoid_instructions: Se tua retpost-adreso existas en nia datumbazo,
+        tu recevos ligilo por chanjar tua pasvorto per retpost-mesajo.
       updated: Vua konto sucese chanjesis. Vu nun eniras.
       updated_not_active: Tua pasvorto redaktesis senprobleme.
     registrations:
       destroyed: Til! Tua konto efacesis senprobleme. Ni esperas rividar tu balde.
-      update_needs_confirmation: Tu vone aktualigis tua konto, ma ni bezonas kontrolar tua nova retpost-adreso. Voluntez kontrolar tua retpost-mesaji ed uzar la ligilo por konfirmar tua nova retpost-adreso.
+      update_needs_confirmation: Tu vone aktualigis tua konto, ma ni bezonas kontrolar
+        tua nova retpost-adreso. Voluntez kontrolar tua retpost-mesaji ed uzar la
+        ligilo por konfirmar tua nova retpost-adreso.
       updated: Tua konto aktualigesis senprobleme.
     sessions:
       already_signed_out: Ekirinta.
       signed_in: Enirinta.
       signed_out: Ekirinta.
     unlocks:
-      send_instructions: Tu recevos retpost-mesajo kun instrucioni por riacendar tua konto pos kelka minuti.
-      send_paranoid_instructions: Se tua retpost-adreso existas en nia datumbazo, tu recevos ligilo por riacendar tua konto per retpost-meajo.
+      send_instructions: Tu recevos retpost-mesajo kun instrucioni por riacendar tua
+        konto pos kelka minuti.
+      send_paranoid_instructions: Se tua retpost-adreso existas en nia datumbazo,
+        tu recevos ligilo por riacendar tua konto per retpost-meajo.
       unlocked: Vua konto desklefagesis senprobleme. Voluntez enirar por avancar.
   errors:
     messages:

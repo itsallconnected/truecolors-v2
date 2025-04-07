@@ -33,7 +33,8 @@ id:
       help:
         native_redirect_uri: Gunakan %{native_redirect_uri} sebagai tes lokal
         redirect_uri: Gunakan satu baris per URI
-        scopes: Pisahkan scope dengan spasi. Biarkan kosong jika ingin menggunakan scope default.
+        scopes: Pisahkan scope dengan spasi. Biarkan kosong jika ingin menggunakan
+          scope default.
       index:
         application: Aplikasi
         callback_url: URL Callback
@@ -71,7 +72,9 @@ id:
         revoke: Anda yakin?
       index:
         authorized_at: Diberi hak otorisasi pada %{date}
-        description_html: Ini adalah aplikasi yang dapat mengakses akun Anda menggunakan API. Jika ada aplikasi yang tidak Anda kenal di sini, atau aplikasi yang berperilaku aneh, Anda dapat mencabut hak aksesnya.
+        description_html: Ini adalah aplikasi yang dapat mengakses akun Anda menggunakan
+          API. Jika ada aplikasi yang tidak Anda kenal di sini, atau aplikasi yang
+          berperilaku aneh, Anda dapat mencabut hak aksesnya.
         last_used_at: Terakhir dipakai pada %{date}
         never_used: Tidak pernah dipakai
         scopes: Hak akses
@@ -80,26 +83,41 @@ id:
     errors:
       messages:
         access_denied: Pemilik akun atau server otorisasi menolak permintaan.
-        credential_flow_not_configured: Aliran Resource Owner Password Credentials gagal dikarenakan Doorkeeper.configure.resource_owner_from_credentials tidak terkonfigurasi dengan benar.
-        invalid_client: Perizinan klien gagal karena klien tidak diketahui, tidak ada klien yang diizinkan, atau metode perizinan tidak didukung.
-        invalid_grant: Pemberian izin yang diberikan tidak valid, kadaluarsa, telah dicabut, atau tidak cocok dengan URI pengalihan yang digunakan pada permintaan izin, atau telah diberikan pada klien lain.
+        credential_flow_not_configured: Aliran Resource Owner Password Credentials
+          gagal dikarenakan Doorkeeper.configure.resource_owner_from_credentials tidak
+          terkonfigurasi dengan benar.
+        invalid_client: Perizinan klien gagal karena klien tidak diketahui, tidak
+          ada klien yang diizinkan, atau metode perizinan tidak didukung.
+        invalid_grant: Pemberian izin yang diberikan tidak valid, kadaluarsa, telah
+          dicabut, atau tidak cocok dengan URI pengalihan yang digunakan pada permintaan
+          izin, atau telah diberikan pada klien lain.
         invalid_redirect_uri: Uri pengalihan tidak valid.
         invalid_request:
           missing_param: 'Kehilangan parameter yang diperlukan: %{value}.'
-          request_not_authorized: Permintaan perlu diotorisasi. Parameter yang diperlukan untuk otorisasi hilang atau tidak valid.
-          unknown: Permintaan ini kehilangan parameter yang dibutuhkan, termasuk parameter yang tidak didukung, atau mungkin format tidak benar.
-        invalid_resource_owner: Identitas pemilik data yang diberikan tidak valid, atau pemilik data tidak ditemukan
-        invalid_scope: Scope yang diminta tidak valid, tidak diketahui, atau struktur tidak benar.
+          request_not_authorized: Permintaan perlu diotorisasi. Parameter yang diperlukan
+            untuk otorisasi hilang atau tidak valid.
+          unknown: Permintaan ini kehilangan parameter yang dibutuhkan, termasuk parameter
+            yang tidak didukung, atau mungkin format tidak benar.
+        invalid_resource_owner: Identitas pemilik data yang diberikan tidak valid,
+          atau pemilik data tidak ditemukan
+        invalid_scope: Scope yang diminta tidak valid, tidak diketahui, atau struktur
+          tidak benar.
         invalid_token:
           expired: Token akses telah kadaluarsa
           revoked: Token akses telah dicabut
           unknown: Token akses tidak valid
-        resource_owner_authenticator_not_configured: Pencarian pemilik data gagal karena Doorkeeper.configure.resource_owner_authenticator tidak dikonfigurasi dengan benar.
-        server_error: Server otorisasi tidak bisa memenuhi permintaan karena terjadi sesuatu.
-        temporarily_unavailable: Server otorisasi saat ini tidak bisa menangani permintaan karena server sibuk atau sedang ada maintenance/perawatan.
-        unauthorized_client: Klien tidak memiliki izin untuk melakukan permintaan dengan metode ini.
+        resource_owner_authenticator_not_configured: Pencarian pemilik data gagal
+          karena Doorkeeper.configure.resource_owner_authenticator tidak dikonfigurasi
+          dengan benar.
+        server_error: Server otorisasi tidak bisa memenuhi permintaan karena terjadi
+          sesuatu.
+        temporarily_unavailable: Server otorisasi saat ini tidak bisa menangani permintaan
+          karena server sibuk atau sedang ada maintenance/perawatan.
+        unauthorized_client: Klien tidak memiliki izin untuk melakukan permintaan
+          dengan metode ini.
         unsupported_grant_type: Tipe izin tidak didukung oleh server otorisasi.
-        unsupported_response_type: Server otorisasi tidak mendukung tipe tanggapan/response seperti ini.
+        unsupported_response_type: Server otorisasi tidak mendukung tipe tanggapan/response
+          seperti ini.
     flash:
       applications:
         create:
@@ -145,15 +163,18 @@ id:
     scopes:
       admin:read: baca semua data di server
       admin:read:accounts: baca informasi sensitif semua akun
-      admin:read:canonical_email_blocks: baca informasi sensitif dari semua domain surat elektronik kanonikal yang diblokir
+      admin:read:canonical_email_blocks: baca informasi sensitif dari semua domain
+        surat elektronik kanonikal yang diblokir
       admin:read:domain_allows: baca informasi sensitif dari semua domain yang diperbolehkan
       admin:read:domain_blocks: baca informasi sensitif dari semua domain yang diblokir
-      admin:read:email_domain_blocks: baca informasi sensitif dari semua domain surat elektronik yang diblokir
+      admin:read:email_domain_blocks: baca informasi sensitif dari semua domain surat
+        elektronik yang diblokir
       admin:read:ip_blocks: baca informasi sensitif dari semua alamat IP yang diblokir
       admin:read:reports: baca informasi sensitif semua laporan dan akun terlapor
       admin:write: ubah semua data di server
       admin:write:accounts: lakukan aksi moderasi akun
-      admin:write:canonical_email_blocks: melakukan aksi moderasi pada email kanonikal yang diblokir
+      admin:write:canonical_email_blocks: melakukan aksi moderasi pada email kanonikal
+        yang diblokir
       admin:write:ip_blocks: lakukan moderasi tindakan pada blokir IP
       admin:write:reports: lakukan aksi moderasi laporan
       crypto: menggunakan enkripsi end-to-end

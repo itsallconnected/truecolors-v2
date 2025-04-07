@@ -3,8 +3,12 @@ sr-Latn:
   devise:
     confirmations:
       confirmed: Adresa Vaše e-pošte je uspešno potvrđena.
-      send_instructions: U roku od nekoliko minuta primićete e-poštu sa uputstvom za potvrdu Vašeg naloga. Molimo proverite i spam fasciklu ako niste primili poruku.
-      send_paranoid_instructions: Ukoliko se adresa Vaše e-pošte nalazi u našoj bazi, u roku od nekoliko minuta primićete poruku sa uputstvom kako da potvrdite Vaš nalog. Molimo proverite i spam fasciklu ako niste primili poruku.
+      send_instructions: U roku od nekoliko minuta primićete e-poštu sa uputstvom
+        za potvrdu Vašeg naloga. Molimo proverite i spam fasciklu ako niste primili
+        poruku.
+      send_paranoid_instructions: Ukoliko se adresa Vaše e-pošte nalazi u našoj bazi,
+        u roku od nekoliko minuta primićete poruku sa uputstvom kako da potvrdite
+        Vaš nalog. Molimo proverite i spam fasciklu ako niste primili poruku.
     failure:
       already_authenticated: Već ste prijavljeni.
       inactive: Vaš nalog još nije aktiviran.
@@ -21,39 +25,58 @@ sr-Latn:
       confirmation_instructions:
         action: Verifikujte adresu e-pošte
         action_with_app: Potvrdi i vrati se na %{app}
-        explanation: Napravili ste nalog na %{host} sa adresom ove e-pošte. Na jedan klik ste udaljeni od aktiviranja. Ako ovo niste vi, molimo ignorišite ovu e-poštu.
-        explanation_when_pending: Prijavili ste se za poziv %{host} sa ovim imejlom. Kada potvrdite svoj imejl, pregledaćemo vašu prijavu. Možete se prijaviti da biste promenili detalje ili izbrisali nalog, ali ne možete pristupiti većini funkcija dok vam nalog ne bude odobren. Ako vaša prijava bude odbijena, vaši podaci će biti uklonjeni, tako da od vas neće biti potrebne dalje radnje. Ako ovo niste bili vi, zanemarite ovaj imejl.
-        extra_html: Molimo da takođe proverite <a href="%{terms_path}"> pravila ove instance i <a href="%{policy_path}"> naše uslove korišćenja.
-        subject: 'Truecolorst: Uputstvo za potvrdu korisničkog naloga na instanci %{instance}'
+        explanation: Napravili ste nalog na %{host} sa adresom ove e-pošte. Na jedan
+          klik ste udaljeni od aktiviranja. Ako ovo niste vi, molimo ignorišite ovu
+          e-poštu.
+        explanation_when_pending: Prijavili ste se za poziv %{host} sa ovim imejlom.
+          Kada potvrdite svoj imejl, pregledaćemo vašu prijavu. Možete se prijaviti
+          da biste promenili detalje ili izbrisali nalog, ali ne možete pristupiti
+          većini funkcija dok vam nalog ne bude odobren. Ako vaša prijava bude odbijena,
+          vaši podaci će biti uklonjeni, tako da od vas neće biti potrebne dalje radnje.
+          Ako ovo niste bili vi, zanemarite ovaj imejl.
+        extra_html: Molimo da takođe proverite <a href="%{terms_path}"> pravila ove
+          instance i <a href="%{policy_path}"> naše uslove korišćenja.
+        subject: 'Truecolorst: Uputstvo za potvrdu korisničkog naloga na instanci
+          %{instance}'
         title: Verifikujte adresu e-pošte
       email_changed:
         explanation: 'Adresa ove e-pošte za vaš nalog će biti promenjena u:'
-        extra: Ako niste promenili vašu e-poštu, sasvim je moguće da je neko drugi dobio pristup vašem nalogu. Molimo promenite lozinku odmah ili kontaktirajte administratora instance ako ste zaključani izvan vašeg naloga.
+        extra: Ako niste promenili vašu e-poštu, sasvim je moguće da je neko drugi
+          dobio pristup vašem nalogu. Molimo promenite lozinku odmah ili kontaktirajte
+          administratora instance ako ste zaključani izvan vašeg naloga.
         subject: 'Truecolors: E-pošta promenjena'
         title: Nova adresa e-pošte
       password_change:
         explanation: Lozinka vašeg naloga je promenjena.
-        extra: Ako niste promenili vašu e-poštu, sasvim je moguće da je neko drugi dobio pristup vašem nalogu. Molimo promenite lozinku odmah ili kontaktirajte administratora instance ako ste zaključani izvan vašeg naloga.
+        extra: Ako niste promenili vašu e-poštu, sasvim je moguće da je neko drugi
+          dobio pristup vašem nalogu. Molimo promenite lozinku odmah ili kontaktirajte
+          administratora instance ako ste zaključani izvan vašeg naloga.
         subject: 'Truecolorst: Lozinka promenjena'
         title: Lozinka promenjena
       reconfirmation_instructions:
         explanation: Potvrdite novu adresu da biste promenili e-poštu.
-        extra: Ako ova promena nije inicirana sa vaše strane, molimo ignorišite ovu e-poštu. Adresa e-pošta za ovaj Truecolors nalog neće biti promenjena dok ne pristupite poveznici/linku iznad.
+        extra: Ako ova promena nije inicirana sa vaše strane, molimo ignorišite ovu
+          e-poštu. Adresa e-pošta za ovaj Truecolors nalog neće biti promenjena dok
+          ne pristupite poveznici/linku iznad.
         subject: 'Truecolors: Potvrdite e-poštu za %{instance}'
         title: Verifikujte adresu e-pošte
       reset_password_instructions:
         action: Lozinka promenjena
         explanation: Zatražili ste novu lozinku za vaš nalog.
-        extra: Ako niste zatražili ovo, molimo ignorišite ovu e-poštu. Vaša lozinka neće biti promenjena dok ne pristupite poveznici/vezi iznad i ne napravite novu.
+        extra: Ako niste zatražili ovo, molimo ignorišite ovu e-poštu. Vaša lozinka
+          neće biti promenjena dok ne pristupite poveznici/vezi iznad i ne napravite
+          novu.
         subject: 'Truecolorst: Uputstvo za resetovanje lozinke'
         title: Lozinka resetovana
       two_factor_disabled:
-        explanation: Prijavljivanje je sada moguće koristeći samo adresu e-pošte i lozinku.
+        explanation: Prijavljivanje je sada moguće koristeći samo adresu e-pošte
+          i lozinku.
         subject: 'Truecolors: Dvofaktorska autentifikacija je onemogućena'
         subtitle: Dvofaktorska autentifikacija za vaš nalog je onemogućena.
         title: 2FA isključena
       two_factor_enabled:
-        explanation: Za prijavljivanje će biti potreban token koji generiše uparena aplikacija TOTP.
+        explanation: Za prijavljivanje će biti potreban token koji generiše uparena
+          aplikacija TOTP.
         subject: 'Truecolors: Dvofaktorska autentifikacija je omogućena'
         subtitle: Dvofaktorska autentifikacija je omogućena za vaš nalog.
         title: 2FA uključena
@@ -74,12 +97,15 @@ sr-Latn:
           subject: 'Truecolors: Sigurnosni ključ je izbrisan'
           title: Jedan od vaših bezbednosnih ključeva je izbrisan
       webauthn_disabled:
-        explanation: Potvrda identiteta pomoću bezbednosnih ključeva je onemogućena za vaš nalog.
-        extra: Prijavljivanje je sada moguće koristeći samo token koji generiše uparena aplikacija TOTP.
+        explanation: Potvrda identiteta pomoću bezbednosnih ključeva je onemogućena
+          za vaš nalog.
+        extra: Prijavljivanje je sada moguće koristeći samo token koji generiše
+          uparena aplikacija TOTP.
         subject: 'Truecolors: Autentifikacija sa sigurnosnim ključevima onemogućena'
         title: Sigurnosni ključevi su onemogućeni
       webauthn_enabled:
-        explanation: Autentifikacija pomoću bezbednosnog ključa je omogućena za vaš nalog.
+        explanation: Autentifikacija pomoću bezbednosnog ključa je omogućena za
+          vaš nalog.
         extra: Vaš bezbednosni ključ se sada može koristiti za prijavljivanje.
         subject: 'Truecolors: Omogućena autentifikacija sa bezbednim ključem'
         title: Sigurnosni ključevi su omogućeni
@@ -87,27 +113,42 @@ sr-Latn:
       failure: Nismo u mogućnosti autorizovati Vas sa %{kind} nalogom zbog "%{reason}".
       success: Uspešna autorizacija sa %{kind} naloga.
     passwords:
-      no_token: Ne možete pristupiti ovoj stranici ako niste pratili vezu u imejlu za resetovanje lozinke. Ukoliko ste pratili vezu za resetovanje lozinke u poruci, molimo Vas da proverite da li ste koristili punu adresu.
-      send_instructions: U roku od nekoliko minuta primitićete poruku sa uputstvom za promenu Vaše lozinke. Molimo proverite i spam fasciklu ako niste primili poruku.
-      send_paranoid_instructions: Ukoliko se adresa Vaše e-pošte nalazi u našoj bazi, u roku od nekoliko minuta primićete poruku sa uputstvom za promenu Vaše lozinke. Molimo proverite i spam fasciklu ako niste primili poruku.
+      no_token: Ne možete pristupiti ovoj stranici ako niste pratili vezu u imejlu
+        za resetovanje lozinke. Ukoliko ste pratili vezu za resetovanje lozinke u
+        poruci, molimo Vas da proverite da li ste koristili punu adresu.
+      send_instructions: U roku od nekoliko minuta primitićete poruku sa uputstvom
+        za promenu Vaše lozinke. Molimo proverite i spam fasciklu ako niste primili
+        poruku.
+      send_paranoid_instructions: Ukoliko se adresa Vaše e-pošte nalazi u našoj bazi,
+        u roku od nekoliko minuta primićete poruku sa uputstvom za promenu Vaše lozinke.
+        Molimo proverite i spam fasciklu ako niste primili poruku.
       updated: Vaša lozinka je uspešno promenjena. Sada ste prijavljeni.
       updated_not_active: Vaša lozinka nije uspešno promenjena.
     registrations:
       destroyed: Ćao! Vaš nalog je uspešno obrisan. Nadamo se da ćete se uskoro vratiti.
-      update_needs_confirmation: Uspešno ste ažurirali svoj nalog, ali moramo da verifikujemo vašu novu adresu e-pošte. Proverite svoju e-poštu i pratite vezu za potvrdu da biste potvrdili novu adresu e-pošte. Proverite svoju fasciklu neželjene pošte ako niste primili ovu e-poštu.
+      update_needs_confirmation: Uspešno ste ažurirali svoj nalog, ali moramo da verifikujemo
+        vašu novu adresu e-pošte. Proverite svoju e-poštu i pratite vezu za potvrdu
+        da biste potvrdili novu adresu e-pošte. Proverite svoju fasciklu neželjene
+        pošte ako niste primili ovu e-poštu.
       updated: Vaš nalog je uspešno ažuriran.
     sessions:
       already_signed_out: Uspešno ste se odjavili.
       signed_in: Uspešno ste se prijavili.
       signed_out: Uspešno ste se odjavili.
     unlocks:
-      send_instructions: U roku od nekoliko minuta primićete imejl sa uputstvom za otključavanje Vašeg naloga. Molimo proverite i spam fasciklu ako niste primili poruku.
-      send_paranoid_instructions: koliko se adresa Vaše e-pošte nalazi u našoj bazi, u roku od nekoliko minuta primićete poruku sa uputstvom kako da otključate Vaš nalog. Molimo proverite i spam fasciklu ako niste primili poruku.
-      unlocked: Vaš nalog je uspešno otključan. Molimo Vas da se prijavite da biste nastavili.
+      send_instructions: U roku od nekoliko minuta primićete imejl sa uputstvom za
+        otključavanje Vašeg naloga. Molimo proverite i spam fasciklu ako niste primili
+        poruku.
+      send_paranoid_instructions: koliko se adresa Vaše e-pošte nalazi u našoj bazi,
+        u roku od nekoliko minuta primićete poruku sa uputstvom kako da otključate
+        Vaš nalog. Molimo proverite i spam fasciklu ako niste primili poruku.
+      unlocked: Vaš nalog je uspešno otključan. Molimo Vas da se prijavite da biste
+        nastavili.
   errors:
     messages:
       already_confirmed: je već potvrđen, molimo Vas da se prijavite
-      confirmation_period_expired: je trebao biti potvrđen tokom perioda %{period}, molimo Vas da zatražite novi
+      confirmation_period_expired: je trebao biti potvrđen tokom perioda %{period},
+        molimo Vas da zatražite novi
       expired: je istekao, molimo Vas da zatražite novi
       not_found: nije pronađeno
       not_locked: nije zaključan

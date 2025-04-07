@@ -65,8 +65,10 @@ it:
         user_role:
           attributes:
             permissions_as_keys:
-              dangerous: include autorizzazioni che non sono sicure per il ruolo di base
-              elevated: non può includere le autorizzazioni che il tuo ruolo corrente non possiede
+              dangerous: include autorizzazioni che non sono sicure per il ruolo di
+                base
+              elevated: non può includere le autorizzazioni che il tuo ruolo corrente
+                non possiede
               own_role: non può essere modificato con il tuo ruolo attuale
             position:
               elevated: non può essere superiore al tuo ruolo corrente
@@ -74,4 +76,5 @@ it:
         webhook:
           attributes:
             events:
-              invalid_permissions: non è possibile includere eventi per i quali non hai i diritti
+              invalid_permissions: non è possibile includere eventi per i quali non
+                hai i diritti

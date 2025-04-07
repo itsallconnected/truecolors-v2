@@ -33,7 +33,8 @@ ro:
       help:
         native_redirect_uri: Utilizați %{native_redirect_uri} pentru teste locale
         redirect_uri: Folosiți câte o linie per URI
-        scopes: Separați domeniile cu spații. Lăsați necompletat pentru a utiliza domeniile implicite.
+        scopes: Separați domeniile cu spații. Lăsați necompletat pentru a utiliza
+          domeniile implicite.
       index:
         application: Aplicație
         callback_url: Callback URL
@@ -60,7 +61,9 @@ ro:
       error:
         title: A apărut o eroare
       new:
-        prompt_html: "%{client_name} ar dori să vă acceseze contul. <strong>Aprobați această solicitare numai dacă recunoașteți și aveți încredere în această sursă.</strong>"
+        prompt_html: "%{client_name} ar dori să vă acceseze contul. <strong>Aprobați
+          această solicitare numai dacă recunoașteți și aveți încredere în această
+          sursă.</strong>"
         review_permissions: Revizuiți permisiunile
         title: Autorizare necesară
       show:
@@ -72,7 +75,9 @@ ro:
         revoke: Sunteți sigur?
       index:
         authorized_at: Autorizat pe %{date}
-        description_html: Acestea sunt aplicațiile care vă pot accesa contul folosind API-ul. Dacă există aplicații pe care nu le recunoașteți, sau o aplicație se comportă necorespunzător, puteți revoca accesul.
+        description_html: Acestea sunt aplicațiile care vă pot accesa contul folosind
+          API-ul. Dacă există aplicații pe care nu le recunoașteți, sau o aplicație
+          se comportă necorespunzător, puteți revoca accesul.
         last_used_at: Utilizat ultima dată pe %{date}
         never_used: Nu a fost folosit niciodată
         scopes: Permisiuni
@@ -80,28 +85,47 @@ ro:
         title: Aplicațiile dvs autorizate
     errors:
       messages:
-        access_denied: Proprietarul de resurse sau serverul de autorizare a refuzat cererea.
-        credential_flow_not_configured: Fluxul Resurselor de Acreditări Parole a eșuat din cauza faptului că Doorkeeper.configure.resource_owner_from_credentials nu este configurat.
-        invalid_client: Autentificarea clientului a eșuat din cauza unui client necunoscut, nici o autentificare client inclusă, sau metodă de autentificare nesuportată.
-        invalid_code_challenge_method: Metoda de provocare a codului trebuie să fie S256, simplu nu este acceptată.
-        invalid_grant: Acordarea autorizației furnizată este invalidă, expirată, revocată, nu corespunde URI-ului de redirecționare folosit în cererea de autorizare, sau a fost eliberat altui client.
+        access_denied: Proprietarul de resurse sau serverul de autorizare a refuzat
+          cererea.
+        credential_flow_not_configured: Fluxul Resurselor de Acreditări Parole a eșuat
+          din cauza faptului că Doorkeeper.configure.resource_owner_from_credentials
+          nu este configurat.
+        invalid_client: Autentificarea clientului a eșuat din cauza unui client necunoscut,
+          nici o autentificare client inclusă, sau metodă de autentificare nesuportată.
+        invalid_code_challenge_method: Metoda de provocare a codului trebuie să fie
+          S256, simplu nu este acceptată.
+        invalid_grant: Acordarea autorizației furnizată este invalidă, expirată, revocată,
+          nu corespunde URI-ului de redirecționare folosit în cererea de autorizare,
+          sau a fost eliberat altui client.
         invalid_redirect_uri: Uri-ul de redirecționare inclus nu este valid.
         invalid_request:
           missing_param: 'Lipsește parametrul necesar: %{value}.'
-          request_not_authorized: Solicitarea trebuie să fie autorizată. Parametrul necesar pentru solicitarea de autorizare lipsește sau este invalid.
-          unknown: Solicitarea nu are un parametru necesar, include un parametru nesuportat sau este formatat incorect.
-        invalid_resource_owner: Acreditările proprietarului de resurse nu sunt valide sau proprietarul de resurse nu poate fi găsit
-        invalid_scope: Domeniul de aplicare solicitat este invalid, necunoscut sau incorect.
+          request_not_authorized: Solicitarea trebuie să fie autorizată. Parametrul
+            necesar pentru solicitarea de autorizare lipsește sau este invalid.
+          unknown: Solicitarea nu are un parametru necesar, include un parametru nesuportat
+            sau este formatat incorect.
+        invalid_resource_owner: Acreditările proprietarului de resurse nu sunt valide
+          sau proprietarul de resurse nu poate fi găsit
+        invalid_scope: Domeniul de aplicare solicitat este invalid, necunoscut sau
+          incorect.
         invalid_token:
           expired: Token-ul de acces a expirat
           revoked: Token-ul de acces a fost revocat
           unknown: Token-ul de acces nu este valid
-        resource_owner_authenticator_not_configured: Găsirea Proprietarului de Resurse a eșuat deoarece Doorkeeper.configure.resource_owner_authenticator nu a fost configurată.
-        server_error: Serverul de autorizare a întâmpinat o condiție neașteptată care l-a împiedicat să îndeplinească cererea.
-        temporarily_unavailable: Serverul de autorizare este în prezent incapabil să gestioneze cererea din cauza unei supraîncărcări sau întrețineri temporare a serverului.
-        unauthorized_client: Clientul nu este autorizat să efectueze această cerere folosind această metodă.
-        unsupported_grant_type: Tipul de acordare a autorizației nu este suportat de serverul de autorizare.
-        unsupported_response_type: Serverul de autorizare nu acceptă acest tip de răspuns.
+        resource_owner_authenticator_not_configured: Găsirea Proprietarului de Resurse
+          a eșuat deoarece Doorkeeper.configure.resource_owner_authenticator nu a
+          fost configurată.
+        server_error: Serverul de autorizare a întâmpinat o condiție neașteptată care
+          l-a împiedicat să îndeplinească cererea.
+        temporarily_unavailable: Serverul de autorizare este în prezent incapabil
+          să gestioneze cererea din cauza unei supraîncărcări sau întrețineri temporare
+          a serverului.
+        unauthorized_client: Clientul nu este autorizat să efectueze această cerere
+          folosind această metodă.
+        unsupported_grant_type: Tipul de acordare a autorizației nu este suportat
+          de serverul de autorizare.
+        unsupported_response_type: Serverul de autorizare nu acceptă acest tip de
+          răspuns.
     flash:
       applications:
         create:
@@ -151,18 +175,25 @@ ro:
     scopes:
       admin:read: citește toate datele de pe server
       admin:read:accounts: citește informații sensibile ale tuturor conturilor
-      admin:read:canonical_email_blocks: citește informații sensibile ale tuturor blocurilor de e-mail canonice
-      admin:read:domain_allows: citește informații sensibile ale tuturor domeniilor permise
-      admin:read:domain_blocks: citește informații sensibile ale tuturor blocurilor de domeniu
-      admin:read:email_domain_blocks: citește informații sensibile ale tuturor blocurilor de domeniu de e-mail
+      admin:read:canonical_email_blocks: citește informații sensibile ale tuturor
+        blocurilor de e-mail canonice
+      admin:read:domain_allows: citește informații sensibile ale tuturor domeniilor
+        permise
+      admin:read:domain_blocks: citește informații sensibile ale tuturor blocurilor
+        de domeniu
+      admin:read:email_domain_blocks: citește informații sensibile ale tuturor blocurilor
+        de domeniu de e-mail
       admin:read:ip_blocks: citește informații sensibile ale tuturor blocurilor IP
-      admin:read:reports: citește informații sensibile din toate rapoartele și conturile raportate
+      admin:read:reports: citește informații sensibile din toate rapoartele și conturile
+        raportate
       admin:write: modifică toate datele de pe server
       admin:write:accounts: efectuează acțiuni de moderare pe conturi
-      admin:write:canonical_email_blocks: efectuează acțiuni de moderare pe blocurile de e-mail canonice
+      admin:write:canonical_email_blocks: efectuează acțiuni de moderare pe blocurile
+        de e-mail canonice
       admin:write:domain_allows: efectuează acțiuni de moderare pe domeniile permise
       admin:write:domain_blocks: efectuează acțiuni de moderare pe blocurile de domeniu
-      admin:write:email_domain_blocks: efectuează acțiuni de moderare pe blocurile de domeniu de e-mail
+      admin:write:email_domain_blocks: efectuează acțiuni de moderare pe blocurile
+        de domeniu de e-mail
       admin:write:ip_blocks: efectuează acțiuni de moderare pe blocurile IP
       admin:write:reports: efectuează acțiuni de moderare pe rapoarte
       crypto: utilizează criptare la ambele capete

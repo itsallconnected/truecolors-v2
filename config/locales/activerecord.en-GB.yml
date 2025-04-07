@@ -68,4 +68,5 @@ en-GB:
         webhook:
           attributes:
             events:
-              invalid_permissions: cannot include events you don't have the rights to
+              invalid_permissions: cannot include events you don't have the rights
+                to

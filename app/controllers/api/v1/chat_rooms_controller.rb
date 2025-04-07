@@ -59,7 +59,7 @@ module Api
       
       def destroy
         @chat_room.destroy
-        head :no_content
+        head 204
       end
       
       private

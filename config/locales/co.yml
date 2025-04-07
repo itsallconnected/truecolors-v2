@@ -1,7 +1,9 @@
 ---
 co:
   about:
-    about_truecolors_html: 'A rete suciale di u futuru: micca pubblicità, micca surveglianza, cuncezzione etica, è dicentralizazione! Firmate in cuntrollu di i vostri dati cù Truecolors!'
+    about_truecolors_html: 'A rete suciale di u futuru: micca pubblicità, micca surveglianza,
+      cuncezzione etica, è dicentralizazione! Firmate in cuntrollu di i vostri dati
+      cù Truecolors!'
     contact_missing: Mancante
     contact_unavailable: Micca dispunibule
     hosted_on: Truecolors allughjatu nant’à %{domain}
@@ -10,7 +12,8 @@ co:
       one: Abbunatu·a
       other: Abbunati
     following: Abbunamenti
-    instance_actor_flash: Stu contu virtuale riprisenta u servore stessu, micca un'utilizatore individuale. Hè utilizatu per scopi di federazione è ùn duveria mai esse suspesu.
+    instance_actor_flash: Stu contu virtuale riprisenta u servore stessu, micca un'utilizatore
+      individuale. Hè utilizatu per scopi di federazione è ùn duveria mai esse suspesu.
     last_active: ultima attività
     link_verified_on: A pruprietà d'issu ligame hè stata verificata u %{date}
     nothing_here: Ùn c’hè nunda quì!
@@ -46,7 +49,8 @@ co:
       delete: Sguassà dati
       deleted: Sguassatu
       demote: Ritrugradà
-      destroyed_msg: I dati di %{username} sò avà in fila d'attesa per esse tolti da quì à pocu
+      destroyed_msg: I dati di %{username} sò avà in fila d'attesa per esse tolti
+        da quì à pocu
       disable: Disattivà
       disable_two_factor_authentication: Disattivà l’identificazione à 2 fattori
       disabled: Ghjacciatu
@@ -75,7 +79,8 @@ co:
       media_attachments: Media aghjunti
       memorialize: Trasfurmà in mimuriale
       memorialized: Mimurializatu
-      memorialized_msg: U contu di %{username} hè statu trasfurmatu in una pagina mimuriale
+      memorialized_msg: U contu di %{username} hè statu trasfurmatu in una pagina
+        mimuriale
       moderation:
         active: Attivu
         all: Tutti
@@ -85,7 +90,8 @@ co:
       moderation_notes: Note di muderazione
       most_recent_activity: Attività più ricente
       most_recent_ip: IP più ricente
-      no_account_selected: Nisun contu hè statu cambiatu postu ch'ùn c'eranu micca selezziunati
+      no_account_selected: Nisun contu hè statu cambiatu postu ch'ùn c'eranu micca
+        selezziunati
       no_limits_imposed: Nisuna limita imposta
       not_subscribed: Micca abbunatu
       pending: In attesa di rivista
@@ -123,8 +129,12 @@ co:
       statuses: Statuti
       subscribe: Abbunassi
       suspended: Suspesu
-      suspension_irreversible: I dati di stu contu sò stati irreversibilamente sguassati. Pudete annullà a suspensione di u contu per u rende utilizabile ma ùn pudete micca ricuperà i dati pricedenti.
-      suspension_reversible_hint_html: U contu hè statu suspesu, è i so dati saranu sguassati u %{date}. Da quì à là, u contu pò esse ricuperatu senza prublemu. S'e voi vulete toglie tutti i dati di u contu avà, pudete fallu quì sottu.
+      suspension_irreversible: I dati di stu contu sò stati irreversibilamente sguassati.
+        Pudete annullà a suspensione di u contu per u rende utilizabile ma ùn pudete
+        micca ricuperà i dati pricedenti.
+      suspension_reversible_hint_html: U contu hè statu suspesu, è i so dati saranu
+        sguassati u %{date}. Da quì à là, u contu pò esse ricuperatu senza prublemu.
+        S'e voi vulete toglie tutti i dati di u contu avà, pudete fallu quì sottu.
       title: Conti
       unconfirmed_email: E-mail micca cunfirmatu
       undo_sensitized: Annullà sensibile
@@ -186,38 +196,49 @@ co:
         create_account_warning_html: "%{name} hà mandatu un'avertimentu à %{target}"
         create_announcement_html: "%{name} hà creatu u novu annunziu %{target}"
         create_custom_emoji_html: "%{name} hà caricatu una nov’emoji %{target}"
-        create_domain_allow_html: "%{name} hà messu u duminiu %{target} nant’a lista bianca"
+        create_domain_allow_html: "%{name} hà messu u duminiu %{target} nant’a lista
+          bianca"
         create_domain_block_html: "%{name} hà bluccatu u duminiu %{target}"
         create_ip_block_html: "%{name} hà creatu a regula IP %{target}"
-        create_unavailable_domain_html: "%{name} hà firmatu a distribuzione à u duminiu %{target}"
+        create_unavailable_domain_html: "%{name} hà firmatu a distribuzione à u duminiu
+          %{target}"
         demote_user_html: "%{name} hà ritrugradatu l’utilizatore %{target}"
         destroy_announcement_html: "%{name} hà sguassatu u novu annunziu %{target}"
-        destroy_domain_allow_html: "%{name} hà sguassatu u duminiu %{target} da a lista bianca"
+        destroy_domain_allow_html: "%{name} hà sguassatu u duminiu %{target} da a
+          lista bianca"
         destroy_domain_block_html: "%{name} hà sbluccatu u duminiu %{target}"
         destroy_ip_block_html: "%{name} hà toltu a regula IP %{target}"
         destroy_status_html: "%{name} hà toltu u statutu di %{target}"
-        destroy_unavailable_domain_html: "%{name} hà riprincipiatu a distribuzione à u duminiu %{target}"
-        disable_2fa_user_html: "%{name} hà disattivatu l’identificazione à dui fattori per %{target}"
+        destroy_unavailable_domain_html: "%{name} hà riprincipiatu a distribuzione
+          à u duminiu %{target}"
+        disable_2fa_user_html: "%{name} hà disattivatu l’identificazione à dui fattori
+          per %{target}"
         disable_custom_emoji_html: "%{name} hà disattivatu l’emoji %{target}"
         disable_user_html: "%{name} hà disattivatu a cunnessione per %{target}"
         enable_custom_emoji_html: "%{name} hà attivatu l’emoji %{target}"
         enable_user_html: "%{name} hà attivatu a cunnessione per %{target}"
-        memorialize_account_html: "%{name} hà trasfurmatu u contu di %{target} in una pagina mimuriale"
+        memorialize_account_html: "%{name} hà trasfurmatu u contu di %{target} in
+          una pagina mimuriale"
         promote_user_html: "%{name} hà prumossu %{target}"
         remove_avatar_user_html: "%{name} hà toltu u ritrattu di %{target}"
         reopen_report_html: "%{name} hà riapertu u signalamentu %{target}"
-        reset_password_user_html: "%{name} hà riinizializatu a chjave d’accessu di %{target}"
+        reset_password_user_html: "%{name} hà riinizializatu a chjave d’accessu di
+          %{target}"
         resolve_report_html: "%{name} hà chjosu u signalamentu %{target}"
         sensitive_account_html: "%{name} hà marcatu i media di %{target} cum'è sensibili"
         silence_account_html: "%{name} hà limitatu u contu di %{target}"
         suspend_account_html: "%{name} hà suspesu u contu di %{target}"
         unassigned_report_html: "%{name} hà disassignatu u signalamentu %{target}"
-        unsensitive_account_html: "%{name} hà sguassatu a marcatura di i media di %{target} cum'è sensibili"
-        unsilence_account_html: "%{name} hà fattu che u contu di %{target} ùn hè più limitatu"
-        unsuspend_account_html: "%{name} hà fattu che u contu di %{target} ùn hè più suspesu"
+        unsensitive_account_html: "%{name} hà sguassatu a marcatura di i media di
+          %{target} cum'è sensibili"
+        unsilence_account_html: "%{name} hà fattu che u contu di %{target} ùn hè più
+          limitatu"
+        unsuspend_account_html: "%{name} hà fattu che u contu di %{target} ùn hè più
+          suspesu"
         update_announcement_html: "%{name} hà cambiatu u novu annunziu %{target}"
         update_custom_emoji_html: "%{name} hà messu à ghjornu l’emoji %{target}"
-        update_domain_block_html: "%{name} hà messu à ghjornu u blucchime di duminiu per %{target}"
+        update_domain_block_html: "%{name} hà messu à ghjornu u blucchime di duminiu
+          per %{target}"
         update_status_html: "%{name} hà cambiatu u statutu di %{target}"
       empty: Nunda trovu.
       filter_by_action: Filtrà da azzione
@@ -296,24 +317,31 @@ co:
       destroyed_msg: U blucchime di u duminiu ùn hè più attivu
       domain: Duminiu
       edit: Mudificà u blucchime di duminiu
-      existing_domain_block_html: Avete digià impostu limite più strette nant'à %{name}, duvete <a href="%{unblock_url}">sbluccallu</a> primu.
+      existing_domain_block_html: Avete digià impostu limite più strette nant'à %{name},
+        duvete <a href="%{unblock_url}">sbluccallu</a> primu.
       new:
         create: Creà un blucchime
-        hint: U blucchime di duminiu ùn impedirà micca a creazione di conti indè a database, mà metudi di muderazione specifiche saranu applicati.
+        hint: U blucchime di duminiu ùn impedirà micca a creazione di conti indè a
+          database, mà metudi di muderazione specifiche saranu applicati.
         severity:
           noop: Nisuna
           suspend: Suspende
         title: Novu blucchime di duminiu
       obfuscate: Uscurà u nome di duminiu
-      obfuscate_hint: Uscurà in parte u nome di duminiu indè a lista s'ella hè attivata l'affissera di a lista di limitazione di duminiu
+      obfuscate_hint: Uscurà in parte u nome di duminiu indè a lista s'ella hè attivata
+        l'affissera di a lista di limitazione di duminiu
       private_comment: Cummentariu privatu
-      private_comment_hint: Cummentariu nant'à a limitazione di stu duminiu per l'usu internu di i muderatori.
+      private_comment_hint: Cummentariu nant'à a limitazione di stu duminiu per l'usu
+        internu di i muderatori.
       public_comment: Cummentariu pubblicu
-      public_comment_hint: Cummentariu nant'à a limitazione di stu duminiu per u pubblicu generale, s'ella hè attivata a rivelazione di a lista di limitazione di duminiu.
+      public_comment_hint: Cummentariu nant'à a limitazione di stu duminiu per u pubblicu
+        generale, s'ella hè attivata a rivelazione di a lista di limitazione di duminiu.
       reject_media: Righjittà i fugliali media
-      reject_media_hint: Sguassa tutti i media caricati è ricusa caricamenti futuri. Inutile per una suspensione
+      reject_media_hint: Sguassa tutti i media caricati è ricusa caricamenti futuri.
+        Inutile per una suspensione
       reject_reports: Righjittà i riporti
-      reject_reports_hint: Ignurà tutti i signalamenti chì venenu d'issu duminiu. Senz'oghjettu pè e suspensione
+      reject_reports_hint: Ignurà tutti i signalamenti chì venenu d'issu duminiu.
+        Senz'oghjettu pè e suspensione
       undo: Annullà u blucchime di duminiu
       view: Vede blucchime di duminiu
     email_domain_blocks:
@@ -342,7 +370,8 @@ co:
         unavailable: Indispunibule
       delivery_available: Distribuzione dispunibule
       delivery_error_days: Ghjorni d'errori di a distribuzione
-      delivery_error_hint: S'ellu ùn si pò distribuì à u duminiu per %{count} ghjorni, sarà autumaticamente marcatu cum'è indistribuibile.
+      delivery_error_hint: S'ellu ùn si pò distribuì à u duminiu per %{count} ghjorni,
+        sarà autumaticamente marcatu cum'è indistribuibile.
       empty: Mancun duminiu trovu.
       moderation:
         all: Tuttu
@@ -377,24 +406,31 @@ co:
         '94670856': 3 anni
       new:
         title: Creà una nova regula IP
-      no_ip_block_selected: E regule ùn sò micca state mudificate perchè manc'un'era selezziunata
+      no_ip_block_selected: E regule ùn sò micca state mudificate perchè manc'un'era
+        selezziunata
       title: Regule IP
     relationships:
       title: Rilazione di %{acct}
     relays:
       add_new: Aghjunghje un ripetitore
       delete: Sguassà
-      description_html: Un <strong>ripetitore di federazione</strong> ghjè un servore intermediariu chì manda statuti pubblichi trà l'istanze abbunate. <strong>Pò aiutà l'istanze chjuche è mezane à scuprì u cuntinutu di u fediversu</strong> senza chì l'utilizatori appianu bisognu di seguità tutti i conti di l'altri servori.
+      description_html: Un <strong>ripetitore di federazione</strong> ghjè un servore
+        intermediariu chì manda statuti pubblichi trà l'istanze abbunate. <strong>Pò
+        aiutà l'istanze chjuche è mezane à scuprì u cuntinutu di u fediversu</strong>
+        senza chì l'utilizatori appianu bisognu di seguità tutti i conti di l'altri
+        servori.
       disable: Disattivà
       disabled: Disattivatu
       enable: Attivà
-      enable_hint: Quandu sarà attivatu, u vostru servore hà da seguità i statuti pubblichi di u ripetitore, è mandarà i so statuti pubblichi quallà.
+      enable_hint: Quandu sarà attivatu, u vostru servore hà da seguità i statuti
+        pubblichi di u ripetitore, è mandarà i so statuti pubblichi quallà.
       enabled: Attivatu
       inbox_url: URL di u ripetitore
       pending: In attesa di l'apprubazione di u ripetitore
       save_and_enable: Salvà è attivà
       setup: Creà una cunnessione cù un ripetitore
-      signatures_not_enabled: I ripetitori ùn marchjeranu micca currettamente mentre chì u modu sicurizatu o à lista bianca hè attivatu
+      signatures_not_enabled: I ripetitori ùn marchjeranu micca currettamente mentre
+        chì u modu sicurizatu o à lista bianca hè attivatu
       status: Statutu
       title: Ripetitori
     report_notes:
@@ -422,7 +458,8 @@ co:
         create_and_resolve: Chjude cù una nota
         create_and_unresolve: Riapre cù una nota
         delete: Toglie
-        placeholder: Per parlà di l’azzione pigliate, o altre messe à ghjornu nant’à u signalamentu…
+        placeholder: Per parlà di l’azzione pigliate, o altre messe à ghjornu nant’à
+          u signalamentu…
       reopen: Riapre u signalamentu
       report: 'Signalamente #%{id}'
       reported_account: Contu palisatu
@@ -458,7 +495,8 @@ co:
       deleted: Sguassatu
       media:
         title: Media
-      no_status_selected: I statuti ùn sò micca stati mudificati perchè manc'unu era selezziunatu
+      no_status_selected: I statuti ùn sò micca stati mudificati perchè manc'unu era
+        selezziunatu
       with_media: Cù media
     system_checks:
       rules_check:
@@ -502,14 +540,23 @@ co:
       subject: Novu signalamentu nant’à %{instance} (#%{id})
   aliases:
     add_new: Creà un pseudonimu
-    created_msg: Novu pseudonimu creatu. Pudete avà inizià u trasferimentu da u vechju contu.
-    deleted_msg: U pseudonimu hè statu sguassatu. Ùn si puderà più migrà da questu contu à quellu.
+    created_msg: Novu pseudonimu creatu. Pudete avà inizià u trasferimentu da u vechju
+      contu.
+    deleted_msg: U pseudonimu hè statu sguassatu. Ùn si puderà più migrà da questu
+      contu à quellu.
     empty: Ùn avete un pseudonimu.
-    hint_html: Per traslucà da un altru contu à questu, quì pudete creà un pseudonimu o "alias", riquisitu per trasferì l'abbunati da u vechju contu à u novu. St'azzione sola <strong>ùn face nunda</strong> è pò esse <strong>annullata senza prublemi</strong>. <strong>A migrazione hè principiata dapoi u vechju contu</strong>.
+    hint_html: Per traslucà da un altru contu à questu, quì pudete creà un pseudonimu
+      o "alias", riquisitu per trasferì l'abbunati da u vechju contu à u novu. St'azzione
+      sola <strong>ùn face nunda</strong> è pò esse <strong>annullata senza prublemi</strong>.
+      <strong>A migrazione hè principiata dapoi u vechju contu</strong>.
     remove: Sguassà u pseudonimu
   appearance:
     advanced_web_interface: Interfaccia web avanzata
-    advanced_web_interface_hint: 'S''è voi vulete fà usu di a larghezza sana di u vostru screnu, l''interfaccia web avanzata vi permette di cunfigurà parechje culonne sfarente per vede tutta l''infurmazione chì vulete vede in listessu tempu: Accolta, nutificazione, linea pubblica, è tutti l''hashtag è liste chì vulete.'
+    advanced_web_interface_hint: 'S''è voi vulete fà usu di a larghezza sana di u
+      vostru screnu, l''interfaccia web avanzata vi permette di cunfigurà parechje
+      culonne sfarente per vede tutta l''infurmazione chì vulete vede in listessu
+      tempu: Accolta, nutificazione, linea pubblica, è tutti l''hashtag è liste chì
+      vulete.'
     animations_and_accessibility: Animazione è accessibilità
     confirmation_dialogs: Pop-up di cunfirmazione
     discovery: Scuperta
@@ -532,20 +579,24 @@ co:
     your_token: Rigenerà a fiscia d’accessu
   auth:
     delete_account: Sguassà u contu
-    delete_account_html: S’è voi vulete toglie u vostru contu <a href="%{path}">ghjè quì</a>. Duverete cunfirmà a vostra scelta.
+    delete_account_html: S’è voi vulete toglie u vostru contu <a href="%{path}">ghjè
+      quì</a>. Duverete cunfirmà a vostra scelta.
     description:
       prefix_invited_by_user: "@%{name} v'invita à raghjunghje stu servore di Truecolors!"
       prefix_sign_up: Arregistratevi nant'à Truecolors oghji!
-      suffix: Cù un contu, puderete siguità l'altri, pustà statuti è scambià missaghji cù l'utilizatori di tutti i servori Truecolors è ancu di più!
+      suffix: Cù un contu, puderete siguità l'altri, pustà statuti è scambià missaghji
+        cù l'utilizatori di tutti i servori Truecolors è ancu di più!
     dont_have_your_security_key: Ùn avete micca a chjave di sicurità?
     forgot_password: Chjave scurdata?
-    invalid_reset_password_token: U ligame di riinizializazione di a chjave d’accessu hè spiratu o ùn hè micca validu. Pudete dumandà un'altru ligame.
+    invalid_reset_password_token: U ligame di riinizializazione di a chjave d’accessu
+      hè spiratu o ùn hè micca validu. Pudete dumandà un'altru ligame.
     link_to_otp: Entrate u codice d’I2F da l'applicazione o un codice di ricuperazione
     link_to_webauth: Utilizate a vostra chjave di sicurità
     login: Cunnettassi
     logout: Scunnettassi
     migrate_account: Cambià di contu
-    migrate_account_html: S’è voi vulete riindirizà stu contu versu un’altru, <a href="%{path}">ghjè pussibule quì</a>.
+    migrate_account_html: S’è voi vulete riindirizà stu contu versu un’altru, <a href="%{path}">ghjè
+      pussibule quì</a>.
     or_log_in_with: O cunnettatevi cù
     providers:
       cas: CAS
@@ -562,7 +613,8 @@ co:
     use_security_key: Utilizà a chjave di sicurità
   challenge:
     confirm: Cuntinuvà
-    hint_html: "<strong>Astuzia:</strong> Ùn avemu micca da dumandavvi stu codice per l'ore chì vene."
+    hint_html: "<strong>Astuzia:</strong> Ùn avemu micca da dumandavvi stu codice
+      per l'ore chì vene."
     invalid_password: Chjave d'accessu micca curretta
     prompt: Cunfirmà a chjave d'accessu per cuntinuvà
   crypto:
@@ -588,7 +640,8 @@ co:
       x_seconds: "%{count}s"
   deletes:
     challenge_not_passed: L'infurmazione entrata ùn era micca curretta
-    confirm_password: Entrate a vostra chjave d’accessu attuale per verificà a vostra identità
+    confirm_password: Entrate a vostra chjave d’accessu attuale per verificà a vostra
+      identità
     confirm_username: Entrà u vostru cugnome per cunfirmà a prucedura
     proceed: Sguassà u contu
     success_msg: U vostru contu hè statu sguassatu
@@ -597,7 +650,8 @@ co:
       caches: U cuntinutu indè u cache di l'altri servori sarà forse cunservatu
       data_removal: I vostri posti è dati saranu sguassati di manera permanente
       irreversible: Ùn puderete micca ricuperà o riattivà u vostru contu
-      more_details_html: Per più di ditagli, videte a <a href="%{terms_path}">pulitica di vita privata</a>.
+      more_details_html: Per più di ditagli, videte a <a href="%{terms_path}">pulitica
+        di vita privata</a>.
       username_available: U vostru cugnome riduvinterà dispunibule
       username_unavailable: U vostru cugnome ùn sarà sempre micca dispunibule
   errors:
@@ -607,14 +661,18 @@ co:
     '406': A pagina ùn hè micca dispunivule in u furmatu riquisitu.
     '410': Sta pagina ùn esiste più quì.
     '422':
-      content: C’hè statu un prublemu cù a verificazione di sicurità. Forse bluccate cookies?
+      content: C’hè statu un prublemu cù a verificazione di sicurità. Forse bluccate
+        cookies?
       title: Fiascu di verificazione
     '429': Limitatu dop’à troppu richieste
     '500':
       content: Scusate, mà c’hè statu un prublemu cù u nostru servore.
       title: Sta pagina ùn hè curretta
-    '503': A pagina ùn hè micca stata servita per via di un prublemu timpuraneu di u servore.
-    noscript_html: Truecolors nant’à u web hà bisognu di JavaScript per funziunà. Pudete ancu pruvà <a href="%{apps_path}">l’applicazione native</a> per a vostra piattaforma.
+    '503': A pagina ùn hè micca stata servita per via di un prublemu timpuraneu di
+      u servore.
+    noscript_html: Truecolors nant’à u web hà bisognu di JavaScript per funziunà.
+      Pudete ancu pruvà <a href="%{apps_path}">l’applicazione native</a> per a vostra
+      piattaforma.
   existing_username_validator:
     not_found: ùn si pudeva micca truvà un'utilizatore lucale cù stu cugnome
     not_found_multiple: ùn si pudeva micca truvà %{usernames}
@@ -622,7 +680,9 @@ co:
     archive_takeout:
       date: Data
       download: Scaricà l’archiviu
-      hint_html: Pudete dumandà un’archiviu di i vostri <strong>statuti è media caricati</strong>. I dati saranu in u furmattu ActivityPub è pudarenu esse letti da tutti i lugiziali chì u supportanu. Pudete richiede un'archiviu ogni 7 ghjorni.
+      hint_html: Pudete dumandà un’archiviu di i vostri <strong>statuti è media caricati</strong>.
+        I dati saranu in u furmattu ActivityPub è pudarenu esse letti da tutti i lugiziali
+        chì u supportanu. Pudete richiede un'archiviu ogni 7 ghjorni.
       in_progress: Cumpilazione di l’archiviu...
       request: Dumandà u vostr’archiviu
       size: Pesu
@@ -635,7 +695,10 @@ co:
     storage: I vostri media
   featured_tags:
     add_new: Aghjunghje
-    hint_html: "<strong>Quale sò i hashtag in mostra?</strong> Sò messi in vista nant'à u vostru prufile pubblicu è permettenu à a ghjente di vede i vostri statuti ch'annu stu hashtag. Sò una bona manere di mustrà e vostre opere creative o i prughjetti à longu termine."
+    hint_html: "<strong>Quale sò i hashtag in mostra?</strong> Sò messi in vista nant'à
+      u vostru prufile pubblicu è permettenu à a ghjente di vede i vostri statuti
+      ch'annu stu hashtag. Sò una bona manere di mustrà e vostre opere creative o
+      i prughjetti à longu termine."
   filters:
     contexts:
       account: Prufili
@@ -671,7 +734,8 @@ co:
       merge_long: Cunservà i dati esistenti è aghjunghje i novi
       overwrite: Soprascrive
       overwrite_long: Rimpiazzà i dati esistenti cù i novi
-    preface: Pudete impurtà certi dati, cumu e persone chì seguitate o bluccate nant’à u vostru contu, nant’à stu servore à partesi di fugliali creati nant’à un’altru.
+    preface: Pudete impurtà certi dati, cumu e persone chì seguitate o bluccate nant’à
+      u vostru contu, nant’à stu servore à partesi di fugliali creati nant’à un’altru.
     success: I vostri dati sò stati impurtati è saranu trattati da quì à pocu
     types:
       blocking: Persone chì bluccate
@@ -709,13 +773,17 @@ co:
       webauthn: chjave di sicurità
   media_attachments:
     validations:
-      images_and_video: Ùn si pò micca aghjunghje un filmettu à un statutu chì hà digià ritratti
-      not_ready: Ùn si pò micca aghjunghje un fugliale micca ancu trattatu. Ripruvate più tardi!
+      images_and_video: Ùn si pò micca aghjunghje un filmettu à un statutu chì hà
+        digià ritratti
+      not_ready: Ùn si pò micca aghjunghje un fugliale micca ancu trattatu. Ripruvate
+        più tardi!
       too_many: Ùn si pò micca aghjunghje più di 4 fugliali
   migrations:
     acct: Spiazzatu nant'à
     cancel: Annullà ridirezzione
-    cancel_explanation: L'annullazione di a ridirezzione hà da riattivà stu contu, mà ùn si puderà micca ricuperà l'abbunati chì sò digià stati trasferriti à l'altru contu.
+    cancel_explanation: L'annullazione di a ridirezzione hà da riattivà stu contu,
+      mà ùn si puderà micca ricuperà l'abbunati chì sò digià stati trasferriti à l'altru
+      contu.
     cancelled_msg: Ridirezzione annullata.
     errors:
       already_moved: hè digià u contu induve avede traslucatu
@@ -725,30 +793,41 @@ co:
       on_cooldown: Perioda di ricuperazione
     followers_count: Abbunati à u mumentu di trasferimentu
     incoming_migrations: Traslucà da un'altru contu
-    incoming_migrations_html: Per spustà da stu contu à un'altru, primu duvete <a href="%{path}">creà un pseudonimu di contu</a>.
-    moved_msg: Avà u vostru contu riindirizza versu %{acct} è i vostri abbunati sò in corsu di trasferimentu.
+    incoming_migrations_html: Per spustà da stu contu à un'altru, primu duvete <a
+      href="%{path}">creà un pseudonimu di contu</a>.
+    moved_msg: Avà u vostru contu riindirizza versu %{acct} è i vostri abbunati sò
+      in corsu di trasferimentu.
     not_redirecting: U vostru contu ùn riindirizza micca ancu versu un'altru contu.
-    on_cooldown: Avede digià migratu u vostru contu. Sta funzionne sarà torna dispunibule in %{count} ghjorni.
+    on_cooldown: Avede digià migratu u vostru contu. Sta funzionne sarà torna dispunibule
+      in %{count} ghjorni.
     past_migrations: Anziane migrazione
     proceed_with_move: Trasferì l'abbunati
     redirected_msg: Avà u vostru contu riindirizza versu à %{acct}.
     redirecting_to: U vostru contu riindirizza versu à %{acct}.
     set_redirect: Creà ridirezzione
     warning:
-      backreference_required: U novu contu deve prima esse cunfiguratu per fà rifirenza cù un pseudonimu à quessu contu
+      backreference_required: U novu contu deve prima esse cunfiguratu per fà rifirenza
+        cù un pseudonimu à quessu contu
       before: 'Nanz''à cuntinuà, leghjete ste note attentamente:'
-      cooldown: Dopu à a traslucazione, c'hè una perioda di ricuperazione in quella ùn puderete micca cambià torna di contu
-      disabled_account: U contu attuale ùn puderà più esse utilizatu dop'à st'azzione. Però, puderete accede à a spurtazione di dati o riattivà u contu.
-      followers: St'azzione hà da spiazzà tutti l'abbunati di u contu attuale nant'à u novu contu
-      only_redirect_html: Pudete ancu <a href="%{path}">mette solu una ridirezzione nant'à u vostru prufile</a>.
+      cooldown: Dopu à a traslucazione, c'hè una perioda di ricuperazione in quella
+        ùn puderete micca cambià torna di contu
+      disabled_account: U contu attuale ùn puderà più esse utilizatu dop'à st'azzione.
+        Però, puderete accede à a spurtazione di dati o riattivà u contu.
+      followers: St'azzione hà da spiazzà tutti l'abbunati di u contu attuale nant'à
+        u novu contu
+      only_redirect_html: Pudete ancu <a href="%{path}">mette solu una ridirezzione
+        nant'à u vostru prufile</a>.
       other_data: L'altri dati ùn saranu micca autumaticamente trasferiti
-      redirect: U prufile di u vostru contu attuale sarà messu à ghjornu cù una nutificazione di ridirezzione è sarà sclusu di e ricerche
+      redirect: U prufile di u vostru contu attuale sarà messu à ghjornu cù una nutificazione
+        di ridirezzione è sarà sclusu di e ricerche
   moderation:
     title: Muderazione
   move_handler:
-    carry_blocks_over_text: St'utilizatore hà traslucatu dapoi %{acct}, ch'aviate bluccatu.
+    carry_blocks_over_text: St'utilizatore hà traslucatu dapoi %{acct}, ch'aviate
+      bluccatu.
     carry_mutes_over_text: St'utilizatore hà traslucatu dapoi %{acct}, ch'aviate piattatu.
-    copy_account_note_text: 'St''utilizatore hà traslucatu dapoi %{acct}, eccu e vostr''anziane note nant''à ellu:'
+    copy_account_note_text: 'St''utilizatore hà traslucatu dapoi %{acct}, eccu e vostr''anziane
+      note nant''à ellu:'
   notification_mailer:
     favourite:
       body: "%{name} hà aghjuntu u vostru statutu à i so favuriti :"
@@ -790,12 +869,18 @@ co:
           trillion: T
   otp_authentication:
     code_hint: Entrate u codice generatu da l’applicazione per cunfirmà
-    description_html: S’ella hè attivata <strong>l’identificazione à dui fattori</strong> cù un'applicazione d'identificazione, duvete avè u vostru telefuninu pè ottene un codice di cunnezzione.
+    description_html: S’ella hè attivata <strong>l’identificazione à dui fattori</strong>
+      cù un'applicazione d'identificazione, duvete avè u vostru telefuninu pè ottene
+      un codice di cunnezzione.
     enable: Attivà
-    instructions_html: "<strong>Scanate stu QR code cù Google Authenticator, Authy o qualcosa cusì nant’à u vostru telefuninu</strong>. St’applicazione hà da creà codici da entrà ogni volta chì vi cunnettate."
-    manual_instructions: 'S’ellu ùn hè micca pussibule scanà u QR code, pudete entre sta chjave sicreta:'
+    instructions_html: "<strong>Scanate stu QR code cù Google Authenticator, Authy
+      o qualcosa cusì nant’à u vostru telefuninu</strong>. St’applicazione hà da creà
+      codici da entrà ogni volta chì vi cunnettate."
+    manual_instructions: 'S’ellu ùn hè micca pussibule scanà u QR code, pudete entre
+      sta chjave sicreta:'
     setup: Attivà
-    wrong_code: U codice ùn hè micca currettu! Site sicuru·a chì l’ora di l'apparechju è di u servore sò esatte?
+    wrong_code: U codice ùn hè micca currettu! Site sicuru·a chì l’ora di l'apparechju
+      è di u servore sò esatte?
   pagination:
     newer: Più ricente
     next: Dopu
@@ -841,7 +926,8 @@ co:
   remote_follow:
     missing_resource: Ùn avemu pussutu à truvà l’indirizzu di ridirezzione
   scheduled_statuses:
-    over_daily_limit: Avete trapassatu a limita di %{limit} statuti pianificati per stu ghjornu
+    over_daily_limit: Avete trapassatu a limita di %{limit} statuti pianificati per
+      stu ghjornu
     over_total_limit: Avete trapassatu a limita di %{limit} statuti pianificati
   sessions:
     activity: Ultima attività
@@ -916,7 +1002,8 @@ co:
       one: 'cuntene l’hashtag disattivatu: %{tags}'
       other: 'cuntene l’hashtag disattivati: %{tags}'
     errors:
-      in_reply_not_found: U statutu à quellu avete pruvatu di risponde ùn sembra micca esiste.
+      in_reply_not_found: U statutu à quellu avete pruvatu di risponde ùn sembra micca
+        esiste.
     over_character_limit: site sopr’à a limita di %{max} caratteri
     pin_errors:
       limit: Avete digià puntarulatu u numeru massimale di statuti
@@ -942,9 +1029,11 @@ co:
     keep_polls: Cunservà i scandagli
     keep_polls_hint: Ùn sguassa micca i vostri missaghji ch'anu scandagli
     keep_self_bookmark: Cunservà i statuti ch'avete segnalibrati
-    keep_self_bookmark_hint: Ùn sguassa micca i vostri propii missaghji s'e voi l'avete aghjunti à i vostri segnalibri
+    keep_self_bookmark_hint: Ùn sguassa micca i vostri propii missaghji s'e voi l'avete
+      aghjunti à i vostri segnalibri
     keep_self_fav: Cunservà i statuti ch'avete favurizati
-    keep_self_fav_hint: Ùn sguassa micca i vostri propii missaghji s'e voi l'avete aghjunti à i vostri favuriti
+    keep_self_fav_hint: Ùn sguassa micca i vostri propii missaghji s'e voi l'avete
+      aghjunti à i vostri favuriti
     min_age:
       '1209600': 2 settimane
       '15778476': 6 mesi
@@ -956,7 +1045,9 @@ co:
     min_age_label: Età minima
     min_favs: Cunservà i statuti favurizzati più di
     min_reblogs: Cunservà i statuti spartuti più di
-    min_reblogs_hint: Ùn sguassa micca i vostri statuti chì anu ricevuti più chì stu numeru di spartere. Lasciate viotu per sguassà i statuti senza piglià in contu u numaru di spartere
+    min_reblogs_hint: Ùn sguassa micca i vostri statuti chì anu ricevuti più chì stu
+      numeru di spartere. Lasciate viotu per sguassà i statuti senza piglià in contu
+      u numaru di spartere
   stream_entries:
     sensitive_content: Cuntenutu sensibile
   tags:
@@ -977,12 +1068,17 @@ co:
     enabled: Identificazione à dui fattori attivata
     enabled_success: L’identificazione à dui fattori hè stata attivata
     generate_recovery_codes: Creà codici di ricuperazione
-    lost_recovery_codes: I codici di ricuperazione à usu unicu vi permettenu di sempre avè accessu à u vostru contu s’è voi avete persu u vostru telefuninu. S’elli sò ancu persi, pudete creà codici novi quì. I vechji codici ùn marchjeranu più.
+    lost_recovery_codes: I codici di ricuperazione à usu unicu vi permettenu di sempre
+      avè accessu à u vostru contu s’è voi avete persu u vostru telefuninu. S’elli
+      sò ancu persi, pudete creà codici novi quì. I vechji codici ùn marchjeranu più.
     methods: Manere d'I2F
     otp: Applicazione d'identificazione
     recovery_codes: Codici di ricuperazione
     recovery_codes_regenerated: Codici di ricuperazione ricreati
-    recovery_instructions_html: Pudete fà usu di i codici quì sottu per sempre avè accessu à u vostru contu s’ellu hè statu persu u vostru telefuninu. <strong>Guardateli in una piazza sicura</strong>. Per esempiu, stampati è cunservati cù altri ducumenti impurtanti.
+    recovery_instructions_html: Pudete fà usu di i codici quì sottu per sempre avè
+      accessu à u vostru contu s’ellu hè statu persu u vostru telefuninu. <strong>Guardateli
+      in una piazza sicura</strong>. Per esempiu, stampati è cunservati cù altri ducumenti
+      impurtanti.
     webauthn: Chjave di sicurità
   user_mailer:
     backup_ready:
@@ -1013,17 +1109,21 @@ co:
   webauthn_credentials:
     add: Aghjunghje una chjave di sicurità
     create:
-      error: C'hè statu un prublemu aghjunghjendu a vostra chjave di sicurità. Duvete ripruvà.
+      error: C'hè statu un prublemu aghjunghjendu a vostra chjave di sicurità. Duvete
+        ripruvà.
       success: A vostra chjave di sicurità hè stata aghjunta.
     delete: Sguassà
     delete_confirmation: Site sicuru·a che vulete sguassà sta chjave?
-    description_html: S'e voi attivate l'<strong>autentificazione à chjave di sicurità</strong>, duverete utilizà una di e vostre chjave ogni volta chì vi cunnettate.
+    description_html: S'e voi attivate l'<strong>autentificazione à chjave di sicurità</strong>,
+      duverete utilizà una di e vostre chjave ogni volta chì vi cunnettate.
     destroy:
-      error: C'hè statu un prublemu togliendu a vostra chjave di sicurità. Duvete ripruvà.
+      error: C'hè statu un prublemu togliendu a vostra chjave di sicurità. Duvete
+        ripruvà.
       success: A vostra chjave di sicurità hè stata sguassata.
     invalid_credential: Chjave di sicurità I2F micca validu
     nickname_hint: Entrate u nome di a vostra nova chjave di sicurità
     not_enabled: Ùn avete micca attivatu WebAuthn
     not_supported: E chjave di sicurità ùn marchjanu micca cù quessu navigatore
-    otp_required: Per utilizà una chjave di sicurità duvete attivà l'identificazione à dui fattori prima.
+    otp_required: Per utilizà una chjave di sicurità duvete attivà l'identificazione
+      à dui fattori prima.
     registered_on: Arregistrata %{date}

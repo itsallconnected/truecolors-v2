@@ -33,7 +33,8 @@ nl:
       help:
         native_redirect_uri: Gebruik %{native_redirect_uri} voor lokale tests
         redirect_uri: Gebruik één regel per URI
-        scopes: Toestemmingen met spaties van elkaar scheiden. Laat leeg om de standaardtoestemmingen te gebruiken.
+        scopes: Toestemmingen met spaties van elkaar scheiden. Laat leeg om de standaardtoestemmingen
+          te gebruiken.
       index:
         application: Toepassing
         callback_url: Callback-URL
@@ -60,7 +61,8 @@ nl:
       error:
         title: Er is een fout opgetreden
       new:
-        prompt_html: "%{client_name} vraagt om toegang tot je account. <strong>Keur dit verzoek alleen goed als je deze bron herkent en vertrouwt.</strong>"
+        prompt_html: "%{client_name} vraagt om toegang tot je account. <strong>Keur
+          dit verzoek alleen goed als je deze bron herkent en vertrouwt.</strong>"
         review_permissions: Toestemmingen beoordelen
         title: Autorisatie vereist
       show:
@@ -72,7 +74,9 @@ nl:
         revoke: Weet je het zeker?
       index:
         authorized_at: Toestemming verleend op %{date}
-        description_html: Dit zijn toepassingen die toegang hebben tot jouw account via de API. Als er toepassingen tussen staan die je niet herkent of een toepassing zich misdraagt, kun je de toegangsrechten van de toepassing intrekken.
+        description_html: Dit zijn toepassingen die toegang hebben tot jouw account
+          via de API. Als er toepassingen tussen staan die je niet herkent of een
+          toepassing zich misdraagt, kun je de toegangsrechten van de toepassing intrekken.
         last_used_at: Voor het laatst gebruikt op %{date}
         never_used: Nooit gebruikt
         scopes: Toestemmingen
@@ -81,27 +85,44 @@ nl:
     errors:
       messages:
         access_denied: De resource-eigenaar of autorisatie-server weigerde het verzoek.
-        credential_flow_not_configured: De wachtwoordgegevens-flow van de resource-eigenaar is mislukt omdat Doorkeeper.configure.resource_owner_from_credentials niet is ingesteld.
-        invalid_client: Clientverificatie is mislukt door een onbekende client, ontbrekende client-authenticatie of een niet ondersteunde authenticatie-methode.
-        invalid_code_challenge_method: De code challenge method moet S256 zijn, plain wordt niet ondersteund.
-        invalid_grant: De verstrekte autorisatie is ongeldig, verlopen, ingetrokken, komt niet overeen met de redirect-URI die is opgegeven of werd uitgegeven aan een andere client.
+        credential_flow_not_configured: De wachtwoordgegevens-flow van de resource-eigenaar
+          is mislukt omdat Doorkeeper.configure.resource_owner_from_credentials niet
+          is ingesteld.
+        invalid_client: Clientverificatie is mislukt door een onbekende client, ontbrekende
+          client-authenticatie of een niet ondersteunde authenticatie-methode.
+        invalid_code_challenge_method: De code challenge method moet S256 zijn, plain
+          wordt niet ondersteund.
+        invalid_grant: De verstrekte autorisatie is ongeldig, verlopen, ingetrokken,
+          komt niet overeen met de redirect-URI die is opgegeven of werd uitgegeven
+          aan een andere client.
         invalid_redirect_uri: De opgegeven redirect-URI is ongeldig.
         invalid_request:
           missing_param: 'Ontbrekende vereiste parameter: %{value}.'
-          request_not_authorized: Het verzoek moet worden geautoriseerd. De vereiste parameter voor het autorisatieverzoek ontbreekt of is ongeldig.
-          unknown: Het verzoek mist een vereiste parameter, bevat een niet ondersteunde parameterwaarde of is op een andere manier onjuist.
-        invalid_resource_owner: De verstrekte resource-eigenaargegevens zijn ongeldig of de resource-eigenaar kan niet worden gevonden
+          request_not_authorized: Het verzoek moet worden geautoriseerd. De vereiste
+            parameter voor het autorisatieverzoek ontbreekt of is ongeldig.
+          unknown: Het verzoek mist een vereiste parameter, bevat een niet ondersteunde
+            parameterwaarde of is op een andere manier onjuist.
+        invalid_resource_owner: De verstrekte resource-eigenaargegevens zijn ongeldig
+          of de resource-eigenaar kan niet worden gevonden
         invalid_scope: De opgevraagde toestemming is ongeldig, onbekend of onjuist.
         invalid_token:
           expired: Toegangscode verlopen
           revoked: Toegangscode ingetrokken
           unknown: Toegangscode ongeldig
-        resource_owner_authenticator_not_configured: Het opzoeken van de resource-eigenaar is mislukt omdat Doorkeeper.configure.resource_owner_authenticator niet is ingesteld.
-        server_error: De autorisatieserver is is een onverwachte situatie tegengekomen die het verzoek verhinderde.
-        temporarily_unavailable: De autorisatieserver is momenteel niet in staat het verzoek te behandelen als gevolg van een tijdelijke overbelasting of onderhoud aan de server.
-        unauthorized_client: De client is niet bevoegd om dit verzoek op deze manier uit te voeren.
-        unsupported_grant_type: Het type autorisatie wordt niet door de autorisatieserver ondersteund.
-        unsupported_response_type: De autorisatieserver ondersteund dit antwoordtype niet.
+        resource_owner_authenticator_not_configured: Het opzoeken van de resource-eigenaar
+          is mislukt omdat Doorkeeper.configure.resource_owner_authenticator niet
+          is ingesteld.
+        server_error: De autorisatieserver is is een onverwachte situatie tegengekomen
+          die het verzoek verhinderde.
+        temporarily_unavailable: De autorisatieserver is momenteel niet in staat het
+          verzoek te behandelen als gevolg van een tijdelijke overbelasting of onderhoud
+          aan de server.
+        unauthorized_client: De client is niet bevoegd om dit verzoek op deze manier
+          uit te voeren.
+        unsupported_grant_type: Het type autorisatie wordt niet door de autorisatieserver
+          ondersteund.
+        unsupported_response_type: De autorisatieserver ondersteund dit antwoordtype
+          niet.
     flash:
       applications:
         create:
@@ -151,18 +172,26 @@ nl:
     scopes:
       admin:read: alle gegevens op de server lezen
       admin:read:accounts: gevoelige informatie van alle accounts lezen
-      admin:read:canonical_email_blocks: gevoelige informatie van alle canoniek geblokkeerde e-mailadressen lezen
-      admin:read:domain_allows: gevoelige informatie van alle toegestane domeinen lezen
-      admin:read:domain_blocks: gevoelige informatie van alle geblokkeerde domeinen lezen
-      admin:read:email_domain_blocks: gevoelige informatie van alle geblokkeerde e-maildomeinen lezen
-      admin:read:ip_blocks: gevoelige informatie van alle geblokkeerde IP-adressen lezen
-      admin:read:reports: gevoelige informatie van alle rapportages en gerapporteerde accounts lezen
+      admin:read:canonical_email_blocks: gevoelige informatie van alle canoniek geblokkeerde
+        e-mailadressen lezen
+      admin:read:domain_allows: gevoelige informatie van alle toegestane domeinen
+        lezen
+      admin:read:domain_blocks: gevoelige informatie van alle geblokkeerde domeinen
+        lezen
+      admin:read:email_domain_blocks: gevoelige informatie van alle geblokkeerde e-maildomeinen
+        lezen
+      admin:read:ip_blocks: gevoelige informatie van alle geblokkeerde IP-adressen
+        lezen
+      admin:read:reports: gevoelige informatie van alle rapportages en gerapporteerde
+        accounts lezen
       admin:write: wijzig alle gegevens op de server
       admin:write:accounts: moderatieacties op accounts uitvoeren
-      admin:write:canonical_email_blocks: moderatieacties op canoniek geblokkeerde e-mailadressen uitvoeren
+      admin:write:canonical_email_blocks: moderatieacties op canoniek geblokkeerde
+        e-mailadressen uitvoeren
       admin:write:domain_allows: moderatieacties op toegestane domeinen uitvoeren
       admin:write:domain_blocks: moderatieacties op geblokkeerde domeinen uitvoeren
-      admin:write:email_domain_blocks: moderatieacties op geblokkeerde e-maildomeinen uitvoeren
+      admin:write:email_domain_blocks: moderatieacties op geblokkeerde e-maildomeinen
+        uitvoeren
       admin:write:ip_blocks: moderatieacties op geblokkeerde IP-adressen uitvoeren
       admin:write:reports: moderatieacties op rapportages uitvoeren
       crypto: end-to-end-encryptie gebruiken

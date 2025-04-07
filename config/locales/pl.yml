@@ -1,7 +1,8 @@
 ---
 pl:
   about:
-    about_truecolors_html: 'Sieć społecznościowa przyszłości: Bez reklam, bez inwigilacji, zaprojektowana etycznie i zdecentralizowanie! Władaj swoimi danymi z Truecolorsem!'
+    about_truecolors_html: 'Sieć społecznościowa przyszłości: Bez reklam, bez inwigilacji,
+      zaprojektowana etycznie i zdecentralizowanie! Władaj swoimi danymi z Truecolorsem!'
     contact_missing: Nie ustawiono
     contact_unavailable: Nie dotyczy
     hosted_on: Truecolors prowadzony na %{domain}
@@ -13,7 +14,9 @@ pl:
       one: śledzący
       other: obserwujących
     following: Obserwowanych
-    instance_actor_flash: To konto jest wirtualnym profilem używanym do reprezentowania samego serwera, a nie żadnego indywidualnego użytkownika. Jest ono stosowane do celów federacji i nie powinien być zawieszany.
+    instance_actor_flash: To konto jest wirtualnym profilem używanym do reprezentowania
+      samego serwera, a nie żadnego indywidualnego użytkownika. Jest ono stosowane
+      do celów federacji i nie powinien być zawieszany.
     last_active: ostatnio aktywny(-a)
     link_verified_on: Własność tego odnośnika została sprawdzona %{date}
     nothing_here: Niczego tu nie ma!
@@ -106,7 +109,8 @@ pl:
       moderation_notes: Notatki moderacyjne
       most_recent_activity: Najnowsza aktywność
       most_recent_ip: Ostatnie IP
-      no_account_selected: Żadne konto nie zostało zmienione, bo żadne nie zostało wybrane
+      no_account_selected: Żadne konto nie zostało zmienione, bo żadne nie zostało
+        wybrane
       no_limits_imposed: Nie nałożono ograniczeń
       no_role_assigned: Nie przypisano żadnej roli
       not_subscribed: Nie zasubskrybowano
@@ -127,7 +131,10 @@ pl:
       reject: Odrzuć
       rejected_msg: Pomyślnie odrzucono wniosek o rejestrację %{username}
       remote_suspension_irreversible: Dane tego konta zostały nieodwracalnie usunięte.
-      remote_suspension_reversible_hint_html: Konto zostało zawieszone na serwerze, a dane zostaną w pełni usunięte dnia %{date}. Do tego czasu zdalny serwer może przywrócić to konto bez żadnych konsekwencji. Jeśli chcesz natychmiast usunąć wszystkie dane konta, możesz to zrobić poniżej.
+      remote_suspension_reversible_hint_html: Konto zostało zawieszone na serwerze,
+        a dane zostaną w pełni usunięte dnia %{date}. Do tego czasu zdalny serwer
+        może przywrócić to konto bez żadnych konsekwencji. Jeśli chcesz natychmiast
+        usunąć wszystkie dane konta, możesz to zrobić poniżej.
       remove_avatar: Usun awatar
       remove_header: Usuń nagłówek
       removed_avatar_msg: Pomyślnie usunięto awatar %{username}
@@ -160,8 +167,13 @@ pl:
       subscribe: Subskrybuj
       suspend: Zawieś
       suspended: Zawieszono
-      suspension_irreversible: Dane tego konta zostały bezpowrotnie usunięte. Możesz cofnąć zawieszenie tego konta aby można było z niego ponownie korzystać, lecz nie przywróci to danych które poprzednio się na nim znajdowały.
-      suspension_reversible_hint_html: Twoje konto zostało zawieszone, a dane zostaną całkowicie usunięte %{date}. Do tego czasu, konto może zostać przywrócone bez żadnych negatywnych skutków. Jeżeli chcesz natychmiastowo usunąć wszystkie dane, możesz zrobić to niżej.
+      suspension_irreversible: Dane tego konta zostały bezpowrotnie usunięte. Możesz
+        cofnąć zawieszenie tego konta aby można było z niego ponownie korzystać, lecz
+        nie przywróci to danych które poprzednio się na nim znajdowały.
+      suspension_reversible_hint_html: Twoje konto zostało zawieszone, a dane zostaną
+        całkowicie usunięte %{date}. Do tego czasu, konto może zostać przywrócone
+        bez żadnych negatywnych skutków. Jeżeli chcesz natychmiastowo usunąć wszystkie
+        dane, możesz zrobić to niżej.
       title: Konta
       unblock_email: Odblokuj adres e-mail
       unblocked_email_msg: Pomyślnie odblokowano adres e-mail %{username}
@@ -212,11 +224,13 @@ pl:
         disable_2fa_user: Wyłącz 2FA
         disable_custom_emoji: Wyłącz niestandardowe emoji
         disable_relay: Wyłącz przekaźnik
-        disable_sign_in_token_auth_user: Wyłącz uwierzytelnianie tokenem przez e-mail dla użytkownika
+        disable_sign_in_token_auth_user: Wyłącz uwierzytelnianie tokenem przez e-mail
+          dla użytkownika
         disable_user: Wyłącz użytkownika
         enable_custom_emoji: Włącz niestandardowe emoji
         enable_relay: Włącz przekaźnik
-        enable_sign_in_token_auth_user: Włącz uwierzytelnianie tokenem przez e-mail dla użytkownika
+        enable_sign_in_token_auth_user: Włącz uwierzytelnianie tokenem przez e-mail
+          dla użytkownika
         enable_user: Włącz użytkownika
         memorialize_account: Upamiętnij konto
         promote_user: Podnieś uprawnienia
@@ -233,7 +247,8 @@ pl:
         suspend_account: Zawieś konto
         unassigned_report: Cofnij przypisanie zgłoszenia
         unblock_email_account: Odblokuj adres e-mail
-        unsensitive_account: Cofnij oznaczenie zawartości multimedialnej swojego konta jako wrażliwą
+        unsensitive_account: Cofnij oznaczenie zawartości multimedialnej swojego konta
+          jako wrażliwą
         unsilence_account: Cofnij wyciszenie konta
         unsuspend_account: Cofnij zawieszenie konta
         update_announcement: Aktualizuj ogłoszenie
@@ -244,7 +259,8 @@ pl:
         update_status: Aktualizuj wpis
         update_user_role: Aktualizuj rolę
       actions:
-        approve_appeal_html: "%{name} zatwierdził(-a) odwołanie decyzji moderacyjnej od %{target}"
+        approve_appeal_html: "%{name} zatwierdził(-a) odwołanie decyzji moderacyjnej
+          od %{target}"
         approve_user_html: "%{name} zatwierdził rejestrację od %{target}"
         assigned_to_self_report_html: "%{name} przypisał(a) sobie zgłoszenie %{target}"
         change_email_user_html: "%{name} zmienił(a) adres e-mail użytkownika %{target}"
@@ -252,58 +268,75 @@ pl:
         confirm_user_html: "%{name} potwierdził(a) adres e-mail użytkownika %{target}"
         create_account_warning_html: "%{name} wysłał(a) ostrzeżenie do %{target}"
         create_announcement_html: "%{name} utworzył(a) nowe ogłoszenie %{target}"
-        create_canonical_email_block_html: "%{name} zablokował(a) e-mail z hashem %{target}"
+        create_canonical_email_block_html: "%{name} zablokował(a) e-mail z hashem
+          %{target}"
         create_custom_emoji_html: "%{name} dodał(a) nowe emoji %{target}"
         create_domain_allow_html: "%{name} dodał(a) na białą listę domenę %{target}"
         create_domain_block_html: "%{name} zablokował(a) domenę %{target}"
-        create_email_domain_block_html: "%{name} dodał(a) domenę e-mail %{target} na czarną listę"
+        create_email_domain_block_html: "%{name} dodał(a) domenę e-mail %{target}
+          na czarną listę"
         create_ip_block_html: "%{name} stworzył(a) regułę dla IP %{target}"
         create_relay_html: "%{name} utworzył przekaźnik %{target}"
         create_unavailable_domain_html: "%{name} przestał(a) doręczać na domenę %{target}"
         create_user_role_html: "%{name} utworzył rolę %{target}"
         demote_user_html: "%{name} zdegradował(a) użytkownika %{target}"
         destroy_announcement_html: "%{name} usunął(-ęła) ogłoszenie %{target}"
-        destroy_canonical_email_block_html: "%{name} odblokował(a) e-mail z hashem %{target}"
+        destroy_canonical_email_block_html: "%{name} odblokował(a) e-mail z hashem
+          %{target}"
         destroy_custom_emoji_html: "%{name} usunął emoji %{target}"
-        destroy_domain_allow_html: "%{name} usunął(-ęła) domenę %{target} z białej listy"
+        destroy_domain_allow_html: "%{name} usunął(-ęła) domenę %{target} z białej
+          listy"
         destroy_domain_block_html: "%{name} odblokował(a) domenę %{target}"
-        destroy_email_domain_block_html: "%{name} usunął(-ęła) domenę e-mail %{target} z czarnej listy"
+        destroy_email_domain_block_html: "%{name} usunął(-ęła) domenę e-mail %{target}
+          z czarnej listy"
         destroy_instance_html: "%{name} usunął domenę %{target}"
         destroy_ip_block_html: "%{name} usunął(-ęła) regułę dla IP %{target}"
         destroy_relay_html: "%{name} usunął przekaźnik %{target}"
         destroy_status_html: "%{name} usunął(-ęła) wpis użytkownika %{target}"
-        destroy_unavailable_domain_html: "%{name} wznowił(a) doręczanie do domeny %{target}"
+        destroy_unavailable_domain_html: "%{name} wznowił(a) doręczanie do domeny
+          %{target}"
         destroy_user_role_html: "%{name} usunął rolę %{target}"
-        disable_2fa_user_html: "%{name} wyłączył(a) uwierzytelnianie dwuskładnikowe użytkownikowi %{target}"
+        disable_2fa_user_html: "%{name} wyłączył(a) uwierzytelnianie dwuskładnikowe
+          użytkownikowi %{target}"
         disable_custom_emoji_html: "%{name} wyłączył(a) emoji %{target}"
         disable_relay_html: "%{name} wyłączył przekaźnik %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} wyłączył/a uwierzytelnianie tokenem przez e-mail dla %{target}"
-        disable_user_html: "%{name} zablokował(a) możliwość logowania użytkownikowi %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} wyłączył/a uwierzytelnianie
+          tokenem przez e-mail dla %{target}"
+        disable_user_html: "%{name} zablokował(a) możliwość logowania użytkownikowi
+          %{target}"
         enable_custom_emoji_html: "%{name} włączył(a) emoji %{target}"
         enable_relay_html: "%{name} włączył przekaźnik %{target}"
-        enable_sign_in_token_auth_user_html: "%{name} włączył/a uwierzytelnianie tokenem przez e-mail dla %{target}"
-        enable_user_html: "%{name} przywrócił(a) możliwość logowania użytkownikowi %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} włączył/a uwierzytelnianie tokenem
+          przez e-mail dla %{target}"
+        enable_user_html: "%{name} przywrócił(a) możliwość logowania użytkownikowi
+          %{target}"
         memorialize_account_html: "%{name} nadał(a) kontu %{target} status in memoriam"
         promote_user_html: "%{name} podniósł(a) uprawnienia użytkownikowi %{target}"
-        publish_terms_of_service_html: "%{name} opublikował aktualizacje warunków korzystania z usługi"
-        reject_appeal_html: "%{name} zatwierdził(-a) odwołanie decyzji moderacyjnej od %{target}"
+        publish_terms_of_service_html: "%{name} opublikował aktualizacje warunków
+          korzystania z usługi"
+        reject_appeal_html: "%{name} zatwierdził(-a) odwołanie decyzji moderacyjnej
+          od %{target}"
         reject_user_html: "%{name} odrzucił rejestrację od %{target}"
         remove_avatar_user_html: "%{name} usunął(-ęła) awatar użytkownikowi %{target}"
         reopen_report_html: "%{name} otworzył(a) ponownie zgłoszenie %{target}"
-        resend_user_html: "%{name} ponownie wysłał(a) e-mail z potwierdzeniem dla %{target}"
+        resend_user_html: "%{name} ponownie wysłał(a) e-mail z potwierdzeniem dla
+          %{target}"
         reset_password_user_html: "%{name} resetuje hasło użytkownika %{target}"
         resolve_report_html: "%{name} rozwiązał(a) zgłoszenie %{target}"
-        sensitive_account_html: "%{name} oznaczył(a) zawartość multimedialną %{target} jako wrażliwą"
+        sensitive_account_html: "%{name} oznaczył(a) zawartość multimedialną %{target}
+          jako wrażliwą"
         silence_account_html: "%{name} wyciszył(a) konto %{target}"
         suspend_account_html: Zawieszono konto %{target} przez %{name}
         unassigned_report_html: "%{name} cofnął(-ęła) przypisanie zgłoszenia %{target}"
         unblock_email_account_html: "%{name} odblokował adres e-mail %{target}"
-        unsensitive_account_html: "%{name} cofnął(-ęła) oznaczenie zawartości multimedialnej %{target} jako wrażliwą"
+        unsensitive_account_html: "%{name} cofnął(-ęła) oznaczenie zawartości multimedialnej
+          %{target} jako wrażliwą"
         unsilence_account_html: "%{name} cofnął(-ęła) wyciszenie konta %{target}"
         unsuspend_account_html: "%{name} cofnął(-ęła) zawieszenie konta %{target}"
         update_announcement_html: Zaktualizowane ogłoszenie %{target} przez %{name}
         update_custom_emoji_html: Zaktualizowane emoji %{target} przez %{name}
-        update_domain_block_html: Zaktualizowano blokadę domeny dla %{target} przez %{name}
+        update_domain_block_html: Zaktualizowano blokadę domeny dla %{target} przez
+          %{name}
         update_ip_block_html: "%{name} stworzył(a) regułę dla IP %{target}"
         update_report_html: "%{target} zaktualizowany przez %{name}"
         update_status_html: "%{name} zaktualizował(a) wpis użytkownika %{target}"
@@ -418,39 +451,52 @@ pl:
         confirm: Zawieś
         permanent_action: Cofnięcie zawieszenia nie przywróci żadnych danych ani związków.
         preamble_html: Zamierzasz zawiesić <strong>%{domain}</strong> wraz z subdomenami.
-        remove_all_data: Usunie to wszystkie treści, media, i dane profilów kont tej domeny z twojego serwera.
+        remove_all_data: Usunie to wszystkie treści, media, i dane profilów kont tej
+          domeny z twojego serwera.
         stop_communication: Twój serwer przestanie komunikować się z tymi serwerami.
         title: Potwierdź blokadę domeny %{domain}
-        undo_relationships: To usunie wszystkie związki obserwowania między kontami na tych serwerach i twoim.
+        undo_relationships: To usunie wszystkie związki obserwowania między kontami
+          na tych serwerach i twoim.
       created_msg: Blokada domen jest przetwarzana
       destroyed_msg: Blokada domeny nie może zostać odwrócona
       domain: Domena
       edit: Edytuj blokadę domeny
       existing_domain_block: Już nałożyłeś surowsze limity na %{name}.
-      existing_domain_block_html: Już narzuciłeś bardziej rygorystyczne limity na %{name}, musisz najpierw <a href="%{unblock_url}">je odblokować</a>.
+      existing_domain_block_html: Już narzuciłeś bardziej rygorystyczne limity na
+        %{name}, musisz najpierw <a href="%{unblock_url}">je odblokować</a>.
       export: Eksportuj
       import: Importuj
       new:
         create: Utwórz blokadę
-        hint: Blokada domen nie zabroni tworzenia wpisów kont w bazie danych, ale pozwoli na automatyczną moderację kont do nich należących.
+        hint: Blokada domen nie zabroni tworzenia wpisów kont w bazie danych, ale
+          pozwoli na automatyczną moderację kont do nich należących.
         severity:
-          desc_html: "<strong>Wyciszenie</strong> uczyni wpisy użytkowników z tej domeny widoczne tylko dla osób, które go obserwują. <strong>Zawieszenie</strong> spowoduje usunięcie całej zawartości dodanej przez użytkownika. Użyj <strong>Żadne</strong>, jeżeli chcesz jedynie odrzucać zawartość multimedialną."
+          desc_html: "<strong>Wyciszenie</strong> uczyni wpisy użytkowników z tej
+            domeny widoczne tylko dla osób, które go obserwują. <strong>Zawieszenie</strong>
+            spowoduje usunięcie całej zawartości dodanej przez użytkownika. Użyj <strong>Żadne</strong>,
+            jeżeli chcesz jedynie odrzucać zawartość multimedialną."
           noop: Żadne
           silence: Wycisz
           suspend: Zawieś
         title: Nowa blokada domen
-      no_domain_block_selected: Nie zmieniono żadnych bloków domen, gdyż żadna nie została wybrana
+      no_domain_block_selected: Nie zmieniono żadnych bloków domen, gdyż żadna nie
+        została wybrana
       not_permitted: Nie możesz wykonać tej czynności
       obfuscate: Ukryj nazwę domeny
-      obfuscate_hint: Częściowo ukryj nazwę domeny na liście, gdy reklamowanie listy limitów domen jest włączone
+      obfuscate_hint: Częściowo ukryj nazwę domeny na liście, gdy reklamowanie listy
+        limitów domen jest włączone
       private_comment: Prywatny komentarz
-      private_comment_hint: Komentarz na temat ograniczeń dla tej domeny do wewnętrznej informacji dla moderatorów.
+      private_comment_hint: Komentarz na temat ograniczeń dla tej domeny do wewnętrznej
+        informacji dla moderatorów.
       public_comment: Publiczny komentarz
-      public_comment_hint: Komentarz dotyczący tego ograniczenia domeny widoczny publicznie, jeżeli wyświetlanie listy ograniczonych domen jest włączone.
+      public_comment_hint: Komentarz dotyczący tego ograniczenia domeny widoczny publicznie,
+        jeżeli wyświetlanie listy ograniczonych domen jest włączone.
       reject_media: Odrzucaj pliki multimedialne
-      reject_media_hint: Usuwa przechowywane lokalnie pliki multimedialne i nie pozwala na ich pobieranie. Nieprzydatne przy zawieszeniu
+      reject_media_hint: Usuwa przechowywane lokalnie pliki multimedialne i nie pozwala
+        na ich pobieranie. Nieprzydatne przy zawieszeniu
       reject_reports: Odrzucaj zgłoszenia
-      reject_reports_hint: Zgłoszenia z tej instancji będą ignorowane. Nieprzydatne przy zawieszeniu
+      reject_reports_hint: Zgłoszenia z tej instancji będą ignorowane. Nieprzydatne
+        przy zawieszeniu
       undo: Cofnij
       view: Zobacz blokadę domeny
     email_domain_blocks:
@@ -471,9 +517,14 @@ pl:
         create: Utwórz blokadę
         resolve: Rozwiąż domenę
         title: Nowa blokada domeny e-mail
-      no_email_domain_block_selected: Żadne blokady domeny e-mail nie zostały zmienione, ponieważ żadne z nich nie zostały wybrane
+      no_email_domain_block_selected: Żadne blokady domeny e-mail nie zostały zmienione,
+        ponieważ żadne z nich nie zostały wybrane
       not_permitted: Brak uprawnień
-      resolved_dns_records_hint_html: Nazwa domeny rozwiązuje się do następujących domen MX, które są ostatecznie odpowiedzialne za przyjmowanie wiadomości e-mail. Blokowanie domeny MX spowoduje zablokowanie rejestracji z dowolnego adresu e-mail, który używa tej samej domeny MX, nawet jeśli widoczna nazwa domeny jest inna. <strong>Uważaj, aby nie blokować głównych dostawców poczty elektronicznej.</strong>
+      resolved_dns_records_hint_html: Nazwa domeny rozwiązuje się do następujących
+        domen MX, które są ostatecznie odpowiedzialne za przyjmowanie wiadomości e-mail.
+        Blokowanie domeny MX spowoduje zablokowanie rejestracji z dowolnego adresu
+        e-mail, który używa tej samej domeny MX, nawet jeśli widoczna nazwa domeny
+        jest inna. <strong>Uważaj, aby nie blokować głównych dostawców poczty elektronicznej.</strong>
       resolved_through_html: Rozwiązano przez %{domain}
       title: Zablokowane domeny e-mail
     export_domain_allows:
@@ -482,17 +533,25 @@ pl:
       no_file: Nie wybrano pliku
     export_domain_blocks:
       import:
-        description_html: Zamierzasz zaimportować listę zablokowanych domen. Przejrzyj uważnie tę listę, zwłaszcza jeśli sam jej nie utworzyłeś.
+        description_html: Zamierzasz zaimportować listę zablokowanych domen. Przejrzyj
+          uważnie tę listę, zwłaszcza jeśli sam jej nie utworzyłeś.
         existing_relationships_warning: Istniejące połączenia obserwujących
-        private_comment_description_html: 'Żebyś wiedział(a) skąd pochodzą zaimportowane bloki, zostaną one utworzone z następującym prywatnym komentarzem: <q>%{comment}</q>'
+        private_comment_description_html: 'Żebyś wiedział(a) skąd pochodzą zaimportowane
+          bloki, zostaną one utworzone z następującym prywatnym komentarzem: <q>%{comment}</q>'
         private_comment_template: Zaimportowano z %{source} dnia %{date}
         title: Importuj zablokowane domeny
-      invalid_domain_block: 'Jeden lub więcej blokujących domen zostało pominiętych z powodu następującego błędu(ów): %{error}'
+      invalid_domain_block: 'Jeden lub więcej blokujących domen zostało pominiętych
+        z powodu następującego błędu(ów): %{error}'
       new:
         title: Importuj zablokowane domeny
       no_file: Nie wybrano pliku
     follow_recommendations:
-      description_html: "<strong>Polecane obserwacje pomagają nowym użytkownikom szybko odnaleźć interesujące treści</strong>. Jeżeli użytkownik nie wchodził w interakcje z innymi wystarczająco często, aby powstały spersonalizowane rekomendacje, polecane są te konta. Są one obliczane każdego dnia na podstawie kombinacji kont o największej liczbie niedawnej aktywności i największej liczbie lokalnych obserwatorów dla danego języka."
+      description_html: "<strong>Polecane obserwacje pomagają nowym użytkownikom szybko
+        odnaleźć interesujące treści</strong>. Jeżeli użytkownik nie wchodził w interakcje
+        z innymi wystarczająco często, aby powstały spersonalizowane rekomendacje,
+        polecane są te konta. Są one obliczane każdego dnia na podstawie kombinacji
+        kont o największej liczbie niedawnej aktywności i największej liczbie lokalnych
+        obserwatorów dla danego języka."
       language: Dla języka
       status: Stan
       suppress: Usuń polecenie obserwacji
@@ -505,10 +564,18 @@ pl:
         view_all: Pokaż pełny dziennik zdarzeń
       availability:
         description_html:
-          few: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dni</strong> bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano dostawę <em>od</em> domeny.
-          many: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dni</strong> bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano dostawę <em>od</em> domeny.
-          one: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dzień</strong> bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano dostawę <em>od</em> domeny.
-          other: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dni</strong> bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano dostawę <em>od</em> domeny.
+          few: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dni</strong>
+            bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano
+            dostawę <em>od</em> domeny.
+          many: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dni</strong>
+            bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano
+            dostawę <em>od</em> domeny.
+          one: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dzień</strong>
+            bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano
+            dostawę <em>od</em> domeny.
+          other: Jeśli dostarczenie do domeny nie powiedzie się <strong>%{count} dni</strong>
+            bez powodzenia, nie zostaną podjęte dalsze próby dostawy, chyba że otrzymano
+            dostawę <em>od</em> domeny.
         failure_threshold_reached: Próg niepowodzenia osiągnięty dnia %{date}.
         failures_recorded:
           few: Nieudane próby w %{count} różnych dniach.
@@ -525,8 +592,10 @@ pl:
       confirm_purge: Czy na pewno chcesz trwale usunąć dane z tej domeny?
       content_policies:
         comment: Wewnętrzna notatka
-        description_html: Możesz zdefiniować zasady treści, które zostaną zastosowane do wszystkich kont z tej domeny i jej subdomen.
-        limited_federation_mode_description_html: Możesz wybrać, czy zezwolić na federację z tą domeną.
+        description_html: Możesz zdefiniować zasady treści, które zostaną zastosowane
+          do wszystkich kont z tej domeny i jej subdomen.
+        limited_federation_mode_description_html: Możesz wybrać, czy zezwolić na federację
+          z tą domeną.
         policies:
           reject_media: Odrzucaj media
           reject_reports: Odrzucaj zgłoszenia
@@ -553,7 +622,8 @@ pl:
         unavailable: Niedostępne
       delivery_available: Doręczanie jest dostępne
       delivery_error_days: Dni błędów doręczenia
-      delivery_error_hint: Jeżeli doręczanie nie będzie możliwe przez %{count} dni, zostanie automatycznie oznaczona jako nie do doręczania.
+      delivery_error_hint: Jeżeli doręczanie nie będzie możliwe przez %{count} dni,
+        zostanie automatycznie oznaczona jako nie do doręczania.
       destroyed_msg: Dane z %{domain} są teraz w kolejce do bezpośredniego usunięcia.
       empty: Nie znaleziono domen.
       known_accounts:
@@ -568,7 +638,9 @@ pl:
       private_comment: Prywatny komentarz
       public_comment: Publiczny komentarz
       purge: Wyczyść
-      purge_description_html: Jeśli uważasz, że ta domena została zamknięta na dobre, możesz usunąć wszystkie rejestry konta i powiązane dane z tej domeny z pamięci. Proces ten może chwilę potrwać.
+      purge_description_html: Jeśli uważasz, że ta domena została zamknięta na dobre,
+        możesz usunąć wszystkie rejestry konta i powiązane dane z tej domeny z pamięci.
+        Proces ten może chwilę potrwać.
       title: Znane instancje
       total_blocked_by_us: Zablokowane przez nas
       total_followed_by_them: Obserwowani przez nich
@@ -598,24 +670,31 @@ pl:
         '94670856': 3 lata
       new:
         title: Utwórz nową regułę IP
-      no_ip_block_selected: Żadna reguła nie została zmieniona, ponieważ żadna nie została wybrana
+      no_ip_block_selected: Żadna reguła nie została zmieniona, ponieważ żadna nie
+        została wybrana
       title: Reguły adresów IP
     relationships:
       title: Relacje %{acct}
     relays:
       add_new: Dodaj nowy
       delete: Usuń
-      description_html: "<strong>Przekaźnik federacji</strong> jest pośredniczącym serwerem wymieniającym duże ilości publicznych wpisów pomiędzy serwerami które subskrybują je i publikują na nich. <strong>Pomaga to małym i średnim instancją poznawać nową zawartość z Fediwersum</strong>, co w innym przypadku wymagałoby od użytkowników ręcznej obserwacji osób z innych serwerów."
+      description_html: "<strong>Przekaźnik federacji</strong> jest pośredniczącym
+        serwerem wymieniającym duże ilości publicznych wpisów pomiędzy serwerami które
+        subskrybują je i publikują na nich. <strong>Pomaga to małym i średnim instancją
+        poznawać nową zawartość z Fediwersum</strong>, co w innym przypadku wymagałoby
+        od użytkowników ręcznej obserwacji osób z innych serwerów."
       disable: Wyłącz
       disabled: Wyłączony
       enable: Włącz
-      enable_hint: Jeżeli włączone, Twój serwer zasubskrybuje wszystkie publiczne wpisy z tego przekaźnika i zacznie wysyłać tam publiczne wpisy z tego serwera.
+      enable_hint: Jeżeli włączone, Twój serwer zasubskrybuje wszystkie publiczne
+        wpisy z tego przekaźnika i zacznie wysyłać tam publiczne wpisy z tego serwera.
       enabled: Włączony
       inbox_url: Adres przekaźnika
       pending: Oczekiwanie na przyjęcie przez przekaźnik
       save_and_enable: Zapisz i aktywuj
       setup: Skonfiguruj połączenie z przekaźnikiem
-      signatures_not_enabled: Przekaźniki nie będą funkcjonować poprawnie kiedy tryb bezpieczeństwa lub białej listy są włączone
+      signatures_not_enabled: Przekaźniki nie będą funkcjonować poprawnie kiedy tryb
+        bezpieczeństwa lub białej listy są włączone
       status: Stan
       title: Przekaźniki
     report_notes:
@@ -631,14 +710,29 @@ pl:
       action_log: Dziennik zdarzeń
       action_taken_by: Działanie podjęte przez
       actions:
-        delete_description_html: Zgłoszone posty zostaną usunięte, a zdarzenie zostanie zapisane, aby pomóc w eskalacji przyszłych wykroczeń na tym samym koncie.
-        mark_as_sensitive_description_html: Media w zgłaszanych postach zostaną oznaczone jako wrażliwe, a ostrzeżenie zostanie nagrane, aby pomóc w eskalacji przyszłych przewinień na tym samym koncie.
-        other_description_html: Zobacz więcej opcji do kontrolowania zachowania konta i dostosuj komunikację do zgłoszonego konta.
-        resolve_description_html: Nie zostaną podjęte żadne działania przeciwko zgłoszonemu sprawozdaniu, zdarzenie nie zostanie zarejestrowane, a zgłoszenie zostanie zamknięte.
-        silence_description_html: Konto będzie widoczne tylko dla tych, którzy go już obserwują lub przeglądają ręcznie, poważnie ograniczając jego zasięg. Zawsze można cofnąć. Zamyka wszelkie zgłoszenia dotyczące tego konta.
-        suspend_description_html: Konto i cała jego zawartość będą niedostępne i ostatecznie usunięte, a interakcja z nim będzie niemożliwa. Możliwość odwrócenia w ciągu 30 dni. Zamyka wszelkie zgłoszenia dotyczące tego konta.
-      actions_description_html: Zdecyduj, jakie działania należy podjąć, aby rozstrzygnąć niniejsze zgłoszenie. Jeśli podejmiesz działania karne przeciwko zgłoszonemu kontowi, zostanie do nich wysłane powiadomienie e-mail, chyba że wybrano kategorię <strong>Spam</strong>.
-      actions_description_remote_html: Zdecyduj, jakie działanie należy podjąć, aby rozwiązać to zgłoszenie. Będzie to miało wpływ jedynie na sposób, w jaki <strong>Twój</strong> serwer komunikuje się z tym kontem zdalnym i obsługuje jego zawartość.
+        delete_description_html: Zgłoszone posty zostaną usunięte, a zdarzenie zostanie
+          zapisane, aby pomóc w eskalacji przyszłych wykroczeń na tym samym koncie.
+        mark_as_sensitive_description_html: Media w zgłaszanych postach zostaną oznaczone
+          jako wrażliwe, a ostrzeżenie zostanie nagrane, aby pomóc w eskalacji przyszłych
+          przewinień na tym samym koncie.
+        other_description_html: Zobacz więcej opcji do kontrolowania zachowania konta
+          i dostosuj komunikację do zgłoszonego konta.
+        resolve_description_html: Nie zostaną podjęte żadne działania przeciwko zgłoszonemu
+          sprawozdaniu, zdarzenie nie zostanie zarejestrowane, a zgłoszenie zostanie
+          zamknięte.
+        silence_description_html: Konto będzie widoczne tylko dla tych, którzy go
+          już obserwują lub przeglądają ręcznie, poważnie ograniczając jego zasięg.
+          Zawsze można cofnąć. Zamyka wszelkie zgłoszenia dotyczące tego konta.
+        suspend_description_html: Konto i cała jego zawartość będą niedostępne i ostatecznie
+          usunięte, a interakcja z nim będzie niemożliwa. Możliwość odwrócenia w ciągu
+          30 dni. Zamyka wszelkie zgłoszenia dotyczące tego konta.
+      actions_description_html: Zdecyduj, jakie działania należy podjąć, aby rozstrzygnąć
+        niniejsze zgłoszenie. Jeśli podejmiesz działania karne przeciwko zgłoszonemu
+        kontowi, zostanie do nich wysłane powiadomienie e-mail, chyba że wybrano kategorię
+        <strong>Spam</strong>.
+      actions_description_remote_html: Zdecyduj, jakie działanie należy podjąć, aby
+        rozwiązać to zgłoszenie. Będzie to miało wpływ jedynie na sposób, w jaki <strong>Twój</strong>
+        serwer komunikuje się z tym kontem zdalnym i obsługuje jego zawartość.
       actions_no_posts: Ten raport nie ma żadnych powiązanych wpisów do usunięcia
       add_to_report: Dodaj więcej do zgłoszenia
       already_suspended_badges:
@@ -650,7 +744,8 @@ pl:
       by_target_domain: Domena zgłaszanego konta
       cancel: Anuluj
       category: Kategoria
-      category_description_html: Powód, dla którego to konto i/lub zawartość zostały zgłoszone, będzie cytowany w komunikacji ze zgłoszonym kontem
+      category_description_html: Powód, dla którego to konto i/lub zawartość zostały
+        zgłoszone, będzie cytowany w komunikacji ze zgłoszonym kontem
       comment:
         none: Brak
       comment_description_html: 'Aby dostarczyć więcej informacji, %{name} napisał:'
@@ -659,7 +754,9 @@ pl:
       created_at: Zgłoszono
       delete_and_resolve: Usuń posty
       forwarded: Przekazano
-      forwarded_replies_explanation: Ten raport nadszedł od zdalnego użytkownika i dotyczy zdalnej treści. Został ci przekazany, bo raportowana treść jest odpowiedzią na jednego z twoich użytkowników.
+      forwarded_replies_explanation: Ten raport nadszedł od zdalnego użytkownika i
+        dotyczy zdalnej treści. Został ci przekazany, bo raportowana treść jest odpowiedzią
+        na jednego z twoich użytkowników.
       forwarded_to: Przekazano do %{domain}
       mark_as_resolved: Oznacz jako rozwiązane
       mark_as_sensitive: Oznacz jako wrażliwe
@@ -672,9 +769,11 @@ pl:
         delete: Usuń
         placeholder: Opisz wykonane akcje i inne szczegóły dotyczące tego zgłoszenia…
         title: Notatki
-      notes_description_html: Przeglądaj i zostaw notatki innym moderatorom i sobie samemu
+      notes_description_html: Przeglądaj i zostaw notatki innym moderatorom i sobie
+        samemu
       processed_msg: 'Zgłoszenie #%{id} zostało pomyślnie przetworzone'
-      quick_actions_description_html: 'Wykonaj szybkie działanie lub przewiń w dół, aby zobaczyć zgłoszoną zawartość:'
+      quick_actions_description_html: 'Wykonaj szybkie działanie lub przewiń w dół,
+        aby zobaczyć zgłoszoną zawartość:'
       remote_user_placeholder: zdalny użytkownik z %{instance}
       reopen: Otwórz ponownie
       report: 'Zgłoszenie #%{id}'
@@ -686,23 +785,35 @@ pl:
       skip_to_actions: Przejdź do akcji
       status: Stan
       statuses: Zgłoszona treść
-      statuses_description_html: Obraźliwe treści będą cytowane w komunikacji ze zgłoszonym kontem
+      statuses_description_html: Obraźliwe treści będą cytowane w komunikacji ze zgłoszonym
+        kontem
       summary:
         action_preambles:
-          delete_html: 'Zamierzasz <strong>usunąć</strong> niektóre posty <strong>@%{acct}</strong>. To spowoduje:'
-          mark_as_sensitive_html: 'Zamierzasz <strong>oznaczyć</strong> niektóre posty <strong>@%{acct}</strong> jako <strong>wrażliwe</strong>. To spowoduje:'
-          silence_html: 'Zamierzasz <strong>ograniczyć</strong> konto <strong>@%{acct}</strong>. To spowoduje:'
-          suspend_html: 'Zamierzasz <strong>zawiesić</strong> konto <strong>@%{acct}</strong>. To spowoduje:'
+          delete_html: 'Zamierzasz <strong>usunąć</strong> niektóre posty <strong>@%{acct}</strong>.
+            To spowoduje:'
+          mark_as_sensitive_html: 'Zamierzasz <strong>oznaczyć</strong> niektóre posty
+            <strong>@%{acct}</strong> jako <strong>wrażliwe</strong>. To spowoduje:'
+          silence_html: 'Zamierzasz <strong>ograniczyć</strong> konto <strong>@%{acct}</strong>.
+            To spowoduje:'
+          suspend_html: 'Zamierzasz <strong>zawiesić</strong> konto <strong>@%{acct}</strong>.
+            To spowoduje:'
         actions:
           delete_html: Usuń zgłoszone posty
           mark_as_sensitive_html: Oznacz obraźliwe media postów jako wrażliwe
-          silence_html: Znacząco ogranicz zasięg <strong>@%{acct}</strong>, aby ich profil i zawartość były widoczne tylko dla osób, które je już obserwują lub ręcznie wyszukują jego profil
-          suspend_html: Zawieś <strong>@%{acct}</strong>, co sprawia, że ich profil i zawartość są niedostępne i niemożliwe do interakcji z
+          silence_html: Znacząco ogranicz zasięg <strong>@%{acct}</strong>, aby ich
+            profil i zawartość były widoczne tylko dla osób, które je już obserwują
+            lub ręcznie wyszukują jego profil
+          suspend_html: Zawieś <strong>@%{acct}</strong>, co sprawia, że ich profil
+            i zawartość są niedostępne i niemożliwe do interakcji z
         close_report: 'Oznacz zgłoszenie #%{id} jako rozwiązane'
-        close_reports_html: Oznacz <strong>wszystkie</strong> zgłoszenia dotyczące <strong>@%{acct}</strong> jako rozwiązane
-        delete_data_html: Usuń profil i zawartość <strong>@%{acct}</strong> za 30 dni, chyba że w tym czasie zostanie zawieszony
-        preview_preamble_html: "<strong>@%{acct}</strong> otrzyma ostrzeżenie o następującej treści:"
-        record_strike_html: Zarejestruj ostrzeżenie przeciwko <strong>@%{acct}</strong>, aby ułatwić sobie eskalację w przypadku przyszłych naruszeń z tego konta
+        close_reports_html: Oznacz <strong>wszystkie</strong> zgłoszenia dotyczące
+          <strong>@%{acct}</strong> jako rozwiązane
+        delete_data_html: Usuń profil i zawartość <strong>@%{acct}</strong> za 30
+          dni, chyba że w tym czasie zostanie zawieszony
+        preview_preamble_html: "<strong>@%{acct}</strong> otrzyma ostrzeżenie o następującej
+          treści:"
+        record_strike_html: Zarejestruj ostrzeżenie przeciwko <strong>@%{acct}</strong>,
+          aby ułatwić sobie eskalację w przypadku przyszłych naruszeń z tego konta
         send_email_html: Wyślij do <strong>@%{acct}</strong> wiadomość e-mail z ostrzeżeniem
         warning_placeholder: Opcjonalne dodatkowe uzasadnienie działania moderacyjnego.
       target_origin: Pochodzenie zgłaszanego konta
@@ -726,10 +837,13 @@ pl:
         moderation: Moderacja
         special: Specjalne
       delete: Usuń
-      description_html: Za pomocą <strong>ról użytkowników</strong>możesz dostosowywać funkcje i obszary Truecolors, do których użytkownicy mogą uzyskać dostęp.
+      description_html: Za pomocą <strong>ról użytkowników</strong>możesz dostosowywać
+        funkcje i obszary Truecolors, do których użytkownicy mogą uzyskać dostęp.
       edit: Edytuj rolę '%{name}'
       everyone: Domyślnie uprawnienia
-      everyone_full_description_html: To jest <strong>rola podstawowa</strong> wpływająca na <strong>wszystkich użytkowników</strong>, nawet tych, którzy nie mają przypisanej roli. Wszystkie inne role dziedziczą z niej uprawnienia.
+      everyone_full_description_html: To jest <strong>rola podstawowa</strong> wpływająca
+        na <strong>wszystkich użytkowników</strong>, nawet tych, którzy nie mają przypisanej
+        roli. Wszystkie inne role dziedziczą z niej uprawnienia.
       permissions_count:
         few: "%{count} uprawnień"
         many: "%{count} uprawnień"
@@ -739,76 +853,113 @@ pl:
         administrator: Administrator
         administrator_description: Użytkownicy z tym uprawnieniem omijają każde uprawnienie
         delete_user_data: Usuń dane użytkownika
-        delete_user_data_description: Pozwala użytkownikom na bezzwłoczne usuwanie danych innych użytkowników
+        delete_user_data_description: Pozwala użytkownikom na bezzwłoczne usuwanie
+          danych innych użytkowników
         invite_users: Zaproś użytkowników
         invite_users_description: Pozwala użytkownikom zapraszać nowych ludzi na serwer
         manage_announcements: Zarządzaj ogłoszeniami
-        manage_announcements_description: Pozwala użytkownikom zarządzać ogłoszeniami na serwerze
+        manage_announcements_description: Pozwala użytkownikom zarządzać ogłoszeniami
+          na serwerze
         manage_appeals: Zarządzaj odwołaniami
-        manage_appeals_description: Pozwala użytkownikom przeglądać odwołania od działań moderacyjnych
+        manage_appeals_description: Pozwala użytkownikom przeglądać odwołania od działań
+          moderacyjnych
         manage_blocks: Zarządzaj blokami
-        manage_blocks_description: Pozwala użytkownikom na blokowanie dostawców poczty elektronicznej i adresów IP
+        manage_blocks_description: Pozwala użytkownikom na blokowanie dostawców poczty
+          elektronicznej i adresów IP
         manage_custom_emojis: Zarządzaj niestandardowymi emoji
-        manage_custom_emojis_description: Pozwala użytkownikom zarządzać niestandardowymi emoji na serwerze
+        manage_custom_emojis_description: Pozwala użytkownikom zarządzać niestandardowymi
+          emoji na serwerze
         manage_federation: Zarządzaj federacją
-        manage_federation_description: Pozwala użytkownikom na blokowanie lub zezwalanie federacji z innymi domenami i kontrolowanie doręczania
+        manage_federation_description: Pozwala użytkownikom na blokowanie lub zezwalanie
+          federacji z innymi domenami i kontrolowanie doręczania
         manage_invites: Zarządzaj zaproszeniami
-        manage_invites_description: Pozwala użytkownikom przeglądać i dezaktywować linki z zaproszeniami
+        manage_invites_description: Pozwala użytkownikom przeglądać i dezaktywować
+          linki z zaproszeniami
         manage_reports: Zarządzaj zgłoszeniami
-        manage_reports_description: Pozwala użytkownikom przeglądać zgłoszenia i wykonywać przeciwko nim działania moderacyjne
+        manage_reports_description: Pozwala użytkownikom przeglądać zgłoszenia i wykonywać
+          przeciwko nim działania moderacyjne
         manage_roles: Zarządzaj rolami
-        manage_roles_description: Pozwala użytkownikom zarządzać rolami i przypisywać role poniżej ich własnych
+        manage_roles_description: Pozwala użytkownikom zarządzać rolami i przypisywać
+          role poniżej ich własnych
         manage_rules: Zarządzaj regułami
         manage_rules_description: Pozwala użytkownikom na zmianę reguł serwera
         manage_settings: Zarządzaj ustawieniami
         manage_settings_description: Pozwala użytkownikom na zmianę ustawień witryny
         manage_taxonomies: Zarządzaj taksonomiami
-        manage_taxonomies_description: Pozwala użytkownikom przeglądać najpopularniejsze treści i aktualizować ustawienia hasztagów
+        manage_taxonomies_description: Pozwala użytkownikom przeglądać najpopularniejsze
+          treści i aktualizować ustawienia hasztagów
         manage_user_access: Zarządzaj dostępem użytkownika
-        manage_user_access_description: Pozwala użytkownikom na wyłączenie uwierzytelniania dwuskładnikowego innych użytkowników, zmianę adresu e-mail i zresetowanie hasła
+        manage_user_access_description: Pozwala użytkownikom na wyłączenie uwierzytelniania
+          dwuskładnikowego innych użytkowników, zmianę adresu e-mail i zresetowanie
+          hasła
         manage_users: Zarządzanie użytkownikami
-        manage_users_description: Pozwala użytkownikom na oglądanie szczegółów innych użytkowników i wykonywanie na ich kontach działań moderacyjnych
+        manage_users_description: Pozwala użytkownikom na oglądanie szczegółów innych
+          użytkowników i wykonywanie na ich kontach działań moderacyjnych
         manage_webhooks: Zarządzanie webhookami
-        manage_webhooks_description: Pozwala użytkownikom na konfigurację webhooków dla wydarzeń administracyjnych
+        manage_webhooks_description: Pozwala użytkownikom na konfigurację webhooków
+          dla wydarzeń administracyjnych
         view_audit_log: Wyświetl dziennik zdarzeń
-        view_audit_log_description: Pozwala użytkownikom zobaczyć historię działań administracyjnych na serwerze
+        view_audit_log_description: Pozwala użytkownikom zobaczyć historię działań
+          administracyjnych na serwerze
         view_dashboard: Wyświetl panel
-        view_dashboard_description: Pozwala użytkownikom na dostęp do panelu i różnych metryk
+        view_dashboard_description: Pozwala użytkownikom na dostęp do panelu i różnych
+          metryk
         view_devops: DevOps
-        view_devops_description: Pozwala użytkownikom na dostęp do paneli Sidekiq i pgHero
+        view_devops_description: Pozwala użytkownikom na dostęp do paneli Sidekiq
+          i pgHero
       title: Role
     rules:
       add_new: Dodaj zasadę
       delete: Usuń
-      description_html: Chociaż większość twierdzi, że przeczytała i zgadza się z warunkami korzystania z usługi, zwykle ludzie nie czytają ich, dopóki nie pojawi się problem. <strong>Ułatw użytkownikom szybkie przejrzenie zasad serwera, umieszczając je na prostej liście punktowanej.</strong> Postaraj się, aby poszczególne zasady były krótkie i proste, ale staraj się też nie dzielić ich na wiele oddzielnych elementów.
+      description_html: Chociaż większość twierdzi, że przeczytała i zgadza się z
+        warunkami korzystania z usługi, zwykle ludzie nie czytają ich, dopóki nie
+        pojawi się problem. <strong>Ułatw użytkownikom szybkie przejrzenie zasad serwera,
+        umieszczając je na prostej liście punktowanej.</strong> Postaraj się, aby
+        poszczególne zasady były krótkie i proste, ale staraj się też nie dzielić
+        ich na wiele oddzielnych elementów.
       edit: Edytuj zasadę
       empty: Jeszcze nie zdefiniowano zasad serwera.
       title: Regulamin serwera
     settings:
       about:
         manage_rules: Zarządzaj regułami serwera
-        preamble: Podaj szczegółowe informacje na temat sposobu działania, moderacji i finansowania serwera.
-        rules_hint: Istnieje dedykowany obszar dla reguł, których twoi użytkownicy mają przestrzegać.
+        preamble: Podaj szczegółowe informacje na temat sposobu działania, moderacji
+          i finansowania serwera.
+        rules_hint: Istnieje dedykowany obszar dla reguł, których twoi użytkownicy
+          mają przestrzegać.
         title: O...
       appearance:
         preamble: Dostosuj interfejs www Truecolors.
         title: Wygląd
       branding:
-        preamble: Marka Twojego serwera odróżnia go od innych serwerów w sieci. Informacje te mogą być wyświetlane w różnych środowiskach, takich jak interfejs internetowy Truecolors, aplikacje natywne, w podglądzie linków na innych stronach internetowych i w aplikacjach do wysyłania wiadomości itd. Z tego względu najlepiej zachować jasną, krótką i zwięzłą informację.
+        preamble: Marka Twojego serwera odróżnia go od innych serwerów w sieci. Informacje
+          te mogą być wyświetlane w różnych środowiskach, takich jak interfejs internetowy
+          Truecolors, aplikacje natywne, w podglądzie linków na innych stronach internetowych
+          i w aplikacjach do wysyłania wiadomości itd. Z tego względu najlepiej zachować
+          jasną, krótką i zwięzłą informację.
         title: Marka
       captcha_enabled:
-        desc_html: Wymaga użycia zewnętrznych skryptów hCaptcha, co może negatywnie wpływać na bezpieczeństwo i prywatność. <strong>Może również przyczynić się do znaczącego utrudnienia procesu rejestracji niektórym, np. niepełnosprawnym, osobom.</strong> Dlatego sugeruje się używanie zaproszeń bądź ręcznie potwierdzanie kont.
-        title: W celu potwierdzenia ich kont wymagaj rozwiązania zadania CAPTCHA przez nowych użytkowników
+        desc_html: Wymaga użycia zewnętrznych skryptów hCaptcha, co może negatywnie
+          wpływać na bezpieczeństwo i prywatność. <strong>Może również przyczynić
+          się do znaczącego utrudnienia procesu rejestracji niektórym, np. niepełnosprawnym,
+          osobom.</strong> Dlatego sugeruje się używanie zaproszeń bądź ręcznie potwierdzanie
+          kont.
+        title: W celu potwierdzenia ich kont wymagaj rozwiązania zadania CAPTCHA przez
+          nowych użytkowników
       content_retention:
         danger_zone: Strefa niebezpieczeństwa
-        preamble: Kontroluj, jak treści generowane przez użytkownika są przechowywane w Truecolors.
+        preamble: Kontroluj, jak treści generowane przez użytkownika są przechowywane
+          w Truecolors.
         title: Retencja treści
       default_noindex:
-        desc_html: Wpłynie to na wszystkich użytkowników, którzy sami tego nie zmienili w swoich ustawieniach
+        desc_html: Wpłynie to na wszystkich użytkowników, którzy sami tego nie zmienili
+          w swoich ustawieniach
         title: Domyślnie żądaj nieindeksowania użytkowników przez wyszukiwarki
       discovery:
         follow_recommendations: Polecane konta
-        preamble: Prezentowanie interesujących treści ma kluczowe znaczenie dla nowych użytkowników, którzy mogą nie znać nikogo z Truecolorsa. Kontroluj, jak różne funkcje odkrywania działają na Twoim serwerze.
+        preamble: Prezentowanie interesujących treści ma kluczowe znaczenie dla nowych
+          użytkowników, którzy mogą nie znać nikogo z Truecolorsa. Kontroluj, jak
+          różne funkcje odkrywania działają na Twoim serwerze.
         profile_directory: Katalog profilów
         public_timelines: Publiczne osie czasu
         publish_discovered_servers: Opublikuj znane serwery
@@ -820,7 +971,8 @@ pl:
         disabled: Nikomu
         users: Zalogowanym lokalnym użytkownikom
       registrations:
-        moderation_recommandation: Upewnij się, że masz adekwatny i szybko reagujący zespół moderacyjny przed otwarciem rejestracji!
+        moderation_recommandation: Upewnij się, że masz adekwatny i szybko reagujący
+          zespół moderacyjny przed otwarciem rejestracji!
         preamble: Kontroluj, kto może utworzyć konto na Twoim serwerze.
         title: Rejestracje
       registrations_mode:
@@ -828,11 +980,18 @@ pl:
           approved: Przyjęcie jest wymagane do rejestracji
           none: Nikt nie może się zarejestrować
           open: Każdy może się zarejestrować
-        warning_hint: Polecamy "Przyjęcie jest wymagane do rejestracji" chyba że masz pewność, że twój zespół moderacyjny może szybko obsłużyć spam i złośliwe rejestracje.
+        warning_hint: Polecamy "Przyjęcie jest wymagane do rejestracji" chyba że masz
+          pewność, że twój zespół moderacyjny może szybko obsłużyć spam i złośliwe
+          rejestracje.
       security:
         authorized_fetch: Wymagaj uwierzytelnienia od sfederowanych serwerów
-        authorized_fetch_hint: Wymaganie uwierzytelnienia ze sfederowanych serwerów pozwala na ściślejsze wymuszanie bloków z poziomu użytkowników i serwera, ale jest wolniejsze, redukuje zasięg odpowiedzi, i może być niekompatybilne z niektórymi sfederowanymi usługami. Nie chroni również publicznych kont i wpisów przed oddanymi użytkownikami.
-        authorized_fetch_overridden_hint: Nie możesz zmienić tego ustawienia bo jest nadpisane przez zmienną środowiskową.
+        authorized_fetch_hint: Wymaganie uwierzytelnienia ze sfederowanych serwerów
+          pozwala na ściślejsze wymuszanie bloków z poziomu użytkowników i serwera,
+          ale jest wolniejsze, redukuje zasięg odpowiedzi, i może być niekompatybilne
+          z niektórymi sfederowanymi usługami. Nie chroni również publicznych kont
+          i wpisów przed oddanymi użytkownikami.
+        authorized_fetch_overridden_hint: Nie możesz zmienić tego ustawienia bo jest
+          nadpisane przez zmienną środowiskową.
         federation_authentication: Wymuszanie uwierzytelnienia dla federacji
       title: Ustawienia serwera
     site_uploads:
@@ -840,7 +999,11 @@ pl:
       destroyed_msg: Pomyślnie usunięto przesłany plik!
     software_updates:
       critical_update: Krytyczna — zaktualizuj szybko
-      description: Zalecamy aktualizować instalacje Truecolorsa na bieżąco by korzystać z najnowszych poprawek i funkcji. Co więcej, czasami krytycznym jest aktualizować szybko by uniknąć problemów zw. z bezpieczeństwem. Z tego powodu, Truecolors co pół godziny sprawdza czy wydane zostały aktualizacje i powiadomi cię o tym zgodnie z twoimi ustawieniami powiadomień.
+      description: Zalecamy aktualizować instalacje Truecolorsa na bieżąco by korzystać
+        z najnowszych poprawek i funkcji. Co więcej, czasami krytycznym jest aktualizować
+        szybko by uniknąć problemów zw. z bezpieczeństwem. Z tego powodu, Truecolors
+        co pół godziny sprawdza czy wydane zostały aktualizacje i powiadomi cię o
+        tym zgodnie z twoimi ustawieniami powiadomień.
       documentation_link: Dowiedz się więcej
       release_notes: Informacje o wydaniu
       title: Dostępne aktualizacje
@@ -885,7 +1048,8 @@ pl:
       actions:
         delete_statuses: "%{name} usunął(-ęła) posty %{target}"
         disable: "%{name} zamroził(a) konto %{target}"
-        mark_statuses_as_sensitive: "%{name} oznaczył/a wiadomości %{target} jako wrażliwe"
+        mark_statuses_as_sensitive: "%{name} oznaczył/a wiadomości %{target} jako
+          wrażliwe"
         none: "%{name} wysłał(a) ostrzeżenie do %{target}"
         sensitive: "%{name} oznaczył(-a) konto %{target} jako wrażliwe"
         silence: "%{name} ograniczył(-a) konto %{target}"
@@ -895,46 +1059,59 @@ pl:
       appeal_rejected: Odwołanie odrzucone
     system_checks:
       database_schema_check:
-        message_html: Istnieją oczekujące migracje bazy danych. Uruchom je, aby upewnić się, że aplikacja działa tak, jak powinna
+        message_html: Istnieją oczekujące migracje bazy danych. Uruchom je, aby upewnić
+          się, że aplikacja działa tak, jak powinna
       elasticsearch_health_red:
-        message_html: 'Klaster Elasticseach jest chory (status: czerwony); szukanie jest niedostępne'
+        message_html: 'Klaster Elasticseach jest chory (status: czerwony); szukanie
+          jest niedostępne'
       elasticsearch_health_yellow:
-        message_html: 'Klaster Elasticseach jest chory (status: żółty); możliwe, że chcesz zbadać tego powód'
+        message_html: 'Klaster Elasticseach jest chory (status: żółty); możliwe, że
+          chcesz zbadać tego powód'
       elasticsearch_index_mismatch:
-        message_html: Mapa indeksu Elasticsearch jest przestarzała. Uruchom <code>tootctl search deploy --only=%{value}</code>
+        message_html: Mapa indeksu Elasticsearch jest przestarzała. Uruchom <code>tootctl
+          search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Dokumentacja
-        message_html: Twój klaster Elasticsearch ma więcej niż jeden node, ale Truecolors nie jest odpowiednio ustawiony by ich używać.
+        message_html: Twój klaster Elasticsearch ma więcej niż jeden node, ale Truecolors
+          nie jest odpowiednio ustawiony by ich używać.
       elasticsearch_preset_single_node:
         action: Dokumentacja
-        message_html: Twój klaster Elasticsearch ma tylko jeden node, więc <code>ES_PRESET</code> powinno mieć wartość <code>single_node_cluster</code>.
+        message_html: Twój klaster Elasticsearch ma tylko jeden node, więc <code>ES_PRESET</code>
+          powinno mieć wartość <code>single_node_cluster</code>.
       elasticsearch_reset_chewy:
-        message_html: Indeks główny Elasticsearch jest przestarzały przez zmianę ustawień. Uruchom <code>tootctl search deploy --reset-chewy</code> żeby go odświeżyć.
+        message_html: Indeks główny Elasticsearch jest przestarzały przez zmianę ustawień.
+          Uruchom <code>tootctl search deploy --reset-chewy</code> żeby go odświeżyć.
       elasticsearch_running_check:
-        message_html: Nie można połączyć się z Elasticsearch. Sprawdź czy jest uruchomiony lub wyłącz wyszukiwanie pełnotekstowe
+        message_html: Nie można połączyć się z Elasticsearch. Sprawdź czy jest uruchomiony
+          lub wyłącz wyszukiwanie pełnotekstowe
       elasticsearch_version_check:
         message_html: 'Niekompatybilna wersja Elasticsearch: %{value}'
-        version_comparison: Elasticsearch w wersji %{running_version} jest uruchomiony, ale wymagana wersja to %{required_version}
+        version_comparison: Elasticsearch w wersji %{running_version} jest uruchomiony,
+          ale wymagana wersja to %{required_version}
       rules_check:
         action: Zarządzaj regułami serwera
         message_html: Nie zdefiniowano żadnych reguł serwera.
       sidekiq_process_check:
-        message_html: Brak uruchomionego procesu Sidekiq dla kolejki(-ek) %{value}. Sprawdź konfigurację Sidekiq
+        message_html: Brak uruchomionego procesu Sidekiq dla kolejki(-ek) %{value}.
+          Sprawdź konfigurację Sidekiq
       software_version_check:
         action: Pokaż dostępne aktualizacje
         message_html: Dostępna aktualizacja Truecolorsa.
       software_version_critical_check:
         action: Pokaż dostępne aktualizacje
-        message_html: Dostępna krytyczna aktualizacja Truecolorsa, zaktualizuj jak tylko będzie to możliwe.
+        message_html: Dostępna krytyczna aktualizacja Truecolorsa, zaktualizuj jak
+          tylko będzie to możliwe.
       software_version_patch_check:
         action: Pokaż dostępne aktualizacje
         message_html: Dostępna aktualizacja poprawkowa Truecolorsa.
       upload_check_privacy_error:
         action: Kliknij tutaj, aby dowiedzieć się więcej
-        message_html: "<strong>Twój serwer internetowy jest nieprawidłowo skonfigurowany. Prywatność twoich użytkowników jest zagrożona.</strong>"
+        message_html: "<strong>Twój serwer internetowy jest nieprawidłowo skonfigurowany.
+          Prywatność twoich użytkowników jest zagrożona.</strong>"
       upload_check_privacy_error_object_storage:
         action: Kliknij tutaj, aby dowiedzieć się więcej
-        message_html: "<strong>Pamięć obiektu jest nieprawidłowa. Prywatność twoich użytkowników jest zagrożona.</strong>"
+        message_html: "<strong>Pamięć obiektu jest nieprawidłowa. Prywatność twoich
+          użytkowników jest zagrożona.</strong>"
     tags:
       moderation:
         not_trendable: Nie mogą trendować
@@ -964,17 +1141,27 @@ pl:
       generate: Użyj szablonu
       generates:
         action: Wygeneruj
-        chance_to_review_html: "<strong>Wygenerowane warunki świadczenia usług nie zostaną automatycznie opublikowane.</strong> Będziesz miał szansę je sprawdzić raz jeszcze. Wypełnij wymagane pola, aby kontynuować."
-        explanation_html: Dostarczany wzór warunków świadczenia usług służy wyłącznie celom informacyjnym i nie powinien być interpretowany jako porada prawna w odniesieniu do żadnego przedmiotu. Proszę skonsultować się ze swoim doradcą prawnym w sprawie swojej sytuacji i konkretnych kwestii prawnych, które państwo posiadają.
+        chance_to_review_html: "<strong>Wygenerowane warunki świadczenia usług nie
+          zostaną automatycznie opublikowane.</strong> Będziesz miał szansę je sprawdzić
+          raz jeszcze. Wypełnij wymagane pola, aby kontynuować."
+        explanation_html: Dostarczany wzór warunków świadczenia usług służy wyłącznie
+          celom informacyjnym i nie powinien być interpretowany jako porada prawna
+          w odniesieniu do żadnego przedmiotu. Proszę skonsultować się ze swoim doradcą
+          prawnym w sprawie swojej sytuacji i konkretnych kwestii prawnych, które
+          państwo posiadają.
         title: Warunki korzystania z usługi
       history: Historia
       live: Rzeczywiste
       no_history: Nie ma jeszcze zapisanych zmian w warunkach korzystania z usługi.
-      no_terms_of_service_html: Obecnie nie masz żadnych skonfigurowanych warunków korzystania z usługi. Warunki korzystania z usługi mają zapewnić jasność i ochronę przed potencjalnymi zobowiązaniami w sporach z użytkownikami.
+      no_terms_of_service_html: Obecnie nie masz żadnych skonfigurowanych warunków
+        korzystania z usługi. Warunki korzystania z usługi mają zapewnić jasność i
+        ochronę przed potencjalnymi zobowiązaniami w sporach z użytkownikami.
       notified_on_html: Użytkownicy powiadomieni o %{date}
       notify_users: Powiadom użytkowników
       preview:
-        explanation_html: 'E-mail zostanie wysłany do <strong>%{display_count} użytkowników</strong>, którzy zarejestrowali się przed %{date}. Otrzymają oni wiadomość o następującej treści:'
+        explanation_html: 'E-mail zostanie wysłany do <strong>%{display_count} użytkowników</strong>,
+          którzy zarejestrowali się przed %{date}. Otrzymają oni wiadomość o następującej
+          treści:'
         send_preview: Wyślij podgląd do %{email}
         send_to_all:
           few: Wyślij %{display_count} wiadomości e-mail
@@ -1000,25 +1187,35 @@ pl:
         confirm_allow_provider: Czy na pewno chcesz zezwolić na zaznaczonych dostawców?
         confirm_disallow: Czy na pewno chcesz zabronić zaznaczonych linków?
         confirm_disallow_provider: Czy na pewno chcesz zabronić zaznaczonych dostawców?
-        description_html: Są to linki, które są obecnie często udostępniane przez konta, z których Twój serwer widzi posty. Może to pomóc Twoim użytkownikom dowiedzieć się, co dzieje się na świecie. Żadne linki nie są wyświetlane publicznie dopóki nie zaakceptujesz wydawcy. Możesz również zezwolić lub odrzucić indywidualne linki.
+        description_html: Są to linki, które są obecnie często udostępniane przez
+          konta, z których Twój serwer widzi posty. Może to pomóc Twoim użytkownikom
+          dowiedzieć się, co dzieje się na świecie. Żadne linki nie są wyświetlane
+          publicznie dopóki nie zaakceptujesz wydawcy. Możesz również zezwolić lub
+          odrzucić indywidualne linki.
         disallow: Nie zezwalaj na link
         disallow_provider: Nie zezwalaj na wydawcę
-        no_link_selected: Żadne linki nie zostały zmienione, ponieważ żadnych nie wybrano
+        no_link_selected: Żadne linki nie zostały zmienione, ponieważ żadnych nie
+          wybrano
         publishers:
-          no_publisher_selected: Żadni publikujcy nie zostali zmienieni, ponieważ żadnych nie wybrano
+          no_publisher_selected: Żadni publikujcy nie zostali zmienieni, ponieważ
+            żadnych nie wybrano
         shared_by_over_week:
           few: Udostępnione przez %{count} osoby w ciągu ostatniego tygodnia
           many: Udostępnione przez %{count} osób w ciągu ostatniego tygodnia
           one: Udostępnione przez jedną osobę w ciągu ostatniego tygodnia
           other: Udostępnione przez %{count} osoby w ciągu ostatniego tygodnia
         title: Popularne linki
-        usage_comparison: Udostępnione %{today} razy dzisiaj, w porównaniu z %{yesterday} wczoraj
+        usage_comparison: Udostępnione %{today} razy dzisiaj, w porównaniu z %{yesterday}
+          wczoraj
       not_allowed_to_trend: Wyłączona widoczność w popularnych
       only_allowed: Tylko dozwolone
       pending_review: Oczekuje na przegląd
       preview_card_providers:
         allowed: Linki od tego wydawcy mogą podlegać trendom
-        description_html: Są to domeny, z których linki są często udostępniane na Twoim serwerze. Linki nie będą się rozwijały publicznie, chyba że domena linku zostanie zatwierdzona. Twoja zgoda (lub odrzucenie) rozciąga się na subdomeny.
+        description_html: Są to domeny, z których linki są często udostępniane na
+          Twoim serwerze. Linki nie będą się rozwijały publicznie, chyba że domena
+          linku zostanie zatwierdzona. Twoja zgoda (lub odrzucenie) rozciąga się na
+          subdomeny.
         rejected: Linki od tego wydawcy nie mogą podlegać trendom
         title: Wydawcy
       rejected: Odrzucono
@@ -1029,10 +1226,16 @@ pl:
         confirm_allow_account: Czy na pewno chcesz zezwolić na zaznaczone konta?
         confirm_disallow: Czy na pewno chcesz zabronić zaznaczonych statusów?
         confirm_disallow_account: Czy na pewno chcesz zabronić zaznaczonych kont?
-        description_html: Są to wpisy, o których Twój serwer wie i które są obecnie często udostępniane i dodawane do ulubionych. Może to pomóc nowym i powracającym użytkownikom znaleźć więcej osób do obserwacji. Żadne posty nie są wyświetlane publicznie, dopóki nie zatwierdzisz autora, a autor ustawi zezwolenie na wyświetlanie się w katalogu. Możesz również zezwolić lub odrzucić poszczególne posty.
+        description_html: Są to wpisy, o których Twój serwer wie i które są obecnie
+          często udostępniane i dodawane do ulubionych. Może to pomóc nowym i powracającym
+          użytkownikom znaleźć więcej osób do obserwacji. Żadne posty nie są wyświetlane
+          publicznie, dopóki nie zatwierdzisz autora, a autor ustawi zezwolenie na
+          wyświetlanie się w katalogu. Możesz również zezwolić lub odrzucić poszczególne
+          posty.
         disallow: Nie zezwalaj na post
         disallow_account: Nie zezwalaj na autora
-        no_status_selected: Żadne popularne wpisy nie zostały zmienione, ponieważ żadnych nie wybrano
+        no_status_selected: Żadne popularne wpisy nie zostały zmienione, ponieważ
+          żadnych nie wybrano
         not_discoverable: Autor nie włączył opcji, by być wyświetlany w katalogu
         shared_by:
           few: Udostępnione i dodane do ulubionych %{friendly_count} razy
@@ -1048,7 +1251,10 @@ pl:
           tag_servers_dimension: Najlepsze serwery
           tag_servers_measure: różne serwery
           tag_uses_measure: użyć łącznie
-        description_html: To są hasztagi, które obecnie pojawiają się w wielu wpisach, które widzisz na serwerze. Może to pomóc Twoim użytkownikom dowiedzieć się, o czym obecnie ludzie najchętniej rozmawiają. Żadne hasztagi nie są wyświetlane publicznie, dopóki ich nie zaakceptujesz.
+        description_html: To są hasztagi, które obecnie pojawiają się w wielu wpisach,
+          które widzisz na serwerze. Może to pomóc Twoim użytkownikom dowiedzieć się,
+          o czym obecnie ludzie najchętniej rozmawiają. Żadne hasztagi nie są wyświetlane
+          publicznie, dopóki ich nie zaakceptujesz.
         listable: Można zasugerować
         no_tag_selected: Żadne tagi nie zostały zmienione, ponieważ żadnych nie wybrano
         not_listable: Nie można zasugerować
@@ -1059,7 +1265,8 @@ pl:
         trendable: Może pojawić się pod trendami
         trending_rank: 'Popularne #%{rank}'
         usable: Może być użyty
-        usage_comparison: Używane %{today} razy dzisiaj, w porównaniu z %{yesterday} wczoraj
+        usage_comparison: Używane %{today} razy dzisiaj, w porównaniu z %{yesterday}
+          wczoraj
         used_by_over_week:
           few: Użyte przez %{count} osoby w ciągu ostatniego tygodnia
           many: Użyte przez %{count} osób w ciągu ostatniego tygodnia
@@ -1076,7 +1283,9 @@ pl:
     webhooks:
       add_new: Dodaj punkt końcowy
       delete: Usuń
-      description_html: "<strong>webhook</strong> umożliwia Truecolors dostarczanie <strong>powiadomień w czasie rzeczywistym</strong> o wybranych wydarzeniach do twojej aplikacji, aby mogła <strong>automatycznie wyzwalać reakcje</strong>."
+      description_html: "<strong>webhook</strong> umożliwia Truecolors dostarczanie
+        <strong>powiadomień w czasie rzeczywistym</strong> o wybranych wydarzeniach
+        do twojej aplikacji, aby mogła <strong>automatycznie wyzwalać reakcje</strong>."
       disable: Wyłącz
       disabled: Wyłączone
       edit: Edytuj punkt końcowy
@@ -1097,7 +1306,9 @@ pl:
       webhook: Webhook
   admin_mailer:
     auto_close_registrations:
-      body: Z powodu braku niedawnych działań moderacyjnych, rejestracje na %{instance} wymagają ręcznej weryfikacji (by uniknąć dystrybucji spamu itp.). W dowolnym momencie możesz przywrócić politykę otwartej rejestracji.
+      body: Z powodu braku niedawnych działań moderacyjnych, rejestracje na %{instance}
+        wymagają ręcznej weryfikacji (by uniknąć dystrybucji spamu itp.). W dowolnym
+        momencie możesz przywrócić politykę otwartej rejestracji.
       subject: "%{instance} zostało automatycznie przełączone na zatwierdzanie rejestracji"
     new_appeal:
       actions:
@@ -1108,14 +1319,18 @@ pl:
         sensitive: aby oznaczyć konto jako wrażliwe
         silence: aby ograniczyć swoje konto
         suspend: aby zawiesić konto
-      body: "%{target} odwołuje się od decyzji moderatora %{action_taken_by} z %{date}, czyli %{type}. Napisał:"
-      next_steps: Możesz zaakceptować odwołanie o cofnięcie decyzji o moderacji lub je zignorować.
+      body: "%{target} odwołuje się od decyzji moderatora %{action_taken_by} z %{date},
+        czyli %{type}. Napisał:"
+      next_steps: Możesz zaakceptować odwołanie o cofnięcie decyzji o moderacji lub
+        je zignorować.
       subject: "%{username} odwołuje się od decyzji moderacyjnej na %{instance}"
     new_critical_software_updates:
-      body: Zostały wydane nowe krytyczne wersje Truecolorsa, pewnie chcesz zaktualizować jak najszybciej!
+      body: Zostały wydane nowe krytyczne wersje Truecolorsa, pewnie chcesz zaktualizować
+        jak najszybciej!
       subject: Krytyczne aktualizacje Truecolorsa dostępne dla %{instance}!
     new_pending_account:
-      body: Poniżej znajdują się szczegóły dotycząće nowego konta. Możesz przyjąć lub odrzucić to podanie.
+      body: Poniżej znajdują się szczegóły dotycząće nowego konta. Możesz przyjąć
+        lub odrzucić to podanie.
       subject: Nowe konto czeka na przegląd na %{instance} (%{username})
     new_report:
       body: Użytkownik %{reporter} zgłosił(a) %{target}
@@ -1125,7 +1340,8 @@ pl:
       body: Zostały wydane nowe wersje Truecolorsa, pewnie chcesz zaktualizować!
       subject: Nowe wersje Truecolorsa dostępne dla %{instance}!
     new_trends:
-      body: 'Następujące elementy potrzebują recenzji zanim będą mogły być wyświetlane publicznie:'
+      body: 'Następujące elementy potrzebują recenzji zanim będą mogły być wyświetlane
+        publicznie:'
       new_trending_links:
         title: Popularne linki
       new_trending_statuses:
@@ -1135,14 +1351,22 @@ pl:
       subject: Nowe popularne do przeglądu na %{instance}
   aliases:
     add_new: Utwórz alias
-    created_msg: Pomyślnie utworzono nowy alias. Możesz teraz rozpocząć przenoszenie ze starego konta.
-    deleted_msg: Pomyślnie usunięto alias. Przenoszenie z tamtego konta na to nie będzie dłużej możliwe.
+    created_msg: Pomyślnie utworzono nowy alias. Możesz teraz rozpocząć przenoszenie
+      ze starego konta.
+    deleted_msg: Pomyślnie usunięto alias. Przenoszenie z tamtego konta na to nie
+      będzie dłużej możliwe.
     empty: Nie masz żadnych aliasów.
-    hint_html: Jeżeli chcesz przenieść się z innego konta na to, możesz utworzyć alias, który jest wymagany zanim zaczniesz przenoszenie obserwacji z poprzedniego konta na to. To działanie <strong>nie wyrządzi szkód i jest odwracalne</strong>. <strong>Migracja konta jest inicjowana ze starego konta</strong>.
+    hint_html: Jeżeli chcesz przenieść się z innego konta na to, możesz utworzyć alias,
+      który jest wymagany zanim zaczniesz przenoszenie obserwacji z poprzedniego konta
+      na to. To działanie <strong>nie wyrządzi szkód i jest odwracalne</strong>. <strong>Migracja
+      konta jest inicjowana ze starego konta</strong>.
     remove: Odłącz alias
   appearance:
     advanced_web_interface: Zaawansowany interfejs użytkownika
-    advanced_web_interface_hint: Jeśli chcesz użyć pełną szerokość swojego ekranu, zaawansowany interfejs użytkownika pozwala Ci skonfigurować wiele różnych kolumn, by zobaczyć jak najwięcej informacji kiedy tylko chcesz. Strona główna, Powiadomienia, Globalna oś czasu, dowolna ilość list i hasztagów.
+    advanced_web_interface_hint: Jeśli chcesz użyć pełną szerokość swojego ekranu,
+      zaawansowany interfejs użytkownika pozwala Ci skonfigurować wiele różnych kolumn,
+      by zobaczyć jak najwięcej informacji kiedy tylko chcesz. Strona główna, Powiadomienia,
+      Globalna oś czasu, dowolna ilość list i hasztagów.
     animations_and_accessibility: Animacje i dostępność
     confirmation_dialogs: Dialogi potwierdzenia
     discovery: Odkrywanie
@@ -1170,36 +1394,48 @@ pl:
   auth:
     apply_for_account: Poproś o założenie konta
     captcha_confirmation:
-      help_html: Jeżeli masz problemy z rozwiązywaniem zadań CAPTCHA, możemy pomóc ci po kontakcie z nami pod adresem %{email}.
-      hint_html: Jeszcze jedno! Potrzebujemy potwierdzić twoje człowieczeństwo, żeby ograniczyć spam. Rozwiąż poniższą CAPTCHA-ę i naciśnij "Kontynuuj".
+      help_html: Jeżeli masz problemy z rozwiązywaniem zadań CAPTCHA, możemy pomóc
+        ci po kontakcie z nami pod adresem %{email}.
+      hint_html: Jeszcze jedno! Potrzebujemy potwierdzić twoje człowieczeństwo, żeby
+        ograniczyć spam. Rozwiąż poniższą CAPTCHA-ę i naciśnij "Kontynuuj".
       title: Kontrola bezpieczeństwa
     confirmations:
-      awaiting_review: Twój adres e-mail został potwierdzony! Administracja %{domain} sprawdza Twoją rejestrację. Otrzymasz e-mail w momencie, gdy zaakceptują Twoje konto!
+      awaiting_review: Twój adres e-mail został potwierdzony! Administracja %{domain}
+        sprawdza Twoją rejestrację. Otrzymasz e-mail w momencie, gdy zaakceptują Twoje
+        konto!
       awaiting_review_title: Twoja rejestracja jest obecnie sprawdzana
       clicking_this_link: kliknąć ten link
       login_link: zaloguj się
       proceed_to_login_html: Teraz możesz przejść do %{login_link}.
-      redirect_to_app_html: Powinieneś zostać przekierowany do aplikacji <strong>%{app_name}</strong>. Jeśli tak się nie stało, spróbuj %{clicking_this_link} lub ręcznie wróć do aplikacji.
+      redirect_to_app_html: Powinieneś zostać przekierowany do aplikacji <strong>%{app_name}</strong>.
+        Jeśli tak się nie stało, spróbuj %{clicking_this_link} lub ręcznie wróć do
+        aplikacji.
       registration_complete: Twoja rejestracja na %{domain} została zakończona!
       welcome_title: Witaj, %{name}!
-      wrong_email_hint: Jeśli ten adres e-mail nie jest poprawny, możesz go zmienić w ustawieniach konta.
+      wrong_email_hint: Jeśli ten adres e-mail nie jest poprawny, możesz go zmienić
+        w ustawieniach konta.
     delete_account: Usunięcie konta
-    delete_account_html: Jeżeli chcesz usunąć konto, <a href="%{path}">przejdź tutaj</a>. Otrzymasz prośbę o potwierdzenie.
+    delete_account_html: Jeżeli chcesz usunąć konto, <a href="%{path}">przejdź tutaj</a>.
+      Otrzymasz prośbę o potwierdzenie.
     description:
       prefix_invited_by_user: "@%{name} zaprasza Cię do dołączenia na ten serwer Truecolorsa!"
       prefix_sign_up: Zarejestruj się na Truecolors już dziś!
-      suffix: Mając konto, możesz obserwować ludzi, publikować wpisy i wymieniać się wiadomościami z użytkownikami innych serwerów Truecolorsa i nie tylko!
+      suffix: Mając konto, możesz obserwować ludzi, publikować wpisy i wymieniać się
+        wiadomościami z użytkownikami innych serwerów Truecolorsa i nie tylko!
     didnt_get_confirmation: Nie otrzymano linku potwierdzającego?
     dont_have_your_security_key: Nie masz klucza bezpieczeństwa?
     forgot_password: Nie pamiętasz hasła?
-    invalid_reset_password_token: Token do resetowania hasła jest nieprawidłowy lub utracił ważność. Spróbuj uzyskać nowy.
-    link_to_otp: Wprowadź kod dwustopniowego uwierzytelniania z telefonu lub użyj zapasowego kodu
+    invalid_reset_password_token: Token do resetowania hasła jest nieprawidłowy lub
+      utracił ważność. Spróbuj uzyskać nowy.
+    link_to_otp: Wprowadź kod dwustopniowego uwierzytelniania z telefonu lub użyj
+      zapasowego kodu
     link_to_webauth: Użyj swojego urządzenia z kluczem bezpieczeństwa
     log_in_with: Zaloguj się za pomocą
     login: Zaloguj się
     logout: Wyloguj się
     migrate_account: Przenieś konto
-    migrate_account_html: Jeżeli chcesz skonfigurować przekierowanie z obecnego konta na inne, możesz <a href="%{path}">zrobić to tutaj</a>.
+    migrate_account_html: Jeżeli chcesz skonfigurować przekierowanie z obecnego konta
+      na inne, możesz <a href="%{path}">zrobić to tutaj</a>.
     or_log_in_with: Lub zaloguj się z użyciem
     progress:
       confirm: Potwierdź adres e-mail
@@ -1216,41 +1452,57 @@ pl:
     rules:
       accept: Zaakceptuj
       back: Wróć
-      invited_by: 'Możesz dołączyć do %{domain} dzięki zaproszeniu, które otrzymano od:'
+      invited_by: 'Możesz dołączyć do %{domain} dzięki zaproszeniu, które otrzymano
+        od:'
       preamble: Są one ustawione i wymuszone przez moderatorów %{domain}.
-      preamble_invited: Zanim przejdziesz dalej, rozważ zasady podstawowe ustalone przez moderatorów %{domain}.
+      preamble_invited: Zanim przejdziesz dalej, rozważ zasady podstawowe ustalone
+        przez moderatorów %{domain}.
       title: Kilka podstawowych zasad.
       title_invited: Otrzymano zaproszenie.
     security: Bezpieczeństwo
     set_new_password: Ustaw nowe hasło
     setup:
-      email_below_hint_html: Sprawdź folder ze spamem lub poproś o inny link potwierdzający. Możesz poprawić swój adres e-mail, jeśli jest niepoprawny.
-      email_settings_hint_html: Kliknij link, który wysłaliśmy do %{email} , aby rozpocząć korzystanie z Truecolors. Poczekamy tutaj.
+      email_below_hint_html: Sprawdź folder ze spamem lub poproś o inny link potwierdzający.
+        Możesz poprawić swój adres e-mail, jeśli jest niepoprawny.
+      email_settings_hint_html: Kliknij link, który wysłaliśmy do %{email} , aby rozpocząć
+        korzystanie z Truecolors. Poczekamy tutaj.
       link_not_received: Nie otrzymano linku?
-      new_confirmation_instructions_sent: Za kilka minut otrzymasz nowy e-mail z linkiem potwierdzającym!
+      new_confirmation_instructions_sent: Za kilka minut otrzymasz nowy e-mail z linkiem
+        potwierdzającym!
       title: Sprawdź swoją skrzynkę odbiorczą
     sign_in:
-      preamble_html: Zaloguj się przy użyciu danych logowania <strong>%{domain}</strong>. Jeśli Twoje konto jest hostowane na innym serwerze, nie będziesz mógł się zalogować tutaj.
+      preamble_html: Zaloguj się przy użyciu danych logowania <strong>%{domain}</strong>.
+        Jeśli Twoje konto jest hostowane na innym serwerze, nie będziesz mógł się
+        zalogować tutaj.
       title: Zaloguj się do %{domain}
     sign_up:
-      manual_review: Rejestracja na %{domain} przechodzi przez ręczne sprawdzanie przez naszych moderatorów. Aby pomóc nam usprawnić ten proces, napisz coś o sobie oraz dlaczego chcesz założyć konto na %{domain}.
-      preamble: Z kontem na tym serwerze Truecolors będziesz mógł obserwować każdą inną osobę w sieci, niezależnie od miejsca przechowywania ich konta.
+      manual_review: Rejestracja na %{domain} przechodzi przez ręczne sprawdzanie
+        przez naszych moderatorów. Aby pomóc nam usprawnić ten proces, napisz coś
+        o sobie oraz dlaczego chcesz założyć konto na %{domain}.
+      preamble: Z kontem na tym serwerze Truecolors będziesz mógł obserwować każdą
+        inną osobę w sieci, niezależnie od miejsca przechowywania ich konta.
       title: Skonfigurujmy Twoje konto na %{domain}.
     status:
       account_status: Stan konta
       confirming: Oczekiwanie na potwierdzenie adresu e-mail.
       functional: Twoje konto jest w pełni funkcjonalne.
-      pending: Twoje zgłoszenie czeka na zatwierdzenie przez nas. Może to trochę potrwać. Jeżeli zgłoszenie zostanie przyjęte, otrzymasz wiadomość e-mail.
-      redirecting_to: Twoje konto jest nieaktywne, ponieważ obecnie przekierowuje je na %{acct}.
+      pending: Twoje zgłoszenie czeka na zatwierdzenie przez nas. Może to trochę potrwać.
+        Jeżeli zgłoszenie zostanie przyjęte, otrzymasz wiadomość e-mail.
+      redirecting_to: Twoje konto jest nieaktywne, ponieważ obecnie przekierowuje
+        je na %{acct}.
       self_destruct: "%{domain} jest zamykane, dostęp do konta będzie ograniczony."
       view_strikes: Zobacz dawne ostrzeżenia nałożone na twoje konto
     too_fast: Zbyt szybko przesłano formularz, spróbuj ponownie.
     use_security_key: Użyj klucza bezpieczeństwa
-    user_agreement_html: Przeczytałem i akceptuję <a href="%{terms_of_service_path}" target="_blank">warunki korzystania z usługi</a> oraz <a href="%{privacy_policy_path}" target="_blank">politykę prywatności</a>
-    user_privacy_agreement_html: Przeczytałem/am/o i akceptuję <a href="%{privacy_policy_path}" target="_blank">politykę prywatności</a>
+    user_agreement_html: Przeczytałem i akceptuję <a href="%{terms_of_service_path}"
+      target="_blank">warunki korzystania z usługi</a> oraz <a href="%{privacy_policy_path}"
+      target="_blank">politykę prywatności</a>
+    user_privacy_agreement_html: Przeczytałem/am/o i akceptuję <a href="%{privacy_policy_path}"
+      target="_blank">politykę prywatności</a>
   author_attribution:
     example_title: Przykładowy tekst
-    hint_html: Piszesz wiadomości albo bloga poza Truecolorsem? Kontroluj jak będą ci przypisywane podczas dizielenia się nimi na Truecolorsie.
+    hint_html: Piszesz wiadomości albo bloga poza Truecolorsem? Kontroluj jak będą
+      ci przypisywane podczas dizielenia się nimi na Truecolorsie.
     instructions: 'Upewnij się, że ten kod jest w HTMLu twojego artykułu:'
     more_from_html: Więcej od %{name}
     s_blog: Blog %{name}
@@ -1258,7 +1510,8 @@ pl:
     title: Przypis do autora
   challenge:
     confirm: Kontynuuj
-    hint_html: "<strong>Informacja:</strong> Nie będziemy prosić Cię o ponowne podanie hasła przez następną godzinę."
+    hint_html: "<strong>Informacja:</strong> Nie będziemy prosić Cię o ponowne podanie
+      hasła przez następną godzinę."
     invalid_password: Nieprawidłowe hasło
     prompt: Potwierdź hasło, aby kontynuować
   crypto:
@@ -1292,11 +1545,15 @@ pl:
       before: 'Zanim kontynuujesz, przeczytać uważnie te uwagi:'
       caches: Zawartość obecna w pamięci podręcznej innych serwerów może tam pozostać
       data_removal: Twoje wpisy i inne dane zostaną bezpowrotnie usunięte
-      email_change_html: Możesz <a href="%{path}">zmienić swój adres e-mail</a> bez usunięcia konta
-      email_contact_html: Jeżeli wciąż nie dotarł, możesz wysłać wiadomość e-mail na <a href="mailto:%{email}">%{email}</a> aby uzyskać pomoc
-      email_reconfirmation_html: Jeżeli nie otrzymujesz potwierdzającego e-maila, możesz <a href="%{path}">poprosić o kolejny</a>
+      email_change_html: Możesz <a href="%{path}">zmienić swój adres e-mail</a> bez
+        usunięcia konta
+      email_contact_html: Jeżeli wciąż nie dotarł, możesz wysłać wiadomość e-mail
+        na <a href="mailto:%{email}">%{email}</a> aby uzyskać pomoc
+      email_reconfirmation_html: Jeżeli nie otrzymujesz potwierdzającego e-maila,
+        możesz <a href="%{path}">poprosić o kolejny</a>
       irreversible: Nie będziesz móc przywrócić lub reaktywować swojego konta
-      more_details_html: Aby uzyskać więcej szczegółów, przeczytaj naszą <a href="%{terms_path}">politykę prywatności</a>.
+      more_details_html: Aby uzyskać więcej szczegółów, przeczytaj naszą <a href="%{terms_path}">politykę
+        prywatności</a>.
       username_available: Twoja nazwa użytkownika będzie z powrotem dostępna
       username_unavailable: Twoja nazwa użytkownika pozostanie niedostępna
   disputes:
@@ -1306,13 +1563,15 @@ pl:
       appeal_approved: To ostrzeżenie zostało pomyślnie odwołane i nie jest już ważne
       appeal_rejected: Odwołanie zostało odrzucone
       appeal_submitted_at: Przesłano odwołanie
-      appealed_msg: Twoje odwołanie zostało złożone. Jeśli zostanie zatwierdzone, zostaniesz powiadomiony.
+      appealed_msg: Twoje odwołanie zostało złożone. Jeśli zostanie zatwierdzone,
+        zostaniesz powiadomiony.
       appeals:
         submit: Zgłoś odwołanie
       approve_appeal: Zatwierdź odwołanie
       associated_report: Powiązane zgłoszenie
       created_at: Data
-      description_html: Są to działania podjęte przeciwko Twojemu kontu i ostrzeżenia wysłane do ciebie przez administrację %{instance}.
+      description_html: Są to działania podjęte przeciwko Twojemu kontu i ostrzeżenia
+        wysłane do ciebie przez administrację %{instance}.
       recipient: Adresowane do
       reject_appeal: Odrzuć odwołanie
       status: 'Post #%{id}'
@@ -1331,7 +1590,9 @@ pl:
       your_appeal_rejected: Twoje odwołanie zostało odrzucone
   edit_profile:
     basic_information: Podstawowe informacje
-    hint_html: "<strong>Dostosuj to, co ludzie widzą na Twoim profilu publicznym i obok Twoich wpisów.</strong> Inne osoby są bardziej skłonne obserwować Cię i wchodzić z Tobą w interakcje, gdy masz wypełniony profil i zdjęcie profilowe."
+    hint_html: "<strong>Dostosuj to, co ludzie widzą na Twoim profilu publicznym i
+      obok Twoich wpisów.</strong> Inne osoby są bardziej skłonne obserwować Cię i
+      wchodzić z Tobą w interakcje, gdy masz wypełniony profil i zdjęcie profilowe."
     other: Inne
   errors:
     '400': Wysłane zgłoszenie jest nieprawidłowe lub uszkodzone.
@@ -1346,8 +1607,11 @@ pl:
     '500':
       content: Przepraszamy, coś poszło nie tak, po naszej stronie.
       title: Ta strona jest nieprawidłowa
-    '503': Strona nie może zostać wyświetlona z powodu tymczasowego niepowodzenia serwera.
-    noscript_html: Aby korzystać z aplikacji Truecolors, włącz JavaScript. Możesz też skorzystać z jednej z <a href="%{apps_path}">natywnych aplikacji</a> obsługującej Twoje urządzenie.
+    '503': Strona nie może zostać wyświetlona z powodu tymczasowego niepowodzenia
+      serwera.
+    noscript_html: Aby korzystać z aplikacji Truecolors, włącz JavaScript. Możesz
+      też skorzystać z jednej z <a href="%{apps_path}">natywnych aplikacji</a> obsługującej
+      Twoje urządzenie.
   existing_username_validator:
     not_found: nie znaleziono lokalnego użytkownika o tej nazwie
     not_found_multiple: nie znaleziono %{usernames}
@@ -1355,7 +1619,10 @@ pl:
     archive_takeout:
       date: Data
       download: Pobierz swoje archiwum
-      hint_html: Możesz uzyskać archiwum swoich <strong>wpisów i wysłanej zawartości multimedialnej</strong>. Wyeksportowane dane będą dostępne w formacie ActivityPub, który możesz otworzyć w obsługujących go programach. Możesz wyeksportować je po 7 dniach od poprzedniego eksportu.
+      hint_html: Możesz uzyskać archiwum swoich <strong>wpisów i wysłanej zawartości
+        multimedialnej</strong>. Wyeksportowane dane będą dostępne w formacie ActivityPub,
+        który możesz otworzyć w obsługujących go programach. Możesz wyeksportować
+        je po 7 dniach od poprzedniego eksportu.
       in_progress: Tworzenie archiwum…
       request: Uzyskaj archiwum
       size: Rozmiar
@@ -1370,7 +1637,10 @@ pl:
     add_new: Dodaj nowy
     errors:
       limit: Przekroczono maksymalną liczbę hasztagów
-    hint_html: "<strong>Czym są wyróżnione hashtagi?</strong> Są one na stałe wyświetlane na Twoim profilu i pozwalają innym na przeglądanie Twoich wpisów używających tych hashtagów. Są doskonałym narzędziem do śledzenia kreatywnej twórczości czy długoterminowych projektów."
+    hint_html: "<strong>Czym są wyróżnione hashtagi?</strong> Są one na stałe wyświetlane
+      na Twoim profilu i pozwalają innym na przeglądanie Twoich wpisów używających
+      tych hashtagów. Są doskonałym narzędziem do śledzenia kreatywnej twórczości
+      czy długoterminowych projektów."
   filters:
     contexts:
       account: Profile
@@ -1382,10 +1652,14 @@ pl:
       add_keyword: Dodaj słowo kluczowe
       keywords: Słowa kluczowe
       statuses: Pojedyncze wpisy
-      statuses_hint_html: Ten filtr ma zastosowanie do wybierania poszczególnych wpisów niezależnie od tego, czy pasują one do słów kluczowych poniżej. <a href="%{path}">Przejrzyj lub usuń wpisy z filtra</a>.
+      statuses_hint_html: Ten filtr ma zastosowanie do wybierania poszczególnych wpisów
+        niezależnie od tego, czy pasują one do słów kluczowych poniżej. <a href="%{path}">Przejrzyj
+        lub usuń wpisy z filtra</a>.
       title: Edytuj filtr
     errors:
-      deprecated_api_multiple_keywords: Te parametry nie mogą zostać zmienione z tej aplikacji, ponieważ dotyczą więcej niż jednego słowa kluczowego. Użyj nowszej wersji aplikacji lub interfejsu internetowego.
+      deprecated_api_multiple_keywords: Te parametry nie mogą zostać zmienione z tej
+        aplikacji, ponieważ dotyczą więcej niż jednego słowa kluczowego. Użyj nowszej
+        wersji aplikacji lub interfejsu internetowego.
       invalid_context: Nie podano lub podano nieprawidłową treść
     index:
       contexts: Filtry w %{contexts}
@@ -1417,7 +1691,9 @@ pl:
       batch:
         remove: Usuń z filtra
       index:
-        hint: Ten filtr ma zastosowanie do wybierania poszczególnych wpisów niezależnie od pozostałych kryteriów. Możesz dodać więcej wpisów do tego filtra z interfejsu internetowego.
+        hint: Ten filtr ma zastosowanie do wybierania poszczególnych wpisów niezależnie
+          od pozostałych kryteriów. Możesz dodać więcej wpisów do tego filtra z interfejsu
+          internetowego.
         title: Filtrowane posty
   generic:
     all: Wszystkie
@@ -1427,10 +1703,14 @@ pl:
       one: "<strong>%{count}</strong> element na tej stronie jest wybrany."
       other: "<strong>%{count}</strong> elementów na tej stronie jest wybrane."
     all_matching_items_selected_html:
-      few: Wszystkie <strong>%{count}</strong> elementy pasujące do Twojego wyszukiwania zostały wybrane.
-      many: Wszystkie <strong>%{count}</strong> elementy pasujące do Twojego wyszukiwania zostały wybrane.
-      one: "<strong>%{count}</strong> element pasujący do Twojego wyszukiwania został wybrany."
-      other: Wszystkie <strong>%{count}</strong> elementy pasujące do Twojego wyszukiwania zostały wybrane.
+      few: Wszystkie <strong>%{count}</strong> elementy pasujące do Twojego wyszukiwania
+        zostały wybrane.
+      many: Wszystkie <strong>%{count}</strong> elementy pasujące do Twojego wyszukiwania
+        zostały wybrane.
+      one: "<strong>%{count}</strong> element pasujący do Twojego wyszukiwania został
+        wybrany."
+      other: Wszystkie <strong>%{count}</strong> elementy pasujące do Twojego wyszukiwania
+        zostały wybrane.
     cancel: Anuluj
     changes_saved_msg: Ustawienia zapisane!
     confirm: Zatwierdź
@@ -1460,7 +1740,8 @@ pl:
       too_large: Plik jest zbyt duży
     failures: Błędy
     imported: Zaimportowano
-    mismatched_types_warning: Wygląda na to, że wybrałeś nieprawidłowy typ dla tego importu, sprawdź dwukrotnie.
+    mismatched_types_warning: Wygląda na to, że wybrałeś nieprawidłowy typ dla tego
+      importu, sprawdź dwukrotnie.
     modes:
       merge: Połącz
       merge_long: Zachowaj obecne wpisy i dodaj nowe
@@ -1468,67 +1749,125 @@ pl:
       overwrite_long: Zastąp obecne wpisy nowymi
     overwrite_preambles:
       blocking_html:
-        few: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie <strong>%{count} kontem</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie <strong>%{count}
+          kontami</strong> z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie
+          <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie <strong>%{count}
+          kontem</strong> z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zastąpić swoją listę bloków</strong> maksymalnie
+          <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
       bookmarks_html:
-        few: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count} wpisami</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count} wpisami</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count} wpisem</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count} wpisami</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count}
+          wpisami</strong> z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count}
+          wpisami</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count}
+          wpisem</strong> z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zastąpić swoje zakładki</strong> maksymalnie <strong>%{count}
+          wpisami</strong> z <strong>%{filename}</strong>.
       domain_blocking_html:
-        few: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie <strong>%{count} domenami</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie <strong>%{count} domenami</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie <strong>%{count} domeną</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie <strong>%{count} domenami</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie
+          <strong>%{count} domenami</strong> z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie
+          <strong>%{count} domenami</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie
+          <strong>%{count} domeną</strong> z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zastąpić swoją listę bloków domen</strong> maksymalnie
+          <strong>%{count} domenami</strong> z <strong>%{filename}</strong>.
       following_html:
-        few: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} konta</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować kogokolwiek innego</strong>.
-        many: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować kogokolwiek innego</strong>.
-        one: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} konto</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować kogokolwiek innego</strong>.
-        other: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować kogokolwiek innego</strong>.
+        few: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          konta</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować
+          kogokolwiek innego</strong>.
+        many: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          kont</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować
+          kogokolwiek innego</strong>.
+        one: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          konto</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować
+          kogokolwiek innego</strong>.
+        other: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          kont</strong> z <strong>%{filename}</strong> i <strong>przestać obserwować
+          kogokolwiek innego</strong>.
       lists_html:
-        few: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count} kontem</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count}
+          kontami</strong> z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count}
+          kontami</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count}
+          kontem</strong> z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zastąpić swoje listy</strong> maksymalnie <strong>%{count}
+          kontami</strong> z <strong>%{filename}</strong>.
       muting_html:
-        few: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie <strong>%{count} kontem</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie
+          <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie
+          <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie
+          <strong>%{count} kontem</strong> z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zastąpić swoją listę wyciszonych</strong> maksymalnie
+          <strong>%{count} kontami</strong> z <strong>%{filename}</strong>.
     preambles:
       blocking_html:
-        few: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} konta</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} konto</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} konta</strong>
+          z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count}
+          kont</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} konto</strong>
+          z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count}
+          kont</strong> z <strong>%{filename}</strong>.
       bookmarks_html:
-        few: Zamierzasz dodać maksymalnie <strong>%{count} wpisy</strong> do twoich <strong>zakładek</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz dodać maksymalnie <strong>%{count} wpisów</strong> do twoich <strong>zakładek</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz dodać maksymalnie <strong>%{count} wpis</strong> do twoich <strong>zakładek</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz dodać maksymalnie <strong>%{count} wpisów</strong> do twoich <strong>zakładek</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz dodać maksymalnie <strong>%{count} wpisy</strong> do twoich
+          <strong>zakładek</strong> z <strong>%{filename}</strong>.
+        many: Zamierzasz dodać maksymalnie <strong>%{count} wpisów</strong> do twoich
+          <strong>zakładek</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz dodać maksymalnie <strong>%{count} wpis</strong> do twoich
+          <strong>zakładek</strong> z <strong>%{filename}</strong>.
+        other: Zamierzasz dodać maksymalnie <strong>%{count} wpisów</strong> do twoich
+          <strong>zakładek</strong> z <strong>%{filename}</strong>.
       domain_blocking_html:
-        few: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} domeny</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} domeny</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} domenę</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} domeny</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} domeny</strong>
+          z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count}
+          domeny</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count} domenę</strong>
+          z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zablokować</strong> maksymalnie <strong>%{count}
+          domeny</strong> z <strong>%{filename}</strong>.
       following_html:
-        few: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} konta</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} konto</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong>.
+        few: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          konta</strong> z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          kont</strong> z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          konto</strong> z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>zaobserwować</strong> maksymalnie <strong>%{count}
+          kont</strong> z <strong>%{filename}</strong>.
       lists_html:
-        few: Zamierzasz dodać maksymalnie <strong>%{count} konta</strong> do twoich <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list, nowe zostaną utworzone.
-        many: Zamierzasz dodać maksymalnie <strong>%{count} kont</strong> do twoich <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list, nowe zostaną utworzone.
-        one: Zamierzasz dodać maksymalnie <strong>%{count} konto</strong> do twoich <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list, nowe zostaną utworzone.
-        other: Zamierzasz dodać maksymalnie <strong>%{count} kont</strong> do twoich <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list, nowe zostaną utworzone.
+        few: Zamierzasz dodać maksymalnie <strong>%{count} konta</strong> do twoich
+          <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list,
+          nowe zostaną utworzone.
+        many: Zamierzasz dodać maksymalnie <strong>%{count} kont</strong> do twoich
+          <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list,
+          nowe zostaną utworzone.
+        one: Zamierzasz dodać maksymalnie <strong>%{count} konto</strong> do twoich
+          <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list,
+          nowe zostaną utworzone.
+        other: Zamierzasz dodać maksymalnie <strong>%{count} kont</strong> do twoich
+          <strong>list</strong> z <strong>%{filename}</strong>. Jeżeli nie ma list,
+          nowe zostaną utworzone.
       muting_html:
-        few: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} konta</strong> z <strong>%{filename}</strong>.
-        many: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong>.
-        one: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} konto</strong> z <strong>%{filename}</strong>.
-        other: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} kont</strong> z <strong>%{filename}</strong>.
-    preface: Możesz zaimportować pewne dane (np. lista kont, które obserwujesz lub blokujesz) do swojego konta na tym serwerze, korzystając z danych wyeksportowanych z innego serwera.
+        few: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} konta</strong>
+          z <strong>%{filename}</strong>.
+        many: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} kont</strong>
+          z <strong>%{filename}</strong>.
+        one: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} konto</strong>
+          z <strong>%{filename}</strong>.
+        other: Zamierzasz <strong>wyciszyć</strong> maksymalnie <strong>%{count} kont</strong>
+          z <strong>%{filename}</strong>.
+    preface: Możesz zaimportować pewne dane (np. lista kont, które obserwujesz lub
+      blokujesz) do swojego konta na tym serwerze, korzystając z danych wyeksportowanych
+      z innego serwera.
     recent_imports: Ostatnie importy
     states:
       finished: Zakończono
@@ -1577,7 +1916,8 @@ pl:
       one: jedno użycie
       other: "%{count} użyć"
     max_uses_prompt: Bez ograniczenia
-    prompt: Wygeneruj odnośniki i udostępnij je innym, aby pozwolić na rejestrację na tym serwerze
+    prompt: Wygeneruj odnośniki i udostępnij je innym, aby pozwolić na rejestrację
+      na tym serwerze
     table:
       expires_at: Wygaśnie po
       uses: Użycia
@@ -1591,16 +1931,20 @@ pl:
       password: hasło
       sign_in_token: kod bezpieczeństwa e-mail
       webauthn: klucze bezpieczeństwa
-    description_html: Jeśli widzisz aktywność, której nie rozpoznajesz, rozważ zmianę hasła i włączenie weryfikacji dwuetapowej.
+    description_html: Jeśli widzisz aktywność, której nie rozpoznajesz, rozważ zmianę
+      hasła i włączenie weryfikacji dwuetapowej.
     empty: Brak historii uwierzytelniania
-    failed_sign_in_html: Próba logowania zakończona niepowodzeniem przy pomocy %{method} z %{ip} (%{browser})
+    failed_sign_in_html: Próba logowania zakończona niepowodzeniem przy pomocy %{method}
+      z %{ip} (%{browser})
     successful_sign_in_html: Pomyślne logowanie przy pomocy %{method} z %{ip} (%{browser})
     title: Historia uwierzytelniania
   mail_subscriptions:
     unsubscribe:
       action: Tak, wypisuję się
       complete: Anulowano subskrypcję
-      confirmation_html: Czy na pewno chcesz wypisać się z otrzymywania %{type} z Truecolorsa na %{domain} na adres %{email}? Zawsze możesz zapisać się ponownie ze strony <a href="%{settings_path}">ustawień powiadomień mejlowych</a>.
+      confirmation_html: Czy na pewno chcesz wypisać się z otrzymywania %{type} z
+        Truecolorsa na %{domain} na adres %{email}? Zawsze możesz zapisać się ponownie
+        ze strony <a href="%{settings_path}">ustawień powiadomień mejlowych</a>.
       emails:
         notification_emails:
           favourite: powiadomień mejlowych o polubieniach
@@ -1608,19 +1952,24 @@ pl:
           follow_request: mejli o prośbach o możliwość obserwowania
           mention: powiadomień mejlowych o wspomnieniach
           reblog: powiadomień mejlowych o podbiciach
-      resubscribe_html: W przypadku przypadkowego wypisania możesz zapisać się ponownie z <a href="%{settings_path}">ustawień powiadomień mejlowych</a>.
-      success_html: Już nie będziesz otrzymywać %{type} z Truecolorsa na %{domain} na adres %{email}.
+      resubscribe_html: W przypadku przypadkowego wypisania możesz zapisać się ponownie
+        z <a href="%{settings_path}">ustawień powiadomień mejlowych</a>.
+      success_html: Już nie będziesz otrzymywać %{type} z Truecolorsa na %{domain}
+        na adres %{email}.
       title: Anuluj subskrypcję
   media_attachments:
     validations:
-      images_and_video: Nie możesz załączyć pliku wideo do wpisu, który zawiera już zdjęcia
+      images_and_video: Nie możesz załączyć pliku wideo do wpisu, który zawiera już
+        zdjęcia
       not_found: Nie znaleziono mediów %{ids}, lub są już  dołączone do innego wpisu
-      not_ready: Nie można załączyć plików których przetwarzanie nie zostało ukończone. Spróbuj ponownie za chwilę!
+      not_ready: Nie można załączyć plików których przetwarzanie nie zostało ukończone.
+        Spróbuj ponownie za chwilę!
       too_many: Nie możesz załączyć więcej niż 4 plików
   migrations:
     acct: nazwa@domena nowego konta
     cancel: Anuluj przekierowanie
-    cancel_explanation: Anulowanie przekierowania aktywuje Twoje obecne konto ponownie, ale nie przeniesie z powrotem obserwujących, których przeniesiono na tamto konto.
+    cancel_explanation: Anulowanie przekierowania aktywuje Twoje obecne konto ponownie,
+      ale nie przeniesie z powrotem obserwujących, których przeniesiono na tamto konto.
     cancelled_msg: Pomyślnie anulowano przekierowanie.
     errors:
       already_moved: jest tym samym kontem, na które już się przeniosłeś(-aś)
@@ -1630,30 +1979,39 @@ pl:
       on_cooldown: Nie możesz teraz przenieść konta
     followers_count: Obserwujący w chwili przenoszenia
     incoming_migrations: Przenoszenie z innego konta
-    incoming_migrations_html: Aby przenieść się z innego konta na to, musisz najpierw <a href="%{path}">utworzyć alias konta</a>.
+    incoming_migrations_html: Aby przenieść się z innego konta na to, musisz najpierw
+      <a href="%{path}">utworzyć alias konta</a>.
     moved_msg: Twoje konto przekierowuje teraz na %{acct}, a obserwujący są przenoszeni.
     not_redirecting: Twoje konto nie przekierowuje obecnie na żadne inne konto.
-    on_cooldown: Ostatnio przeniosłeś(-aś) swoje konto. Ta funkcja będzie dostępna ponownie za %{count} dni.
+    on_cooldown: Ostatnio przeniosłeś(-aś) swoje konto. Ta funkcja będzie dostępna
+      ponownie za %{count} dni.
     past_migrations: Poprzednie migracje
     proceed_with_move: Przenieś obserwujących
     redirected_msg: Twoje konto przekierowuje teraz na %{acct}.
     redirecting_to: Twoje konto przekierowuje na %{acct}.
     set_redirect: Ustaw przekierowanie
     warning:
-      backreference_required: Nowe konto musi wcześniej zostać skonfigurowane tak, aby odwoływało się do tego
+      backreference_required: Nowe konto musi wcześniej zostać skonfigurowane tak,
+        aby odwoływało się do tego
       before: 'Zanim kontynuujesz, przeczytaj uważnie te uwagi:'
-      cooldown: Po przeniesieniu się, istnieje okres przez który nie możesz ponownie się przenieść
-      disabled_account: Twoje obecne konto nie będzie później całkowicie użyteczne. Możesz jednak uzyskać dostęp do eksportu danych i ponownie aktywować je.
-      followers: To działanie przeniesie wszystkich Twoich obserwujących z obecnego konta na nowe
-      only_redirect_html: Możesz też <a href="%{path}">po prostu skonfigurować przekierowanie na swój profil</a>.
+      cooldown: Po przeniesieniu się, istnieje okres przez który nie możesz ponownie
+        się przenieść
+      disabled_account: Twoje obecne konto nie będzie później całkowicie użyteczne.
+        Możesz jednak uzyskać dostęp do eksportu danych i ponownie aktywować je.
+      followers: To działanie przeniesie wszystkich Twoich obserwujących z obecnego
+        konta na nowe
+      only_redirect_html: Możesz też <a href="%{path}">po prostu skonfigurować przekierowanie
+        na swój profil</a>.
       other_data: Żadne inne dane nie zostaną automatycznie przeniesione
-      redirect: Twoje obecne konto zostanie uaktualnione o informację o przeniesieniu i wyłączone z wyszukiwania
+      redirect: Twoje obecne konto zostanie uaktualnione o informację o przeniesieniu
+        i wyłączone z wyszukiwania
   moderation:
     title: Moderacja
   move_handler:
     carry_blocks_over_text: Ten użytkownik przeniósł się z konta %{acct}, które zablokowałeś(-aś).
     carry_mutes_over_text: Ten użytkownik przeniósł się z konta %{acct}, które wyciszyłeś(-aś).
-    copy_account_note_text: 'Ten użytkownik przeniósł się z konta %{acct}, oto Twoje poprzednie notatki o nim:'
+    copy_account_note_text: 'Ten użytkownik przeniósł się z konta %{acct}, oto Twoje
+      poprzednie notatki o nim:'
   navigation:
     toggle_menu: Przełącz menu
   notification_mailer:
@@ -1706,12 +2064,18 @@ pl:
           trillion: bln
   otp_authentication:
     code_hint: Aby potwierdzić, wprowadź kod wygenerowany przez aplikację uwierzytelniającą
-    description_html: Jeśli włączysz <strong>uwierzytelnianie dwuetapowe</strong> używając aplikacji uwierzytelniającej, logowanie się będzie wymagało podania tokenu wyświetlonego na Twoim telefonie.
+    description_html: Jeśli włączysz <strong>uwierzytelnianie dwuetapowe</strong>
+      używając aplikacji uwierzytelniającej, logowanie się będzie wymagało podania
+      tokenu wyświetlonego na Twoim telefonie.
     enable: Aktywuj
-    instructions_html: "<strong>Zeskanuj ten kod QR na swoim telefonie za pomocą Google Authenticator lub podobnej aplikacji TOTP</strong>. Od teraz będzie ona generowała kody wymagane przy logowaniu."
-    manual_instructions: 'Jeśli nie możesz zeskanować kodu QR i musisz wprowadzić go ręcznie, oto klucz w formie tekstu:'
+    instructions_html: "<strong>Zeskanuj ten kod QR na swoim telefonie za pomocą Google
+      Authenticator lub podobnej aplikacji TOTP</strong>. Od teraz będzie ona generowała
+      kody wymagane przy logowaniu."
+    manual_instructions: 'Jeśli nie możesz zeskanować kodu QR i musisz wprowadzić
+      go ręcznie, oto klucz w formie tekstu:'
     setup: Skonfiguruj
-    wrong_code: Wprowadzony kod jest nieprawidłowy! Czy czas serwera i urządzenia jest poprawny?
+    wrong_code: Wprowadzony kod jest nieprawidłowy! Czy czas serwera i urządzenia
+      jest poprawny?
   pagination:
     newer: Nowsze
     next: Następna
@@ -1735,13 +2099,23 @@ pl:
     posting_defaults: Domyślne ustawienia wpisów
     public_timelines: Publiczne osie czasu
   privacy:
-    hint_html: "<strong>Dostosuj tryb odnajdowania twojego profilu i wpisów.</strong> Funkcje Truecolorsa mogą pomóc ci zwiększać twoją publiczność – przejrzyj te ustawienia i dostosuj je do swojego sposobu użytkowania."
+    hint_html: "<strong>Dostosuj tryb odnajdowania twojego profilu i wpisów.</strong>
+      Funkcje Truecolorsa mogą pomóc ci zwiększać twoją publiczność – przejrzyj te
+      ustawienia i dostosuj je do swojego sposobu użytkowania."
     privacy: Prywatność
-    privacy_hint_html: Ustaw, ile chcesz ujawniać innym. Ciekawe profile i programy często znajduje się przy przeglądaniu cudzych list obserwowanych i tego, z jakich programów zamieszczają, ale może wolisz to ukryć.
+    privacy_hint_html: Ustaw, ile chcesz ujawniać innym. Ciekawe profile i programy
+      często znajduje się przy przeglądaniu cudzych list obserwowanych i tego, z jakich
+      programów zamieszczają, ale może wolisz to ukryć.
     reach: Zasięg
-    reach_hint_html: Ustaw, czy chcesz dać się odkryć i zaobserwować. Chcesz, żeby twoje wpisy pojawiały się w zakładce "Odkrywaj"? Chcesz, żeby sugerowano twoje konto do obserwacji? Chcesz przyjmować nowych obserwujących automatycznie, czy aprobować ich ręcznie?
+    reach_hint_html: Ustaw, czy chcesz dać się odkryć i zaobserwować. Chcesz, żeby
+      twoje wpisy pojawiały się w zakładce "Odkrywaj"? Chcesz, żeby sugerowano twoje
+      konto do obserwacji? Chcesz przyjmować nowych obserwujących automatycznie, czy
+      aprobować ich ręcznie?
     search: Wyszukiwanie
-    search_hint_html: Ustaw, w jakim zakresie będziesz znajdowalny(a). Chcesz pojawiać się w wynikach po twoich publicznych wpisach? Chcesz by twój profil dało się znaleźć spoza Truecolorsa? Pamiętaj, że nie da się zapewnić całkowitego wykluczenia wszystkich informacji publicznie dostępnych z wyszukiwarek.
+    search_hint_html: Ustaw, w jakim zakresie będziesz znajdowalny(a). Chcesz pojawiać
+      się w wynikach po twoich publicznych wpisach? Chcesz by twój profil dało się
+      znaleźć spoza Truecolorsa? Pamiętaj, że nie da się zapewnić całkowitego wykluczenia
+      wszystkich informacji publicznie dostępnych z wyszukiwarek.
     title: Prywatność i zasięg
   privacy_policy:
     title: Polityka prywatności
@@ -1784,11 +2158,14 @@ pl:
       account: Publiczne posty od @%{acct}
       tag: 'Publiczne wpisy oznaczone #%{hashtag}'
   scheduled_statuses:
-    over_daily_limit: Przekroczyłeś(-aś) limit %{limit} zaplanowanych wpisów na ten dzień
+    over_daily_limit: Przekroczyłeś(-aś) limit %{limit} zaplanowanych wpisów na ten
+      dzień
     over_total_limit: Przekroczyłeś(-aś) limit %{limit} zaplanowanych wpisów
     too_soon: musi to być przyszła data
   self_destruct:
-    lead_html: Niestety, <strong>%{domain}</strong> jest permanentnie zamykane. Konta z tego serwera nie będą dostępne, ale można jeszcze odzyskać kopię zapasową danych.
+    lead_html: Niestety, <strong>%{domain}</strong> jest permanentnie zamykane. Konta
+      z tego serwera nie będą dostępne, ale można jeszcze odzyskać kopię zapasową
+      danych.
     title: Ten serwer jest zamykany
   sessions:
     activity: Ostatnia aktywność
@@ -1868,8 +2245,12 @@ pl:
       user_domain_block: Zablokowano %{target_name}
     lost_followers: Utraceni obserwujący
     lost_follows: Utracone obserwowania
-    preamble: Możesz stracić obserwowania i obserwujących kiedy zablokujesz domenę albo kiedy twoi moderatorzy postanowią zawiesić obcy serwer. W tym wypadku będziesz móc pobrać listę zerwanych związków do przejrzenia i potencjalnego importu na innym serwerze.
-    purged: Informacje o tym serwerze zostały wyczyszczone przez administratora twojego serwera.
+    preamble: Możesz stracić obserwowania i obserwujących kiedy zablokujesz domenę
+      albo kiedy twoi moderatorzy postanowią zawiesić obcy serwer. W tym wypadku będziesz
+      móc pobrać listę zerwanych związków do przejrzenia i potencjalnego importu na
+      innym serwerze.
+    purged: Informacje o tym serwerze zostały wyczyszczone przez administratora twojego
+      serwera.
     type: Zdarzenie
   statuses:
     attached:
@@ -1902,7 +2283,8 @@ pl:
       in_reply_not_found: Post, na który próbujesz odpowiedzieć, nie istnieje.
     over_character_limit: limit %{max} znaków przekroczony
     pin_errors:
-      direct: Nie możesz przypiąć wpisu, który jest widoczny tylko dla wspomnianych użytkowników
+      direct: Nie możesz przypiąć wpisu, który jest widoczny tylko dla wspomnianych
+        użytkowników
       limit: Przekroczyłeś maksymalną liczbę przypiętych wpisów
       ownership: Nie możesz przypiąć cudzego wpisu
       reblog: Nie możesz przypiąć podbicia wpisu
@@ -1914,16 +2296,22 @@ pl:
       public: Publiczne
       public_long: Widoczne dla wszystkich użytkowników
       unlisted: Niewypisane
-      unlisted_long: Widoczne dla wszystkich, ale nie wyświetlane na publicznych osiach czasu
+      unlisted_long: Widoczne dla wszystkich, ale nie wyświetlane na publicznych osiach
+        czasu
   statuses_cleanup:
     enabled: Automatycznie usuwaj stare wiadomości
-    enabled_hint: Automatycznie usuwa Twoje posty, gdy osiągną określony próg wiekowy, chyba że spełniają jeden z poniższych wyjątków
+    enabled_hint: Automatycznie usuwa Twoje posty, gdy osiągną określony próg wiekowy,
+      chyba że spełniają jeden z poniższych wyjątków
     exceptions: Wyjątki
-    explanation: Ponieważ usuwanie postów jest kosztowną operacją, odbywa się to powoli, gdy serwer nie jest zajęty. Z tego powodu Twoje posty mogą zostać usunięte po pewnym czasie po osiągnięciu progu wiekowego.
+    explanation: Ponieważ usuwanie postów jest kosztowną operacją, odbywa się to powoli,
+      gdy serwer nie jest zajęty. Z tego powodu Twoje posty mogą zostać usunięte po
+      pewnym czasie po osiągnięciu progu wiekowego.
     ignore_favs: Ignoruj ulubione
     ignore_reblogs: Ignoruj podbicia
     interaction_exceptions: Wyjątki oparte na interakcjach
-    interaction_exceptions_explanation: Zauważ, że nie ma gwarancji usunięcia wpisów, jeśli ich wartość spadnie poniżej progu ulubionych lub podbić po tym, kiedy już były raz sprawdzone.
+    interaction_exceptions_explanation: Zauważ, że nie ma gwarancji usunięcia wpisów,
+      jeśli ich wartość spadnie poniżej progu ulubionych lub podbić po tym, kiedy
+      już były raz sprawdzone.
     keep_direct: Zachowaj bezpośrednie wiadomości
     keep_direct_hint: Nie usuwa żadnych bezpośrednich wiadomości
     keep_media: Zachowaj posty z załącznikami multimedialnymi
@@ -1947,9 +2335,13 @@ pl:
       '7889238': 3 miesiące
     min_age_label: Próg wieku
     min_favs: Zachowaj ulubione posty więcej niż
-    min_favs_hint: Nie usuwa żadnego z Twoich wpisów, które otrzymały więcej niż tę liczbę ulubionych. Pozostaw puste, aby usunąć posty bez względu na ich liczbę ulubionych
+    min_favs_hint: Nie usuwa żadnego z Twoich wpisów, które otrzymały więcej niż tę
+      liczbę ulubionych. Pozostaw puste, aby usunąć posty bez względu na ich liczbę
+      ulubionych
     min_reblogs: Utrzymuj posty wzmocnione więcej niż
-    min_reblogs_hint: Nie usuwa żadnego z Twoich wpisów, które zostały wzmocnione więcej niż tyle razy. Pozostaw puste, aby usunąć posty bez względu na ich liczbę wzmocnień
+    min_reblogs_hint: Nie usuwa żadnego z Twoich wpisów, które zostały wzmocnione
+      więcej niż tyle razy. Pozostaw puste, aby usunąć posty bez względu na ich liczbę
+      wzmocnień
   stream_entries:
     sensitive_content: Wrażliwa zawartość
   strikes:
@@ -1982,22 +2374,30 @@ pl:
     enabled: Uwierzytelnianie dwuetapowe jest włączone
     enabled_success: Pomyślnie aktywowano uwierzytelnianie dwuetapowe
     generate_recovery_codes: Generuj kody zapasowe
-    lost_recovery_codes: Kody zapasowe pozwolą uzyskać dostęp do portalu, jeżeli utracisz dostęp do telefonu. Jeżeli utracisz dostęp do nich, możesz wygenerować je ponownie tutaj. Poprzednie zostaną unieważnione.
+    lost_recovery_codes: Kody zapasowe pozwolą uzyskać dostęp do portalu, jeżeli utracisz
+      dostęp do telefonu. Jeżeli utracisz dostęp do nich, możesz wygenerować je ponownie
+      tutaj. Poprzednie zostaną unieważnione.
     methods: Metody uwierzytelniania dwuskładnikowego
     otp: Aplikacja uwierzytelniająca
     recovery_codes: Przywróć kody zapasowe
     recovery_codes_regenerated: Pomyślnie wygenerowano ponownie kody zapasowe
-    recovery_instructions_html: Jeżeli kiedykolwiek utracisz dostęp do telefonu, możesz wykorzystać jeden z kodów zapasowych, aby odzyskać dostęp do konta. <strong>Trzymaj je w bezpiecznym miejscu</strong>. Na przykład, wydrukuj je i przechowuj z ważnymi dokumentami.
+    recovery_instructions_html: Jeżeli kiedykolwiek utracisz dostęp do telefonu, możesz
+      wykorzystać jeden z kodów zapasowych, aby odzyskać dostęp do konta. <strong>Trzymaj
+      je w bezpiecznym miejscu</strong>. Na przykład, wydrukuj je i przechowuj z ważnymi
+      dokumentami.
     webauthn: Klucze bezpieczeństwa
   user_mailer:
     appeal_approved:
       action: Ustawienia Konta
-      explanation: Twoje odwołanie dotyczące ostrzeżenia nałożonego na twoje konto dnia %{strike_date}, które zostało wysłane dnia %{appeal_date} zostało zatwierdzone. Twoje konto jest ponownie w dobrej kondycji.
+      explanation: Twoje odwołanie dotyczące ostrzeżenia nałożonego na twoje konto
+        dnia %{strike_date}, które zostało wysłane dnia %{appeal_date} zostało zatwierdzone.
+        Twoje konto jest ponownie w dobrej kondycji.
       subject: Twoje odwołanie z dnia %{date} zostało zatwierdzone
       subtitle: Reputacja twojego konta została przywrócona.
       title: Odwołanie zatwierdzone
     appeal_rejected:
-      explanation: Twoje odwołanie dotyczące ostrzeżenia nałożonego na twoje konto dnia %{strike_date}, które zostało wysłane dnia %{appeal_date} zostało odrzucone.
+      explanation: Twoje odwołanie dotyczące ostrzeżenia nałożonego na twoje konto
+        dnia %{strike_date}, które zostało wysłane dnia %{appeal_date} zostało odrzucone.
       subject: Twoje odwołanie z dnia %{date} zostało odrzucone
       subtitle: Twoje odwołanie zostało odrzucone.
       title: Odwołanie odrzucone
@@ -2008,19 +2408,24 @@ pl:
       title: Odbiór archiwum
     failed_2fa:
       details: 'Oto szczegóły próby logowania:'
-      explanation: Ktoś próbował zalogować się na twoje konto, ale nie przeszedł drugiego etapu autoryzacji.
-      further_actions_html: Jeśli to nie ty, polecamy natychmiastowo %{action}, bo może ono być narażone.
+      explanation: Ktoś próbował zalogować się na twoje konto, ale nie przeszedł drugiego
+        etapu autoryzacji.
+      further_actions_html: Jeśli to nie ty, polecamy natychmiastowo %{action}, bo
+        może ono być narażone.
       subject: Błąd drugiego etapu uwierzytelniania
       title: Nieudane uwierzytelnienie w drugim etapie
     suspicious_sign_in:
       change_password: zmień hasło
       details: 'Oto szczegóły logowania:'
       explanation: Wykryliśmy logowanie na Twoje konto z nowego adresu IP.
-      further_actions_html: Jeśli to nie Ty, zalecamy %{action} natychmiastowo i włącz uwierzytelnianie dwuetapowe, aby Twoje konto było bezpieczne.
+      further_actions_html: Jeśli to nie Ty, zalecamy %{action} natychmiastowo i włącz
+        uwierzytelnianie dwuetapowe, aby Twoje konto było bezpieczne.
       subject: Uzyskano dostęp do twojego konta z nowego adresu IP
       title: Nowe logowanie
     terms_of_service_changed:
-      agreement: Kontynuując używanie %{domain}, zgadzasz się na te warunki. Jeśli nie zgadzasz się ze zaktualizowanymi warunkami, możesz wypowiedzieć umowę z %{domain} w dowolnym momencie, usuwając swoje konto.
+      agreement: Kontynuując używanie %{domain}, zgadzasz się na te warunki. Jeśli
+        nie zgadzasz się ze zaktualizowanymi warunkami, możesz wypowiedzieć umowę
+        z %{domain} w dowolnym momencie, usuwając swoje konto.
       changelog: 'W skrócie oto co oznacza dla Ciebie ta aktualizacja:'
       sign_off: Zespół %{domain}
       subject: Aktualizacja warunków korzystania z usług
@@ -2028,23 +2433,38 @@ pl:
       title: Ważna aktualizacja
     warning:
       appeal: Złóż odwołanie
-      appeal_description: Jeśli uważasz, że zaszło nieporozumienie, możesz złożyć odwołanie do zespołu %{instance}.
+      appeal_description: Jeśli uważasz, że zaszło nieporozumienie, możesz złożyć
+        odwołanie do zespołu %{instance}.
       categories:
         spam: Spam
         violation: Zawartość narusza następujące wytyczne społeczności
       explanation:
-        delete_statuses: Stwierdzono, że niektóre z twoich wpisów łamią jedną lub więcej wytycznych dla społeczności, przez co zostały usunięte przez moderatorów %{instance}.
-        disable: Nie możesz już używać swojego konta, ale Twój profil i inne dane pozostają nienaruszone. Możesz poprosić o kopię swoich danych, zmienić ustawienia konta lub usunąć swoje konto.
-        mark_statuses_as_sensitive: Niektóre z Twoich postów zostały oznaczone jako wrażliwe przez moderatorów %{instance}. Oznacza to, że ludzie będą musieli dotknąć mediów w postach przed wyświetleniem podglądu. Możesz oznaczyć media jako wrażliwe podczas publikowania w przyszłości.
-        sensitive: Od teraz wszystkie przesłane pliki multimedialne będą oznaczone jako wrażliwe i ukryte za ostrzeżeniem kliknięcia.
-        silence: Kiedy Twoje konto jest ograniczone, tylko osoby, które je obserwują, będą widzieć Twoje wpisy. Może ono też przestać być widoczne w funkcjach odkrywania. Inni wciąż mogą zacząć Cię obserwować.
-        suspend: Nie możesz już używać Twojego konta, a Twój profil i inne dane nie są już dostępne. Zanim w pełni usuniemy Twoje dane po około 30 dniach, możesz nadal zalogować się, aby uzyskać ich kopię. Zachowamy pewne podstawowe dane, aby zapobiegać obchodzeniu przez Ciebie zawieszenia.
+        delete_statuses: Stwierdzono, że niektóre z twoich wpisów łamią jedną lub
+          więcej wytycznych dla społeczności, przez co zostały usunięte przez moderatorów
+          %{instance}.
+        disable: Nie możesz już używać swojego konta, ale Twój profil i inne dane
+          pozostają nienaruszone. Możesz poprosić o kopię swoich danych, zmienić ustawienia
+          konta lub usunąć swoje konto.
+        mark_statuses_as_sensitive: Niektóre z Twoich postów zostały oznaczone jako
+          wrażliwe przez moderatorów %{instance}. Oznacza to, że ludzie będą musieli
+          dotknąć mediów w postach przed wyświetleniem podglądu. Możesz oznaczyć media
+          jako wrażliwe podczas publikowania w przyszłości.
+        sensitive: Od teraz wszystkie przesłane pliki multimedialne będą oznaczone
+          jako wrażliwe i ukryte za ostrzeżeniem kliknięcia.
+        silence: Kiedy Twoje konto jest ograniczone, tylko osoby, które je obserwują,
+          będą widzieć Twoje wpisy. Może ono też przestać być widoczne w funkcjach
+          odkrywania. Inni wciąż mogą zacząć Cię obserwować.
+        suspend: Nie możesz już używać Twojego konta, a Twój profil i inne dane nie
+          są już dostępne. Zanim w pełni usuniemy Twoje dane po około 30 dniach, możesz
+          nadal zalogować się, aby uzyskać ich kopię. Zachowamy pewne podstawowe dane,
+          aby zapobiegać obchodzeniu przez Ciebie zawieszenia.
       reason: 'Powód:'
       statuses: 'Cytowane posty:'
       subject:
         delete_statuses: Twoje wpisy na %{acct} zostały usunięte
         disable: Twoje konto %{acct} zostało wyłączone
-        mark_statuses_as_sensitive: Twoje posty na %{acct} zostały oznaczone jako wrażliwe
+        mark_statuses_as_sensitive: Twoje posty na %{acct} zostały oznaczone jako
+          wrażliwe
         none: Ostrzeżenie dla %{acct}
         sensitive: Twoje posty na %{acct} będą od teraz oznaczone jako wrażliwe
         silence: Twoje konto %{acct} zostało ograniczone
@@ -2065,17 +2485,33 @@ pl:
       checklist_subtitle: 'Aby porządnie rozpocząć użytkowanie Truecolorsa:'
       checklist_title: Powitalna lista kontrolna
       edit_profile_action: Personalizuj
-      edit_profile_step: Inni użytkownicy są bardziej skłonni do interakcji z Tobą jeśli posiadasz wypełniony profil.
+      edit_profile_step: Inni użytkownicy są bardziej skłonni do interakcji z Tobą
+        jeśli posiadasz wypełniony profil.
       edit_profile_title: Spersonalizuj swój profil
       explanation: Kilka wskazówek, które pomogą Ci rozpocząć
       feature_action: Dowiedz się więcej
-      feature_audience: Truecolors zapewnia ci unikalne możliwości docierania do twojego grona odbiorców bez żadnych pośredników. Postawiony na własnej infrastrukturze, Truecolors pozwala ci obserwować i być obserwowanym z dowolnego innego serwera Truecolorsa. Nikt, poza tobą samym(-ą), nie ma nad tym kontroli.
+      feature_audience: Truecolors zapewnia ci unikalne możliwości docierania do twojego
+        grona odbiorców bez żadnych pośredników. Postawiony na własnej infrastrukturze,
+        Truecolors pozwala ci obserwować i być obserwowanym z dowolnego innego serwera
+        Truecolorsa. Nikt, poza tobą samym(-ą), nie ma nad tym kontroli.
       feature_audience_title: Buduj swoją publiczność z pewnością
-      feature_control: Sam(a) wiesz najlepiej, co chcesz widzieć na swojej osi czasu. Brak algorytmów i reklam, które marnują twój cenny czas. Obserwuj dowolne osoby z dowolnego serwera Truecolorsa przy pomocy jednego konta i otrzymuj ich wpisy w kolejności chronologicznej. Każdy zasługuje na własny kąt w internecie.
+      feature_control: Sam(a) wiesz najlepiej, co chcesz widzieć na swojej osi czasu.
+        Brak algorytmów i reklam, które marnują twój cenny czas. Obserwuj dowolne
+        osoby z dowolnego serwera Truecolorsa przy pomocy jednego konta i otrzymuj
+        ich wpisy w kolejności chronologicznej. Każdy zasługuje na własny kąt w internecie.
       feature_control_title: Miej kontrolę nad swoją osią czasu
-      feature_creativity: Truecolors obsługuje wpisy audio, wideo oraz zdjęcia, jak również opisy zdjęć na potrzeby dostępności, ankiety, ostrzeżenia dotyczące treści, animowane awatary, niestandardowe emoji, kontrolę miniatur zdjęć i więcej, aby pomóc Ci wyrażać siebie. Bez względu na to, czy dzielisz się swoją sztuką, muzyką czy podcastem, Truecolors jest dla ciebie.
+      feature_creativity: Truecolors obsługuje wpisy audio, wideo oraz zdjęcia, jak
+        również opisy zdjęć na potrzeby dostępności, ankiety, ostrzeżenia dotyczące
+        treści, animowane awatary, niestandardowe emoji, kontrolę miniatur zdjęć i
+        więcej, aby pomóc Ci wyrażać siebie. Bez względu na to, czy dzielisz się swoją
+        sztuką, muzyką czy podcastem, Truecolors jest dla ciebie.
       feature_creativity_title: Niezrównana kreatywność
-      feature_moderation: Truecolors oddaje w twoje ręce prawo podejmowania decyzji. Każdy serwer tworzy własne zasady i regulacje, które są egzekwowane lokalnie a nie odgórnie jak w przypadku korporacyjnych mediów społecznościowych. Czyni to Truecolorsa najbardziej elastyczną platformą dla różnych grup ludzi z różnymi potrzebami. Dołącz do serwera, z którego zasadami zgadzasz się najbardziej, lub stwórz swój własny.
+      feature_moderation: Truecolors oddaje w twoje ręce prawo podejmowania decyzji.
+        Każdy serwer tworzy własne zasady i regulacje, które są egzekwowane lokalnie
+        a nie odgórnie jak w przypadku korporacyjnych mediów społecznościowych. Czyni
+        to Truecolorsa najbardziej elastyczną platformą dla różnych grup ludzi z różnymi
+        potrzebami. Dołącz do serwera, z którego zasadami zgadzasz się najbardziej,
+        lub stwórz swój własny.
       feature_moderation_title: Moderacja we właściwy sposób
       follow_action: Obserwuj
       follow_step: Zarządzasz swoim własnym kanałem. Wypełnij go interesującymi ludźmi.
@@ -2106,13 +2542,23 @@ pl:
     invalid_otp_token: Kod uwierzytelniający jest niepoprawny
     otp_lost_help_html: Jeżeli utracisz dostęp do obu, możesz skontaktować się z %{email}
     rate_limited: Zbyt wiele prób uwierzytelnienia. Spróbuj ponownie później.
-    seamless_external_login: Zalogowano z użyciem zewnętrznej usługi, więc ustawienia hasła i adresu e-mail nie są dostępne.
+    seamless_external_login: Zalogowano z użyciem zewnętrznej usługi, więc ustawienia
+      hasła i adresu e-mail nie są dostępne.
     signed_in_as: 'Zalogowano jako:'
   verification:
-    extra_instructions_html: <strong>Wskazówka:</strong> link na twojej stronie może być niewidoczny. Istotną częścią, zapobiegającą podszywaniu na stronach z treściami dodawanymi przez użytkowników, jest <code>rel="me"</code>. Zamiast tagu <code>a</code> możesz w nagłówek osadzić tag <code>link</code>. Oba jednak muszą być dostępne bez JavaScriptu.
+    extra_instructions_html: <strong>Wskazówka:</strong> link na twojej stronie może
+      być niewidoczny. Istotną częścią, zapobiegającą podszywaniu na stronach z treściami
+      dodawanymi przez użytkowników, jest <code>rel="me"</code>. Zamiast tagu <code>a</code>
+      możesz w nagłówek osadzić tag <code>link</code>. Oba jednak muszą być dostępne
+      bez JavaScriptu.
     here_is_how: Oto jak
-    hint_html: "<strong>Weryfikacja tożsamości na Truecolorsie jest dla wszystkich,</strong> oparta na otwartych standardach, i darmowa. Potrzebna ci tylko osobista strona WWW po której inni cię rozpoznają – kiedy linkujesz do niej z twojego profilu, sprawdzamy czy ona linkuje doń z powrotem, i wskazujemy to wizualnie."
-    instructions_html: Skopiuj poniższy kod HTML i wklej go na swoją stronę. Potem dodaj link do twojej strony do jednego z wolnych pól na profilu z zakładki "Edytuj profil".
+    hint_html: "<strong>Weryfikacja tożsamości na Truecolorsie jest dla wszystkich,</strong>
+      oparta na otwartych standardach, i darmowa. Potrzebna ci tylko osobista strona
+      WWW po której inni cię rozpoznają – kiedy linkujesz do niej z twojego profilu,
+      sprawdzamy czy ona linkuje doń z powrotem, i wskazujemy to wizualnie."
+    instructions_html: Skopiuj poniższy kod HTML i wklej go na swoją stronę. Potem
+      dodaj link do twojej strony do jednego z wolnych pól na profilu z zakładki "Edytuj
+      profil".
     verification: Weryfikacja
     verified_links: Twoje zweryfikowane linki
     website_verification: Weryfikacja strony internetowej
@@ -2123,7 +2569,8 @@ pl:
       success: Pomyślnie dodano klucz bezpieczeństwa.
     delete: Usuń
     delete_confirmation: Czy jesteś pewien, że chcesz usunąć ten klucz bezpieczeństwa?
-    description_html: Jeśli włączysz <strong>uwierzytelnianie kluczem bezpieczeństwa</strong>, logowanie będzie wymagało użycia jednego z kluczy bezpieczeństwa.
+    description_html: Jeśli włączysz <strong>uwierzytelnianie kluczem bezpieczeństwa</strong>,
+      logowanie będzie wymagało użycia jednego z kluczy bezpieczeństwa.
     destroy:
       error: Wystąpił problem z usuwaniem klucza bezpieczeństwa. Spróbuj ponownie.
       success: Pomyślnie usunięto klucz bezpieczeństwa.
@@ -2131,5 +2578,6 @@ pl:
     nickname_hint: Wprowadź nazwę twojego nowego klucza bezpieczeństwa
     not_enabled: Nie włączyłeś WebAuthn
     not_supported: Twoja przeglądarka nie obsługuje kluczy bezpieczeństwa
-    otp_required: Aby użyć kluczy bezpieczeństwa, najpierw włącz uwierzytelnianie dwuskładnikowe.
+    otp_required: Aby użyć kluczy bezpieczeństwa, najpierw włącz uwierzytelnianie
+      dwuskładnikowe.
     registered_on: Zarejestrowano %{date}

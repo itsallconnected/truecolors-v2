@@ -74,4 +74,5 @@ es-AR:
         webhook:
           attributes:
             events:
-              invalid_permissions: no se pueden incluir eventos para los que no tenés derechos
+              invalid_permissions: no se pueden incluir eventos para los que no tenés
+                derechos

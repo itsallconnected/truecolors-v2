@@ -5,7 +5,8 @@ af:
       announcement:
         scheduled_at: Laat oop om die aankondiging onmiddellik te publiseer
       defaults:
-        autofollow: Mense wat aanmeld deur die uitnodiging te aanvaar, sal jou outomaties volg
+        autofollow: Mense wat aanmeld deur die uitnodiging te aanvaar, sal jou outomaties
+          volg
       featured_tag:
         name: 'Hier is van die hutsetikette wat jy onlangs gebruik het:'
       webhook:
@@ -22,7 +23,8 @@ af:
         site_terms: Privaatheidsbeleid
       interactions:
         must_be_following: Blokkeer kennisgewings van persone wat jy nie volg nie
-        must_be_following_dm: Blokkeer direkte boodskappe van persone wat jy nie volg nie
+        must_be_following_dm: Blokkeer direkte boodskappe van persone wat jy nie volg
+          nie
       tag:
         name: Hutsetiket
       webhook:

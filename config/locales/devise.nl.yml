@@ -3,8 +3,11 @@ nl:
   devise:
     confirmations:
       confirmed: Jouw e-mailadres is succesvol bevestigd.
-      send_instructions: Je ontvangt via e-mail instructies hoe je jouw account kunt bevestigen. Kijk tussen je spam wanneer niks werd ontvangen.
-      send_paranoid_instructions: Als jouw e-mailadres in de database staat, ontvang je via e-mail instructies hoe je jouw account kunt bevestigen. Kijk tussen je spam wanneer niks werd ontvangen.
+      send_instructions: Je ontvangt via e-mail instructies hoe je jouw account kunt
+        bevestigen. Kijk tussen je spam wanneer niks werd ontvangen.
+      send_paranoid_instructions: Als jouw e-mailadres in de database staat, ontvang
+        je via e-mail instructies hoe je jouw account kunt bevestigen. Kijk tussen
+        je spam wanneer niks werd ontvangen.
     failure:
       already_authenticated: Je bent al ingelogd.
       inactive: Jouw account is nog niet geactiveerd.
@@ -12,7 +15,8 @@ nl:
       last_attempt: Je hebt nog één poging over voordat jouw account wordt opgeschort.
       locked: Jouw account is opgeschort.
       not_found_in_database: "%{authentication_keys} of wachtwoord ongeldig."
-      omniauth_user_creation_failure: Fout bij het aanmaken van een account voor deze identiteit.
+      omniauth_user_creation_failure: Fout bij het aanmaken van een account voor deze
+        identiteit.
       pending: Jouw account moet nog steeds worden beoordeeld.
       timeout: Jouw sessie is verlopen, log opnieuw in.
       unauthenticated: Je dient in te loggen of te registreren.
@@ -21,30 +25,47 @@ nl:
       confirmation_instructions:
         action: E-mailadres verifiëren
         action_with_app: Bevestigen en naar %{app} teruggaan
-        explanation: Je hebt een account op %{host} aangemaakt en met één klik kun je deze activeren. Wanneer jij dit account niet hebt aangemaakt, mag je deze e-mail negeren.
-        explanation_when_pending: Je vroeg met dit e-mailadres een uitnodiging aan voor %{host}. Nadat je jouw e-mailadres hebt bevestigd, beoordelen we jouw aanvraag. Je kunt tot dan nog niet inloggen. Wanneer jouw aanvraag wordt afgewezen, worden jouw gegevens verwijderd en hoef je daarna verder niets meer te doen. Wanneer jij dit niet was, kun je deze e-mail negeren.
-        extra_html: Bekijk ook de <a href="%{terms_path}">regels van de Truecolorsserver</a> en <a href="%{policy_path}">onze gebruiksvoorwaarden</a>.
+        explanation: Je hebt een account op %{host} aangemaakt en met één klik kun
+          je deze activeren. Wanneer jij dit account niet hebt aangemaakt, mag je
+          deze e-mail negeren.
+        explanation_when_pending: Je vroeg met dit e-mailadres een uitnodiging aan
+          voor %{host}. Nadat je jouw e-mailadres hebt bevestigd, beoordelen we jouw
+          aanvraag. Je kunt tot dan nog niet inloggen. Wanneer jouw aanvraag wordt
+          afgewezen, worden jouw gegevens verwijderd en hoef je daarna verder niets
+          meer te doen. Wanneer jij dit niet was, kun je deze e-mail negeren.
+        extra_html: Bekijk ook de <a href="%{terms_path}">regels van de Truecolorsserver</a>
+          en <a href="%{policy_path}">onze gebruiksvoorwaarden</a>.
         subject: 'Truecolors: E-mail bevestigen voor %{instance}'
         title: E-mailadres verifiëren
       email_changed:
         explanation: 'Het e-mailadres van jouw account is gewijzigd naar:'
-        extra: Wanneer jij jouw e-mailadres niet hebt gewijzigd, heeft iemand zich waarschijnlijk toegang tot jouw account verschaft. Verander onmiddellijk jouw wachtwoord of neem contact op met de beheerder van jouw Truecolorsserver wanneer je niet meer kunt inloggen.
+        extra: Wanneer jij jouw e-mailadres niet hebt gewijzigd, heeft iemand zich
+          waarschijnlijk toegang tot jouw account verschaft. Verander onmiddellijk
+          jouw wachtwoord of neem contact op met de beheerder van jouw Truecolorsserver
+          wanneer je niet meer kunt inloggen.
         subject: 'Truecolors: E-mailadres is veranderd'
         title: Nieuw e-mailadres
       password_change:
         explanation: Het wachtwoord van dit account is gewijzigd.
-        extra: Wanneer jij jouw wachtwoord niet hebt gewijzigd, heeft iemand zich waarschijnlijk toegang tot jouw account verschaft. Verander onmiddellijk jouw wachtwoord of neem contact op met de beheerder van jouw Truecolorsserver wanneer je niet meer kunt inloggen.
+        extra: Wanneer jij jouw wachtwoord niet hebt gewijzigd, heeft iemand zich
+          waarschijnlijk toegang tot jouw account verschaft. Verander onmiddellijk
+          jouw wachtwoord of neem contact op met de beheerder van jouw Truecolorsserver
+          wanneer je niet meer kunt inloggen.
         subject: 'Truecolors: Wachtwoord veranderd'
         title: Wachtwoord gewijzigd
       reconfirmation_instructions:
         explanation: Bevestig jouw nieuw e-mailadres om deze te wijzigen.
-        extra: Wanneer jij deze wijziging niet hebt uitgevoerd, mag je deze e-mail negeren. Het e-mailadres van jouw Truecolorsaccount wordt pas daadwerkelijk gewijzigd totdat je de link hierboven aanklikt.
+        extra: Wanneer jij deze wijziging niet hebt uitgevoerd, mag je deze e-mail
+          negeren. Het e-mailadres van jouw Truecolorsaccount wordt pas daadwerkelijk
+          gewijzigd totdat je de link hierboven aanklikt.
         subject: 'Truecolors: Bevestig het e-mailadres voor %{instance}'
         title: E-mailadres verifiëren
       reset_password_instructions:
         action: Wachtwoord wijzigen
         explanation: Jij hebt een nieuw wachtwoord voor jouw account aangevraagd.
-        extra: Wanneer jij dit niet hebt aangevraagd, mag je deze e-mail negeren. Jouw wachtwoord wordt pas gewijzigd nadat je de link hierboven hebt aangeklikt en een nieuw wachtwoord aanmaakt.
+        extra: Wanneer jij dit niet hebt aangevraagd, mag je deze e-mail negeren.
+          Jouw wachtwoord wordt pas gewijzigd nadat je de link hierboven hebt aangeklikt
+          en een nieuw wachtwoord aanmaakt.
         subject: 'Truecolors: Wachtwoord opnieuw instellen'
         title: Wachtwoord opnieuw instellen
       two_factor_disabled:
@@ -53,7 +74,8 @@ nl:
         subtitle: Tweestapsverificatie voor je account is uitgeschakeld.
         title: Tweestapsverificatie uitgeschakeld
       two_factor_enabled:
-        explanation: Je hebt een door de authenticatie-app gegeneerde toegangscode nodig om in te loggen.
+        explanation: Je hebt een door de authenticatie-app gegeneerde toegangscode
+          nodig om in te loggen.
         subject: 'Truecolors: Tweestapsverificatie ingeschakeld'
         subtitle: Tweestapsverificatie voor je account is ingeschakeld.
         title: Tweestapsverificatie ingeschakeld
@@ -74,12 +96,15 @@ nl:
           subject: 'Truecolors: Beveiligingssleutel verwijderd'
           title: Een van jouw beveiligingssleutels is verwijderd
       webauthn_disabled:
-        explanation: Verificatie met beveiligingssleutels is uitgeschakeld voor je account.
-        extra: Het is nu alleen mogelijk om in te loggen met een door de authenticatie-app gegeneerde toegangscode als extra controle.
+        explanation: Verificatie met beveiligingssleutels is uitgeschakeld voor je
+          account.
+        extra: Het is nu alleen mogelijk om in te loggen met een door de authenticatie-app
+          gegeneerde toegangscode als extra controle.
         subject: 'Truecolors: Verificatie met beveiligingssleutels is uitgeschakeld'
         title: Beveiligingssleutels uitgeschakeld
       webauthn_enabled:
-        explanation: Verificatie met beveiligingssleutels is ingeschakeld voor je account.
+        explanation: Verificatie met beveiligingssleutels is ingeschakeld voor je
+          account.
         extra: Jouw beveiligingssleutel kan nu gebruikt worden om in te loggen.
         subject: 'Truecolors: Verificatie met beveiligingssleutels is ingeschakeld'
         title: Beveiligingssleutels ingeschakeld
@@ -87,27 +112,39 @@ nl:
       failure: Kon je niet inloggen met jouw %{kind} account, omdat “%{reason}”.
       success: Succesvol met jouw %{kind} account ingelogd.
     passwords:
-      no_token: Je kunt deze pagina niet benaderen zonder dat je een e-mail om je wachtwoord opnieuw in te stellen hebt ontvangen.
-      send_instructions: Je ontvangt via e-mail instructies hoe je jouw wachtwoord opnieuw moet instellen. Kijk tussen je spam wanneer niks werd ontvangen.
-      send_paranoid_instructions: Als jouw e-mailadres in de database staat, ontvang je via e-mail instructies hoe je jouw wachtwoord opnieuw kunt instellen. Kijk tussen je spam wanneer niks werd ontvangen.
+      no_token: Je kunt deze pagina niet benaderen zonder dat je een e-mail om je
+        wachtwoord opnieuw in te stellen hebt ontvangen.
+      send_instructions: Je ontvangt via e-mail instructies hoe je jouw wachtwoord
+        opnieuw moet instellen. Kijk tussen je spam wanneer niks werd ontvangen.
+      send_paranoid_instructions: Als jouw e-mailadres in de database staat, ontvang
+        je via e-mail instructies hoe je jouw wachtwoord opnieuw kunt instellen. Kijk
+        tussen je spam wanneer niks werd ontvangen.
       updated: Jouw wachtwoord is gewijzigd. Je bent nu ingelogd.
       updated_not_active: Jouw wachtwoord is gewijzigd.
     registrations:
       destroyed: Jouw account is succesvol verwijderd. Wellicht tot ziens.
-      update_needs_confirmation: Je hebt je e-mailadres succesvol gewijzigd, maar we moeten je nieuwe mailadres nog bevestigen. Controleer jouw e-mail en klik op de link in de mail om jouw e-mailadres te bevestigen. Kijk tussen je spam wanneer niks werd ontvangen.
+      update_needs_confirmation: Je hebt je e-mailadres succesvol gewijzigd, maar
+        we moeten je nieuwe mailadres nog bevestigen. Controleer jouw e-mail en klik
+        op de link in de mail om jouw e-mailadres te bevestigen. Kijk tussen je spam
+        wanneer niks werd ontvangen.
       updated: Jouw accountgegevens zijn opgeslagen.
     sessions:
       already_signed_out: Succesvol uitgelogd.
       signed_in: Je bent succesvol ingelogd.
       signed_out: Je bent succesvol uitgelogd.
     unlocks:
-      send_instructions: Je ontvangt via e-mail instructies hoe je het opschorten van jouw account ongedaan kunt maken. Kijk tussen je spam wanneer niks werd ontvangen.
-      send_paranoid_instructions: Als jouw e-mailadres in de database staat, ontvang je via e-mail instructies hoe je het opschorten van jouw account ongedaan kunt maken. Kijk tussen je spam wanneer niks werd ontvangen.
+      send_instructions: Je ontvangt via e-mail instructies hoe je het opschorten
+        van jouw account ongedaan kunt maken. Kijk tussen je spam wanneer niks werd
+        ontvangen.
+      send_paranoid_instructions: Als jouw e-mailadres in de database staat, ontvang
+        je via e-mail instructies hoe je het opschorten van jouw account ongedaan
+        kunt maken. Kijk tussen je spam wanneer niks werd ontvangen.
       unlocked: Jouw account is niet meer opgeschort. Je kunt nu weer inloggen.
   errors:
     messages:
       already_confirmed: is reeds bevestigd
-      confirmation_period_expired: moet worden bevestigd binnen %{period}, probeer het nog een keer
+      confirmation_period_expired: moet worden bevestigd binnen %{period}, probeer
+        het nog een keer
       expired: is verlopen, vraag een nieuwe aan
       not_found: niet gevonden
       not_locked: is niet opgeschort

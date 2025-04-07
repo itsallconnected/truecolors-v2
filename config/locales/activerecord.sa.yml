@@ -56,4 +56,5 @@ sa:
         webhook:
           attributes:
             events:
-              invalid_permissions: यस्या घटनाया अधिकारा न सन्ति ताः परिग्रहितुं न शक्यन्ते।
+              invalid_permissions: यस्या घटनाया अधिकारा न सन्ति ताः परिग्रहितुं न
+                शक्यन्ते।

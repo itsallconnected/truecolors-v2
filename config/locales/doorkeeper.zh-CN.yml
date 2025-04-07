@@ -81,7 +81,8 @@ zh-CN:
     errors:
       messages:
         access_denied: 资源所有者或验证服务器拒绝了此请求
-        credential_flow_not_configured: 由于 Doorkeeper.configure.resource_owner_from_credentials 尚未配置，应用验证授权流程失败。
+        credential_flow_not_configured: 由于 Doorkeeper.configure.resource_owner_from_credentials
+          尚未配置，应用验证授权流程失败。
         invalid_client: 由于应用信息未知、未提交认证信息或使用了不支持的认证方式，认证失败
         invalid_code_challenge_method: 代码验证方法必须是 S256，不支持明文。
         invalid_grant: 授权方式无效、过期或已被撤销、与授权请求中的回调地址不一致，或使用了其他应用的回调地址
@@ -96,7 +97,8 @@ zh-CN:
           expired: 访问令牌已过期
           revoked: 访问令牌已被吊销
           unknown: 访问令牌无效
-        resource_owner_authenticator_not_configured: 由于 Doorkeeper.configure.resource_owner_authenticator 尚未配置，查找资源所有者失败。
+        resource_owner_authenticator_not_configured: 由于 Doorkeeper.configure.resource_owner_authenticator
+          尚未配置，查找资源所有者失败。
         server_error: 服务器异常，无法处理请求
         temporarily_unavailable: 服务器维护中或负载过高，暂时无法处理请求
         unauthorized_client: 未授权的应用，请求无法执行

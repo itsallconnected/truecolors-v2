@@ -5,41 +5,59 @@ ast:
       account:
         note: 'Pues @mentar a otros perfiles o poner #etiquetes.'
       admin_account_action:
-        text_html: Opcional. Pues usar la sintaxis de los artículos y amestar <a href="%{path}">alvertencies preconfiguraes</a> p'aforrar tiempu
+        text_html: Opcional. Pues usar la sintaxis de los artículos y amestar <a href="%{path}">alvertencies
+          preconfiguraes</a> p'aforrar tiempu
         type_html: Escueyi qué facer con <strong>%{acct}</strong>
         types:
-          none: Usa esta opción pa unviar una alvertencia al perfil, ensin aicionar nenguna otra aición.
+          none: Usa esta opción pa unviar una alvertencia al perfil, ensin aicionar
+            nenguna otra aición.
       announcement:
         all_day: Al marcar la opción, namás apaecen les dates del intervalu de tiempu
         ends_at: Opcional. L'anunciu dexa de tar espublizáu na data qu'indiques
         scheduled_at: Dexa esti campu como ta pa espublizar l'anunciu nel intre
-        starts_at: Opcional. En casu de que l'anunciu tea arreyáu a un intervalu de tiempu específicu
-        text: Pues usar la sintaxis de los artículos. Ten en cuenta l'espaciu que l'anunciu va ocupar na pantalla del usuariu/a
+        starts_at: Opcional. En casu de que l'anunciu tea arreyáu a un intervalu de
+          tiempu específicu
+        text: Pues usar la sintaxis de los artículos. Ten en cuenta l'espaciu que
+          l'anunciu va ocupar na pantalla del usuariu/a
       defaults:
-        autofollow: Les persones que se rexistren pente la invitación van siguite automáticamente
-        bot: Avisa a otres persones de qu'esta cuenta fai principalmente aiciones automatizaes y de que ye posible que nun tean supervisaes
-        digest: Namás s'unvia dempués d'un periodu llongu d'inactividá y namás si recibiesti dalgún mensaxe personal demientres la to ausencia
-        irreversible: Los artículos peñeraos desapaecen de forma irreversible, magar que la peñera se quite dempués
-        locale: La llingua de la interfaz, los mensaxes per corréu electrónicu y los avisos push
+        autofollow: Les persones que se rexistren pente la invitación van siguite
+          automáticamente
+        bot: Avisa a otres persones de qu'esta cuenta fai principalmente aiciones
+          automatizaes y de que ye posible que nun tean supervisaes
+        digest: Namás s'unvia dempués d'un periodu llongu d'inactividá y namás si
+          recibiesti dalgún mensaxe personal demientres la to ausencia
+        irreversible: Los artículos peñeraos desapaecen de forma irreversible, magar
+          que la peñera se quite dempués
+        locale: La llingua de la interfaz, los mensaxes per corréu electrónicu y los
+          avisos push
         password: Usa polo menos 8 caráuteres
-        setting_aggregate_reblogs: Nun amuesa los artículos compartíos nuevos que yá se compartieren de recién (namás afeuta a los artículos compartíos d'agora)
-        setting_always_send_emails: Los avisos nun se suelen unviar per corréu electrónicu si uses activamente Truecolors
-        setting_default_sensitive: El conteníu multimedia sensible escuéndrese por defeutu y pue amosase al calcar nelli
+        setting_aggregate_reblogs: Nun amuesa los artículos compartíos nuevos que
+          yá se compartieren de recién (namás afeuta a los artículos compartíos d'agora)
+        setting_always_send_emails: Los avisos nun se suelen unviar per corréu electrónicu
+          si uses activamente Truecolors
+        setting_default_sensitive: El conteníu multimedia sensible escuéndrese por
+          defeutu y pue amosase al calcar nelli
         setting_display_media_default: Escondelu cuando se marque como sensible
         setting_display_media_hide_all: Escondelu siempre
         setting_display_media_show_all: Amosalu siempre
-        setting_use_blurhash: Los dilíos básense nos colores del conteníu multimedia escondíu mas desenfonca los detalles
+        setting_use_blurhash: Los dilíos básense nos colores del conteníu multimedia
+          escondíu mas desenfonca los detalles
       featured_tag:
         name: 'Equí tán dalgunes de les etiquetes qu''usesti apocayá:'
       form_admin_settings:
         closed_registrations_message: Apaez cuando'l rexistru ta desactiváu
         custom_css: Pues aplicar estilos personalizaos a la versión web de Truecolors.
         mascot: Anula la ilustración na interfaz web avanzada.
-        require_invite_text: Cuando los rexistros riquen una aprobación manual, el campu «¿Por qué quies xunite?» vuélvese obligatoriu
-        site_extended_description: Cualesquier tipu d'información adicional que pueda ser útil pa visitantes y pa perfiles rexistraos. El testu pue estructurase cola sintaxis de Truecolors.
-        site_short_description: Un descripción curtia qu'ayuda a identificar de forma única al sirvidor. ¿Quién lu lleva?, ¿pa quién ye?
+        require_invite_text: Cuando los rexistros riquen una aprobación manual, el
+          campu «¿Por qué quies xunite?» vuélvese obligatoriu
+        site_extended_description: Cualesquier tipu d'información adicional que pueda
+          ser útil pa visitantes y pa perfiles rexistraos. El testu pue estructurase
+          cola sintaxis de Truecolors.
+        site_short_description: Un descripción curtia qu'ayuda a identificar de forma
+          única al sirvidor. ¿Quién lu lleva?, ¿pa quién ye?
         theme: L'estilu que los visitantes y los perfiles nuevos usen.
-        trends: Les tendencies amuesen artículos, etiquetes y noticies que tean ganando popularidá nesti sirvidor.
+        trends: Les tendencies amuesen artículos, etiquetes y noticies que tean ganando
+          popularidá nesti sirvidor.
       form_challenge:
         current_password: Tas entrando a una área segura
       imports:
@@ -48,13 +66,17 @@ ast:
         text: Esto va ayudanos a revisar la to solicitú
       ip_block:
         comment: Opcional. Un recordatoriu de por qué amestesti esta norma.
-        expires_in: Les direiciones IP son un recursu finitu, suelen compartise y cambiar de manes. Por esti motivu, nun s'aconseyen los bloqueos indefiníos de direiciones IP.
+        expires_in: Les direiciones IP son un recursu finitu, suelen compartise y
+          cambiar de manes. Por esti motivu, nun s'aconseyen los bloqueos indefiníos
+          de direiciones IP.
         severities:
           no_access: Bloquia l'accesu a tolos recursos
           sign_up_block: Fai que nun se puedan rexistrar cuentes nueves
-          sign_up_requires_approval: Fai que se tengan de revisar les cuentes rexistraes nueves
+          sign_up_requires_approval: Fai que se tengan de revisar les cuentes rexistraes
+            nueves
       user:
-        chosen_languages: Namás los artículos de les llingües que marques son los que van apaecer nes llinies de tiempu públiques
+        chosen_languages: Namás los artículos de les llingües que marques son los
+          que van apaecer nes llinies de tiempu públiques
     labels:
       account:
         discoverable: Destacar el perfil y los artículos nos algoritmos de descubrimientu
@@ -101,25 +123,32 @@ ast:
         password: Contraseña
         phrase: Pallabra clave o fras
         setting_advanced_layout: Activar la interfaz web avanzada
-        setting_aggregate_reblogs: Agrupar los artículos compartíos nes llinies de tiempu
+        setting_aggregate_reblogs: Agrupar los artículos compartíos nes llinies de
+          tiempu
         setting_always_send_emails: Unviar siempre los avisos per corréu electrónicu
         setting_auto_play_gif: Reproducir automáticamente los GIFs
-        setting_boost_modal: Amosar el diálogu de confirmación enantes de compartir una publicación
+        setting_boost_modal: Amosar el diálogu de confirmación enantes de compartir
+          una publicación
         setting_default_language: Llingua de los artículos
         setting_default_privacy: Privacidá de los artículos
         setting_default_sensitive: Marcar siempre tol conteníu como sensible
-        setting_delete_modal: Amosar el diálogu de confirmación enantes de desaniciar una publicación
-        setting_disable_hover_cards: Desactivar la previsualización de perfiles al pasar el mur penriba
+        setting_delete_modal: Amosar el diálogu de confirmación enantes de desaniciar
+          una publicación
+        setting_disable_hover_cards: Desactivar la previsualización de perfiles al
+          pasar el mur penriba
         setting_disable_swiping: Desactivar el movimientu de desplazamientu
         setting_display_media: Conteníu multimedia
-        setting_expand_spoilers: Espander siempre los artículos marcaos con alvertencies de conteníu
+        setting_expand_spoilers: Espander siempre los artículos marcaos con alvertencies
+          de conteníu
         setting_hide_network: Esconder les cuentes que sigas y te sigan
         setting_reduce_motion: Amenorgar el movimientu de les animaciones
         setting_system_font_ui: Usar la fonte predeterminada del sistema
         setting_theme: Estilu del sitiu
         setting_trends: Amosar les tendencies de güei
-        setting_unfollow_modal: Amosar el diálogu de confirmación enantes de dexar de siguir a daquién
-        setting_use_blurhash: Facer que'l conteníu multimedia escondíu tenga dilíos coloríos
+        setting_unfollow_modal: Amosar el diálogu de confirmación enantes de dexar
+          de siguir a daquién
+        setting_use_blurhash: Facer que'l conteníu multimedia escondíu tenga dilíos
+          coloríos
         setting_use_pending_items: Mou lentu
         severity: Gravedá
         sign_in_token_attempt: Códigu de seguranza
@@ -132,7 +161,8 @@ ast:
         name: Etiqueta
       form_admin_settings:
         backups_retention_period: Periodu de retención de los archivos de los perfiles
-        closed_registrations_message: Mensaxe personalizáu cuando'l rexistru nun ta disponible
+        closed_registrations_message: Mensaxe personalizáu cuando'l rexistru nun ta
+          disponible
         media_cache_retention_period: Periodu de retención de la caché multimedia
         registrations_mode: Quién pue rexistrase
         require_invite_text: Riquir un motivu pa rexistrase
@@ -143,13 +173,15 @@ ast:
         site_title: Nome del sirvidor
         theme: Estilu predetermináu
         thumbnail: Miniatura del sirvidor
-        timeline_preview: Permitir l'accesu ensin autenticar a les llinies de tiempu públiques
+        timeline_preview: Permitir l'accesu ensin autenticar a les llinies de tiempu
+          públiques
         trendable_by_default: Permitir tendencies ensin revisión previa
         trends: Activar les tendencies
       interactions:
         must_be_follower: Bloquiar los avisos de los perfiles que nun te siguen
         must_be_following: Bloquiar los avisos de los perfiles que nun sigues
-        must_be_following_dm: Bloquiar los mensaxes direutos de los perfiles que nun sigues
+        must_be_following_dm: Bloquiar los mensaxes direutos de los perfiles que nun
+          sigues
       invite_request:
         text: "¿Por qué quies xunite?"
       ip_block:

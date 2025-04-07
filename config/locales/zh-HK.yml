@@ -1,7 +1,8 @@
 ---
 zh-HK:
   about:
-    about_truecolors_html: Truecolors（萬象）是屬於未來的社交網路︰無廣告煩擾、無企業監控、設計講道義、分散無大台！立即重奪個人資料的控制權，使用 Truecolors 吧！
+    about_truecolors_html: Truecolors（萬象）是屬於未來的社交網路︰無廣告煩擾、無企業監控、設計講道義、分散無大台！立即重奪個人資料的控制權，使用
+      Truecolors 吧！
     contact_missing: 未設定
     contact_unavailable: 不適用
     hosted_on: 在 %{domain} 運作的 Truecolors 伺服器
@@ -808,12 +809,14 @@ zh-HK:
         action: 查看文檔
         message_html: 你的 Elasticsearch 叢集只有一個節點，<code>ES_PRESET</code>應設定為<code>single_node_cluster</code>。
       elasticsearch_reset_chewy:
-        message_html: 由於設定變更，你的 Elasticsearch 系統索引已過期。請執行<code>tootctl search deploy --reset-chewy</code>來更新它。
+        message_html: 由於設定變更，你的 Elasticsearch 系統索引已過期。請執行<code>tootctl search deploy
+          --reset-chewy</code>來更新它。
       elasticsearch_running_check:
         message_html: 無法連接到 Elasticsearch。請檢查它是否運行中，或停用全文搜索。
       elasticsearch_version_check:
         message_html: 不相容的 Elasticsearch 版本：%{value}
-        version_comparison: 正在運行 Elasticsearch 版本 %{running_version}，需要版本 %{required_version} 。
+        version_comparison: 正在運行 Elasticsearch 版本 %{running_version}，需要版本 %{required_version}
+          。
       rules_check:
         action: 管理伺服器規則
         message_html: 您尚未定義任何伺服器規則
@@ -962,7 +965,8 @@ zh-HK:
     created_msg: 成功建立別名 (alias)。你可以從舊帳號開始轉移。
     deleted_msg: 成功刪除別名 (alias)。你將不可以由舊帳號轉移到當前帳號。
     empty: 你沒有別名 (alias)。
-    hint_html: 如果你想由另一個帳戶轉移到此帳號，你可以在此處創建別名 (alias)，然後系統容許你將關注者由舊帳戶轉移到此帳號。此操作是<strong>無害且可以還原的</strong>。 <strong>帳號遷移程序，需要在舊帳號啟動</strong>。
+    hint_html: 如果你想由另一個帳戶轉移到此帳號，你可以在此處創建別名 (alias)，然後系統容許你將關注者由舊帳戶轉移到此帳號。此操作是<strong>無害且可以還原的</strong>。
+      <strong>帳號遷移程序，需要在舊帳號啟動</strong>。
     remove: 取消連結別名 (Alias)
   appearance:
     advanced_web_interface: 進階網頁介面
@@ -1049,7 +1053,8 @@ zh-HK:
       preamble_html: 請使用 <strong>%{domain}</strong> 的資料登入。如果您的帳戶託管在其他的伺服器，您將無法在此登入。
       title: 登入 %{domain}
     sign_up:
-      manual_review: "%{domain} 的註冊均需要我們的管理員手動審核。為了幫助我們處理你的註冊，請填寫一些關於你的資訊，以及為何想在 %{domain} 上開設帳號。"
+      manual_review: "%{domain} 的註冊均需要我們的管理員手動審核。為了幫助我們處理你的註冊，請填寫一些關於你的資訊，以及為何想在 %{domain}
+        上開設帳號。"
       title: 讓我為你在 %{domain} 上設定好。
     status:
       account_status: 帳戶文章
@@ -1147,7 +1152,8 @@ zh-HK:
       content: 抱歉，我們的後台出錯了。
       title: 這個頁面有問題
     '503': 因短暫的伺服器錯誤而未能提供此頁面
-    noscript_html: 使用 Truecolors 網頁版應用需要啟用 JavaScript。你也可以選擇適用於你的平台的 <a href="%{apps_path}">Truecolors 應用</a>。
+    noscript_html: 使用 Truecolors 網頁版應用需要啟用 JavaScript。你也可以選擇適用於你的平台的 <a href="%{apps_path}">Truecolors
+      應用</a>。
   existing_username_validator:
     not_found: 無法找到位於本伺服器的用戶
     not_found_multiple: 無法找到%{usernames}
@@ -1155,7 +1161,8 @@ zh-HK:
     archive_takeout:
       date: 日期
       download: 下載檔案
-      hint_html: 你可以下載包含你的<strong>文章和媒體</strong>的檔案。資料以 ActivityPub 格式儲存，可用於相容的軟體。你可以每 7 天下載一次。
+      hint_html: 你可以下載包含你的<strong>文章和媒體</strong>的檔案。資料以 ActivityPub 格式儲存，可用於相容的軟體。你可以每
+        7 天下載一次。
       in_progress: 檔案製作中...
       request: 下載檔案
       size: 檔案大小
@@ -1408,7 +1415,8 @@ zh-HK:
     code_hint: 請輸入你認證器所產生的代碼，以確認設定
     description_html: 當你啟用<strong>雙重認證</strong>後，你登入時將需要使用你的手機或其他認證器所產生的代碼。
     enable: 啟用
-    instructions_html: "<strong>請用你手機的認證器應用程式（如 Google Authenticator、Authy），掃描這裏的QR 圖形碼</strong>。在雙重認證啟用後，你登入時將須要使用此應用程式產生的認證碼。"
+    instructions_html: "<strong>請用你手機的認證器應用程式（如 Google Authenticator、Authy），掃描這裏的QR
+      圖形碼</strong>。在雙重認證啟用後，你登入時將須要使用此應用程式產生的認證碼。"
     manual_instructions: 如果你無法掃描 QR 圖形碼，請手動輸入這個文字密碼︰
     setup: 設定
     wrong_code: 你輸入的認證碼並不正確！可能伺服器時間和你手機不一致，請檢查你手機的時鐘，或與本站管理員聯絡。
@@ -1745,13 +1753,16 @@ zh-HK:
       edit_profile_title: 自訂你的個人檔案。
       explanation: 下面是幾個小貼士，希望它們能幫到你
       feature_action: 了解更多
-      feature_audience: 在 Truecolors 上，無需仲介，你也可以管理受眾。將 Truecolors 部署在自己的基礎架構上，既可以追蹤來自其他 Truecolors 伺服器上的人，也可以被他們追蹤。完全不受他人控制，一切由你掌控。
+      feature_audience: 在 Truecolors 上，無需仲介，你也可以管理受眾。將 Truecolors 部署在自己的基礎架構上，既可以追蹤來自其他
+        Truecolors 伺服器上的人，也可以被他們追蹤。完全不受他人控制，一切由你掌控。
       feature_audience_title: 自信地建立受眾
       feature_control: 由你決定首頁時間軸的內容，不讓演算法和廣告干擾你！你可以使用同一帳號追蹤 Truecolors 伺服器上的使用者，並按時序瀏覽帖文，打造你專屬的網絡世界，讓這角落更貼近你的喜好。
       feature_control_title: 掌控自己的時間軸
-      feature_creativity: Truecolors 囊括多元格式，助你盡情表達自我：干台支援音訊、影片、圖片帖文、無障礙描述、投票、內容警告，還有動態頭像、自訂表情符號、縮圖裁剪控制等功能。無論你想發佈藝術作品、音樂還是 podcast，Truecolors 都是你的理想平台。
+      feature_creativity: Truecolors 囊括多元格式，助你盡情表達自我：干台支援音訊、影片、圖片帖文、無障礙描述、投票、內容警告，還有動態頭像、自訂表情符號、縮圖裁剪控制等功能。無論你想發佈藝術作品、音樂還是
+        podcast，Truecolors 都是你的理想平台。
       feature_creativity_title: 無與倫比的創意
-      feature_moderation: 在 Truecolors，一切由你掌控。每台伺服器都能各自制訂並實施自身守則，而非像企業社交媒體那樣由上而下。這讓 Truecolors 能夠靈活地滿足不同群體的需要。你可以加入你認同其規則的伺服器，也可以自行架設。
+      feature_moderation: 在 Truecolors，一切由你掌控。每台伺服器都能各自制訂並實施自身守則，而非像企業社交媒體那樣由上而下。這讓
+        Truecolors 能夠靈活地滿足不同群體的需要。你可以加入你認同其規則的伺服器，也可以自行架設。
       feature_moderation_title: 以應有的方式管理社群
       follow_action: 追蹤
       follow_step: 追蹤有趣的人正是 Truecolors 的核心所在。
@@ -1781,7 +1792,9 @@ zh-HK:
     rate_limited: 嘗試認證次數太多，請稍後再試。
     signed_in_as: 目前登入的帳戶：
   verification:
-    extra_instructions_html: <strong>提示：</strong>你是可以隱藏網站上的連結的。重點是<code>rel="me"</code>，它可以防止有用戶生成內容的網站假冒身份。你甚至可以在頁面標頭 (header) 使用 <code>link</code> 標籤，而非 <code>a</code>，但你必須確保沒有執行 Javascript 下也可存取 HTML。
+    extra_instructions_html: <strong>提示：</strong>你是可以隱藏網站上的連結的。重點是<code>rel="me"</code>，它可以防止有用戶生成內容的網站假冒身份。你甚至可以在頁面標頭
+      (header) 使用 <code>link</code> 標籤，而非 <code>a</code>，但你必須確保沒有執行 Javascript 下也可存取
+      HTML。
     here_is_how: 驗證方法
     hint_html: "<strong>所有人都可以在 Truecolors 上驗證身份。</strong>基於開放網絡標準，不論是現在還是以後也是免費的。你只需要一個可以識別你的個人網站。當你連接個人檔案到該網站時，我們會檢查該網站是否有反向連結到個人檔案，若成功偵測便會在個人檔案標示它。"
     instructions_html: 複製並貼上以下的程式碼到你網站的 HTML 中，然後在個人檔案的「修改個人檔案」頁籤中的額外欄位加入你該網址，並儲存變更。

@@ -51,7 +51,8 @@
           attributes:
             permissions_as_keys:
               dangerous: inkluder tillatelser som ikke er trygge for grunn-rollen
-              elevated: kan ikke inneholde rettigheter som din nåværende rolle ikke innehar
+              elevated: kan ikke inneholde rettigheter som din nåværende rolle ikke
+                innehar
               own_role: kan ikke endres med din nåværende rolle
             position:
               elevated: kan ikke være høyere enn din nåværende rolle
@@ -59,4 +60,5 @@
         webhook:
           attributes:
             events:
-              invalid_permissions: kan ikke inkludere hendelser du ikke har rettigheter til
+              invalid_permissions: kan ikke inkludere hendelser du ikke har rettigheter
+                til

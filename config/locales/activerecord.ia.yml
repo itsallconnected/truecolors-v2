@@ -68,4 +68,5 @@ ia:
         webhook:
           attributes:
             events:
-              invalid_permissions: non pote includer eventos pro le quales tu non ha le derectos
+              invalid_permissions: non pote includer eventos pro le quales tu non
+                ha le derectos

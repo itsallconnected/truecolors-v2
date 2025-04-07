@@ -33,7 +33,8 @@ an:
       help:
         native_redirect_uri: Utilice %{native_redirect_uri} pa prebas locals
         redirect_uri: Utilice una linia per URI
-        scopes: Desepare los ambitos con espacios. Lo deixe en blanco pa fer servir los ambitos per defecto.
+        scopes: Desepare los ambitos con espacios. Lo deixe en blanco pa fer servir
+          los ambitos per defecto.
       index:
         application: Aplicación
         callback_url: URL de callback
@@ -71,7 +72,9 @@ an:
         revoke: Ye seguro?
       index:
         authorized_at: Autorizau lo %{date}
-        description_html: Estas son aplicacions que pueden acceder ta la tuya cuenta usando la API. Si i hai aplicacions que no se reconoixen aquí, u una aplicación no funciona correctament, puetz revocar lo suyo acceso.
+        description_html: Estas son aplicacions que pueden acceder ta la tuya cuenta
+          usando la API. Si i hai aplicacions que no se reconoixen aquí, u una aplicación
+          no funciona correctament, puetz revocar lo suyo acceso.
         last_used_at: Zaguer uso lo %{date}
         never_used: Nunca usau
         scopes: Permisos
@@ -79,27 +82,44 @@ an:
         title: Las suyas aplicacions autorizadas
     errors:
       messages:
-        access_denied: Lo propietario d'o recurso u servidor d'autorización denegó la petición.
-        credential_flow_not_configured: Las credencials de clau d'o propietario d'o recurso falló a causa que Doorkeeper.configure.resource_owner_from_credentials ye sin configurar.
-        invalid_client: L'autentificación d'o client falló debiu u a que ye un client desconoixiu u no ye incluyius l'autentificación d'o client u lo metodo d'autentificación no ye confirmau.
-        invalid_grant: La concesión d'autorización ofrida ye invalida, venció, se revocó, no coincide con a URI de redirección utilizada en a petición d'autorización, u estió emitida pa unatro client.
+        access_denied: Lo propietario d'o recurso u servidor d'autorización denegó
+          la petición.
+        credential_flow_not_configured: Las credencials de clau d'o propietario d'o
+          recurso falló a causa que Doorkeeper.configure.resource_owner_from_credentials
+          ye sin configurar.
+        invalid_client: L'autentificación d'o client falló debiu u a que ye un client
+          desconoixiu u no ye incluyius l'autentificación d'o client u lo metodo d'autentificación
+          no ye confirmau.
+        invalid_grant: La concesión d'autorización ofrida ye invalida, venció, se
+          revocó, no coincide con a URI de redirección utilizada en a petición d'autorización,
+          u estió emitida pa unatro client.
         invalid_redirect_uri: La URI de redirección incluyida no ye valida.
         invalid_request:
           missing_param: 'Falta este parametro requeriu: %{value}.'
-          request_not_authorized: La solicitut ha d'estar autorizada. I hai un parametro requeriu pa autorizar la solicitut que falta u no ye valido.
-          unknown: Falta un parametro requeriu en a solicitut, u esta incluye una valor no admitida de parametro, u bien ye mal formulada.
-        invalid_resource_owner: Las credencials proporcionadas d'o propietario d'o recurso no son validas, u lo propietario d'o recurso no puede estar trobau
+          request_not_authorized: La solicitut ha d'estar autorizada. I hai un parametro
+            requeriu pa autorizar la solicitut que falta u no ye valido.
+          unknown: Falta un parametro requeriu en a solicitut, u esta incluye una
+            valor no admitida de parametro, u bien ye mal formulada.
+        invalid_resource_owner: Las credencials proporcionadas d'o propietario d'o
+          recurso no son validas, u lo propietario d'o recurso no puede estar trobau
         invalid_scope: L'ambito pediu ye invalido, desconoixiu u erronio.
         invalid_token:
           expired: Lo autentificador d'acceso expiró
           revoked: Lo autentificador d'acceso estió revocado
           unknown: Lo autentificador d'acceso ye invalido
-        resource_owner_authenticator_not_configured: Lo propietario d'o recurso falló a causa que Doorkeeper.configure.resource_owner_authenticator ye sin configurar.
-        server_error: Lo servidor de l'autorización entontró una condición inasperada que le impidió complir con a solicitut.
-        temporarily_unavailable: Lo servidor de l'autorización ye actualment incapaz de maniar la petición a causa d'una sobrecarga temporal u un treballo de mantenimiento d'o servidor.
-        unauthorized_client: Lo client no ye autorizau a realizar esta petición utilizando este metodo.
-        unsupported_grant_type: Lo tipo de concesión d'autorización no ye suportau per lo servidor d'autorización.
-        unsupported_response_type: Lo servidor d'autorización no suporta este tipo de respuesta.
+        resource_owner_authenticator_not_configured: Lo propietario d'o recurso falló
+          a causa que Doorkeeper.configure.resource_owner_authenticator ye sin configurar.
+        server_error: Lo servidor de l'autorización entontró una condición inasperada
+          que le impidió complir con a solicitut.
+        temporarily_unavailable: Lo servidor de l'autorización ye actualment incapaz
+          de maniar la petición a causa d'una sobrecarga temporal u un treballo de
+          mantenimiento d'o servidor.
+        unauthorized_client: Lo client no ye autorizau a realizar esta petición utilizando
+          este metodo.
+        unsupported_grant_type: Lo tipo de concesión d'autorización no ye suportau
+          per lo servidor d'autorización.
+        unsupported_response_type: Lo servidor d'autorización no suporta este tipo
+          de respuesta.
     flash:
       applications:
         create:
@@ -147,18 +167,24 @@ an:
     scopes:
       admin:read: leyer totz los datos en o servidor
       admin:read:accounts: leyer información sensible de totas las cuentas
-      admin:read:canonical_email_blocks: leyer información sensible de totz los bloqueyos canonicos de correu
+      admin:read:canonical_email_blocks: leyer información sensible de totz los bloqueyos
+        canonicos de correu
       admin:read:domain_allows: leyer información sensible de totz los dominios permesos
-      admin:read:domain_blocks: leyer información sensible de totz los bloqueyos de dominio
-      admin:read:email_domain_blocks: leyer información sensible de totz los bloqueyos de dominio de correu-e
+      admin:read:domain_blocks: leyer información sensible de totz los bloqueyos de
+        dominio
+      admin:read:email_domain_blocks: leyer información sensible de totz los bloqueyos
+        de dominio de correu-e
       admin:read:ip_blocks: leyer información sensible de totz los bloqueyos d'IP
-      admin:read:reports: leyer información sensible de totz los informes y cuentas denunciadas
+      admin:read:reports: leyer información sensible de totz los informes y cuentas
+        denunciadas
       admin:write: modificar totz los datos en o servidor
       admin:write:accounts: realizar accions de moderación en cuentas
-      admin:write:canonical_email_blocks: executar accions de moderación en bloqueyos canonicos de correu electronico
+      admin:write:canonical_email_blocks: executar accions de moderación en bloqueyos
+        canonicos de correu electronico
       admin:write:domain_allows: executar accions de moderación en os dominios permesos
       admin:write:domain_blocks: executar accions de moderación en bloqueyos de dominio
-      admin:write:email_domain_blocks: executar accions de moderación en bloqueyos de dominio de correu-e
+      admin:write:email_domain_blocks: executar accions de moderación en bloqueyos
+        de dominio de correu-e
       admin:write:ip_blocks: executar accions de moderación en bloqueyos d'IP
       admin:write:reports: realizar accions de moderación en informes
       crypto: usar zifrau de cabo a extremo

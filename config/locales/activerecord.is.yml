@@ -66,7 +66,8 @@ is:
           attributes:
             permissions_as_keys:
               dangerous: hefur heimildir sem ekki eru öruggar fyrir grunnhlutverk
-              elevated: getur ekki haft heimildir sem núverandi hlutverk þitt er ekki með
+              elevated: getur ekki haft heimildir sem núverandi hlutverk þitt er ekki
+                með
               own_role: er ekki hægt að breyta með þinu hlutverki
             position:
               elevated: getur ekki verið veigameiri en núverandi hlutverk þitt
@@ -74,4 +75,5 @@ is:
         webhook:
           attributes:
             events:
-              invalid_permissions: getur ekki innihaldið atburði sem þú hefur ekki réttindi á
+              invalid_permissions: getur ekki innihaldið atburði sem þú hefur ekki
+                réttindi á

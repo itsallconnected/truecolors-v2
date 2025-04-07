@@ -16,6 +16,41 @@ module Truecolors
     # Maximum sequence number (12 bits)
     MAX_SEQUENCE = 4095
 
+    # Class method to define timestamp-based ID for database
+    # This is used during database initialization
+    def self.define_timestamp_id
+      # Define ID generation functions in the database
+      ActiveRecord::Base.connection.execute(<<~SQL)
+        CREATE OR REPLACE FUNCTION timestamp_id(table_name text, id bigint DEFAULT NULL)
+        RETURNS bigint AS $$
+        DECLARE
+          time_part bigint;
+          sequence_base bigint;
+          worker_id int := 0;
+        BEGIN
+          IF id IS NULL THEN
+            time_part := (EXTRACT(EPOCH FROM NOW()) * 1000)::bigint - #{DEFAULT_EPOCH};
+            sequence_base := nextval('timestamp_id_seq');
+            RETURN (time_part << 22) | (worker_id << 12) | (sequence_base & #{MAX_SEQUENCE});
+          END IF;
+          RETURN id;
+        END;
+        $$ LANGUAGE plpgsql VOLATILE;
+      SQL
+    end
+    
+    # Class method to ensure ID sequences exist in the database
+    # This is used after schema loading
+    def self.ensure_id_sequences_exist
+      conn = ActiveRecord::Base.connection
+      
+      # Check if the sequence already exists
+      unless conn.execute("SELECT 1 FROM pg_class WHERE relname = 'timestamp_id_seq'").any?
+        # Create a sequence for the timestamp ID
+        conn.execute("CREATE SEQUENCE timestamp_id_seq START WITH 1 INCREMENT BY 1 NO MINVALUE NO MAXVALUE CACHE 1;")
+      end
+    end
+
     attr_reader :worker_id, :epoch
 
     # Initialize a new snowflake generator

@@ -66,7 +66,8 @@ sl:
           attributes:
             permissions_as_keys:
               dangerous: vključi pravice, ki niso varne za osnovno vlogo
-              elevated: ni mogoče vključiti pravic, ki jih vaša trenutna vloga ne vsebuje
+              elevated: ni mogoče vključiti pravic, ki jih vaša trenutna vloga ne
+                vsebuje
               own_role: ni mogoče spremeniti z vašo trenutno vlogo
             position:
               elevated: ne more biti višje od vaše trenutne vloge

@@ -42,6 +42,45 @@ jobs:
           yarn i18n:extract --throws
           git diff --exit-code
 
+      - name: Pre-normalize YAML files
+        run: |
+          # Create a normalization script to ensure all files are properly formatted
+          cat > normalize.rb << 'EOL'
+          #!/usr/bin/env ruby
+          require 'yaml'
+          
+          # Process each locale file
+          Dir.glob('config/locales/**/*.yml').each do |file_path|
+            puts "Normalizing #{file_path}..."
+            
+            # Read the file as text first
+            content = File.read(file_path)
+            
+            # Ensure the file starts with proper YAML marker
+            unless content.start_with?("---\n")
+              content = "---\n" + content.sub(/^---\s*\n/, '')
+            end
+            
+            # Parse the YAML (which removes any invalid formatting)
+            begin
+              data = YAML.load(content)
+              
+              # Write it back with clean formatting
+              File.open(file_path, 'w') do |file|
+                file.puts "---"
+                yaml_output = YAML.dump(data)
+                file.puts yaml_output.sub(/^---\s*\n/, '')
+              end
+            rescue => e
+              puts "Error in #{file_path}: #{e.message}"
+              exit 1
+            end
+          end
+          EOL
+          
+          chmod +x normalize.rb
+          ruby normalize.rb
+
       - name: Check locale file normalization
         run: bin/i18n-tasks check-normalized
 

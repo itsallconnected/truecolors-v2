@@ -1,7 +1,9 @@
 ---
 kab:
   about:
-    about_truecolors_html: 'Azeṭṭa ametti n uzekka: Ulac deg-s asussen, ulac taɛessast n tsuddiwin fell-ak, yebna ɣef leqder d ttrebga, daɣen d akeslemmas! Akked Maṣṭudun, isefka-inek ad qimen inek!'
+    about_truecolors_html: 'Azeṭṭa ametti n uzekka: Ulac deg-s asussen, ulac taɛessast
+      n tsuddiwin fell-ak, yebna ɣef leqder d ttrebga, daɣen d akeslemmas! Akked Maṣṭudun,
+      isefka-inek ad qimen inek!'
     contact_missing: Ur yettusbadu ara
     contact_unavailable: Wlac
     hosted_on: Maṣṭudun yersen deg %{domain}
@@ -166,7 +168,8 @@ kab:
         destroy_ip_block_html: "%{name} yekkes alugen i IP %{target}"
         destroy_status_html: "%{name} yekkes tasufeɣt n %{target}"
         destroy_unavailable_domain_html: "%{name} yerra-d asiweḍ ɣer taɣult %{target}"
-        disable_2fa_user_html: "%{name} yssens asesteb s snat n tarrayin i useqdac %{target}"
+        disable_2fa_user_html: "%{name} yssens asesteb s snat n tarrayin i useqdac
+          %{target}"
         disable_custom_emoji_html: "%{name} yessens imuji %{target}"
         disable_user_html: "%{name} yessens tuqqna i useqdac %{target}"
         enable_custom_emoji_html: "%{name} yermed imuji %{target}"
@@ -323,7 +326,8 @@ kab:
         '94670856': 3 yiseggasen
       new:
         title: Rnu alugen n IP amaynut
-      no_ip_block_selected: Ula yiwen n ulugen n IP ur yettwabeddel acku ula yiwen ur yettwafren
+      no_ip_block_selected: Ula yiwen n ulugen n IP ur yettwabeddel acku ula yiwen
+        ur yettwafren
       title: Ilugan n IP
     relationships:
       title: Assaɣen n %{acct}
@@ -494,7 +498,8 @@ kab:
     description:
       prefix_invited_by_user: "@%{name} inced-ik·ikem ad ternuḍ ɣer uqeddac-a n Truecolors!"
       prefix_sign_up: Zeddi di Maṣṭudun ass-a!
-      suffix: S umiḍan, tzemreḍ ad tḍefreḍ imdanen, ad d-tessufɣeḍ tisuffaɣ d wembadal n yiznan akked yiseqdacen n yal aqeddac Truecolors d wayen-nniḍen!
+      suffix: S umiḍan, tzemreḍ ad tḍefreḍ imdanen, ad d-tessufɣeḍ tisuffaɣ d wembadal
+        n yiznan akked yiseqdacen n yal aqeddac Truecolors d wayen-nniḍen!
     didnt_get_confirmation: Ur d-teṭṭifeḍ ara aseɣwen n usentem ?
     dont_have_your_security_key: Ulac ɣur-k·m tasarut-ik·im n tɣellist?
     forgot_password: Tettud awal-ik uffir?
@@ -518,8 +523,10 @@ kab:
     rules:
       accept: Qbel
       back: Tuɣalin
-      invited_by: 'Tzemreḍ ad tkecmeḍ ɣer %{domain} s tanemmirt i tinnubga i d-teṭṭfeḍ sɣur :'
-      preamble_invited: Uqbel ad tkemmleḍ, ttxil-k·m ẓer ilugan i d-sbedden yimkariyen n %{domain}.
+      invited_by: 'Tzemreḍ ad tkecmeḍ ɣer %{domain} s tanemmirt i tinnubga i d-teṭṭfeḍ
+        sɣur :'
+      preamble_invited: Uqbel ad tkemmleḍ, ttxil-k·m ẓer ilugan i d-sbedden yimkariyen
+        n %{domain}.
       title: Kra n yilugan igejdanen.
       title_invited: Tettwaɛerḍeḍ.
     security: Taɣellist
@@ -527,7 +534,8 @@ kab:
     setup:
       link_not_received: Ur k-id-iṣaḥ ara wassaɣ ?
     sign_in:
-      preamble_html: Kcem ar <strong>%{domain}</strong> s inekcam-inek n tuqqna. Ma yella yezga-d umiḍan-ik deg uqeddac-nniḍen, ur tezmireḍ ara ad tkecmeḍ sya.
+      preamble_html: Kcem ar <strong>%{domain}</strong> s inekcam-inek n tuqqna. Ma
+        yella yezga-d umiḍan-ik deg uqeddac-nniḍen, ur tezmireḍ ara ad tkecmeḍ sya.
       title: Akeččum ɣer %{domain}
     sign_up:
       title: Iyya ad d-nessewjed tiɣawsiwin i %{domain}.
@@ -579,7 +587,9 @@ kab:
         none: Ɣur-wat
   edit_profile:
     basic_information: Talɣut tamatut
-    hint_html: "<strong>Mudd udem i wayen ttwalin medden deg umaɣnu-inek azayez ɣer yidis n yiznan-ik.</strong> Imdanen niḍen zemren ad k-ḍefren yernu ad gen assaɣ yid-k mi ara tesɛuḍ amaɣnu yeccuṛen ed tugna n umaɣnu."
+    hint_html: "<strong>Mudd udem i wayen ttwalin medden deg umaɣnu-inek azayez ɣer
+      yidis n yiznan-ik.</strong> Imdanen niḍen zemren ad k-ḍefren yernu ad gen assaɣ
+      yid-k mi ara tesɛuḍ amaɣnu yeccuṛen ed tugna n umaɣnu."
     other: Ayen nniḍen
   errors:
     '404': Asebter i tettnadiḍ ulac-it da.

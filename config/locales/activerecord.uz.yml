@@ -19,7 +19,8 @@ uz:
         account:
           attributes:
             username:
-              invalid: faqat harflar, raqamlar va pastki chiziqdan iborat bo'lishi kerak
+              invalid: faqat harflar, raqamlar va pastki chiziqdan iborat bo'lishi
+                kerak
               reserved: rezervlangan
         admin/webhook:
           attributes:
@@ -47,7 +48,8 @@ uz:
         user_role:
           attributes:
             permissions_as_keys:
-              dangerous: asosiy rol uchun xavfsiz bo'lmagan ruxsatlarni o'z ichiga oladi
+              dangerous: asosiy rol uchun xavfsiz bo'lmagan ruxsatlarni o'z ichiga
+                oladi
               elevated: joriy rolingiz ega bo'lmagan ruxsatlarni o'z ichiga olmaydi
               own_role: sizning hozirgi rolingizdan yuqori bo'lishi mumkin emas
             position:

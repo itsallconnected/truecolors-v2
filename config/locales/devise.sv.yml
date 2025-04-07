@@ -3,8 +3,12 @@ sv:
   devise:
     confirmations:
       confirmed: Din e-postadress har framgångsfullt bekräftats.
-      send_instructions: Du kommer att få ett mail med instruktioner för hur du bekräftar din e-postadress om några minuter. Kontrollera din spammapp om du inte fick det e-postmeddelandet.
-      send_paranoid_instructions: Om din e-postadress finns i vår databas får du ett mail med instruktioner för hur du bekräftar din e-postadress inom några minuter. Kontrollera din spammapp om du inte fick det e-postmeddelandet.
+      send_instructions: Du kommer att få ett mail med instruktioner för hur du bekräftar
+        din e-postadress om några minuter. Kontrollera din spammapp om du inte fick
+        det e-postmeddelandet.
+      send_paranoid_instructions: Om din e-postadress finns i vår databas får du ett
+        mail med instruktioner för hur du bekräftar din e-postadress inom några minuter.
+        Kontrollera din spammapp om du inte fick det e-postmeddelandet.
     failure:
       already_authenticated: Du har redan loggat in.
       inactive: Ditt konto är ännu inte aktiverat.
@@ -21,30 +25,46 @@ sv:
       confirmation_instructions:
         action: Verifiera e-postadress
         action_with_app: Bekräfta och återgå till %{app}
-        explanation: Du har skapat ett konto på %{host} med den här e-postadressen. Du är ett klick bort från att aktivera det. Om det inte var du ignorerar det här e-postmeddelandet.
-        explanation_when_pending: Du ansökte om en inbjudan till %{host} med denna e-postadress. När du har bekräftat din e-postadress kommer vi att granska din ansökan. Du kan logga in för att ändra dina uppgifter eller ta bort ditt konto, men du kan inte komma åt de flesta funktionerna förrän ditt konto har godkänts. Om din ansökan avvisas kommer dina uppgifter att tas bort, så ingen ytterligare åtgärd kommer att krävas av dig. Om detta inte var du, vänligen ignorera detta mail.
-        extra_html: Vänligen observera <a href="%{terms_path}"> systemets regler</a> och <a href="%{policy_path}">våra användarvillkor</a>.
+        explanation: Du har skapat ett konto på %{host} med den här e-postadressen.
+          Du är ett klick bort från att aktivera det. Om det inte var du ignorerar
+          det här e-postmeddelandet.
+        explanation_when_pending: Du ansökte om en inbjudan till %{host} med denna
+          e-postadress. När du har bekräftat din e-postadress kommer vi att granska
+          din ansökan. Du kan logga in för att ändra dina uppgifter eller ta bort
+          ditt konto, men du kan inte komma åt de flesta funktionerna förrän ditt
+          konto har godkänts. Om din ansökan avvisas kommer dina uppgifter att tas
+          bort, så ingen ytterligare åtgärd kommer att krävas av dig. Om detta inte
+          var du, vänligen ignorera detta mail.
+        extra_html: Vänligen observera <a href="%{terms_path}"> systemets regler</a>
+          och <a href="%{policy_path}">våra användarvillkor</a>.
         subject: 'Truecolors: Bekräftelse instruktioner för %{instance}'
         title: Verifiera e-postadress
       email_changed:
         explanation: 'E-postadressen för ditt konto ändras till:'
-        extra: Om du inte ändrade din e-post är det troligt att någon har fått tillgång till ditt konto. Vänligen ändra ditt lösenord omedelbart eller kontakta serveradministratören om du är utelåst från ditt konto.
+        extra: Om du inte ändrade din e-post är det troligt att någon har fått tillgång
+          till ditt konto. Vänligen ändra ditt lösenord omedelbart eller kontakta
+          serveradministratören om du är utelåst från ditt konto.
         subject: 'Truecolors: e-post ändrad'
         title: Ny e-postadress
       password_change:
         explanation: Lösenordet för ditt konto har ändrats.
-        extra: Om du inte ändrade ditt lösenord är det troligt att någon har fått tillgång till ditt konto. Vänligen ändra ditt lösenord omedelbart eller kontakta serveradministratören om du är utelåst från ditt konto.
+        extra: Om du inte ändrade ditt lösenord är det troligt att någon har fått
+          tillgång till ditt konto. Vänligen ändra ditt lösenord omedelbart eller
+          kontakta serveradministratören om du är utelåst från ditt konto.
         subject: 'Truecolors: Lösenordet har ändrats'
         title: Lösenordet har ändrats
       reconfirmation_instructions:
         explanation: Bekräfta den nya adressen för att ändra din e-postadress.
-        extra: Om den här ändringen inte initierades av dig kan du ignorera det här e-postmeddelandet. E-postadressen för Truecolors-kontot ändras inte förrän du klickar på länken ovan.
+        extra: Om den här ändringen inte initierades av dig kan du ignorera det här
+          e-postmeddelandet. E-postadressen för Truecolors-kontot ändras inte förrän
+          du klickar på länken ovan.
         subject: 'Truecolors: Bekräfta e-post för %{instance}'
         title: Verifiera e-postadress
       reset_password_instructions:
         action: Ändra lösenord
         explanation: Du begärde ett nytt lösenord för ditt konto.
-        extra: Om du inte begärt detta kan du ignorerar det här e-postmeddelandet. Ditt lösenord ändras inte förrän du öppnar länken ovan och skapar ett nytt.
+        extra: Om du inte begärt detta kan du ignorerar det här e-postmeddelandet.
+          Ditt lösenord ändras inte förrän du öppnar länken ovan och skapar ett nytt.
         subject: 'Truecolors: Instruktioner för återställning av lösenord'
         title: Lösenordsåterställning
       two_factor_disabled:
@@ -53,14 +73,17 @@ sv:
         subtitle: Tvåfaktorsautentisering för ditt konto har inaktiverats.
         title: 2FA inaktiverad
       two_factor_enabled:
-        explanation: En token skapad av den parkopplade TOTP-appen kommer att krävas för inloggning.
+        explanation: En token skapad av den parkopplade TOTP-appen kommer att krävas
+          för inloggning.
         subject: 'Truecolors: Tvåfaktorsautentisering aktiverad'
         subtitle: Tvåfaktorsautentisering har aktiverats för ditt konto.
         title: 2FA aktiverad
       two_factor_recovery_codes_changed:
-        explanation: De tidigare återställningskoderna har ogiltigförklarats och nya har genererats.
+        explanation: De tidigare återställningskoderna har ogiltigförklarats och nya
+          har genererats.
         subject: Truecolors Tvåfaktors-återställningskoder genererades på nytt
-        subtitle: De tidigare återhämtningskoderna har ogiltigförklarats och nya har skapats.
+        subtitle: De tidigare återhämtningskoderna har ogiltigförklarats och nya har
+          skapats.
         title: 2FA-återställningskoder ändrades
       unlock_instructions:
         subject: 'Truecolors: Instruktioner för upplåsning'
@@ -74,8 +97,10 @@ sv:
           subject: 'Truecolors: Säkerhetsnyckeln borttagen'
           title: En av dina säkerhetsnycklar har raderats
       webauthn_disabled:
-        explanation: Autentisering med säkerhetsnycklar har inaktiverats för ditt konto.
-        extra: Inloggning är nu möjligt med endast den token som genereras av den parade TOTP-appen.
+        explanation: Autentisering med säkerhetsnycklar har inaktiverats för ditt
+          konto.
+        extra: Inloggning är nu möjligt med endast den token som genereras av den
+          parade TOTP-appen.
         subject: 'Truecolors: Autentisering med säkerhetsnycklar är inaktiverat'
         title: Säkerhetsnycklar inaktiverade
       webauthn_enabled:
@@ -87,27 +112,42 @@ sv:
       failure: Det gick inte att autentisera dig från %{kind} för "%{reason}".
       success: Autentiserad från %{kind} konto.
     passwords:
-      no_token: Du kan inte komma åt den här sidan utan att komma från ett e-postmeddelande för lösenordsåterställning. Om du kommer från ett lösenordsåterställt e-postmeddelande, var vänlig och se till att du använde hela webbadressen.
-      send_instructions: Om din e-postadress finns i vår databas, får du en länk för återställning av lösenord på din e-postadress om några minuter. Kontrollera din spammapp om du inte fick det här e-postmeddelandet.
-      send_paranoid_instructions: Om din e-postadress finns i vår databas, får du en länk för återställning av lösenord på din e-postadress om några minuter. Kontrollera din spammapp om du inte fick det här e-postmeddelandet.
+      no_token: Du kan inte komma åt den här sidan utan att komma från ett e-postmeddelande
+        för lösenordsåterställning. Om du kommer från ett lösenordsåterställt e-postmeddelande,
+        var vänlig och se till att du använde hela webbadressen.
+      send_instructions: Om din e-postadress finns i vår databas, får du en länk för
+        återställning av lösenord på din e-postadress om några minuter. Kontrollera
+        din spammapp om du inte fick det här e-postmeddelandet.
+      send_paranoid_instructions: Om din e-postadress finns i vår databas, får du
+        en länk för återställning av lösenord på din e-postadress om några minuter.
+        Kontrollera din spammapp om du inte fick det här e-postmeddelandet.
       updated: Ditt lösenord har ändrats. Du är nu inloggad.
       updated_not_active: Ditt lösenord har ändrats. Du är nu inloggad.
     registrations:
-      destroyed: Adjö! Ditt konto har blivit nedstängt. Vi hoppas att vi snart ses igen.
-      update_needs_confirmation: Du har uppdaterat ditt konto, men vi måste verifiera din nya e-postadress. Vänligen kolla din e-post och följ bekräfta-länken för att bekräfta din nya e-postadress. Kontrollera din skräppost om du inte fick e-postmeddelandet.
+      destroyed: Adjö! Ditt konto har blivit nedstängt. Vi hoppas att vi snart ses
+        igen.
+      update_needs_confirmation: Du har uppdaterat ditt konto, men vi måste verifiera
+        din nya e-postadress. Vänligen kolla din e-post och följ bekräfta-länken för
+        att bekräfta din nya e-postadress. Kontrollera din skräppost om du inte fick
+        e-postmeddelandet.
       updated: Ditt konto har uppdaterats utan problem.
     sessions:
       already_signed_out: Utloggad.
       signed_in: Inloggad.
       signed_out: Utloggad.
     unlocks:
-      send_instructions: Du kommer att få ett mail med instruktioner om hur du låser upp ditt konto inom några minuter. Kontrollera din spammapp om du inte fick det här e-postmeddelandet.
-      send_paranoid_instructions: Om ditt konto finns, får du ett mail med instruktioner om hur du låser upp det på några minuter. Kontrollera din spammapp om du inte fick det här e-postmeddelandet.
+      send_instructions: Du kommer att få ett mail med instruktioner om hur du låser
+        upp ditt konto inom några minuter. Kontrollera din spammapp om du inte fick
+        det här e-postmeddelandet.
+      send_paranoid_instructions: Om ditt konto finns, får du ett mail med instruktioner
+        om hur du låser upp det på några minuter. Kontrollera din spammapp om du inte
+        fick det här e-postmeddelandet.
       unlocked: Ditt konto ha låsts upp. Vänligen logga in för att fortsätta.
   errors:
     messages:
       already_confirmed: var redan bekräftad, var god försök att logga in
-      confirmation_period_expired: måste bekräftas inom %{period}, var god be om en ny
+      confirmation_period_expired: måste bekräftas inom %{period}, var god be om en
+        ny
       expired: har gått ut, vänligen be om en ny
       not_found: hittades inte
       not_locked: var inte låst

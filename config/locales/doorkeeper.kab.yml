@@ -70,7 +70,9 @@ kab:
         revoke: Tetḥeqqeḍ?
       index:
         authorized_at: Yettwasireg ɣef %{date}
-        description_html: Ha-t-an yisnasen i izemren ad kecmen ɣer umiḍan-ik·im, s useqdec n API. Ma llan yisnasen ur teεqileḍ ara da, neɣ kra n wesnas ur iteddu ara akken ilaq, tzemreḍ ad tekkseḍ anekcum-is.
+        description_html: Ha-t-an yisnasen i izemren ad kecmen ɣer umiḍan-ik·im, s
+          useqdec n API. Ma llan yisnasen ur teεqileḍ ara da, neɣ kra n wesnas ur
+          iteddu ara akken ilaq, tzemreḍ ad tekkseḍ anekcum-is.
         last_used_at: Yettwaseqdec i tikkelt taneggarut ass n %{date}
         never_used: Urǧin yettwaseqdac
         scopes: Tisirag

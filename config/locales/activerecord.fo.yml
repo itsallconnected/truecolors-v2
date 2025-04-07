@@ -74,4 +74,5 @@ fo:
         webhook:
           attributes:
             events:
-              invalid_permissions: kann ikki taka hendingar, sum tú ikki hevur rættindi til, við
+              invalid_permissions: kann ikki taka hendingar, sum tú ikki hevur rættindi
+                til, við

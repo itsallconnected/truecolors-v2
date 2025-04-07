@@ -1,7 +1,8 @@
 ---
 ast:
   about:
-    about_truecolors_html: 'La rede social del futuru: ¡ensin anuncios nin vixilancia, con un diseñu éticu y descentralizáu! Controla los tos datos con Truecolors.'
+    about_truecolors_html: 'La rede social del futuru: ¡ensin anuncios nin vixilancia,
+      con un diseñu éticu y descentralizáu! Controla los tos datos con Truecolors.'
     contact_unavailable: N/D
     hosted_on: 'Truecolors ta agospiáu en: %{domain}'
     title: Tocante a
@@ -84,7 +85,8 @@ ast:
         remove_avatar_user_html: "%{name} quitó l'avatar de: %{target}"
         reopen_report_html: "%{name} volvió abrir l'informe «%{target}»"
         resolve_report_html: "%{name} resolvió l'informe «%{target}»"
-        unblock_email_account_html: "%{name} desbloquió la direición de corréu electrónicu de: %{target}"
+        unblock_email_account_html: "%{name} desbloquió la direición de corréu electrónicu
+          de: %{target}"
         update_announcement_html: "%{name} anovó l'anunciu «%{target}»"
         update_custom_emoji_html: "%{name} anovó'l fustaxe «%{target}»"
         update_status_html: "%{name} anovó la publicación de: %{target}"
@@ -121,7 +123,8 @@ ast:
       no_emoji_selected: Nun camudó nengún fustaxe darréu que nun se seleicionó nengún
       not_permitted: Nun tienes permisu pa facer esta aición
       shortcode: Códigu curtiu
-      shortcode_hint: De 2 caráuteres como muncho, namás caráuteres alfanumbéricos y guiones baxos
+      shortcode_hint: De 2 caráuteres como muncho, namás caráuteres alfanumbéricos
+        y guiones baxos
       title: Fustaxes personalizaos
       uncategorized: Ensin categoría
       update_failed_msg: Nun se pudo anovar esi fustaxe
@@ -172,7 +175,12 @@ ast:
     export_domain_allows:
       no_file: Nun se seleicionó nengún ficheru
     follow_recommendations:
-      description_html: "<strong>La recomendación de cuentes ayuda a que los perfiles nuevos atopen aína conteníu interesante</strong>. Cuando una cuenta nun interactuó abondo con otros perfiles como pa formar recomendaciones personalizaes, estes cuentes van ser les que se recomienden. Recalcúlense caldía a partir d'un mecíu de cuentes con más actividá recién y mayor númberu de siguidores llocales pa una llingua determinada."
+      description_html: "<strong>La recomendación de cuentes ayuda a que los perfiles
+        nuevos atopen aína conteníu interesante</strong>. Cuando una cuenta nun interactuó
+        abondo con otros perfiles como pa formar recomendaciones personalizaes, estes
+        cuentes van ser les que se recomienden. Recalcúlense caldía a partir d'un
+        mecíu de cuentes con más actividá recién y mayor númberu de siguidores llocales
+        pa una llingua determinada."
       language: Pa la llingua
       status: Estáu
       title: Recomendación de cuentes
@@ -236,11 +244,15 @@ ast:
           one: "%{count} nota"
           other: "%{count} notes"
       actions:
-        silence_description_html: La cuenta va ser visible namás pa quien yá la siguiere o la buscare manualmente, lo que llenda'l so algame. Esta decisión pue desfacese en cualesquier momentu. Si escueyes esta opción, zárrense tolos informes escontra esta cuenta.
+        silence_description_html: La cuenta va ser visible namás pa quien yá la siguiere
+          o la buscare manualmente, lo que llenda'l so algame. Esta decisión pue desfacese
+          en cualesquier momentu. Si escueyes esta opción, zárrense tolos informes
+          escontra esta cuenta.
       add_to_report: Amestar más al informe
       are_you_sure: "¿De xuru que quies facer esta aición?"
       category: Categoría
-      category_description_html: El motivu pol que s'informó d'esta cuenta y/o conteníu cítase na comunicación cola cuenta de la que s'informó
+      category_description_html: El motivu pol que s'informó d'esta cuenta y/o conteníu
+        cítase na comunicación cola cuenta de la que s'informó
       comment_description_html: 'Pa fornir más información, %{name} escribió:'
       created_at: Data del informe
       delete_and_resolve: Desaniciar los artículos
@@ -254,7 +266,8 @@ ast:
         create_and_unresolve: Volver abrir con una nota
         delete: Desaniciar
         title: Notes
-      quick_actions_description_html: 'Toma una aición rápida o baxa pa ver el conteníu del que s''informó:'
+      quick_actions_description_html: 'Toma una aición rápida o baxa pa ver el conteníu
+        del que s''informó:'
       report: 'Informe #%{id}'
       reported_by: Perfil qu'informó
       resolved: Resolvióse
@@ -262,7 +275,8 @@ ast:
       skip_to_actions: Saltar a les aiciones
       status: Estáu
       statuses: Conteníu del que s'informó
-      statuses_description_html: El conteníu ofensivu cítase na comunicación cola cuenta de la que s'informó
+      statuses_description_html: El conteníu ofensivu cítase na comunicación cola
+        cuenta de la que s'informó
       target_origin: Orixe de la cuenta de la que s'infomó
       title: Informes
       unresolved: Ensin resolver
@@ -309,14 +323,21 @@ ast:
         preamble: Personaliza la interfaz web de Truecolors.
         title: Aspeutu
       branding:
-        preamble: La marca del to sirvidor estrémalu d'otros sirvidores de la rede. Ye posible qu'esta información apaeza nuna variedá d'entornos, como la interfaz web de Truecolors, les aplicaciones natives, nes previsualizaciones de los enllaces d'otros sitios web, dientro de les aplicaciones de mensaxería, etc. Por esti motivu, lo meyor ye qu'esta información seya clara, curtia y concisa.
+        preamble: La marca del to sirvidor estrémalu d'otros sirvidores de la rede.
+          Ye posible qu'esta información apaeza nuna variedá d'entornos, como la interfaz
+          web de Truecolors, les aplicaciones natives, nes previsualizaciones de los
+          enllaces d'otros sitios web, dientro de les aplicaciones de mensaxería,
+          etc. Por esti motivu, lo meyor ye qu'esta información seya clara, curtia
+          y concisa.
         title: Marca
       content_retention:
         preamble: Controla cómo s'atroxa'l conteníu xeneráu polos perfiles en Truecolors.
         title: Retención del conteníu
       discovery:
         follow_recommendations: Recomendación de cuentes
-        preamble: L'apaición de conteníu interesante ye fundamental p'atrayer persones nueves que nun conozan nada de Truecolors. Controla'l funcionamientu de delles funciones de descubrimientu d'esti sirvidor.
+        preamble: L'apaición de conteníu interesante ye fundamental p'atrayer persones
+          nueves que nun conozan nada de Truecolors. Controla'l funcionamientu de
+          delles funciones de descubrimientu d'esti sirvidor.
         profile_directory: Direutoriu de perfiles
         public_timelines: Llinies de tiempu públiques
         publish_discovered_servers: Espublizamientu de sirvidores descubiertos
@@ -354,7 +375,8 @@ ast:
       actions:
         delete_statuses: "%{name} desanició la publicación de: %{target}"
         disable: "%{name} conxeló la cuenta de: %{target}"
-        mark_statuses_as_sensitive: "%{name} marcó la publicación de %{target} como sensible"
+        mark_statuses_as_sensitive: "%{name} marcó la publicación de %{target} como
+          sensible"
         none: "%{name} unvió una alvertencia a %{target}"
         sensitive: "%{name} marcó la cuenta de %{target} como sensible"
         suspend: "%{name} suspendió la cuenta de: %{target}"
@@ -362,7 +384,8 @@ ast:
       appeal_pending: Apellación pendiente
     system_checks:
       elasticsearch_running_check:
-        message_html: Nun se pudo conectar con Elasticsearch. Revisa que tea n'execución o desactiva la busca de testos completos
+        message_html: Nun se pudo conectar con Elasticsearch. Revisa que tea n'execución
+          o desactiva la busca de testos completos
     title: Alministración
     trends:
       allow: Permitir
@@ -387,7 +410,8 @@ ast:
           tag_servers_measure: sirvidores diferentes
           tag_uses_measure: usos en total
         listable: Pue suxerise
-        no_tag_selected: Nun camudó nenguna etiqueta darréu que nun se seleicionó nenguna
+        no_tag_selected: Nun camudó nenguna etiqueta darréu que nun se seleicionó
+          nenguna
         not_trendable: Nun apaez nes tendencies
         not_usable: Nun se pue usar
         title: Etiquetes en tendencia
@@ -396,7 +420,9 @@ ast:
     webhooks:
       add_new: Amestar un estremu
       delete: Desaniciar
-      description_html: Un <strong>webhook</strong> permite a Truecolors unviar <strong>avisos en tiempu real</strong> de los eventos escoyíos sobre la to aplicación pa qu'esta pueda <strong>executar aiciones automáticamente</strong>.
+      description_html: Un <strong>webhook</strong> permite a Truecolors unviar <strong>avisos
+        en tiempu real</strong> de los eventos escoyíos sobre la to aplicación pa
+        qu'esta pueda <strong>executar aiciones automáticamente</strong>.
       disable: Desactivar
       disabled: Desactivóse
       edit: Editar l'estremu
@@ -415,12 +441,14 @@ ast:
       webhook: Webhook
   admin_mailer:
     new_pending_account:
-      body: Los detalles de la cuenta nueva tán abaxo. Pues aprobar o refugar esta solicitú.
+      body: Los detalles de la cuenta nueva tán abaxo. Pues aprobar o refugar esta
+        solicitú.
     new_report:
       body: "%{reporter} informó de: %{target}"
       body_remote: 'Daquién dende %{domain} informó de: %{target}'
     new_trends:
-      body: 'Los elementos siguientes precisen una revisión enantes de que puedan apaecer públicamente:'
+      body: 'Los elementos siguientes precisen una revisión enantes de que puedan
+        apaecer públicamente:'
       new_trending_links:
         title: Enllaces en tendencia
       new_trending_statuses:
@@ -431,7 +459,10 @@ ast:
     empty: Nun tienes nengún nomatu.
   appearance:
     advanced_web_interface: Interfaz web avanzada
-    advanced_web_interface_hint: 'Si quies asegúrate de que s''use tol llargor de la pantalla, la interfaz web avanzada permítete configurar columnes estremaes pa ver muncha más información al empar: Aniciu, avisos, llinia de tiempu federada y cualesquier cantidá de llistes y etiquetes.'
+    advanced_web_interface_hint: 'Si quies asegúrate de que s''use tol llargor de
+      la pantalla, la interfaz web avanzada permítete configurar columnes estremaes
+      pa ver muncha más información al empar: Aniciu, avisos, llinia de tiempu federada
+      y cualesquier cantidá de llistes y etiquetes.'
     animations_and_accessibility: Animaciones y accesibilidá
     confirmation_dialogs: Diálogos de confirmación
     discovery: Descubrimientu
@@ -449,7 +480,8 @@ ast:
     your_token: El pase d'accesu
   auth:
     delete_account: Desaniciu de la cuenta
-    delete_account_html: Si quies desaniciar la cuenta, pues facelo <a href="%{path}">equí</a>. Vamos pidite que confirmes l'aición.
+    delete_account_html: Si quies desaniciar la cuenta, pues facelo <a href="%{path}">equí</a>.
+      Vamos pidite que confirmes l'aición.
     description:
       prefix_sign_up: "¡Rexístrate güei en Truecolors!"
     didnt_get_confirmation: "¿Nun recibiesti l'enllaz de confirmación?"
@@ -458,7 +490,8 @@ ast:
     login: Aniciar la sesión
     logout: Zarrar la sesión
     migrate_account: Cambéu de cuenta
-    migrate_account_html: Si quies redirixir esta cuenta a otra diferente, pues <a href="%{path}">configurar esta opción equí</a>.
+    migrate_account_html: Si quies redirixir esta cuenta a otra diferente, pues <a
+      href="%{path}">configurar esta opción equí</a>.
     progress:
       confirm: Confirmación del corréu electrónicu
       details: Los tos detalles
@@ -475,7 +508,9 @@ ast:
     setup:
       link_not_received: "¿Nun consiguiesti l'enllaz?"
     sign_in:
-      preamble_html: Anicia la sesión coles credenciales del dominiu <strong>%{domain}</strong>. Si la to cuenta ta agospiada n'otru sirvidor, nun vas ser a aniciar la sesión equí.
+      preamble_html: Anicia la sesión coles credenciales del dominiu <strong>%{domain}</strong>.
+        Si la to cuenta ta agospiada n'otru sirvidor, nun vas ser a aniciar la sesión
+        equí.
     sign_up:
       title: 'Creación d''una cuenta en: %{domain}.'
     status:
@@ -484,7 +519,8 @@ ast:
     too_fast: El formulariu xubióse mui rápido, volvi tentalo.
   challenge:
     confirm: Siguir
-    hint_html: "<strong>Conseyu:</strong> nun vamos volver pidite la contraseña hasta dientro d'una hora."
+    hint_html: "<strong>Conseyu:</strong> nun vamos volver pidite la contraseña hasta
+      dientro d'una hora."
     invalid_password: La contraseña nun ye válida
     prompt: Confirma la contraseña pa siguir
   crypto:
@@ -506,7 +542,8 @@ ast:
     challenge_not_passed: La información qu'introduxesti nun yera correuta
     confirm_password: Introduz la contraseña pa verificar la to identidá
     warning:
-      more_details_html: Pa consiguir más detalles, mira la <a href="%{terms_path}">política de privacidá</a>.
+      more_details_html: Pa consiguir más detalles, mira la <a href="%{terms_path}">política
+        de privacidá</a>.
   disputes:
     strikes:
       action_taken: Aición tomada
@@ -543,11 +580,16 @@ ast:
       content: Sentímoslo, mas prodúxose dalgún error nel sirvidor.
       title: La páxina nun ye correuta
     '503': Nun se pudo sirvir la páxina pola mor d'un fallu temporal del sirvidor.
-    noscript_html: Pa usar l'aplicación web de Truecolors, activa JavaScript. Tamién pues probar una de les <a href="%{apps_path}">aplicaciones natives</a> de Truecolors pa la to plataforma.
+    noscript_html: Pa usar l'aplicación web de Truecolors, activa JavaScript. Tamién
+      pues probar una de les <a href="%{apps_path}">aplicaciones natives</a> de Truecolors
+      pa la to plataforma.
   exports:
     archive_takeout:
       date: Data
-      hint_html: Pues solicitar un archivu colos tos <strong>artículos y ficheros xubíos</strong>. Los datos esportaos van tar nel formatu ActivityPub, llexible pa cualesquier software que seya compatible. Pues solicitar un archivu cada 7 díes.
+      hint_html: Pues solicitar un archivu colos tos <strong>artículos y ficheros
+        xubíos</strong>. Los datos esportaos van tar nel formatu ActivityPub, llexible
+        pa cualesquier software que seya compatible. Pues solicitar un archivu cada
+        7 díes.
       in_progress: Compilando l'archivu...
       request: Solicitar l'archivu
       size: Tamañu
@@ -571,7 +613,9 @@ ast:
       keywords: Pallabres clave
       statuses: Artículos individuales
     errors:
-      deprecated_api_multiple_keywords: Estos parámetros nun se puen camudar dende esta aplicación porque s'apliquen a más d'una pallabra clave de la peñera. Usa una aplicación más recién o la interfaz web.
+      deprecated_api_multiple_keywords: Estos parámetros nun se puen camudar dende
+        esta aplicación porque s'apliquen a más d'una pallabra clave de la peñera.
+        Usa una aplicación más recién o la interfaz web.
     index:
       empty: Nun tienes nenguna peñera.
       keywords:
@@ -590,7 +634,8 @@ ast:
       other: Seleicionáronse <strong>%{count}</strong> elementos d'esta páxina.
     all_matching_items_selected_html:
       one: Seleicionóse <strong>%{count}</strong> elementu que concasa cola busca.
-      other: Seleicionáronse <strong>%{count}</strong> elementos que concasen cola busca.
+      other: Seleicionáronse <strong>%{count}</strong> elementos que concasen cola
+        busca.
     changes_saved_msg: "¡Los cambeos guardáronse correutamente!"
     copy: Copiar
     delete: Desaniciar
@@ -606,7 +651,8 @@ ast:
       merge_long: Caltién los rexistros esistentes y amiesta otros nuevos
       overwrite: Sobrescritura
       overwrite_long: Troca los rexistros actuales por otros nuevos
-    preface: Pues importar los datos qu'esportares dende otru sirvidor, como la llista de perfiles bloquiaos o que sigas.
+    preface: Pues importar los datos qu'esportares dende otru sirvidor, como la llista
+      de perfiles bloquiaos o que sigas.
     types:
       blocking: Llista de perfiles bloquiaos
       bookmarks: Marcadores
@@ -631,7 +677,8 @@ ast:
     max_uses:
       one: 1 usu
       other: "%{count} usos"
-    prompt: Xenera y comparti enllaces con otres persones pa conceder l'accesu a esti sirvidor
+    prompt: Xenera y comparti enllaces con otres persones pa conceder l'accesu a esti
+      sirvidor
     table:
       expires_at: Data de caducidá
       uses: Usos
@@ -640,17 +687,20 @@ ast:
     authentication_methods:
       password: contraseña
       webauthn: llaves de seguranza
-    successful_sign_in_html: Anicióse correutamente la sesión col métodu «%{method}» dende %{ip} (%{browser})
+    successful_sign_in_html: Anicióse correutamente la sesión col métodu «%{method}»
+      dende %{ip} (%{browser})
   media_attachments:
     validations:
-      images_and_video: Nun se pue axuntar nengún videu a una publicación que yá contién imáxenes
+      images_and_video: Nun se pue axuntar nengún videu a una publicación que yá contién
+        imáxenes
       too_many: Nun se puen axuntar más de 4 ficheros
   migrations:
     errors:
       missing_also_known_as: nun ye un nomatu d'esta cuenta
       move_to_self: nun pue ser la cuenta actual
     incoming_migrations: Migración d'otra cuenta
-    incoming_migrations_html: Pa migrar d'otra cuenta a esta, primero tienes de <a href="%{path}">crear un nomatu de cuenta</a>.
+    incoming_migrations_html: Pa migrar d'otra cuenta a esta, primero tienes de <a
+      href="%{path}">crear un nomatu de cuenta</a>.
     warning:
       followers: Esta aición va mover tolos siguidores de la cuenta actual a la nueva
   moderation:
@@ -688,13 +738,20 @@ ast:
           thousand: mil
           trillion: B
   otp_authentication:
-    code_hint: Introduz el códigu que xeneró l'aplicación autenticadora pa confirmar l'aición
-    description_html: Si actives l'<strong>autenticación en dos pasos</strong> con una aplicación autenticadora, al aniciar la sesión va ser obligatorio que tengas el teléfonu a mano, preséu que xenera los pases que tienes d'introducir.
+    code_hint: Introduz el códigu que xeneró l'aplicación autenticadora pa confirmar
+      l'aición
+    description_html: Si actives l'<strong>autenticación en dos pasos</strong> con
+      una aplicación autenticadora, al aniciar la sesión va ser obligatorio que tengas
+      el teléfonu a mano, preséu que xenera los pases que tienes d'introducir.
     enable: Activar
-    instructions_html: "<strong>Escania esti códigu QR con Google Authenticator o otra aplicación asemeyada nel móvil</strong>. Dende agora, esa aplicación va xenerar los pases que tienes d'introducir cuando anicies la sesión."
-    manual_instructions: 'Si nun pues escaniar el códigu QR y tienes d''introducilu manualmente, equí tienes el secretu en testu ensin formatu:'
+    instructions_html: "<strong>Escania esti códigu QR con Google Authenticator o
+      otra aplicación asemeyada nel móvil</strong>. Dende agora, esa aplicación va
+      xenerar los pases que tienes d'introducir cuando anicies la sesión."
+    manual_instructions: 'Si nun pues escaniar el códigu QR y tienes d''introducilu
+      manualmente, equí tienes el secretu en testu ensin formatu:'
     setup: Configurar
-    wrong_code: "¡El códigu introducíu nun yera válidu! ¿La hora del sirvidor y la del preséu son correutes?"
+    wrong_code: "¡El códigu introducíu nun yera válidu! ¿La hora del sirvidor y la
+      del preséu son correutes?"
   pagination:
     next: Siguiente
     truncate: "&hellip;"
@@ -709,12 +766,21 @@ ast:
     posting_defaults: Configuración predeterminada del espublizamientu d'artículos
     public_timelines: Llinies de tiempu públiques
   privacy:
-    hint_html: "<strong>Personaliza cómo quies que s'atope esti perfil y los sos artículos.</strong> Hai una variedá de funciones de Truecolors que puen ayudate a algamar audiencies más grandes cuando s'activen. Dedica un momentu pa revisar estes opciones y asegurate de que s'axusten al to casu."
+    hint_html: "<strong>Personaliza cómo quies que s'atope esti perfil y los sos artículos.</strong>
+      Hai una variedá de funciones de Truecolors que puen ayudate a algamar audiencies
+      más grandes cuando s'activen. Dedica un momentu pa revisar estes opciones y
+      asegurate de que s'axusten al to casu."
     privacy: Privacidá
     reach: Algame
-    reach_hint_html: Controla si quies que te descubran y te sigan perfiles nuevos. ¿Quies que los tos artículos apaezan na pantalla «Esploración»? ¿Quies qu'otres persones te vean na recomendación de cuentes? ¿Quies aceptar toles solicitúes de siguimientu automáticamente o tener un control minuciosu de caúna?
+    reach_hint_html: Controla si quies que te descubran y te sigan perfiles nuevos.
+      ¿Quies que los tos artículos apaezan na pantalla «Esploración»? ¿Quies qu'otres
+      persones te vean na recomendación de cuentes? ¿Quies aceptar toles solicitúes
+      de siguimientu automáticamente o tener un control minuciosu de caúna?
     search: Busca
-    search_hint_html: Controla cómo quies que t'atopen. ¿Quies que la xente t'atope polo qu'espublices públicamente? ¿Quies que la xente fuera de Mástodon atope esti perfil cuando busque na web? Ten en cuenta que nun se pue garantizar la esclusión total de tolos motores de busca.
+    search_hint_html: Controla cómo quies que t'atopen. ¿Quies que la xente t'atope
+      polo qu'espublices públicamente? ¿Quies que la xente fuera de Mástodon atope
+      esti perfil cuando busque na web? Ten en cuenta que nun se pue garantizar la
+      esclusión total de tolos motores de busca.
     title: Privacidá y algame
   privacy_policy:
     title: Política de privacidá
@@ -804,9 +870,11 @@ ast:
         other: "%{count} vídeos"
     default_language: La mesma que la de la interfaz
     errors:
-      in_reply_not_found: La publicación a la que tentes de responder paez que nun esiste.
+      in_reply_not_found: La publicación a la que tentes de responder paez que nun
+        esiste.
     pin_errors:
-      direct: Nun se puen fixar los artículos que son visibles namás pa los usuarios mentaos
+      direct: Nun se puen fixar los artículos que son visibles namás pa los usuarios
+        mentaos
       limit: Yá fixesti'l númberu máximu d'artículos
       ownership: Nun se pue fixar la publicación d'otru perfil
       reblog: Nun se pue fixar una publicación compartida
@@ -823,7 +891,8 @@ ast:
     keep_direct: Caltener los mensaxes direutos
     keep_direct_hint: Nun desanicia nengún mensaxe direutu
     keep_media: Caltener los artículos con elementos multimedia
-    keep_media_hint: Nun desanicia nenguna publicación de to que contenta elementos multimedia
+    keep_media_hint: Nun desanicia nenguna publicación de to que contenta elementos
+      multimedia
     keep_pinned: Caltener los artículos fixaos
     keep_polls: Caltener les encuestes
     keep_polls_hint: Nun desanicia nenguna encuesta de to
@@ -849,20 +918,32 @@ ast:
   two_factor_authentication:
     enabled: L'autenticación en dos pasos ta activada
     enabled_success: L'autenticación en dos pasos activóse correutamente
-    lost_recovery_codes: Los códigos de recuperación permítente recuperar l'accesu a la cuenta si pierdes el teléfonu. Si tamién pierdes estos códigos, pues volver xeneralos equí. Los códigos de recuperación antiguos van anulase.
+    lost_recovery_codes: Los códigos de recuperación permítente recuperar l'accesu
+      a la cuenta si pierdes el teléfonu. Si tamién pierdes estos códigos, pues volver
+      xeneralos equí. Los códigos de recuperación antiguos van anulase.
     recovery_codes_regenerated: Los códigos de recuperación volvieron xenerase correutamente
     webauthn: Llaves de seguranza
   user_mailer:
     suspicious_sign_in:
-      explanation: Detectemos un aniciu de sesión na to cuenta dende una direición IP nueva.
+      explanation: Detectemos un aniciu de sesión na to cuenta dende una direición
+        IP nueva.
       subject: Accedióse a la to cuenta dende una direición IP nueva
     warning:
       appeal: Unviar una apellación
-      appeal_description: Si te paez que ye un error, pues unviar una apellación al personal de %{instance}.
+      appeal_description: Si te paez que ye un error, pues unviar una apellación al
+        personal de %{instance}.
       explanation:
-        disable: Yá nun pues usar la cuenta mas el perfil y otros datos siguen intautos. Pues solicitar una copia de seguranza de los datos, camudar la configuración de la cuenta o desaniciar la cuenta.
-        silence: Pues siguir usando la cuenta mas namás vas ver los artículos de los perfiles que yá siguieres nesti sirvidor y ye posible que se t'escluya de dalgunes funciones de descubrimientu. Por embargu, otros perfiles entá puen siguite manualmente.
-        suspend: Yá nun pues usar la cuenta nin se pue acceder a los datos del to perfil. Pues aniciar la sesión pa pidir una copia de seguranza de los tos datos hasta que se desanicien en 30 díes, mas vamos caltener dalgunos datos básicos pa evitar que te saltes la suspensión.
+        disable: Yá nun pues usar la cuenta mas el perfil y otros datos siguen intautos.
+          Pues solicitar una copia de seguranza de los datos, camudar la configuración
+          de la cuenta o desaniciar la cuenta.
+        silence: Pues siguir usando la cuenta mas namás vas ver los artículos de los
+          perfiles que yá siguieres nesti sirvidor y ye posible que se t'escluya de
+          dalgunes funciones de descubrimientu. Por embargu, otros perfiles entá puen
+          siguite manualmente.
+        suspend: Yá nun pues usar la cuenta nin se pue acceder a los datos del to
+          perfil. Pues aniciar la sesión pa pidir una copia de seguranza de los tos
+          datos hasta que se desanicien en 30 díes, mas vamos caltener dalgunos datos
+          básicos pa evitar que te saltes la suspensión.
       reason: 'Motivu:'
       statuses: 'Artículos citaos:'
       subject:
@@ -902,4 +983,5 @@ ast:
     invalid_credential: La llave de seguranza nun ye válida
     not_enabled: Nun activesti la función WebAuthn
     not_supported: Esti restolador nun ye compatible coles llaves de seguranza
-    otp_required: Pa usar les llaves de seguranza, activa primero l'autenticación en dos pasos.
+    otp_required: Pa usar les llaves de seguranza, activa primero l'autenticación
+      en dos pasos.

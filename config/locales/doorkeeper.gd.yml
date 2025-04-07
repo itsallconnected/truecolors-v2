@@ -29,11 +29,14 @@ gd:
       edit:
         title: Deasaich an aplacaid
       form:
-        error: Iochd! Thoir sùil air an fhoirm agad air eagal ’s gu bheil mearachd ann
+        error: Iochd! Thoir sùil air an fhoirm agad air eagal ’s gu bheil mearachd
+          ann
       help:
-        native_redirect_uri: Cleachd %{native_redirect_uri} gus a chur fo dheuchainn gu h-ionadail
+        native_redirect_uri: Cleachd %{native_redirect_uri} gus a chur fo dheuchainn
+          gu h-ionadail
         redirect_uri: Cleachd loidhne fa leth do gach URI
-        scopes: Sgar sgòpaichean le beàrnan. Fàg seo bàn airson nan sgòpaichean bunaiteach a chleachdadh.
+        scopes: Sgar sgòpaichean le beàrnan. Fàg seo bàn airson nan sgòpaichean bunaiteach
+          a chleachdadh.
       index:
         application: Aplacaid
         callback_url: URL gairm air ais
@@ -60,7 +63,9 @@ gd:
       error:
         title: Thachair mearachd
       new:
-        prompt_html: Bu toigh le %{client_name} cead fhaighinn airson an cunntas agad inntrigeadh. <strong>Na gabh ris an iarrtas seo ach mas aithne dhut an tùs seo agus earbsa agad ann.</strong>
+        prompt_html: Bu toigh le %{client_name} cead fhaighinn airson an cunntas agad
+          inntrigeadh. <strong>Na gabh ris an iarrtas seo ach mas aithne dhut an tùs
+          seo agus earbsa agad ann.</strong>
         review_permissions: Thoir sùil air na ceadan
         title: Tha feum air ùghdarrachadh
       show:
@@ -72,7 +77,9 @@ gd:
         revoke: A bheil thu cinnteach?
       index:
         authorized_at: Air ùghdarrachadh %{date}
-        description_html: Seo na h-aplacaidean as urrainn dhaibh an cunntas agad inntrigeadh leis an API. Ma tha aplacaid an-seo nach aithne dhut no ma tha droch-ghiùlan air aplacaid, ’s urrainn dhut an t-inntrigeadh aice a chùl-ghairm.
+        description_html: Seo na h-aplacaidean as urrainn dhaibh an cunntas agad inntrigeadh
+          leis an API. Ma tha aplacaid an-seo nach aithne dhut no ma tha droch-ghiùlan
+          air aplacaid, ’s urrainn dhut an t-inntrigeadh aice a chùl-ghairm.
         last_used_at: Air a chleachdadh %{date} an turas mu dheireadh
         never_used: Cha deach a chleachdadh a-riamh
         scopes: Ceadan
@@ -80,28 +87,50 @@ gd:
         title: Na h-aplacaidean ùghdarraichte agad
     errors:
       messages:
-        access_denied: Dhiùlt sealbhadair a’ ghoireis no am frithealaiche ùghdarrachaidh an t-iarrtas.
-        credential_flow_not_configured: Dh’fhàillig le sruth cruthachadh teisteas facail-fhaire do shealbhadair a’ ghoireis ri linn Doorkeeper.configure.resource_owner_from_credentials gun rèiteachadh.
-        invalid_client: Dh’fhàillig le dearbhadh a’ chliant ri linn cliant nach aithne dhuinn, dearbhadh cliant nach deach gabhail a-staigh no dòigh dearbhaidh ris nach cuirear taic.
-        invalid_code_challenge_method: Feumaidh an dòigh an dùbhlain a bhith na S256, chan eil taic ri plain.
-        invalid_grant: Chan eil an t-ùghdarrachadh a chaidh a thoirt seachad dligheach, dh’fhalbh an ùine air, chaidh a chùl-ghairm no chan eil e a-rèir URI an ath-stiùiridh a chaidh a chleachdadh san iarrtas ùghdarrachaidh no chaidh fhoillseachadh le cliant eile.
-        invalid_redirect_uri: Chan eil an URI ath-stiùiridh a chaidh a ghabhail a-staigh dligheach.
+        access_denied: Dhiùlt sealbhadair a’ ghoireis no am frithealaiche ùghdarrachaidh
+          an t-iarrtas.
+        credential_flow_not_configured: Dh’fhàillig le sruth cruthachadh teisteas
+          facail-fhaire do shealbhadair a’ ghoireis ri linn Doorkeeper.configure.resource_owner_from_credentials
+          gun rèiteachadh.
+        invalid_client: Dh’fhàillig le dearbhadh a’ chliant ri linn cliant nach aithne
+          dhuinn, dearbhadh cliant nach deach gabhail a-staigh no dòigh dearbhaidh
+          ris nach cuirear taic.
+        invalid_code_challenge_method: Feumaidh an dòigh an dùbhlain a bhith na S256,
+          chan eil taic ri plain.
+        invalid_grant: Chan eil an t-ùghdarrachadh a chaidh a thoirt seachad dligheach,
+          dh’fhalbh an ùine air, chaidh a chùl-ghairm no chan eil e a-rèir URI an
+          ath-stiùiridh a chaidh a chleachdadh san iarrtas ùghdarrachaidh no chaidh
+          fhoillseachadh le cliant eile.
+        invalid_redirect_uri: Chan eil an URI ath-stiùiridh a chaidh a ghabhail a-staigh
+          dligheach.
         invalid_request:
           missing_param: 'Tha paramadair riatanach a dhìth: %{value}.'
-          request_not_authorized: Tha an t-iarrtas feumach air ùghdarrachadh. Tha paramadair riatanach a dhìth air an iarrtas ùghdarrachaidh no tha e mì-dhligheach.
-          unknown: Tha paramadair a dhìth air an iarrtas, tha luach paramadair ’na bhroinn ris nach cuirear taic no tha droch-chruth air choireigin eile air.
-        invalid_resource_owner: Chan eil teisteas sealbhadair a’ ghoireis a chaidh a sholar dligheach no cha ghabh sealbhadair a’ ghoireis a lorg
-        invalid_scope: Tha an sgòp a chaidh iarraidh mì-dhligheach, chan aithne dhuinn e no tha droch-chruth air.
+          request_not_authorized: Tha an t-iarrtas feumach air ùghdarrachadh. Tha
+            paramadair riatanach a dhìth air an iarrtas ùghdarrachaidh no tha e mì-dhligheach.
+          unknown: Tha paramadair a dhìth air an iarrtas, tha luach paramadair ’na
+            bhroinn ris nach cuirear taic no tha droch-chruth air choireigin eile
+            air.
+        invalid_resource_owner: Chan eil teisteas sealbhadair a’ ghoireis a chaidh
+          a sholar dligheach no cha ghabh sealbhadair a’ ghoireis a lorg
+        invalid_scope: Tha an sgòp a chaidh iarraidh mì-dhligheach, chan aithne dhuinn
+          e no tha droch-chruth air.
         invalid_token:
           expired: Dh’fhalbh an ùine air an tòcan inntrigidh
           revoked: Chaidh an tòcan inntrigidh a chùl-ghairm
           unknown: Chan eil an tòcan inntrigidh dligheach
-        resource_owner_authenticator_not_configured: Cha deach sealbhadair a’ ghoireis a lorg ri linn Doorkeeper.configure.resource_owner_authenticator gun rèiteachadh.
-        server_error: Thachair am frithealaiche dearbhaidh ri cumha gun dùil nach do leig leis an t-iarrtas a choileanadh.
-        temporarily_unavailable: Chan urrainn dhan fhrithealaiche ùghdarrachaidh an t-iarrtas a làimhseachadh aig an àm seo ri linn eallach anabarrach no obair-ghlèidhidh air an fhrithealaiche.
-        unauthorized_client: Cha deach an cliant ùghdarrachadh airson an t-iarrtas seo a dhèanamh air an dòigh seo.
-        unsupported_grant_type: Cha chuir am frithealaiche ùghdarrachaidh taic ris an seòrsa seo de thoirt cead ùghdarrachaidh.
-        unsupported_response_type: Cha chuir am frithealaiche ùghdarrachaidh taic ris an seòrsa seo de fhreagairt.
+        resource_owner_authenticator_not_configured: Cha deach sealbhadair a’ ghoireis
+          a lorg ri linn Doorkeeper.configure.resource_owner_authenticator gun rèiteachadh.
+        server_error: Thachair am frithealaiche dearbhaidh ri cumha gun dùil nach
+          do leig leis an t-iarrtas a choileanadh.
+        temporarily_unavailable: Chan urrainn dhan fhrithealaiche ùghdarrachaidh an
+          t-iarrtas a làimhseachadh aig an àm seo ri linn eallach anabarrach no obair-ghlèidhidh
+          air an fhrithealaiche.
+        unauthorized_client: Cha deach an cliant ùghdarrachadh airson an t-iarrtas
+          seo a dhèanamh air an dòigh seo.
+        unsupported_grant_type: Cha chuir am frithealaiche ùghdarrachaidh taic ris
+          an seòrsa seo de thoirt cead ùghdarrachaidh.
+        unsupported_response_type: Cha chuir am frithealaiche ùghdarrachaidh taic
+          ris an seòrsa seo de fhreagairt.
     flash:
       applications:
         create:
@@ -151,18 +180,25 @@ gd:
     scopes:
       admin:read: leughadh dàta sam bith air an fhrithealaiche
       admin:read:accounts: leughadh fiosrachaidh dhìomhair air a h-uile cunntas
-      admin:read:canonical_email_blocks: leughadh fiosrachaidh dhìomhair air a h-uile bacadh puist-d gnàthach
-      admin:read:domain_allows: leughadh fiosrachaidh dhìomhair air a h-uile cead àrainne
-      admin:read:domain_blocks: leughadh fiosrachaidh dhìomhair air a h-uile bacadh àrainne
-      admin:read:email_domain_blocks: leughadh fiosrachaidh dhìomhair air a h-uile bacadh àrainn puist-d
+      admin:read:canonical_email_blocks: leughadh fiosrachaidh dhìomhair air a h-uile
+        bacadh puist-d gnàthach
+      admin:read:domain_allows: leughadh fiosrachaidh dhìomhair air a h-uile cead
+        àrainne
+      admin:read:domain_blocks: leughadh fiosrachaidh dhìomhair air a h-uile bacadh
+        àrainne
+      admin:read:email_domain_blocks: leughadh fiosrachaidh dhìomhair air a h-uile
+        bacadh àrainn puist-d
       admin:read:ip_blocks: leughadh fiosrachaidh dhìomhair air a h-uile bacadh IP
-      admin:read:reports: leughadh fiosrachaidh dhìomhair air a h-uile gearan is cunntasan a chaidh a ghearan mun dèidhinn
+      admin:read:reports: leughadh fiosrachaidh dhìomhair air a h-uile gearan is cunntasan
+        a chaidh a ghearan mun dèidhinn
       admin:write: atharrachadh dàta sam bith air an fhrithealaiche
       admin:write:accounts: gnìomhan na maorsainneachd air cunntasan
-      admin:write:canonical_email_blocks: gnìomhan na maorsainneachd air bacaidhean puist-d gnàthach
+      admin:write:canonical_email_blocks: gnìomhan na maorsainneachd air bacaidhean
+        puist-d gnàthach
       admin:write:domain_allows: gnìomhan na maorsainneachd air ceadan àrainn
       admin:write:domain_blocks: gnìomhan na maorsainneachd air bacaidhean àrainne
-      admin:write:email_domain_blocks: gnìomhan na maorsainneachd air bacaidhean àrainn puist-d
+      admin:write:email_domain_blocks: gnìomhan na maorsainneachd air bacaidhean àrainn
+        puist-d
       admin:write:ip_blocks: gnìomhan na maorsainneachd air bacaidhean IP
       admin:write:reports: gnìomhan na maorsainneachd air gearanan
       crypto: cleachdadh crioptachaidh o cheann gu ceann

@@ -1,7 +1,8 @@
 ---
 lt:
   about:
-    about_truecolors_html: 'Ateities socialinis tinklas: jokių reklamų, jokių įmonių sekimo, etiškas dizainas ir decentralizacija! Turėk savo duomenis su Truecolors.'
+    about_truecolors_html: 'Ateities socialinis tinklas: jokių reklamų, jokių įmonių
+      sekimo, etiškas dizainas ir decentralizacija! Turėk savo duomenis su Truecolors.'
     contact_missing: Nenustatyta
     contact_unavailable: Nėra
     hosted_on: Truecolors talpinamas %{domain}
@@ -13,7 +14,9 @@ lt:
       one: Sekėjas
       other: Sekėjų
     following: Seka
-    instance_actor_flash: Ši paskyra yra virtualus veikėjas (-a), naudojamas atstovauti pačiam serveriui, o ne atskiram naudotojui. Tai naudojama federacijos tikslais ir neturėtų būti pristabdyta.
+    instance_actor_flash: Ši paskyra yra virtualus veikėjas (-a), naudojamas atstovauti
+      pačiam serveriui, o ne atskiram naudotojui. Tai naudojama federacijos tikslais
+      ir neturėtų būti pristabdyta.
     last_active: paskutinį kartą aktyvus
     link_verified_on: Šios nuorodos nuosavybė buvo patikrinta %{date}
     nothing_here: Nieko čia nėra.
@@ -61,7 +64,8 @@ lt:
       delete: Ištrinti duomenis
       deleted: Ištrinta
       demote: Pažeminti
-      destroyed_msg: "%{username} duomenys dabar laukia eilėje, kad būtų netrukus ištrinti."
+      destroyed_msg: "%{username} duomenys dabar laukia eilėje, kad būtų netrukus
+        ištrinti."
       disable: Sustabdyti
       disable_two_factor_authentication: Išjungti 2FA
       disabled: Pristabdyta
@@ -102,7 +106,8 @@ lt:
       moderation_notes: Prižiūrėjimo pastabos
       most_recent_activity: Naujausia veikla
       most_recent_ip: Naujausias IP
-      no_account_selected: Nebuvo pakeistos jokios paskyros, nes nebuvo pasirinkta nė viena.
+      no_account_selected: Nebuvo pakeistos jokios paskyros, nes nebuvo pasirinkta
+        nė viena.
       no_limits_imposed: Nėra nustatytų ribojimų.
       no_role_assigned: Nėra priskirto vaidmens.
       not_subscribed: Neužprenumeruota
@@ -123,7 +128,10 @@ lt:
       reject: Atmesti
       rejected_msg: Sėkmingai atmesta %{username} registracijos paraiška.
       remote_suspension_irreversible: Šios paskyros duomenys negrįžtamai ištrinti.
-      remote_suspension_reversible_hint_html: Paskyra jų serveryje buvo pristabdyta, o duomenys bus visiškai pašalinti %{date}. Iki to laiko nuotolinis serveris gali atkurti šią paskyrą be jokių neigiamų pasekmių. Jei nori iš karto pašalinti visus paskyros duomenis, gali tai padaryti toliau.
+      remote_suspension_reversible_hint_html: Paskyra jų serveryje buvo pristabdyta,
+        o duomenys bus visiškai pašalinti %{date}. Iki to laiko nuotolinis serveris
+        gali atkurti šią paskyrą be jokių neigiamų pasekmių. Jei nori iš karto pašalinti
+        visus paskyros duomenis, gali tai padaryti toliau.
       remove_avatar: Pašalinti avatarą
       remove_header: Pašalinti antraštę
       removed_avatar_msg: Sėkmingai pašalintas %{username} avataro vaizdas.
@@ -155,8 +163,12 @@ lt:
       subscribe: Prenumeruoti
       suspend: Pristabdyti
       suspended: Pristabdyta
-      suspension_irreversible: Šios paskyros duomenys negrįžtamai ištrinti. Gali atšaukti paskyros pristabdymą, kad ja būtų galima naudotis, bet nebus atkurti jokie anksčiau turėti duomenys.
-      suspension_reversible_hint_html: Paskyra pristabdyta, o duomenys bus visiškai pašalinti %{date}. Iki to laiko paskyrą galima atkurti be jokių neigiamų pasekmių. Jei nori iš karto pašalinti visus paskyros duomenis, gali tai padaryti toliau.
+      suspension_irreversible: Šios paskyros duomenys negrįžtamai ištrinti. Gali atšaukti
+        paskyros pristabdymą, kad ja būtų galima naudotis, bet nebus atkurti jokie
+        anksčiau turėti duomenys.
+      suspension_reversible_hint_html: Paskyra pristabdyta, o duomenys bus visiškai
+        pašalinti %{date}. Iki to laiko paskyrą galima atkurti be jokių neigiamų pasekmių.
+        Jei nori iš karto pašalinti visus paskyros duomenis, gali tai padaryti toliau.
       title: Naudotojai
       unblock_email: Atblokuoti el. pašto adresą
       unblocked_email_msg: Sėkmingai atblokuotas %{username} el. pašto adresas.
@@ -232,7 +244,8 @@ lt:
         update_status: Atnaujinti įrašą
         update_user_role: Atnaujinti vaidmenį
       actions:
-        approve_appeal_html: "%{name} patvirtino prižiūjimo veiksmo apeliaciją iš %{target}"
+        approve_appeal_html: "%{name} patvirtino prižiūjimo veiksmo apeliaciją iš
+          %{target}"
         approve_user_html: "%{name} patvirtino registraciją iš %{target}"
         assigned_to_self_report_html: "%{name} paskyrė ataskaitą %{target} saviems"
         change_role_user_html: "%{name} pakeitė vaidmenį %{target}"
@@ -256,7 +269,8 @@ lt:
         destroy_status_html: "%{name} pašalino įrašą %{target}"
         destroy_unavailable_domain_html: "%{name} pratęsė tiekimą į domeną %{target}"
         destroy_user_role_html: "%{name} ištrynė %{target} vaidmenį"
-        disable_2fa_user_html: "%{name} išjungė dviejų veiksnių reikalavimą naudotojui %{target}"
+        disable_2fa_user_html: "%{name} išjungė dviejų veiksnių reikalavimą naudotojui
+          %{target}"
         disable_custom_emoji_html: "%{name} išjungė jaustuką %{target}"
         disable_relay_html: "%{name} išjungė perdavimą %{target}"
         disable_user_html: "%{name} išjungė prisijungimą naudotojui %{target}"
@@ -277,7 +291,8 @@ lt:
         suspend_account_html: "%{name} pristabdė %{target} paskyrą"
         unassigned_report_html: "%{name} panaikino priskyrimą ataskaitui %{target}"
         unblock_email_account_html: "%{name} atblokavo %{target} el. pašto adresą"
-        unsensitive_account_html: "%{name} panaikino %{target} medijos žymėjimą kaip jautrią"
+        unsensitive_account_html: "%{name} panaikino %{target} medijos žymėjimą kaip
+          jautrią"
         unsilence_account_html: "%{name} panaikino %{target} paskyros ribojimą"
         unsuspend_account_html: "%{name} atšaukė %{target} paskyros pristabdymą"
         update_announcement_html: "%{name} atnaujino skelbimą %{target}"
@@ -304,7 +319,8 @@ lt:
         create: Sukurti skelbimą
         title: Naujas skelbimas
       preview:
-        explanation_html: 'El. laiškas bus išsiųstas <strong>%{display_count} naudotojams</strong>. Į el. laišką bus įtrauktas toliau nurodytas tekstas:'
+        explanation_html: 'El. laiškas bus išsiųstas <strong>%{display_count} naudotojams</strong>.
+          Į el. laišką bus įtrauktas toliau nurodytas tekstas:'
         title: Peržiūrėti skelbimo pranešimą
       publish: Skelbti
       published_msg: Skelbimas sėkmingai paskelbtas.
@@ -401,31 +417,40 @@ lt:
         confirm: Pristabdyti
         permanent_action: Atšaukus pristabdymą jokie duomenys ar sąryšiai nebus atkurti.
         preamble_html: Jūs pristabdysite <strong>%{domain}</strong> ir jo subdomenus.
-        remove_all_data: Taip iš serverio bus pašalintas visas šio domeno paskyrų turinys, medija ir profilio duomenys.
+        remove_all_data: Taip iš serverio bus pašalintas visas šio domeno paskyrų
+          turinys, medija ir profilio duomenys.
       created_msg: Domeno užblokavimas nagrinėjamas
       destroyed_msg: Domeno blokas pašalintas
       domain: Domenas
       edit: Redaguoti domeno bloką
       existing_domain_block: Tu jau nustatei griežtesnius apribojimus %{name}.
-      existing_domain_block_html: Tu jau nustatei griežtesnius apribojimus %{name}, pirmiausia turi <a href="%{unblock_url}">atblokuoti jį</a>.
+      existing_domain_block_html: Tu jau nustatei griežtesnius apribojimus %{name},
+        pirmiausia turi <a href="%{unblock_url}">atblokuoti jį</a>.
       export: Eksportuoti
       import: Importuoti
       new:
         create: Sukurti bloką
-        hint: Domeno blokas netrukdys kurti paskyrų įrašų duomenų bazėje, bet atgaline data ir automatiškai taikys tam tikrus tų paskyrų prižiūrėjimo būdus.
+        hint: Domeno blokas netrukdys kurti paskyrų įrašų duomenų bazėje, bet atgaline
+          data ir automatiškai taikys tam tikrus tų paskyrų prižiūrėjimo būdus.
         severity:
-          desc_html: "<strong>Ribojimas</strong> padarys šio domeno paskyrų įrašus nematomus visiems, kurie jų neseka. <strong>Pristabdymas</strong> iš tavo serverio pašalins visą šio domeno paskyrų turinį, mediją ir profilio duomenis. Naudok <strong>Nieko</strong>, jei nori tik atmesti medijos failus."
+          desc_html: "<strong>Ribojimas</strong> padarys šio domeno paskyrų įrašus
+            nematomus visiems, kurie jų neseka. <strong>Pristabdymas</strong> iš tavo
+            serverio pašalins visą šio domeno paskyrų turinį, mediją ir profilio duomenis.
+            Naudok <strong>Nieko</strong>, jei nori tik atmesti medijos failus."
           noop: Nieko
           silence: Riboti
           suspend: Pristabdyti
         title: Naujos domeno blokas
       private_comment: Privatus komentaras
       public_comment: Viešas komentaras
-      public_comment_hint: Komentaras apie šį domeno apribojimą plačiajai visuomenei, jei įjungtas domenų apribojimų sąrašo reklamavimas.
+      public_comment_hint: Komentaras apie šį domeno apribojimą plačiajai visuomenei,
+        jei įjungtas domenų apribojimų sąrašo reklamavimas.
       reject_media: Atmesti medijos failus
-      reject_media_hint: Panaikina lokaliai saugomus medijos failus bei atsisako jų parsisiuntimo ateityje. Neliečia užblokavimu
+      reject_media_hint: Panaikina lokaliai saugomus medijos failus bei atsisako jų
+        parsisiuntimo ateityje. Neliečia užblokavimu
       reject_reports: Atmesti ataskaitas
-      reject_reports_hint: Ignoruoti visus skundus, kurie siunčiami iš šio domeno. Neliečia užblokavimu
+      reject_reports_hint: Ignoruoti visus skundus, kurie siunčiami iš šio domeno.
+        Neliečia užblokavimu
       undo: Atkurti domeno bloką
       view: Peržiūrėti domeno bloką
     email_domain_blocks:
@@ -441,12 +466,16 @@ lt:
       no_file: Nėra pasirinkto failo
     export_domain_blocks:
       import:
-        description_html: Netrukus importuosi domenų blokavimų sąrašą. Labai atidžiai peržiūrėk šį sąrašą, ypač jei ne tu jį sudarei.
+        description_html: Netrukus importuosi domenų blokavimų sąrašą. Labai atidžiai
+          peržiūrėk šį sąrašą, ypač jei ne tu jį sudarei.
         existing_relationships_warning: Esami sekimo sąryšiai
-        private_comment_description_html: 'Kad būtų lengviau atsekti, iš kur importuoti blokavimai, importuoti blokavimai bus kuriami su šiuo privačiu komentaru: <q>%{comment}</q>'
+        private_comment_description_html: 'Kad būtų lengviau atsekti, iš kur importuoti
+          blokavimai, importuoti blokavimai bus kuriami su šiuo privačiu komentaru:
+          <q>%{comment}</q>'
         private_comment_template: Importuota iš %{source}, %{date}
         title: Importuoti domeno blokavimus
-      invalid_domain_block: 'Vienas ar daugiau domenų blokavimų buvo praleisti dėl toliau nurodytos (-ų) klaidos (-ų): %{error}'
+      invalid_domain_block: 'Vienas ar daugiau domenų blokavimų buvo praleisti dėl
+        toliau nurodytos (-ų) klaidos (-ų): %{error}'
       new:
         title: Importuoti domeno blokavimus
       no_file: Nėra pasirinkto failo
@@ -496,11 +525,16 @@ lt:
     relays:
       add_new: Pridėti naują pamainą
       delete: Ištrinti
-      description_html: "<strong>Federacijos perdavimas</strong> – tai tarpinis serveris, kuris keičiasi dideliais viešų įrašų kiekiais tarp jį prenumeruojančių ir skelbiančių serverių. <strong>Jis gali padėti mažiems ir vidutiniams serveriams atrasti fediverse esantį turinį</strong>, nes priešingu atveju vietiniams naudotojams reikėtų rankiniu būdu sekti kitus žmones iš nutolusių serverių."
+      description_html: "<strong>Federacijos perdavimas</strong> – tai tarpinis serveris,
+        kuris keičiasi dideliais viešų įrašų kiekiais tarp jį prenumeruojančių ir
+        skelbiančių serverių. <strong>Jis gali padėti mažiems ir vidutiniams serveriams
+        atrasti fediverse esantį turinį</strong>, nes priešingu atveju vietiniams
+        naudotojams reikėtų rankiniu būdu sekti kitus žmones iš nutolusių serverių."
       disable: Išjungti
       disabled: Išjungtas
       enable: Įjungti
-      enable_hint: Kai bus įjungtas, tavo serveris užsiprenumeruos visus šio perdavimo viešus įrašus ir pradės į jį siųsti šio serverio viešus įrašus.
+      enable_hint: Kai bus įjungtas, tavo serveris užsiprenumeruos visus šio perdavimo
+        viešus įrašus ir pradės į jį siųsti šio serverio viešus įrašus.
       enabled: Įjungtas
       inbox_url: Perdavimo URL
       pending: Laukiama perdavimo patvirtinimo
@@ -523,7 +557,9 @@ lt:
       comment:
         none: Nieko
       created_at: Reportuotas
-      forwarded_replies_explanation: Šis ataskaita yra iš nuotolinio naudotojo ir susijusi su nuotoliniu turiniu. Jis buvo persiųstas tau, nes turinys, apie kurį pranešta, yra atsakymas vienam iš tavo naudotojų.
+      forwarded_replies_explanation: Šis ataskaita yra iš nuotolinio naudotojo ir
+        susijusi su nuotoliniu turiniu. Jis buvo persiųstas tau, nes turinys, apie
+        kurį pranešta, yra atsakymas vienam iš tavo naudotojų.
       mark_as_resolved: Pažymėti kaip išsprestą
       mark_as_unresolved: Pažymėti kaip neišsprestą
       notes:
@@ -532,7 +568,8 @@ lt:
         create_and_unresolve: Atidaryti su rašteliu
         delete: Ištrinti
         placeholder: Apibūdink, kokių veiksmų imtasi arba kitokie atnaujinimai..
-      notes_description_html: Peržiūrėk ir palik pastabas kitiems prižiūrėtojams ir savo būsimam aš
+      notes_description_html: Peržiūrėk ir palik pastabas kitiems prižiūrėtojams ir
+        savo būsimam aš
       reopen: Atidaryti skundą
       report: 'Skundas #%{id}'
       reported_account: Reportuota paskyra
@@ -549,18 +586,26 @@ lt:
       categories:
         invites: Kvietimai
       everyone: Numatytieji leidimai
-      everyone_full_description_html: Tai – <strong>bazinis vaidmuo</strong>, turintis įtakos <strong>visiems naudotojams</strong>, net ir tiems, kurie neturi priskirto vaidmens. Visi kiti vaidmenys iš jo paveldi teises.
+      everyone_full_description_html: Tai – <strong>bazinis vaidmuo</strong>, turintis
+        įtakos <strong>visiems naudotojams</strong>, net ir tiems, kurie neturi priskirto
+        vaidmens. Visi kiti vaidmenys iš jo paveldi teises.
       privileges:
         invite_users: Kviesti naudotojus
         invite_users_description: Leidžia naudotojams pakviesti naujus žmones į serverį.
         manage_invites: Tvarkyti kvietimus
-        manage_invites_description: Leidžia naudotojams naršyti ir deaktyvuoti kvietimų nuorodas.
-        manage_taxonomies_description: Leidžia naudotojams peržiūrėti tendencingą turinį ir atnaujinti saitažodžių nustatymus
+        manage_invites_description: Leidžia naudotojams naršyti ir deaktyvuoti kvietimų
+          nuorodas.
+        manage_taxonomies_description: Leidžia naudotojams peržiūrėti tendencingą
+          turinį ir atnaujinti saitažodžių nustatymus
     settings:
       branding:
         title: Firminio ženklo kūrimas
       captcha_enabled:
-        desc_html: Tai priklauso nuo hCaptcha išorinių skriptų, kurie gali kelti susirūpinimą dėl saugumo ir privatumo. Be to, <strong>dėl to registracijos procesas kai kuriems žmonėms (ypač neįgaliesiems) gali būti gerokai sunkiau prieinami</strong>. Dėl šių priežasčių apsvarstyk alternatyvias priemones, pavyzdžiui, patvirtinimu arba kvietimu grindžiamą registraciją.
+        desc_html: Tai priklauso nuo hCaptcha išorinių skriptų, kurie gali kelti susirūpinimą
+          dėl saugumo ir privatumo. Be to, <strong>dėl to registracijos procesas kai
+          kuriems žmonėms (ypač neįgaliesiems) gali būti gerokai sunkiau prieinami</strong>.
+          Dėl šių priežasčių apsvarstyk alternatyvias priemones, pavyzdžiui, patvirtinimu
+          arba kvietimu grindžiamą registraciją.
       content_retention:
         danger_zone: Pavojinga zona
       discovery:
@@ -569,15 +614,23 @@ lt:
       domain_blocks:
         all: Visiems
       registrations:
-        moderation_recommandation: Prieš atidarant registraciją visiems, įsitikink, kad turi tinkamą ir reaguojančią prižiūrėjimo komandą!
+        moderation_recommandation: Prieš atidarant registraciją visiems, įsitikink,
+          kad turi tinkamą ir reaguojančią prižiūrėjimo komandą!
       registrations_mode:
         modes:
           approved: Registracijai privalomas patvirtinimas
-        warning_hint: Rekomenduojame naudoti „Registracijai privalomas patvirtinimas“, nebent esi tikras (-a), kad tavo prižiūrėjimo komanda gali laiku apdoroti šlamštus ir kenkėjiškas registracijas.
+        warning_hint: Rekomenduojame naudoti „Registracijai privalomas patvirtinimas“,
+          nebent esi tikras (-a), kad tavo prižiūrėjimo komanda gali laiku apdoroti
+          šlamštus ir kenkėjiškas registracijas.
       security:
         authorized_fetch: Reikalauti tapatybės nustatymo iš federacinių serverių
-        authorized_fetch_hint: Reikalauti tapatybės nustatymo iš federacinių serverių leidžia griežčiau užtikrinti tiek naudotojo, tiek serverio lygio blokų vykdymą. Tačiau dėl to nukenčia našumas, sumažėja atsakymų pasiekiamumas ir gali kilti suderinamumo su kai kuriomis federacinėmis paslaugomis problemų. Be to, tai nesutrukdys skirtiems dalyviams gauti tavo viešų įrašų ir paskyrų.
-        authorized_fetch_overridden_hint: Šiuo metu negali pakeisti šio nustatymo, nes jį pakeičia aplinkos kintamasis.
+        authorized_fetch_hint: Reikalauti tapatybės nustatymo iš federacinių serverių
+          leidžia griežčiau užtikrinti tiek naudotojo, tiek serverio lygio blokų vykdymą.
+          Tačiau dėl to nukenčia našumas, sumažėja atsakymų pasiekiamumas ir gali
+          kilti suderinamumo su kai kuriomis federacinėmis paslaugomis problemų. Be
+          to, tai nesutrukdys skirtiems dalyviams gauti tavo viešų įrašų ir paskyrų.
+        authorized_fetch_overridden_hint: Šiuo metu negali pakeisti šio nustatymo,
+          nes jį pakeičia aplinkos kintamasis.
         federation_authentication: Federacijos tapatybės nustatymo vykdymas
     software_updates:
       documentation_link: Sužinoti daugiau
@@ -618,16 +671,21 @@ lt:
       with_media: Su medija
     system_checks:
       database_schema_check:
-        message_html: Laukiama duomenų bazės perkėlimo. Paleisk juos, kad įsitikintum, jog programa veikia taip, kaip tikimasi.
+        message_html: Laukiama duomenų bazės perkėlimo. Paleisk juos, kad įsitikintum,
+          jog programa veikia taip, kaip tikimasi.
       elasticsearch_health_yellow:
-        message_html: Elasticsearch klasteris yra nesveikas (geltona būsena), galbūt norėsi išsiaiškinti priežastį
+        message_html: Elasticsearch klasteris yra nesveikas (geltona būsena), galbūt
+          norėsi išsiaiškinti priežastį
       elasticsearch_preset:
-        message_html: Tavo Elasticsearch klasteris turi daugiau nei vieną mazgą, bet Truecolors nėra sukonfigūruotas juos naudoti.
+        message_html: Tavo Elasticsearch klasteris turi daugiau nei vieną mazgą, bet
+          Truecolors nėra sukonfigūruotas juos naudoti.
       elasticsearch_preset_single_node:
         action: Žiūrėti dokumentaciją
-        message_html: Tavo Elasticsearch klasteris turi tik vieną mazgą, <code>ES_PRESET</code> turėtų būti nustatyta į <code>single_node_cluster</code>.
+        message_html: Tavo Elasticsearch klasteris turi tik vieną mazgą, <code>ES_PRESET</code>
+          turėtų būti nustatyta į <code>single_node_cluster</code>.
       elasticsearch_running_check:
-        message_html: Nepavyko prijungti prie Elasticsearch. Patikrink, ar ji veikia, arba išjunk viso teksto paiešką.
+        message_html: Nepavyko prijungti prie Elasticsearch. Patikrink, ar ji veikia,
+          arba išjunk viso teksto paiešką.
       software_version_check:
         action: Žiūrėti galimus naujinimus
         message_html: Yra „Truecolors“ naujinimas.
@@ -658,17 +716,24 @@ lt:
       generate: Naudoti šabloną
       generates:
         action: Generuoti
-        chance_to_review_html: "<strong>Sugeneruotos paslaugų sąlygos nebus publikuojamos automatiškai.</strong> Turėsite galimybę peržiūrėti rezultatus. Kad tęstumėte, užpildykite reikiamą informaciją."
-        explanation_html: Pateiktas paslaugų sąlygų šablonas yra tik informacinio pobūdžio ir neturėtų būti laikomas teisiniu patarimu bet kokiu klausimu. Dėl savo situacijos ir konkrečių teisinių klausimų pasitarkite su savo teisininku.
+        chance_to_review_html: "<strong>Sugeneruotos paslaugų sąlygos nebus publikuojamos
+          automatiškai.</strong> Turėsite galimybę peržiūrėti rezultatus. Kad tęstumėte,
+          užpildykite reikiamą informaciją."
+        explanation_html: Pateiktas paslaugų sąlygų šablonas yra tik informacinio
+          pobūdžio ir neturėtų būti laikomas teisiniu patarimu bet kokiu klausimu.
+          Dėl savo situacijos ir konkrečių teisinių klausimų pasitarkite su savo teisininku.
         title: Paslaugų sąlygų sąranka
       history: Istorija
       live: Tiesioginis
       no_history: Kol kas nėra įrašyta paslaugų sąlygų pakeitimų.
-      no_terms_of_service_html: Šiuo metu nesate sukonfigūravę jokių paslaugų sąlygų. Paslaugų sąlygos skirtos suteikti aiškumo ir apsaugoti jus nuo galimų įsipareigojimų ginčuose su naudotojais.
+      no_terms_of_service_html: Šiuo metu nesate sukonfigūravę jokių paslaugų sąlygų.
+        Paslaugų sąlygos skirtos suteikti aiškumo ir apsaugoti jus nuo galimų įsipareigojimų
+        ginčuose su naudotojais.
       notified_on_html: Naudotojams pranešta %{date}
       notify_users: Pranešti naudotojus
       preview:
-        explanation_html: 'El. laiškas bus išsiųstas <strong>%{display_count} naudotojams</strong>, kurie užsiregistravo iki %{date}. Į el. laišką bus įtrauktas toks tekstas:'
+        explanation_html: 'El. laiškas bus išsiųstas <strong>%{display_count} naudotojams</strong>,
+          kurie užsiregistravo iki %{date}. Į el. laišką bus įtrauktas toks tekstas:'
         send_preview: Siųsti peržiūrą į %{email}
         send_to_all:
           few: Siųsti %{display_count} el. laiškus
@@ -694,20 +759,28 @@ lt:
         confirm_allow_provider: Ar tikrai nori leisti pasirinktus teikėjus?
         confirm_disallow: Ar tikrai nori neleisti pasirinktas nuorodas?
         confirm_disallow_provider: Ar tikrai nori neleisti pasirinktus teikėjus?
-        description_html: Tai – nuorodos, kuriomis šiuo metu daug bendrinasi paskyros, iš kurių tavo serveris mato įrašus. Tai gali padėti naudotojams sužinoti, kas vyksta pasaulyje. Jokios nuorodos nerodomos viešai, kol nepatvirtinai leidėjo. Taip pat gali leisti arba atmesti atskiras nuorodas.
+        description_html: Tai – nuorodos, kuriomis šiuo metu daug bendrinasi paskyros,
+          iš kurių tavo serveris mato įrašus. Tai gali padėti naudotojams sužinoti,
+          kas vyksta pasaulyje. Jokios nuorodos nerodomos viešai, kol nepatvirtinai
+          leidėjo. Taip pat gali leisti arba atmesti atskiras nuorodas.
         disallow: Neleisti nuorodą
         disallow_provider: Neleisti leidėją
-        no_link_selected: Jokios nuorodos nebuvo pakeistos, nes nebuvo pasirinkta nė viena
+        no_link_selected: Jokios nuorodos nebuvo pakeistos, nes nebuvo pasirinkta
+          nė viena
         publishers:
-          no_publisher_selected: Jokie leidėjai nebuvo pakeisti, nes nė vienas nebuvo pasirinktas
+          no_publisher_selected: Jokie leidėjai nebuvo pakeisti, nes nė vienas nebuvo
+            pasirinktas
         title: Tendencingos nuorodos
-        usage_comparison: Bendrinta %{today} kartų šiandien, palyginti su %{yesterday} vakar
+        usage_comparison: Bendrinta %{today} kartų šiandien, palyginti su %{yesterday}
+          vakar
       not_allowed_to_trend: Neleidžiama tendencinguoti
       only_allowed: Leidžiama tik
       pending_review: Laukiama peržiūros
       preview_card_providers:
         allowed: Nuorodos iš šio leidėjo gali tendencinguoti
-        description_html: Tai – domenai, iš kurių dažnai bendrinamos nuorodos tavo serveryje. Nuorodos netendencinguos, nebent nuorodos domenas yra patvirtintas. Tavo patvirtinimas (arba atmetimas) apima ir subdomenus.
+        description_html: Tai – domenai, iš kurių dažnai bendrinamos nuorodos tavo
+          serveryje. Nuorodos netendencinguos, nebent nuorodos domenas yra patvirtintas.
+          Tavo patvirtinimas (arba atmetimas) apima ir subdomenus.
         rejected: Nuorodos iš šio leidėjo netendencinguos
         title: Leidėjai
       rejected: Atmesta
@@ -718,10 +791,16 @@ lt:
         confirm_allow_account: Ar tikrai nori leisti pasirinktas paskyras?
         confirm_disallow: Ar tikrai nori neleisti pasirinktas būsenas?
         confirm_disallow_account: Ar tikrai nori neleisti pasirinktas paskyras?
-        description_html: Tai – įrašai, apie kuriuos žino tavo serveris ir kuriais šiuo metu daug bendrinamasi ir kurie yra mėgstami. Tai gali padėti naujiems ir grįžtantiems naudotojams rasti daugiau žmonių, kuriuos galima sekti. Jokie įrašai nerodomi viešai, kol nepatvirtinai autoriaus (-ės), o autorius (-ė) leidžia savo paskyrą siūlyti kitiems. Taip pat gali leisti arba atmesti atskirus įrašus.
+        description_html: Tai – įrašai, apie kuriuos žino tavo serveris ir kuriais
+          šiuo metu daug bendrinamasi ir kurie yra mėgstami. Tai gali padėti naujiems
+          ir grįžtantiems naudotojams rasti daugiau žmonių, kuriuos galima sekti.
+          Jokie įrašai nerodomi viešai, kol nepatvirtinai autoriaus (-ės), o autorius
+          (-ė) leidžia savo paskyrą siūlyti kitiems. Taip pat gali leisti arba atmesti
+          atskirus įrašus.
         disallow: Neleisti įrašą
         disallow_account: Neleisti autorių (-ę)
-        no_status_selected: Jokie tendencingi įrašai nebuvo pakeisti, nes nė vienas iš jų nebuvo pasirinktas
+        no_status_selected: Jokie tendencingi įrašai nebuvo pakeisti, nes nė vienas
+          iš jų nebuvo pasirinktas
         not_discoverable: Autorius (-ė) nesutiko, kad būtų galima juos atrasti
         shared_by:
           few: Bendrinta arba pamėgta %{friendly_count} kartus
@@ -751,7 +830,9 @@ lt:
     webhooks:
       add_new: Pridėti galutinį tašką
       delete: Ištrinti
-      description_html: "<strong>Webhook</strong> leidžia Truecolors siųsti <strong>realaus laiko pranešimus</strong> apie pasirinktus įvykius į tavo programą, kad programa galėtų <strong>automatiškai paleisti reakcijas</strong>."
+      description_html: "<strong>Webhook</strong> leidžia Truecolors siųsti <strong>realaus
+        laiko pranešimus</strong> apie pasirinktus įvykius į tavo programą, kad programa
+        galėtų <strong>automatiškai paleisti reakcijas</strong>."
       disable: Išjungti
       disabled: Išjungta
       edit: Redaguoti galutinį tašką
@@ -765,8 +846,12 @@ lt:
       events: Įvykiai
   admin_mailer:
     auto_close_registrations:
-      body: Dėl pastarojo meto peržiūrėtojų aktyvumo trūkumo %{instance} registracija buvo automatiškai pakeista į reikalaujančią rankinės būdo peržiūros, kad %{instance} nebūtų naudojama kaip platforma potencialiems blogiems veikėjams. Bet kuriuo metu gali ją vėl perjungti į atvirą registraciją.
-      subject: "%{instance} registracijos automatiškai pakeistos į reikalaujančias patvirtinimo"
+      body: Dėl pastarojo meto peržiūrėtojų aktyvumo trūkumo %{instance} registracija
+        buvo automatiškai pakeista į reikalaujančią rankinės būdo peržiūros, kad %{instance}
+        nebūtų naudojama kaip platforma potencialiems blogiems veikėjams. Bet kuriuo
+        metu gali ją vėl perjungti į atvirą registraciją.
+      subject: "%{instance} registracijos automatiškai pakeistos į reikalaujančias
+        patvirtinimo"
     new_report:
       body: "%{reporter} parašė skundą apie %{target}"
       body_remote: Kažkas iš %{domain} parašė skundą apie %{target}
@@ -781,7 +866,10 @@ lt:
       subject: Naujos tendencijos peržiūrimos %{instance}
   appearance:
     advanced_web_interface: Išplėstinė žiniatinklio sąsaja
-    advanced_web_interface_hint: 'Jei nori išnaudoti visą ekrano plotį, išplėstinė žiniatinklio sąsaja leidžia sukonfigūruoti daug skirtingų stulpelių, kad vienu metu matytum tiek informacijos, kiek tik nori: Pagrindinis, pranešimai, federacinė laiko skalė, bet kokie sąrašai ir saitažodžiai.'
+    advanced_web_interface_hint: 'Jei nori išnaudoti visą ekrano plotį, išplėstinė
+      žiniatinklio sąsaja leidžia sukonfigūruoti daug skirtingų stulpelių, kad vienu
+      metu matytum tiek informacijos, kiek tik nori: Pagrindinis, pranešimai, federacinė
+      laiko skalė, bet kokie sąrašai ir saitažodžiai.'
     animations_and_accessibility: Animacijos ir pritaikymas neįgaliesiems
     confirmation_dialogs: Patvirtinimo dialogai
     discovery: Atradimas
@@ -803,34 +891,42 @@ lt:
   auth:
     apply_for_account: Prašyti paskyros
     captcha_confirmation:
-      help_html: Jei turi problemų išsprendžiant CAPTCHA, gali susisiekti su mumis per %{email} ir mes tau padėsime.
-      hint_html: Dar vienas dalykas! Turime patvirtinti, kad esi žmogus (kad galėtume išvengti šlamšto). Išspręsk toliau pateiktą CAPTCHA ir spausk Tęsti.
+      help_html: Jei turi problemų išsprendžiant CAPTCHA, gali susisiekti su mumis
+        per %{email} ir mes tau padėsime.
+      hint_html: Dar vienas dalykas! Turime patvirtinti, kad esi žmogus (kad galėtume
+        išvengti šlamšto). Išspręsk toliau pateiktą CAPTCHA ir spausk Tęsti.
       title: Saugumo patikrinimas
     confirmations:
       awaiting_review_title: Peržiūrima tavo registracija
       clicking_this_link: paspausti šį nuorodą
       login_link: prisijungti
       proceed_to_login_html: Dabar gali pereiti prie %{login_link}.
-      redirect_to_app_html: Turėjei būti nukreiptas (-a) į <strong>%{app_name}</strong> programėlę. Jei taip neatsitiko, pabandyk %{clicking_this_link} arba rankiniu būdu grįžk į programėlę.
+      redirect_to_app_html: Turėjei būti nukreiptas (-a) į <strong>%{app_name}</strong>
+        programėlę. Jei taip neatsitiko, pabandyk %{clicking_this_link} arba rankiniu
+        būdu grįžk į programėlę.
       registration_complete: Tavo registracija domene %{domain} baigta!
       welcome_title: Sveiki, %{name}!
     delete_account: Ištrinti paskyrą
-    delete_account_html: Jei nori ištrinti savo paskyrą, gali <a href="%{path}">tęsti čia</a>. Tavęs bus paprašyta patvirtinimo.
+    delete_account_html: Jei nori ištrinti savo paskyrą, gali <a href="%{path}">tęsti
+      čia</a>. Tavęs bus paprašyta patvirtinimo.
     description:
       prefix_invited_by_user: "@%{name} kviečia prisijungti prie šio Truecolors serverio!"
       prefix_sign_up: Užsiregistruok sistemoje Truecolors šiandien!
-      suffix: Su paskyra galėsi sekti žmones, skelbti naujienas ir keistis žinutėmis su bet kurio Truecolors serverio naudotojais ir dar daugiau!
+      suffix: Su paskyra galėsi sekti žmones, skelbti naujienas ir keistis žinutėmis
+        su bet kurio Truecolors serverio naudotojais ir dar daugiau!
     didnt_get_confirmation: Negavai patvirtinimo nuorodos?
     dont_have_your_security_key: Neturi saugumo rakto?
     forgot_password: Pamiršai slaptažodį?
-    invalid_reset_password_token: Slaptažodžio atkūrimo raktas yra netinkamas arba nebegaliojantis. Paprašyk naujo.
+    invalid_reset_password_token: Slaptažodžio atkūrimo raktas yra netinkamas arba
+      nebegaliojantis. Paprašyk naujo.
     link_to_otp: Įvesk dvigubą kodą iš telefono arba atkūrimo kodą
     link_to_webauth: Naudoti saugumo rakto įrenginį
     log_in_with: Prisijungti su
     login: Prisijungti
     logout: Atsijungti
     migrate_account: Persikelti prie kitos paskyros
-    migrate_account_html: Jei nori šią paskyrą nukreipti į kitą, gali <a href="%{path}">sukonfigūruoti ją čia</a>.
+    migrate_account_html: Jei nori šią paskyrą nukreipti į kitą, gali <a href="%{path}">sukonfigūruoti
+      ją čia</a>.
     or_log_in_with: Arba prisijungti su
     progress:
       details: Tavo duomenys
@@ -848,37 +944,47 @@ lt:
       back: Grįžti
       invited_by: 'Gali prisijungti prie %{domain} pagal kvietimą, kurį gavai iš:'
       preamble: Tai nustatė ir taiko %{domain} prižiūrėtojai.
-      preamble_invited: Prieš tęsiant, atsižvelk į pagrindines taisykles, kurias nustatė %{domain} prižiūrėtojai.
+      preamble_invited: Prieš tęsiant, atsižvelk į pagrindines taisykles, kurias nustatė
+        %{domain} prižiūrėtojai.
       title: Kelios pagrindinės taisyklės.
       title_invited: Esi pakviestas.
     security: Apsauga
     set_new_password: Nustatyti naują slaptažodį
     setup:
-      email_settings_hint_html: Spustelėkite nuorodą, kurią atsiuntėme adresu %{email}, kad pradėtumėte naudoti „Truecolors“. Lauksime čia.
+      email_settings_hint_html: Spustelėkite nuorodą, kurią atsiuntėme adresu %{email},
+        kad pradėtumėte naudoti „Truecolors“. Lauksime čia.
       link_not_received: Negavai nuorodos?
       title: Patikrinti pašto dėžutę
     sign_in:
-      preamble_html: Prisijunk su savo <strong>%{domain}</strong> kredencialais. Jei tavo yra kitame serveryje, čia prisijungti negalėsi.
+      preamble_html: Prisijunk su savo <strong>%{domain}</strong> kredencialais. Jei
+        tavo yra kitame serveryje, čia prisijungti negalėsi.
       title: Prisijungti prie %{domain}
     sign_up:
-      preamble: Su šio „Truecolors“ serverio paskyra galėsite sekti bet kurį kitą fediversijoje esantį asmenį, nepriklausomai nuo to, kur yra jo paskyra.
+      preamble: Su šio „Truecolors“ serverio paskyra galėsite sekti bet kurį kitą
+        fediversijoje esantį asmenį, nepriklausomai nuo to, kur yra jo paskyra.
     status:
       account_status: Paskyros būsena
       redirecting_to: Tavo paskyra yra neaktyvi, nes šiuo metu ji nukreipiama į %{acct}.
-      self_destruct: Kadangi %{domain} uždaromas, turėsi tik ribotą prieigą prie savo paskyros.
+      self_destruct: Kadangi %{domain} uždaromas, turėsi tik ribotą prieigą prie savo
+        paskyros.
       view_strikes: Peržiūrėti ankstesnius savo paskyros pažeidimus
-    user_agreement_html: Perskaičiau ir sutinku su <a href="%{terms_of_service_path}" target="_blank">paslaugų sąlygomis</a> ir <a href="%{privacy_policy_path}" target="_blank">privatumo politika</a>
-    user_privacy_agreement_html: Perskaičiau ir sutinku su <a href="%{privacy_policy_path}" target="_blank">privatumo politika</a>
+    user_agreement_html: Perskaičiau ir sutinku su <a href="%{terms_of_service_path}"
+      target="_blank">paslaugų sąlygomis</a> ir <a href="%{privacy_policy_path}" target="_blank">privatumo
+      politika</a>
+    user_privacy_agreement_html: Perskaičiau ir sutinku su <a href="%{privacy_policy_path}"
+      target="_blank">privatumo politika</a>
   author_attribution:
     example_title: Teksto pavyzdys
-    hint_html: Ar rašote naujienas ar tinklaraščio straipsnius už „Truecolors“ ribų? Valdykite, kaip būsite nurodomi, kai jais bus bendrinama platformoje „Truecolors“.
+    hint_html: Ar rašote naujienas ar tinklaraščio straipsnius už „Truecolors“ ribų?
+      Valdykite, kaip būsite nurodomi, kai jais bus bendrinama platformoje „Truecolors“.
     instructions: 'Įsitikinkite, kad šis kodas yra jūsų straipsnio HTML:'
     more_from_html: Daugiau iš %{name}
     s_blog: "%{name} tinklaraštis"
     then_instructions: Tada toliau esančiame lauke įrašykite leidinio domeno vardą.
     title: Autoriaus (-ės) atribucija
   challenge:
-    hint_html: "<strong>Patarimas:</strong> artimiausią valandą daugiau neprašysime tavo slaptažodžio."
+    hint_html: "<strong>Patarimas:</strong> artimiausią valandą daugiau neprašysime
+      tavo slaptažodžio."
   datetime:
     distance_in_words:
       about_x_hours: "%{count} val"
@@ -908,7 +1014,9 @@ lt:
       your_appeal_pending: Pateikei apeliaciją
       your_appeal_rejected: Tavo apeliacija buvo atmesta
   edit_profile:
-    hint_html: "<strong>Tinkink tai, ką žmonės mato tavo viešame profilyje ir šalia įrašų.</strong> Kiti žmonės labiau linkę sekti atgal ir bendrauti su tavimi, jei tavo profilis yra užpildytas ir turi profilio nuotrauką."
+    hint_html: "<strong>Tinkink tai, ką žmonės mato tavo viešame profilyje ir šalia
+      įrašų.</strong> Kiti žmonės labiau linkę sekti atgal ir bendrauti su tavimi,
+      jei tavo profilis yra užpildytas ir turi profilio nuotrauką."
   errors:
     '403': Jūs neturie prieigos matyti šiam puslapiui.
     '404': Puslapis nerastas.
@@ -920,12 +1028,16 @@ lt:
     '500':
       content: Atsiprašome, bet kažkas nutiko ne taip mūsų pusėje.
       title: Netinkamas puslapis
-    noscript_html: Kad naudotumėtės Truecolors web aplikacija, prašome įsijungti JavaScript. Alternatyviai, pabandykite viena iš <a href="%{apps_path}">vietinių aplikacijų</a> Truecolors savo platformai.
+    noscript_html: Kad naudotumėtės Truecolors web aplikacija, prašome įsijungti JavaScript.
+      Alternatyviai, pabandykite viena iš <a href="%{apps_path}">vietinių aplikacijų</a>
+      Truecolors savo platformai.
   exports:
     archive_takeout:
       date: Data
       download: Atsisiųsti archyvą
-      hint_html: Gali paprašyti savo <strong>įrašų ir įkeltos medijos</strong> archyvo. Eksportuoti duomenys bus „ActivityPub“ formatu, kurį galima perskaityti bet kuria suderinama programine įranga. Archyvo galima prašyti kas 7 dienas.
+      hint_html: Gali paprašyti savo <strong>įrašų ir įkeltos medijos</strong> archyvo.
+        Eksportuoti duomenys bus „ActivityPub“ formatu, kurį galima perskaityti bet
+        kuria suderinama programine įranga. Archyvo galima prašyti kas 7 dienas.
       in_progress: Sudaromas archyvas...
       request: Prašyti savo archyvo
       size: Dydis
@@ -938,7 +1050,10 @@ lt:
     storage: Medijos saugykla
   featured_tags:
     add_new: Pridėti naują
-    hint_html: "<strong>Savo profilyje parodyk svarbiausius saitažodžius.</strong> Tai puikus įrankis kūrybiniams darbams ir ilgalaikiams projektams sekti, todėl svarbiausios saitažodžiai rodomi matomoje vietoje profilyje ir leidžia greitai pasiekti tavo paties įrašus."
+    hint_html: "<strong>Savo profilyje parodyk svarbiausius saitažodžius.</strong>
+      Tai puikus įrankis kūrybiniams darbams ir ilgalaikiams projektams sekti, todėl
+      svarbiausios saitažodžiai rodomi matomoje vietoje profilyje ir leidžia greitai
+      pasiekti tavo paties įrašus."
   filters:
     contexts:
       account: Profiliai
@@ -975,7 +1090,8 @@ lt:
       merge_long: Išsaugoti esančius įrašus ir pridėti naujus
       overwrite: Perrašyti
       overwrite_long: Pakeisti senus įrašus naujais
-    preface: Gali importuoti duomenis, kuriuos eksportavai iš kito serverio, pavyzdžiui, sekamų arba blokuojamų žmonių sąrašą.
+    preface: Gali importuoti duomenis, kuriuos eksportavai iš kito serverio, pavyzdžiui,
+      sekamų arba blokuojamų žmonių sąrašą.
     success: Jūsų informacija sėkmingai įkelta ir bus apdorota kaip įmanoma greičiau
     types:
       blocking: Blokuojamų sąrašas
@@ -1003,7 +1119,8 @@ lt:
       one: 1 naudojimas
       other: "%{count} naudojimų"
     max_uses_prompt: Nėra ribojimo
-    prompt: Generuok ir bendrink nuorodas su kitais, kad suteiktum prieigą prie šio serverio
+    prompt: Generuok ir bendrink nuorodas su kitais, kad suteiktum prieigą prie šio
+      serverio
     table:
       expires_at: Baigsis
       uses: Naudojimai
@@ -1012,12 +1129,14 @@ lt:
     authentication_methods:
       otp: dvigubas tapatybės nustatymo programėlė
       webauthn: saugumo raktai
-    description_html: Jei pastebėjei neatpažįstamą veiklą, apsvarstyk galimybę pakeisti slaptažodį ir įjungti dvigubą tapatybės nustatymą.
+    description_html: Jei pastebėjei neatpažįstamą veiklą, apsvarstyk galimybę pakeisti
+      slaptažodį ir įjungti dvigubą tapatybės nustatymą.
     empty: Tapatybės nustatymas istorijos nėra
     title: Tapatybės nustatymo istorija
   mail_subscriptions:
     unsubscribe:
-      success_html: Daugiau negausi %{type} „Truecolors“ domene %{domain} į savo el. paštą %{email}.
+      success_html: Daugiau negausi %{type} „Truecolors“ domene %{domain} į savo el.
+        paštą %{email}.
   media_attachments:
     validations:
       images_and_video: Negalima pridėti video prie statuso, kuris jau turi nuotrauką
@@ -1027,7 +1146,8 @@ lt:
     acct: Perkelta į
     cancel: Atšaukti nukreipimą
     warning:
-      disabled_account: Po to tavo dabartine paskyra nebus galima naudotis visiškai. Tačiau turėsi prieigą prie duomenų eksporto ir pakartotinio aktyvavimo.
+      disabled_account: Po to tavo dabartine paskyra nebus galima naudotis visiškai.
+        Tačiau turėsi prieigą prie duomenų eksporto ir pakartotinio aktyvavimo.
   moderation:
     title: Prižiūrėjimas
   notification_mailer:
@@ -1066,8 +1186,12 @@ lt:
           thousand: tūkst.
   otp_authentication:
     code_hint: Įvesk autentifikatoriaus programėlės sugeneruotą kodą, kad patvirtintum
-    description_html: Jei įjungsi <strong>dvigubo tapatybės nustatymą</strong> naudojant autentifikatoriaus programėlę, prisijungiant reikės turėti telefoną, kuris generuos prieigos raktos, kuriuos turėsi įvesti.
-    instructions_html: "<strong>Nuskenuok šį QR kodą į Google Authenticator arba panašią TOTP programėlę savo telefone</strong>. Nuo šiol ši programėlė generuos prieigos raktus, kuriuos turėsi įvesti prisijungiant."
+    description_html: Jei įjungsi <strong>dvigubo tapatybės nustatymą</strong> naudojant
+      autentifikatoriaus programėlę, prisijungiant reikės turėti telefoną, kuris generuos
+      prieigos raktos, kuriuos turėsi įvesti.
+    instructions_html: "<strong>Nuskenuok šį QR kodą į Google Authenticator arba panašią
+      TOTP programėlę savo telefone</strong>. Nuo šiol ši programėlė generuos prieigos
+      raktus, kuriuos turėsi įvesti prisijungiant."
   pagination:
     newer: Naujesnis
     next: Kitas
@@ -1079,13 +1203,25 @@ lt:
     posting_defaults: Skelbimo numatytosios nuostatos
     public_timelines: Viešieji laiko skalės
   privacy:
-    hint_html: "<strong>Tikrink, kaip nori, kad tavo profilis ir įrašai būtų randami.</strong> Įjungus įvairias Truecolors funkcijas, jos gali padėti pasiekti platesnę auditoriją. Akimirką peržiūrėk šiuos nustatymus, kad įsitikintum, jog jie atitinka tavo naudojimo būdą."
+    hint_html: "<strong>Tikrink, kaip nori, kad tavo profilis ir įrašai būtų randami.</strong>
+      Įjungus įvairias Truecolors funkcijas, jos gali padėti pasiekti platesnę auditoriją.
+      Akimirką peržiūrėk šiuos nustatymus, kad įsitikintum, jog jie atitinka tavo
+      naudojimo būdą."
     privacy: Privatumas
-    privacy_hint_html: Valdyk, kiek informacijos norėtum atskleisti kitų labui. Žmonės atranda įdomių profilių ir šaunių programėlių, naršydami kitų žmonių sekamus profilius ir žiūrėdami, iš kokių programėlių jie skelbia įrašus, bet tu galbūt norėsi tai slėpti.
+    privacy_hint_html: Valdyk, kiek informacijos norėtum atskleisti kitų labui. Žmonės
+      atranda įdomių profilių ir šaunių programėlių, naršydami kitų žmonių sekamus
+      profilius ir žiūrėdami, iš kokių programėlių jie skelbia įrašus, bet tu galbūt
+      norėsi tai slėpti.
     reach: Pasiekiamumas
-    reach_hint_html: Valdyk, ar norėtum, kad tave atrastų ir sektų nauji žmonės. Ar nori, kad įrašai būtų rodomi Naršyti ekrane? Ar nori, kad kiti žmonės tave matytų savo sekimo rekomendacijose? Ar nori automatiškai priimti visus naujus sekėjus, ar detaliai valdyti kiekvieną iš jų?
+    reach_hint_html: Valdyk, ar norėtum, kad tave atrastų ir sektų nauji žmonės. Ar
+      nori, kad įrašai būtų rodomi Naršyti ekrane? Ar nori, kad kiti žmonės tave matytų
+      savo sekimo rekomendacijose? Ar nori automatiškai priimti visus naujus sekėjus,
+      ar detaliai valdyti kiekvieną iš jų?
     search: Paieška
-    search_hint_html: Valdyk, kaip norėtum būti surastas. Ar nori, kad žmonės tave rastų pagal tai, apie ką viešai paskelbi? Ar nori, kad ne Truecolors žmonės, ieškantys profilio internete, rastų tavo profilį? Atmink, kad visiško pašalinimo iš visų paieškos variklių viešai skelbiamai informacijai užtikrinti negalima.
+    search_hint_html: Valdyk, kaip norėtum būti surastas. Ar nori, kad žmonės tave
+      rastų pagal tai, apie ką viešai paskelbi? Ar nori, kad ne Truecolors žmonės,
+      ieškantys profilio internete, rastų tavo profilį? Atmink, kad visiško pašalinimo
+      iš visų paieškos variklių viešai skelbiamai informacijai užtikrinti negalima.
     title: Privatumas ir pasiekiamumas
   privacy_policy:
     title: Privatumo politika
@@ -1163,7 +1299,10 @@ lt:
     webauthn_authentication: Saugumo raktai
   severed_relationships:
     download: Atsisiųsti (%{count})
-    preamble: Užblokavus domeną arba prižiūrėtojams nusprendus pristabdyti nuotolinio serverio veiklą, gali prarasti sekimus ir sekėjus. Kai taip atsitiks, galėsi atsisiųsti nutrauktų sąryšių sąrašus, kad juos patikrinti ir galbūt importuoti į kitą serverį.
+    preamble: Užblokavus domeną arba prižiūrėtojams nusprendus pristabdyti nuotolinio
+      serverio veiklą, gali prarasti sekimus ir sekėjus. Kai taip atsitiks, galėsi
+      atsisiųsti nutrauktų sąryšių sąrašus, kad juos patikrinti ir galbūt importuoti
+      į kitą serverį.
     type: Įvykis
   statuses:
     attached:
@@ -1193,8 +1332,11 @@ lt:
       unlisted: Neįtrauktas į sąrašą
       unlisted_long: matyti gali visi, bet nėra išvardyti į viešąsias laiko skales
   statuses_cleanup:
-    enabled_hint: Automatiškai ištrina įrašus, kai jie pasiekia nustatytą amžiaus ribą, nebent jie atitinka vieną iš toliau nurodytų išimčių
-    interaction_exceptions_explanation: Atkreipk dėmesį, kad negarantuojama, jog įrašai nebus ištrinti, jei jų mėgstamumo ar pasidalinimo riba bus žemesnė, nors vieną kartą ji jau buvo viršyta.
+    enabled_hint: Automatiškai ištrina įrašus, kai jie pasiekia nustatytą amžiaus
+      ribą, nebent jie atitinka vieną iš toliau nurodytų išimčių
+    interaction_exceptions_explanation: Atkreipk dėmesį, kad negarantuojama, jog įrašai
+      nebus ištrinti, jei jų mėgstamumo ar pasidalinimo riba bus žemesnė, nors vieną
+      kartą ji jau buvo viršyta.
     keep_polls_hint: Neištrina jokių tavo apklausų
     keep_self_bookmark: Laikyti įrašus, kuriuos pažymėjai
     keep_self_bookmark_hint: Neištrina tavo pačių įrašų, jei esi juos pažymėjęs (-usi)
@@ -1216,11 +1358,16 @@ lt:
     enabled: Dvigubas tapatybės nustatymas įjungtas
     enabled_success: Dvigubas tapatybės nustatymas sėkmingai įjungtas
     generate_recovery_codes: Sugeneruoti atkūrimo kodus
-    lost_recovery_codes: Atkūrimo kodai jums leidžia atgauti prisijungimą prie Jūsų paskyros, jeigu prarandate telefoną. Jeigu praradote atkūrimo kodus, juos galite sugeneruoti čia. Jūsų senieji atkūrimo kodai nebeveiks.
+    lost_recovery_codes: Atkūrimo kodai jums leidžia atgauti prisijungimą prie Jūsų
+      paskyros, jeigu prarandate telefoną. Jeigu praradote atkūrimo kodus, juos galite
+      sugeneruoti čia. Jūsų senieji atkūrimo kodai nebeveiks.
     otp: Autentifikatoriaus programėlė
     recovery_codes: Atsarginio atkūrimo kodai
     recovery_codes_regenerated: Atkūrimo kodai sėkmingai sugeneruoti
-    recovery_instructions_html: Jeigu prarandate prieiga prie telefono, jūs galite naudoti atkūrimo kodus esančius žemiau, kad atgautumėte priega prie savo paskyros.<strong>Laikykite atkūrimo kodus saugiai</strong> Pavyzdžiui, galite norėti juos išspausdinti, ir laikyti kartu su kitais svarbiais dokumentais.
+    recovery_instructions_html: Jeigu prarandate prieiga prie telefono, jūs galite
+      naudoti atkūrimo kodus esančius žemiau, kad atgautumėte priega prie savo paskyros.<strong>Laikykite
+      atkūrimo kodus saugiai</strong> Pavyzdžiui, galite norėti juos išspausdinti,
+      ir laikyti kartu su kitais svarbiais dokumentais.
     webauthn: Saugumo raktai
   user_mailer:
     announcement_published:
@@ -1239,14 +1386,19 @@ lt:
       title: Archyvas išimtas
     failed_2fa:
       details: 'Štai išsami informacija apie bandymą prisijungti:'
-      explanation: Kažkas bandė prisijungti prie tavo paskyros, bet nurodė netinkamą dvigubą tapatybės nustatymą.
-      further_actions_html: Jei tai buvo ne tu, rekomenduojame nedelsiant imtis %{action}, nes jis gali būti pažeistas.
+      explanation: Kažkas bandė prisijungti prie tavo paskyros, bet nurodė netinkamą
+        dvigubą tapatybės nustatymą.
+      further_actions_html: Jei tai buvo ne tu, rekomenduojame nedelsiant imtis %{action},
+        nes jis gali būti pažeistas.
       subject: Dvigubas tapatybės nustatymas nesėkmingai
       title: Nepavyko atlikti dvigubo tapatybės nustatymo
     suspicious_sign_in:
-      further_actions_html: Jei tai buvai ne tu, rekomenduojame nedelsiant %{action} ir įjungti dvigubą tapatybės nustatymą, kad tavo paskyra būtų saugi.
+      further_actions_html: Jei tai buvai ne tu, rekomenduojame nedelsiant %{action}
+        ir įjungti dvigubą tapatybės nustatymą, kad tavo paskyra būtų saugi.
     terms_of_service_changed:
-      agreement: Tęsiant naudojimąsi %{domain}, jūs sutinkate su šiomis sąlygomis. Jei nesutinkate su atnaujintomis sąlygomis, bet kuriuo metu galite nutraukti sutartį su %{domain} ištrindami savo paskyrą.
+      agreement: Tęsiant naudojimąsi %{domain}, jūs sutinkate su šiomis sąlygomis.
+        Jei nesutinkate su atnaujintomis sąlygomis, bet kuriuo metu galite nutraukti
+        sutartį su %{domain} ištrindami savo paskyrą.
       changelog: Trumpai apie tai, ką šis naujinimas reiškia jums
       sign_off: "%{domain} komanda"
       subject: Paslaugų sąlygų atnaujinimai
@@ -1277,13 +1429,27 @@ lt:
       edit_profile_title: Suasmenink savo profilį
       explanation: Štai keletas patarimų, kaip pradėti
       feature_action: Sužinoti daugiau
-      feature_audience: Truecolors suteikia unikalią galimybę valdyti savo auditoriją be tarpininkų. Tavo infrastruktūroje įdiegtas Truecolors leidžia sekti ir būti sekamam iš bet kurio kito Truecolors serverio internete ir yra kontroliuojamas tik tavęs.
+      feature_audience: Truecolors suteikia unikalią galimybę valdyti savo auditoriją
+        be tarpininkų. Tavo infrastruktūroje įdiegtas Truecolors leidžia sekti ir
+        būti sekamam iš bet kurio kito Truecolors serverio internete ir yra kontroliuojamas
+        tik tavęs.
       feature_audience_title: Užtikrintai kurk savo auditoriją
-      feature_control: Tu geriausiai žinai, ką nori matyti savo pagrindiniame sraute. Jokių algoritmų ar reklamų, kurios gaištų tavo laiką. Iš vienos paskyros sek bet kurį asmenį bet kuriame Truecolors serveryje, gauk jo įrašus chronologine tvarka ir padaryk savo interneto kampelį šiek tiek panašesnį į save.
+      feature_control: Tu geriausiai žinai, ką nori matyti savo pagrindiniame sraute.
+        Jokių algoritmų ar reklamų, kurios gaištų tavo laiką. Iš vienos paskyros sek
+        bet kurį asmenį bet kuriame Truecolors serveryje, gauk jo įrašus chronologine
+        tvarka ir padaryk savo interneto kampelį šiek tiek panašesnį į save.
       feature_control_title: Kontroliuok savo laiko skalę
-      feature_creativity: Truecolors palaiko garso, vaizdo įrašus ir paveikslėlių įrašus, prieinamumus aprašymus, apklausas, turinio įspėjimus, animuotus avatarus, pasirinktinius jaustukus, miniatiūrų apkarpymo valdymą ir dar daugiau, kad galėtum išreikšti save internete. Nesvarbu, ar publikuoji savo kūrybą, muziką, ar tinklalaidę, Truecolors tau padės.
+      feature_creativity: Truecolors palaiko garso, vaizdo įrašus ir paveikslėlių
+        įrašus, prieinamumus aprašymus, apklausas, turinio įspėjimus, animuotus avatarus,
+        pasirinktinius jaustukus, miniatiūrų apkarpymo valdymą ir dar daugiau, kad
+        galėtum išreikšti save internete. Nesvarbu, ar publikuoji savo kūrybą, muziką,
+        ar tinklalaidę, Truecolors tau padės.
       feature_creativity_title: Neprilygstamas kūrybiškumas
-      feature_moderation: Truecolors grąžina sprendimų priėmimą į tavo rankas. Kiekvienas serveris kuria savo taisykles ir nuostatus, kurie yra įgyvendinami vietoje, o ne iš viršaus į apačią, kaip įmonių socialinėje medijoje, todėl ši sistema lanksčiausiai reaguoja į skirtingų žmonių grupių poreikius. Prisijunk prie serverio su taisyklėmis, su kuriomis sutinki, arba talpink savo serverį.
+      feature_moderation: Truecolors grąžina sprendimų priėmimą į tavo rankas. Kiekvienas
+        serveris kuria savo taisykles ir nuostatus, kurie yra įgyvendinami vietoje,
+        o ne iš viršaus į apačią, kaip įmonių socialinėje medijoje, todėl ši sistema
+        lanksčiausiai reaguoja į skirtingų žmonių grupių poreikius. Prisijunk prie
+        serverio su taisyklėmis, su kuriomis sutinki, arba talpink savo serverį.
       feature_moderation_title: Prižiūrėjimas taip, kaip turėtų būti
       follow_action: Sekti
       follow_step: Sekti įdomius žmones – tai, kas yra Truecolors.
@@ -1309,13 +1475,24 @@ lt:
     invalid_otp_token: Netinkamas dviejų veiksnių kodas
     otp_lost_help_html: Jei praradai prieigą prie abiejų, gali susisiek su %{email}
     rate_limited: Per daug tapatybės nustatymo bandymų. Bandyk dar kartą vėliau.
-    seamless_external_login: Esi prisijungęs (-usi) per išorinę paslaugą, todėl slaptažodžio ir el. pašto nustatymai nepasiekiami.
+    seamless_external_login: Esi prisijungęs (-usi) per išorinę paslaugą, todėl slaptažodžio
+      ir el. pašto nustatymai nepasiekiami.
     signed_in_as: 'Prisijungta kaip:'
   verification:
-    extra_instructions_html: <strong>Patarimas:</strong> nuoroda tavo svetainėje gali būti nematoma. Svarbi dalis – tai, kad <code>rel="me"</code> neleidžia apsimesti interneto svetainėse, kuriose yra naudotojų sukurto turinio. Vietoj to gali naudoti net <code>nuorodą</code> puslapio antraštėje esančią žymę <code>a</code>, tačiau HTML turi būti pasiekiamas nevykdant JavaScript.
+    extra_instructions_html: <strong>Patarimas:</strong> nuoroda tavo svetainėje gali
+      būti nematoma. Svarbi dalis – tai, kad <code>rel="me"</code> neleidžia apsimesti
+      interneto svetainėse, kuriose yra naudotojų sukurto turinio. Vietoj to gali
+      naudoti net <code>nuorodą</code> puslapio antraštėje esančią žymę <code>a</code>,
+      tačiau HTML turi būti pasiekiamas nevykdant JavaScript.
     here_is_how: Štai kaip
-    hint_html: "<strong>Savo tapatybės patvirtinimas Truecolors skirtas visiems.</strong> Remiantis atviraisiais žiniatinklio standartais, dabar ir visam laikui nemokamas. Viskas, ko tau reikia, yra asmeninė svetainė, pagal kurią žmonės tave atpažįsta. Kai iš savo profilio pateiksi nuorodą į šią svetainę, patikrinsime, ar svetainėje yra nuoroda į tavo profilį, ir parodysime vizualinį indikatorių."
-    instructions_html: Nukopijuok ir įklijuok toliau pateiktą kodą į savo svetainės HTML. Tada į vieną iš papildomų profilio laukų skirtuke Redaguoti profilį įrašyk savo svetainės adresą ir išsaugok pakeitimus.
+    hint_html: "<strong>Savo tapatybės patvirtinimas Truecolors skirtas visiems.</strong>
+      Remiantis atviraisiais žiniatinklio standartais, dabar ir visam laikui nemokamas.
+      Viskas, ko tau reikia, yra asmeninė svetainė, pagal kurią žmonės tave atpažįsta.
+      Kai iš savo profilio pateiksi nuorodą į šią svetainę, patikrinsime, ar svetainėje
+      yra nuoroda į tavo profilį, ir parodysime vizualinį indikatorių."
+    instructions_html: Nukopijuok ir įklijuok toliau pateiktą kodą į savo svetainės
+      HTML. Tada į vieną iš papildomų profilio laukų skirtuke Redaguoti profilį įrašyk
+      savo svetainės adresą ir išsaugok pakeitimus.
     verification: Patvirtinimas
     verified_links: Tavo patikrintos nuorodos
     website_verification: Svetainės patvirtinimas
@@ -1326,10 +1503,12 @@ lt:
       success: Tavo saugumo raktas buvo sėkmingai pridėtas.
     delete: Ištrinti
     delete_confirmation: Ar tikrai nori ištrinti šį saugumo raktą?
-    description_html: Jei įjungsi <strong>saugumo rakto tapatybės nustatymą</strong>, prisijungiant reikės naudoti vieną iš savo saugumo raktų.
+    description_html: Jei įjungsi <strong>saugumo rakto tapatybės nustatymą</strong>,
+      prisijungiant reikės naudoti vieną iš savo saugumo raktų.
     destroy:
       error: Kilo problema ištrinant saugumo raktą. Bandyk dar kartą.
       success: Tavo saugumo raktas buvo sėkmingai ištrintas.
     nickname_hint: Įvesk naujojo saugumo rakto slapyvardį
     not_enabled: Dar neįjungei WebAuthn
-    otp_required: Norint naudoti saugumo raktus, pirmiausia įjunk dvigubą tapatybės nustatymą.
+    otp_required: Norint naudoti saugumo raktus, pirmiausia įjunk dvigubą tapatybės
+      nustatymą.

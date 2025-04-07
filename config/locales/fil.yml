@@ -1,14 +1,18 @@
 ---
 fil:
   about:
-    about_truecolors_html: 'Ang social network ng hinaharap: Walang mga ad, walang corporate na pagmamanman, etikal na disenyo, at desentralisasyon! Sa iyo ang data mo sa Truecolors!'
+    about_truecolors_html: 'Ang social network ng hinaharap: Walang mga ad, walang
+      corporate na pagmamanman, etikal na disenyo, at desentralisasyon! Sa iyo ang
+      data mo sa Truecolors!'
     contact_missing: Hindi naka-set
     contact_unavailable: N/A
     hosted_on: Truecolors hosted sa %{domain}
     title: About
   accounts:
     following: Following
-    instance_actor_flash: Ang account na ito ay virtual actor na ginagamit para i-represent ang mismong server at hindi anumang indibidwal na user. Ginagamit ito para sa mga layunin ng pederasyon at hindi dapat i-suspend.
+    instance_actor_flash: Ang account na ito ay virtual actor na ginagamit para i-represent
+      ang mismong server at hindi anumang indibidwal na user. Ginagamit ito para sa
+      mga layunin ng pederasyon at hindi dapat i-suspend.
     last_active: huling aktibo
     link_verified_on: Ang pagmamay-ari ng link na ito ay huling na-check sa %{date}
     nothing_here: Walang makikita rito!

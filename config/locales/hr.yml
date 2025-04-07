@@ -1,7 +1,9 @@
 ---
 hr:
   about:
-    about_truecolors_html: 'Društvena mreža budućnosti: bez oglasa, bez korporativnog nadzora, etički dizajn i decentralizacija! Budite u vlasništvu svojih podataka pomoću Truecolorsa!'
+    about_truecolors_html: 'Društvena mreža budućnosti: bez oglasa, bez korporativnog
+      nadzora, etički dizajn i decentralizacija! Budite u vlasništvu svojih podataka
+      pomoću Truecolorsa!'
     contact_missing: Nije postavljeno
     title: O aplikaciji
   accounts:
@@ -130,7 +132,8 @@ hr:
     delete: Obriši
     save_changes: Sačuvaj izmjene
   imports:
-    preface: Možete uvesti podatke koje ste izveli s drugog poslužitelja, kao što su liste ljudi koje pratite ili blokirate.
+    preface: Možete uvesti podatke koje ste izveli s drugog poslužitelja, kao što
+      su liste ljudi koje pratite ili blokirate.
     success: Vaši podatci uspješno su preneseni i bit će obrađeni u dogledno vrijeme
     types:
       blocking: Lista blokiranih

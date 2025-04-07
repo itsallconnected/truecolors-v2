@@ -1,7 +1,8 @@
 ---
 sk:
   about:
-    about_truecolors_html: Truecolors je sociálna sieť založená na otvorených webových protokoloch a na slobodnom softvéri. Je decentralizovaná, podobne ako email.
+    about_truecolors_html: Truecolors je sociálna sieť založená na otvorených webových
+      protokoloch a na slobodnom softvéri. Je decentralizovaná, podobne ako email.
     contact_missing: Nezadaný
     contact_unavailable: Neuvedený/á
     hosted_on: Truecolors hostovaný na %{domain}
@@ -13,7 +14,9 @@ sk:
       one: Sledujúci
       other: Sledujúci
     following: Nasledujem
-    instance_actor_flash: Toto konto je virtuálny aktér, ktorý predstavuje samotný server, a nie konkrétneho používateľa. Používa sa na účely federácie a nemal by byť pozastavený.
+    instance_actor_flash: Toto konto je virtuálny aktér, ktorý predstavuje samotný
+      server, a nie konkrétneho používateľa. Používa sa na účely federácie a nemal
+      by byť pozastavený.
     last_active: naposledy aktívny
     link_verified_on: Vlastníctvo tohto odkazu bolo skontrolované %{date}
     nothing_here: Nič tu nie je!
@@ -106,7 +109,8 @@ sk:
       moderation_notes: Moderátorské poznámky
       most_recent_activity: Posledná aktivita
       most_recent_ip: Posledná IP adresa
-      no_account_selected: Nedošlo k žiadnému pozmeneniu účtov, keďže žiadne neboli vybrané
+      no_account_selected: Nedošlo k žiadnému pozmeneniu účtov, keďže žiadne neboli
+        vybrané
       no_limits_imposed: Nie sú stanovené žiadné obmedzenia
       no_role_assigned: Žiadne postavenie nepriradené
       not_subscribed: Neodoberá
@@ -122,7 +126,10 @@ sk:
       reject: Zamietni
       rejected_msg: Úspešne zamietnutá prihláška %{username}
       remote_suspension_irreversible: Údaje tohto účtu boli nenávratne zmazané.
-      remote_suspension_reversible_hint_html: Účet bol pozastavený na ich serveri a údaje budú úplne odstránené dňa %{date}. Dovtedy môže vzdialený server účet obnoviť bez akýchkoľvek nepriaznivých účinkov. Ak chceš odstrániť všetky údaje účtu ihneď, môžeš tak urobiť nižšie.
+      remote_suspension_reversible_hint_html: Účet bol pozastavený na ich serveri
+        a údaje budú úplne odstránené dňa %{date}. Dovtedy môže vzdialený server účet
+        obnoviť bez akýchkoľvek nepriaznivých účinkov. Ak chceš odstrániť všetky údaje
+        účtu ihneď, môžeš tak urobiť nižšie.
       remove_avatar: Vymaž avatar
       remove_header: Vymaž záhlavie
       removed_avatar_msg: Úspešne odstránený obrázok avatara %{username}
@@ -154,8 +161,12 @@ sk:
       subscribe: Odoberaj
       suspend: Pozastav
       suspended: Pozastavený/á
-      suspension_irreversible: Údaje tohto účtu boli nenávratne vymazané. Účet môžete zrušiť, aby sa dal používať, ale neobnovia sa žiadne údaje, ktoré predtým mal.
-      suspension_reversible_hint_html: Účet bol pozastavený a údaje budú úplne odstránené dňa %{date}. Dovtedy je možné účet obnoviť bez akýchkoľvek nepriaznivých účinkov. Ak chcete okamžite odstrániť všetky údaje účtu, môžete tak urobiť nižšie.
+      suspension_irreversible: Údaje tohto účtu boli nenávratne vymazané. Účet môžete
+        zrušiť, aby sa dal používať, ale neobnovia sa žiadne údaje, ktoré predtým
+        mal.
+      suspension_reversible_hint_html: Účet bol pozastavený a údaje budú úplne odstránené
+        dňa %{date}. Dovtedy je možné účet obnoviť bez akýchkoľvek nepriaznivých účinkov.
+        Ak chcete okamžite odstrániť všetky údaje účtu, môžete tak urobiť nižšie.
       title: Účty
       unblock_email: Odblokuj emailovú adresu
       unblocked_email_msg: Úspešné odblokovanie e-mailovej adresy %{username}
@@ -229,9 +240,11 @@ sk:
         update_status: Aktualizuj stav
         update_user_role: Aktualizovať rolu
       actions:
-        approve_appeal_html: "%{name} odsúhlasil/a námietku na moderátorské rozhodnutie od %{target}"
+        approve_appeal_html: "%{name} odsúhlasil/a námietku na moderátorské rozhodnutie
+          od %{target}"
         approve_user_html: "%{name} odsúhlasil/a registráciu od %{target}"
-        assigned_to_self_report_html: "%{name} pridelil/a hlásenie užívateľa %{target} sebe"
+        assigned_to_self_report_html: "%{name} pridelil/a hlásenie užívateľa %{target}
+          sebe"
         change_role_user_html: "%{name} zmenil/a rolu pre %{target}"
         create_account_warning_html: "%{name} poslal/a upozornenie užívateľovi %{target}"
         create_announcement_html: "%{name} vytvoril/a nové oboznámenie %{target}"
@@ -241,7 +254,8 @@ sk:
         create_domain_block_html: "%{name} zablokoval/a doménu %{target}"
         create_email_domain_block_html: "%{name} zablokoval/a emailovú doménu %{target}"
         create_ip_block_html: "%{name} vytvoril/a pravidlo pre IP %{target}"
-        create_unavailable_domain_html: "%{name} pozastavil/a doručovanie k doméne %{target}"
+        create_unavailable_domain_html: "%{name} pozastavil/a doručovanie k doméne
+          %{target}"
         create_user_role_html: "%{name} vytvoril/a rolu pre %{target}"
         demote_user_html: "%{name} degradoval/a užívateľa %{target}"
         destroy_announcement_html: "%{name} vymazal/a oboznámenie %{target}"
@@ -251,13 +265,15 @@ sk:
         destroy_email_domain_block_html: "%{name} odblokoval/a emailovú doménu %{target}"
         destroy_ip_block_html: "%{name} vymazal/a pravidlo pre IP %{target}"
         destroy_status_html: "%{name} zmazal/a príspevok od %{target}"
-        destroy_unavailable_domain_html: "%{name} znova spustil/a doručovanie pre doménu %{target}"
+        destroy_unavailable_domain_html: "%{name} znova spustil/a doručovanie pre
+          doménu %{target}"
         destroy_user_role_html: "%{name} vymazal/a rolu pre %{target}"
         enable_custom_emoji_html: "%{name} povolil/a emotikonu %{target}"
         enable_user_html: "%{name} povolil/a prihlásenie pre používateľa %{target}"
         memorialize_account_html: "%{name} zmenil/a účet %{target} na pamätnú stránku"
         promote_user_html: "%{name} povýšil/a užívateľa %{target}"
-        reject_appeal_html: "%{name} zamietol/la námietku moderovacieho rozhodnutia od %{target}"
+        reject_appeal_html: "%{name} zamietol/la námietku moderovacieho rozhodnutia
+          od %{target}"
         reject_user_html: "%{name} odmietol/la registráciu od %{target}"
         remove_avatar_user_html: "%{name} vymazal/a %{target}/ov/in avatar"
         reopen_report_html: "%{name} znovu otvoril/a nahlásenie %{target}"
@@ -267,7 +283,8 @@ sk:
         silence_account_html: "%{name} obmedzil/a účet %{target}"
         suspend_account_html: "%{name} zablokoval/a účet používateľa %{target}"
         unassigned_report_html: "%{name} odobral/a report od %{target}"
-        unblock_email_account_html: "%{name} odblokoval/a %{target}ovu/inu emailovú adresu"
+        unblock_email_account_html: "%{name} odblokoval/a %{target}ovu/inu emailovú
+          adresu"
         unsensitive_account_html: "%{name} odznačil/a médium od %{target} ako chúlostivé"
         unsilence_account_html: "%{name} zrušil/a obmedzenie %{target}ovho/inho účtu"
         unsuspend_account_html: "%{name} spojazdnil/a účet %{target}"
@@ -369,27 +386,33 @@ sk:
       destroyed_msg: Blokovanie domény bolo zrušené
       domain: Doména
       edit: Uprav blokovanie domény
-      existing_domain_block_html: Pre účet %{name} si už nahodil/a přísnejšie obmedzenie, najskôr ho teda musíš <a href="%{unblock_url}">odblokovať</a>.
+      existing_domain_block_html: Pre účet %{name} si už nahodil/a přísnejšie obmedzenie,
+        najskôr ho teda musíš <a href="%{unblock_url}">odblokovať</a>.
       export: Exportuj
       import: Nahraj
       new:
         create: Vytvor blokovanie domény
-        hint: Blokovanie domény stále dovolí vytvárať nové účty v databázi, ale tieto budú spätne automaticky moderované.
+        hint: Blokovanie domény stále dovolí vytvárať nové účty v databázi, ale tieto
+          budú spätne automaticky moderované.
         severity:
           noop: Nič
           silence: Obmedz
           suspend: Pozastav
         title: Nové blokovanie domény
-      no_domain_block_selected: Žiadne blokovanie domén nebolo zmenené, keďže žiadne neboli vybrané
+      no_domain_block_selected: Žiadne blokovanie domén nebolo zmenené, keďže žiadne
+        neboli vybrané
       not_permitted: Nemáš povolenie na vykonanie tohto kroku
       obfuscate: Zatemniť názov domény
       private_comment: Súkromný komentár
-      private_comment_hint: Odôvodni toto doménové obmedzenie, pre vnútorné vyrozumenie moderátorov.
+      private_comment_hint: Odôvodni toto doménové obmedzenie, pre vnútorné vyrozumenie
+        moderátorov.
       public_comment: Verejný komentár
       reject_media: Odmietaj súbory s obrázkami, alebo videami
-      reject_media_hint: Vymaže miestne uložené súbory médií a odmietne ich sťahovanie v budúcnosti. Nepodstatné pri vylúčení
+      reject_media_hint: Vymaže miestne uložené súbory médií a odmietne ich sťahovanie
+        v budúcnosti. Nepodstatné pri vylúčení
       reject_reports: Zamietni hlásenia
-      reject_reports_hint: Ignoruj všetky hlásenia prichádzajúce z tejto domény. Nevplýva na blokovania
+      reject_reports_hint: Ignoruj všetky hlásenia prichádzajúce z tejto domény. Nevplýva
+        na blokovania
       undo: Odvolaj blokovanie domény
       view: Ukáž blokovanie domén
     email_domain_blocks:
@@ -421,7 +444,12 @@ sk:
         title: Nahraj zákazy domén
       no_file: Nevybraný žiaden súbor
     follow_recommendations:
-      description_html: "<strong>Odporúčania na sledovanie pomáhaju novým užívateľom rýchlo nájsť zaujímavý obsah</strong>. Ak užívateľ zatiaľ nedostatočne interagoval s ostatnými aby si vyformoval personalizované odporúčania na sledovanie, tak mu budú odporúčané tieto účty. Sú prepočítavané na dennej báze z mixu účtov s nedávnym najvyšším záujmom a najvyšším počtom lokálnych sledujúcich pre daný jazyk."
+      description_html: "<strong>Odporúčania na sledovanie pomáhaju novým užívateľom
+        rýchlo nájsť zaujímavý obsah</strong>. Ak užívateľ zatiaľ nedostatočne interagoval
+        s ostatnými aby si vyformoval personalizované odporúčania na sledovanie, tak
+        mu budú odporúčané tieto účty. Sú prepočítavané na dennej báze z mixu účtov
+        s nedávnym najvyšším záujmom a najvyšším počtom lokálnych sledujúcich pre
+        daný jazyk."
       language: Pre jazyk
       status: Stav
       suppress: Utlmiť oporúčanie na sledovanie
@@ -499,24 +527,32 @@ sk:
         '94670856': 3 roky
       new:
         title: Vytvor nové IP pravidlo
-      no_ip_block_selected: Žiadne IP pravidlá neboli zmenené, keďže si žiadne nemal/a zvolené
+      no_ip_block_selected: Žiadne IP pravidlá neboli zmenené, keďže si žiadne nemal/a
+        zvolené
       title: pravidlá pre IP adresy
     relationships:
       title: Vzťahy užívateľa %{acct}
     relays:
       add_new: Pridaj nový federovací mostík
       delete: Vymaž
-      description_html: "<strong>Federovací mostík</strong> je prechodný server, ktorý obmieňa veľké množstvá verejných príspevkov medzi tými servermi ktoré na od neho odoberajú, aj doňho prispievajú. <strong>Môže to pomôcť malým a stredným instanciám objavovať federovaný obsah</strong>, čo inak vyžaduje aby miestni užívatelia ručne následovali iných ľudí zo vzdialených instancií."
+      description_html: "<strong>Federovací mostík</strong> je prechodný server, ktorý
+        obmieňa veľké množstvá verejných príspevkov medzi tými servermi ktoré na od
+        neho odoberajú, aj doňho prispievajú. <strong>Môže to pomôcť malým a stredným
+        instanciám objavovať federovaný obsah</strong>, čo inak vyžaduje aby miestni
+        užívatelia ručne následovali iných ľudí zo vzdialených instancií."
       disable: Vypni
       disabled: Vypnutý
       enable: Povoľ
-      enable_hint: Ak povolíš, tvoj server bude odoberať všetky verejné príspevky z tohto mostu, a začne posielať verejné príspevky tvojho servera na tento most.
+      enable_hint: Ak povolíš, tvoj server bude odoberať všetky verejné príspevky
+        z tohto mostu, a začne posielať verejné príspevky tvojho servera na tento
+        most.
       enabled: Povolené
       inbox_url: URL adresa mostu
       pending: Čaká sa na povolenie od prechodného mostu
       save_and_enable: Ulož a povoľ
       setup: Nastav prepojenie s mostom
-      signatures_not_enabled: Prechodové mostíky nebudú fungovať správne, kým je povolený bezpečtnostný režim, alebo biela listina
+      signatures_not_enabled: Prechodové mostíky nebudú fungovať správne, kým je povolený
+        bezpečtnostný režim, alebo biela listina
       status: Stav
       title: Mosty
     report_notes:
@@ -532,7 +568,9 @@ sk:
       action_log: Denník auditu
       action_taken_by: Zákrok vykonal/a
       actions:
-        suspend_description_html: Tento účet a všetok jeho obsah bude nedostupný a nakoniec zmazaný, interaktovať s ním bude nemožné. Zvrátiteľné v rámci 30 dní. Uzatvára všetky hlásenia voči tomuto účtu.
+        suspend_description_html: Tento účet a všetok jeho obsah bude nedostupný a
+          nakoniec zmazaný, interaktovať s ním bude nemožné. Zvrátiteľné v rámci 30
+          dní. Uzatvára všetky hlásenia voči tomuto účtu.
       add_to_report: Pridaj viac do hlásenia
       already_suspended_badges:
         local: Na tomto serveri už vylúčený/á
@@ -560,7 +598,8 @@ sk:
         create_and_resolve: Vyrieš s poznámkou
         create_and_unresolve: Otvor znovu, s poznámkou
         delete: Vymaž
-        placeholder: Opíš aké opatrenia boli urobené, alebo akékoľvek iné súvisiace aktualizácie…
+        placeholder: Opíš aké opatrenia boli urobené, alebo akékoľvek iné súvisiace
+          aktualizácie…
         title: Poznámky
       remote_user_placeholder: vzdialený užívateľ z %{instance}
       reopen: Znovu otvor report
@@ -574,7 +613,8 @@ sk:
       statuses: Nahlásený obsah
       summary:
         action_preambles:
-          suspend_html: 'Chystáš sa <strong>pozastaviť</strong> účet <strong>@%{acct}</strong>. To urobí:'
+          suspend_html: 'Chystáš sa <strong>pozastaviť</strong> účet <strong>@%{acct}</strong>.
+            To urobí:'
         actions:
           delete_html: Vymaž pohoršujúce príspevky
           mark_as_sensitive_html: Označ médiá pohoršujúcich príspevkov za chúlostivé
@@ -660,7 +700,9 @@ sk:
           approved: Pre registráciu je nutné povolenie
           none: Nikto sa nemôže registrovať
           open: Ktokoľvek sa môže zaregistrovať
-        warning_hint: Odporúčame používať "Pre registráciu je potrebné schválenie", pokiaľ si niesi istý/á, že tvoj moderovací tím vie zvládnuť spam a záškodné registrácie včas.
+        warning_hint: Odporúčame používať "Pre registráciu je potrebné schválenie",
+          pokiaľ si niesi istý/á, že tvoj moderovací tím vie zvládnuť spam a záškodné
+          registrácie včas.
       title: Nastavenia servera
     site_uploads:
       delete: Vymaž nahratý súbor
@@ -690,7 +732,8 @@ sk:
       language: Jazyk
       media:
         title: Médiá
-      no_status_selected: Žiadne príspevky neboli zmenené, keďže si žiadne nemal/a zvolené
+      no_status_selected: Žiadne príspevky neboli zmenené, keďže si žiadne nemal/a
+        zvolené
       open: Otvor príspevok
       original_status: Pôvodný príspevok
       status_changed: Príspevok bol zmenený
@@ -770,7 +813,8 @@ sk:
       status: Stav
   admin_mailer:
     auto_close_registrations:
-      subject: Registrácie na %{instance} boli automaticky prepnuté na vyžadujúce schválenie
+      subject: Registrácie na %{instance} boli automaticky prepnuté na vyžadujúce
+        schválenie
     new_appeal:
       actions:
         delete_statuses: vymazať ich príspevky
@@ -778,7 +822,8 @@ sk:
         none: varovanie
         silence: obmedziť ich účet
     new_pending_account:
-      body: Podrobnosti o novom účte sú uvedené nižšie. Môžeš túto registračnú požiadavku buď prijať, alebo zamietnúť.
+      body: Podrobnosti o novom účte sú uvedené nižšie. Môžeš túto registračnú požiadavku
+        buď prijať, alebo zamietnúť.
       subject: Nový účet očakáva preverenie na %{instance} (%{username})
     new_report:
       body: "%{reporter} nahlásil/a %{target}"
@@ -793,12 +838,17 @@ sk:
         title: Populárne haštagy
   aliases:
     add_new: Vytvor alias
-    created_msg: Nový alias úspešne vytvorený. Teraz môžeš začať presun zo starého účtu.
-    deleted_msg: Alias úspešne odstránený. Presun z tamtoho účtu na tento už viac nebude možný.
+    created_msg: Nový alias úspešne vytvorený. Teraz môžeš začať presun zo starého
+      účtu.
+    deleted_msg: Alias úspešne odstránený. Presun z tamtoho účtu na tento už viac
+      nebude možný.
     remove: Odpoj alias
   appearance:
     advanced_web_interface: Pokročilé webové rozhranie
-    advanced_web_interface_hint: 'Ak chceš využiť celkovú šírku tvojej obrazovky, pokročilé webové rozhranie ti umožňuje nastaviť mnoho rôznych stĺpcov, aby si videl/a toľko informácií naraz, koľko chceš: Domov, oboznámenia, federovanú časovú os, a ľubovolný počet zoznamov, či haštagov.'
+    advanced_web_interface_hint: 'Ak chceš využiť celkovú šírku tvojej obrazovky,
+      pokročilé webové rozhranie ti umožňuje nastaviť mnoho rôznych stĺpcov, aby si
+      videl/a toľko informácií naraz, koľko chceš: Domov, oboznámenia, federovanú
+      časovú os, a ľubovolný počet zoznamov, či haštagov.'
     animations_and_accessibility: Animácie a prístupnosť
     confirmation_dialogs: Potvrdzovacie dialógy
     discovery: Nájdenie
@@ -829,20 +879,24 @@ sk:
       proceed_to_login_html: Teraz môžeš pokračovať na %{login_link}.
       welcome_title: Vitaj, %{name}!
     delete_account: Vymaž účet
-    delete_account_html: Pokiaľ chceš svoj účet odtiaľto vymazať, môžeš tak <a href="%{path}">urobiť tu</a>. Budeš požiadaný/á o potvrdenie tohto kroku.
+    delete_account_html: Pokiaľ chceš svoj účet odtiaľto vymazať, môžeš tak <a href="%{path}">urobiť
+      tu</a>. Budeš požiadaný/á o potvrdenie tohto kroku.
     description:
       prefix_invited_by_user: "@%{name} ťa pozýva na tento Truecolors server!"
       prefix_sign_up: Zaregistruj sa na Truecolorse už dnes!
-      suffix: S účtom budeš môcť nasledovať ľudí, posielať príspevky, a vymieňať si správy s užívateľmi z hocijakého Truecolors servera a viac!
+      suffix: S účtom budeš môcť nasledovať ľudí, posielať príspevky, a vymieňať si
+        správy s užívateľmi z hocijakého Truecolors servera a viac!
     didnt_get_confirmation: Neobdržal/a si odkaz na potvrdenie?
     dont_have_your_security_key: Nemáš svoj bezpečnostný kľúč?
     forgot_password: Zabudnuté heslo?
-    invalid_reset_password_token: Token na obnovu hesla vypršal. Prosím vypítaj si nový.
+    invalid_reset_password_token: Token na obnovu hesla vypršal. Prosím vypítaj si
+      nový.
     log_in_with: Prihlás sa s
     login: Prihlás sa
     logout: Odhlás sa
     migrate_account: Presúvam sa na iný účet
-    migrate_account_html: Ak si želáš presmerovať tento účet na nejaký iný, môžeš si to <a href="%{path}">nastaviť tu</a>.
+    migrate_account_html: Ak si želáš presmerovať tento účet na nejaký iný, môžeš
+      si to <a href="%{path}">nastaviť tu</a>.
     or_log_in_with: Alebo prihlás s
     progress:
       confirm: Potvrď email
@@ -862,7 +916,8 @@ sk:
       link_not_received: Nedostal/a si odkaz?
       title: Skontroluj svoju schránku
     sign_in:
-      preamble_html: Prihlás sa so svojimi údajmi pre <strong>%{domain}</strong>. Pokiaľ je tvoj účet hostovaný na inom serveri, nebudeš sa môcť prihlásiť tu.
+      preamble_html: Prihlás sa so svojimi údajmi pre <strong>%{domain}</strong>.
+        Pokiaľ je tvoj účet hostovaný na inom serveri, nebudeš sa môcť prihlásiť tu.
       title: Prihlás sa na %{domain}
     status:
       account_status: Stav účtu
@@ -898,7 +953,8 @@ sk:
       caches: Obsah, ktorý bol predčítaný inými servermi môže zanechať pozostatky
       data_removal: Tvoje príspevky a iné dáta budú natrvalo odstránené
       irreversible: Nebudeš môcť navrátiť, alebo znova aktivovať svoj účet
-      more_details_html: Pre viac podrobností, pozri <a href="%{terms_path}">zásady súkromia</a>.
+      more_details_html: Pre viac podrobností, pozri <a href="%{terms_path}">zásady
+        súkromia</a>.
       username_available: Tvoje užívateľské meno bude znova dostupné
       username_unavailable: Tvoja prezývka ostane neprístupná
   disputes:
@@ -937,7 +993,9 @@ sk:
       content: Ospravedlňujem sa. Niečo sa pokazilo na našom konci.
       title: Táto stránka nieje v poriadku
     '503': Táto stránka nemôže byť načítaná, kvôli dočasnému výpadku servera.
-    noscript_html: Aby bolo možné používať Truecolors web aplikáciu, povoľ prosím JavaScript. Alebo skús jednu z <a href="%{apps_path}"> aplikácii </a> dostupných pre vašu platformu.
+    noscript_html: Aby bolo možné používať Truecolors web aplikáciu, povoľ prosím
+      JavaScript. Alebo skús jednu z <a href="%{apps_path}"> aplikácii </a> dostupných
+      pre vašu platformu.
   existing_username_validator:
     not_found: nepodarilo sa nájsť miestného užívateľa s takouto prezývkou
     not_found_multiple: nepodarilo sa nájsť %{usernames}
@@ -945,7 +1003,9 @@ sk:
     archive_takeout:
       date: Dátum
       download: Stiahni si svoj archív
-      hint_html: Môžeš si vyžiadať <strong>archív svojích príspevkov a nahratých médií</strong>. Exportované dáta budú v ActivityPub formáte, čítateľné hociakým kompatibilným softvérom. Archív si je možné vyžiadať každých sedem dní.
+      hint_html: Môžeš si vyžiadať <strong>archív svojích príspevkov a nahratých médií</strong>.
+        Exportované dáta budú v ActivityPub formáte, čítateľné hociakým kompatibilným
+        softvérom. Archív si je možné vyžiadať každých sedem dní.
       in_progress: Balím tvoj archív...
       request: Vyžiadaj si tvoj archív
       size: Veľkosť
@@ -994,10 +1054,13 @@ sk:
     save_changes: Ulož zmeny
     today: dnes
     validation_errors:
-      few: Niečo ešte nieje celkom v poriadku! Prosím skontroluj %{count} chýb uvedených nižšie
-      many: Niečo ešte nieje celkom v poriadku! Prosím skontroluj %{count} chýb uvedených nižšie
+      few: Niečo ešte nieje celkom v poriadku! Prosím skontroluj %{count} chýb uvedených
+        nižšie
+      many: Niečo ešte nieje celkom v poriadku! Prosím skontroluj %{count} chýb uvedených
+        nižšie
       one: Niečo ešte nieje celkom v poriadku! Prosím skontroluj chybu uvedenú nižšie
-      other: Niečo ešte nieje celkom v poriadku! Prosím skontroluj %{count} chyby uvedené nižšie
+      other: Niečo ešte nieje celkom v poriadku! Prosím skontroluj %{count} chyby
+        uvedené nižšie
   imports:
     errors:
       over_rows_processing_limit: obsahuje viac než %{count} riadkov
@@ -1009,7 +1072,8 @@ sk:
       merge_long: Ponechaj existujúce záznamy a pridaj k nim nové
       overwrite: Prepíš
       overwrite_long: Nahraď súčasné záznamy novými
-    preface: Môžeš nahrať dáta ktoré si exportoval/a z iného Truecolors serveru, ako sú napríklad zoznamy ľudí ktorých sleduješ, alebo blokuješ.
+    preface: Môžeš nahrať dáta ktoré si exportoval/a z iného Truecolors serveru, ako
+      sú napríklad zoznamy ľudí ktorých sleduješ, alebo blokuješ.
     recent_imports: Nedávne nahrania
     states:
       finished: Dokončené
@@ -1051,7 +1115,8 @@ sk:
       one: 1 využitie
       other: "%{count} využitia"
     max_uses_prompt: Bez obmedzení
-    prompt: Vygeneruj a zdieľaj linky s ostatnými, aby mali umožnený prístup k tomuto serveru
+    prompt: Vygeneruj a zdieľaj linky s ostatnými, aby mali umožnený prístup k tomuto
+      serveru
     table:
       expires_at: Vyprší
       uses: Používa
@@ -1074,7 +1139,8 @@ sk:
   migrations:
     acct: prezývka@doména nového účtu
     cancel: Zruš presmerovanie
-    cancel_explanation: Zrušenie presmerovania znovu aktivuje tvoj súčasný účet, ale neprenesie naspäť sledovateľov, ktorí už boli presunutý na tamten účet.
+    cancel_explanation: Zrušenie presmerovania znovu aktivuje tvoj súčasný účet, ale
+      neprenesie naspäť sledovateľov, ktorí už boli presunutý na tamten účet.
     cancelled_msg: Presmerovanie úspešne zrušené.
     errors:
       already_moved: je ten istý účet, na ktorý si sa už presunul/a
@@ -1084,29 +1150,40 @@ sk:
       on_cooldown: Si v spánkovom stave
     followers_count: Následovatelia v čase presunu
     incoming_migrations: Presúvam sa z iného účtu
-    incoming_migrations_html: K presunutiu z iného účtu na tento, si najskôr potrebuješ <a href="%{path}">vytvoriť alias pre účet</a>.
-    moved_msg: Tvoj účet teraz presmerováva na %{acct} a tvoji sledovatelia sú presúvaní tam.
+    incoming_migrations_html: K presunutiu z iného účtu na tento, si najskôr potrebuješ
+      <a href="%{path}">vytvoriť alias pre účet</a>.
+    moved_msg: Tvoj účet teraz presmerováva na %{acct} a tvoji sledovatelia sú presúvaní
+      tam.
     not_redirecting: Tvoj účet v súčasnosti nepresmerováva na žiaden iný účet.
-    on_cooldown: Účet si si presunul/a len nedávno. Táto vymoženosť bude znovu sprístupnená za %{count} dní.
+    on_cooldown: Účet si si presunul/a len nedávno. Táto vymoženosť bude znovu sprístupnená
+      za %{count} dní.
     past_migrations: Predošlé presuny
     proceed_with_move: Presuň sledovateľov
     redirected_msg: Tvoj účet teraz presmerováva na %{acct}.
     redirecting_to: Tvoj účet presmerováva na %{acct}.
     set_redirect: Nastav presmerovanie
     warning:
-      backreference_required: Nový účet musí byť najskôr nastavený tak, aby spätne odkazoval na tento
+      backreference_required: Nový účet musí byť najskôr nastavený tak, aby spätne
+        odkazoval na tento
       before: 'Než budeš pokračovať, prosím pozorne si prečítaj tieto poznámky:'
-      cooldown: Po presunutí je tu istá zahrievacia doba, počas ktorej sa nebudeš môcť znova presunúť
-      disabled_account: Tvoj súčasný účet už po tomto nebude plne použiteľný. Stále ale budeš mať prístup ku stiahnutiu dát a možnosti znovu-aktivácie.
-      followers: Tento úkon presunie všetkých následovateľov zo súčasného účtu na nový účet
-      only_redirect_html: Ako alternatívu, môžeš <a href="%{path}">iba nastaviť presmerovanie na tvoj profil</a>.
+      cooldown: Po presunutí je tu istá zahrievacia doba, počas ktorej sa nebudeš
+        môcť znova presunúť
+      disabled_account: Tvoj súčasný účet už po tomto nebude plne použiteľný. Stále
+        ale budeš mať prístup ku stiahnutiu dát a možnosti znovu-aktivácie.
+      followers: Tento úkon presunie všetkých následovateľov zo súčasného účtu na
+        nový účet
+      only_redirect_html: Ako alternatívu, môžeš <a href="%{path}">iba nastaviť presmerovanie
+        na tvoj profil</a>.
       other_data: Žiadne iné dáta nebudú presunuté automaticky
-      redirect: Tvoj súčastný účet bude aktualizovaný s oznamom o presunutí a bude vylúčený z vyhľadávania
+      redirect: Tvoj súčastný účet bude aktualizovaný s oznamom o presunutí a bude
+        vylúčený z vyhľadávania
   moderation:
     title: Moderovanie
   move_handler:
-    carry_blocks_over_text: Tento užívateľ sa presunul z účtu %{acct}, ktorý si mal/a zablokovaný.
-    carry_mutes_over_text: Tento užívateľ sa presunul z účtu %{acct}, ktorý si mal/a stíšený.
+    carry_blocks_over_text: Tento užívateľ sa presunul z účtu %{acct}, ktorý si mal/a
+      zablokovaný.
+    carry_mutes_over_text: Tento užívateľ sa presunul z účtu %{acct}, ktorý si mal/a
+      stíšený.
   notification_mailer:
     favourite:
       body: 'Tvoj príspevok bol obľúbený užívateľom %{name}:'
@@ -1175,8 +1252,10 @@ sk:
     title: Opúšťaš %{instance}.
   relationships:
     activity: Aktivita účtu
-    confirm_follow_selected_followers: Si si istý/á, že chceš nasledovať vybraných sledujúcich?
-    confirm_remove_selected_followers: Si si istý/á, že chceš odstrániť vybraných sledovateľov?
+    confirm_follow_selected_followers: Si si istý/á, že chceš nasledovať vybraných
+      sledujúcich?
+    confirm_remove_selected_followers: Si si istý/á, že chceš odstrániť vybraných
+      sledovateľov?
     confirm_remove_selected_follows: Si si istý/á, že chceš odstrániť vybraných sledovaných?
     dormant: Spiace
     follow_failure: Nemožno nasledovať niektoré z vybraných účtov.
@@ -1220,7 +1299,8 @@ sk:
     current_session: Aktuálna sezóna
     date: Dátum
     description: "%{browser} na %{platform}"
-    explanation: Tieto sú prehliadače ktoré sú teraz prihlásené na tvoj Truecolors účet.
+    explanation: Tieto sú prehliadače ktoré sú teraz prihlásené na tvoj Truecolors
+      účet.
     ip: IP adresa
     platforms:
       ios: Apple iOS
@@ -1318,16 +1398,22 @@ sk:
       default: "%b %d, %R, %H:%M"
   translation:
     errors:
-      too_many_requests: V poslednej dobe bolo na prekladateľskú službu vykonaných priveľa požiadaviek.
+      too_many_requests: V poslednej dobe bolo na prekladateľskú službu vykonaných
+        priveľa požiadaviek.
   two_factor_authentication:
     disable: Zakáž
     enabled: Dvojfázové overovanie je povolené
     enabled_success: Dvojfázové overovanie úspešne povolené
     generate_recovery_codes: Vygeneruj zálohové kódy
-    lost_recovery_codes: Zálohové kódy ti umožnia dostať sa k svojmu účtu ak stratíš telefón. Pokiaľ si stratila svoje zálohové kódy, môžeš si ich tu znovu vygenerovať. Tvoje staré zálohové kódy budú zneplatnené.
+    lost_recovery_codes: Zálohové kódy ti umožnia dostať sa k svojmu účtu ak stratíš
+      telefón. Pokiaľ si stratila svoje zálohové kódy, môžeš si ich tu znovu vygenerovať.
+      Tvoje staré zálohové kódy budú zneplatnené.
     recovery_codes: Zálohuj kódy pre obnovu
     recovery_codes_regenerated: Zálohové kódy boli úspešne zvova vygenerované
-    recovery_instructions_html: Keď hocikedy stratíš prístup k svojmu telefónu, môžeš použiť jeden z prístupových kódov nižšie pre obnovenie prístupu k svojmu účtu. <strong>Skladuj tieto prístupové kódy na bezpečnom mieste</strong>. Napríklad ich môžeš vytlačiť a uložiť ich spolu s inými dôležitými dokumentami.
+    recovery_instructions_html: Keď hocikedy stratíš prístup k svojmu telefónu, môžeš
+      použiť jeden z prístupových kódov nižšie pre obnovenie prístupu k svojmu účtu.
+      <strong>Skladuj tieto prístupové kódy na bezpečnom mieste</strong>. Napríklad
+      ich môžeš vytlačiť a uložiť ich spolu s inými dôležitými dokumentami.
   user_mailer:
     appeal_approved:
       action: Nastavenia účtu

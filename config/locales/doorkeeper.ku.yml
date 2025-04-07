@@ -33,7 +33,8 @@ ku:
       help:
         native_redirect_uri: Bo testên herêmî %{native_redirect_uri} bi kar bîne
         redirect_uri: Yek rêz bi kar bîne bo her girêdan
-        scopes: Berfirehî bi valahîyan re veqetîne. Bo bikaranîna berfirehî ya standard vala bihêle.
+        scopes: Berfirehî bi valahîyan re veqetîne. Bo bikaranîna berfirehî ya standard
+          vala bihêle.
       index:
         application: Sepan
         callback_url: Girêdana banga vegerê
@@ -71,7 +72,9 @@ ku:
         revoke: Ma tu bawerî?
       index:
         authorized_at: Maf hate dayîn di %{date} de
-        description_html: Ev sepan in ku dikarin bi riya karanîna API ve bigihîjin ajimêrê te. Ku sepanên tu li vir nas nakî hene, an sepanek çewt tevdigere, tu dikarî gihîştina wê têk bibî.
+        description_html: Ev sepan in ku dikarin bi riya karanîna API ve bigihîjin
+          ajimêrê te. Ku sepanên tu li vir nas nakî hene, an sepanek çewt tevdigere,
+          tu dikarî gihîştina wê têk bibî.
         last_used_at: Herî dawî di %{date} de hate bikaranîn
         never_used: Tu car nehatiye bikaranîn
         scopes: Maf
@@ -80,25 +83,38 @@ ku:
     errors:
       messages:
         access_denied: Xwedîyê çavkanîyê an jî destûrmendê rajeker daxwazî red kirin.
-        credential_flow_not_configured: Herikîna borînpeyvê bawername ya xwediyê çavkaniyê, ji ber Doorkeeper.configure.resource_owner_from_credentials nehat pevsazkirin.
-        invalid_client: Erêkirina nasnameyê rajegir ji ber rajegirê nediyar têk çû, erêkirina nasnameyê rajegir di nav da tinne an jî rêbaza erêkirinê ne piştgirêdayî ye.
-        invalid_grant: Mafê ku hatiye peyda kirin ne derbasdar e, qediya ye, pûç e, girêdana ya ku di daxwaza mafê de tê bikaranîn li hev nagire an jî rajegirekî din hildaye.
+        credential_flow_not_configured: Herikîna borînpeyvê bawername ya xwediyê çavkaniyê,
+          ji ber Doorkeeper.configure.resource_owner_from_credentials nehat pevsazkirin.
+        invalid_client: Erêkirina nasnameyê rajegir ji ber rajegirê nediyar têk çû,
+          erêkirina nasnameyê rajegir di nav da tinne an jî rêbaza erêkirinê ne piştgirêdayî
+          ye.
+        invalid_grant: Mafê ku hatiye peyda kirin ne derbasdar e, qediya ye, pûç e,
+          girêdana ya ku di daxwaza mafê de tê bikaranîn li hev nagire an jî rajegirekî
+          din hildaye.
         invalid_redirect_uri: Girêdan beralîkirî ya di nav da ne derbasdar e.
         invalid_request:
           missing_param: 'Pîvana hewce dike kêm e: %{value}.'
-          request_not_authorized: Hewceye daxwazî rêdayî be. Ji bo daxwazî rêdayî be pîvana hewce dike kêm an jî betal e.
-          unknown: Di nav daxwazîyê de pîvanekî hewceyî kêm e. Nirxekî pîvanê bê piştgirêdayî tê de heye an jî wek din xelet e.
-        invalid_resource_owner: Bawernameyên xwediyê çavkanîyê yên hatine pêşkeş kirin ne derbasdar e an jî xwedîyê çavkanîyê nayê dîtin
+          request_not_authorized: Hewceye daxwazî rêdayî be. Ji bo daxwazî rêdayî
+            be pîvana hewce dike kêm an jî betal e.
+          unknown: Di nav daxwazîyê de pîvanekî hewceyî kêm e. Nirxekî pîvanê bê piştgirêdayî
+            tê de heye an jî wek din xelet e.
+        invalid_resource_owner: Bawernameyên xwediyê çavkanîyê yên hatine pêşkeş kirin
+          ne derbasdar e an jî xwedîyê çavkanîyê nayê dîtin
         invalid_scope: Berfirehiya tê xwestin nederbasdare, nenas e, an jî xelet e.
         invalid_token:
           expired: Dema nîşana gihîştinê qediya
           revoked: Nîşana gihîştin hatibû têkbirin
           unknown: Nîşana gihîştinê ne derbasdar e
-        resource_owner_authenticator_not_configured: Xwedîyê çavkanîyê, ji ber ku nehatîye sazkirin bi ser neket di Doorkeeper.configure.resource_owner_authenticator de.
-        server_error: Rajekarê rastandinê bi şertek nediyar re rûbirû ma ku nehişt ku ew daxwazê ​​bicîh bîne.
-        temporarily_unavailable: Mafê rajekarê hetta demekî ji ber zêde barkirinê an jî lê nihêrîna rajekarê daxwaz bi cîh nay.
+        resource_owner_authenticator_not_configured: Xwedîyê çavkanîyê, ji ber ku
+          nehatîye sazkirin bi ser neket di Doorkeeper.configure.resource_owner_authenticator
+          de.
+        server_error: Rajekarê rastandinê bi şertek nediyar re rûbirû ma ku nehişt
+          ku ew daxwazê ​​bicîh bîne.
+        temporarily_unavailable: Mafê rajekarê hetta demekî ji ber zêde barkirinê
+          an jî lê nihêrîna rajekarê daxwaz bi cîh nay.
         unauthorized_client: Rajegir nahêlê ku vê daxwazê bi vê awayê bicîh bîne.
-        unsupported_grant_type: Cureyê maf dayînê ji alîyê rajekara mafê va ne piştgirêdayî ye.
+        unsupported_grant_type: Cureyê maf dayînê ji alîyê rajekara mafê va ne piştgirêdayî
+          ye.
         unsupported_response_type: Mafê rajekarê cûreya vê bersîvê piştgirêdayî nîne.
     flash:
       applications:
@@ -147,18 +163,25 @@ ku:
     scopes:
       admin:read: hemû daneyên li ser rajekar bixwîne
       admin:read:accounts: zanyariyên hestiyar yên hemû ajimêran li ser rajekar bixwîne
-      admin:read:canonical_email_blocks: zaniyarên hestyar ên hemû astengkerên e-nameya bixwîne
+      admin:read:canonical_email_blocks: zaniyarên hestyar ên hemû astengkerên e-nameya
+        bixwîne
       admin:read:domain_allows: zaniyarên hestyar ên hemû mafdayînên navpar bixwîne
       admin:read:domain_blocks: zaniyarên hestyar ên hemû astengkirinên navpar bixwîne
-      admin:read:email_domain_blocks: zaniyarên hestyar ên hemû astengkirinên navpar ên e-nameyê bixwîne
+      admin:read:email_domain_blocks: zaniyarên hestyar ên hemû astengkirinên navpar
+        ên e-nameyê bixwîne
       admin:read:ip_blocks: zaniyarên hestyar ên hemû astengkirinên IP bixwîne
-      admin:read:reports: zanyariyên hestiyar yên hemû ragihandinan û ajimêrên ragihandî li ser rajekar bixwîne
+      admin:read:reports: zanyariyên hestiyar yên hemû ragihandinan û ajimêrên ragihandî
+        li ser rajekar bixwîne
       admin:write: hemû daneyên li ser rajekar biguherîne
       admin:write:accounts: di ajimêrê de çalakiyên li hev kirî pêk bîne
-      admin:write:canonical_email_blocks: li ser astengkirinên e-nameyê çalakiyên çavdêriyê pêk bîne
-      admin:write:domain_allows: li ser mafdayînên navpar çalakiyên çavdêriyê pêk bîne
-      admin:write:domain_blocks: li ser astengkirinên navpar çalakiyên çavdêriyê pêk bîne
-      admin:write:email_domain_blocks: li ser astengkirinên e-nameya navpar çalakiyên çavdêriyê pêk bîne
+      admin:write:canonical_email_blocks: li ser astengkirinên e-nameyê çalakiyên
+        çavdêriyê pêk bîne
+      admin:write:domain_allows: li ser mafdayînên navpar çalakiyên çavdêriyê pêk
+        bîne
+      admin:write:domain_blocks: li ser astengkirinên navpar çalakiyên çavdêriyê pêk
+        bîne
+      admin:write:email_domain_blocks: li ser astengkirinên e-nameya navpar çalakiyên
+        çavdêriyê pêk bîne
       admin:write:ip_blocks: li ser astengkirinên IP çalakiyên çavdêriyê pêk bîne
       admin:write:reports: di ragihandinê de çalakiyên li hev kirî pêk bîne
       crypto: dawî bi dawî şifrekirî bi kar bîne

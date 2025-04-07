@@ -33,7 +33,8 @@ ga:
       help:
         native_redirect_uri: Úsáid %{native_redirect_uri} le haghaidh tástálacha logánta
         redirect_uri: Úsáid líne amháin in aghaidh an URI
-        scopes: Scóipeanna ar leith le spásanna. Fág bán chun na scóip réamhshocraithe a úsáid.
+        scopes: Scóipeanna ar leith le spásanna. Fág bán chun na scóip réamhshocraithe
+          a úsáid.
       index:
         application: Ainm feidhmchláir
         callback_url: URL aisghlaoch
@@ -60,7 +61,9 @@ ga:
       error:
         title: Tharla earráid
       new:
-        prompt_html: Ba mhaith le %{client_name} cead rochtain a fháil ar do chuntas. <strong>Ní cheadaigh an t-iarratas seo ach amháin má aithníonn tú an fhoinse seo agus go bhfuil muinín agat as.</strong>
+        prompt_html: Ba mhaith le %{client_name} cead rochtain a fháil ar do chuntas.
+          <strong>Ní cheadaigh an t-iarratas seo ach amháin má aithníonn tú an fhoinse
+          seo agus go bhfuil muinín agat as.</strong>
         review_permissions: Ceadanna a athbhreithniú
         title: Tá údarú ag teastáil
       show:
@@ -72,7 +75,9 @@ ga:
         revoke: An bhfuil tú cinnte?
       index:
         authorized_at: Ceadaithe ar %{date}
-        description_html: Is feidhmchláir iad seo ar féidir rochtain a fháil ar do chuntas leis an API. Má tá feidhmchláir ann nach n-aithníonn tú anseo, nó má tá feidhmchlár mí-iompair, is féidir leat a rochtain a chúlghairm.
+        description_html: Is feidhmchláir iad seo ar féidir rochtain a fháil ar do
+          chuntas leis an API. Má tá feidhmchláir ann nach n-aithníonn tú anseo, nó
+          má tá feidhmchlár mí-iompair, is féidir leat a rochtain a chúlghairm.
         last_used_at: Úsáidte an uair dheireanach ar %{date}
         never_used: Ná húsáideadh
         scopes: Ceadanna
@@ -81,27 +86,44 @@ ga:
     errors:
       messages:
         access_denied: Shéan úinéir na hacmhainne nó an freastalaí údaraithe an t-iarratas.
-        credential_flow_not_configured: Theip ar shreabhadh Dintiúir Pasfhocal Úinéir Acmhainne toisc go raibh Doorkeeper.configure.resource_owner_from_credentials díchumraithe.
-        invalid_client: Theip ar fhíordheimhniú cliant de bharr cliant anaithnid, níl fíordheimhniú cliant san áireamh, nó modh fíordheimhnithe nach dtacaítear leis.
-        invalid_code_challenge_method: Ní mór gur S256 an modh dúshlán cód, ach ní thacaítear leis.
-        invalid_grant: Tá an deonú údaraithe ar choinníoll neamhbhailí, imithe in éag, cúlghairthe, nach ionann é agus an URI atreoraithe a úsáideadh san iarratas ar údarú, nó gur eisíodh é chuig cliant eile.
+        credential_flow_not_configured: Theip ar shreabhadh Dintiúir Pasfhocal Úinéir
+          Acmhainne toisc go raibh Doorkeeper.configure.resource_owner_from_credentials
+          díchumraithe.
+        invalid_client: Theip ar fhíordheimhniú cliant de bharr cliant anaithnid,
+          níl fíordheimhniú cliant san áireamh, nó modh fíordheimhnithe nach dtacaítear
+          leis.
+        invalid_code_challenge_method: Ní mór gur S256 an modh dúshlán cód, ach ní
+          thacaítear leis.
+        invalid_grant: Tá an deonú údaraithe ar choinníoll neamhbhailí, imithe in
+          éag, cúlghairthe, nach ionann é agus an URI atreoraithe a úsáideadh san
+          iarratas ar údarú, nó gur eisíodh é chuig cliant eile.
         invalid_redirect_uri: Níl an uri atreoraithe atá san áireamh bailí.
         invalid_request:
           missing_param: 'Paraiméadar riachtanach in easnamh: %{value}.'
-          request_not_authorized: Ní mór an t-iarratas a údarú. Tá an paraiméadar riachtanach chun iarratas a údarú in easnamh nó neamhbhailí.
-          unknown: Tá paraiméadar riachtanach in easnamh ar an iarratas, folaíonn sé luach paraiméadar nach dtacaítear leis, nó tá sé míchumtha ar shlí eile.
-        invalid_resource_owner: Níl na dintiúir úinéara acmhainne a soláthraíodh bailí, nó ní féidir úinéir na hacmhainne a aimsiú
+          request_not_authorized: Ní mór an t-iarratas a údarú. Tá an paraiméadar
+            riachtanach chun iarratas a údarú in easnamh nó neamhbhailí.
+          unknown: Tá paraiméadar riachtanach in easnamh ar an iarratas, folaíonn
+            sé luach paraiméadar nach dtacaítear leis, nó tá sé míchumtha ar shlí
+            eile.
+        invalid_resource_owner: Níl na dintiúir úinéara acmhainne a soláthraíodh bailí,
+          nó ní féidir úinéir na hacmhainne a aimsiú
         invalid_scope: Tá an scóip iarrtha neamhbhailí, anaithnid nó míchumtha.
         invalid_token:
           expired: Chuaigh an comhartha rochtana in éag
           revoked: Cúlghairmeadh an comhartha rochtana
           unknown: Tá an comhartha rochtana neamhbhailí
-        resource_owner_authenticator_not_configured: Theip ar aimsiú Úinéir Acmhainne toisc go bhfuil Doorkeeper.configure.resource_owner_authenticator díchumraithe.
-        server_error: Tháinig an freastalaí údaraithe ar riocht gan choinne a chuir cosc ​​air an t-iarratas a chomhlíonadh.
-        temporarily_unavailable: Ní féidir leis an bhfreastalaí údaraithe an t-iarratas a láimhseáil mar gheall ar ró-ualú sealadach nó cothabháil an fhreastalaí.
-        unauthorized_client: Níl an cliant údaraithe an t-iarratas seo a dhéanamh leis an modh seo.
-        unsupported_grant_type: Ní thacaíonn an freastalaí údaraithe leis an gcineál deontais údaraithe.
-        unsupported_response_type: Ní thacaíonn an freastalaí údaraithe leis an gcineál freagartha seo.
+        resource_owner_authenticator_not_configured: Theip ar aimsiú Úinéir Acmhainne
+          toisc go bhfuil Doorkeeper.configure.resource_owner_authenticator díchumraithe.
+        server_error: Tháinig an freastalaí údaraithe ar riocht gan choinne a chuir
+          cosc ​​air an t-iarratas a chomhlíonadh.
+        temporarily_unavailable: Ní féidir leis an bhfreastalaí údaraithe an t-iarratas
+          a láimhseáil mar gheall ar ró-ualú sealadach nó cothabháil an fhreastalaí.
+        unauthorized_client: Níl an cliant údaraithe an t-iarratas seo a dhéanamh
+          leis an modh seo.
+        unsupported_grant_type: Ní thacaíonn an freastalaí údaraithe leis an gcineál
+          deontais údaraithe.
+        unsupported_response_type: Ní thacaíonn an freastalaí údaraithe leis an gcineál
+          freagartha seo.
     flash:
       applications:
         create:
@@ -151,18 +173,24 @@ ga:
     scopes:
       admin:read: léigh na sonraí go léir ar an bhfreastalaí
       admin:read:accounts: faisnéis íogair na gcuntas go léir a léamh
-      admin:read:canonical_email_blocks: léigh faisnéis íogair ar gach bloc ríomhphoist canónach
+      admin:read:canonical_email_blocks: léigh faisnéis íogair ar gach bloc ríomhphoist
+        canónach
       admin:read:domain_allows: léigh faisnéis íogair gach fearainn
       admin:read:domain_blocks: léigh faisnéis íogair gach bloc fearainn
       admin:read:email_domain_blocks: léigh faisnéis íogair gach bloc fearainn ríomhphoist
       admin:read:ip_blocks: léigh faisnéis íogair gach bloic IP
-      admin:read:reports: faisnéis íogair na dtuarascálacha agus na gcuntas tuairiscithe go léir a léamh
+      admin:read:reports: faisnéis íogair na dtuarascálacha agus na gcuntas tuairiscithe
+        go léir a léamh
       admin:write: na sonraí go léir ar an bhfreastalaí a mhodhnú
       admin:write:accounts: gníomhartha modhnóireachta a dhéanamh ar chuntais
-      admin:write:canonical_email_blocks: gníomhartha modhnóireachta a dhéanamh ar bhlocanna ríomhphoist chanónacha
-      admin:write:domain_allows: gníomhartha modhnóireachta a dhéanamh ar cheadaíonn fearainn
-      admin:write:domain_blocks: gníomhartha modhnóireachta a dhéanamh ar bhlocanna fearainn
-      admin:write:email_domain_blocks: gníomhartha modhnóireachta a dhéanamh ar bhlocanna fearainn ríomhphoist
+      admin:write:canonical_email_blocks: gníomhartha modhnóireachta a dhéanamh ar
+        bhlocanna ríomhphoist chanónacha
+      admin:write:domain_allows: gníomhartha modhnóireachta a dhéanamh ar cheadaíonn
+        fearainn
+      admin:write:domain_blocks: gníomhartha modhnóireachta a dhéanamh ar bhlocanna
+        fearainn
+      admin:write:email_domain_blocks: gníomhartha modhnóireachta a dhéanamh ar bhlocanna
+        fearainn ríomhphoist
       admin:write:ip_blocks: gníomhartha modhnóireachta a dhéanamh ar bhlocanna IP
       admin:write:reports: gníomhartha modhnóireachta a dhéanamh ar thuarascálacha
       crypto: úsáid criptiú ceann-go-ceann

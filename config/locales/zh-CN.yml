@@ -118,7 +118,8 @@ zh-CN:
       reject: 拒绝
       rejected_msg: 已拒绝 %{username} 的注册申请
       remote_suspension_irreversible: 此账号的数据已被不可逆转地删除。
-      remote_suspension_reversible_hint_html: 账号已在他们的服务器上封禁，数据将在 %{date} 完全删除。 在此之前，远程服务器仍可恢复此账号，并且没有任何不良影响。 如果你想立即移除该账号的所有数据，可以在下面进行。
+      remote_suspension_reversible_hint_html: 账号已在他们的服务器上封禁，数据将在 %{date} 完全删除。 在此之前，远程服务器仍可恢复此账号，并且没有任何不良影响。
+        如果你想立即移除该账号的所有数据，可以在下面进行。
       remove_avatar: 删除头像
       remove_header: 移除封面图
       removed_avatar_msg: 成功删除 %{username} 的头像
@@ -152,7 +153,8 @@ zh-CN:
       suspend: 封禁
       suspended: 已封禁
       suspension_irreversible: 该账号的数据已被不可逆转地删除。你可以取消暂停该账号以使其可用，但它不会恢复以前拥有的任何数据。
-      suspension_reversible_hint_html: 账号已封禁，数据将在 %{date} 完全删除。 在此之前，账号仍可恢复，并且没有任何不良影响。 如果你想立即移除该账号的所有数据，可以在下面进行。
+      suspension_reversible_hint_html: 账号已封禁，数据将在 %{date} 完全删除。 在此之前，账号仍可恢复，并且没有任何不良影响。
+        如果你想立即移除该账号的所有数据，可以在下面进行。
       title: 用户
       unblock_email: 取消屏蔽邮件地址
       unblocked_email_msg: 成功取消屏蔽了 %{username} 的邮件地址
@@ -453,7 +455,8 @@ zh-CN:
         title: 封禁新的邮箱域名
       no_email_domain_block_selected: 没有任何项目被选中，因此未更改邮箱域名屏蔽列表
       not_permitted: 未允许
-      resolved_dns_records_hint_html: 该域名解析的 MX 记录所指向的域名如下，这些域名被用于接收电子邮件。 即使电子邮件地址域名与 MX 域名不同，屏蔽一个 MX 域名意味着阻止任何使用相同 MX 域名的邮箱地址注册本站账号。 <strong>请谨慎操作，不要误屏蔽主要的邮箱提供商。</strong>
+      resolved_dns_records_hint_html: 该域名解析的 MX 记录所指向的域名如下，这些域名被用于接收电子邮件。 即使电子邮件地址域名与
+        MX 域名不同，屏蔽一个 MX 域名意味着阻止任何使用相同 MX 域名的邮箱地址注册本站账号。 <strong>请谨慎操作，不要误屏蔽主要的邮箱提供商。</strong>
       resolved_through_html: 通过 %{domain} 解析
       title: 被封禁的邮箱域名
     export_domain_allows:
@@ -658,7 +661,8 @@ zh-CN:
       summary:
         action_preambles:
           delete_html: 你即将<strong>删除</strong> <strong>@%{acct}</strong> 的一些嘟文。 这将：
-          mark_as_sensitive_html: 你即将 <strong>标记</strong> <strong>@%{acct}</strong> 的帖一些子为 <strong>敏感</strong>。这将：
+          mark_as_sensitive_html: 你即将 <strong>标记</strong> <strong>@%{acct}</strong>
+            的帖一些子为 <strong>敏感</strong>。这将：
           silence_html: 你即将<strong>限制</strong> <strong>@%{acct}</strong> 的账号。 这将：
           suspend_html: 你即将<strong>暂停</strong> <strong>@%{acct}</strong> 的账号。 这将：
         actions:
@@ -694,7 +698,8 @@ zh-CN:
       description_html: 使用 <strong>用户角色</strong>，你可以自定义你的用户可以访问的 Truecolors 功能和区域。
       edit: 编辑角色 '%{name}'
       everyone: 默认权限
-      everyone_full_description_html: 该角色是<strong>基础角色</strong>，会影响<strong>所有用户</strong>，包括未指定角色的用户。 其他所有的角色都继承该角色的权限。
+      everyone_full_description_html: 该角色是<strong>基础角色</strong>，会影响<strong>所有用户</strong>，包括未指定角色的用户。
+        其他所有的角色都继承该角色的权限。
       permissions_count:
         other: "%{count} 个权限"
       privileges:
@@ -871,7 +876,8 @@ zh-CN:
         action: 阅读文档
         message_html: 你的Elasticsearch集群只有一个节点，<code>ES_PRESET</code>应该设置为<code>single_node_cluster</code>。
       elasticsearch_reset_chewy:
-        message_html: 你的Elasticsearch系统索引已过时，可能是由于设置更改导致的。请运行<code>tootctl search deploy --reset-chewy</code>命令来更新它。
+        message_html: 你的Elasticsearch系统索引已过时，可能是由于设置更改导致的。请运行<code>tootctl search
+          deploy --reset-chewy</code>命令来更新它。
       elasticsearch_running_check:
         message_html: 无法连接到 Elasticsearch。请检查它是否正在运行，或禁用全文搜索
       elasticsearch_version_check:
@@ -1026,7 +1032,8 @@ zh-CN:
     webhooks:
       add_new: 新增端点
       delete: 删除
-      description_html: "<strong>Webhook</strong> 使 Truecolors 能够推送 <strong>关于所选事件的实时通知</strong> 到你自己的应用程序，进而由你的应用程序<strong>自动触发反应</strong>。"
+      description_html: "<strong>Webhook</strong> 使 Truecolors 能够推送 <strong>关于所选事件的实时通知</strong>
+        到你自己的应用程序，进而由你的应用程序<strong>自动触发反应</strong>。"
       disable: 禁用
       disabled: 已禁用
       edit: 编辑对端
@@ -1126,7 +1133,8 @@ zh-CN:
       clicking_this_link: 点击此链接
       login_link: 登录
       proceed_to_login_html: 你现在可以继续 %{login_link} 。
-      redirect_to_app_html: 你应该已经跳转到 <strong>%{app_name}</strong>。如果没有，请尝试 %{clicking_this_link} 或手动返回 App。
+      redirect_to_app_html: 你应该已经跳转到 <strong>%{app_name}</strong>。如果没有，请尝试 %{clicking_this_link}
+        或手动返回 App。
       registration_complete: 你在 %{domain} 上的注册现已完成！
       welcome_title: 欢迎你，%{name}！
       wrong_email_hint: 如果这个邮箱地址不正确，你可以在账号设置中更改。
@@ -1180,7 +1188,8 @@ zh-CN:
       preamble_html: 使用你在 <strong>%{domain}</strong> 的账号和密码登录。如果你的账号是在其他站点上注册的，你将无法在此登录。
       title: 登录到 %{domain}
     sign_up:
-      manual_review: 你在 %{domain} 上的注册需要经由管理人员手动审核。 为了帮助我们处理你的注册，请简要说明你为什么想在 %{domain} 上注册。
+      manual_review: 你在 %{domain} 上的注册需要经由管理人员手动审核。 为了帮助我们处理你的注册，请简要说明你为什么想在 %{domain}
+        上注册。
       preamble: 在这个 Truecolors 站点上注册一个账号，你就可以关注联邦宇宙中的任何人，无论他们的账号在哪里。
       title: 让我们在 %{domain} 上开始。
     status:
@@ -1193,7 +1202,8 @@ zh-CN:
       view_strikes: 查看针对你账号的处罚记录
     too_fast: 表单提交过快，请重试。
     use_security_key: 使用安全密钥
-    user_agreement_html: 我已阅读并同意 <a href="%{terms_of_service_path}" target="_blank">服务条款</a> 与 <a href="%{privacy_policy_path}" target="_blank">隐私政策</a>
+    user_agreement_html: 我已阅读并同意 <a href="%{terms_of_service_path}" target="_blank">服务条款</a>
+      与 <a href="%{privacy_policy_path}" target="_blank">隐私政策</a>
     user_privacy_agreement_html: 我已阅读并同意<a href="%{privacy_policy_path}" target="_blank">隐私政策</a>
   author_attribution:
     example_title: 示例文本
@@ -1294,7 +1304,8 @@ zh-CN:
       content: 抱歉，服务器出现了一些故障。
       title: 页面无法正确加载
     '503': 服务器出现临时故障，无法加载页面。
-    noscript_html: 使用 Truecolors 网页版应用需要启用 JavaScript。你也可以选择适用于你的平台的 <a href="%{apps_path}">Truecolors 应用</a>。
+    noscript_html: 使用 Truecolors 网页版应用需要启用 JavaScript。你也可以选择适用于你的平台的 <a href="%{apps_path}">Truecolors
+      应用</a>。
   existing_username_validator:
     not_found: 在本站找不到此用户
     not_found_multiple: 找不到 %{usernames}
@@ -1302,7 +1313,8 @@ zh-CN:
     archive_takeout:
       date: 日期
       download: 下载你的存档
-      hint_html: 你可以请求一份账号数据存档，其中包含你的<strong>嘟文和已上传的媒体文件</strong>。导出的数据为 ActivityPub 格式，因而可以被兼容的软件读取。每次允许请求存档的间隔至少为 7 天。
+      hint_html: 你可以请求一份账号数据存档，其中包含你的<strong>嘟文和已上传的媒体文件</strong>。导出的数据为 ActivityPub
+        格式，因而可以被兼容的软件读取。每次允许请求存档的间隔至少为 7 天。
       in_progress: 正在准备你的存档……
       request: 请求你的存档
       size: 大小
@@ -1317,7 +1329,8 @@ zh-CN:
     add_new: 添加新条目
     errors:
       limit: 你所推荐的话题数已达上限
-    hint_html: "<strong>什么是精选话题？</strong> 它们被显示在你的公开个人资料中的突出位置，人们可以在这些标签下浏览你的公共嘟文。 它们是跟踪创作或长期项目的进度的重要工具。"
+    hint_html: "<strong>什么是精选话题？</strong> 它们被显示在你的公开个人资料中的突出位置，人们可以在这些标签下浏览你的公共嘟文。
+      它们是跟踪创作或长期项目的进度的重要工具。"
   filters:
     contexts:
       account: 个人资料
@@ -1400,24 +1413,30 @@ zh-CN:
       domain_blocking_html:
         other: 你即将使用来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个</strong>站点域名<strong>替换你的站点屏蔽列表</strong>。
       following_html:
-        other: 你即将<strong>关注</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个账号</strong>，并<strong>停止关注其他所有人</strong>。
+        other: 你即将<strong>关注</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count}
+          个账号</strong>，并<strong>停止关注其他所有人</strong>。
       lists_html:
-        other: 你即将使用来自 <strong>%{filename}</strong> 的内容<strong>替换你的列表</strong>。最多将会有 <strong>%{count} 个账号</strong> 被添加到新列表。
+        other: 你即将使用来自 <strong>%{filename}</strong> 的内容<strong>替换你的列表</strong>。最多将会有
+          <strong>%{count} 个账号</strong> 被添加到新列表。
       muting_html:
         other: 你即将使用来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个</strong>账号<strong>替换你的已隐藏账号列表</strong>。
     preambles:
       blocking_html:
-        other: 你即将<strong>屏蔽</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个账号</strong>。
+        other: 你即将<strong>屏蔽</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count}
+          个账号</strong>。
       bookmarks_html:
         other: 你即将把来自<strong> %{filename} </strong>的<strong> %{count} 篇嘟文</strong>添加到你的<strong>收藏夹</strong>中。
       domain_blocking_html:
-        other: 你即将<strong>屏蔽</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个站点</strong>。
+        other: 你即将<strong>屏蔽</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count}
+          个站点</strong>。
       following_html:
-        other: 你即将<strong>关注</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个账号</strong>。
+        other: 你即将<strong>关注</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count}
+          个账号</strong>。
       lists_html:
         other: 你即将从<strong> %{filename} </strong>中添加最多<strong> %{count} 个账号</strong>到你的<strong>列表</strong>中。如果没有可用列表，将创建新的列表。
       muting_html:
-        other: 你即将<strong>隐藏</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count} 个账号</strong>。
+        other: 你即将<strong>隐藏</strong>来自 <strong>%{filename}</strong> 的最多 <strong>%{count}
+          个账号</strong>。
     preface: 你可以在此导入你在其他实例导出的数据，比如你所关注或屏蔽的用户列表。
     recent_imports: 最近导入
     states:
@@ -1487,7 +1506,8 @@ zh-CN:
     unsubscribe:
       action: 是，取消订阅
       complete: 已取消订阅
-      confirmation_html: 你确定要退订来自 %{domain} 上的 Truecolors 的 %{type} 到你的邮箱 %{email} 吗？你可以随时在<a href="%{settings_path}">邮件通知设置</a>中重新订阅。
+      confirmation_html: 你确定要退订来自 %{domain} 上的 Truecolors 的 %{type} 到你的邮箱 %{email}
+        吗？你可以随时在<a href="%{settings_path}">邮件通知设置</a>中重新订阅。
       emails:
         notification_emails:
           favourite: 嘟文被喜欢邮件通知
@@ -1899,7 +1919,8 @@ zh-CN:
       subject: 已有新 IP 地址访问了你的账号
       title: 一次新登录
     terms_of_service_changed:
-      agreement: 继续使用你在 %{domain} 的账号即表示您同意这些条款。如果你不同意更新后的条款，你可以随时删除账号以终止与 %{domain} 的协议。
+      agreement: 继续使用你在 %{domain} 的账号即表示您同意这些条款。如果你不同意更新后的条款，你可以随时删除账号以终止与 %{domain}
+        的协议。
       changelog: 本次更新的要点如下：
       sign_off: "%{domain} 运营团队"
       subject: 服务条款变更
@@ -1948,11 +1969,14 @@ zh-CN:
       edit_profile_title: 个性化你的个人资料
       explanation: 下面是几个小贴士，希望它们能帮到你
       feature_action: 详细了解
-      feature_audience: Truecolors 为你提供了无需中间商即可管理受众的独特可能。Truecolors 可被部署在你自己的基础设施上，允许你关注其它任何 Truecolors 在线服务器的用户，或被任何其他在线 Truecolors 服务器的用户关注，并且不受你之外的任何人控制。
+      feature_audience: Truecolors 为你提供了无需中间商即可管理受众的独特可能。Truecolors 可被部署在你自己的基础设施上，允许你关注其它任何
+        Truecolors 在线服务器的用户，或被任何其他在线 Truecolors 服务器的用户关注，并且不受你之外的任何人控制。
       feature_audience_title: 自由吸引你的受众
-      feature_control: 你最清楚你想在你自己的主页中看到什么动态。没有算法或广告浪费你的时间。你可以用一个账号关注任何 Truecolors 服务器上的任何人，并按时间顺序获得他们发布的嘟文，让你的互联网的角落更合自己的心意。
+      feature_control: 你最清楚你想在你自己的主页中看到什么动态。没有算法或广告浪费你的时间。你可以用一个账号关注任何 Truecolors
+        服务器上的任何人，并按时间顺序获得他们发布的嘟文，让你的互联网的角落更合自己的心意。
       feature_control_title: 掌控自己的时间线
-      feature_creativity: Truecolors 支持音频、视频和图片、无障碍描述、投票、内容警告， 动画头像、自定义表情包、缩略图裁剪控制等功能，帮助你在网上尽情表达自己。无论你是要发布你的艺术作品、音乐还是播客，Truecolors 都能为你服务。
+      feature_creativity: Truecolors 支持音频、视频和图片、无障碍描述、投票、内容警告， 动画头像、自定义表情包、缩略图裁剪控制等功能，帮助你在网上尽情表达自己。无论你是要发布你的艺术作品、音乐还是播客，Truecolors
+        都能为你服务。
       feature_creativity_title: 尽情发挥创造力
       feature_moderation: Truecolors 将决策权交还给你。每个服务器都会创建自己的规则和条例，并在站点内施行，而不是像企业社交媒体那样居高临下，这使得它可以最灵活地响应不同人群的需求。加入一个你认同其规则的服务器，或托管你自己的服务器。
       feature_moderation_title: 管理，本应如此
@@ -1985,7 +2009,8 @@ zh-CN:
     seamless_external_login: 你通过外部服务登录，因此密码和邮件设置不可用。
     signed_in_as: 当前登录的账号：
   verification:
-    extra_instructions_html: <strong>提示：</strong>你网站上的链接可能是不可见的。重要的部分是 <code>rel="me"</code>，它可以防止在具有用户生成内容的网站上冒充身份。你甚至可以在页面头部使用 <code>link</code> 标签而不是 <code>a</code>，但 HTML 必须能够在不执行 JavaScript 的情况下访问。
+    extra_instructions_html: <strong>提示：</strong>你网站上的链接可能是不可见的。重要的部分是 <code>rel="me"</code>，它可以防止在具有用户生成内容的网站上冒充身份。你甚至可以在页面头部使用
+      <code>link</code> 标签而不是 <code>a</code>，但 HTML 必须能够在不执行 JavaScript 的情况下访问。
     here_is_how: 具体方法如下：
     hint_html: "<strong>在Truecolors上验证你的身份对每个人都是必要的。</strong>基于开放网络标准，现在和将来永远免费。你只需要一个被人们认可的个人网站。当你在个人资料中链接到这个网站时，我们会检查该网站是否回链到你的资料，并显示一个指示符号。"
     instructions_html: 将下面的代码复制并粘贴到你网站的HTML中。然后在“编辑个人资料”选项卡中的附加字段之一添加你网站的地址，并保存更改。

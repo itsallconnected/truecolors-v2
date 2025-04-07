@@ -61,4 +61,5 @@ lad:
         webhook:
           attributes:
             events:
-              invalid_permissions: no puedes inkluir evenimientos a los kualos no estas autorizado
+              invalid_permissions: no puedes inkluir evenimientos a los kualos no
+                estas autorizado

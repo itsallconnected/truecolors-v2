@@ -3,8 +3,12 @@ lv:
   devise:
     confirmations:
       confirmed: Tava e-pasta adrese tika sekmīgi apstiprināta.
-      send_instructions: Pēc dažām minūtēm saņemsi e-pasta ziņojum ar norādēm, kā apstiprināt savu e-pasta adresi. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
-      send_paranoid_instructions: Ja Tava e-pasta adrese ir mūsu datubāzē, pēc dažām minūtēm saņemsi e-pasta ziņojumu ar norādēm, kā apstiprināt savu e-pasta adresi. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
+      send_instructions: Pēc dažām minūtēm saņemsi e-pasta ziņojum ar norādēm, kā
+        apstiprināt savu e-pasta adresi. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi
+        šo e-pasta ziņojumu.
+      send_paranoid_instructions: Ja Tava e-pasta adrese ir mūsu datubāzē, pēc dažām
+        minūtēm saņemsi e-pasta ziņojumu ar norādēm, kā apstiprināt savu e-pasta adresi.
+        Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
     failure:
       already_authenticated: Tu jau esi pieteicies.
       inactive: Tavs konts vēl nav aktivizēts.
@@ -21,34 +25,52 @@ lv:
       confirmation_instructions:
         action: Apstiprini savu e-pasta adresi
         action_with_app: Apstiprināt un atgriezties %{app}
-        explanation: Ar šo e-pasta adresi esi izveidojis kontu vietnē %{host}. Tu esi viena klikšķa attālumā no tā aktivizēšanas. Ja tas nebiji tu, lūdzu, ignorē šo e-pasta ziņojumu.
-        explanation_when_pending: Tu pieteicies uzaicinājumam uz %{host} ar šo e-pasta adresi. Kad būsi apstiprinājis savu e-pasta adresi, mēs izskatīsim pieteikumu. Tu vari pieteikties, lai mainītu savu informāciju vai izdzēstu savu kontu, taču Tu nevari piekļūt lielākajai daļai iespēju, kamēr Tavs konts nav apstiprināts. Ja Tavs pieteikums tiks noraidīts, Tavi dati tiks noņemti, tāpēc Tev nebūs jāveic nekādas darbības. Ja tas nebiji Tu, lūgums neņemt vērā šo e-pasta ziņojumu.
-        extra_html: Lūdzu, pārskati arī <a href="%{terms_path}">servera noteikumus</a> un <a href="%{policy_path}"> mūsu pakalpojumu sniegšanas noteikumus</a>.
+        explanation: Ar šo e-pasta adresi esi izveidojis kontu vietnē %{host}. Tu
+          esi viena klikšķa attālumā no tā aktivizēšanas. Ja tas nebiji tu, lūdzu,
+          ignorē šo e-pasta ziņojumu.
+        explanation_when_pending: Tu pieteicies uzaicinājumam uz %{host} ar šo e-pasta
+          adresi. Kad būsi apstiprinājis savu e-pasta adresi, mēs izskatīsim pieteikumu.
+          Tu vari pieteikties, lai mainītu savu informāciju vai izdzēstu savu kontu,
+          taču Tu nevari piekļūt lielākajai daļai iespēju, kamēr Tavs konts nav apstiprināts.
+          Ja Tavs pieteikums tiks noraidīts, Tavi dati tiks noņemti, tāpēc Tev nebūs
+          jāveic nekādas darbības. Ja tas nebiji Tu, lūgums neņemt vērā šo e-pasta
+          ziņojumu.
+        extra_html: Lūdzu, pārskati arī <a href="%{terms_path}">servera noteikumus</a>
+          un <a href="%{policy_path}"> mūsu pakalpojumu sniegšanas noteikumus</a>.
         subject: 'Truecolors: Apstiprināšanas norādījumi %{instance}'
         title: Apstiprini savu e-pasta adresi
       email_changed:
         explanation: 'Tava konta e-pasta adrese tiek mainīta uz:'
-        extra: Ja neesi mainījis savu e-pasta adresi, iespējams, kāds ir ieguvis piekļuvi tavam kontam. Lūdzu, nekavējoties nomaini paroli vai sazinies ar servera administratoru, ja nevari piekļūt savam kontam.
+        extra: Ja neesi mainījis savu e-pasta adresi, iespējams, kāds ir ieguvis piekļuvi
+          tavam kontam. Lūdzu, nekavējoties nomaini paroli vai sazinies ar servera
+          administratoru, ja nevari piekļūt savam kontam.
         subject: 'Truecolors: E-pasts nomainīts'
         title: Jaunā e-pasta adrese
       password_change:
         explanation: Tava konta parole ir nomainīta.
-        extra: Ja neesi mainījis savu paroli, iespējams, kāds ir ieguvis piekļuvi tavam kontam. Lūdzu, nekavējoties nomaini paroli vai sazinies ar servera administratoru, ja nevari piekļūt savam kontam.
+        extra: Ja neesi mainījis savu paroli, iespējams, kāds ir ieguvis piekļuvi
+          tavam kontam. Lūdzu, nekavējoties nomaini paroli vai sazinies ar servera
+          administratoru, ja nevari piekļūt savam kontam.
         subject: 'Truecolors: Parole ir nomainīta'
         title: Parole nomainīta
       reconfirmation_instructions:
         explanation: Apstiprini jauno adresi, lai mainītu savu e-pastu.
-        extra: Ja šīs izmaiņas neveici Tu, lūgums neņemt vērā šo e-pasta ziņojumu. Truecolors konta e-pasta adrese netiks mainīta, līdz Tu izmantosi augstāk esošo saiti.
+        extra: Ja šīs izmaiņas neveici Tu, lūgums neņemt vērā šo e-pasta ziņojumu.
+          Truecolors konta e-pasta adrese netiks mainīta, līdz Tu izmantosi augstāk
+          esošo saiti.
         subject: 'Truecolors: Apstiprini e-pastu %{instance}'
         title: Apstiprini e-pasta adresi
       reset_password_instructions:
         action: Nomainīt paroli
         explanation: Tu pieprasīji jaunu paroli savam kontam.
-        extra: Ja neesi to pieprasījis, lūdzu, ignorē šo e-pasta ziņojumu. Tava parole nemainīsies, kamēr neesi piekļuvis iepriekš norādītajai saitei un izveidojis jaunu.
+        extra: Ja neesi to pieprasījis, lūdzu, ignorē šo e-pasta ziņojumu. Tava parole
+          nemainīsies, kamēr neesi piekļuvis iepriekš norādītajai saitei un izveidojis
+          jaunu.
         subject: 'Truecolors: Norādījumi paroles atiestatīšanai'
         title: Paroles atiestatīšana
       two_factor_disabled:
-        explanation: Pieteikšanās tagad ir iespējama izmantojot tikai e-pasta adresi un paroli.
+        explanation: Pieteikšanās tagad ir iespējama izmantojot tikai e-pasta adresi
+          un paroli.
         subject: 'Truecolors: Divfaktoru autentifikācija atspējota'
         subtitle: Tavam kontam tika atspējota divpakāpju autentifikācija.
         title: 2FA atspējota
@@ -58,9 +80,11 @@ lv:
         subtitle: Tavam kontam tika iespējota divpakāpju autentifikācija.
         title: 2FA iespējota
       two_factor_recovery_codes_changed:
-        explanation: Iepriekšējie atkopes kodi ir padarīt nederīgi, un ir izveidoti jauni.
+        explanation: Iepriekšējie atkopes kodi ir padarīt nederīgi, un ir izveidoti
+          jauni.
         subject: 'Truecolors: atkārtoti izveidoti divpakāpju atkopes kodi'
-        subtitle: Iepriekšējie atkopes kodi tika padarīti par nederīgiem, un tika izveidoti jauni.
+        subtitle: Iepriekšējie atkopes kodi tika padarīti par nederīgiem, un tika
+          izveidoti jauni.
         title: 2FA atkopes kodi nomainīti
       unlock_instructions:
         subject: 'Truecolors: Norādījumi atbloķēšanai'
@@ -75,7 +99,8 @@ lv:
           title: Viena no tavām drošības atslēgām tika izdzēsta
       webauthn_disabled:
         explanation: Tavam kontam tika atspējota autentifikācija ar drošības atslēgām.
-        extra: Pieteikšanās tagad ir iespējama izmantojot tikai TOTP lietotnes izveidotu kodu.
+        extra: Pieteikšanās tagad ir iespējama izmantojot tikai TOTP lietotnes izveidotu
+          kodu.
         subject: 'Truecolors: Autentifikācija ar drošības atslēgām ir atspējota'
         title: Drošības atslēgas atspējotas
       webauthn_enabled:
@@ -87,22 +112,36 @@ lv:
       failure: Nevarēja autentificēt tevi no %{kind}, jo "%{reason}".
       success: Sekmīgi autentificēts no %{kind} konta.
     passwords:
-      no_token: Tu nevari piekļūt šai lapai, ja neesi saņēmis paroles atiestatīšanas e-pasta ziņojumu. Ja ienāci no paroles atiestatīšanas e-pasta, lūdzu, pārliecinies, vai izmanto visu norādīto URL.
-      send_instructions: Ja Tava e-pasta adrese ir mūsu datubāzē, pēc dažām minūtēm savā e-pasta adresē saņemsi paroles atkopes saiti. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
-      send_paranoid_instructions: Ja Tava e-pasta adrese ir mūsu datubāzē, pēc dažām minūtēm savā e-pasta adresē saņemsi paroles atkopes saiti. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
+      no_token: Tu nevari piekļūt šai lapai, ja neesi saņēmis paroles atiestatīšanas
+        e-pasta ziņojumu. Ja ienāci no paroles atiestatīšanas e-pasta, lūdzu, pārliecinies,
+        vai izmanto visu norādīto URL.
+      send_instructions: Ja Tava e-pasta adrese ir mūsu datubāzē, pēc dažām minūtēm
+        savā e-pasta adresē saņemsi paroles atkopes saiti. Lūgums pārbaudīt mēstuļu
+        mapi, ja nesaņēmi šo e-pasta ziņojumu.
+      send_paranoid_instructions: Ja Tava e-pasta adrese ir mūsu datubāzē, pēc dažām
+        minūtēm savā e-pasta adresē saņemsi paroles atkopes saiti. Lūgums pārbaudīt
+        mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
       updated: Tava parole tika sekmīgi nomainīta. Tagad esi pieteicies.
       updated_not_active: Tava parole tika sekmīgi nomainīta.
     registrations:
-      destroyed: Visu labu! Tavs konts ir sekmīgi atcelts. Mēs ceram Tevi drīz atkal redzēt.
-      update_needs_confirmation: Tu sekmīgi atjaunināji savu kontu, taču mums ir jāapliecina Tava jaunā e-pasta adrese. Lūgums pārbaudīt savu e-pastu un sekot apstiprinājuma saitei, lai apstiprinātu savu jauno e-pasta adresi. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
+      destroyed: Visu labu! Tavs konts ir sekmīgi atcelts. Mēs ceram Tevi drīz atkal
+        redzēt.
+      update_needs_confirmation: Tu sekmīgi atjaunināji savu kontu, taču mums ir jāapliecina
+        Tava jaunā e-pasta adrese. Lūgums pārbaudīt savu e-pastu un sekot apstiprinājuma
+        saitei, lai apstiprinātu savu jauno e-pasta adresi. Lūgums pārbaudīt mēstuļu
+        mapi, ja nesaņēmi šo e-pasta ziņojumu.
       updated: Tavs konts tika sekmīgi atjaunināts.
     sessions:
       already_signed_out: Sekmīgi izrakstījies.
       signed_in: Sekmīgi pierakstījies.
       signed_out: Sekmīgi izrakstījies.
     unlocks:
-      send_instructions: Pēc dažām minūtēm Tu saņemsi e-pasta ziņojumu ar norādēm, kā atslēgt savu kontu. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
-      send_paranoid_instructions: Ja Tavs konts pastāv, dažu minūšu laikā saņemsi e-pasta ziņojumu ar norādēm, kā to atslēgt. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta ziņojumu.
+      send_instructions: Pēc dažām minūtēm Tu saņemsi e-pasta ziņojumu ar norādēm,
+        kā atslēgt savu kontu. Lūgums pārbaudīt mēstuļu mapi, ja nesaņēmi šo e-pasta
+        ziņojumu.
+      send_paranoid_instructions: Ja Tavs konts pastāv, dažu minūšu laikā saņemsi
+        e-pasta ziņojumu ar norādēm, kā to atslēgt. Lūgums pārbaudīt mēstuļu mapi,
+        ja nesaņēmi šo e-pasta ziņojumu.
       unlocked: Konts tika sekmīgi atslēgts. Lūgums pieteikties, lai turpinātu.
   errors:
     messages:

@@ -3,8 +3,13 @@ vi:
   devise:
     confirmations:
       confirmed: Địa chỉ email của bạn đã được xác minh thành công.
-      send_instructions: Bạn sẽ nhận được một email hướng dẫn cách xác minh địa chỉ email trong vài phút tới. Xin kiểm tra thư mục thư rác nếu như bạn không thấy email này.
-      send_paranoid_instructions: Nếu địa chỉ email của bạn đã tồn tại trong cơ sở dữ liệu của chúng tôi, bạn sẽ nhận được một email hướng dẫn cách xác minh lại địa chỉ email. Xin kiểm tra thư mục thư rác nếu như bạn không thấy email này.
+      send_instructions: Bạn sẽ nhận được một email hướng dẫn cách xác minh địa chỉ
+        email trong vài phút tới. Xin kiểm tra thư mục thư rác nếu như bạn không thấy
+        email này.
+      send_paranoid_instructions: Nếu địa chỉ email của bạn đã tồn tại trong cơ sở
+        dữ liệu của chúng tôi, bạn sẽ nhận được một email hướng dẫn cách xác minh
+        lại địa chỉ email. Xin kiểm tra thư mục thư rác nếu như bạn không thấy email
+        này.
     failure:
       already_authenticated: Bạn đã đăng nhập rồi.
       inactive: Tài khoản của bạn chưa được kich hoạt.
@@ -21,30 +26,46 @@ vi:
       confirmation_instructions:
         action: Xác minh địa chỉ email
         action_with_app: Xác nhận và quay lại %{app}
-        explanation: Bạn đã tạo một tài khoản trên %{host} với địa chỉ email này. Chỉ cần một cú nhấp chuột nữa để kích hoạt nó. Nếu đây không phải là bạn, xin vui lòng bỏ qua email này.
-        explanation_when_pending: Bạn vừa đăng ký %{host} với địa chỉ email này. Chúng tôi chỉ xem xét đơn đăng ký sau khi bạn xác minh địa chỉ email. Bạn có thể đăng nhập để thay đổi chi tiết hoặc xóa tài khoản của mình, nhưng bạn không thể sử dụng đầy đủ tính năng cho đến khi tài khoản được xác minh. Nếu bạn bị từ chối, dữ liệu của bạn sẽ bị xóa, do đó bạn sẽ không cần phải làm gì thêm nữa. Nếu không phải do bạn đăng ký, xin vui lòng bỏ qua email này.
-        extra_html: Xin đọc kỹ <a href="%{terms_path}">nội quy máy chủ</a> và <a href="%{policy_path}">chính sách bảo mật</a> của chúng tôi.
+        explanation: Bạn đã tạo một tài khoản trên %{host} với địa chỉ email này.
+          Chỉ cần một cú nhấp chuột nữa để kích hoạt nó. Nếu đây không phải là bạn,
+          xin vui lòng bỏ qua email này.
+        explanation_when_pending: Bạn vừa đăng ký %{host} với địa chỉ email này. Chúng
+          tôi chỉ xem xét đơn đăng ký sau khi bạn xác minh địa chỉ email. Bạn có thể
+          đăng nhập để thay đổi chi tiết hoặc xóa tài khoản của mình, nhưng bạn không
+          thể sử dụng đầy đủ tính năng cho đến khi tài khoản được xác minh. Nếu bạn
+          bị từ chối, dữ liệu của bạn sẽ bị xóa, do đó bạn sẽ không cần phải làm gì
+          thêm nữa. Nếu không phải do bạn đăng ký, xin vui lòng bỏ qua email này.
+        extra_html: Xin đọc kỹ <a href="%{terms_path}">nội quy máy chủ</a> và <a href="%{policy_path}">chính
+          sách bảo mật</a> của chúng tôi.
         subject: 'Truecolors: Xác minh email cho %{instance}'
         title: Xác minh địa chỉ email
       email_changed:
         explanation: 'Địa chỉ email cho tài khoản của bạn đang được thay đổi thành:'
-        extra: Nếu bạn không thay đổi email của mình, có khả năng ai đó đã truy cập được vào tài khoản của bạn. Hãy thay đổi mật khẩu ngay lập tức hoặc liên hệ với quản trị viên.
+        extra: Nếu bạn không thay đổi email của mình, có khả năng ai đó đã truy cập
+          được vào tài khoản của bạn. Hãy thay đổi mật khẩu ngay lập tức hoặc liên
+          hệ với quản trị viên.
         subject: 'Truecolors: Email đã thay đổi'
         title: Địa chỉ email mới
       password_change:
         explanation: Mật khẩu tài khoản của bạn đã được thay đổi.
-        extra: Nếu bạn không thay đổi mật khẩu tài khoản của mình, có khả năng ai đó đã truy cập được vào tài khoản của bạn. Hãy thay đổi mật khẩu ngay lập tức hoặc liên hệ với quản trị viên.
+        extra: Nếu bạn không thay đổi mật khẩu tài khoản của mình, có khả năng ai
+          đó đã truy cập được vào tài khoản của bạn. Hãy thay đổi mật khẩu ngay lập
+          tức hoặc liên hệ với quản trị viên.
         subject: 'Truecolors: Mật khẩu đã thay đổi'
         title: Mật khẩu đã được thay đổi
       reconfirmation_instructions:
         explanation: Xác nhận địa chỉ email mới của bạn.
-        extra: Nếu thay đổi này không phải do bạn thực hiện, vui lòng bỏ qua email này. Địa chỉ email cho tài khoản Truecolors sẽ giữ nguyên cho đến khi bạn truy cập vào liên kết ở trên.
+        extra: Nếu thay đổi này không phải do bạn thực hiện, vui lòng bỏ qua email
+          này. Địa chỉ email cho tài khoản Truecolors sẽ giữ nguyên cho đến khi bạn
+          truy cập vào liên kết ở trên.
         subject: 'Truecolors: Xác minh email cho %{instance}'
         title: Xác minh địa chỉ email
       reset_password_instructions:
         action: Đổi mật khẩu
         explanation: Bạn đã yêu cầu mật khẩu mới cho tài khoản của bạn.
-        extra: Nếu bạn không yêu cầu điều này, xin vui lòng bỏ qua email này. Mật khẩu của bạn sẽ giữ nguyên cho đến khi bạn truy cập vào liên kết ở trên và tạo một mật khẩu mới.
+        extra: Nếu bạn không yêu cầu điều này, xin vui lòng bỏ qua email này. Mật
+          khẩu của bạn sẽ giữ nguyên cho đến khi bạn truy cập vào liên kết ở trên
+          và tạo một mật khẩu mới.
         subject: 'Truecolors: Hướng dẫn đổi lại mật khẩu'
         title: Đổi lại mật khẩu
       two_factor_disabled:
@@ -53,7 +74,8 @@ vi:
         subtitle: Xác minh hai bước cho tài khoản của bạn đã bị vô hiệu hóa.
         title: Vô hiệu hóa xác minh 2 bước
       two_factor_enabled:
-        explanation: Cần có mã token được tạo bởi ứng dụng TOTP được ghép nối để đăng nhập.
+        explanation: Cần có mã token được tạo bởi ứng dụng TOTP được ghép nối để đăng
+          nhập.
         subject: 'Truecolors: Kích hoạt xác minh 2 bước'
         subtitle: Xác minh hai bước đã được bật cho tài khoản của bạn.
         title: Kích hoạt xác minh 2 bước
@@ -74,8 +96,10 @@ vi:
           subject: 'Truecolors: Xóa khóa bảo mật'
           title: Một trong những khóa bảo mật của bạn vừa bị xóa
       webauthn_disabled:
-        explanation: Xác minh bằng khóa bảo mật đã bị vô hiệu hóa đối với tài khoản của bạn.
-        extra: Hiện tại, bạn chỉ có thể đăng nhập bằng cách sử dụng mã token được tạo bởi ứng dụng TOTP được ghép nối.
+        explanation: Xác minh bằng khóa bảo mật đã bị vô hiệu hóa đối với tài khoản
+          của bạn.
+        extra: Hiện tại, bạn chỉ có thể đăng nhập bằng cách sử dụng mã token được
+          tạo bởi ứng dụng TOTP được ghép nối.
         subject: 'Truecolors: Vô hiệu hóa xác thực bằng khóa bảo mật'
         title: Đã vô hiệu hóa khóa bảo mật
       webauthn_enabled:
@@ -87,27 +111,45 @@ vi:
       failure: Không thể xác minh bạn từ %{kind} bởi vì "%{reason}".
       success: Xác minh tài khoản %{kind} thành công.
     passwords:
-      no_token: Bạn chỉ có thể truy cập trang này khi nhận được email khôi phục mật khẩu. Nếu vẫn không được, vui lòng chắc chắn rằng bạn đã dùng chính xác URL được cung cấp.
-      send_instructions: Nếu địa chỉ email của bạn tồn tại trong cơ sở dữ liệu của chúng tôi, bạn sẽ nhận được liên kết khôi phục mật khẩu tại địa chỉ email của bạn sau vài phút. Xin kiểm tra thư mục thư rác nếu như bạn không thấy email này.
-      send_paranoid_instructions: Nếu địa chỉ email của bạn tồn tại trong cơ sở dữ liệu của chúng tôi, bạn sẽ nhận được liên kết khôi phục mật khẩu tại địa chỉ email của bạn sau vài phút. Xin kiểm tra thư mục thư rác nếu như bạn không thấy email này.
-      updated: Mật khẩu của bạn đã được thay đổi thành công. Hiện tại bạn đã đăng nhập.
+      no_token: Bạn chỉ có thể truy cập trang này khi nhận được email khôi phục mật
+        khẩu. Nếu vẫn không được, vui lòng chắc chắn rằng bạn đã dùng chính xác URL
+        được cung cấp.
+      send_instructions: Nếu địa chỉ email của bạn tồn tại trong cơ sở dữ liệu của
+        chúng tôi, bạn sẽ nhận được liên kết khôi phục mật khẩu tại địa chỉ email
+        của bạn sau vài phút. Xin kiểm tra thư mục thư rác nếu như bạn không thấy
+        email này.
+      send_paranoid_instructions: Nếu địa chỉ email của bạn tồn tại trong cơ sở dữ
+        liệu của chúng tôi, bạn sẽ nhận được liên kết khôi phục mật khẩu tại địa chỉ
+        email của bạn sau vài phút. Xin kiểm tra thư mục thư rác nếu như bạn không
+        thấy email này.
+      updated: Mật khẩu của bạn đã được thay đổi thành công. Hiện tại bạn đã đăng
+        nhập.
       updated_not_active: Mật khẩu của bạn đã được thay đổi thành công.
     registrations:
-      destroyed: Tạm biệt! Tài khoản của bạn đã bị hủy. Hi vọng chúng tôi sẽ sớm gặp lại bạn.
-      update_needs_confirmation: Bạn đã cập nhật tài khoản thành công, nhưng chúng tôi cần xác minh địa chỉ email mới của bạn. Vui lòng kiểm tra email và nhấp vào liên kết xác minh. Nếu bạn không thấy email, hãy kiểm tra trong thư rác.
+      destroyed: Tạm biệt! Tài khoản của bạn đã bị hủy. Hi vọng chúng tôi sẽ sớm gặp
+        lại bạn.
+      update_needs_confirmation: Bạn đã cập nhật tài khoản thành công, nhưng chúng
+        tôi cần xác minh địa chỉ email mới của bạn. Vui lòng kiểm tra email và nhấp
+        vào liên kết xác minh. Nếu bạn không thấy email, hãy kiểm tra trong thư rác.
       updated: Tài khoản của bạn đã được cập nhật thành công.
     sessions:
       already_signed_out: Đã đăng xuất.
       signed_in: Đã đăng nhập thành công.
       signed_out: Đã đăng xuất.
     unlocks:
-      send_instructions: Bạn sẽ nhận được một email hướng dẫn về cách mở khóa tài khoản của bạn trong vài phút tới. Xin kiểm tra thư mục thư rác nếu như bạn không thấy email này.
-      send_paranoid_instructions: Nếu tài khoản của bạn tồn tại, bạn sẽ nhận được email hướng dẫn cách mở khóa trong vài phút tới. Xin kiểm tra thư mục thư rác nếu như bạn không thấy email này.
-      unlocked: Tài khoản của bạn đã được mở khóa thành công. Vui lòng đăng nhập để tiếp tục.
+      send_instructions: Bạn sẽ nhận được một email hướng dẫn về cách mở khóa tài
+        khoản của bạn trong vài phút tới. Xin kiểm tra thư mục thư rác nếu như bạn
+        không thấy email này.
+      send_paranoid_instructions: Nếu tài khoản của bạn tồn tại, bạn sẽ nhận được
+        email hướng dẫn cách mở khóa trong vài phút tới. Xin kiểm tra thư mục thư
+        rác nếu như bạn không thấy email này.
+      unlocked: Tài khoản của bạn đã được mở khóa thành công. Vui lòng đăng nhập để
+        tiếp tục.
   errors:
     messages:
       already_confirmed: đã được xác minh, vui lòng đăng nhập lại
-      confirmation_period_expired: cần phải xác minh trong vòng %{period}, vui lòng yêu cầu lại
+      confirmation_period_expired: cần phải xác minh trong vòng %{period}, vui lòng
+        yêu cầu lại
       expired: đã hết hạn, vui lòng yêu cầu một cái mới
       not_found: không tìm thấy
       not_locked: không bị khóa

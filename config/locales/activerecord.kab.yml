@@ -48,7 +48,8 @@ kab:
           attributes:
             permissions_as_keys:
               dangerous: deg-s tisirag tiriɣelsanin i temlilt tazadurt
-              elevated: ur yezmir ara ad yesεu tirirag ur nelli ara deg temlilit-ik tamirant
+              elevated: ur yezmir ara ad yesεu tirirag ur nelli ara deg temlilit-ik
+                tamirant
               own_role: ur yezmir ara ad yettwabeddel s temlilt-ik tamirant
             position:
               elevated: ur yezmir ara ad iεeddi tamlilt-ik tamirant
@@ -56,4 +57,5 @@ kab:
         webhook:
           attributes:
             events:
-              invalid_permissions: ur yezmir ara ad yesεu tidyanin iwumi ur tesεiḍ ara tisirag
+              invalid_permissions: ur yezmir ara ad yesεu tidyanin iwumi ur tesεiḍ
+                ara tisirag

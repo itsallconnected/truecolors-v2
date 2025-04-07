@@ -460,7 +460,8 @@ ja:
       import:
         description_html: ドメインブロックのリストをインポートしようとしています。このリストを自分で作成していない場合は、慎重に確認してください。
         existing_relationships_warning: 既存のフォロー関係
-        private_comment_description_html: 'ブロックのインポート元を判別できるようにするため、ブロックは次のプライベートコメントを追加してインポートされます: <q>%{comment}</q>'
+        private_comment_description_html: 'ブロックのインポート元を判別できるようにするため、ブロックは次のプライベートコメントを追加してインポートされます:
+          <q>%{comment}</q>'
         private_comment_template: "%{source} から %{date} にインポートしました"
         title: ドメインブロックをインポート
       invalid_domain_block: 'エラーが発生したため、ブロックできなかったドメインがあります: %{error}'
@@ -535,7 +536,8 @@ ja:
       private_comment: コメント (非公開)
       public_comment: コメント (公開)
       purge: パージ
-      purge_description_html: このドメインがオフラインであると思われる場合は、このドメインのすべてのアカウント記録と関連するデータをストレージから削除できます。 これは時間がかかることがあります。
+      purge_description_html: このドメインがオフラインであると思われる場合は、このドメインのすべてのアカウント記録と関連するデータをストレージから削除できます。
+        これは時間がかかることがあります。
       title: 既知のサーバー
       total_blocked_by_us: ブロック合計
       total_followed_by_them: 被フォロー合計
@@ -600,7 +602,8 @@ ja:
         other_description_html: アカウントの動作を制御するためのオプションや、報告されたアカウントへの通信をカスタマイズするためのオプションを確認してください。
         resolve_description_html: 報告されたアカウントに対していかなる措置も取られず、ストライクも記録されず、報告は終了します。
         silence_description_html: このアカウントは、すでにフォローしている人、または手動で検索した人にしか見えないため、リーチが極端に制限されます。いつでも元に戻すことができます。このアカウントに対するすべての通報をクローズします。
-        suspend_description_html: アカウントとそのすべての内容にアクセスできなくなり、最終的に削除され、やり取りは不可能になります。 30日以内であれば元に戻すことができます。このアカウントに対するすべての通報をクローズします。
+        suspend_description_html: アカウントとそのすべての内容にアクセスできなくなり、最終的に削除され、やり取りは不可能になります。
+          30日以内であれば元に戻すことができます。このアカウントに対するすべての通報をクローズします。
       actions_description_html: このレポートへのアクションを決定してください。アカウントへ懲罰的な措置を取った場合、<strong>Span</strong>カテゴリが選択されている場合を除き、メール通知が送信されます。
       actions_description_remote_html: この通報を解決するためのアクションを選択してください。これは<strong>あなたの</strong>サーバーがこのリモートアカウントと通信し、そのコンテンツを処理する時のみ影響します。
       actions_no_posts: 削除対象となる投稿がレポートに含まれていません
@@ -690,7 +693,8 @@ ja:
       description_html: "<strong>ユーザー ロール</strong>を使用すると、ユーザーがアクセスできる Truecolors の機能や領域をカスタマイズできます。"
       edit: "『%{name}』のロールを編集"
       everyone: デフォルトの権限
-      everyone_full_description_html: これは、割り当てられたロールを持っていないものであっても、 <strong>すべてのユーザー</strong> に影響を与える <strong>基本ロール</strong>です。 他のすべてのロールは、そこから権限を継承します。
+      everyone_full_description_html: これは、割り当てられたロールを持っていないものであっても、 <strong>すべてのユーザー</strong>
+        に影響を与える <strong>基本ロール</strong>です。 他のすべてのロールは、そこから権限を継承します。
       permissions_count:
         other: "%{count}件の権限"
       privileges:
@@ -752,7 +756,8 @@ ja:
         preamble: ウェブインターフェースをカスタマイズします。
         title: 外観
       branding:
-        preamble: サーバーのブランディングは、ネットワーク上の他のサーバーと区別するためのものです。この情報は、Truecolors の Web インターフェース、ネイティブアプリケーション、他の Web サイトやメッセージングアプリのリンクプレビューなど、様々な所で表示される可能性があります。このため、明確で短く、簡潔に記載することをおすすめします。
+        preamble: サーバーのブランディングは、ネットワーク上の他のサーバーと区別するためのものです。この情報は、Truecolors の Web
+          インターフェース、ネイティブアプリケーション、他の Web サイトやメッセージングアプリのリンクプレビューなど、様々な所で表示される可能性があります。このため、明確で短く、簡潔に記載することをおすすめします。
         title: ブランディング
       captcha_enabled:
         desc_html: この機能は hCaptcha による外部スクリプトを使用しますが、hCaptcha にはセキュリティとプライバシーの懸念が考えられます。また、<strong>CAPTCHAにより新規登録のアクセシビリティが大幅に損なわれる可能性があり、身体および精神障害者においては特に顕著です。</strong>以上の理由から、承認制や招待制を基本とするなど、代わりの登録手順を提供することを検討してください。
@@ -859,15 +864,18 @@ ja:
       elasticsearch_health_yellow:
         message_html: 'Elasticsearchクラスターに異常があります(status: yellow)。必要に応じて対策を実施してください'
       elasticsearch_index_mismatch:
-        message_html: Elasticsearchのインデックスのマッピング定義が古くなっています。<code>tootctl search deploy --only=%{value}</code> を実行してインデックスを更新してください
+        message_html: Elasticsearchのインデックスのマッピング定義が古くなっています。<code>tootctl search deploy
+          --only=%{value}</code> を実行してインデックスを更新してください
       elasticsearch_preset:
         action: 詳細情報
         message_html: Elasticsearchクラスターはマルチノード構成になっていますが、Truecolorsがマルチノード構成向けに設定されていません。
       elasticsearch_preset_single_node:
         action: 詳細情報
-        message_html: Elasticsearchクラスターはシングルノード構成になっています。<code>ES_PRESET</code> を <code>single_node_cluster</code> に設定してください。
+        message_html: Elasticsearchクラスターはシングルノード構成になっています。<code>ES_PRESET</code> を
+          <code>single_node_cluster</code> に設定してください。
       elasticsearch_reset_chewy:
-        message_html: 設定が変更されたため、Elasticsearchのシステムインデックスが古くなっています。<code>tootctl search deploy --reset-chewy</code> を実行してインデックスを更新してください
+        message_html: 設定が変更されたため、Elasticsearchのシステムインデックスが古くなっています。<code>tootctl search
+          deploy --reset-chewy</code> を実行してインデックスを更新してください
       elasticsearch_running_check:
         message_html: Elasticsearchに接続できませんでした。Elasticsearchが実行されていることを確認するか、全文検索を無効にしてください。
       elasticsearch_version_check:
@@ -1040,7 +1048,8 @@ ja:
       webhook: Webhook
   admin_mailer:
     auto_close_registrations:
-      body: "%{instance} のモデレーターによる活動がしばらくなかったため、%{instance} のアカウント作成は手動での承認を必要とするように自動的に変更されました。これには %{instance} が悪意ある者の踏み台として使われることを防ぐ役割があります。アカウント作成は必要に応じていつでも再び開放できます。"
+      body: "%{instance} のモデレーターによる活動がしばらくなかったため、%{instance} のアカウント作成は手動での承認を必要とするように自動的に変更されました。これには
+        %{instance} が悪意ある者の踏み台として使われることを防ぐ役割があります。アカウント作成は必要に応じていつでも再び開放できます。"
       subject: "%{instance} のアカウント作成は自動的に承認制に変更されました"
     new_appeal:
       actions:
@@ -1176,7 +1185,8 @@ ja:
       preamble_html: "<strong>%{domain}</strong> の資格情報でサインインします。 あなたのアカウントが別のサーバーでホストされている場合は、ここでログインすることはできません。"
       title: "%{domain}にログイン"
     sign_up:
-      manual_review: "%{domain} への登録にはモデレーターによる承認が必要です。審査の参考になるように、簡単な自己紹介や %{domain} に登録したい理由などを記入してください。"
+      manual_review: "%{domain} への登録にはモデレーターによる承認が必要です。審査の参考になるように、簡単な自己紹介や %{domain}
+        に登録したい理由などを記入してください。"
       preamble: この Truecolors サーバーのアカウントがあれば、fediverse上の他の人のアカウントがどこでホストされているかに関係なく、その人をフォローすることができます。
       title: さあ %{domain} でセットアップしましょう.
     status:
@@ -1189,7 +1199,8 @@ ja:
       view_strikes: 過去のストライクを表示
     too_fast: フォームの送信が速すぎます。もう一度やり直してください。
     use_security_key: セキュリティキーを使用
-    user_agreement_html: <a href="%{terms_of_service_path}" target="_blank">利用規約</a> および <a href="%{privacy_policy_path}" target="_blank">プライバシーポリシー</a>を読み、同意します。
+    user_agreement_html: <a href="%{terms_of_service_path}" target="_blank">利用規約</a>
+      および <a href="%{privacy_policy_path}" target="_blank">プライバシーポリシー</a>を読み、同意します。
     user_privacy_agreement_html: <a href="%{privacy_policy_path}" target="_blank">プライバシーポリシー</a>を読み、同意します
   author_attribution:
     example_title: サンプルテキスト
@@ -1290,7 +1301,8 @@ ja:
       content: もうしわけありませんが、なにかが間違っています。
       title: このページは正しくありません
     '503': 一時的なサーバー障害のため利用することができません。
-    noscript_html: Truecolorsのウェブアプリケーションを利用する場合はJavaScriptを有効にしてください。またはあなたのプラットフォーム向けの<a href="%{apps_path}">Truecolorsネイティブアプリ</a>を探すことができます。
+    noscript_html: Truecolorsのウェブアプリケーションを利用する場合はJavaScriptを有効にしてください。またはあなたのプラットフォーム向けの<a
+      href="%{apps_path}">Truecolorsネイティブアプリ</a>を探すことができます。
   existing_username_validator:
     not_found: そのようなユーザー名はローカルに見つかりませんでした
     not_found_multiple: "%{usernames}さんは見つかりませんでした"
@@ -1328,7 +1340,8 @@ ja:
       statuses_hint_html: このフィルタは、以下のキーワードにマッチするかどうかに関わらず、個々の投稿を選択して適用されます。 <a href="%{path}">フィルターを確認または投稿を削除</a>。
       title: フィルターを編集
     errors:
-      deprecated_api_multiple_keywords: これらのパラメータは複数のフィルタキーワードに適用されるため、このアプリケーションから変更できません。 最新のアプリケーションまたはWebインターフェースを使用してください。
+      deprecated_api_multiple_keywords: これらのパラメータは複数のフィルタキーワードに適用されるため、このアプリケーションから変更できません。
+        最新のアプリケーションまたはWebインターフェースを使用してください。
       invalid_context: 対象がないか無効です
     index:
       contexts: "%{contexts}のフィルター"
@@ -1483,7 +1496,8 @@ ja:
     unsubscribe:
       action: 購読を解除する
       complete: 購読を解除しました
-      confirmation_html: Truecolors (%{domain}) による %{email} 宛の「%{type}」の配信を停止します。再度必要になった場合は<a href="%{settings_path}">メール通知の設定</a>からいつでも再開できます。
+      confirmation_html: Truecolors (%{domain}) による %{email} 宛の「%{type}」の配信を停止します。再度必要になった場合は<a
+        href="%{settings_path}">メール通知の設定</a>からいつでも再開できます。
       emails:
         notification_emails:
           favourite: お気に入りの通知メール
@@ -1891,7 +1905,8 @@ ja:
       subject: 新しいIPアドレスからのアクセスがありました
       title: 新しいサインイン
     terms_of_service_changed:
-      agreement: "%{domain} を引き続き使用することで、これらの条件に同意したことになります。更新された条件に同意しない場合は、アカウントを削除することでいつでも %{domain} との契約を終了することができます。"
+      agreement: "%{domain} を引き続き使用することで、これらの条件に同意したことになります。更新された条件に同意しない場合は、アカウントを削除することでいつでも
+        %{domain} との契約を終了することができます。"
       changelog: 一目で分かる、この更新があなたにとって意味することは次の通りです：
       sign_off: "%{domain} チーム"
       subject: 利用規約の更新
@@ -1977,7 +1992,9 @@ ja:
     seamless_external_login: あなたは外部サービスを介してログインしているため、パスワードとメールアドレスの設定は利用できません。
     signed_in_as: '下記でログイン中:'
   verification:
-    extra_instructions_html: <strong>ワンポイント:</strong> webサイト上のプロフィールへのリンクは表示上見えなくてもかまいません。重要な部分は <code>rel="me"</code> で、これはユーザーが自由にリンクを作成可能なサイトを悪用してなりすまされるのを防ぐための情報です。<code>a</code> タグを配置する代わりに <code>link</code> タグをHTMLヘッダーに挿入することでも認証が可能です。ただし、HTMLにはJavaScriptを使わなくてもアクセスできるようにしてください。
+    extra_instructions_html: <strong>ワンポイント:</strong> webサイト上のプロフィールへのリンクは表示上見えなくてもかまいません。重要な部分は
+      <code>rel="me"</code> で、これはユーザーが自由にリンクを作成可能なサイトを悪用してなりすまされるのを防ぐための情報です。<code>a</code>
+      タグを配置する代わりに <code>link</code> タグをHTMLヘッダーに挿入することでも認証が可能です。ただし、HTMLにはJavaScriptを使わなくてもアクセスできるようにしてください。
     here_is_how: 認証方法
     hint_html: "<strong>Truecolorsの本人認証はすべてのユーザーが自由に利用できます。</strong>この機能はweb標準に基づいており、将来にわたり無料です。必要なものは自分のものと認知されている個人サイトだけです。プロフィールからwebサイトにリンクし、webサイトからもプロフィールへ相互にリンクすると、Truecolorsがそれを検証し、認証済みであることを表示します。"
     instructions_html: 以下のコードをコピーしてwebサイトのHTMLに貼り付けます。次に「プロフィールを編集」タブから、「プロフィール補足情報」のいずれかの欄にwebサイトのURLを記入し、「変更を保存」をクリックしてください。

@@ -1,7 +1,8 @@
 ---
 zh-TW:
   about:
-    about_truecolors_html: Truecolors （長毛象）是一個<em>自由、開放原始碼</em>的社群網站。它是一個分散式的服務，避免您的通訊被單一商業機構壟斷操控。請您選擇一家您信任的 Truecolors 站點，於其建立帳號，您就能與任一 Truecolors 站點上的使用者互通，享受無縫的<em>社群網路</em>交流。
+    about_truecolors_html: Truecolors （長毛象）是一個<em>自由、開放原始碼</em>的社群網站。它是一個分散式的服務，避免您的通訊被單一商業機構壟斷操控。請您選擇一家您信任的
+      Truecolors 站點，於其建立帳號，您就能與任一 Truecolors 站點上的使用者互通，享受無縫的<em>社群網路</em>交流。
     contact_missing: 未設定
     contact_unavailable: 未公開
     hosted_on: 於 %{domain} 託管之 Truecolors 站點
@@ -268,11 +269,13 @@ zh-TW:
         disable_2fa_user_html: "%{name} 已停用使用者 %{target} 的兩階段驗證 (2FA) "
         disable_custom_emoji_html: "%{name} 已停用自訂 emoji 表情符號 %{target}"
         disable_relay_html: "%{name} 已停用中繼 %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} 已停用 %{target} 之使用者電子郵件 token 驗證"
+        disable_sign_in_token_auth_user_html: "%{name} 已停用 %{target} 之使用者電子郵件 token
+          驗證"
         disable_user_html: "%{name} 將使用者 %{target} 設定為禁止登入"
         enable_custom_emoji_html: "%{name} 已啟用自訂 emoji 表情符號 %{target}"
         enable_relay_html: "%{name} 已啟用中繼 %{target}"
-        enable_sign_in_token_auth_user_html: "%{name} 已啟用 %{target} 之使用者電子郵件 token 驗證"
+        enable_sign_in_token_auth_user_html: "%{name} 已啟用 %{target} 之使用者電子郵件 token
+          驗證"
         enable_user_html: "%{name} 將使用者 %{target} 設定為允許登入"
         memorialize_account_html: "%{name} 將 %{target} 設定為追悼帳號"
         promote_user_html: "%{name} 對使用者 %{target} 已進行晉級操作"
@@ -316,7 +319,8 @@ zh-TW:
         create: 新增公告
         title: 新增公告
       preview:
-        explanation_html: 此 email 將寄至 <strong>%{display_count} 名使用者</strong>。以下文字將被包含於 e-mail 中：
+        explanation_html: 此 email 將寄至 <strong>%{display_count} 名使用者</strong>。以下文字將被包含於
+          e-mail 中：
         title: 預覽公告通知
       publish: 發布
       published_msg: 成功發布公告！
@@ -453,7 +457,8 @@ zh-TW:
         title: 新增電子郵件網域封鎖
       no_email_domain_block_selected: 因未選取任何電子郵件網域，所以什麼事都沒發生
       not_permitted: 無權限
-      resolved_dns_records_hint_html: 網域名稱解析為以下 MX 網域，這些網域最終負責接收電子郵件。封鎖 MX 網域將會封鎖任何來自使用相同 MX 網域的電子郵件註冊，即便可見的域名是不同的也一樣。<strong>請注意，不要封鎖主要的電子郵件服務提供商。</strong>
+      resolved_dns_records_hint_html: 網域名稱解析為以下 MX 網域，這些網域最終負責接收電子郵件。封鎖 MX 網域將會封鎖任何來自使用相同
+        MX 網域的電子郵件註冊，即便可見的域名是不同的也一樣。<strong>請注意，不要封鎖主要的電子郵件服務提供商。</strong>
       resolved_through_html: 透過 %{domain} 解析
       title: 已封鎖電子郵件網域
     export_domain_allows:
@@ -605,7 +610,8 @@ zh-TW:
         resolve_description_html: 被檢舉的帳號將不被採取任何行動，不會加以刪除線標記，並且此份報告將被關閉。
         silence_description_html: 此帳號僅對已跟隨帳號之使用者或手動查詢可見，將大幅度限制觸及範圍。此設定可隨時被還原。關閉所有對此帳號之檢舉報告。
         suspend_description_html: 此帳號及其所有內容將不可被存取並且最終被移除，並且無法與之進行互動。三十天內可以撤銷此動作。關閉所有對此帳號之檢舉報告。
-      actions_description_html: 決定應對此報告採取何種行動。若您對檢舉之帳號採取懲罰措施，則將對他們發送 e-mail 通知，除非選擇了 <strong>垃圾郵件</strong> 類別。
+      actions_description_html: 決定應對此報告採取何種行動。若您對檢舉之帳號採取懲罰措施，則將對他們發送 e-mail 通知，除非選擇了
+        <strong>垃圾郵件</strong> 類別。
       actions_description_remote_html: 決定將對此檢舉報告採取何種動作。這將僅作用於<strong>您的伺服器</strong>與此遠端帳號及其內容之通訊行為。
       actions_no_posts: 此報告無任何需要刪除之相關嘟文
       add_to_report: 加入更多至報告
@@ -658,13 +664,15 @@ zh-TW:
       summary:
         action_preambles:
           delete_html: 您將要 <strong>移除</strong> 某些 <strong>@%{acct}</strong> 之嘟文。此將會：
-          mark_as_sensitive_html: 您將要 <strong>標記</strong> 某些 <strong>@%{acct}</strong> 之嘟文為 <strong>敏感內容 </strong>。此將會：
+          mark_as_sensitive_html: 您將要 <strong>標記</strong> 某些 <strong>@%{acct}</strong>
+            之嘟文為 <strong>敏感內容 </strong>。此將會：
           silence_html: 您將要 <strong>限制</strong> <strong>@%{acct}</strong> 之帳號。此將會：
           suspend_html: 您將要 <strong>停權</strong> <strong>@%{acct}</strong> 之帳號。此將會：
         actions:
           delete_html: 移除違反規則之嘟文
           mark_as_sensitive_html: 將違反規則之嘟文多媒體標記為敏感內容
-          silence_html: 藉由標記他們的個人檔案與內容為僅可見於已跟隨帳號或手動查詢此個人檔案，此將嚴格地限制 <strong>@%{acct}</strong> 之觸及率
+          silence_html: 藉由標記他們的個人檔案與內容為僅可見於已跟隨帳號或手動查詢此個人檔案，此將嚴格地限制 <strong>@%{acct}</strong>
+            之觸及率
           suspend_html: 停權 <strong>@%{acct}</strong>，將他們的個人檔案與內容標記為無法存取及無法與之互動
         close_report: '將檢舉報告 #%{id} 標記為已處理'
         close_reports_html: 將 <strong>所有</strong> 對於 <strong>@%{acct}</strong> 之檢舉報告標記為已處理
@@ -795,7 +803,8 @@ zh-TW:
         warning_hint: 建議您使用「需要審核註冊」除非您相信您的管理員團隊能即時處理垃圾訊息與惡意帳號註冊。
       security:
         authorized_fetch: 要求自聯邦宇宙伺服器之驗證
-        authorized_fetch_hint: 要求聯邦宇宙伺服器進行驗證將更嚴格地執行使用者層級及伺服器層級之封鎖。然而，這將會帶來一些性能損失、減少您的回嘟觸及量、並可能會引入與某些聯邦宇宙伺服器之相容性問題。 此外，這無法阻止專門服務抓取您的公開嘟文及帳號資料。
+        authorized_fetch_hint: 要求聯邦宇宙伺服器進行驗證將更嚴格地執行使用者層級及伺服器層級之封鎖。然而，這將會帶來一些性能損失、減少您的回嘟觸及量、並可能會引入與某些聯邦宇宙伺服器之相容性問題。
+          此外，這無法阻止專門服務抓取您的公開嘟文及帳號資料。
         authorized_fetch_overridden_hint: 由於環境變數之設定值覆寫，您目前無法變更此設定。
         federation_authentication: 強制聯邦宇宙伺服器驗證
       title: 伺服器設定
@@ -804,7 +813,8 @@ zh-TW:
       destroyed_msg: 成功刪除站台的上傳項目！
     software_updates:
       critical_update: 重要 — 請儘速升級
-      description: 建議將您的 Truecolors 伺服器升級至最新狀態，以獲得最新錯誤修正及功能更新。此外，即時更新 Truecolors 以避免偶發之安全問題非常重要。因此，Truecolors 每 30 分鐘將檢查一次更新，並依據您的電子郵件通知設定通知您。
+      description: 建議將您的 Truecolors 伺服器升級至最新狀態，以獲得最新錯誤修正及功能更新。此外，即時更新 Truecolors 以避免偶發之安全問題非常重要。因此，Truecolors
+        每 30 分鐘將檢查一次更新，並依據您的電子郵件通知設定通知您。
       documentation_link: 了解更多
       release_notes: 版本資訊
       title: 可取得的更新
@@ -865,7 +875,8 @@ zh-TW:
       elasticsearch_health_yellow:
         message_html: Elasticsearch 叢集健康狀態異常 (黃色)，您可能想進一步調查原因
       elasticsearch_index_mismatch:
-        message_html: Elasticsearch 索引對應 (index mappings) 已過期。請執行 <code>tootctl search deploy --only=%{value}</code>
+        message_html: Elasticsearch 索引對應 (index mappings) 已過期。請執行 <code>tootctl search
+          deploy --only=%{value}</code>
       elasticsearch_preset:
         action: 檢視文件
         message_html: 您的 Elasticsaerch 叢集由多個節點構成，但 Truecolors 並沒有設定使用它們。
@@ -873,12 +884,14 @@ zh-TW:
         action: 檢視文件
         message_html: 您的 Elasticsearch 叢集只有一個節點，<code>ES_PRESET</code> 應設定為 <code>single_node_cluster</code>。
       elasticsearch_reset_chewy:
-        message_html: 您的 Elasticsearch 系統索引 (index) 已過期並需執行設定變更。請執行 <code>tootctl search deploy --reset-chewy</code> 以更新它。
+        message_html: 您的 Elasticsearch 系統索引 (index) 已過期並需執行設定變更。請執行 <code>tootctl
+          search deploy --reset-chewy</code> 以更新它。
       elasticsearch_running_check:
         message_html: 無法連接 Elasticsearch。請檢查是否正在執行中，或者已關閉全文搜尋。
       elasticsearch_version_check:
         message_html: 不相容的 Elasticsearch 版本：%{value}
-        version_comparison: Elasticsearch %{running_version} 版正在執行，需要 %{required_version} 版。
+        version_comparison: Elasticsearch %{running_version} 版正在執行，需要 %{required_version}
+          版。
       rules_check:
         action: 管理伺服器規則
         message_html: 您尚未定義任何伺服器規則。
@@ -939,7 +952,8 @@ zh-TW:
       notified_on_html: 於 %{date} 通知之使用者
       notify_users: 通知使用者
       preview:
-        explanation_html: 此 email 將寄至於 %{date} 前註冊之 <strong>%{display_count} 名使用者</strong>。以下文字將被包含於 e-mail 中：
+        explanation_html: 此 email 將寄至於 %{date} 前註冊之 <strong>%{display_count} 名使用者</strong>。以下文字將被包含於
+          e-mail 中：
         send_preview: 將預覽寄至 %{email}
         send_to_all:
           other: 寄出 %{display_count} 封 email
@@ -1088,7 +1102,8 @@ zh-TW:
     created_msg: 成功新增別名。您可以自舊帳號開始轉移。
     deleted_msg: 成功移除別名。您將無法再由舊帳號轉移至目前的帳號。
     empty: 您目前沒有任何別名。
-    hint_html: 如果想由其他帳號轉移至此帳號，您能於此處新增別名，稍後系統將容許您將跟隨者由舊帳號轉移至此。此項作業是<strong>無害且可復原的</strong>。 <strong>帳號的遷移程序需要於舊帳號啟動</strong>。
+    hint_html: 如果想由其他帳號轉移至此帳號，您能於此處新增別名，稍後系統將容許您將跟隨者由舊帳號轉移至此。此項作業是<strong>無害且可復原的</strong>。
+      <strong>帳號的遷移程序需要於舊帳號啟動</strong>。
     remove: 取消連結別名
   appearance:
     advanced_web_interface: 進階網頁介面
@@ -1129,7 +1144,8 @@ zh-TW:
       clicking_this_link: 點擊此連結
       login_link: 登入
       proceed_to_login_html: 您現在可以前往 %{login_link}。
-      redirect_to_app_html: 您應被重新導向至 <strong>%{app_name}</strong> 應用程式。如尚未重新導向，請嘗試 %{clicking_this_link} 或手動回到應用程式。
+      redirect_to_app_html: 您應被重新導向至 <strong>%{app_name}</strong> 應用程式。如尚未重新導向，請嘗試
+        %{clicking_this_link} 或手動回到應用程式。
       registration_complete: 您於 %{domain} 之註冊申請已完成！
       welcome_title: 歡迎，%{name}！
       wrong_email_hint: 若電子郵件地址不正確，您能於帳號設定中更改。
@@ -1183,20 +1199,22 @@ zh-TW:
       preamble_html: 請使用您於 <strong>%{domain}</strong> 的帳號密碼登入。若您的帳號託管於其他伺服器，您將無法於此登入。
       title: 登入 %{domain}
     sign_up:
-      manual_review: "%{domain} 上的註冊由我們的管理員進行人工審核。為協助我們處理您的註冊，請寫一些關於您自己的資訊以及您欲於 %{domain} 上註冊帳號之原因。"
+      manual_review: "%{domain} 上的註冊由我們的管理員進行人工審核。為協助我們處理您的註冊，請寫一些關於您自己的資訊以及您欲於 %{domain}
+        上註冊帳號之原因。"
       preamble: 若於此 Truecolors 伺服器擁有帳號，您將能跟隨聯邦宇宙中任何一份子，無論他們的帳號託管於何處。
       title: 讓我們一起設定 %{domain} 吧！
     status:
       account_status: 帳號狀態
       confirming: 等待電子郵件驗證完成。
-      functional: "您的帳號可以正常使用了。🎉"
+      functional: "您的帳號可以正常使用了。\U0001F389"
       pending: 管管們正在處理您的申請，這可能需要一點時間處理。我們將於申請通過後以電子郵件方式通知您。
       redirecting_to: 您的帳號因目前重定向至 %{acct} 而被停用。
       self_destruct: 由於 %{domain} 即將停止服務，您只能有限地存取您的帳號。
       view_strikes: 檢視針對您帳號過去的警示
     too_fast: 送出表單的速度太快跟不上，請稍後再試。
     use_security_key: 使用安全金鑰
-    user_agreement_html: 我已閱讀並同意 <a href="%{terms_of_service_path}" target="_blank">服務條款</a> 與 <a href="%{privacy_policy_path}" target="_blank">隱私權政策</a>
+    user_agreement_html: 我已閱讀並同意 <a href="%{terms_of_service_path}" target="_blank">服務條款</a>
+      與 <a href="%{privacy_policy_path}" target="_blank">隱私權政策</a>
     user_privacy_agreement_html: 我已閱讀並同意 <a href="%{privacy_policy_path}" target="_blank">隱私權政策</a>
   author_attribution:
     example_title: 範例文字
@@ -1243,7 +1261,8 @@ zh-TW:
       caches: 已被其他節點快取的內容可能會殘留其中
       data_removal: 您的嘟文與其他資料將被永久刪除
       email_change_html: 您能於不刪除帳號的情況下<a href="%{path}">變更您的電子郵件地址</a>
-      email_contact_html: 如果您仍然沒有收到郵件，請寄信至 <a href="mailto:%{email}">%{email}</a> 以獲得協助
+      email_contact_html: 如果您仍然沒有收到郵件，請寄信至 <a href="mailto:%{email}">%{email}</a>
+        以獲得協助
       email_reconfirmation_html: 如果您沒有收到驗證信，可以於<a href="%{path}">請求再次發送</a>
       irreversible: 您將無法復原或重新啟用您的帳號
       more_details_html: 更多詳細資訊，請參閲<a href="%{terms_path}">隱私政策</a>。
@@ -1297,7 +1316,8 @@ zh-TW:
       content: 抱歉，我們的後台出現問題了。
       title: 這個頁面有問題
     '503': 此頁面因伺服器暫時發生錯誤而無法提供。
-    noscript_html: 使用 Truecolors 網頁版應用需要啟用 JavaScript。您也可以選擇適用於您的平台的 <a href="%{apps_path}">Truecolors 應用</a>。
+    noscript_html: 使用 Truecolors 網頁版應用需要啟用 JavaScript。您也可以選擇適用於您的平台的 <a href="%{apps_path}">Truecolors
+      應用</a>。
   existing_username_validator:
     not_found: 無法於本伺服器找到此使用者帳號
     not_found_multiple: 揣嘸 %{usernames}
@@ -1305,7 +1325,8 @@ zh-TW:
     archive_takeout:
       date: 日期
       download: 下載檔案
-      hint_html: 您可以下載包含您的<strong>嘟文與媒體</strong>的檔案。資料以 ActivityPub 格式儲存，可用於相容之軟體。每次允許存檔的間隔至少 7 天。
+      hint_html: 您可以下載包含您的<strong>嘟文與媒體</strong>的檔案。資料以 ActivityPub 格式儲存，可用於相容之軟體。每次允許存檔的間隔至少
+        7 天。
       in_progress: 正在準備您的存檔...
       request: 下載存檔
       size: 大小
@@ -1397,30 +1418,41 @@ zh-TW:
       overwrite_long: 以新的紀錄覆蓋目前紀錄
     overwrite_preambles:
       blocking_html:
-        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong> 以 <strong>取代您的封鎖帳號列表</strong>。
+        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong>
+          以 <strong>取代您的封鎖帳號列表</strong>。
       bookmarks_html:
-        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個嘟文</strong> 以 <strong>取代您的書籤</strong>。
+        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個嘟文</strong>
+          以 <strong>取代您的書籤</strong>。
       domain_blocking_html:
-        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個網域</strong> 以 <strong>取代您的封鎖網域列表</strong>。
+        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個網域</strong>
+          以 <strong>取代您的封鎖網域列表</strong>。
       following_html:
-        other: 您將要 <strong>跟隨</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong> 並且 <strong>取消跟隨其他所有人</strong>。
+        other: 您將要 <strong>跟隨</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count}
+          個帳號</strong> 並且 <strong>取消跟隨其他所有人</strong>。
       lists_html:
-        other: 您將以 <strong>%{filename}</strong> 之內容<strong>取代您的列表</strong>。這將會新增 <strong>%{count} 個帳號</strong>至新列表。
+        other: 您將以 <strong>%{filename}</strong> 之內容<strong>取代您的列表</strong>。這將會新增 <strong>%{count}
+          個帳號</strong>至新列表。
       muting_html:
-        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong> 以 <strong>取代您的靜音帳號列表</strong>。
+        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong>
+          以 <strong>取代您的靜音帳號列表</strong>。
     preambles:
       blocking_html:
-        other: 您將要 <strong>封鎖</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong>。
+        other: 您將要 <strong>封鎖</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count}
+          個帳號</strong>。
       bookmarks_html:
-        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個嘟文</strong> 以 <strong>加入至您的書籤</strong>。
+        other: 您將要自 <strong>%{filename}</strong> 中之 <strong>%{count} 個嘟文</strong>
+          以 <strong>加入至您的書籤</strong>。
       domain_blocking_html:
-        other: 您將要 <strong>封鎖</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count} 個網域</strong>。
+        other: 您將要 <strong>封鎖</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count}
+          個網域</strong>。
       following_html:
-        other: 您將要 <strong>跟隨</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong>。
+        other: 您將要 <strong>跟隨</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count}
+          個帳號</strong>。
       lists_html:
         other: 您將自 <strong>%{filename}</strong> 新增 <strong>%{count} 個帳號</strong>至您的<strong>列表</strong>。若不存在列表用以新增帳號，則會建立新列表。
       muting_html:
-        other: 您將要 <strong>靜音</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count} 個帳號</strong>。
+        other: 您將要 <strong>靜音</strong> 自 <strong>%{filename}</strong> 中之 <strong>%{count}
+          個帳號</strong>。
     preface: 您能於此匯入您於其他伺服器所匯出的資料檔，包括跟隨中的使用者、封鎖的使用者名單等。
     recent_imports: 最近匯入的
     states:
@@ -1490,7 +1522,8 @@ zh-TW:
     unsubscribe:
       action: 是的，取消訂閱
       complete: 取消訂閱
-      confirmation_html: 您確定要取要取消訂閱自 Truecolors 上 %{domain} 之 %{type} 至您電子郵件 %{email} 嗎？您隨時可以自<a href="%{settings_path}">電子郵件通知設定</a>重新訂閱。
+      confirmation_html: 您確定要取要取消訂閱自 Truecolors 上 %{domain} 之 %{type} 至您電子郵件 %{email}
+        嗎？您隨時可以自<a href="%{settings_path}">電子郵件通知設定</a>重新訂閱。
       emails:
         notification_emails:
           favourite: 最愛通知電子郵件
@@ -1598,7 +1631,8 @@ zh-TW:
     code_hint: 請輸入您驗證應用程式所產生的代碼以確認
     description_html: 若您啟用使用驗證應用程式的<strong>兩階段驗證</strong>，您每次登入都需要輸入由您的手機所產生之 Token。
     enable: 啟用
-    instructions_html: "<strong>請用您手機上的 Google Authenticator 或類似的 TOTP 應用程式掃描此 QR code</strong>。從現在開始，該應用程式將會產生您每次登入都必須輸入的 token。"
+    instructions_html: "<strong>請用您手機上的 Google Authenticator 或類似的 TOTP 應用程式掃描此 QR
+      code</strong>。從現在開始，該應用程式將會產生您每次登入都必須輸入的 token。"
     manual_instructions: 如果您無法掃描 QR code，則必須手動輸入此明文密碼：
     setup: 設定
     wrong_code: 您輸入的驗證碼無效！伺服器時間或是裝置時間無誤嗎？
@@ -1627,7 +1661,8 @@ zh-TW:
   privacy:
     hint_html: "<strong>自訂您希望如何使您的個人檔案及嘟文被發現。</strong>藉由啟用一系列 Truecolors 功能以幫助您觸及更廣的受眾。煩請花些時間確認您是否欲啟用這些設定。"
     privacy: 隱私權
-    privacy_hint_html: 控制您希望向其他人揭露之內容。人們透過瀏覽其他人的跟隨者與其發嘟之應用程式發現有趣的個人檔案與酷炫的 Truecolors 應用程式，但您能選擇將其隱藏。
+    privacy_hint_html: 控制您希望向其他人揭露之內容。人們透過瀏覽其他人的跟隨者與其發嘟之應用程式發現有趣的個人檔案與酷炫的 Truecolors
+      應用程式，但您能選擇將其隱藏。
     reach: 觸及
     reach_hint_html: 控制您希望被新使用者探索或跟隨之方式。想使您的嘟文出現於探索頁面嗎？想使其他人透過他們的跟隨建議找到您嗎？想自動接受所有新跟隨者嗎？或是想逐一控制跟隨請求嗎？
     search: 搜尋
@@ -1957,11 +1992,13 @@ zh-TW:
       edit_profile_title: 客製化您的個人檔案
       explanation: 以下是幾個小技巧，希望它們能幫到您
       feature_action: 了解更多
-      feature_audience: Truecolors 為您打開了一扇獨特的門，使您不受平台干擾，自由地管理您的受眾。只需將 Truecolors 部署於您自己的基礎設施上，您便能與線上任何 Truecolors 伺服器互動，而且控制權只在您手中。
+      feature_audience: Truecolors 為您打開了一扇獨特的門，使您不受平台干擾，自由地管理您的受眾。只需將 Truecolors 部署於您自己的基礎設施上，您便能與線上任何
+        Truecolors 伺服器互動，而且控制權只在您手中。
       feature_audience_title: 自信地建立您的受眾
       feature_control: 您最清楚自己想於首頁時間軸看到什麼內容，別讓演算法與廣告浪費您寶貴的時間。自同一帳號跟隨任何 Truecolors 伺服器上的任何一個人，依時間順序接收他們的嘟文，建立屬於自己的網路小角落。
       feature_control_title: 掌控自己的時間軸
-      feature_creativity: Truecolors 支援音訊、影片及圖片嘟文、無障礙說明文字、投票、內容警告、動畫大頭貼、自訂 emoji 表情符號、縮圖裁剪控制等等，協助您表達自我。無論是發佈藝術作品、音樂，或是 podcast，Truecolors 將隨時陪伴著您。
+      feature_creativity: Truecolors 支援音訊、影片及圖片嘟文、無障礙說明文字、投票、內容警告、動畫大頭貼、自訂 emoji 表情符號、縮圖裁剪控制等等，協助您表達自我。無論是發佈藝術作品、音樂，或是
+        podcast，Truecolors 將隨時陪伴著您。
       feature_creativity_title: 無與倫比的創意
       feature_moderation: Truecolors 將決策權交還於您。每台伺服器皆能制定自己的規則與管理規範，並於該伺服器上實施。這與社交媒體公司由上而下的規範大不相同，因此能更有彈性地滿足不同群體的需求。您可以加入認同其規則之伺服器，或者自行架設伺服器。
       feature_moderation_title: 管理方式，如您所願
@@ -1994,7 +2031,9 @@ zh-TW:
     seamless_external_login: 由於您是透過外部服務登入，所以不能設定密碼與電子郵件。
     signed_in_as: 目前登入的帳號：
   verification:
-    extra_instructions_html: <strong>小撇步：</strong>您網站上之此連結可以是不可見的。其重要的部分是 <code>rel="me"</code> ，防止透過使用者產生內容模擬。您甚至能使用頁面標頭之 <code>link</code> 標籤取代頁面中的 <code>a</code> 標籤，但 HTML 必須能於不執行 JavaScript 情況下所存取。
+    extra_instructions_html: <strong>小撇步：</strong>您網站上之此連結可以是不可見的。其重要的部分是 <code>rel="me"</code>
+      ，防止透過使用者產生內容模擬。您甚至能使用頁面標頭之 <code>link</code> 標籤取代頁面中的 <code>a</code> 標籤，但 HTML
+      必須能於不執行 JavaScript 情況下所存取。
     here_is_how: 如此這般
     hint_html: "<strong>驗證您 Truecolors 上的身分！</strong>基於開放網路標準，永久免費。您唯一需準備的是所有人皆能夠識別您之個人網站。當您自個人檔案連結此網站時，我們會檢查其至您個人檔案之反向連結，並於您個人檔案展現圖形標示。"
     instructions_html: 複製及貼上以下程式碼至您個人網站之 HTML 中。接著透過「編輯個人檔案」將您網站網址加入您個人網站之額外欄位中，並儲存變更。

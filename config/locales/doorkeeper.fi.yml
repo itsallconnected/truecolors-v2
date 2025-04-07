@@ -31,9 +31,11 @@ fi:
       form:
         error: Hupsis! Tarkista, ettei lomakkeessasi ole virheitä
       help:
-        native_redirect_uri: Käytä tunnistetta %{native_redirect_uri} paikallisiin testeihin
+        native_redirect_uri: Käytä tunnistetta %{native_redirect_uri} paikallisiin
+          testeihin
         redirect_uri: Lisää jokainen URI omalle rivilleen
-        scopes: Erota oikeudet välilyönneillä. Jätä kenttä tyhjäksi, jos haluat käyttää oletusoikeuksia.
+        scopes: Erota oikeudet välilyönneillä. Jätä kenttä tyhjäksi, jos haluat käyttää
+          oletusoikeuksia.
       index:
         application: Sovellus
         callback_url: Takaisinkutsu-URL
@@ -60,7 +62,8 @@ fi:
       error:
         title: Tapahtui virhe
       new:
-        prompt_html: "%{client_name} haluaisi käyttöoikeuden tiliisi. <strong>Hyväksy tämä pyyntö vain, jos tunnistat lähteen ja luotat siihen.</strong>"
+        prompt_html: "%{client_name} haluaisi käyttöoikeuden tiliisi. <strong>Hyväksy
+          tämä pyyntö vain, jos tunnistat lähteen ja luotat siihen.</strong>"
         review_permissions: Tarkista käyttöoikeudet
         title: Valtuutus vaaditaan
       show:
@@ -72,7 +75,9 @@ fi:
         revoke: Oletko varma?
       index:
         authorized_at: Valtuutettu %{date}
-        description_html: Nämä sovellukset voivat käyttää tiliäsi ohjelmointirajapinnan kautta. Jos tässä on sovelluksia, joita et tunnista, tai sovellus toimii väärin, voit peruuttaa sen käyttöoikeuden.
+        description_html: Nämä sovellukset voivat käyttää tiliäsi ohjelmointirajapinnan
+          kautta. Jos tässä on sovelluksia, joita et tunnista, tai sovellus toimii
+          väärin, voit peruuttaa sen käyttöoikeuden.
         last_used_at: Käytetty viimeksi %{date}
         never_used: Ei käytetty
         scopes: Käyttöoikeudet
@@ -81,25 +86,39 @@ fi:
     errors:
       messages:
         access_denied: Resurssin omistaja tai valtuutuspalvelin hylkäsi pyynnön.
-        credential_flow_not_configured: Resurssin omistajan salasanatietojen luku epäonnistui, koska asetusta Doorkeeper.configure.resource_owner_from_credentials ei ole konfiguroitu.
-        invalid_client: Asiakasohjelman todennus epäonnistui, koska asiakas on tuntematon, asiakkaan todennus ei ollut mukana tai todennustapaa ei tueta.
-        invalid_code_challenge_method: Koodihaastemenetelmän tulee olla S256 – selväkielistä ei tueta.
-        invalid_grant: Valtuutuslupa on virheellinen, vanhentunut, peruttu, valtuutuspyynnössä käytettyä uudelleenohjaus-URI:tä vastaamaton tai myönnetty toiselle asiakkaalle.
+        credential_flow_not_configured: Resurssin omistajan salasanatietojen luku
+          epäonnistui, koska asetusta Doorkeeper.configure.resource_owner_from_credentials
+          ei ole konfiguroitu.
+        invalid_client: Asiakasohjelman todennus epäonnistui, koska asiakas on tuntematon,
+          asiakkaan todennus ei ollut mukana tai todennustapaa ei tueta.
+        invalid_code_challenge_method: Koodihaastemenetelmän tulee olla S256 – selväkielistä
+          ei tueta.
+        invalid_grant: Valtuutuslupa on virheellinen, vanhentunut, peruttu, valtuutuspyynnössä
+          käytettyä uudelleenohjaus-URI:tä vastaamaton tai myönnetty toiselle asiakkaalle.
         invalid_redirect_uri: Uudelleenohjaus-URI on virheellinen.
         invalid_request:
           missing_param: 'Vaadittu parametri puuttuu: %{value}.'
-          request_not_authorized: Pyyntö on valtuutettava. Vaadittu parametri pyynnön valtuuttamiseksi puuttuu tai on virheellinen.
-          unknown: Pyynnöstä puuttuu vaadittu parametri, se sisältää tukemattoman parametriarvon tai on muulla tavoin väärin muotoiltu.
-        invalid_resource_owner: Annetut resurssin omistajan tunnnukset ovat virheelliset, tai resurssin omistajaa ei löydy
-        invalid_scope: Pyydetyt oikeudet ovat virheellisiä, tuntemattomia tai väärin muotoiltuja.
+          request_not_authorized: Pyyntö on valtuutettava. Vaadittu parametri pyynnön
+            valtuuttamiseksi puuttuu tai on virheellinen.
+          unknown: Pyynnöstä puuttuu vaadittu parametri, se sisältää tukemattoman
+            parametriarvon tai on muulla tavoin väärin muotoiltu.
+        invalid_resource_owner: Annetut resurssin omistajan tunnnukset ovat virheelliset,
+          tai resurssin omistajaa ei löydy
+        invalid_scope: Pyydetyt oikeudet ovat virheellisiä, tuntemattomia tai väärin
+          muotoiltuja.
         invalid_token:
           expired: Käyttöoikeustunnus on vanhentunut
           revoked: Käyttöoikeustunnus on peruttu
           unknown: Käyttöoikeustunnus on virheellinen
-        resource_owner_authenticator_not_configured: Resurssin omistajaa ei löytynyt, koska asetusta Doorkeeper.configure.resource_owner_authenticator ei ole konfiguroitu.
-        server_error: Valtuutuspalvelin kohtasi odottamattoman virheen, joka esti pyynnön täyttämisen.
-        temporarily_unavailable: Valtuutuspalvelin ei voi tällä hetkellä käsitellä pyyntöä joko väliaikaisen ruuhkan tai huollon takia.
-        unauthorized_client: Asiakkaalla ei ole valtuuksia tehdä tätä pyyntöä tällä metodilla.
+        resource_owner_authenticator_not_configured: Resurssin omistajaa ei löytynyt,
+          koska asetusta Doorkeeper.configure.resource_owner_authenticator ei ole
+          konfiguroitu.
+        server_error: Valtuutuspalvelin kohtasi odottamattoman virheen, joka esti
+          pyynnön täyttämisen.
+        temporarily_unavailable: Valtuutuspalvelin ei voi tällä hetkellä käsitellä
+          pyyntöä joko väliaikaisen ruuhkan tai huollon takia.
+        unauthorized_client: Asiakkaalla ei ole valtuuksia tehdä tätä pyyntöä tällä
+          metodilla.
         unsupported_grant_type: Valtuutuspalvelin ei tue tätä valtuutusluvan tyyppiä.
         unsupported_response_type: Valtuutuspalvelin ei tue tätä vastauksen tyyppiä.
     flash:
@@ -151,15 +170,19 @@ fi:
     scopes:
       admin:read: lue kaikkia palvelimen tietoja
       admin:read:accounts: lue arkaluonteisia tietoja kaikista tileistä
-      admin:read:canonical_email_blocks: lue arkaluonteisia tietoja kaikista estetyistä kanonisista sähköpostiosoitteista
+      admin:read:canonical_email_blocks: lue arkaluonteisia tietoja kaikista estetyistä
+        kanonisista sähköpostiosoitteista
       admin:read:domain_allows: lue arkaluonteisia tietoja kaikista sallituista verkkotunnuksista
       admin:read:domain_blocks: lue arkaluonteisia tietoja kaikista estetyistä verkkotunnuksista
-      admin:read:email_domain_blocks: lue arkaluonteisia tietoja kaikista estetyistä sähköpostiverkkotunnuksista
+      admin:read:email_domain_blocks: lue arkaluonteisia tietoja kaikista estetyistä
+        sähköpostiverkkotunnuksista
       admin:read:ip_blocks: lue arkaluonteisia tietoja kaikista estetyistä IP-osoitteista
-      admin:read:reports: lue arkaluonteisia tietoja kaikista raporteista ja raportoiduista tileistä
+      admin:read:reports: lue arkaluonteisia tietoja kaikista raporteista ja raportoiduista
+        tileistä
       admin:write: muokkaa kaikkia palvelimen tietoja
       admin:write:accounts: suorita moderointitoimia tileille
-      admin:write:canonical_email_blocks: suorita moderointitoimia estetyille kanonisille sähköpostiosoitteille
+      admin:write:canonical_email_blocks: suorita moderointitoimia estetyille kanonisille
+        sähköpostiosoitteille
       admin:write:domain_allows: suorita moderointitoimia sallituille verkkotunnuksille
       admin:write:domain_blocks: suorita moderointitoimia estetyille verkkotunnuksille
       admin:write:email_domain_blocks: suorita moderointitoimia estetyille sähköpostiverkkotunnuksille

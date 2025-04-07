@@ -72,4 +72,5 @@ eo:
         webhook:
           attributes:
             events:
-              invalid_permissions: ne povas inkluzivi eventojn pri kiuj vi ne havas la rajtojn
+              invalid_permissions: ne povas inkluzivi eventojn pri kiuj vi ne havas
+                la rajtojn

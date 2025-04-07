@@ -1,7 +1,8 @@
 ---
 sv:
   about:
-    about_truecolors_html: 'Framtidens sociala medium: Ingen reklam. Ingen övervakning. Etisk design och decentralisering! Äg din data med Truecolors!'
+    about_truecolors_html: 'Framtidens sociala medium: Ingen reklam. Ingen övervakning.
+      Etisk design och decentralisering! Äg din data med Truecolors!'
     contact_missing: Inte inställd
     contact_unavailable: Ej tillämplig
     hosted_on: Truecolors-värd på %{domain}
@@ -11,7 +12,9 @@ sv:
       one: Följare
       other: Följare
     following: Följer
-    instance_actor_flash: Detta konto är en virtuell aktör som används för att representera servern i sig och inte någon enskild användare. Den används för federeringsändamål och bör inte stängas av.
+    instance_actor_flash: Detta konto är en virtuell aktör som används för att representera
+      servern i sig och inte någon enskild användare. Den används för federeringsändamål
+      och bör inte stängas av.
     last_active: senast aktiv
     link_verified_on: Ägarskap för denna länk kontrollerades den %{date}
     nothing_here: Det finns inget här!
@@ -120,8 +123,12 @@ sv:
       redownloaded_msg: Uppdaterade %{username}s profil från server
       reject: Förkasta
       rejected_msg: Avvisade %{username}s registreringsansökan
-      remote_suspension_irreversible: Detta konto har raderats och uppgifterna kan inte återkallas.
-      remote_suspension_reversible_hint_html: Kontot har stängts av på dess server och all data som tillhör det kommer att raderas permanent den %{date}. Tills dess kan kontot återställas på sin server utan dataförlust. Om du vill radera all kontodata redan nu, kan du göra detta nedan.
+      remote_suspension_irreversible: Detta konto har raderats och uppgifterna kan
+        inte återkallas.
+      remote_suspension_reversible_hint_html: Kontot har stängts av på dess server
+        och all data som tillhör det kommer att raderas permanent den %{date}. Tills
+        dess kan kontot återställas på sin server utan dataförlust. Om du vill radera
+        all kontodata redan nu, kan du göra detta nedan.
       remove_avatar: Ta bort avatar
       remove_header: Ta bort rubrik
       removed_avatar_msg: Tog bort %{username}s profilbild
@@ -154,8 +161,13 @@ sv:
       subscribe: Prenumerera
       suspend: Stäng av
       suspended: Avstängda
-      suspension_irreversible: All data som tillhör detta konto har permanent raderats. Du kan låsa upp kontot om du vill att det ska gå att använda, men ingen data kommer finnas kvar.
-      suspension_reversible_hint_html: Kontot har stängts av och all data som tillhör det kommer att raderas permanent den %{date}. Tills dess kan kontot återställas utan dataförlust. Om du vill radera all kontodata redan nu, kan du göra detta nedan.
+      suspension_irreversible: All data som tillhör detta konto har permanent raderats.
+        Du kan låsa upp kontot om du vill att det ska gå att använda, men ingen data
+        kommer finnas kvar.
+      suspension_reversible_hint_html: Kontot har stängts av och all data som tillhör
+        det kommer att raderas permanent den %{date}. Tills dess kan kontot återställas
+        utan dataförlust. Om du vill radera all kontodata redan nu, kan du göra detta
+        nedan.
       title: Konton
       unblock_email: Avblockera e-postadress
       unblocked_email_msg: "%{username}s e-postadress avblockerad"
@@ -206,11 +218,13 @@ sv:
         disable_2fa_user: Inaktivera 2FA
         disable_custom_emoji: Inaktivera egna emojis
         disable_relay: Inaktivera ombud
-        disable_sign_in_token_auth_user: Inaktivera autentisering med pollett via e-post för användare
+        disable_sign_in_token_auth_user: Inaktivera autentisering med pollett via
+          e-post för användare
         disable_user: Inaktivera användare
         enable_custom_emoji: Aktivera egna emojis
         enable_relay: Aktivera ombud
-        enable_sign_in_token_auth_user: Aktivera autentisering med pollett via e-post för användare
+        enable_sign_in_token_auth_user: Aktivera autentisering med pollett via e-post
+          för användare
         enable_user: Aktivera användare
         memorialize_account: Minnesmärk konto
         promote_user: Befordra användare
@@ -238,9 +252,11 @@ sv:
         update_status: Uppdatera inlägg
         update_user_role: Uppdatera roll
       actions:
-        approve_appeal_html: "%{name} godkände överklagande av modereringsbeslut från %{target}"
+        approve_appeal_html: "%{name} godkände överklagande av modereringsbeslut från
+          %{target}"
         approve_user_html: "%{name} godkände registrering från %{target}"
-        assigned_to_self_report_html: "%{name} tilldelade rapporten %{target} till sig själva"
+        assigned_to_self_report_html: "%{name} tilldelade rapporten %{target} till
+          sig själva"
         change_email_user_html: "%{name} bytte e-postadress för användaren %{target}"
         change_role_user_html: "%{name} ändrade roll för %{target}"
         confirm_user_html: "%{name} bekräftad e-post adress av användare %{target}"
@@ -266,21 +282,26 @@ sv:
         destroy_ip_block_html: "%{name} tog bort regel för IP %{target}"
         destroy_relay_html: "%{name} tog bort ombudet %{target}"
         destroy_status_html: "%{name} tog bort inlägget av %{target}"
-        destroy_unavailable_domain_html: "%{name} återupptog leverans till domänen %{target}"
+        destroy_unavailable_domain_html: "%{name} återupptog leverans till domänen
+          %{target}"
         destroy_user_role_html: "%{name} raderade rollen %{target}"
-        disable_2fa_user_html: "%{name} inaktiverade tvåfaktorsautentiseringskrav för användaren %{target}"
+        disable_2fa_user_html: "%{name} inaktiverade tvåfaktorsautentiseringskrav
+          för användaren %{target}"
         disable_custom_emoji_html: "%{name} inaktiverade emoji %{target}"
         disable_relay_html: "%{name} inaktiverade ombudet %{target}"
-        disable_sign_in_token_auth_user_html: "%{name} inaktiverade e-posttokenautentisering för %{target}"
+        disable_sign_in_token_auth_user_html: "%{name} inaktiverade e-posttokenautentisering
+          för %{target}"
         disable_user_html: "%{name} stängde av inloggning för användaren %{target}"
         enable_custom_emoji_html: "%{name} aktiverade emoji %{target}"
         enable_relay_html: "%{name} aktiverat ombudet %{target}"
-        enable_sign_in_token_auth_user_html: "%{name} aktiverade e-posttokenautentisering för %{target}"
+        enable_sign_in_token_auth_user_html: "%{name} aktiverade e-posttokenautentisering
+          för %{target}"
         enable_user_html: "%{name} aktiverade inloggning för användaren %{target}"
         memorialize_account_html: "%{name} gjorde %{target}s konto till en minnessida"
         promote_user_html: "%{name} befordrade användaren %{target}"
         publish_terms_of_service_html: "%{name} publicerade uppdateringar till användarvillkoren"
-        reject_appeal_html: "%{name} avvisade överklagande av modereringsbeslut från %{target}"
+        reject_appeal_html: "%{name} avvisade överklagande av modereringsbeslut från
+          %{target}"
         reject_user_html: "%{name} avvisade registrering från %{target}"
         remove_avatar_user_html: "%{name} tog bort %{target}s avatar"
         reopen_report_html: "%{name} öppnade rapporten igen %{target}"
@@ -402,41 +423,56 @@ sv:
       confirm_suspension:
         cancel: Avbryt
         confirm: Pausa
-        permanent_action: Att ångra avstängningen kommer inte att återställa några uppgifter eller relationer.
-        preamble_html: Du håller på att stänga av <strong>%{domain}</strong> och dess underdomäner.
-        remove_all_data: Detta kommer att ta bort allt innehåll, all media och all profildata för domänens konton från din server.
+        permanent_action: Att ångra avstängningen kommer inte att återställa några
+          uppgifter eller relationer.
+        preamble_html: Du håller på att stänga av <strong>%{domain}</strong> och dess
+          underdomäner.
+        remove_all_data: Detta kommer att ta bort allt innehåll, all media och all
+          profildata för domänens konton från din server.
         stop_communication: Din server kommer att sluta kommunicera med dessa servrar.
         title: Bekräfta blockering av domänen %{domain}
-        undo_relationships: Detta kommer att återställa följförhållanden mellan konton på dessa servrar och dina.
+        undo_relationships: Detta kommer att återställa följförhållanden mellan konton
+          på dessa servrar och dina.
       created_msg: Domänblocket behandlas nu
       destroyed_msg: Domänblockering har återtagits
       domain: Domän
       edit: Ändra domänblock
       existing_domain_block: Du har redan satt strängare gränser för %{name}.
-      existing_domain_block_html: Du har redan satt begränsningar för %{name} så <a href="%{unblock_url}">avblockera användaren</a> först.
+      existing_domain_block_html: Du har redan satt begränsningar för %{name} så <a
+        href="%{unblock_url}">avblockera användaren</a> först.
       export: Exportera
       import: Importera
       new:
         create: Skapa block
-        hint: Domänblockeringen hindrar inte skapandet av kontoposter i databasen, men kommer retroaktivt och automatiskt tillämpa specifika modereringsmetoder på dessa konton.
+        hint: Domänblockeringen hindrar inte skapandet av kontoposter i databasen,
+          men kommer retroaktivt och automatiskt tillämpa specifika modereringsmetoder
+          på dessa konton.
         severity:
-          desc_html: "<strong>Gräns</strong> gör inlägg från konton på denna domän osynliga för alla som inte följer kontona. <strong>Avstängning</strong> tar bort allt innehåll, media och profildata för domänens konton från din server. Använd <strong>Ingen</strong> om du bara vill avvisa mediefiler."
+          desc_html: "<strong>Gräns</strong> gör inlägg från konton på denna domän
+            osynliga för alla som inte följer kontona. <strong>Avstängning</strong>
+            tar bort allt innehåll, media och profildata för domänens konton från
+            din server. Använd <strong>Ingen</strong> om du bara vill avvisa mediefiler."
           noop: Ingen
           silence: Begränsa
           suspend: Stäng av
         title: Nytt domänblock
-      no_domain_block_selected: Inga blockeringar av domäner ändrades eftersom inga valdes
+      no_domain_block_selected: Inga blockeringar av domäner ändrades eftersom inga
+        valdes
       not_permitted: Du har inte behörighet att utföra denna åtgärd
       obfuscate: Dölj domännamn
-      obfuscate_hint: Dölj domännamnet i listan till viss del, om underrättelser för listan över domänbegränsningar aktiverats
+      obfuscate_hint: Dölj domännamnet i listan till viss del, om underrättelser för
+        listan över domänbegränsningar aktiverats
       private_comment: Privat kommentar
       private_comment_hint: Kommentar för moderatorer om denna domänbegränsning.
       public_comment: Offentlig kommentar
-      public_comment_hint: Kommentar om denna domänbegränsning för allmänheten, om listan över domänbegränsningar är publik.
+      public_comment_hint: Kommentar om denna domänbegränsning för allmänheten, om
+        listan över domänbegränsningar är publik.
       reject_media: Avvisa mediafiler
-      reject_media_hint: Raderar lokalt lagrade mediefiler och förhindrar möjligheten att ladda ner något i framtiden. Irrelevant för suspensioner
+      reject_media_hint: Raderar lokalt lagrade mediefiler och förhindrar möjligheten
+        att ladda ner något i framtiden. Irrelevant för suspensioner
       reject_reports: Avvisa rapporter
-      reject_reports_hint: Ignorera alla rapporter som kommer från den här domänen. Gäller inte för avstängningar
+      reject_reports_hint: Ignorera alla rapporter som kommer från den här domänen.
+        Gäller inte för avstängningar
       undo: Ångra
       view: Visa domänblock
     email_domain_blocks:
@@ -455,9 +491,14 @@ sv:
         create: Skapa domän
         resolve: Slå upp domän
         title: Blockera ny e-postdomän
-      no_email_domain_block_selected: Inga blockeringar av e-postdomäner ändrades eftersom inga valdes
+      no_email_domain_block_selected: Inga blockeringar av e-postdomäner ändrades
+        eftersom inga valdes
       not_permitted: Ej tillåtet
-      resolved_dns_records_hint_html: Domännamnet ger uppslag till följande MX-domäner, vilka är ytterst ansvariga för att e-post tas emot. Att blockera en MX-domän blockerar även registreringar från alla e-postadresser som använder samma MX-domän, även om det synliga domännamnet är annorlunda. <strong>Var noga med att inte blockera stora e-postleverantörer.</strong>
+      resolved_dns_records_hint_html: Domännamnet ger uppslag till följande MX-domäner,
+        vilka är ytterst ansvariga för att e-post tas emot. Att blockera en MX-domän
+        blockerar även registreringar från alla e-postadresser som använder samma
+        MX-domän, även om det synliga domännamnet är annorlunda. <strong>Var noga
+        med att inte blockera stora e-postleverantörer.</strong>
       resolved_through_html: Uppslagen genom %{domain}
       title: Blockerade e-postdomäner
     export_domain_allows:
@@ -466,17 +507,25 @@ sv:
       no_file: Ingen fil vald
     export_domain_blocks:
       import:
-        description_html: Du håller på att importera en lista med domänblockeringar. Granska denna lista mycket noga, särskilt om du inte har skapat listan själv.
+        description_html: Du håller på att importera en lista med domänblockeringar.
+          Granska denna lista mycket noga, särskilt om du inte har skapat listan själv.
         existing_relationships_warning: Befintliga följ-relationer
-        private_comment_description_html: 'För att hjälpa dig spåra var importerade blockeringar kommer från kommer importerade blockeringar att skapas med följande privata kommentar: <q>%{comment}</q>'
+        private_comment_description_html: 'För att hjälpa dig spåra var importerade
+          blockeringar kommer från kommer importerade blockeringar att skapas med
+          följande privata kommentar: <q>%{comment}</q>'
         private_comment_template: Importerad från %{source} den %{date}
         title: Importera domänblockeringar
-      invalid_domain_block: 'Ett eller flera domänblock hoppades över på grund av följande fel: %{error}'
+      invalid_domain_block: 'Ett eller flera domänblock hoppades över på grund av
+        följande fel: %{error}'
       new:
         title: Importera domänblockeringar
       no_file: Ingen fil vald
     follow_recommendations:
-      description_html: "<strong>Följrekommendationer hjälper nya användare att snabbt hitta intressant innehåll</strong>. När en användare inte har interagerat med andra tillräckligt mycket för att forma personliga följrekommendationer, rekommenderas istället dessa konton. De beräknas om varje dag från en mix av konton med nylig aktivitet och högst antal följare för ett givet språk."
+      description_html: "<strong>Följrekommendationer hjälper nya användare att snabbt
+        hitta intressant innehåll</strong>. När en användare inte har interagerat
+        med andra tillräckligt mycket för att forma personliga följrekommendationer,
+        rekommenderas istället dessa konton. De beräknas om varje dag från en mix
+        av konton med nylig aktivitet och högst antal följare för ett givet språk."
       language: För språket
       status: Status
       suppress: Tryck ner följrekommendation
@@ -489,8 +538,12 @@ sv:
         view_all: Visa fullständiga revisionssloggar
       availability:
         description_html:
-          one: Om leveranser till domänen misslyckas i <strong>%{count} dag</strong> kommer inga ytterligare leveransförsök att göras förrän en leverans <em>från</em> domänen tas emot.
-          other: Om leveranser till domänen misslyckas på <strong>%{count} olika dagar</strong> kommer inga ytterligare leveransförsök att göras förrän en leverans <em>från</em> domänen tas emot.
+          one: Om leveranser till domänen misslyckas i <strong>%{count} dag</strong>
+            kommer inga ytterligare leveransförsök att göras förrän en leverans <em>från</em>
+            domänen tas emot.
+          other: Om leveranser till domänen misslyckas på <strong>%{count} olika dagar</strong>
+            kommer inga ytterligare leveransförsök att göras förrän en leverans <em>från</em>
+            domänen tas emot.
         failure_threshold_reached: Tröskeln för misslyckande nåddes den %{date}.
         failures_recorded:
           one: Misslyckat försök under %{count} dag.
@@ -502,11 +555,14 @@ sv:
       back_to_limited: Begränsat
       back_to_warning: Varning
       by_domain: Domän
-      confirm_purge: Är du säker på att du vill ta bort data permanent från den här domänen?
+      confirm_purge: Är du säker på att du vill ta bort data permanent från den här
+        domänen?
       content_policies:
         comment: Intern anteckning
-        description_html: Du kan definiera innehållspolicyer som kommer tillämpas på alla konton från denna domän samt alla dess underdomäner.
-        limited_federation_mode_description_html: Du kan välja om du vill tillåta federering med den här domänen.
+        description_html: Du kan definiera innehållspolicyer som kommer tillämpas
+          på alla konton från denna domän samt alla dess underdomäner.
+        limited_federation_mode_description_html: Du kan välja om du vill tillåta
+          federering med den här domänen.
         policies:
           reject_media: Avvisa media
           reject_reports: Avvisa rapporter
@@ -533,7 +589,8 @@ sv:
         unavailable: Ej tillgänglig
       delivery_available: Leverans är tillgängligt
       delivery_error_days: Leveransfelsdagar
-      delivery_error_hint: Om leverans inte är möjligt i %{count} dagar, kommer det automatiskt markeras som ej levererbart.
+      delivery_error_hint: Om leverans inte är möjligt i %{count} dagar, kommer det
+        automatiskt markeras som ej levererbart.
       destroyed_msg: Data från %{domain} står nu i kö för förestående radering.
       empty: Inga domäner hittades.
       known_accounts:
@@ -546,15 +603,19 @@ sv:
       private_comment: Privat kommentar
       public_comment: Offentlig kommentar
       purge: Rensa
-      purge_description_html: Om du tror att denna domän har kopplats ned för gott, kan du radera alla kontoposter och associerad data tillhörande denna domän från din lagringsyta. Detta kan ta tid.
+      purge_description_html: Om du tror att denna domän har kopplats ned för gott,
+        kan du radera alla kontoposter och associerad data tillhörande denna domän
+        från din lagringsyta. Detta kan ta tid.
       title: Kända instanser
       total_blocked_by_us: Blockerad av oss
       total_followed_by_them: Följs av dem
       total_followed_by_us: Följs av oss
       total_reported: Rapporter om dem
       total_storage: Mediebilagor
-      totals_time_period_hint_html: Totalsummorna som visas nedan inkluderar data för all tid.
-      unknown_instance: Det finns för närvarande inga uppgifter om denna domän på denna server.
+      totals_time_period_hint_html: Totalsummorna som visas nedan inkluderar data
+        för all tid.
+      unknown_instance: Det finns för närvarande inga uppgifter om denna domän på
+        denna server.
     invites:
       deactivate_all: Inaktivera alla
       filter:
@@ -583,17 +644,24 @@ sv:
     relays:
       add_new: Lägg till nytt ombud
       delete: Radera
-      description_html: Ett <strong>federeringsombud</strong> är en mellanliggande server som utbyter höga antal offentliga inlägg mellan servrar som prenumererar på och publicerar till det. <strong>Det kan hjälpa små och medelstora servrar upptäcka innehåll från fediversumet</strong>, vilket annars skulle kräva att lokala användare manuellt följer personer på fjärrservrar.
+      description_html: Ett <strong>federeringsombud</strong> är en mellanliggande
+        server som utbyter höga antal offentliga inlägg mellan servrar som prenumererar
+        på och publicerar till det. <strong>Det kan hjälpa små och medelstora servrar
+        upptäcka innehåll från fediversumet</strong>, vilket annars skulle kräva att
+        lokala användare manuellt följer personer på fjärrservrar.
       disable: Inaktivera
       disabled: Inaktiverad
       enable: Aktivera
-      enable_hint: Vid aktivering kommer din server börja prenumerera på alla offentliga inlägg från detta ombud, och kommer börja sända denna servers offentliga inlägg till den.
+      enable_hint: Vid aktivering kommer din server börja prenumerera på alla offentliga
+        inlägg från detta ombud, och kommer börja sända denna servers offentliga inlägg
+        till den.
       enabled: Aktivera
       inbox_url: Ombuds-URL
       pending: Väntar på ombudets godkännande
       save_and_enable: Spara och aktivera
       setup: Konfigurera ett ombud
-      signatures_not_enabled: Ombud fungerar inte korrekt om säkert läge eller begränsat federeringsläge är aktiverade
+      signatures_not_enabled: Ombud fungerar inte korrekt om säkert läge eller begränsat
+        federeringsläge är aktiverade
       status: Status
       title: Ombud
     report_notes:
@@ -607,14 +675,28 @@ sv:
       action_log: Granskningslogg
       action_taken_by: Åtgärder vidtagna av
       actions:
-        delete_description_html: De rapporterade inläggen kommer raderas och en prick kommer registreras för att hjälpa dig eskalera framtida överträdelser av samma konto.
-        mark_as_sensitive_description_html: Medierna i de rapporterade inläggen kommer markeras som känsliga och en prick kommer registreras för att hjälpa dig eskalera framtida överträdelser av samma konto.
-        other_description_html: Se fler alternativ för att kontrollera kontots beteende och anpassa kommunikationen till det rapporterade kontot.
-        resolve_description_html: Ingen åtgärd vidtas mot det rapporterade kontot, ingen prick registreras och rapporten stängs.
-        silence_description_html: Kontot kommer endast synas för de som redan följer den eller manuellt söker på den, vilket dramatiskt minskar dess räckvidd. Kan alltid ångras. Stänger alla anmälningar mot detta konto.
-        suspend_description_html: Kontot och allt dess innehåll kommer att vara oåtkomligt och så småningom tas bort, det kommer inte gå att interagera med kontot. Kan ångras inom 30 dagar. Stänger alla anmälningar mot detta konto.
-      actions_description_html: Välj vilken åtgärd som skall vidtas för att lösa denna rapport. Om du vidtar en bestraffningsåtgärd mot det rapporterade kontot kommer en e-postnotis att skickas till dem, förutom om du valt kategorin <strong>Skräppost</strong>.
-      actions_description_remote_html: Bestäm vilka åtgärder som ska vidtas för att lösa denna rapport. Detta kommer bara att påverka hur <strong>din</strong> server kommunicerar med detta fjärrkonto och hanterar dess innehåll.
+        delete_description_html: De rapporterade inläggen kommer raderas och en prick
+          kommer registreras för att hjälpa dig eskalera framtida överträdelser av
+          samma konto.
+        mark_as_sensitive_description_html: Medierna i de rapporterade inläggen kommer
+          markeras som känsliga och en prick kommer registreras för att hjälpa dig
+          eskalera framtida överträdelser av samma konto.
+        other_description_html: Se fler alternativ för att kontrollera kontots beteende
+          och anpassa kommunikationen till det rapporterade kontot.
+        resolve_description_html: Ingen åtgärd vidtas mot det rapporterade kontot,
+          ingen prick registreras och rapporten stängs.
+        silence_description_html: Kontot kommer endast synas för de som redan följer
+          den eller manuellt söker på den, vilket dramatiskt minskar dess räckvidd.
+          Kan alltid ångras. Stänger alla anmälningar mot detta konto.
+        suspend_description_html: Kontot och allt dess innehåll kommer att vara oåtkomligt
+          och så småningom tas bort, det kommer inte gå att interagera med kontot.
+          Kan ångras inom 30 dagar. Stänger alla anmälningar mot detta konto.
+      actions_description_html: Välj vilken åtgärd som skall vidtas för att lösa denna
+        rapport. Om du vidtar en bestraffningsåtgärd mot det rapporterade kontot kommer
+        en e-postnotis att skickas till dem, förutom om du valt kategorin <strong>Skräppost</strong>.
+      actions_description_remote_html: Bestäm vilka åtgärder som ska vidtas för att
+        lösa denna rapport. Detta kommer bara att påverka hur <strong>din</strong>
+        server kommunicerar med detta fjärrkonto och hanterar dess innehåll.
       actions_no_posts: Denna rapport har inga associerade inlägg att ta bort
       add_to_report: Lägg till mer i rapporten
       already_suspended_badges:
@@ -626,7 +708,8 @@ sv:
       by_target_domain: Domän för rapporterat konto
       cancel: Avbryt
       category: Kategori
-      category_description_html: Anledningen till att kontot och/eller innehållet rapporterades kommer att visas i kommunikation med det rapporterade kontot
+      category_description_html: Anledningen till att kontot och/eller innehållet
+        rapporterades kommer att visas i kommunikation med det rapporterade kontot
       comment:
         none: Ingen
       comment_description_html: 'För att ge mer information, skrev %{name}:'
@@ -635,7 +718,9 @@ sv:
       created_at: Anmäld
       delete_and_resolve: Ta bort inlägg
       forwarded: Vidarebefordrad
-      forwarded_replies_explanation: Den här rapporten är från en annans instans användare och handlar om annans instans inlägg. Det har vidarebefordrats till dig eftersom det rapporterade innehållet är som svar till en av dina användare.
+      forwarded_replies_explanation: Den här rapporten är från en annans instans användare
+        och handlar om annans instans inlägg. Det har vidarebefordrats till dig eftersom
+        det rapporterade innehållet är som svar till en av dina användare.
       forwarded_to: Vidarebefordrad till %{domain}
       mark_as_resolved: Markera som löst
       mark_as_sensitive: Markera som känslig
@@ -646,11 +731,14 @@ sv:
         create_and_resolve: Lös med anteckning
         create_and_unresolve: Återuppta med anteckning
         delete: Radera
-        placeholder: Beskriv vilka åtgärder som vidtagits eller andra uppdateringar till den här anmälan.
+        placeholder: Beskriv vilka åtgärder som vidtagits eller andra uppdateringar
+          till den här anmälan.
         title: Anteckningar
-      notes_description_html: Visa och lämna anteckningar till andra moderatorer och ditt framtida jag
+      notes_description_html: Visa och lämna anteckningar till andra moderatorer och
+        ditt framtida jag
       processed_msg: 'Rapporten #%{id} har behandlats'
-      quick_actions_description_html: 'Ta en snabb åtgärd eller bläddra ner för att se rapporterat innehåll:'
+      quick_actions_description_html: 'Ta en snabb åtgärd eller bläddra ner för att
+        se rapporterat innehåll:'
       remote_user_placeholder: fjärranvändaren från %{instance}
       reopen: Återuppta anmälan
       report: 'Rapport #%{id}'
@@ -662,23 +750,36 @@ sv:
       skip_to_actions: Hoppa till åtgärder
       status: Status
       statuses: Rapporterat innehåll
-      statuses_description_html: Stötande innehåll kommer att citeras i kommunikationen med det rapporterade kontot
+      statuses_description_html: Stötande innehåll kommer att citeras i kommunikationen
+        med det rapporterade kontot
       summary:
         action_preambles:
-          delete_html: 'Du håller på att <strong>ta bort</strong> några av <strong>@%{acct}</strong>s inlägg. Detta kommer:'
-          mark_as_sensitive_html: 'Du håller på att <strong>markera</strong> några av <strong>@%{acct}</strong>s inlägg som <strong>känsliga</strong>. Detta kommer:'
-          silence_html: 'Du håller på att <strong>begränsa</strong> <strong>@%{acct}</strong>s konto. Detta kommer:'
-          suspend_html: 'Du håller på att <strong>stänga av</strong> <strong>@%{acct}</strong>s konto. Detta kommer:'
+          delete_html: 'Du håller på att <strong>ta bort</strong> några av <strong>@%{acct}</strong>s
+            inlägg. Detta kommer:'
+          mark_as_sensitive_html: 'Du håller på att <strong>markera</strong> några
+            av <strong>@%{acct}</strong>s inlägg som <strong>känsliga</strong>. Detta
+            kommer:'
+          silence_html: 'Du håller på att <strong>begränsa</strong> <strong>@%{acct}</strong>s
+            konto. Detta kommer:'
+          suspend_html: 'Du håller på att <strong>stänga av</strong> <strong>@%{acct}</strong>s
+            konto. Detta kommer:'
         actions:
           delete_html: Ta bort kränkande inlägg
           mark_as_sensitive_html: Markera de anmälda inläggens media som känslig
-          silence_html: Begränsa kraftigt <strong>@%{acct}</strong> räckvidd genom att göra deras profil och innehåll bara synligt till folk som redan följer dom eller som manuellt söker upp deras profil
-          suspend_html: Stäng av <strong>@%{acct}</strong>, vilket gör deras profil och innehåll oåtkomligt och omöjligt att interagera med
+          silence_html: Begränsa kraftigt <strong>@%{acct}</strong> räckvidd genom
+            att göra deras profil och innehåll bara synligt till folk som redan följer
+            dom eller som manuellt söker upp deras profil
+          suspend_html: Stäng av <strong>@%{acct}</strong>, vilket gör deras profil
+            och innehåll oåtkomligt och omöjligt att interagera med
         close_report: 'Markera anmälningen #%{id} som löst'
-        close_reports_html: Markera <strong>alla</strong> anmälningar mot <strong>@%{acct}</strong> som lösta
-        delete_data_html: Ta bort <strong>@%{acct}</strong>s profil och innehåll om 30 dagar ifall deras avstängning inte tagits bort under tiden
-        preview_preamble_html: "<strong>@%{acct}</strong> kommer få en varning med följande innehåll:"
-        record_strike_html: Registrera en varning mot <strong>@%{acct}</strong> för att hjälpa dig eskalera vid framtida överträdelser från detta konto
+        close_reports_html: Markera <strong>alla</strong> anmälningar mot <strong>@%{acct}</strong>
+          som lösta
+        delete_data_html: Ta bort <strong>@%{acct}</strong>s profil och innehåll om
+          30 dagar ifall deras avstängning inte tagits bort under tiden
+        preview_preamble_html: "<strong>@%{acct}</strong> kommer få en varning med
+          följande innehåll:"
+        record_strike_html: Registrera en varning mot <strong>@%{acct}</strong> för
+          att hjälpa dig eskalera vid framtida överträdelser från detta konto
         send_email_html: Skicka <strong>@%{acct}</strong> ett varningsmejl
         warning_placeholder: Valfri ytterligare resonemang för modereringsåtgärd.
       target_origin: Ursprung för anmält konto
@@ -700,76 +801,112 @@ sv:
         moderation: Moderering
         special: Särskild
       delete: Ta bort
-      description_html: Med <strong>användarroller</strong> kan du anpassa vilka funktioner och områden dina användare kan komma åt i Truecolors.
+      description_html: Med <strong>användarroller</strong> kan du anpassa vilka funktioner
+        och områden dina användare kan komma åt i Truecolors.
       edit: Redigera roll för '%{name}'
       everyone: Standardbehörigheter
-      everyone_full_description_html: Detta är den <strong>grundroll</strong> som påverkar <strong>alla användare</strong>, även de utan särskilt tilldelad roll. Alla andra roller ärver behörigheter från denna.
+      everyone_full_description_html: Detta är den <strong>grundroll</strong> som
+        påverkar <strong>alla användare</strong>, även de utan särskilt tilldelad
+        roll. Alla andra roller ärver behörigheter från denna.
       permissions_count:
         one: "%{count} behörighet"
         other: "%{count} behörigheter"
       privileges:
         administrator: Administratör
-        administrator_description: Användare med denna behörighet kommer att kringgå alla behörigheter
+        administrator_description: Användare med denna behörighet kommer att kringgå
+          alla behörigheter
         delete_user_data: Ta bort användardata
-        delete_user_data_description: Tillåter användare att omedelbart radera andra användares data
+        delete_user_data_description: Tillåter användare att omedelbart radera andra
+          användares data
         invite_users: Bjud in användare
-        invite_users_description: Tillåter användare att bjuda in nya personer till servern
+        invite_users_description: Tillåter användare att bjuda in nya personer till
+          servern
         manage_announcements: Hantera kungörelser
-        manage_announcements_description: Tillåt användare att hantera kungörelser på servern
+        manage_announcements_description: Tillåt användare att hantera kungörelser
+          på servern
         manage_appeals: Hantera överklaganden
-        manage_appeals_description: Tillåter användare att granska överklaganden av modereringsåtgärder
+        manage_appeals_description: Tillåter användare att granska överklaganden av
+          modereringsåtgärder
         manage_blocks: Hantera blockeringar
-        manage_blocks_description: Tillåter användare att blockera e-postleverantörer och IP-adresser
+        manage_blocks_description: Tillåter användare att blockera e-postleverantörer
+          och IP-adresser
         manage_custom_emojis: Hantera egna emojier
-        manage_custom_emojis_description: Tillåter användare att hantera egna emojier på servern
+        manage_custom_emojis_description: Tillåter användare att hantera egna emojier
+          på servern
         manage_federation: Hantera federering
-        manage_federation_description: Tillåter användare att blockera eller tillåta federering med andra domäner, samt kontrollera levererbarhet
+        manage_federation_description: Tillåter användare att blockera eller tillåta
+          federering med andra domäner, samt kontrollera levererbarhet
         manage_invites: Hantera inbjudningar
-        manage_invites_description: Tillåter användare att granska och inaktivera inbjudningslänkar
+        manage_invites_description: Tillåter användare att granska och inaktivera
+          inbjudningslänkar
         manage_reports: Hantera rapporter
-        manage_reports_description: Tillåter användare att granska rapporter och utföra modereringsåtgärder på dessa
+        manage_reports_description: Tillåter användare att granska rapporter och utföra
+          modereringsåtgärder på dessa
         manage_roles: Hantera roller
-        manage_roles_description: Tillåter användare att hantera och tilldela roller underordnade deras
+        manage_roles_description: Tillåter användare att hantera och tilldela roller
+          underordnade deras
         manage_rules: Hantera regler
         manage_rules_description: Tillåter användare att ändra serverregler
         manage_settings: Hantera inställningar
         manage_settings_description: Tillåter användare att ändra webbplatsinställningar
         manage_taxonomies: Hantera taxonomier
-        manage_taxonomies_description: Tillåter användare att granska trendande innehåll och uppdatera inställningar för hashtaggar
+        manage_taxonomies_description: Tillåter användare att granska trendande innehåll
+          och uppdatera inställningar för hashtaggar
         manage_user_access: Hantera användaråtkomst
-        manage_user_access_description: Tillåter användare att inaktivera andra användares tvåfaktorsautentisering, ändra deras e-postadress samt återställa deras lösenord
+        manage_user_access_description: Tillåter användare att inaktivera andra användares
+          tvåfaktorsautentisering, ändra deras e-postadress samt återställa deras
+          lösenord
         manage_users: Hantera användare
-        manage_users_description: Tillåter användare att granska användares data och utföra modereringsåtgärder på dessa
+        manage_users_description: Tillåter användare att granska användares data och
+          utföra modereringsåtgärder på dessa
         manage_webhooks: Hantera webhooks
-        manage_webhooks_description: Tillåter användare att konfigurera webhooks för administrativa händelser
+        manage_webhooks_description: Tillåter användare att konfigurera webhooks för
+          administrativa händelser
         view_audit_log: Visa granskningsloggen
-        view_audit_log_description: Tillåter användare att se historiken över administrativa åtgärder på servern
+        view_audit_log_description: Tillåter användare att se historiken över administrativa
+          åtgärder på servern
         view_dashboard: Visa instrumentpanel
-        view_dashboard_description: Ger användare tillgång till instrumentpanelen och olika mätvärden
+        view_dashboard_description: Ger användare tillgång till instrumentpanelen
+          och olika mätvärden
         view_devops: DevOps
-        view_devops_description: Ger användare tillgång till instrumentpanelerna Sidekiq och pgHero
+        view_devops_description: Ger användare tillgång till instrumentpanelerna Sidekiq
+          och pgHero
       title: Roller
     rules:
       add_new: Lägg till regel
       delete: Radera
-      description_html: Även om de flesta hävdar att de samtycker till tjänstevillkoren, läser folk ofta inte igenom dem förrän det uppstår problem. <strong>Gör dina serverregler mer lättöverskådliga genom att tillhandahålla dem i en enkel punktlista.</strong> Försök att hålla enskilda regler korta och koncisa utan att samtidigt separera dem till för många enskilda punkter.
+      description_html: Även om de flesta hävdar att de samtycker till tjänstevillkoren,
+        läser folk ofta inte igenom dem förrän det uppstår problem. <strong>Gör dina
+        serverregler mer lättöverskådliga genom att tillhandahålla dem i en enkel
+        punktlista.</strong> Försök att hålla enskilda regler korta och koncisa utan
+        att samtidigt separera dem till för många enskilda punkter.
       edit: Ändra regel
       empty: Inga serverregler har ännu angetts.
       title: Serverns regler
     settings:
       about:
         manage_rules: Hantera serverregler
-        preamble: Ange fördjupad information om hur servern driftas, modereras och finansieras.
-        rules_hint: Det finns ett dedikerat ställe för regler som användarna förväntas följa.
+        preamble: Ange fördjupad information om hur servern driftas, modereras och
+          finansieras.
+        rules_hint: Det finns ett dedikerat ställe för regler som användarna förväntas
+          följa.
         title: Om
       appearance:
         preamble: Anpassa Truecolorss webbgränssnitt.
         title: Utseende
       branding:
-        preamble: Din servers profilering differentierar den från andra servrar på nätverket. Denna information kan visas i en mängd olika miljöer, så som Truecolorss webbgränssnitt, nativapplikationer, länkförhandsvisningar på andra webbsidor och i meddelandeapplikationer och så vidare. Av dessa anledningar är det bäst att hålla informationen tydlig, kort och koncis.
+        preamble: Din servers profilering differentierar den från andra servrar på
+          nätverket. Denna information kan visas i en mängd olika miljöer, så som
+          Truecolorss webbgränssnitt, nativapplikationer, länkförhandsvisningar på
+          andra webbsidor och i meddelandeapplikationer och så vidare. Av dessa anledningar
+          är det bäst att hålla informationen tydlig, kort och koncis.
         title: Profilering
       captcha_enabled:
-        desc_html: Detta bygger på externa skript från hCaptcha vilket kan vara ett säkerhets- och integritetsproblem. Dessutom,<strong>kan detta göra registreringsprocessen betydligt mindre tillgänglig för vissa personer (särskilt funktionsnedsatta)</strong>. Av dessa skäl bör du överväga alternativa åtgärder såsom godkänningsbaserad eller inbjudningsbaserad registrering.
+        desc_html: Detta bygger på externa skript från hCaptcha vilket kan vara ett
+          säkerhets- och integritetsproblem. Dessutom,<strong>kan detta göra registreringsprocessen
+          betydligt mindre tillgänglig för vissa personer (särskilt funktionsnedsatta)</strong>.
+          Av dessa skäl bör du överväga alternativa åtgärder såsom godkänningsbaserad
+          eller inbjudningsbaserad registrering.
         title: Kräv att nya användare löser en CAPTCHA för att erkänna sitt konto
       content_retention:
         danger_zone: Farozon
@@ -780,7 +917,9 @@ sv:
         title: Undantag användare från sökmotorindexering som standard
       discovery:
         follow_recommendations: Följrekommendationer
-        preamble: Att visa intressant innehåll är avgörande i onboarding av nya användare som kanske inte känner någon på Truecolors. Styr hur olika upptäcktsfunktioner fungerar på din server.
+        preamble: Att visa intressant innehåll är avgörande i onboarding av nya användare
+          som kanske inte känner någon på Truecolors. Styr hur olika upptäcktsfunktioner
+          fungerar på din server.
         profile_directory: Profilkatalog
         public_timelines: Offentliga tidslinjer
         publish_discovered_servers: Publicera upptäckta servrar
@@ -792,7 +931,8 @@ sv:
         disabled: För ingen
         users: För inloggade lokala användare
       registrations:
-        moderation_recommandation: Se till att du har ett tillräckligt och reaktivt modereringsteam innan du öppnar registreringar till alla!
+        moderation_recommandation: Se till att du har ett tillräckligt och reaktivt
+          modereringsteam innan du öppnar registreringar till alla!
         preamble: Kontrollera vem som kan skapa ett konto på din server.
         title: Registreringar
       registrations_mode:
@@ -800,11 +940,19 @@ sv:
           approved: Godkännande krävs för registrering
           none: Ingen kan registrera
           open: Alla kan registrera
-        warning_hint: Vi rekommenderar att du använder “Godkännande krävs för registrering” om du inte är säker på att ditt moderatorsteam kan hantera skräppost och skadliga registreringar i tid.
+        warning_hint: Vi rekommenderar att du använder “Godkännande krävs för registrering”
+          om du inte är säker på att ditt moderatorsteam kan hantera skräppost och
+          skadliga registreringar i tid.
       security:
         authorized_fetch: Kräv autentisering från federerade servrar
-        authorized_fetch_hint: Att kräva autentisering från federerade servrar möjliggör striktare tillämpning av både blockering på användarnivå och servernivå. Detta sker dock på bekostnad av prestanda, minskar räckvidden på dina svar, och kan införa kompatibilitet problem med vissa federerade tjänster. Dessutom kommer detta inte att hindra dedikerade aktörer från att hämta dina offentliga inlägg och konton.
-        authorized_fetch_overridden_hint: Du kan för närvarande inte ändra den här inställningen eftersom den åsidosätts av en miljövariabel.
+        authorized_fetch_hint: Att kräva autentisering från federerade servrar möjliggör
+          striktare tillämpning av både blockering på användarnivå och servernivå.
+          Detta sker dock på bekostnad av prestanda, minskar räckvidden på dina svar,
+          och kan införa kompatibilitet problem med vissa federerade tjänster. Dessutom
+          kommer detta inte att hindra dedikerade aktörer från att hämta dina offentliga
+          inlägg och konton.
+        authorized_fetch_overridden_hint: Du kan för närvarande inte ändra den här
+          inställningen eftersom den åsidosätts av en miljövariabel.
         federation_authentication: Federationen autentisering verkställighet
       title: Serverinställningar
     site_uploads:
@@ -812,7 +960,11 @@ sv:
       destroyed_msg: Webbplatsuppladdningen har raderats!
     software_updates:
       critical_update: Kritiskt — vänligen uppdatera omgående
-      description: Det rekommenderas att hålla din Truecolors-installation uppdaterad för att ta nytta av de senaste fixarna och funktionerna. Dessutom är det ibland viktigt att uppdatera Truecolors i tid för att undvika säkerhetsproblem. Av dessa skäl kontrollerar Truecolors efter uppdateringar var 30:e minut och meddelar dig i enlighet med dina e-postaviseringsinställningar.
+      description: Det rekommenderas att hålla din Truecolors-installation uppdaterad
+        för att ta nytta av de senaste fixarna och funktionerna. Dessutom är det ibland
+        viktigt att uppdatera Truecolors i tid för att undvika säkerhetsproblem. Av
+        dessa skäl kontrollerar Truecolors efter uppdateringar var 30:e minut och
+        meddelar dig i enlighet med dina e-postaviseringsinställningar.
       documentation_link: Läs mer
       release_notes: Ändringslogg
       title: Tillgängliga uppdateringar
@@ -867,46 +1019,60 @@ sv:
       appeal_rejected: Överklagan avslagen
     system_checks:
       database_schema_check:
-        message_html: Det finns väntande databasmigreringar. Vänligen kör dem för att säkerställa att programmet beter sig som förväntat
+        message_html: Det finns väntande databasmigreringar. Vänligen kör dem för
+          att säkerställa att programmet beter sig som förväntat
       elasticsearch_health_red:
-        message_html: Elasticsearch kluster är ohälsosamt (röd status), sökfunktioner är otillgängliga
+        message_html: Elasticsearch kluster är ohälsosamt (röd status), sökfunktioner
+          är otillgängliga
       elasticsearch_health_yellow:
-        message_html: Elasticsearch kluster är ohälsosamt (gul status), du kanske vill undersöka orsaken
+        message_html: Elasticsearch kluster är ohälsosamt (gul status), du kanske
+          vill undersöka orsaken
       elasticsearch_index_mismatch:
-        message_html: Elasticsearch index mappningar är föråldrade. Vänligen kör <code>tootctl search deploy --only=%{value}</code>
+        message_html: Elasticsearch index mappningar är föråldrade. Vänligen kör <code>tootctl
+          search deploy --only=%{value}</code>
       elasticsearch_preset:
         action: Se dokumentation
-        message_html: Din Elasticsearch-kluster har mer än en nod, men Truecolors är inte konfigurerad att använda dem.
+        message_html: Din Elasticsearch-kluster har mer än en nod, men Truecolors
+          är inte konfigurerad att använda dem.
       elasticsearch_preset_single_node:
         action: Se dokumentation
-        message_html: Ditt Elasticsearch-kluster har bara en nod, <code>ES_PRESET</code> borde vara satt till <code>single_node_cluster</code>.
+        message_html: Ditt Elasticsearch-kluster har bara en nod, <code>ES_PRESET</code>
+          borde vara satt till <code>single_node_cluster</code>.
       elasticsearch_reset_chewy:
-        message_html: Ditt systemindex för Elasticsearch är föråldrat på grund av en inställningsändring. Vänligen kör <code>tootctl search deploy --reset-chewy</code> för att uppdatera det.
+        message_html: Ditt systemindex för Elasticsearch är föråldrat på grund av
+          en inställningsändring. Vänligen kör <code>tootctl search deploy --reset-chewy</code>
+          för att uppdatera det.
       elasticsearch_running_check:
-        message_html: Kunde inte ansluta till Elasticsearch. Kontrollera att det körs, eller inaktivera fulltextsökning
+        message_html: Kunde inte ansluta till Elasticsearch. Kontrollera att det körs,
+          eller inaktivera fulltextsökning
       elasticsearch_version_check:
         message_html: 'Inkompatibel Elasticsearch-version: %{value}'
-        version_comparison: Elasticsearch %{running_version} körs medan %{required_version} krävs
+        version_comparison: Elasticsearch %{running_version} körs medan %{required_version}
+          krävs
       rules_check:
         action: Hantera serverregler
         message_html: Du har inte definierat några serverregler.
       sidekiq_process_check:
-        message_html: Ingen Sidekiq-process körs för kön/köerna %{value}. Vänligen kontrollera din Sidekiq-konfiguration
+        message_html: Ingen Sidekiq-process körs för kön/köerna %{value}. Vänligen
+          kontrollera din Sidekiq-konfiguration
       software_version_check:
         action: Se tillgängliga uppdateringar
         message_html: En Truecolors-uppdatering är tillgänglig.
       software_version_critical_check:
         action: Se tillgängliga uppdateringar
-        message_html: En kritisk uppdatering för Truecolors är tillgänglig. Uppdatera så snart som möjligt.
+        message_html: En kritisk uppdatering för Truecolors är tillgänglig. Uppdatera
+          så snart som möjligt.
       software_version_patch_check:
         action: Se tillgängliga uppdateringar
         message_html: En buggfix Truecolors-uppdatering är tillgänglig.
       upload_check_privacy_error:
         action: Kolla här för mer information
-        message_html: "<strong>Din webbserver är felkonfigurerad. Sekretessen för dina användare är i fara.</strong>"
+        message_html: "<strong>Din webbserver är felkonfigurerad. Sekretessen för
+          dina användare är i fara.</strong>"
       upload_check_privacy_error_object_storage:
         action: Kolla här för mer information
-        message_html: "<strong>Din objektlagring är felkonfigurerad. Sekretessen för dina användare är i riskzonen.</strong>"
+        message_html: "<strong>Din objektlagring är felkonfigurerad. Sekretessen för
+          dina användare är i riskzonen.</strong>"
     tags:
       moderation:
         not_trendable: Kan inte trenda
@@ -936,17 +1102,26 @@ sv:
       generate: Använd mall
       generates:
         action: Generera
-        chance_to_review_html: "<strong>De genererade villkoren för tjänsten kommer inte att publiceras automatiskt.</strong> Du kommer att ha en chans att granska resultatet. Vänligen fyll i nödvändig information för att fortsätta."
-        explanation_html: Användarvillkorsmallen tillhandahålls endast i informationssyfte, och skall inte tolkas som juridisk rådgivning i något ämne. Rådgör med ditt eget juridiska ombud om din situation och specifika juridiska frågor du har.
+        chance_to_review_html: "<strong>De genererade villkoren för tjänsten kommer
+          inte att publiceras automatiskt.</strong> Du kommer att ha en chans att
+          granska resultatet. Vänligen fyll i nödvändig information för att fortsätta."
+        explanation_html: Användarvillkorsmallen tillhandahålls endast i informationssyfte,
+          och skall inte tolkas som juridisk rådgivning i något ämne. Rådgör med ditt
+          eget juridiska ombud om din situation och specifika juridiska frågor du
+          har.
         title: Inställningar för användarvillkor
       history: Historik
       live: Aktuella
       no_history: Det finns inga sparade ändringar i användarvillkoren ännu.
-      no_terms_of_service_html: Du har för närvarande inte några användarvillkor. Användarvillkoren är avsedda att ge klarhet och skydda dig i tvister med dina användare.
+      no_terms_of_service_html: Du har för närvarande inte några användarvillkor.
+        Användarvillkoren är avsedda att ge klarhet och skydda dig i tvister med dina
+        användare.
       notified_on_html: Användare meddelade på %{date}
       notify_users: Meddela användare
       preview:
-        explanation_html: 'E-postmeddelandet kommer att skickas till <strong>%{display_count} användare</strong> som har registrerat sig före %{date}. Följande text kommer att inkluderas i meddelandet:'
+        explanation_html: 'E-postmeddelandet kommer att skickas till <strong>%{display_count}
+          användare</strong> som har registrerat sig före %{date}. Följande text kommer
+          att inkluderas i meddelandet:'
         send_preview: Skicka till %{email} för förhandsgranskning
         send_to_all:
           one: Skicka %{display_count} meddelande
@@ -970,7 +1145,10 @@ sv:
         confirm_allow_provider: Är du säker på att du vill tillåta valda leverantörer?
         confirm_disallow: Är du säker på att du vill förbjuda valda länkar?
         confirm_disallow_provider: Är du säker på att du vill förbjuda valda leverantörer?
-        description_html: Detta är länkar som för närvarande delas mycket av konton som din server ser inlägg från. Det kan hjälpa dina användare att ta reda på vad som händer i världen. Inga länkar visas offentligt tills du godkänner utgivaren. Du kan också tillåta eller avvisa enskilda länkar.
+        description_html: Detta är länkar som för närvarande delas mycket av konton
+          som din server ser inlägg från. Det kan hjälpa dina användare att ta reda
+          på vad som händer i världen. Inga länkar visas offentligt tills du godkänner
+          utgivaren. Du kan också tillåta eller avvisa enskilda länkar.
         disallow: Blockera länk
         disallow_provider: Blockera utgivare
         no_link_selected: Inga länkar ändrades eftersom inga valdes
@@ -986,7 +1164,9 @@ sv:
       pending_review: Väntar på granskning
       preview_card_providers:
         allowed: Länkar från denna utgivare kan trenda
-        description_html: Detta är domäner från vilka länkar ofta delas på din server. Länkar kommer inte att trenda offentligt om inte deras domän godkänns. Ditt godkännande (eller avslag) omfattar underdomäner.
+        description_html: Detta är domäner från vilka länkar ofta delas på din server.
+          Länkar kommer inte att trenda offentligt om inte deras domän godkänns. Ditt
+          godkännande (eller avslag) omfattar underdomäner.
         rejected: Länkar från denna utgivare kommer inte att trenda
         title: Utgivare
       rejected: Avvisade
@@ -997,7 +1177,11 @@ sv:
         confirm_allow_account: Är du säker på att du vill tillåta valda konton?
         confirm_disallow: Är du säker på att du vill förbjuda valda statusar?
         confirm_disallow_account: Är du säker på att du vill förbjuda valda konton?
-        description_html: Detta är inlägg som din server vet om som för närvarande delas och favoriseras mycket just nu. Det kan hjälpa dina nya och återvändande användare att hitta fler människor att följa. Inga inlägg visas offentligt förrän du godkänner författaren, och författaren tillåter att deras konto föreslås till andra. Du kan också tillåta eller avvisa enskilda inlägg.
+        description_html: Detta är inlägg som din server vet om som för närvarande
+          delas och favoriseras mycket just nu. Det kan hjälpa dina nya och återvändande
+          användare att hitta fler människor att följa. Inga inlägg visas offentligt
+          förrän du godkänner författaren, och författaren tillåter att deras konto
+          föreslås till andra. Du kan också tillåta eller avvisa enskilda inlägg.
         disallow: Tillåt inte inlägg
         disallow_account: Tillåt inte författare
         no_status_selected: Inga trendande inlägg ändrades eftersom inga valdes
@@ -1014,7 +1198,10 @@ sv:
           tag_servers_dimension: Mest använda servrar
           tag_servers_measure: olika servrar
           tag_uses_measure: total användning
-        description_html: Detta är hashtaggar som just nu visas i många inlägg som din server ser. Det kan hjälpa dina användare att ta reda på vad människor talar mest om för tillfället. Inga hashtaggar visas offentligt tills du godkänner dem.
+        description_html: Detta är hashtaggar som just nu visas i många inlägg som
+          din server ser. Det kan hjälpa dina användare att ta reda på vad människor
+          talar mest om för tillfället. Inga hashtaggar visas offentligt tills du
+          godkänner dem.
         listable: Kan föreslås
         no_tag_selected: Inga taggar ändrades eftersom inga valdes
         not_listable: Kommer ej föreslås
@@ -1040,7 +1227,9 @@ sv:
     webhooks:
       add_new: Lägg till slutpunkt
       delete: Ta bort
-      description_html: En <strong>webhook</strong> gör det möjligt för Truecolors att skicka <strong>realtidsaviseringar</strong> om valda händelser till din egen applikation så att den <strong>automatiskt kan utlösa händelser</strong>.
+      description_html: En <strong>webhook</strong> gör det möjligt för Truecolors
+        att skicka <strong>realtidsaviseringar</strong> om valda händelser till din
+        egen applikation så att den <strong>automatiskt kan utlösa händelser</strong>.
       disable: Inaktivera
       disabled: Inaktiverad
       edit: Redigera slutpunkt
@@ -1059,8 +1248,12 @@ sv:
       webhook: Webhook
   admin_mailer:
     auto_close_registrations:
-      body: På grund av brist på moderatoraktivitet har registreringar på %{instance} automatiskt bytts till att kräva manuell granskning, för att förhindra att %{instance} används som plattform för potentiella dåliga aktörer. Du kan när som helst byta tillbaka den till öppna registreringar.
-      subject: Registreringar för %{instance} har automatiskt bytts till att kräva godkännande
+      body: På grund av brist på moderatoraktivitet har registreringar på %{instance}
+        automatiskt bytts till att kräva manuell granskning, för att förhindra att
+        %{instance} används som plattform för potentiella dåliga aktörer. Du kan när
+        som helst byta tillbaka den till öppna registreringar.
+      subject: Registreringar för %{instance} har automatiskt bytts till att kräva
+        godkännande
     new_appeal:
       actions:
         delete_statuses: att radera deras inlägg
@@ -1070,14 +1263,18 @@ sv:
         sensitive: för att markera deras konto som känsligt
         silence: för att begränsa deras konto
         suspend: för att stänga av deras konto
-      body: "%{target} överklagade ett modereringsbeslut av typen %{type}, taget av %{action_taken_by} den %{date}. De skrev:"
-      next_steps: Du kan godkänna överklagan för att ångra modereringsbeslutet, eller ignorera det.
+      body: "%{target} överklagade ett modereringsbeslut av typen %{type}, taget av
+        %{action_taken_by} den %{date}. De skrev:"
+      next_steps: Du kan godkänna överklagan för att ångra modereringsbeslutet, eller
+        ignorera det.
       subject: "%{username} överklagar ett modereringsbeslut på %{instance}"
     new_critical_software_updates:
-      body: En kritisk uppdatering för Truecolors har släppts. Du bör uppdatera så snart som möjligt!
+      body: En kritisk uppdatering för Truecolors har släppts. Du bör uppdatera så
+        snart som möjligt!
       subject: Kritiska uppdateringar för Truecolors är tillgängliga för %{instance}!
     new_pending_account:
-      body: Detaljerna för det nya kontot finns nedan. Du kan godkänna eller avvisa denna ansökan.
+      body: Detaljerna för det nya kontot finns nedan. Du kan godkänna eller avvisa
+        denna ansökan.
       subject: Nytt konto flaggat för granskning på %{instance} (%{username})
     new_report:
       body: "%{reporter} har rapporterat %{target}"
@@ -1097,14 +1294,22 @@ sv:
       subject: Nya trender tillgängliga för granskning på %{instance}
   aliases:
     add_new: Skapa alias
-    created_msg: Ett nytt alias skapades. Du kan nu initiera flytten från det gamla kontot.
-    deleted_msg: Aliaset togs bort. Att flytta från det kontot till detta kommer inte längre vara möjligt.
+    created_msg: Ett nytt alias skapades. Du kan nu initiera flytten från det gamla
+      kontot.
+    deleted_msg: Aliaset togs bort. Att flytta från det kontot till detta kommer inte
+      längre vara möjligt.
     empty: Du har inga alias.
-    hint_html: Om du vill flytta från ett annat konto till detta kan du skapa ett alias här, detta krävs innan du kan fortsätta med att flytta följare från det gamla kontot till detta. Denna åtgärd är <strong>ofarlig och kan ångras</strong>. <strong>Kontomigreringen initieras från det gamla kontot.</strong>.
+    hint_html: Om du vill flytta från ett annat konto till detta kan du skapa ett
+      alias här, detta krävs innan du kan fortsätta med att flytta följare från det
+      gamla kontot till detta. Denna åtgärd är <strong>ofarlig och kan ångras</strong>.
+      <strong>Kontomigreringen initieras från det gamla kontot.</strong>.
     remove: Avlänka alias
   appearance:
     advanced_web_interface: Avancerat webbgränssnitt
-    advanced_web_interface_hint: 'Om du vill utnyttja hela skärmens bredd så kan du i det avancerade webbgränssnittet ställa in många olika kolumner för att se så mycket information samtidigt som du vill: Hem, notiser, federerad tidslinje, valfritt antal listor och hashtaggar.'
+    advanced_web_interface_hint: 'Om du vill utnyttja hela skärmens bredd så kan du
+      i det avancerade webbgränssnittet ställa in många olika kolumner för att se
+      så mycket information samtidigt som du vill: Hem, notiser, federerad tidslinje,
+      valfritt antal listor och hashtaggar.'
     animations_and_accessibility: Animationer och tillgänglighet
     confirmation_dialogs: Bekräftelsedialoger
     discovery: Upptäck
@@ -1132,36 +1337,46 @@ sv:
   auth:
     apply_for_account: Ansök om konto
     captcha_confirmation:
-      help_html: Om du har problem med att lösa CAPTCHA ska du kontakta oss via %{email} och vi kan hjälpa dig.
-      hint_html: En sista sak till! Vi måste bekräfta att du är en människa (för att hålla borta skräpinlägg!). Lös CAPTCHA nedan och klicka på "Fortsätt".
+      help_html: Om du har problem med att lösa CAPTCHA ska du kontakta oss via %{email}
+        och vi kan hjälpa dig.
+      hint_html: En sista sak till! Vi måste bekräfta att du är en människa (för att
+        hålla borta skräpinlägg!). Lös CAPTCHA nedan och klicka på "Fortsätt".
       title: Säkerhetskontroll
     confirmations:
-      awaiting_review: Din e-postadress är bekräftad! %{domain} personalen granskar nu din registrering. Du kommer att få ett e-postmeddelande om de godkänner ditt konto!
+      awaiting_review: Din e-postadress är bekräftad! %{domain} personalen granskar
+        nu din registrering. Du kommer att få ett e-postmeddelande om de godkänner
+        ditt konto!
       awaiting_review_title: Din registrering är under granskning
       clicking_this_link: klicka på denna länk
       login_link: logga in
       proceed_to_login_html: Du kan nu fortsätta med att %{login_link}.
-      redirect_to_app_html: Du borde ha omdirigerats till appen <strong>%{app_name}</strong>. Om det inte hände, försök att %{clicking_this_link} eller återgå manuellt till appen.
+      redirect_to_app_html: Du borde ha omdirigerats till appen <strong>%{app_name}</strong>.
+        Om det inte hände, försök att %{clicking_this_link} eller återgå manuellt
+        till appen.
       registration_complete: Din registrering på %{domain} är nu slutförd!
       welcome_title: Välkommen %{name}!
       wrong_email_hint: Om e-postadressen inte är rätt, kan du ändra den i kontoinställningarna.
     delete_account: Radera konto
-    delete_account_html: Om du vill radera ditt konto kan du <a href="%{path}">fortsätta här</a>. Du kommer att bli ombedd att bekräfta.
+    delete_account_html: Om du vill radera ditt konto kan du <a href="%{path}">fortsätta
+      här</a>. Du kommer att bli ombedd att bekräfta.
     description:
       prefix_invited_by_user: "@%{name} bjuder in dig att gå med i en Truecolors-server!"
       prefix_sign_up: Registrera dig på Truecolors idag!
-      suffix: Med ett konto kommer du att kunna följa personer, göra inlägg och utbyta meddelanden med användare från andra Truecolors-servrar, och ännu mer!
+      suffix: Med ett konto kommer du att kunna följa personer, göra inlägg och utbyta
+        meddelanden med användare från andra Truecolors-servrar, och ännu mer!
     didnt_get_confirmation: Fick du ingen bekräftelselänk?
     dont_have_your_security_key: Har du inte din säkerhetsnyckel?
     forgot_password: Glömt ditt lösenord?
-    invalid_reset_password_token: Lösenordsåterställningstoken är ogiltig eller utgått. Vänligen be om en ny.
+    invalid_reset_password_token: Lösenordsåterställningstoken är ogiltig eller utgått.
+      Vänligen be om en ny.
     link_to_otp: Ange en tvåfaktor-kod från din telefon eller en återställningskod
     link_to_webauth: Använd din säkerhetsnyckel
     log_in_with: Logga in med
     login: Logga in
     logout: Logga ut
     migrate_account: Flytta till ett annat konto
-    migrate_account_html: Om du vill omdirigera detta konto till ett annat, kan du <a href="%{path}">konfigurera det här</a>.
+    migrate_account_html: Om du vill omdirigera detta konto till ett annat, kan du
+      <a href="%{path}">konfigurera det här</a>.
     or_log_in_with: Eller logga in med
     progress:
       confirm: Bekräfta e-postadress
@@ -1180,39 +1395,53 @@ sv:
       back: Tillbaka
       invited_by: 'Du kan gå med i %{domain} tack vare den inbjudan du har fått från:'
       preamble: Dessa bestäms och upprätthålls av moderatorerna för %{domain}.
-      preamble_invited: Innan du fortsätter bör du överväga grundreglerna som fastställts av moderatorerna för %{domain}.
+      preamble_invited: Innan du fortsätter bör du överväga grundreglerna som fastställts
+        av moderatorerna för %{domain}.
       title: Några grundregler.
       title_invited: Du har blivit inbjuden.
     security: Säkerhet
     set_new_password: Skriv in nytt lösenord
     setup:
-      email_below_hint_html: Kolla din skräppost-mapp eller begär en ny. Du kan korrigera din e-postadress om den är fel.
-      email_settings_hint_html: Klicka på länken vi skickade till %{email} för att börja använda Truecolors. Vi väntar här.
+      email_below_hint_html: Kolla din skräppost-mapp eller begär en ny. Du kan korrigera
+        din e-postadress om den är fel.
+      email_settings_hint_html: Klicka på länken vi skickade till %{email} för att
+        börja använda Truecolors. Vi väntar här.
       link_not_received: Fick du ingen länk?
-      new_confirmation_instructions_sent: Du kommer att få ett nytt e-postmeddelande med bekräftelselänken om några minuter!
+      new_confirmation_instructions_sent: Du kommer att få ett nytt e-postmeddelande
+        med bekräftelselänken om några minuter!
       title: Kolla din inkorg
     sign_in:
-      preamble_html: Logga in med dina användaruppgifter på <strong>%{domain}</strong>. Om ditt konto finns på en annan server kommer du inte att kunna logga in här.
+      preamble_html: Logga in med dina användaruppgifter på <strong>%{domain}</strong>.
+        Om ditt konto finns på en annan server kommer du inte att kunna logga in här.
       title: Logga in på %{domain}
     sign_up:
-      manual_review: Registreringar på %{domain} går igenom manuell granskning av våra moderatorer. För att hjälpa oss att hantera din registrering, skriv lite om dig själv och varför du vill ha ett konto på %{domain}.
-      preamble: Med ett konto på denna Truecolors-server kan du följa alla andra personer i fediversum, oavsett vilken server deras konto tillhör.
+      manual_review: Registreringar på %{domain} går igenom manuell granskning av
+        våra moderatorer. För att hjälpa oss att hantera din registrering, skriv lite
+        om dig själv och varför du vill ha ett konto på %{domain}.
+      preamble: Med ett konto på denna Truecolors-server kan du följa alla andra personer
+        i fediversum, oavsett vilken server deras konto tillhör.
       title: Låt oss få igång dig på %{domain}.
     status:
       account_status: Kontostatus
       confirming: Väntar på att e-postbekräftelsen ska slutföras.
       functional: Ditt konto fungerar som det ska.
-      pending: Din ansökan inväntar granskning. Detta kan ta tid. Du kommer att få ett e-postmeddelande om din ansökan har godkänts.
-      redirecting_to: Ditt konto är inaktivt eftersom det för närvarande dirigeras om till %{acct}.
-      self_destruct: Eftersom %{domain} håller på att stängas ned, kommer du endast att ha begränsad tillgång till ditt konto.
+      pending: Din ansökan inväntar granskning. Detta kan ta tid. Du kommer att få
+        ett e-postmeddelande om din ansökan har godkänts.
+      redirecting_to: Ditt konto är inaktivt eftersom det för närvarande dirigeras
+        om till %{acct}.
+      self_destruct: Eftersom %{domain} håller på att stängas ned, kommer du endast
+        att ha begränsad tillgång till ditt konto.
       view_strikes: Visa tidigare prickar på ditt konto
     too_fast: Formuläret har skickats för snabbt, försök igen.
     use_security_key: Använd säkerhetsnyckel
-    user_agreement_html: Jag har läst och godkänner <a href="%{terms_of_service_path}" target="_blank">användarvillkoren</a> och <a href="%{privacy_policy_path}" target="_blank">integritetspolicy</a>
-    user_privacy_agreement_html: Jag har läst och godkänner <a href="%{privacy_policy_path}" target="_blank">integritetspolicyn</a>
+    user_agreement_html: Jag har läst och godkänner <a href="%{terms_of_service_path}"
+      target="_blank">användarvillkoren</a> och <a href="%{privacy_policy_path}" target="_blank">integritetspolicy</a>
+    user_privacy_agreement_html: Jag har läst och godkänner <a href="%{privacy_policy_path}"
+      target="_blank">integritetspolicyn</a>
   author_attribution:
     example_title: Exempeltext
-    hint_html: Skriver du nyheter eller bloggartiklar utanför Truecolors? Kontrollera hur du får krediteras när de delas på Truecolors.
+    hint_html: Skriver du nyheter eller bloggartiklar utanför Truecolors? Kontrollera
+      hur du får krediteras när de delas på Truecolors.
     instructions: 'Se till att den här koden finns i din artikels HTML:'
     more_from_html: Mer från %{name}
     s_blog: "%{name}s blogg"
@@ -1220,7 +1449,8 @@ sv:
     title: Författarattribution
   challenge:
     confirm: Fortsätt
-    hint_html: "<strong>Tips:</strong> Vi frågar dig inte efter ditt lösenord igen under nästkommande timme."
+    hint_html: "<strong>Tips:</strong> Vi frågar dig inte efter ditt lösenord igen
+      under nästkommande timme."
     invalid_password: Ogiltigt lösenord
     prompt: Bekräfta lösenord för att fortsätta
   crypto:
@@ -1254,9 +1484,12 @@ sv:
       before: 'Läs dessa noteringar noga innan du fortsätter:'
       caches: Innehåll som har cachats av andra servrar kan bibehållas
       data_removal: Dina inlägg och annan data kommer permanent raderas
-      email_change_html: Du kan <a href="%{path}">ändra din e-postadress</a> utan att radera ditt konto
-      email_contact_html: Om det inte kommer kan du mejla <a href="mailto:%{email}">%{email}</a> för att få hjälp
-      email_reconfirmation_html: Om du inte får bekräftelsemeddelandet kan du <a href="%{path}">begära ett på nytt</a>
+      email_change_html: Du kan <a href="%{path}">ändra din e-postadress</a> utan
+        att radera ditt konto
+      email_contact_html: Om det inte kommer kan du mejla <a href="mailto:%{email}">%{email}</a>
+        för att få hjälp
+      email_reconfirmation_html: Om du inte får bekräftelsemeddelandet kan du <a href="%{path}">begära
+        ett på nytt</a>
       irreversible: Du kan inte återställa eller återaktivera ditt konto
       more_details_html: För mer information, se <a href="%{terms_path}">integritetspolicyn</a>.
       username_available: Ditt användarnamn kommer att bli tillgängligt igen
@@ -1274,7 +1507,8 @@ sv:
       approve_appeal: Godkänn förfrågan
       associated_report: Associerad rapport
       created_at: Daterad
-      description_html: Dessa är åtgärder som vidtas mot ditt konto och varningar som har skickats till dig av administratörerna för %{instance}.
+      description_html: Dessa är åtgärder som vidtas mot ditt konto och varningar
+        som har skickats till dig av administratörerna för %{instance}.
       recipient: Adressat
       reject_appeal: Avvisa förfrågan
       status: 'Inlägg #%{id}'
@@ -1293,7 +1527,9 @@ sv:
       your_appeal_rejected: Din överklagan har avvisats
   edit_profile:
     basic_information: Allmän information
-    hint_html: "<strong>Anpassa vad folk ser på din offentliga profil och bredvid dina inlägg.</strong> Andra personer är mer benägna att följa dig och interagera med dig när du har en ifylld profil och en profilbild."
+    hint_html: "<strong>Anpassa vad folk ser på din offentliga profil och bredvid
+      dina inlägg.</strong> Andra personer är mer benägna att följa dig och interagera
+      med dig när du har en ifylld profil och en profilbild."
     other: Övrigt
   errors:
     '400': Förfrågningen som du skickade in var ogiltig eller felaktigt utformad.
@@ -1309,7 +1545,9 @@ sv:
       content: Vi är ledsna, men något gick fel från vårat håll.
       title: Den här sidan är inte korrekt
     '503': Sidan kunde inte visas på grund av ett tillfälligt serverfel.
-    noscript_html: För att använda Truecolors webbapplikationen, vänligen aktivera JavaScript. Alternativt kan du prova en av <a href="%{apps_path}">inhemska appar</a> för Truecolors för din plattform.
+    noscript_html: För att använda Truecolors webbapplikationen, vänligen aktivera
+      JavaScript. Alternativt kan du prova en av <a href="%{apps_path}">inhemska appar</a>
+      för Truecolors för din plattform.
   existing_username_validator:
     not_found: kunde inte hitta en lokal användare med det användarnamnet
     not_found_multiple: kunde inte hitta %{usernames}
@@ -1317,7 +1555,9 @@ sv:
     archive_takeout:
       date: Datum
       download: Ladda ner ditt arkiv
-      hint_html: Du kan begära ett arkiv av dina <strong>inlägg och uppladdad media</strong>. Den exporterade datan kommer att vara i ActivityPub-format och läsbar av kompatibel programvara. Du kan begära ett arkiv var sjunde dag.
+      hint_html: Du kan begära ett arkiv av dina <strong>inlägg och uppladdad media</strong>.
+        Den exporterade datan kommer att vara i ActivityPub-format och läsbar av kompatibel
+        programvara. Du kan begära ett arkiv var sjunde dag.
       in_progress: Kompilerar ditt arkiv...
       request: Efterfråga ditt arkiv
       size: Storlek
@@ -1332,7 +1572,10 @@ sv:
     add_new: Lägg till ny
     errors:
       limit: Du har redan fäst det maximala antalet hashtags
-    hint_html: "<strong>Vad är utvalda hashtaggar?</strong> De visas tydligt på din offentliga profil och låter andra bläddra bland dina offentliga inlägg specifikt under dessa hashtaggar. De är ett bra verktyg för att hålla reda på kreativa arbeten eller långsiktiga projekt."
+    hint_html: "<strong>Vad är utvalda hashtaggar?</strong> De visas tydligt på din
+      offentliga profil och låter andra bläddra bland dina offentliga inlägg specifikt
+      under dessa hashtaggar. De är ett bra verktyg för att hålla reda på kreativa
+      arbeten eller långsiktiga projekt."
   filters:
     contexts:
       account: Profiler
@@ -1344,10 +1587,14 @@ sv:
       add_keyword: Lägg till nyckelord
       keywords: Nyckelord
       statuses: Individuella inlägg
-      statuses_hint_html: Detta filter gäller för att välja enskilda inlägg oavsett om de matchar sökorden nedan. <a href="%{path}">Granska eller ta bort inlägg från filtret</a>.
+      statuses_hint_html: Detta filter gäller för att välja enskilda inlägg oavsett
+        om de matchar sökorden nedan. <a href="%{path}">Granska eller ta bort inlägg
+        från filtret</a>.
       title: Redigera filter
     errors:
-      deprecated_api_multiple_keywords: Dessa parametrar kan inte ändras från denna applikation eftersom de gäller mer än ett filtersökord. Använd en nyare applikation eller webbgränssnittet.
+      deprecated_api_multiple_keywords: Dessa parametrar kan inte ändras från denna
+        applikation eftersom de gäller mer än ett filtersökord. Använd en nyare applikation
+        eller webbgränssnittet.
       invalid_context: Ingen eller ogiltig kontext angiven
     index:
       contexts: Filter i %{contexts}
@@ -1373,7 +1620,8 @@ sv:
       batch:
         remove: Ta bort från filter
       index:
-        hint: Detta filter gäller för att välja enskilda inlägg oavsett andra kriterier. Du kan lägga till fler inlägg till detta filter från webbgränssnittet.
+        hint: Detta filter gäller för att välja enskilda inlägg oavsett andra kriterier.
+          Du kan lägga till fler inlägg till detta filter från webbgränssnittet.
         title: Filtrerade inlägg
   generic:
     all: Alla
@@ -1408,7 +1656,8 @@ sv:
       too_large: Filen är för stor
     failures: Misslyckanden
     imported: Importerade
-    mismatched_types_warning: Det verkar som om du har valt fel typ för denna import. Var god dubbelkolla.
+    mismatched_types_warning: Det verkar som om du har valt fel typ för denna import.
+      Var god dubbelkolla.
     modes:
       merge: Slå ihop
       merge_long: Behåll befintliga uppgifter och lägg till nya
@@ -1416,43 +1665,72 @@ sv:
       overwrite_long: Ersätt de nuvarande uppgifterna med de nya
     overwrite_preambles:
       blocking_html:
-        one: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong>.
+        one: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp
+          till <strong>%{count} konto</strong> från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>ersätta din blockeringslista</strong> med
+          upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong>.
       bookmarks_html:
-        one: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp till <strong>%{count} inlägg</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp till <strong>%{count} inlägg</strong> från <strong>%{filename}</strong>.
+        one: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp
+          till <strong>%{count} inlägg</strong> från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>ersätta din blockeringslista</strong> med
+          upp till <strong>%{count} inlägg</strong> från <strong>%{filename}</strong>.
       domain_blocking_html:
-        one: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp till <strong>%{count} domän</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp till <strong>%{count} domäner</strong> från <strong>%{filename}</strong>.
+        one: Du är på väg att <strong>ersätta din blockeringslista</strong> med upp
+          till <strong>%{count} domän</strong> från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>ersätta din blockeringslista</strong> med
+          upp till <strong>%{count} domäner</strong> från <strong>%{filename}</strong>.
       following_html:
-        one: Du är på väg till <strong>följ</strong> upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong> och <strong>sluta följa någon annan</strong>.
-        other: Du är på väg till <strong>följ</strong> upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong> och <strong>sluta följa någon annan</strong>.
+        one: Du är på väg till <strong>följ</strong> upp till <strong>%{count} konto</strong>
+          från <strong>%{filename}</strong> och <strong>sluta följa någon annan</strong>.
+        other: Du är på väg till <strong>följ</strong> upp till <strong>%{count} konton</strong>
+          från <strong>%{filename}</strong> och <strong>sluta följa någon annan</strong>.
       lists_html:
-        one: Du är på väg att <strong>ersätta dina listor</strong> med innehållet i <strong>%{filename}</strong>. Upp till <strong>%{count} konto</strong> kommer att läggas till i nya listor.
-        other: Du är på väg att <strong>ersätta dina listor</strong> med innehållet i <strong>%{filename}</strong>. Upp till <strong>%{count} konton</strong> kommer att läggas till i nya listor.
+        one: Du är på väg att <strong>ersätta dina listor</strong> med innehållet
+          i <strong>%{filename}</strong>. Upp till <strong>%{count} konto</strong>
+          kommer att läggas till i nya listor.
+        other: Du är på väg att <strong>ersätta dina listor</strong> med innehållet
+          i <strong>%{filename}</strong>. Upp till <strong>%{count} konton</strong>
+          kommer att läggas till i nya listor.
       muting_html:
-        one: Du är på väg att <strong>ersätta din lista med tystade konton</strong> med upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>ersätta din lista med tystade konton</strong> med upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong>.
+        one: Du är på väg att <strong>ersätta din lista med tystade konton</strong>
+          med upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>ersätta din lista med tystade konton</strong>
+          med upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong>.
     preambles:
       blocking_html:
-        one: Du är på väg att <strong>blockera</strong> med upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>blockera</strong> med upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong>.
+        one: Du är på väg att <strong>blockera</strong> med upp till <strong>%{count}
+          konto</strong> från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>blockera</strong> med upp till <strong>%{count}
+          konton</strong> från <strong>%{filename}</strong>.
       bookmarks_html:
-        one: Du håller på att lägga upp till <strong>%{count} inlägg</strong> från <strong>%{filename}</strong> till dina <strong>bokmärken</strong>.
-        other: Du håller på att lägga upp till <strong>%{count} inlägg</strong> från <strong>%{filename}</strong> till dina <strong>bokmärken</strong>.
+        one: Du håller på att lägga upp till <strong>%{count} inlägg</strong> från
+          <strong>%{filename}</strong> till dina <strong>bokmärken</strong>.
+        other: Du håller på att lägga upp till <strong>%{count} inlägg</strong> från
+          <strong>%{filename}</strong> till dina <strong>bokmärken</strong>.
       domain_blocking_html:
-        one: Du är på väg att <strong>blockera</strong> upp till <strong>%{count} domän</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>blockera</strong> upp till <strong>%{count} domäner</strong> från <strong>%{filename}</strong>.
+        one: Du är på väg att <strong>blockera</strong> upp till <strong>%{count}
+          domän</strong> från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>blockera</strong> upp till <strong>%{count}
+          domäner</strong> från <strong>%{filename}</strong>.
       following_html:
-        one: Du är på väg att <strong>följa</strong> upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>följa</strong> upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong>.
+        one: Du är på väg att <strong>följa</strong> upp till <strong>%{count} konto</strong>
+          från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>följa</strong> upp till <strong>%{count} konton</strong>
+          från <strong>%{filename}</strong>.
       lists_html:
-        one: Du håller på att lägga upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong> till dina <strong>listor</strong>. Nya listor kommer att skapas om det inte finns någon lista att lägga till.
-        other: Du håller på att lägga upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong> till dina <strong>listor</strong>. Nya listor kommer att skapas om det inte finns någon lista att lägga till.
+        one: Du håller på att lägga upp till <strong>%{count} konto</strong> från
+          <strong>%{filename}</strong> till dina <strong>listor</strong>. Nya listor
+          kommer att skapas om det inte finns någon lista att lägga till.
+        other: Du håller på att lägga upp till <strong>%{count} konton</strong> från
+          <strong>%{filename}</strong> till dina <strong>listor</strong>. Nya listor
+          kommer att skapas om det inte finns någon lista att lägga till.
       muting_html:
-        one: Du är på väg att <strong>tysta</strong> upp till <strong>%{count} konto</strong> från <strong>%{filename}</strong>.
-        other: Du är på väg att <strong>tysta</strong> upp till <strong>%{count} konton</strong> från <strong>%{filename}</strong>.
-    preface: Du kan importera data som du exporterat från en annan instans, till exempel en lista över personer du följer eller blockerar.
+        one: Du är på väg att <strong>tysta</strong> upp till <strong>%{count} konto</strong>
+          från <strong>%{filename}</strong>.
+        other: Du är på väg att <strong>tysta</strong> upp till <strong>%{count} konton</strong>
+          från <strong>%{filename}</strong>.
+    preface: Du kan importera data som du exporterat från en annan instans, till exempel
+      en lista över personer du följer eller blockerar.
     recent_imports: Nyligen importerade
     states:
       finished: Klar
@@ -1513,7 +1791,8 @@ sv:
       password: lösenord
       sign_in_token: e-postsäkerhetskod
       webauthn: säkerhetsnycklar
-    description_html: Om du ser aktivitet som du inte känner igen, överväg att byta ditt lösenord och aktivera tvåfaktor-autentisering.
+    description_html: Om du ser aktivitet som du inte känner igen, överväg att byta
+      ditt lösenord och aktivera tvåfaktor-autentisering.
     empty: Ingen autentiseringshistorik tillgänglig
     failed_sign_in_html: Misslyckat inloggningsförsök med %{method} från %{ip} (%{browser})
     successful_sign_in_html: Lyckad inloggning med %{method} från %{ip} (%{browser})
@@ -1522,7 +1801,9 @@ sv:
     unsubscribe:
       action: Ja, avsluta prenumerationen
       complete: Prenumeration avslutad
-      confirmation_html: Är du säker på att du vill avregistrera dig från att ta emot %{type} för Truecolors på %{domain} med din e-post på %{email}? Du kan alltid återprenumerera bland dina <a href="%{settings_path}">e-postmeddelandeinställningar</a>.
+      confirmation_html: Är du säker på att du vill avregistrera dig från att ta emot
+        %{type} för Truecolors på %{domain} med din e-post på %{email}? Du kan alltid
+        återprenumerera bland dina <a href="%{settings_path}">e-postmeddelandeinställningar</a>.
       emails:
         notification_emails:
           favourite: aviseringsmejl för favoriserade inlägg
@@ -1530,19 +1811,26 @@ sv:
           follow_request: aviseringsmejl för följdförfrågningar
           mention: aviseringsmejl för inlägg där du nämns
           reblog: aviseringsmejl för förhöjda inlägg
-      resubscribe_html: Om du slutat prenumerera av misstag kan du återprenumerera i dina <a href="%{settings_path}">e-postaviseringsinställningar</a>.
-      success_html: Du får inte längre %{type} för Truecolors på %{domain} till din e-post på %{email}.
+      resubscribe_html: Om du slutat prenumerera av misstag kan du återprenumerera
+        i dina <a href="%{settings_path}">e-postaviseringsinställningar</a>.
+      success_html: Du får inte längre %{type} för Truecolors på %{domain} till din
+        e-post på %{email}.
       title: Avsluta prenumeration
   media_attachments:
     validations:
-      images_and_video: Det går inte att bifoga en video till ett inlägg som redan innehåller bilder
-      not_found: Media %{ids} hittades inte eller är redan anslutet till ett annat inlägg
-      not_ready: Kan inte bifoga filer som inte har behandlats färdigt. Försök igen om ett ögonblick!
+      images_and_video: Det går inte att bifoga en video till ett inlägg som redan
+        innehåller bilder
+      not_found: Media %{ids} hittades inte eller är redan anslutet till ett annat
+        inlägg
+      not_ready: Kan inte bifoga filer som inte har behandlats färdigt. Försök igen
+        om ett ögonblick!
       too_many: Det går inte att bifoga mer än 4 filer
   migrations:
     acct: Flyttad till
     cancel: Avbryt omdirigering
-    cancel_explanation: Avstängning av omdirigeringen kommer att återaktivera ditt nuvarande konto, men kommer inte att återskapa följare som har flyttats till det kontot.
+    cancel_explanation: Avstängning av omdirigeringen kommer att återaktivera ditt
+      nuvarande konto, men kommer inte att återskapa följare som har flyttats till
+      det kontot.
     cancelled_msg: Avbröt omdirigeringen.
     errors:
       already_moved: är samma konto som du redan har flyttat till
@@ -1552,30 +1840,40 @@ sv:
       on_cooldown: Du är på nerkylning
     followers_count: Följare vid tidpunkten för flytten
     incoming_migrations: Flyttar från ett annat konto
-    incoming_migrations_html: För att flytta från ett annat konto till det här så behöver du först <a href="%{path}">skapa ett konto-alias</a>.
+    incoming_migrations_html: För att flytta från ett annat konto till det här så
+      behöver du först <a href="%{path}">skapa ett konto-alias</a>.
     moved_msg: Ditt konto omdirigerar nu till %{acct} och dina följare flyttas över.
     not_redirecting: Ditt konto omdirigerar inte till något annat konto för tillfället.
-    on_cooldown: Du har nyss migrerat ditt konto. Den här funktionen kommer att vara tillgänglig igen om %{count} dagar.
+    on_cooldown: Du har nyss migrerat ditt konto. Den här funktionen kommer att vara
+      tillgänglig igen om %{count} dagar.
     past_migrations: Föregående migreringar
     proceed_with_move: Flytta följare
     redirected_msg: Ditt konto dirigeras om till %{acct}.
     redirecting_to: Ditt konto omdirigerar till %{acct}.
     set_redirect: Konfigurera omdirigering
     warning:
-      backreference_required: Det nya kontot måste först vara konfigurerat till att bakåt-referera till det här
+      backreference_required: Det nya kontot måste först vara konfigurerat till att
+        bakåt-referera till det här
       before: 'Vänligen läs dessa anteckningar noggrant innan du fortsätter:'
-      cooldown: Efter flytten följer en vänteperiod under vilken du inte kan flytta igen
-      disabled_account: Ditt nuvarande konto kommer inte att kunna användas fullt ut efteråt. Du kommer dock att ha tillgång till dataexport samt återaktivering.
-      followers: Den här åtgärden kommer att flytta alla följare från det nuvarande kontot till det nya kontot
-      only_redirect_html: Alternativt kan du <a href="%{path}">bara sätta upp en omdirigering på din profil</a>.
+      cooldown: Efter flytten följer en vänteperiod under vilken du inte kan flytta
+        igen
+      disabled_account: Ditt nuvarande konto kommer inte att kunna användas fullt
+        ut efteråt. Du kommer dock att ha tillgång till dataexport samt återaktivering.
+      followers: Den här åtgärden kommer att flytta alla följare från det nuvarande
+        kontot till det nya kontot
+      only_redirect_html: Alternativt kan du <a href="%{path}">bara sätta upp en omdirigering
+        på din profil</a>.
       other_data: Ingen annan data kommer att flyttas automatiskt
-      redirect: Ditt nuvarande kontos profil kommer att uppdateras med ett meddelande om omdirigering och uteslutas från sökningar
+      redirect: Ditt nuvarande kontos profil kommer att uppdateras med ett meddelande
+        om omdirigering och uteslutas från sökningar
   moderation:
     title: Moderera
   move_handler:
-    carry_blocks_over_text: Den här användaren flyttades från %{acct} som du hade blockerat.
+    carry_blocks_over_text: Den här användaren flyttades från %{acct} som du hade
+      blockerat.
     carry_mutes_over_text: Den här användaren flyttade från %{acct} som du hade tystat.
-    copy_account_note_text: 'Den här användaren flyttade från %{acct}, här var dina föregående anteckningar om dem:'
+    copy_account_note_text: 'Den här användaren flyttade från %{acct}, här var dina
+      föregående anteckningar om dem:'
   navigation:
     toggle_menu: Växla meny
   notification_mailer:
@@ -1628,10 +1926,15 @@ sv:
           trillion: T
   otp_authentication:
     code_hint: Ange koden som genererats av din autentiseringsapp för att bekräfta
-    description_html: Om du aktiverar <strong>tvåfaktorsautentisering</strong> med en autentiseringsapp kommer du behöva din mobiltelefon för att logga in, som kommer generera koder för dig att ange.
+    description_html: Om du aktiverar <strong>tvåfaktorsautentisering</strong> med
+      en autentiseringsapp kommer du behöva din mobiltelefon för att logga in, som
+      kommer generera koder för dig att ange.
     enable: Aktivera
-    instructions_html: "<strong>Skanna den här QR-koden i Google Authenticator eller en liknande TOTP-app i din telefon</strong>. Från och med nu så kommer den appen att generera symboler som du måste skriva in när du ska logga in."
-    manual_instructions: 'Om du inte kan skanna QR-koden och istället behöver skriva in nyckeln i oformatterad text, finns den här:'
+    instructions_html: "<strong>Skanna den här QR-koden i Google Authenticator eller
+      en liknande TOTP-app i din telefon</strong>. Från och med nu så kommer den appen
+      att generera symboler som du måste skriva in när du ska logga in."
+    manual_instructions: 'Om du inte kan skanna QR-koden och istället behöver skriva
+      in nyckeln i oformatterad text, finns den här:'
     setup: Konfigurera
     wrong_code: Den ifyllda koden är ogiltig! Är server-tiden och enhetens tid korrekt?
   pagination:
@@ -1657,13 +1960,25 @@ sv:
     posting_defaults: Standardinställningar för inlägg
     public_timelines: Publika tidslinjer
   privacy:
-    hint_html: "<strong>Anpassa hur du vill att din profil och dina inlägg ska hittas.</strong> En mängd funktioner i Truecolors kan hjälpa dig att nå en bredare publik när den är aktiverad. Ta en stund att granska dessa inställningar för att se att de passar ditt användningsfall."
+    hint_html: "<strong>Anpassa hur du vill att din profil och dina inlägg ska hittas.</strong>
+      En mängd funktioner i Truecolors kan hjälpa dig att nå en bredare publik när
+      den är aktiverad. Ta en stund att granska dessa inställningar för att se att
+      de passar ditt användningsfall."
     privacy: Integritet
-    privacy_hint_html: Kontrollera hur mycket du vill avslöja till förmån för andra. Andra upptäcker intressanta profiler och coola appar genom att bläddra bland vad andra följer och se vilka appar de lägger upp från, men du kanske föredrar att hålla det dolt.
+    privacy_hint_html: Kontrollera hur mycket du vill avslöja till förmån för andra.
+      Andra upptäcker intressanta profiler och coola appar genom att bläddra bland
+      vad andra följer och se vilka appar de lägger upp från, men du kanske föredrar
+      att hålla det dolt.
     reach: Räckvidd
-    reach_hint_html: Kontrollera om du vill bli upptäckt och följd av nya människor. Vill du att dina inlägg ska visas på Utforska-skärmen? Vill du att andra människor ska se dig i sina rekommendationer av andra att följa? Vill du acceptera alla nya följare automatiskt, eller ha detaljerad kontroll över varenda en?
+    reach_hint_html: Kontrollera om du vill bli upptäckt och följd av nya människor.
+      Vill du att dina inlägg ska visas på Utforska-skärmen? Vill du att andra människor
+      ska se dig i sina rekommendationer av andra att följa? Vill du acceptera alla
+      nya följare automatiskt, eller ha detaljerad kontroll över varenda en?
     search: Sök
-    search_hint_html: Styr hur du vill bli funnen. Vill du att folk ska hitta dig efter vad du publicerat om? Vill du att personer utanför Truecolors ska hitta din profil när du söker på webben? Observera att total uteslutning från alla sökmotorer inte kan garanteras för offentlig information.
+    search_hint_html: Styr hur du vill bli funnen. Vill du att folk ska hitta dig
+      efter vad du publicerat om? Vill du att personer utanför Truecolors ska hitta
+      din profil när du söker på webben? Observera att total uteslutning från alla
+      sökmotorer inte kan garanteras för offentlig information.
     title: Integritet och räckvidd
   privacy_policy:
     title: Integritetspolicy
@@ -1696,7 +2011,8 @@ sv:
     remove_selected_follows: Sluta följ valda användare
     status: Kontostatus
   remote_follow:
-    missing_resource: Det gick inte att hitta den begärda omdirigeringsadressen för ditt konto
+    missing_resource: Det gick inte att hitta den begärda omdirigeringsadressen för
+      ditt konto
   reports:
     errors:
       invalid_rules: refererar inte till giltiga regler
@@ -1710,7 +2026,9 @@ sv:
     over_total_limit: Du har överskridit gränsen på %{limit} schemalagda inlägg
     too_soon: datumet måste vara i framtiden
   self_destruct:
-    lead_html: Tyvärr stänger <strong>%{domain}</strong> för gott. Om du hade ett konto där kommer du inte längre kunna använda det, men du kan fortfarande begära en säkerhetskopia av din data.
+    lead_html: Tyvärr stänger <strong>%{domain}</strong> för gott. Om du hade ett
+      konto där kommer du inte längre kunna använda det, men du kan fortfarande begära
+      en säkerhetskopia av din data.
     title: Denna server stänger ned
   sessions:
     activity: Senaste aktivitet
@@ -1790,7 +2108,10 @@ sv:
       user_domain_block: Du blockerade %{target_name}
     lost_followers: Förlorade följare
     lost_follows: Förlorade följare
-    preamble: Du kan förlora följer och följare när du blockerar en domän eller när din moderator väljer att stänga av en fjärrserver. När det händer kommer du kunna hämta listor över avbrutna relationer som kan inspekteras och eventuellt importeras på en annan server.
+    preamble: Du kan förlora följer och följare när du blockerar en domän eller när
+      din moderator väljer att stänga av en fjärrserver. När det händer kommer du
+      kunna hämta listor över avbrutna relationer som kan inspekteras och eventuellt
+      importeras på en annan server.
     purged: Information om denna server har rensats av din servers administratörer.
     type: Händelse
   statuses:
@@ -1831,13 +2152,18 @@ sv:
       unlisted_long: Alla kan se, men listas inte på offentliga tidslinjer
   statuses_cleanup:
     enabled: Ta automatiskt bort gamla inlägg
-    enabled_hint: Raderar dina inlägg automatiskt när de når en specifik ålder, såvida de inte matchar något av undantagen nedan
+    enabled_hint: Raderar dina inlägg automatiskt när de når en specifik ålder, såvida
+      de inte matchar något av undantagen nedan
     exceptions: Undantag
-    explanation: Eftersom inläggsradering är resursintensivt görs detta stegvis när servern inte är högbelastad. Därför kan det dröja innan dina inlägg raderas efter att de uppnått ålderströskeln.
+    explanation: Eftersom inläggsradering är resursintensivt görs detta stegvis när
+      servern inte är högbelastad. Därför kan det dröja innan dina inlägg raderas
+      efter att de uppnått ålderströskeln.
     ignore_favs: Bortse från favoriter
     ignore_reblogs: Ignorera boostar
     interaction_exceptions: Undantag baserat på interaktioner
-    interaction_exceptions_explanation: Observera att det inte finns någon garanti att inlägg blir raderade om de går under favorit- eller boost-tröskeln efter att en gång ha gått över dem.
+    interaction_exceptions_explanation: Observera att det inte finns någon garanti
+      att inlägg blir raderade om de går under favorit- eller boost-tröskeln efter
+      att en gång ha gått över dem.
     keep_direct: Behåll direktmeddelanden
     keep_direct_hint: Tar inte bort någon av dina direktmeddelanden
     keep_media: Behåll inlägg med mediebilagor
@@ -1861,9 +2187,12 @@ sv:
       '7889238': 3 månader
     min_age_label: Åldersgräns
     min_favs: Behåll favoritmarkerade inlägg i minst
-    min_favs_hint: Raderar inte några av dina inlägg som har fått minst detta antalet av favoritmarkeringar. Lämna tomt för att ta bort inlägg oavsett hur många favoritmarkeringar de har fått
+    min_favs_hint: Raderar inte några av dina inlägg som har fått minst detta antalet
+      av favoritmarkeringar. Lämna tomt för att ta bort inlägg oavsett hur många favoritmarkeringar
+      de har fått
     min_reblogs: Behåll boostade inlägg i minst
-    min_reblogs_hint: Raderar inte något av dina inlägg som har blivit boostat minst detta antal gånger. Lämna tomt för att radera inlägg oavsett antal boostar
+    min_reblogs_hint: Raderar inte något av dina inlägg som har blivit boostat minst
+      detta antal gånger. Lämna tomt för att radera inlägg oavsett antal boostar
   stream_entries:
     sensitive_content: Känsligt innehåll
   strikes:
@@ -1886,7 +2215,8 @@ sv:
       with_time_zone: "%d %b %Y, %H:%M %Z"
   translation:
     errors:
-      quota_exceeded: Den server-omfattande användningskvoten för översättningstjänsten har överskridits.
+      quota_exceeded: Den server-omfattande användningskvoten för översättningstjänsten
+        har överskridits.
       too_many_requests: Det har nyligen kommit för många förfrågningar till översättningstjänsten.
   two_factor_authentication:
     add: Lägg till
@@ -1896,22 +2226,29 @@ sv:
     enabled: Tvåfaktorsautentisering är aktiverad
     enabled_success: Tvåfaktorsautentisering aktiverad
     generate_recovery_codes: Generera återställningskoder
-    lost_recovery_codes: Återställningskoder tillåter dig att få tillgång till ditt konto om du förlorar din telefon. Om du har förlorat dina återställningskoder kan du regenerera dem här. Dina gamla återställningskoder kommer att ogiltigförklaras.
+    lost_recovery_codes: Återställningskoder tillåter dig att få tillgång till ditt
+      konto om du förlorar din telefon. Om du har förlorat dina återställningskoder
+      kan du regenerera dem här. Dina gamla återställningskoder kommer att ogiltigförklaras.
     methods: Två-faktormetoder
     otp: Autentiseringsapp
     recovery_codes: Backup återställningskod
     recovery_codes_regenerated: Återställningskoder genererades på nytt
-    recovery_instructions_html: Om du någonsin tappar åtkomst till din telefon kan du använda någon av återställningskoderna nedan för att återställa åtkomst till ditt konto. <strong> Håll återställningskoderna säkra </strong>. Du kan till exempel skriva ut dem och lagra dem med andra viktiga dokument.
+    recovery_instructions_html: Om du någonsin tappar åtkomst till din telefon kan
+      du använda någon av återställningskoderna nedan för att återställa åtkomst till
+      ditt konto. <strong> Håll återställningskoderna säkra </strong>. Du kan till
+      exempel skriva ut dem och lagra dem med andra viktiga dokument.
     webauthn: Säkerhetsnycklar
   user_mailer:
     appeal_approved:
       action: Kontoinställningar
-      explanation: Överklagandet du skickade in den %{appeal_date} för pricken på ditt konto den %{strike_date} har godkänts. Ditt konto har återigen bra anseende.
+      explanation: Överklagandet du skickade in den %{appeal_date} för pricken på
+        ditt konto den %{strike_date} har godkänts. Ditt konto har återigen bra anseende.
       subject: Din överklagan den %{date} har godkänts
       subtitle: Ditt konto är återigen i gott skick.
       title: Överklagan godkänd
     appeal_rejected:
-      explanation: Överklagandet du skickade in den %{appeal_date} för pricken på ditt konto den %{strike_date} har avslagits.
+      explanation: Överklagandet du skickade in den %{appeal_date} för pricken på
+        ditt konto den %{strike_date} har avslagits.
       subject: Din överklagan den %{date} har avslagits
       subtitle: Din överklagan har avvisats.
       title: Överklagan avslagen
@@ -1922,19 +2259,24 @@ sv:
       title: Arkivuttagning
     failed_2fa:
       details: 'Här är detaljerna för inloggningsförsöket:'
-      explanation: Någon har försökt att logga in på ditt konto men tillhandahållit en ogiltig andra autentiseringsfaktor.
-      further_actions_html: Om detta inte var du, rekommenderar vi att du %{action} omedelbart eftersom ditt konto kan ha äventyrats.
+      explanation: Någon har försökt att logga in på ditt konto men tillhandahållit
+        en ogiltig andra autentiseringsfaktor.
+      further_actions_html: Om detta inte var du, rekommenderar vi att du %{action}
+        omedelbart eftersom ditt konto kan ha äventyrats.
       subject: Andra faktorns autentiseringsfel
       title: Misslyckad tvåfaktorsautentisering
     suspicious_sign_in:
       change_password: ändra ditt lösenord
       details: 'Här är inloggningsdetaljerna:'
       explanation: Vi har upptäckt en inloggning till ditt konto från en ny IP-adress.
-      further_actions_html: Om detta inte var du, rekommenderar vi att du snarast %{action} och aktiverar tvåfaktorsautentisering för att hålla ditt konto säkert.
+      further_actions_html: Om detta inte var du, rekommenderar vi att du snarast
+        %{action} och aktiverar tvåfaktorsautentisering för att hålla ditt konto säkert.
       subject: Ditt konto har nåtts från en ny IP-adress
       title: En ny inloggning
     terms_of_service_changed:
-      agreement: Genom att fortsätta använda %{domain} godkänner du dessa villkor. Om du inte håller med om de uppdaterade villkoren kan du när som helst säga upp ditt avtal med %{domain} genom att radera ditt konto.
+      agreement: Genom att fortsätta använda %{domain} godkänner du dessa villkor.
+        Om du inte håller med om de uppdaterade villkoren kan du när som helst säga
+        upp ditt avtal med %{domain} genom att radera ditt konto.
       changelog: 'I korthet, här är vad denna uppdatering innebär för dig:'
       sign_off: "%{domain} teamet"
       subject: Uppdateringar till våra användarvillkor
@@ -1942,17 +2284,32 @@ sv:
       title: Viktig uppdatering
     warning:
       appeal: Skicka överklagan
-      appeal_description: Om du anser detta felaktigt kan du skicka överklagan till administratörerna av %{instance}.
+      appeal_description: Om du anser detta felaktigt kan du skicka överklagan till
+        administratörerna av %{instance}.
       categories:
         spam: Skräppost
         violation: Innehållet bryter mot följande gemenskapsprinciper
       explanation:
-        delete_statuses: Några av dina inlägg har ansetts bryta mot en eller flera gemenskapsprinciper, de har därför raderats av moderatorerna för %{instance}.
-        disable: Du kan inte längre använda ditt konto, men din profil och övrig data bibehålls intakt. Du kan begära en kopia av dina data, ändra kontoinställningar eller radera ditt konto.
-        mark_statuses_as_sensitive: Några av dina inlägg har markerats som känsliga av moderatorerna för %{instance}. Detta betyder att folk behöver trycka på medier i inläggen innan de kan se en förhandsvisning. Du kan själv markera medier som känsliga när du gör inlägg i framtiden.
-        sensitive: Från och med nu markeras alla dina uppladdade mediefiler som känsliga och göms bakom en innehållsvarning som först måste tryckas bort.
-        silence: Du kan fortfarande använda ditt konto, men endast personer som redan följer dig kommer att se dina inlägg på denna server. Du kan även exkluderas från olika upptäcktsfunktioner, men andra kan fortfarande manuellt följa dig.
-        suspend: Du kan inte längre använda ditt konto, din profil och annan data är heller inte längre tillgängliga. Du kan fortfarande logga in och begära en kopia av dina data tills dess att de fullkomligt raderas om cirka 30 dagar, vi kommer dock bibehålla viss metadata för att förhindra försök att kringgå avstängingen.
+        delete_statuses: Några av dina inlägg har ansetts bryta mot en eller flera
+          gemenskapsprinciper, de har därför raderats av moderatorerna för %{instance}.
+        disable: Du kan inte längre använda ditt konto, men din profil och övrig data
+          bibehålls intakt. Du kan begära en kopia av dina data, ändra kontoinställningar
+          eller radera ditt konto.
+        mark_statuses_as_sensitive: Några av dina inlägg har markerats som känsliga
+          av moderatorerna för %{instance}. Detta betyder att folk behöver trycka
+          på medier i inläggen innan de kan se en förhandsvisning. Du kan själv markera
+          medier som känsliga när du gör inlägg i framtiden.
+        sensitive: Från och med nu markeras alla dina uppladdade mediefiler som känsliga
+          och göms bakom en innehållsvarning som först måste tryckas bort.
+        silence: Du kan fortfarande använda ditt konto, men endast personer som redan
+          följer dig kommer att se dina inlägg på denna server. Du kan även exkluderas
+          från olika upptäcktsfunktioner, men andra kan fortfarande manuellt följa
+          dig.
+        suspend: Du kan inte längre använda ditt konto, din profil och annan data
+          är heller inte längre tillgängliga. Du kan fortfarande logga in och begära
+          en kopia av dina data tills dess att de fullkomligt raderas om cirka 30
+          dagar, vi kommer dock bibehålla viss metadata för att förhindra försök att
+          kringgå avstängingen.
       reason: 'Anledning:'
       statuses: 'Inlägg citerades:'
       subject:
@@ -1983,13 +2340,26 @@ sv:
       edit_profile_title: Anpassa din profil
       explanation: Här är några tips för att komma igång
       feature_action: Lär dig mer
-      feature_audience: Truecolors ger dig en unik möjlighet att hantera din publik utan mellanhänder. Truecolors distribueras på din egen infrastruktur gör att du kan följa och följas från någon annan Truecolors-server online och är under ingen kontroll men din.
+      feature_audience: Truecolors ger dig en unik möjlighet att hantera din publik
+        utan mellanhänder. Truecolors distribueras på din egen infrastruktur gör att
+        du kan följa och följas från någon annan Truecolors-server online och är under
+        ingen kontroll men din.
       feature_audience_title: Skapa förtroende hos din publik
-      feature_control: Du vet bäst vad du vill se i ditt hemflöde. Inga algoritmer eller annonser som slösar din tid. Följ vem som helst på vilken Truecolors-server som helst från ett enda konto, få deras inlägg i kronologisk ordning och gör ditt hörn av internet lite mer du.
+      feature_control: Du vet bäst vad du vill se i ditt hemflöde. Inga algoritmer
+        eller annonser som slösar din tid. Följ vem som helst på vilken Truecolors-server
+        som helst från ett enda konto, få deras inlägg i kronologisk ordning och gör
+        ditt hörn av internet lite mer du.
       feature_control_title: Håll kontroll över din egen tidslinje
-      feature_creativity: Truecolors stöder ljud-, video- och bildinlägg, tillgänglighetsbeskrivningar, omröstningar, innehållsvarningar, animerade avatarer, anpassade emojis, miniatyrbildskontroll och mer, för att hjälpa dig att uttrycka dig själv online. Oavsett om du publicerar din konst, din musik eller din podcast finns Truecolors där för dig.
+      feature_creativity: Truecolors stöder ljud-, video- och bildinlägg, tillgänglighetsbeskrivningar,
+        omröstningar, innehållsvarningar, animerade avatarer, anpassade emojis, miniatyrbildskontroll
+        och mer, för att hjälpa dig att uttrycka dig själv online. Oavsett om du publicerar
+        din konst, din musik eller din podcast finns Truecolors där för dig.
       feature_creativity_title: Oöverträffad kreativitet
-      feature_moderation: Truecolors lägger tillbaka beslutsfattandet i dina händer. Varje server skapar sina egna regler och förordningar som tillämpas lokalt istället för toppstyrt som i företagens sociala medier vilket gör det maximalt flexibelt i att tillgodose behoven hos olika grupper av människor. Gå med i en server med de regler du samtycker till eller var värd för din egen.
+      feature_moderation: Truecolors lägger tillbaka beslutsfattandet i dina händer.
+        Varje server skapar sina egna regler och förordningar som tillämpas lokalt
+        istället för toppstyrt som i företagens sociala medier vilket gör det maximalt
+        flexibelt i att tillgodose behoven hos olika grupper av människor. Gå med
+        i en server med de regler du samtycker till eller var värd för din egen.
       feature_moderation_title: Moderering som det borde vara
       follow_action: Följ
       follow_step: Att följa intressanta människor är vad Truecolors handlar om.
@@ -2016,15 +2386,27 @@ sv:
     follow_limit_reached: Du kan inte följa fler än %{limit} personer
     go_to_sso_account_settings: Gå till din identitetsleverantörs kontoinställningar
     invalid_otp_token: Ogiltig tvåfaktorskod
-    otp_lost_help_html: Om du förlorat åtkomst till båda kan du komma i kontakt med %{email}
+    otp_lost_help_html: Om du förlorat åtkomst till båda kan du komma i kontakt med
+      %{email}
     rate_limited: För många autentiseringsförsök, försök igen senare.
-    seamless_external_login: Du är inloggad via en extern tjänst. Därför finns inställningar för lösenord och e-post inte tillgängliga.
+    seamless_external_login: Du är inloggad via en extern tjänst. Därför finns inställningar
+      för lösenord och e-post inte tillgängliga.
     signed_in_as: 'Inloggad som:'
   verification:
-    extra_instructions_html: <strong>Tips:</strong> Länken på din webbplats kan vara osynlig. Den viktiga delen är <code>rel="me"</code> som förhindrar personifiering på webbplatser med användargenererat innehåll. Du kan även använda en <code>länk</code> tagg i huvudet på sidan istället för <code>en</code>, men HTML:en måste vara tillgänglig utan att exekvera JavaScript.
+    extra_instructions_html: <strong>Tips:</strong> Länken på din webbplats kan vara
+      osynlig. Den viktiga delen är <code>rel="me"</code> som förhindrar personifiering
+      på webbplatser med användargenererat innehåll. Du kan även använda en <code>länk</code>
+      tagg i huvudet på sidan istället för <code>en</code>, men HTML:en måste vara
+      tillgänglig utan att exekvera JavaScript.
     here_is_how: Så här gör du
-    hint_html: "<strong>Verifiera din identitet på Truecolors är för alla.</strong> Baserat på öppna webbstandarder, nu och för evigt fria. Allt du behöver är en personlig webbplats som folk känner igen dig med. När du länkar till denna webbplats från din profil kommer vi att kontrollera att webbplatsen länkar tillbaka till din profil och visa en visuell indikator på den."
-    instructions_html: Kopiera och klistra in koden nedan in i HTML-koden på din webbplats. Lägg sedan till adressen till din webbplats i ett av de extra fälten på din profil från fliken "Redigera profil" och spara ändringar.
+    hint_html: "<strong>Verifiera din identitet på Truecolors är för alla.</strong>
+      Baserat på öppna webbstandarder, nu och för evigt fria. Allt du behöver är en
+      personlig webbplats som folk känner igen dig med. När du länkar till denna webbplats
+      från din profil kommer vi att kontrollera att webbplatsen länkar tillbaka till
+      din profil och visa en visuell indikator på den."
+    instructions_html: Kopiera och klistra in koden nedan in i HTML-koden på din webbplats.
+      Lägg sedan till adressen till din webbplats i ett av de extra fälten på din
+      profil från fliken "Redigera profil" och spara ändringar.
     verification: Bekräftelse
     verified_links: Dina verifierade länkar
     website_verification: Webbplats verifiering
@@ -2035,7 +2417,8 @@ sv:
       success: Din säkerhetsnyckel har lagts till.
     delete: Radera
     delete_confirmation: Är du säker på att du vill ta bort denna säkerhetsnyckel?
-    description_html: Om du aktiverar <strong>autentisering med säkerhetsnyckel</strong>, kommer inloggning kräva att du använder en av dina säkerhetsnycklar.
+    description_html: Om du aktiverar <strong>autentisering med säkerhetsnyckel</strong>,
+      kommer inloggning kräva att du använder en av dina säkerhetsnycklar.
     destroy:
       error: Det gick inte att ta bort din säkerhetsnyckel. Försök igen.
       success: Din säkerhetsnyckel har raderats.

@@ -33,7 +33,8 @@ pt-BR:
       help:
         native_redirect_uri: Use %{native_redirect_uri} para testes locais
         redirect_uri: Use uma linha por link
-        scopes: Separe autorizações com espaços. Deixe em branco para usar autorizações padrões.
+        scopes: Separe autorizações com espaços. Deixe em branco para usar autorizações
+          padrões.
       index:
         application: Aplicativos
         callback_url: Link de retorno
@@ -60,7 +61,9 @@ pt-BR:
       error:
         title: Ocorreu um erro
       new:
-        prompt_html: "%{client_name} gostaria de permissão para acessar sua conta. <strong>Aprove esta solicitação apenas se você reconhecer e confiar nesta fonte.</strong>"
+        prompt_html: "%{client_name} gostaria de permissão para acessar sua conta.
+          <strong>Aprove esta solicitação apenas se você reconhecer e confiar nesta
+          fonte.</strong>"
         review_permissions: Rever permissões
         title: Autorização necessária
       show:
@@ -72,7 +75,9 @@ pt-BR:
         revoke: Você tem certeza?
       index:
         authorized_at: Autorizado em %{date}
-        description_html: Estas são as aplicações que podem acessar sua conta usando a API. Se houver aplicações que você não reconhece ou que não funcionem corretamente, você pode revogar os acessos.
+        description_html: Estas são as aplicações que podem acessar sua conta usando
+          a API. Se houver aplicações que você não reconhece ou que não funcionem
+          corretamente, você pode revogar os acessos.
         last_used_at: Usado pela última vez em %{date}
         never_used: Nunca usado
         scopes: Permissões
@@ -80,28 +85,46 @@ pt-BR:
         title: Aplicativos autorizados
     errors:
       messages:
-        access_denied: O proprietário do recurso ou servidor de autorização recusou a solicitação.
-        credential_flow_not_configured: Fluxo das Credenciais de Senha do Proprietário do Recurso falhou porque Doorkeeper.configure.resource_owner_from_credentials não foi configurado.
-        invalid_client: Autenticação do cliente falhou por causa de um cliente desconhecido, nenhum cliente de autenticação foi incluído ou o método de autenticação não é suportado.
-        invalid_code_challenge_method: O método de desafio de código deve ser S256; o método 'plain' não é suportado.
-        invalid_grant: A garantia de autorização está inválida, expirou ou foi revogada, não é equivalente ao link de redirecionamento usado na solicitação de autorização ou foi emitido por outro cliente.
+        access_denied: O proprietário do recurso ou servidor de autorização recusou
+          a solicitação.
+        credential_flow_not_configured: Fluxo das Credenciais de Senha do Proprietário
+          do Recurso falhou porque Doorkeeper.configure.resource_owner_from_credentials
+          não foi configurado.
+        invalid_client: Autenticação do cliente falhou por causa de um cliente desconhecido,
+          nenhum cliente de autenticação foi incluído ou o método de autenticação
+          não é suportado.
+        invalid_code_challenge_method: O método de desafio de código deve ser S256;
+          o método 'plain' não é suportado.
+        invalid_grant: A garantia de autorização está inválida, expirou ou foi revogada,
+          não é equivalente ao link de redirecionamento usado na solicitação de autorização
+          ou foi emitido por outro cliente.
         invalid_redirect_uri: O link de redirecionamento é inválido.
         invalid_request:
           missing_param: 'Parâmetro obrigatório faltando: %{value}.'
-          request_not_authorized: A solicitação precisa ser autorizada. O parâmetro obrigatório para autorização da solicitação está ausente ou inválido.
-          unknown: A solicitação não possui um parâmetro obrigatório, inclui um valor não suportado ou está malformado.
-        invalid_resource_owner: As credenciais do proprietário informadas são inválidas ou o proprietário não pôde ser encontrado
+          request_not_authorized: A solicitação precisa ser autorizada. O parâmetro
+            obrigatório para autorização da solicitação está ausente ou inválido.
+          unknown: A solicitação não possui um parâmetro obrigatório, inclui um valor
+            não suportado ou está malformado.
+        invalid_resource_owner: As credenciais do proprietário informadas são inválidas
+          ou o proprietário não pôde ser encontrado
         invalid_scope: A autorização necessária é inválida, desconhecida ou está malformada.
         invalid_token:
           expired: O código de acesso expirou
           revoked: O código de acesso foi revogado
           unknown: O código de acesso é inválido
-        resource_owner_authenticator_not_configured: A procura pelo Proprietário do Recurso falhou porque Doorkeeper.configure.resource_owner_authenticator não foi configurado.
-        server_error: O servidor de autorização encontrou uma condição inesperada que impediu a solicitação de ser respondida.
-        temporarily_unavailable: O servidor de autorização não consegue lidar com a solicitação no momento devido à múltiplas solicitações ou manutenção programada.
-        unauthorized_client: O cliente não possui autorização para executar esta solicitação usando este método.
-        unsupported_grant_type: O tipo de garantia de autorização não é suportado pelo servidor de autorização.
-        unsupported_response_type: O servidor de autorização não suporta este tipo de resposta.
+        resource_owner_authenticator_not_configured: A procura pelo Proprietário do
+          Recurso falhou porque Doorkeeper.configure.resource_owner_authenticator
+          não foi configurado.
+        server_error: O servidor de autorização encontrou uma condição inesperada
+          que impediu a solicitação de ser respondida.
+        temporarily_unavailable: O servidor de autorização não consegue lidar com
+          a solicitação no momento devido à múltiplas solicitações ou manutenção programada.
+        unauthorized_client: O cliente não possui autorização para executar esta solicitação
+          usando este método.
+        unsupported_grant_type: O tipo de garantia de autorização não é suportado
+          pelo servidor de autorização.
+        unsupported_response_type: O servidor de autorização não suporta este tipo
+          de resposta.
     flash:
       applications:
         create:
@@ -151,18 +174,24 @@ pt-BR:
     scopes:
       admin:read: ler todos os dados no servidor
       admin:read:accounts: ler informações sensíveis de todas as contas
-      admin:read:canonical_email_blocks: ler informações sensíveis de todos os blocos de e-mail canônicos
+      admin:read:canonical_email_blocks: ler informações sensíveis de todos os blocos
+        de e-mail canônicos
       admin:read:domain_allows: ler informações sensíveis de todos os domínios permitidos
       admin:read:domain_blocks: ler informações sensíveis de todos os domínios bloqueados
-      admin:read:email_domain_blocks: ler informações sensíveis de todos os domínios de e-mail bloqueados
-      admin:read:ip_blocks: ler informações sensíveis de todos os endereços de IP bloqueados
-      admin:read:reports: ler informações sensíveis de todas as denúncias e contas denunciadas
+      admin:read:email_domain_blocks: ler informações sensíveis de todos os domínios
+        de e-mail bloqueados
+      admin:read:ip_blocks: ler informações sensíveis de todos os endereços de IP
+        bloqueados
+      admin:read:reports: ler informações sensíveis de todas as denúncias e contas
+        denunciadas
       admin:write: alterar todos os dados no servidor
       admin:write:accounts: executar ações de moderação em contas
-      admin:write:canonical_email_blocks: executar ações de moderação em blocos canônicos de e-mail
+      admin:write:canonical_email_blocks: executar ações de moderação em blocos canônicos
+        de e-mail
       admin:write:domain_allows: executar ações de moderação em domínios permitidos
       admin:write:domain_blocks: executar ações de moderação em domínios bloqueados
-      admin:write:email_domain_blocks: executar ações de moderação em domínios de e-mail bloqueados
+      admin:write:email_domain_blocks: executar ações de moderação em domínios de
+        e-mail bloqueados
       admin:write:ip_blocks: executar ações de moderação em IPs bloqueados
       admin:write:reports: executar ações de moderação em denúncias
       crypto: usar criptografia de ponta-a-ponta

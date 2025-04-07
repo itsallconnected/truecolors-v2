@@ -69,19 +69,25 @@ br:
     errors:
       messages:
         access_denied: Perc'henn an danvez pe ar servijer aotre nac'het ar reket.
-        invalid_grant: An aotre pourvezhet a zo direizh, aet da dermen, skarzhet, roet d'un arval all pe ne glot ket gant an URI dazkas implijet.
+        invalid_grant: An aotre pourvezhet a zo direizh, aet da dermen, skarzhet,
+          roet d'un arval all pe ne glot ket gant an URI dazkas implijet.
         invalid_redirect_uri: An URI dazkas n'eo ket reizh.
         invalid_request:
           missing_param: 'Un arventenn a vank: %{value}.'
-          request_not_authorized: Ret eo d'ar reket bezañ aotreet. Arventenn rekis evit aotren ar reket a zo direizh pe diank.
-          unknown: Ar reket a vank un arventenn rekis, a enlaak un dalvoud arventenn dianavezet, pe a zo faziek en ur mod all.
-        invalid_resource_owner: Testenioù perc'henn an danvez pourvezet n'int ket reizh, pe perc'henn an danvez ne c'hell ket bezañ kavet
+          request_not_authorized: Ret eo d'ar reket bezañ aotreet. Arventenn rekis
+            evit aotren ar reket a zo direizh pe diank.
+          unknown: Ar reket a vank un arventenn rekis, a enlaak un dalvoud arventenn
+            dianavezet, pe a zo faziek en ur mod all.
+        invalid_resource_owner: Testenioù perc'henn an danvez pourvezet n'int ket
+          reizh, pe perc'henn an danvez ne c'hell ket bezañ kavet
         invalid_token:
           expired: Ar jedouer moned a zo aet da dermen
           revoked: Ar jedouer moned a zo skarzhet
           unknown: Ar jedouer moned a zo direizh
-        server_error: Ur fazi digortozet a c'hoarveze hag a vire ar servijer aotre ouzh klokaat ar reket.
-        temporarily_unavailable: Ar servijer aotre ne c'hall ket seveniñ ar reket abalamour d'ur soulgarg pe d'ur gempenn.
+        server_error: Ur fazi digortozet a c'hoarveze hag a vire ar servijer aotre
+          ouzh klokaat ar reket.
+        temporarily_unavailable: Ar servijer aotre ne c'hall ket seveniñ ar reket
+          abalamour d'ur soulgarg pe d'ur gempenn.
         unauthorized_client: An arval n'eo ket aotreet seveniñ ar reket-mañ er mod-se.
         unsupported_grant_type: Diembreg eo seurt aotre gant ar servijer aotre.
         unsupported_response_type: Diembreg eo seurt respontoù gant ar servijer aotre.
@@ -117,7 +123,8 @@ br:
     scopes:
       admin:read: lenn holl titouroù ar servijer
       admin:read:accounts: lenn titouroù kizidik an holl kontoù
-      admin:read:reports: lenn titouroù kizidik an holl danevelloù hag an holl kontoù danevellet
+      admin:read:reports: lenn titouroù kizidik an holl danevelloù hag an holl kontoù
+        danevellet
       admin:write: kemmañ holl titouroù ar servijer
       admin:write:accounts: ober evezherezh war ar c'hontoù
       admin:write:reports: ober evezherezh war an danevelloù

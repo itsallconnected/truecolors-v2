@@ -24,7 +24,8 @@ cy:
         account:
           attributes:
             fields:
-              fields_with_values_missing_labels: yn cynnwys gwerthoedd gyda labeli coll
+              fields_with_values_missing_labels: yn cynnwys gwerthoedd gyda labeli
+                coll
             username:
               invalid: rhaid iddo gynnwys dim ond llythrennau, rhifau a thanlinellau
               reserved: wedi ei neilltuo
@@ -66,7 +67,8 @@ cy:
           attributes:
             permissions_as_keys:
               dangerous: yn cynnwys caniatâd nad ydyn nhw'n ddiogel ar gyfer rôl sail
-              elevated: yn methu a chynnwys caniatâd nad yw eich rôl cyfredol yn ei gynnwys
+              elevated: yn methu a chynnwys caniatâd nad yw eich rôl cyfredol yn ei
+                gynnwys
               own_role: nid oes modd ei newid gyda'ch rôl cyfredol
             position:
               elevated: nid yw'n gallu bod yn uwch na'ch rôl cyfredol
@@ -74,4 +76,5 @@ cy:
         webhook:
           attributes:
             events:
-              invalid_permissions: nid oes modd cynnwys digwyddiadau nad oes gennych yr hawl iddyn nhw
+              invalid_permissions: nid oes modd cynnwys digwyddiadau nad oes gennych
+                yr hawl iddyn nhw
