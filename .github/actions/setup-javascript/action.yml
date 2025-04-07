@@ -1,17 +1,17 @@
-name: "Setup Javascript"
-description: "Setup a Javascript environment ready to run the Truecolors code"
+name: 'Setup Javascript'
+description: 'Setup a Javascript environment ready to run the Truecolors code'
 inputs:
   onlyProduction:
     description: Only install production dependencies
-    default: "false"
+    default: 'false'
 
 runs:
-  using: "composite"
+  using: 'composite'
   steps:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version-file: ".nvmrc"
+        node-version-file: '.nvmrc'
 
     # Make sure Corepack is properly enabled before any yarn commands
     - name: Enable and prepare Corepack
@@ -19,7 +19,16 @@ runs:
       run: |
         # Enable Corepack and prepare Yarn
         corepack enable
-        corepack prepare --activate
+        
+        # Check what Yarn version is specified in package.json
+        YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9.]*')
+        echo "Project requires Yarn version: $YARN_VERSION"
+        
+        # Explicitly prepare the specific version
+        corepack prepare yarn@$YARN_VERSION --activate
+        
+        # Force use of the correct Yarn version
+        echo "YARN_ENABLE_IMMUTABLE_INSTALLS=false" >> $GITHUB_ENV
         
         # Fix PATH to ensure we're using the Corepack-managed Yarn
         export PATH="$(npm config get prefix)/lib/node_modules/.bin:$PATH"
@@ -28,9 +37,9 @@ runs:
         if ! which yarn | grep -q "corepack/yarn"; then
           mkdir -p ~/.local/bin
           cat > ~/.local/bin/yarn <<EOL
-        #!/bin/bash
-        exec "$(which node)" "$(which corepack)" yarn "\$@"
-        EOL
+#!/bin/bash
+exec "$(which node)" "$(which corepack)" yarn "\$@"
+EOL
           chmod +x ~/.local/bin/yarn
           export PATH="$HOME/.local/bin:$PATH"
         fi
@@ -57,10 +66,14 @@ runs:
 
     - name: Install all yarn packages
       shell: bash
-      run: yarn install --immutable
+      run: |
+        echo "Installing all dependencies..."
+        yarn install
       if: inputs.onlyProduction == 'false'
 
     - name: Install all production yarn packages
       shell: bash
-      run: yarn workspaces focus --production
+      run: |
+        echo "Installing production dependencies only..."
+        yarn install --mode=production
       if: inputs.onlyProduction != 'false'

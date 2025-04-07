@@ -15,7 +15,6 @@ const messages = defineMessages({
  * ColumnSettings component for Chat feature
  * Provides settings for OMEMO encryption, notifications and read receipts
  */
-export default @injectIntl
 class ColumnSettings extends ImmutablePureComponent {
   static propTypes = {
     settings: PropTypes.object.isRequired,
@@ -70,4 +69,6 @@ class ColumnSettings extends ImmutablePureComponent {
       </div>
     );
   }
-} 
+}
+
+export default injectIntl(ColumnSettings); 

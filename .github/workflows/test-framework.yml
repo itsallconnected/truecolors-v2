@@ -32,7 +32,10 @@ jobs:
       - name: Enable Corepack for Yarn version management
         run: |
           corepack enable
-          corepack prepare yarn@4.7.0 --activate
+          # Extract Yarn version from package.json
+          YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9.]*')
+          echo "Project requires Yarn version: $YARN_VERSION"
+          corepack prepare yarn@$YARN_VERSION --activate
 
       - name: Install dependencies
         run: |
@@ -88,7 +91,10 @@ jobs:
       - name: Enable Corepack for Yarn version management
         run: |
           corepack enable
-          corepack prepare yarn@4.7.0 --activate
+          # Extract Yarn version from package.json
+          YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9.]*')
+          echo "Project requires Yarn version: $YARN_VERSION"
+          corepack prepare yarn@$YARN_VERSION --activate
 
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript

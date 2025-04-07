@@ -22,8 +22,6 @@ const messages = defineMessages({
  * ChatTimeline component provides a secure chat interface using XMPP/Jabber with OMEMO encryption
  * It integrates with Converse.js for the chat functionality and requires an XMPP server
  */
-export default @connect()
-@injectIntl
 class ChatTimeline extends React.PureComponent {
   static contextTypes = {
     router: PropTypes.object,
@@ -193,4 +191,6 @@ class ChatTimeline extends React.PureComponent {
       </Column>
     );
   }
-} 
+}
+
+export default connect()(injectIntl(ChatTimeline)); 
