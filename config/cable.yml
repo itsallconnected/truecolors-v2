@@ -1,0 +1,17 @@
+development:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/0" } %>
+  channel_prefix: truecolors_development
+  driver: <%= ENV.fetch("REDIS_DRIVER", "ruby") %>
+  id: <%= ENV.fetch("REDIS_ID", nil) %>
+
+test:
+  adapter: test
+
+production:
+  adapter: redis
+  url: <%= ENV.fetch("REDIS_URL") { "redis://localhost:6379/0" } %>
+  channel_prefix: truecolors_production
+  driver: <%= ENV.fetch("REDIS_DRIVER", "ruby") %>
+  id: <%= ENV.fetch("REDIS_ID", nil) %>
+  error_handler: ->(error) { Rails.logger.error("Redis error: #{error}") } 

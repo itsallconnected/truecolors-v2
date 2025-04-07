@@ -29,8 +29,8 @@ sort: true
 
 # YAML writer options
 write:
-  line_width: ~  # No line width limit
-  format_keys: false  # Do not add/remove keys, only normalize values
+  line_width: ~ # No line width limit
+  format_keys: false # Do not add/remove keys, only normalize values
 
 # Output translation data using the given representation
 # Available: i18n, json, yaml, yaml_po

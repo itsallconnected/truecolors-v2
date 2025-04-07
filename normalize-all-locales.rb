@@ -13,25 +13,23 @@ Dir.glob('config/locales/**/*.yml').each do |file_path|
     content = File.read(file_path)
     
     # Ensure it starts with --- on a line by itself
-    unless content.start_with?("---\n")
-      content = "---\n" + content.sub(/^---\s*\n/, '')
-    end
+    content = "#{content.start_with?('---' + "\n") ? '' : "---\n"}#{content.sub(/^---\s*\n/, '')}"
     
     # Parse the YAML
     data = YAML.load(content)
     
     # Second pass - write it back with proper formatting
     File.open(file_path, 'w') do |file|
-      file.puts "---"
+      file.puts '---'
       # Write the converted YAML without the initial ---
       yaml_output = YAML.dump(data)
       file.puts yaml_output.sub(/^---\s*\n/, '')
     end
     
-    puts "  ✓ Successfully normalized"
+    puts '  ✓ Successfully normalized'
   rescue => e
     puts "  ✗ Error: #{e.message}"
   end
 end
 
-puts "All locale files have been normalized." 
+puts 'All locale files have been normalized.' 

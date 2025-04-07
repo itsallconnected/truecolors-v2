@@ -109,9 +109,7 @@ module Truecolors
     # @return [Integer] Next timestamp to use
     def next_timestamp(last_timestamp)
       timestamp = current_time
-      while timestamp <= last_timestamp
-        timestamp = current_time
-      end
+      timestamp = current_time while timestamp <= last_timestamp
       timestamp
     end
   end

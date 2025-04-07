@@ -74,7 +74,7 @@ module Truecolors
 
     def api_versions
       {
-        truecolors: 5
+        truecolors: 5,
       }
     end
 
