@@ -119,6 +119,9 @@ jobs:
       CAS_ENABLED: true
       BUNDLE_WITH: 'pam_authentication test'
       GITHUB_RSPEC: ${{ matrix.ruby-version == '.ruby-version' && github.event.pull_request && 'true' }}
+      BUNDLE_FROZEN: false
+      PRECOMPILING_ASSETS: true
+      CI: true
 
     strategy:
       fail-fast: false
