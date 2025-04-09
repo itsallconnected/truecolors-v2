@@ -73,7 +73,7 @@ jobs:
       NODE_ENV: production
       PRECOMPILING_ASSETS: true
       CI: true
-      OTP_SECRET: dummy-otp-secret-for-ci
+      OTP_SECRET: ${{ secrets.OTP_SECRET }}
       # Add encryption keys
       ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY }}
       ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY }}
@@ -181,7 +181,7 @@ jobs:
       DB_PASS: postgres
       PRECOMPILING_ASSETS: true
       CI: true
-      OTP_SECRET: dummy-otp-secret-for-ci
+      OTP_SECRET: ${{ secrets.OTP_SECRET }}
       # Add encryption keys
       ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_PRIMARY_KEY }}
       ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_DETERMINISTIC_KEY }}

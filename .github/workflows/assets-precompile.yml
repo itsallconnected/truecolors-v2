@@ -23,6 +23,7 @@ jobs:
       ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT: ${{ secrets.ACTIVE_RECORD_ENCRYPTION_KEY_DERIVATION_SALT }}
       SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
       OTP_SECRET: ${{ secrets.OTP_SECRET }}
+      REDIS_URL: ${{ secrets.REDIS_URL }}
       XMPP_DOMAIN: ${{ secrets.XMPP_DOMAIN }}
       XMPP_BOSH_URL: ${{ secrets.XMPP_BOSH_URL }}
       XMPP_WEBSOCKET_URL: ${{ secrets.XMPP_WEBSOCKET_URL }}
