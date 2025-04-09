@@ -71,10 +71,11 @@ jobs:
 
       - name: Allow bundle modifications
         run: |
-          bundle config set --local frozen false
+          bundle config set --local path vendor/bundle
           # Ensure fernet gem is installed for encryption
-          bundle add fernet || true
-          bundle install --jobs 4
+          # bundle add command removed to preserve Gemfile.lock
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen
 
       - name: Install libvips
         run: |
@@ -84,3 +85,8 @@ jobs:
       - name: Test libvips
         run: |
           bundle exec ruby -e "require 'vips'; puts Vips::LIBRARY_VERSION"
+
+
+
+
+

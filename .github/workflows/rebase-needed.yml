@@ -9,8 +9,7 @@ permissions:
 
 jobs:
   label-rebase-needed:
-    runs-on: ubuntu-latest
-    if: github.repository == 'truecolors/truecolors'
+    runs-on: ubuntu-24.04
 
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
@@ -26,3 +25,8 @@ jobs:
           commentOnDirty: This pull request has merge conflicts that must be resolved before it can be merged.
           retryMax: 30
           continueOnMissingPermissions: false
+
+
+
+
+

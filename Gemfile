@@ -3,6 +3,7 @@
 source 'https://rubygems.org'
 ruby '>= 3.2.0', '< 3.5.0'
 
+gem 'bigdecimal', '~> 3.1.4'
 gem 'propshaft'
 gem 'puma', '~> 6.3'
 gem 'rack', '~> 2.2.7'

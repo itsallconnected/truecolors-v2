@@ -252,8 +252,9 @@ jobs:
 
       - name: Allow bundle modifications
         run: |
-          bundle config set --local frozen false
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen
 
       - name: Ensure no errors with `db:prepare`
         run: |
@@ -288,3 +289,8 @@ jobs:
           SKIP_POST_DEPLOYMENT_MIGRATIONS=true bin/rails db:migrate
           bin/rails db:migrate
           bin/rails tests:migrations:check_database
+
+
+
+
+

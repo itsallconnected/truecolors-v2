@@ -19,12 +19,13 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Install dependencies
         run: |
-          bundle config set --local frozen false
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen
 
       - name: Fix Script Permissions
         run: |
@@ -75,3 +76,8 @@ jobs:
           git add .
           git commit -m "Fix linting issues with Rubocop [skip ci]"
           git push
+
+
+
+
+

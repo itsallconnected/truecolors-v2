@@ -26,13 +26,14 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Install i18n-tasks and dependencies
         run: |
           gem install i18n-tasks
-          bundle config set --local frozen false
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen
           echo "i18n-tasks version: $(i18n-tasks --version)"
 
       - name: Check permissions on config/locales
@@ -87,3 +88,8 @@ jobs:
           git add config/locales/
           git commit -m "Normalize i18n files"
           git push
+
+
+
+
+

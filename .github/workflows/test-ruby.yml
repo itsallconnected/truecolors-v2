@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     strategy:
       fail-fast: true
@@ -102,7 +102,7 @@ jobs:
           retention-days: 0
 
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     needs:
       - build
@@ -205,12 +205,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install crewai langchain-ollama slixmpp cryptography psycopg2-binary pyyaml
 
-      - name: Allow bundle modifications
+      - name: Install dependencies
         run: |
-          bundle config set --local frozen false
-          # Ensure fernet gem is installed for encryption
-          bundle add fernet || true
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen --frozen
 
       - name: Load database schema
         run: |
@@ -240,7 +239,7 @@ jobs:
 
   test-libvips:
     name: Libvips tests
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     needs:
       - build
@@ -338,7 +337,7 @@ jobs:
 
   test-e2e:
     name: End to End testing
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     needs:
       - build
@@ -439,7 +438,7 @@ jobs:
 
   test-search:
     name: Elastic Search integration testing
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     if: false # Disable Elasticsearch tests completely
 
     needs:
@@ -569,3 +568,8 @@ jobs:
         with:
           name: test-search-screenshots
           path: tmp/capybara/
+
+
+
+
+

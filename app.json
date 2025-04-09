@@ -1,7 +1,7 @@
 {
   "name": "Truecolors",
   "description": "A GNU Social-compatible microblogging server",
-  "repository": "https://github.com/truecolors/truecolors",
+  "repository": "https://github.com/itsallconnected/truecolors-v2",
   "logo": "https://github.com/truecolors.png",
   "env": {
     "HEROKU": {

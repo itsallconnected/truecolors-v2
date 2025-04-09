@@ -186,3 +186,8 @@ jobs:
         run: |
           echo "$PUSH_TO_IMAGES" | xargs -i{} \
             docker buildx imagetools inspect {}:${{ steps.meta.outputs.version }}
+
+
+
+
+

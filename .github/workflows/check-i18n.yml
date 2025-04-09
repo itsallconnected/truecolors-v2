@@ -32,8 +32,9 @@ jobs:
 
       - name: Allow bundle modifications
         run: |
-          bundle config set --local frozen false
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen
 
       - name: Set up Javascript environment
         uses: ./.github/actions/setup-javascript
@@ -78,3 +79,8 @@ jobs:
       - name: Check that all required locale files exist
         continue-on-error: true
         run: bin/rake repo:check_locales_files
+
+
+
+
+

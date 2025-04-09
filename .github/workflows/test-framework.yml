@@ -12,7 +12,7 @@ on:
 
 jobs:
   lint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       YARN_ENABLE_IMMUTABLE_INSTALLS: false
 
@@ -23,7 +23,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -45,9 +45,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bundle config set --local frozen false
-          bundle add fernet || true
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          # bundle add command removed to preserve Gemfile.lock
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen --frozen
 
       - name: Fix script permissions
         run: |
@@ -66,7 +67,7 @@ jobs:
           yarn prettier --write "**/*.{js,jsx,ts,tsx,css,scss,json,yml,yaml}" || true
 
   assets:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     env:
       RAILS_ENV: production
@@ -102,7 +103,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -138,9 +139,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bundle config set --local frozen false
-          bundle add fernet || true
-          bundle install --jobs 4 --retry 3
+          bundle config set --local path vendor/bundle
+          # bundle add command removed to preserve Gemfile.lock
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen --frozen
 
       - name: Precompile assets
         run: |
@@ -148,7 +150,7 @@ jobs:
           bundle exec rake assets:precompile
 
   migrations:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     services:
       postgres:
@@ -210,7 +212,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2.2'
-          bundler-cache: true
+          bundler-cache: false
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -244,9 +246,10 @@ jobs:
 
       - name: Install dependencies
         run: |
-          bundle config set --local frozen false
-          bundle add fernet || true
-          bundle install --jobs 4 --retry 3
+          bundle config set --local path vendor/bundle
+          # bundle add command removed to preserve Gemfile.lock
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen --retry 3 --frozen
 
       - name: Run db:prepare to test migrations
         run: |
@@ -254,3 +257,8 @@ jobs:
           bin/rails db:migrate:up VERSION=20250407100000 # Run fix_duplicate_migrations first
           bin/rails db:schema:load
           bin/rails db:migrate
+
+
+
+
+

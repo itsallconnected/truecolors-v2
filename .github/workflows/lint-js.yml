@@ -54,9 +54,9 @@ jobs:
             echo "Installing Corepack manually..."
             npm install -g corepack
           fi
-          
+
           corepack enable
-          
+
           # Extract Yarn version from package.json - more robust pattern
           if grep -q '"packageManager"' package.json; then
             YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | sed -E 's/.*yarn@([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
@@ -73,7 +73,7 @@ jobs:
           echo "Using Node.js version: $(node -v)"
           echo "Using Yarn from: $(which yarn)"
           echo "Yarn version: $(yarn --version)"
-          
+
           # If yarn still isn't the right version, try again with an alternate approach
           if ! yarn --version | grep -q "4.7.0"; then
             echo "Yarn version mismatch detected, trying alternate approach..."
@@ -102,3 +102,8 @@ jobs:
 
       - name: Typecheck
         run: yarn typecheck
+
+
+
+
+

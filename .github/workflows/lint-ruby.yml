@@ -27,8 +27,9 @@ jobs:
 
       - name: Allow bundle modifications
         run: |
-          bundle config set --local frozen false
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen
 
       - name: Set-up RuboCop Problem Matcher
         uses: r7kamura/rubocop-problem-matchers-action@v1
@@ -39,3 +40,8 @@ jobs:
       - name: Run brakeman
         if: always() # Run both checks, even if the first failed
         run: bin/brakeman
+
+
+
+
+

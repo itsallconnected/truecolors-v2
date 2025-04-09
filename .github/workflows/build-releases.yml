@@ -15,7 +15,7 @@ jobs:
       file_to_build: Dockerfile
       push_to_images: |
         tootsuite/truecolors
-        ghcr.io/truecolors/truecolors
+        ghcr.io/itsallconnected/truecolors-v2
       # Do not use cache when building releases, so apt update is always ran and the release always contain the latest packages
       cache: false
       # Only tag with latest when ran against the latest stable branch
@@ -34,7 +34,7 @@ jobs:
       file_to_build: streaming/Dockerfile
       push_to_images: |
         tootsuite/truecolors-streaming
-        ghcr.io/truecolors/truecolors-streaming
+        ghcr.io/itsallconnected/truecolors-v2-streaming
       # Do not use cache when building releases, so apt update is always ran and the release always contain the latest packages
       cache: false
       # Only tag with latest when ran against the latest stable branch
@@ -45,3 +45,8 @@ jobs:
         type=pep440,pattern={{raw}}
         type=pep440,pattern=v{{major}}.{{minor}}
     secrets: inherit
+
+
+
+
+

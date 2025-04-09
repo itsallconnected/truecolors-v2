@@ -30,8 +30,14 @@ jobs:
 
       - name: Allow bundle modifications
         run: |
-          bundle config set --local frozen false
-          bundle install --jobs 4
+          bundle config set --local path vendor/bundle
+          bundle config set --local path vendor/bundle 
+          bundle install --jobs 4 --frozen
 
       - name: Run bundler-audit
         run: bin/bundler-audit check --update
+
+
+
+
+

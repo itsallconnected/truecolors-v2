@@ -10,8 +10,7 @@ permissions:
 
 jobs:
   compute-suffix:
-    runs-on: ubuntu-latest
-    if: github.repository == 'truecolors/truecolors'
+    runs-on: ubuntu-24.04
     steps:
       - id: version_vars
         env:
@@ -29,7 +28,22 @@ jobs:
       cache: false
       push_to_images: |
         tootsuite/truecolors
-        ghcr.io/truecolors/truecolors
+        ghcr.io/itsallconnected/truecolors-v2
+      tags: |
+        type=raw,value=${{ needs.compute-suffix.outputs.prerelease }}
+      extra_build_args: |
+        RELEASE_BUILD=true
+        TRUECOLORS_VERSION=${{ needs.compute-suffix.outputs.prerelease }}
+
+  build-image-streaming:
+    needs: compute-suffix
+    uses: ./.github/workflows/build-container-image.yml
+    with:
+      file_to_build: streaming/Dockerfile
+      cache: false
+      push_to_images: |
+        tootsuite/truecolors-streaming
+        ghcr.io/itsallconnected/truecolors-v2-streaming
       version_prerelease: ${{ needs.compute-suffix.outputs.prerelease }}
       labels: |
         org.opencontainers.image.description=Nightly build image used for testing purposes
@@ -41,22 +55,7 @@ jobs:
         type=schedule,pattern=${{ needs.compute-suffix.outputs.prerelease }}
     secrets: inherit
 
-  build-image-streaming:
-    needs: compute-suffix
-    uses: ./.github/workflows/build-container-image.yml
-    with:
-      file_to_build: streaming/Dockerfile
-      cache: false
-      push_to_images: |
-        tootsuite/truecolors-streaming
-        ghcr.io/truecolors/truecolors-streaming
-      version_prerelease: ${{ needs.compute-suffix.outputs.prerelease }}
-      labels: |
-        org.opencontainers.image.description=Nightly build image used for testing purposes
-      flavor: |
-        latest=auto
-      tags: |
-        type=raw,value=edge
-        type=raw,value=nightly
-        type=schedule,pattern=${{ needs.compute-suffix.outputs.prerelease }}
-    secrets: inherit
+
+
+
+
