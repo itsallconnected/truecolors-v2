@@ -1,6 +1,7 @@
 import { defineMessages } from 'react-intl';
 
 import api from '../api';
+
 import { showAlert, showAlertForError } from './alerts';
 
 export const XMPP_FETCH_CREDENTIALS_REQUEST = 'XMPP_FETCH_CREDENTIALS_REQUEST';
