@@ -18,4 +18,16 @@ body {
   --rich-text-decorations-color: rgba(255, 175, 212, 100%);
   --input-placeholder-color: #{color.adjust($dark-text-color, $alpha: -0.5)};
   --input-background-color: #{darken($ui-base-color, 10%)};
+  
+  /* Chat component variables */
+  --primary-text-color: #{$primary-text-color};
+  --primary-text-color-faint: #{rgba($primary-text-color, 70%)};
+  --secondary-text-color: #{$secondary-text-color};
+  --foreground-color: #{$ui-base-color};
+  --brand-color: #{$brand-color};
+  --highlight-text-color: #{$highlight-text-color};
+  --highlight-text-color-opaque: #{rgba($highlight-text-color, 20%)};
+  --accent-color: #{$accent-color};
+  --error-text-color: #{$error-red};
+  --valid-value-color: #{$valid-value-color};
 }

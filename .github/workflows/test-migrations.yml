@@ -27,7 +27,7 @@ env:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
 
     strategy:
       fail-fast: false
@@ -73,6 +73,10 @@ jobs:
       # Add other essential secrets
       SECRET_KEY_BASE: ${{ secrets.SECRET_KEY_BASE }}
       OTP_SECRET: ${{ secrets.OTP_SECRET }}
+      # Add CrewAI and Ollama configuration
+      CREWAI_ENABLED: true
+      OLLAMA_HOST: ${{ secrets.OLLAMA_HOST || 'http://localhost:11434' }}
+      OLLAMA_MODEL: ${{ secrets.OLLAMA_MODEL || 'phi3:mini' }}
 
     steps:
       - uses: actions/checkout@v4
@@ -245,6 +249,16 @@ jobs:
           # Run the script immediately
           ruby fix_migrations.rb
 
+      - name: Set up Python for CrewAI
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install Python dependencies for CrewAI
+        run: |
+          python -m pip install --upgrade pip
+          pip install crewai langchain-ollama slixmpp cryptography psycopg2-binary pyyaml
+
       - name: Set up Ruby environment
         uses: ./.github/actions/setup-ruby
         with:
@@ -252,9 +266,8 @@ jobs:
 
       - name: Allow bundle modifications
         run: |
-          bundle config set --local path vendor/bundle
-          bundle config set --local path vendor/bundle 
-          bundle install --jobs 4 --frozen
+          bundle config set --local frozen false
+          bundle install --jobs 4
 
       - name: Ensure no errors with `db:prepare`
         run: |

@@ -18,6 +18,8 @@ $ui-highlight-color: $classic-highlight-color !default;
   $dark-text-color: lighten($ui-primary-color, 12%),
   $secondary-text-color: lighten($ui-secondary-color, 6%),
   $highlight-text-color: lighten($ui-highlight-color, 10%),
+  $brand-color: lighten($ui-highlight-color, 10%),
+  $accent-color: lighten($ui-highlight-color, 10%),
   $action-button-color: lighten($ui-base-color, 50%),
   $inverted-text-color: $black,
   $lighter-text-color: darken($ui-base-color, 6%),
