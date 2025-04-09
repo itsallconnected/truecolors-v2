@@ -6,7 +6,6 @@ import { defineMessages, injectIntl } from 'react-intl';
 import { connect } from 'react-redux';
 
 import { mountConverse, unmountConverse } from '../../actions/chat';
-
 import { openModal } from '../../actions/modal';
 import { fetchXmppCredentials } from '../../actions/xmpp';
 import ColumnHeader from '../../components/column_header';
