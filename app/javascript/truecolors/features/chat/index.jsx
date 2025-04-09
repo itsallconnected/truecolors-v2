@@ -5,8 +5,9 @@ import { defineMessages, injectIntl } from 'react-intl';
 
 import { connect } from 'react-redux';
 
-import { openModal } from '../../actions/modal';
 import { mountConverse, unmountConverse } from '../../actions/chat';
+
+import { openModal } from '../../actions/modal';
 import { fetchXmppCredentials } from '../../actions/xmpp';
 import ColumnHeader from '../../components/column_header';
 import LoadingIndicator from '../../components/loading_indicator';
@@ -22,7 +23,7 @@ const messages = defineMessages({
 
 /**
  * ChatTimeline component provides a secure chat interface using XMPP/Jabber with OMEMO encryption
- * It integrates with Converse.js for the chat functionality and requires an XMPP server
+ * It  integrates with Converse.js for the chat functionality and requires an XMPP server
  */
 class ChatTimeline extends React.PureComponent {
   static contextTypes = {
