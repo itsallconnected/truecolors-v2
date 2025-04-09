@@ -90,3 +90,8 @@ crowdin-cli.jar
 # Ignore .env.production but keep the example
 .env.production
 !.env.production.example
+
+# Ignore LLM related files
+errorlogs_githubworkflows_manuallycreated.txt
+errortasks.md
+
