@@ -25,8 +25,3 @@ jobs:
           commentOnDirty: This pull request has merge conflicts that must be resolved before it can be merged.
           retryMax: 30
           continueOnMissingPermissions: false
-
-
-
-
-

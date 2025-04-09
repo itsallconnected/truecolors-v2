@@ -88,8 +88,3 @@ jobs:
           git add config/locales/
           git commit -m "Normalize i18n files"
           git push
-
-
-
-
-

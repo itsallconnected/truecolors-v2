@@ -40,8 +40,3 @@ jobs:
       - name: Run brakeman
         if: always() # Run both checks, even if the first failed
         run: bin/brakeman
-
-
-
-
-

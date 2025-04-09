@@ -26,8 +26,3 @@ jobs:
           else
             echo "Ruby version already at 3.2.2, no changes needed"
           fi
-
-
-
-
-

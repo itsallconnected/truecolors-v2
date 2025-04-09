@@ -257,8 +257,3 @@ jobs:
           bin/rails db:migrate:up VERSION=20250407100000 # Run fix_duplicate_migrations first
           bin/rails db:schema:load
           bin/rails db:migrate
-
-
-
-
-

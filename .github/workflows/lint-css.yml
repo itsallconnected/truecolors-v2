@@ -41,8 +41,3 @@ jobs:
 
       - name: Stylelint
         run: yarn lint:css --custom-formatter @csstools/stylelint-formatter-github
-
-
-
-
-

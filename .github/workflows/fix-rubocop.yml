@@ -76,8 +76,3 @@ jobs:
           git add .
           git commit -m "Fix linting issues with Rubocop [skip ci]"
           git push
-
-
-
-
-

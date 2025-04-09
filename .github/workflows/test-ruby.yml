@@ -568,8 +568,3 @@ jobs:
         with:
           name: test-search-screenshots
           path: tmp/capybara/
-
-
-
-
-

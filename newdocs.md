@@ -9,6 +9,7 @@ TrueColors is a free, open-source social network server based on the ActivityPub
 ### Backend
 
 - **Ruby on Rails 8.0**: Powers the REST API and web pages
+
   - MVC architecture with controllers, models, views, and services
   - Uses Propshaft for asset management
   - PostgreSQL database integration via Active Record
@@ -17,15 +18,18 @@ TrueColors is a free, open-source social network server based on the ActivityPub
 - **Ruby Version**: 3.2+ required
 
 - **PostgreSQL 12+**: Primary database
+
   - Stores user accounts, posts, relationships, and all application data
   - Uses advanced PostgreSQL features like JSONB fields, arrays, and full-text search
 
 - **Redis 4+**: Used for:
+
   - Caching
   - Sidekiq job queuing
   - Real-time updates via WebSockets
 
 - **Node.js 18+**: Powers the streaming API
+
   - Delivers real-time updates to clients
 
 - **XMPP Server (Prosody)**: Provides chat functionality
@@ -35,6 +39,7 @@ TrueColors is a free, open-source social network server based on the ActivityPub
 ### Frontend
 
 - **React 18**: For dynamic client-side interfaces
+
   - Uses Redux for state management
   - Implements Redux Toolkit for improved Redux workflow
 
@@ -69,11 +74,13 @@ TrueColors is a free, open-source social network server based on the ActivityPub
 TrueColors implements secure chat functionality using the XMPP (eXtensible Messaging and Presence Protocol) standard:
 
 - **Architecture**:
+
   - Dedicated XMPP server (Prosody) running alongside the main application
   - XMPP credentials automatically created for each user
   - Credentials stored securely in the database with encryption
 
 - **Components**:
+
   - `XmppCredential` model: Stores user XMPP credentials with encrypted passwords
   - `ChatRoom` model: Represents XMPP multi-user chat rooms (MUC)
   - `ChatMessage` model: Stores messages with encryption support
@@ -90,17 +97,20 @@ TrueColors implements secure chat functionality using the XMPP (eXtensible Messa
 TrueColors implements multiple layers of encryption for secure communications:
 
 - **OMEMO Encryption**:
+
   - End-to-end encryption protocol specifically for XMPP
   - Enabled by default for all chat messages
   - Uses double ratchet algorithm with perfect forward secrecy
   - Device verification and key management handled by Converse.js
 
 - **Database-level Encryption**:
+
   - Chat messages stored encrypted in the database
   - Uses Rails `encrypts` attribute for transparent encryption
   - Separate encryption keys for each chat room
 
 - **Message Transit Encryption**:
+
   - Chat messages encrypted during transit using XMPP's TLS
   - WebSocket connections secured with TLS
   - API calls protected with HTTPS
@@ -115,21 +125,25 @@ TrueColors implements multiple layers of encryption for secure communications:
 TrueColors includes comprehensive AI agent functionality for XMPP chatrooms using:
 
 - **CrewAI**: Framework for creating AI agents that can collaborate
+
   - Implemented via Python integration with Ruby
   - Secure data passing between Ruby and Python environments
   - Uses the `Open3` module for process communication
 
 - **Ollama**: For local model execution
+
   - Configurable through environment variables
   - Supports multiple LLM models including phi3
 
 - **Integrated Agents**:
+
   - **Planner**: Helps with planning events and projects
   - **Researcher**: Provides research and information on topics
   - **Strategist**: Assists with outreach and communication strategies
   - **Mediator**: Helps resolve conflicts
 
 - **Agent-specific Features**:
+
   - Task-based system for defining agent capabilities
   - Memory persistence via PostgreSQL with encryption
   - Rate limiting to prevent abuse
@@ -147,6 +161,7 @@ TrueColors includes comprehensive AI agent functionality for XMPP chatrooms usin
 ### Directory Structure
 
 - **app/**: Main application code
+
   - **controllers/**: Rails controllers
     - **api/v1/chat_rooms_controller.rb**: API endpoints for chat rooms
   - **models/**: Active Record models
@@ -165,6 +180,7 @@ TrueColors includes comprehensive AI agent functionality for XMPP chatrooms usin
     - **create_xmpp_room_worker.rb**: Async XMPP room creation
 
 - **lib/crewai/**: AI integration code
+
   - **xmpp_bot.py**: Python XMPP bot implementation
   - **pg_memory.py**: Encrypted memory storage
   - **create_crew.py**: Agent crew creation
@@ -175,31 +191,37 @@ TrueColors includes comprehensive AI agent functionality for XMPP chatrooms usin
 
 ### Key Features Implementation
 
-1. **Federation via ActivityPub**: 
+1. **Federation via ActivityPub**:
+
    - Implements ActivityPub protocol for decentralized social networking
    - Allows communication with other ActivityPub-compatible platforms
 
 2. **Real-time Timeline Updates**:
+
    - WebSockets for instant delivery of new posts
    - Streaming API built with Node.js
 
 3. **Media Attachments**:
+
    - Support for images, videos, and GIFs
    - Uses Paperclip for file handling
 
 4. **Secure Chat System**:
+
    - XMPP-based chat with OMEMO encryption
    - Multi-user chatrooms with AI agent integration
    - End-to-end encryption for private communications
    - Database encryption for stored messages
 
 5. **AI Agent Integration**:
+
    - CrewAI-based agents for specific tasks
    - Secure Python-Ruby interoperability
    - Task-based system for defining capabilities
    - Encrypted memory storage for conversation context
 
 6. **Moderation Tools**:
+
    - Comprehensive toolkit for content moderation
    - Includes features like private posts, locked accounts, phrase filtering, muting, blocking, and reporting
 
@@ -258,4 +280,4 @@ The database design centers around key entities:
 
 TrueColors represents a modern, full-stack web application combining Ruby on Rails and React. It implements the ActivityPub protocol to participate in the federated social web while offering a rich set of features for users and administrators. The application architecture follows Rails conventions with additional JavaScript frameworks to provide an interactive user experience.
 
-The chat system based on XMPP with OMEMO encryption provides secure communication channels, while the CrewAI integration brings powerful AI capabilities to chatrooms. Multiple layers of encryption ensure data protection both in transit and at rest. 
+The chat system based on XMPP with OMEMO encryption provides secure communication channels, while the CrewAI integration brings powerful AI capabilities to chatrooms. Multiple layers of encryption ensure data protection both in transit and at rest.

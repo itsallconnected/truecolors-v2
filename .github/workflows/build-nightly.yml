@@ -53,8 +53,3 @@ jobs:
         type=raw,value=nightly
         type=schedule,pattern=${{ needs.compute-suffix.outputs.prerelease }}
     secrets: inherit
-
-
-
-
-

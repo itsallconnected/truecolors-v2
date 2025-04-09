@@ -289,8 +289,3 @@ jobs:
           SKIP_POST_DEPLOYMENT_MIGRATIONS=true bin/rails db:migrate
           bin/rails db:migrate
           bin/rails tests:migrations:check_database
-
-
-
-
-

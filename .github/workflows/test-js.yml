@@ -44,8 +44,3 @@ jobs:
 
       - name: JavaScript testing
         run: yarn jest --reporters github-actions summary
-
-
-
-
-

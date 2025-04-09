@@ -85,8 +85,3 @@ jobs:
       - name: Test libvips
         run: |
           bundle exec ruby -e "require 'vips'; puts Vips::LIBRARY_VERSION"
-
-
-
-
-

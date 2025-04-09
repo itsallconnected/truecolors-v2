@@ -38,8 +38,3 @@ jobs:
         run: |
           echo "::add-matcher::.github/workflows/haml-lint-problem-matcher.json"
           bin/haml-lint --reporter github
-
-
-
-
-

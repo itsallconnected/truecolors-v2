@@ -36,8 +36,3 @@ jobs:
 
       - name: Run bundler-audit
         run: bin/bundler-audit check --update
-
-
-
-
-

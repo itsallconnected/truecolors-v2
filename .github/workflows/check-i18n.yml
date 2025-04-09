@@ -79,8 +79,3 @@ jobs:
       - name: Check that all required locale files exist
         continue-on-error: true
         run: bin/rake repo:check_locales_files
-
-
-
-
-

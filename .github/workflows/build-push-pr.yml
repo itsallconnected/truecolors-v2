@@ -55,8 +55,3 @@ jobs:
         type=ref,event=pr
         type=ref,event=pr,suffix=-${{ needs.compute-suffix.outputs.short_sha }}
     secrets: inherit
-
-
-
-
-
