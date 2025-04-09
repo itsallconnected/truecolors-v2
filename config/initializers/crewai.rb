@@ -3,7 +3,8 @@
 # Initialize CrewAI configuration for Truecolors
 
 # Only proceed when XMPP features are enabled and we're not in a test environment
-if defined?(Truecolors::Feature) && Truecolors::Feature.enabled?(:xmpp) && ENV['CREWAI_ENABLED'] != 'false'
+# Skip during asset precompilation
+if defined?(Truecolors::Feature) && Truecolors::Feature.enabled?(:xmpp) && ENV['CREWAI_ENABLED'] != 'false' && ENV['PRECOMPILING_ASSETS'] != 'true'
   require 'open3'
   require 'json'
   require 'shellwords'
@@ -124,5 +125,5 @@ if defined?(Truecolors::Feature) && Truecolors::Feature.enabled?(:xmpp) && ENV['
   end
 else
   # CrewAI is disabled by configuration
-  Rails.logger.info "CrewAI disabled: either XMPP feature is disabled or CREWAI_ENABLED is set to 'false'"
+  Rails.logger.info "CrewAI disabled: either XMPP feature is disabled, CREWAI_ENABLED is set to 'false', or currently precompiling assets"
 end
