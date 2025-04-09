@@ -16,7 +16,7 @@
   height: 100%;
   padding: 20px;
   text-align: center;
-  color: var(--primary-text-color--faint);
+  color: var(--primary-text-color-faint);
 
   .loading-indicator {
     margin-bottom: 10px;
@@ -52,7 +52,7 @@
   .controlbox {
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 20%);
     background-color: var(--background-color);
 
     .converse-chatboxes {
@@ -72,7 +72,7 @@
 
       &.open a,
       &.current-chat a {
-        background-color: var(--highlight-text-color--opaque);
+        background-color: var(--highlight-text-color-opaque);
       }
     }
   }
@@ -81,7 +81,7 @@
   .chatbox {
     border-radius: 4px;
     overflow: hidden;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 20%);
     background-color: var(--background-color);
 
     .chat-head {
@@ -89,7 +89,7 @@
       border-radius: 4px 4px 0 0;
 
       .chat-head__name {
-        color: var(--primary-text-color--faint);
+        color: var(--primary-text-color-faint);
         font-weight: 500;
       }
     }
@@ -155,7 +155,7 @@
 
     .message-form__send-button {
       background-color: var(--brand-color);
-      color: var(--primary-text-color--faint);
+      color: var(--primary-text-color-faint);
       border-radius: 4px;
       border: none;
       padding: 8px 15px;
@@ -175,7 +175,7 @@
 
     &.activated {
       background-color: var(--valid-value-color);
-      color: var(--primary-text-color--faint);
+      color: var(--primary-text-color-faint);
     }
   }
 
@@ -196,7 +196,7 @@
 }
 
 /* Mobile responsiveness */
-@media screen and (max-width: 630px) {
+@media screen and (width <= 630px) {
   .chat-timeline__container {
     height: 100vh;
   }

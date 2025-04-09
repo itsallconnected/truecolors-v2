@@ -18,6 +18,7 @@ jobs:
         ghcr.io/itsallconnected/truecolors-v2
       # Do not use cache when building releases, so apt update is always ran and the release always contain the latest packages
       cache: false
+      version_metadata: RELEASE_BUILD=true
       # Only tag with latest when ran against the latest stable branch
       # This needs to be updated after each minor version release
       flavor: |

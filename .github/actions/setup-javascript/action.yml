@@ -20,44 +20,40 @@ runs:
         # Enable Corepack and ensure we use the correct Yarn version
         echo "Enabling Corepack for Yarn version management..."
 
-        # Enable Corepack - available in Node.js 16.9.0+ by default
-        if ! command -v corepack &> /dev/null; then
-          echo "Installing Corepack manually..."
-          npm install -g corepack
-        fi
+        # Always install Corepack for consistency
+        echo "Installing Corepack..."
+        npm install -g corepack
 
         # Enable Corepack
+        echo "Enabling Corepack..."
         corepack enable
 
-        # Extract requested Yarn version from package.json
+        # Extract requested Yarn version from package.json or use hardcoded value
         if grep -q '"packageManager"' package.json; then
           YARN_VERSION=$(grep -o '"packageManager": "yarn@[^"]*"' package.json | grep -o '[0-9][0-9.]*')
           echo "Project requires Yarn version: $YARN_VERSION from package.json"
-          
-          # Force preparing specific version
-          corepack prepare yarn@$YARN_VERSION --activate
-          echo "YARN_ENABLE_IMMUTABLE_INSTALLS=false" >> $GITHUB_ENV
         else
-          echo "No packageManager field found in package.json, using default Yarn"
-          corepack prepare yarn@stable --activate
+          # Fallback to a known working version
+          YARN_VERSION="4.7.0"
+          echo "Using default Yarn version: $YARN_VERSION"
         fi
+          
+        # Force preparing specific version
+        echo "Preparing Yarn version $YARN_VERSION..."
+        corepack prepare yarn@$YARN_VERSION --activate
+        echo "YARN_ENABLE_IMMUTABLE_INSTALLS=false" >> $GITHUB_ENV
 
-        # Create custom Yarn wrapper if needed
-        if ! which yarn | grep -q "corepack/yarn"; then
-          echo "Creating wrapper script for Yarn..."
-          mkdir -p ~/.local/bin
-          echo '#!/bin/bash' > ~/.local/bin/yarn
-          echo 'exec "$(which node)" "$(which corepack)" yarn "$@"' >> ~/.local/bin/yarn
-          chmod +x ~/.local/bin/yarn
-          export PATH="$HOME/.local/bin:$PATH"
-        fi
+        # Create custom Yarn wrapper to ensure we always use the right version
+        mkdir -p ~/.local/bin
+        echo '#!/bin/bash' > ~/.local/bin/yarn
+        echo 'exec "$(which node)" "$(which corepack)" yarn "$@"' >> ~/.local/bin/yarn
+        chmod +x ~/.local/bin/yarn
+        export PATH="$HOME/.local/bin:$PATH"
+        echo "PATH=$HOME/.local/bin:$PATH" >> $GITHUB_ENV
 
         # Print diagnostic information
         echo "Using Yarn from: $(which yarn)"
         echo "Yarn version: $(yarn --version)"
-
-        # Make PATH changes available to subsequent steps
-        echo "PATH=$PATH" >> $GITHUB_ENV
 
     - name: Get yarn cache directory path
       id: yarn-cache-dir-path

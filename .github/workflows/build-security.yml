@@ -28,6 +28,7 @@ jobs:
         tootsuite/truecolors
         ghcr.io/itsallconnected/truecolors-v2
       version_prerelease: ${{ needs.compute-suffix.outputs.prerelease }}
+      version_metadata: RELEASE_BUILD=true
       labels: |
         org.opencontainers.image.description=Nightly build image used for testing purposes
       flavor: |

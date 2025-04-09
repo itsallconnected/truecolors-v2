@@ -43,7 +43,7 @@ else
           
           Redis.new(
             url: redis_url,
-            driver: ENV.fetch('REDIS_DRIVER', 'ruby').to_sym,
+            driver: ENV.fetch('REDIS_DRIVER', 'hiredis').to_sym,
             id: ENV.fetch('REDIS_ID', nil)
           )
         end

@@ -29,11 +29,10 @@ jobs:
       push_to_images: |
         tootsuite/truecolors
         ghcr.io/itsallconnected/truecolors-v2
+      version_prerelease: ${{ needs.compute-suffix.outputs.prerelease }}
+      version_metadata: RELEASE_BUILD=true
       tags: |
         type=raw,value=${{ needs.compute-suffix.outputs.prerelease }}
-      extra_build_args: |
-        RELEASE_BUILD=true
-        TRUECOLORS_VERSION=${{ needs.compute-suffix.outputs.prerelease }}
 
   build-image-streaming:
     needs: compute-suffix

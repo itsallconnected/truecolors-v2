@@ -28,6 +28,9 @@ on:
       file_to_build:
         type: string
         description: 'Dockerfile path to use for building'
+      build_args:
+        type: string
+        description: 'Additional Docker build arguments'
 
 # This builds multiple images with one runner each, allowing us to build for multiple architectures
 # using Github's runners.
@@ -91,9 +94,10 @@ jobs:
           context: .
           file: ${{ inputs.file_to_build }}
           build-args: |
-            MASTODON_VERSION_PRERELEASE=${{ inputs.version_prerelease }}
-            MASTODON_VERSION_METADATA=${{ inputs.version_metadata }}
+            TRUECOLORS_VERSION=${{ inputs.version_prerelease }}
+            RELEASE_BUILD=${{ inputs.version_metadata == 'RELEASE_BUILD=true' && 'true' || 'false' }}
             SOURCE_COMMIT=${{ github.sha }}
+            ${{ inputs.build_args }}
           platforms: ${{ matrix.platform }}
           provenance: false
           push: ${{ inputs.push_to_images != '' }}

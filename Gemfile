@@ -94,6 +94,7 @@ gem 'stoplight', '~> 4.1'
 gem 'strong_migrations'
 gem 'tty-prompt', '~> 0.23', require: false
 gem 'twitter-text', '~> 3.1.0'
+gem 'i18n-ruby', '~> 0.1.5'
 gem 'tzinfo-data', '~> 1.2023'
 gem 'webauthn', '~> 3.0'
 gem 'webpacker', '~> 5.4'
